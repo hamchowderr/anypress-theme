@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.4.1
+Stable tag: 0.4.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -122,4 +122,26 @@ Literata, Copyright 2017 The Literata Project Authors (https://github.com/google
 License: SIL Open Font License, 1.1 (assets/fonts/licenses/literata-OFL.txt)
 Source: https://github.com/google/fonts/tree/main/ofl/literata
 
-Placeholder images in assets/images were made for this theme and are GPLv3 or later.
+Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
+
+== Changelog ==
+
+= 0.4.2 =
+* The theme now has its own repository and release zips: https://github.com/hamchowderr/anypress-theme
+* Adds the theme screenshot shown under Appearance > Themes.
+
+= 0.4.1 =
+* AnyPress Blocks: the 32 sections that work with any kit, in eight groups in the inserter.
+
+= 0.4.0 =
+* Nine more kits: Parcel, Chapter, Gloss, Commons, Rep, Frame, Keystone, Launch and Byline.
+* Everyday sections, more starter pages and post outlines.
+
+= 0.3.0 =
+* The first four kits: Ridge, Hearth, Still and Ledger.
+
+= 0.2.0 =
+* Patterns, starter pages, six colour palettes and four font pairings.
+
+= 0.1.0 =
+* First version.
