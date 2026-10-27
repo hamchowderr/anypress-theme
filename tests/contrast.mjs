@@ -10,7 +10,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-export const THEME = resolve(HERE, '../anypress-theme');
+export const THEME = resolve(process.env.ANYPRESS_THEME || resolve(HERE, '..'));
 const MIN = 4.5;
 
 const json = (path) => JSON.parse(readFileSync(path, 'utf8'));

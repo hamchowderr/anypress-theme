@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  theme:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: none
+      - name: PHP syntax (8.1, the lowest version the theme supports)
+        run: find . -name '*.php' -not -path './tests/node_modules/*' -print0 | xargs -0 -n1 php -l > /dev/null
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: tests/package-lock.json
+      - name: Install the checks
+        working-directory: tests
+        run: |
+          npm ci
+          npm install --no-save playwright@1.64.1
+          npx playwright install --with-deps chromium
+      - name: Theme check on WordPress Playground
+        working-directory: tests
+        run: npm run theme
+      - name: Build the zip
+        run: bin/build-zip.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: anypress-theme
+          path: |
+            dist/anypress.zip
+            tests/shots/

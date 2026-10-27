@@ -1,0 +1,11 @@
+.git
+.github
+.claude
+.gitignore
+.distignore
+bin
+dist
+tests
+README.md
+CLAUDE.md
+AGENTS.md
