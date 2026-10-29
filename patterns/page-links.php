@@ -25,23 +25,23 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"dimensions":{"width":"100%"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Book a class', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/"><?php esc_html_e( 'Book a class', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"style":{"dimensions":{"width":"100%"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#timetable"><?php esc_html_e( 'This week\'s timetable', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/timetable/"><?php esc_html_e( 'This week\'s timetable', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"style":{"dimensions":{"width":"100%"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#vouchers"><?php esc_html_e( 'Gift vouchers', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/gift-vouchers/"><?php esc_html_e( 'Gift vouchers', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"style":{"dimensions":{"width":"100%"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#blog"><?php esc_html_e( 'Read the blog', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/blog/"><?php esc_html_e( 'Read the blog', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"style":{"dimensions":{"width":"100%"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#contact"><?php esc_html_e( 'Get in touch', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/contact/"><?php esc_html_e( 'Get in touch', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->

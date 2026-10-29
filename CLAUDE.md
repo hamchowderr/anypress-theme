@@ -8,6 +8,10 @@ The AnyPress block theme, installed on every new AnyPress store and free for any
 | `styles/` | Kit style variations (`styles/kit-*.json`), colour palettes and font pairings (`styles/colors/`, `styles/typography/`), section styles (`styles/sections/`) and block styles (`styles/blocks/`) |
 | `tests/` | `theme-check.mjs` (Playground), `contrast.mjs` (WCAG AA), `shot.mjs` (remakes `screenshot.png`) |
 
+## Kits
+
+A kit ships only when its demo passes `docs/kit-checklist.md`, checked by clicking through the running demo at desktop and phone width: every menu item opens a finished page, a popup, working forms, a sticky header, FAQ, carousels and real content. Kit sections and pages are written by `tools/generate/` (run `tools/generate/generate.sh`); edit the scripts, not the generated files.
+
 ## Building and testing
 
 Node 22+: `cd tests && npm ci && npm run theme`. It must pass before pushing; CI runs the same check plus `php -l` on PHP 8.1. Patterns use theme tokens only (no hex colours, no pixel sizes), each has a description and keywords, and every palette keeps WCAG AA contrast in every section style.

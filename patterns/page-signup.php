@@ -10,8 +10,8 @@
  * Post Types: page
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Signup"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"40rem"}} -->
-<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Signup"},"anchor":"signup","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"40rem"}} -->
+<section id="signup" class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
 <h1 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'The Sunday letter', 'anypress' ); ?></h1>
 <!-- /wp:heading -->
 
@@ -21,7 +21,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#subscribe"><?php esc_html_e( 'Subscribe free', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:hello@example.com?subject=Subscribe"><?php esc_html_e( 'Subscribe free', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
