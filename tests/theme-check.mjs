@@ -9,6 +9,7 @@
 //   - every AnyPress pattern (and any STARTERS pages) parses into valid blocks (the editor's own validation, run here with @wordpress/blocks)
 //   - patterns use theme tokens only: no hex colours and no pixel sizes in block attributes
 //   - every pattern has a description and keywords (the site tools search on them)
+//   - on starter pages, every in-page link (href="#...") has a section with that anchor
 //   - every colour palette passes WCAG AA contrast (4.5:1) in every section style (contrast.mjs)
 //   - WordPress lists the colour and typography style variations
 //   - a page with every pattern renders without PHP errors; screenshots at phone and desktop width
@@ -131,6 +132,10 @@ for (const p of starters) {
     // WordPress swaps each core/pattern block for that pattern's blocks when it hands the pattern out.
     if (p.content.includes('<!-- wp:pattern ')) fail(`${p.name}: a section it uses is missing`);
     if (!p.blockTypes?.includes('core/post-content') || !p.postTypes?.includes('page')) fail(`${p.name}: not offered when a page is created`);
+    // A button or link that jumps within the page needs a section with that anchor.
+    const ids = new Set([...p.content.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]));
+    const dangling = [...p.content.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]).filter((a) => !ids.has(a));
+    dangling.length ? fail(`${p.name}: links to missing sections: ${[...new Set(dangling)].map((a) => '#' + a).join(', ')}`) : pass(`${p.name}: in-page links reach their sections`);
 }
 registerCoreBlocks();
 const walk = (blocks, out = []) => { for (const b of blocks) { out.push(b); walk(b.innerBlocks, out); } return out; };

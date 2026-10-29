@@ -997,7 +997,8 @@
 					}
 				}
 			}
-		}
+		},
+		"css": "body{--fluentform-primary:var(--wp--preset--color--primary);--fluentform-border-radius:var(--wp--preset--border-radius--sm);--fct-btn-bg-color:var(--wp--preset--color--primary);--fct-btn-text-color:var(--wp--preset--color--base);--fct-btn-border-color:var(--wp--preset--color--primary);--fct-btn-hover-bg-color:color-mix(in srgb,var(--wp--preset--color--primary) 85%,var(--wp--preset--color--main));--fct-btn-hover-text-color:var(--wp--preset--color--base)}.wp-block-cover.has-custom-content-position.has-custom-content-position>.wp-block-cover__inner-container.is-layout-constrained{width:100%}"
 	},
 	"templateParts": [
 		{

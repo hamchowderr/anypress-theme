@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.4.2
+Stable tag: 0.4.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,6 +125,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.4.3 =
+* Buttons on kit home pages now jump to their sections (Book, Menu, Pricing and others) instead of going nowhere.
+* Fluent Forms and FluentCart buttons take the site's brand colour.
+* Cover heroes with text at the bottom left now line up with the header.
 
 = 0.4.2 =
 * The theme now has its own repository and release zips: https://github.com/hamchowderr/anypress-theme

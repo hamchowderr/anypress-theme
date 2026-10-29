@@ -250,8 +250,8 @@
 <!-- /wp:columns --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Call"},"align":"full","className":"is-style-section-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull is-style-section-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"large","style":{"typography":{"textTransform":"uppercase","fontWeight":"800"}}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Call"},"anchor":"quote","align":"full","className":"is-style-section-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section id="quote" class="wp-block-group alignfull is-style-section-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"large","style":{"typography":{"textTransform":"uppercase","fontWeight":"800"}}} -->
 <p class="has-big-shoulders-font-family has-large-font-size" style="text-transform:uppercase;font-weight:800"><?php esc_html_e( 'Call us', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
