@@ -6,7 +6,7 @@ A WordPress block theme built to be edited by people and by AI agents. Every col
 
 It includes:
 
-- **13 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software) and Byline (blogs and magazines).
+- **13 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software) and Byline (blogs and magazines). Ridge is a full website: 13 starter pages (services, service areas, reviews, offers, quote, FAQ, careers, contact and more), a sticky header with a call button, an offer popup, FAQ, carousels, counters and a map.
 - **AnyPress Blocks**: 32 sections any site can use, whatever its kit, in eight inserter groups (Heroes, About, Services and prices, Proof, Calls to action, Contact, Blog, Footers).
 - **Starter pages** offered when you create a page (home pages, About, Services, Contact, sales, signup, thank-you and links pages) and **post outlines** for how-to, list and review posts.
 - **Six colour palettes and four font pairings** under Appearance > Editor > Styles. Every palette keeps text at WCAG AA contrast in every section style.
@@ -14,7 +14,7 @@ It includes:
 
 ## Requirements
 
-WordPress 7.1 or later and PHP 8.1 or later.
+WordPress 7.1 or later and PHP 8.1 or later. The popup, carousel, counter and map sections need the free [AnyPress Blocks](https://github.com/hamchowderr/anypress-blocks) plugin (0.2.0 or later); forms in the starter pages are placeholders for a forms plugin such as Fluent Forms.
 
 ## Install
 
@@ -43,7 +43,11 @@ npm ci
 npm run theme      # load the theme, validate every pattern, check contrast, render a page, take screenshots
 npm run serve      # the same site, left running at http://127.0.0.1:9410 (admin / password)
 npm run contrast   # only the colour contrast table
+npm run demo -- ridge            # build the Ridge demo website and leave it running at http://127.0.0.1:9411
+npm run demo -- ridge --check    # build it, click through the kit checklist at desktop and phone width, take screenshots
 ```
+
+A kit's demo is built by `demo/<kit>/build.php` from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
 
 The check makes sure that the theme activates and WordPress reads its presets, that every pattern parses into valid blocks and uses theme tokens only (no hex colours or pixel sizes), that every pattern has a description and keywords, that every palette passes WCAG AA, and that a page with every pattern renders without PHP errors or sideways scrolling on a phone. Screenshots need Playwright with Chromium. `node shot.mjs` remakes `screenshot.png`.
 

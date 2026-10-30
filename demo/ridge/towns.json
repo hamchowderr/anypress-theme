@@ -1,0 +1,93 @@
+[
+	{
+		"name": "Springfield",
+		"slug": "springfield",
+		"lat": 39.7817,
+		"lon": -89.6501,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Our yard is on Wabash Avenue, so most Springfield jobs get a visit within hours. Emergencies within the hour, day or night.",
+			"Chatham, Illinois": "Springfield, Illinois",
+			"Chatham": "Springfield",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Springfield is home. We've looked after its houses since 2001, from the older streets near downtown to the newer homes on the west side, and many of our customers have called us for twenty years."
+		}
+	},
+	{
+		"name": "Chatham",
+		"slug": "chatham",
+		"lat": 39.6761,
+		"lon": -89.7043,
+		"swap": {}
+	},
+	{
+		"name": "Rochester",
+		"slug": "rochester",
+		"lat": 39.7495,
+		"lon": -89.5318,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Twenty minutes from our yard, so most Rochester jobs get a same-day visit. Emergencies within the hour.",
+			"Chatham, Illinois": "Rochester, Illinois",
+			"Chatham": "Rochester",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Rochester has plenty of homes on private wells and septic, so we do a lot of pressure tank, softener and drain work here alongside everyday repairs."
+		}
+	},
+	{
+		"name": "Sherman",
+		"slug": "sherman",
+		"lat": 39.8936,
+		"lon": -89.6048,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Fifteen minutes up the road, so most Sherman jobs get a same-day visit. Emergencies within the hour.",
+			"Chatham, Illinois": "Sherman, Illinois",
+			"Chatham": "Sherman",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Many Sherman homes were built in the last thirty years, and their first water heaters and sump pumps are now reaching the end of their lives. We replace them with no travel charge."
+		}
+	},
+	{
+		"name": "Riverton",
+		"slug": "riverton",
+		"lat": 39.8445,
+		"lon": -89.539,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Fifteen minutes from our yard, so most Riverton jobs get a same-day visit. Emergencies within the hour.",
+			"Chatham, Illinois": "Riverton, Illinois",
+			"Chatham": "Riverton",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Older homes near the river mean more basements, sump pumps and main lines. We clear and camera-check drains here every week."
+		}
+	},
+	{
+		"name": "Auburn",
+		"slug": "auburn",
+		"lat": 39.5917,
+		"lon": -89.7462,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Thirty minutes from our yard, so Auburn jobs get a same-day or next-day visit. Emergencies within the hour.",
+			"Chatham, Illinois": "Auburn, Illinois",
+			"Chatham": "Auburn",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "We've had a regular round in Auburn for years: water heaters, heating services before winter, and frozen pipes after the first hard frost."
+		}
+	},
+	{
+		"name": "Petersburg",
+		"slug": "petersburg",
+		"lat": 40.0117,
+		"lon": -89.8482,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Thirty-five minutes from our yard, so Petersburg jobs get a same-day or next-day visit. Emergencies as fast as the road allows.",
+			"Chatham, Illinois": "Petersburg, Illinois",
+			"Chatham": "Petersburg",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Petersburg's older houses keep us busy with galvanized pipe, old cast-iron drains and boilers that deserve a careful service."
+		}
+	},
+	{
+		"name": "New Berlin",
+		"slug": "new-berlin",
+		"lat": 39.7253,
+		"lon": -89.9101,
+		"swap": {
+			"Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.": "Twenty-five minutes from our yard, so most New Berlin jobs get a same-day visit. Emergencies within the hour.",
+			"Chatham, Illinois": "New Berlin, Illinois",
+			"Chatham": "New Berlin",
+			"We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps.": "Farmhouses and newer homes alike: wells, pressure tanks, softeners and water heaters, with no travel charge."
+		}
+	}
+]

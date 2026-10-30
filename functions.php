@@ -93,6 +93,27 @@ function anypress_register_block_styles() {
 			'inline_style' => '.wp-block-group.is-style-menu-leader{align-items:baseline}.wp-block-group.is-style-menu-leader>*{margin-block:0}.wp-block-group.is-style-menu-leader>:first-child{display:flex;flex:1 1 auto;align-items:baseline;gap:.4em}.wp-block-group.is-style-menu-leader>:first-child::after{content:"";flex:1 1 auto;min-width:1.5em;border-bottom:.12em dotted currentColor;opacity:.5}',
 		)
 	);
+
+	// A header that stays at the top of the screen while visitors scroll. The template part wraps the group, so it is
+	// the part that sticks.
+	register_block_style(
+		'core/group',
+		array(
+			'name'         => 'sticky',
+			'label'        => __( 'Stays on screen', 'anypress' ),
+			'inline_style' => '.wp-block-template-part:has(>.is-style-sticky),.is-style-sticky:not(.wp-block-template-part>*){position:sticky;top:var(--wp-admin--admin-bar--height,0px);z-index:100}.is-style-sticky .wp-block-button__link{white-space:nowrap}@media (max-width:600px){.admin-bar .wp-block-template-part:has(>.is-style-sticky){top:0}}',
+		)
+	);
+
+	// Questions with a line between each, the question in the heading font.
+	register_block_style(
+		'core/accordion',
+		array(
+			'name'         => 'divided',
+			'label'        => __( 'Lines between', 'anypress' ),
+			'inline_style' => '.wp-block-accordion.is-style-divided{gap:0}.wp-block-accordion.is-style-divided>.wp-block-accordion-item{border-top:2px solid currentColor;margin:0}.wp-block-accordion.is-style-divided>.wp-block-accordion-item:last-child{border-bottom:2px solid currentColor}.wp-block-accordion.is-style-divided .wp-block-accordion-heading{margin:0;font-size:var(--wp--preset--font-size--large)}.wp-block-accordion.is-style-divided .wp-block-accordion-heading__toggle{padding-block:var(--wp--preset--spacing--small);min-height:2.75rem}.wp-block-accordion.is-style-divided .wp-block-accordion-panel{padding-bottom:var(--wp--preset--spacing--small)}',
+		)
+	);
 }
 add_action( 'init', 'anypress_register_block_styles' );
 

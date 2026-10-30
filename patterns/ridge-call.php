@@ -18,6 +18,6 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Seven days, 7am to 8pm. Free quotes, with photos of what we find.', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Office hours 7am to 7pm, seven days. Emergencies day and night. Free quotes, with photos of what we find.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></section>
 <!-- /wp:group -->

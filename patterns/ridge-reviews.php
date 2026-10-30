@@ -13,7 +13,7 @@
 <div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"bottom","className":"is-style-section-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"}}},"width":"62%"} -->
 <div class="wp-block-column is-vertically-aligned-bottom is-style-section-brand" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);flex-basis:62%"><!-- wp:quote {"className":"is-style-plain"} -->
 <blockquote class="wp-block-quote is-style-plain"><!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"xx-large","style":{"typography":{"lineHeight":"1.15"}}} -->
-<p class="has-big-shoulders-font-family has-xx-large-font-size" style="line-height:1.15"><?php esc_html_e( 'They found a leak two other roofers missed, fixed it the same afternoon and sent photos of every step.', 'anypress' ); ?></p>
+<p class="has-big-shoulders-font-family has-xx-large-font-size" style="line-height:1.15"><?php esc_html_e( 'They found a leak two other plumbers missed, fixed it the same afternoon and sent photos of every step.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --><cite><?php esc_html_e( 'Dana R., Springfield', 'anypress' ); ?></cite></blockquote>
 <!-- /wp:quote --></div>
 <!-- /wp:column -->
