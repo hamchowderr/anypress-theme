@@ -43,7 +43,7 @@ def accordion(items):
 
 def form(kind, label, href, note=None):
     """Where a form goes: a named group with a button to the page that has the form. Swap it for the site's form block."""
-    inner = ([p(note, None, "secondary")] if note else []) + [btns([(label, None, href)])]
+    inner = ([p(note, None, "secondary")] if note else []) + [btns([(label, None, href) + (("phone",) if href.startswith("tel:") else ())])]
     return grp(N(inner), gap="small", layout={"type": "default"}, name=f"Form: {kind}")
 
 def card(inner, style="section-card", pad=PAD_CARD):
@@ -61,8 +61,8 @@ def hide_on(markup, *viewports):
 
 def call_buttons():
     """The header's call button: the number in full on tablets and computers, just "Call" on phones."""
-    full = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"mobile": False}}}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{TEL}">{T("Call " + PHONE)}</a></div>\n<!-- /wp:button -->'
-    short = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"tablet": False, "desktop": False}}}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{TEL}">{T("Call")}</a></div>\n<!-- /wp:button -->'
+    full = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"mobile": False}}, "bindings": button_bindings("phone")}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{TEL}">{T("Call " + PHONE)}</a></div>\n<!-- /wp:button -->'
+    short = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"tablet": False, "desktop": False}}, "bindings": button_bindings("phone_link")}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{TEL}">{T("Call")}</a></div>\n<!-- /wp:button -->'
     return '<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"nowrap"}} -->\n<div class="wp-block-buttons">' + full + "\n\n" + short + '</div>\n<!-- /wp:buttons -->'
 
 def link_p(text, href, size=None, typo=None):
@@ -152,11 +152,11 @@ FOOTER = grp(N([
     grp(N([cols([
         col(N([dyn("site-title", {"level": 0, "fontSize": "x-large"}),
                p("Plumbing and heating for homes and small businesses across the county since 2001. Licensed, insured, and on call day and night.", None, "main-accent"),
-               p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True),
+               p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True, bind="phone_linked"),
                social(["facebook", "instagram", "google"])]), "34%"),
         col(flinks("Services", [(n, f"/services/{s}/") for n, s, *_ in SERVICES])),
         col(flinks("Company", [("About us", "/about/"), ("Reviews", "/reviews/"), ("Service areas", "/service-areas/"), ("Special offers", "/special-offers/"), ("Careers", "/careers/"), ("Blog", "/blog/"), ("FAQ", "/faq/")])),
-        col(N([h("Visit or call", 3, "medium"), p("2140 Wabash Avenue, Springfield", None, "main-accent"), p("Office: 7am to 7pm, seven days", None, "main-accent"), p("Emergencies: day and night", None, "main-accent"),
+        col(N([h("Visit or call", 3, "medium"), p("2140 Wabash Avenue, Springfield", None, "main-accent", bind="address"), p("Office: 7am to 7pm, seven days", None, "main-accent", bind="hours"), p("Emergencies: day and night", None, "main-accent"),
                btns([("Get a free quote", None, "/get-a-quote/")])]))], "large", "wide", "top"),
         sep(),
         row([p("© Clearwater Plumbing & Heating. Master plumber licence 48213.", "small", "main-accent"),
@@ -253,7 +253,7 @@ kit("ridge-service-detail", R, "Ridge service: what's included and the price",
           img("placeholder-wide.svg", "Photo of the service: a kitchen sink with water running from two taps", "16/9")]), "60%"),
    col(card(N([p("Drain cleaning", "small", None, None, "big-shoulders", CAPS_T), p("From $120", "poster", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "0.9"}),
                p("Most sink and shower drains. Main lines from $280. The price is agreed before we start."),
-               btns([("Book online", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL)])]), "section-second-brand", PAD_CARD))], "x-large", "wide", "top")))
+               btns([("Book online", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL, "phone")])]), "section-second-brand", PAD_CARD))], "x-large", "wide", "top")))
 
 kit("ridge-areas-map", R, "Ridge areas: a map and the towns served",
  "Where the business works: a map of the area and every town served as a link to its own page, with a line on travel outside the area. Needs the AnyPress Blocks plugin for the map. Part of the Ridge kit.",
@@ -293,7 +293,7 @@ kit("ridge-quote", R, "Ridge quote: the form and what happens next",
    col(N([h("What happens next", 3, "x-large"),
           lst(["We reply within two working hours, 7am to 7pm.", "You get a price range, or we book a free visit to look.", "You choose a time. We text when we're on the way."], "medium"),
           card(N([p("Water everywhere?", "large", None, None, "big-shoulders", CAPS_T), p("Don't fill in a form. Turn off the water at the stop valve and call us now."),
-                  p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xxx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True)]), "section-brand")]))],
+                  p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xxx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True, bind="phone_linked")]), "section-brand")]))],
    "x-large", "wide", "top"), "section-tint"))
 
 kit("ridge-contact", R, "Ridge contact: details, form and map",
@@ -301,9 +301,9 @@ kit("ridge-contact", R, "Ridge contact: details, form and map",
  "contact, phone, email, address, hours, map, form, ridge",
  sec("Contact", N([cols([
    col(N([h("Call, write or visit", 2, "xxx-large"),
-          p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xxx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True),
-          p('<a href="mailto:hello@example.com">hello@example.com</a>', "medium", None, None, None, None, raw=True),
-          p("2140 Wabash Avenue, Springfield", "medium"), p("Office: 7am to 7pm, seven days. Emergencies: day and night.", None, "secondary")]), "42%"),
+          p(f'<a href="{TEL}">' + T(PHONE) + '</a>', "xxx-large", None, None, "big-shoulders", {"fontWeight": "900", "lineHeight": "1"}, raw=True, bind="phone_linked"),
+          p('<a href="mailto:hello@example.com">hello@example.com</a>', "medium", None, None, None, None, raw=True, bind="email_linked"),
+          p("2140 Wabash Avenue, Springfield", "medium", bind="address"), p("Office: 7am to 7pm, seven days. Emergencies: day and night.", None, "secondary")]), "42%"),
    col(card(N([h("Send a message", 3, "x-large"), form("contact", "Call " + PHONE, TEL, "We reply within two working hours.")]), "section-tint", PAD_CARD))], "x-large", "wide", "top"),
    mapb("2140 Wabash Avenue, Springfield, Illinois", 39.7817, -89.6501, 13, "21/9")])))
 
@@ -325,13 +325,13 @@ kit_page("kit-home-services", "Home page: Ridge kit, home services",
 ridge_page("ridge-page-services", "Services page: Ridge kit",
  "A Services page for a trade: a page heading, every service as a card linking to its own page, how a job works, the guarantee panels, common questions and the phone number. Ridge kit.",
  "services, all services, prices, trades, ridge",
- [page_hero("Plumbing and heating services", "Repairs, replacements and new installs for homes and small businesses. Fixed prices, agreed before we start.", "Services", [("Get a free quote", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL)]),
+ [page_hero("Plumbing and heating services", "Repairs, replacements and new installs for homes and small businesses. Fixed prices, agreed before we start.", "Services", [("Get a free quote", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL, "phone")]),
   BODIES["ridge-service-cards"], BODIES["ridge-steps"], BODIES["ridge-proof"], BODIES["ridge-faq"], BODIES["ridge-call"]])
 
 ridge_page("ridge-page-service", "Service page: Ridge kit (one service)",
  "A page for one service, such as drain cleaning: a heading, what's included and the price, how it works, recent jobs, reviews, questions about this service and the phone number. Ridge kit; make one per service under Services.",
  "service page, drain cleaning, water heater, repair, single service, ridge",
- [page_hero("Drain cleaning", "Blocked sink, shower, toilet or main line? Cleared today in most cases, with a camera check so it stays clear.", "Services / Drain cleaning", [("Book online", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL)]),
+ [page_hero("Drain cleaning", "Blocked sink, shower, toilet or main line? Cleared today in most cases, with a camera check so it stays clear.", "Services / Drain cleaning", [("Book online", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL, "phone")]),
   BODIES["ridge-service-detail"], BODIES["ridge-steps"], BODIES["ridge-jobs"], BODIES["ridge-reviews-carousel"],
   sec("Questions", cols([col(h("About drain cleaning", 2, "xxx-large"), "36%"), col(accordion([
     ("Will chemical drain cleaner fix it?", "Sometimes for a while, but it eats old pipes and rarely shifts a real block. We'd rather you didn't: it also burns whoever opens the pipe next."),
@@ -373,7 +373,7 @@ ridge_page("ridge-page-areas", "Service areas page: Ridge kit",
 ridge_page("ridge-page-area", "Town page: Ridge kit (one service area)",
  "A page for one town served, such as Chatham: a heading, a few lines about working there with a map, the services, reviews from that town and the phone number. Ridge kit; make one per main town under Service areas, with real local details.",
  "service area page, town, city, local, plumber near me, ridge",
- [page_hero("Plumber in Chatham", "Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.", "Service areas / Chatham", [("Get a free quote", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL)]),
+ [page_hero("Plumber in Chatham", "Fifteen minutes from our yard, so most Chatham jobs get a same-day visit. Emergencies within the hour.", "Service areas / Chatham", [("Get a free quote", None, "/get-a-quote/"), ("Call " + PHONE, "outline", TEL, "phone")]),
   sec("Local", cols([
     col(N([h("Plumbing and heating in Chatham", 2, "xx-large"),
            p("We've worked in Chatham since 2001, from the older homes near the center to the newer subdivisions. Hard water is common here, so we see a lot of tired water heaters and scaled-up taps."),

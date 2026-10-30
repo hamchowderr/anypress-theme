@@ -81,11 +81,11 @@
 <h2 class="wp-block-heading has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Visit', 'anypress' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}}} -->
 <p><?php esc_html_e( '14 Market Street', 'anypress' ); ?><br><?php esc_html_e( 'Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <p><?php esc_html_e( '555 0142', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

@@ -34,11 +34,11 @@
 <div class="wp-block-group"><!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"},"style":{"typography":{"fontWeight":"700","textTransform":"uppercase"}},"fontFamily":"big-shoulders","fontSize":"medium"} /-->
 
 <!-- wp:buttons {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"mobile":false}}}} -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"mobile":false}},"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550142"><?php esc_html_e( 'Call 555 0142', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"tablet":false,"desktop":false}}}} -->
+<!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"tablet":false,"desktop":false}},"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550142"><?php esc_html_e( 'Call', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

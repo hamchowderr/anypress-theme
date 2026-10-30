@@ -19,19 +19,9 @@
 <h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Hours', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Tuesday to Friday, 7am to 3pm', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Saturday and Sunday, 8am to 3pm', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Closed Monday', 'anypress' ); ?></p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}},"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( 'Tuesday to Friday, 7am to 3pm', 'anypress' ); ?><br><?php esc_html_e( 'Saturday and Sunday, 8am to 3pm', 'anypress' ); ?><br><?php esc_html_e( 'Closed Monday', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -40,7 +30,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php esc_html_e( '14 Market Street, Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -60,11 +50,11 @@
 <p class="has-medium-font-size"><?php esc_html_e( 'Cakes with three days\' notice', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone"}}}},"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php esc_html_e( '555 0198', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email"}}}},"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

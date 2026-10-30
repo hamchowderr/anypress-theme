@@ -318,7 +318,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Book online', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-outline"} -->
+<!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}},"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="tel:5550133"><?php esc_html_e( 'Call 555 0133', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -345,7 +345,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Find us', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}}} -->
 <p><?php esc_html_e( '21 Elm Street, Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

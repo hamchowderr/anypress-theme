@@ -171,7 +171,7 @@
 <p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Commissions, prints and talks', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontFamily":"bricolage-grotesque","fontSize":"poster","style":{"typography":{"lineHeight":"1","fontWeight":"700","letterSpacing":"-0.04em"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"fontFamily":"bricolage-grotesque","fontSize":"poster","style":{"typography":{"lineHeight":"1","fontWeight":"700","letterSpacing":"-0.04em"}}} -->
 <p class="has-bricolage-grotesque-font-family has-poster-font-size" style="line-height:1;font-weight:700;letter-spacing:-0.04em"><a href="mailto:hello@example.com"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 

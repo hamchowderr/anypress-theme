@@ -213,6 +213,22 @@ for (const [tpl, id] of Object.entries(extra)) {
     const ok = tpl.includes('sidebar') ? hasBody && hasAside : hasBody && t.includes('--wp--style--global--wide-size');
     ok ? pass(`${tpl} template renders${tpl.includes('sidebar') ? ' with the sidebar' : ' at wide width'}`) : fail(`${tpl} template: body ${hasBody}, sidebar ${hasAside}`);
 }
+// Site details: the contact sections are bound to AnyPress Blocks' site details. Without them (an older Blocks, or none)
+// they show their demo text; with them, the business's own details.
+const details = await php(`
+    $has = (bool) get_block_bindings_source('anypress/site-details');
+    if ($has) update_option('anypress_site_details', ['phone' => '(217) 555-0199', 'email' => 'owner@shop.test', 'address' => "9 Test Lane\\nTestville", 'hours' => 'Open on Tuesdays']);
+    $p = WP_Block_Patterns_Registry::get_instance()->get_registered('anypress/contact-details');
+    $id = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Details', 'post_name' => 'details-check', 'post_content' => $p['content']]);
+    echo json_encode(['has' => $has, 'id' => $id]);`);
+const dHtml = await (await fetch(`${base}/?page_id=${details.id}`)).text();
+if (details.has) {
+    dHtml.includes('href="tel:2175550199"') && dHtml.includes('owner@shop.test</a>') && dHtml.includes('9 Test Lane<br') && dHtml.includes('Open on Tuesdays')
+        ? pass('contact details show the business\'s own site details') : fail('contact details do not show the site details');
+    await php(`delete_option('anypress_site_details'); echo 1;`);
+} else {
+    dHtml.includes('14 Market Street') && dHtml.includes('Closed Sunday') ? pass('contact details show their demo text (no site details source)') : fail('contact details lost their demo text');
+}
 const starterPages = await php(`
     if (function_exists('anypress_register_patterns')) anypress_register_patterns();
     $out = [];

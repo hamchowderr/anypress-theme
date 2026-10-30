@@ -25,7 +25,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Hours', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}},"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'Tuesday to Saturday, 10am to 8pm. Sunday, 10am to 4pm.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
@@ -46,7 +46,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Book a treatment', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-outline"} -->
+<!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}},"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="tel:5550170"><?php esc_html_e( 'Call 555 0170', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>

@@ -69,8 +69,15 @@ def cols(items, gap="large", align="wide", valign=None, stack=True):
     cls = ["wp-block-columns"] + ([f"align{align}"] if align else []) + ([f"are-vertically-aligned-{valign}"] if valign else []) + ([] if stack else ["is-not-stacked-on-mobile"])
     return f'<!-- wp:columns {j(a)} -->\n<div class="{" ".join(cls)}">' + "\n\n".join(items) + '</div>\n<!-- /wp:columns -->'
 
-def h(text, level=2, size=None, align=None, family=None, typo=None, color=None):
-    a, cls, css = {}, ["wp-block-heading"], []
+# Site details (AnyPress Blocks' block bindings source): a block bound to one shows the business's own name, phone,
+# email, address or hours once they are set (Settings, or typed into any bound block), and its demo text until then.
+def SD(key): return {"source": "anypress/site-details", "args": {"key": key}}
+def bound(a, bind):
+    if bind: a.setdefault("metadata", {})["bindings"] = {"content": SD(bind)}
+    return a
+
+def h(text, level=2, size=None, align=None, family=None, typo=None, color=None, bind=None):
+    a, cls, css = bound({}, bind), ["wp-block-heading"], []
     if align: a["textAlign"] = align; cls.append(f"has-text-align-{align}")
     if level != 2: a["level"] = level
     if color: a["textColor"] = color; cls += [f"has-{color}-color", "has-text-color"]
@@ -85,8 +92,8 @@ def h(text, level=2, size=None, align=None, family=None, typo=None, color=None):
 
 def k2css(k): return {"lineHeight": "line-height", "textTransform": "text-transform", "fontStyle": "font-style", "fontWeight": "font-weight", "letterSpacing": "letter-spacing"}[k]
 
-def p(text, size=None, color=None, align=None, family=None, typo=None, raw=False):
-    a, cls, css = {}, [], []
+def p(text, size=None, color=None, align=None, family=None, typo=None, raw=False, bind=None):
+    a, cls, css = bound({}, bind), [], []
     if align: a["align"] = align; cls.append(f"has-text-align-{align}")
     if color: a["textColor"] = color; cls += [f"has-{color}-color", "has-text-color"]
     if family: a["fontFamily"] = family; cls.append(f"has-{family}-font-family")
@@ -99,12 +106,19 @@ def p(text, size=None, color=None, align=None, family=None, typo=None, raw=False
     sc = f' style="{";".join(css)}"' if css else ""
     return f'<!-- wp:paragraph{at} -->\n<p{c}{sc}>{text if raw else T(text)}</p>\n<!-- /wp:paragraph -->'
 
+def button_bindings(bind):
+    if bind.endswith("_link"): return {"url": SD(bind)}
+    return {"url": SD(bind + "_link"), "text": SD(bind)}
+
 def btns(items, justify=None):
     a = {"layout": {"type": "flex"}}
     if justify: a["layout"]["justifyContent"] = justify
     out = []
-    for label, style, href in items:
+    for label, style, href, *bind in items:
         ba = {}; cls = "wp-block-button"
+        # A fourth item binds the button: "phone" or "email" shows it and links to call or write; "phone_link" or
+        # "email_link" keeps the label and only links.
+        if bind: ba["metadata"] = {"bindings": button_bindings(bind[0])}
         if style: ba["className"] = f"is-style-{style}"; cls += f" is-style-{style}"
         at = (" " + j(ba)) if ba else ""
         out.append(f'<!-- wp:button{at} -->\n<div class="{cls}"><a class="wp-block-button__link wp-element-button" href="{href}">{T(label)}</a></div>\n<!-- /wp:button -->')
@@ -244,7 +258,7 @@ kit("ridge-hero", R, "Ridge hero: big words on hi-vis yellow",
  sec("Hero", cols([
    col(N([h("Burst pipe? We can be there within the hour.", 1, "poster"),
           p("Family-run plumbers and heating engineers covering the whole county since 2001. Licensed, insured and on call day and night.", "medium"),
-          btns([("Call 555 0142", None, "tel:5550142"), ("Get a free quote", "outline", "#quote")])]), "58%", valign="center"),
+          btns([("Call 555 0142", None, "tel:5550142", "phone"), ("Get a free quote", "outline", "#quote")])]), "58%", valign="center"),
    col(img("placeholder-tall.svg", "A plumber fitting a new dishwasher under a kitchen counter", "4/5"))], "x-large", "wide", "center"),
    "section-second-brand", ("x-large", "x-large", None, None)))
 
@@ -297,7 +311,7 @@ kit("ridge-call", R, "Ridge closing: the phone number, huge",
  "The last section of a trade's page: the phone number as large as the page allows, linked so phones can call it, with the hours under it. Part of the Ridge kit.",
  "call to action, phone, call, contact, emergency, ridge",
  sec("Call", N([p("Call us", "large", None, None, "big-shoulders", {"textTransform": "uppercase", "fontWeight": "800"}),
-   p('<a href="tel:5550142">' + T("555 0142") + '</a>', "poster", None, None, "big-shoulders", {"lineHeight": "0.9", "fontWeight": "900"}, raw=True),
+   p('<a href="tel:5550142">' + T("555 0142") + '</a>', "poster", None, None, "big-shoulders", {"lineHeight": "0.9", "fontWeight": "900"}, raw=True, bind="phone_linked"),
    p("Office hours 7am to 7pm, seven days. Emergencies day and night. Free quotes, with photos of what we find.", "medium")]), "section-brand", ("xx-large", "xx-large", None, None)))
 
 kit_page("kit-home-services", "Home page: Ridge kit, home services",
@@ -349,15 +363,20 @@ kit("hearth-story", H, "Hearth story: photo beside a story card",
           p("The flour comes from a mill forty miles away. The butter comes from the farm next to it.", "medium"), p("Maria and Luca", "large", None, None, "young-serif")]), None, "section-brand", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
-def visit(title, lines):
-    return col(N([h(title, 3, "large"), grp(N(p(l, "medium") for l in lines), gap="small")]))
+def visit(title, lines, bind=None):
+    """A heading and its lines. bind shows one site detail in their place (the lines, one per row, until it is set);
+    a line can also be (text, detail)."""
+    if bind:
+        return col(N([h(title, 3, "large"), p("<br>".join(T(l) for l in lines), "medium", raw=True, bind=bind)]))
+    rows = (p(l[0], "medium", bind=l[1]) if isinstance(l, tuple) else p(l, "medium") for l in lines)
+    return col(N([h(title, 3, "large"), grp(N(rows), gap="small")]))
 kit("hearth-visit", H, "Hearth visit: hours, address and how to order",
  "Practical details on the second brand colour in large type: opening hours, the address and how to order or book. Part of the Hearth kit; replace every detail with the real ones.",
  "contact, visit, opening hours, address, phone, order, hearth",
  sec("Visit", N([h("Come by", 2, "xxx-large"), cols([
-   visit("Hours", ["Tuesday to Friday, 7am to 3pm", "Saturday and Sunday, 8am to 3pm", "Closed Monday"]),
-   visit("Find us", ["14 Market Street, Springfield", "Two minutes from the station"]),
-   visit("Order", ["Cakes with three days' notice", "555 0198", "hello@example.com"])], "x-large", "wide", None)]), "section-second-brand"))
+   visit("Hours", ["Tuesday to Friday, 7am to 3pm", "Saturday and Sunday, 8am to 3pm", "Closed Monday"], "hours"),
+   visit("Find us", [("14 Market Street, Springfield", "address"), "Two minutes from the station"]),
+   visit("Order", ["Cakes with three days' notice", ("555 0198", "phone"), ("hello@example.com", "email")])], "x-large", "wide", None)]), "section-second-brand"))
 
 kit_page("kit-food", "Home page: Hearth kit, food and drink",
  "A complete home page for a café, bakery or restaurant in the Hearth kit: a menu card over a food photo, the menu with dotted leaders, four favourites on coloured tiles, the story beside a photo and the practical details. Apply the Hearth style for the look it was designed with.",
@@ -398,16 +417,16 @@ kit("still-treatments", W, "Still treatments: plain list with prices",
    treat("Quiet room", "Two hours with tea, the bath and nothing to do.", "$40"),
    treat("Gift voucher", "Any amount, sent by email or in a card.", "From $40")]), gap="x-large", layout={"type": "default"})]), content="48rem"))
 
-def practical(title, text):
-    return col(N([h(title, 3, "medium"), p(text, None, "secondary")]))
+def practical(title, text, bind=None):
+    return col(N([h(title, 3, "medium"), p(text, None, "secondary", bind=bind)]))
 kit("still-practical", W, "Still practical: how to find us, hours and what to know",
  "The practical details at the end of a page, on the tint colour: how to find the place, opening hours and what to know before coming, then the booking button. Part of the Still kit.",
  "contact, hours, location, before you come, booking, still",
  sec("Practical", N([cols([
    practical("Finding us", "Ground floor of the old mill, 3 Canal Street. Park on Station Road, two minutes' walk."),
-   practical("Hours", "Tuesday to Saturday, 10am to 8pm. Sunday, 10am to 4pm."),
+   practical("Hours", "Tuesday to Saturday, 10am to 8pm. Sunday, 10am to 4pm.", "hours"),
    practical("Before you come", "Arrive ten minutes early. Tell us about injuries or pregnancy when you book.")], "x-large", "wide", None),
-   btns([("Book a treatment", None, "#book"), ("Call 555 0170", "outline", "tel:5550170")])]), "section-tint"))
+   btns([("Book a treatment", None, "#book"), ("Call 555 0170", "outline", "tel:5550170", "phone")])]), "section-tint"))
 
 kit_page("kit-wellness", "Home page: Still kit, wellness",
  "A complete home page for a spa, massage therapist, yoga studio or clinic in the Still kit: a full-screen photo with the name along the bottom, a short welcome, two photos, treatments as a plain list and the practical details. Apply the Still style for the look it was designed with.",
@@ -452,7 +471,7 @@ kit("ledger-contact", L, "Ledger contact: talk to us",
  "contact, call, book a call, address, ledger",
  sec("Contact", cols([col(h("Talk to an accountant this week", 2, "xx-large"), "42%"),
    col(N([p("Book a free 30-minute call, or ring the office. You will speak to the person who would do your accounts.", "medium"),
-          p(T("2 Park Square, Leeds LS1 2NE") + "<br>" + T("0113 555 0190"), None, "secondary", raw=True), btns([("Book a free call", None, "#contact")])]))], "large", "wide", None)))
+          p("2 Park Square, Leeds LS1 2NE", None, "secondary", bind="address"), p("0113 555 0190", None, "secondary", bind="phone"), btns([("Book a free call", None, "#contact")])]))], "large", "wide", None)))
 
 kit_page("kit-professional", "Home page: Ledger kit, professional services",
  "A complete home page for an accountant, lawyer, consultant or agency in the Ledger kit: a title panel beside a photo, services set like a report, a client quotation, a fees table and contact. Apply the Ledger style for the look it was designed with.",

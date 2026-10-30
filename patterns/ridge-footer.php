@@ -43,7 +43,7 @@
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Plumbing and heating for homes and small businesses across the county since 2001. Licensed, insured, and on call day and night.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"xx-large","style":{"typography":{"fontWeight":"900","lineHeight":"1"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"big-shoulders","fontSize":"xx-large","style":{"typography":{"fontWeight":"900","lineHeight":"1"}}} -->
 <p class="has-big-shoulders-font-family has-xx-large-font-size" style="font-weight:900;line-height:1"><a href="tel:5550142"><?php esc_html_e( '555 0142', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
@@ -129,11 +129,11 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Visit or call', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"main-accent"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"textColor":"main-accent"} -->
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( '2140 Wabash Avenue, Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"main-accent"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}},"textColor":"main-accent"} -->
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Office: 7am to 7pm, seven days', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
