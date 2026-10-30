@@ -31,6 +31,7 @@ function anypress_register_pattern_categories() {
 		'anypress/pages'    => array( __( 'Starter pages', 'anypress' ), __( 'Whole pages to start from, for this kind of website.', 'anypress' ) ),
 		// Kits: sections designed together for one kind of business, each with its own style variation.
 		'anypress/kit-home-services' => array( __( 'Kit: Home services (Ridge)', 'anypress' ), __( 'Sections for trades and home services. They look as designed with the Ridge style.', 'anypress' ) ),
+		'anypress/kit-electrical'    => array( __( 'Kit: Electricians (Circuit)', 'anypress' ), __( 'Sections for electricians and electrical contractors. They look as designed with the Circuit style.', 'anypress' ) ),
 		'anypress/kit-food'          => array( __( 'Kit: Food and drink (Hearth)', 'anypress' ), __( 'Sections for cafés, bakeries and restaurants. They look as designed with the Hearth style.', 'anypress' ) ),
 		'anypress/kit-wellness'      => array( __( 'Kit: Wellness (Still)', 'anypress' ), __( 'Sections for spas, therapists and studios. They look as designed with the Still style.', 'anypress' ) ),
 		'anypress/kit-professional'  => array( __( 'Kit: Professional services (Ledger)', 'anypress' ), __( 'Sections for accountants, lawyers, consultants and agencies. They look as designed with the Ledger style.', 'anypress' ) ),

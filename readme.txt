@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.5.1
+Stable tag: 0.7.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,9 +17,10 @@ Style variations: six colour palettes (Forest, Plum, Ocean, Charcoal and gold, R
 
 Starter pages: home pages for trades and local services, food and drink, and classes and memberships, plus About, Services and Contact pages, a long sales page, an email signup page and a thank-you page. A links page (for the link in a social media bio) is there too. They appear when a new page is created.
 
-Kits: thirteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
+Kits: fourteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
 
 * Ridge, for trades and home services: condensed capitals, hi-vis yellow, flat colour panels and the phone number as the main action.
+* Circuit, for electricians: one bright grotesk, deep electric blue with a yellow spark, rounded cards and pill buttons.
 * Hearth, for cafés, bakeries and restaurants: a printed menu card with dotted lines to each price, olive and mustard.
 * Still, for spas, therapists and studios: light serif type, full-screen photography and plenty of space.
 * Ledger, for accountants, lawyers, consultants and agencies: a report layout, a strong sans for titles and deep teal.
@@ -126,9 +127,13 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 
 == Changelog ==
 
-= 0.5.1 =
+= 0.7.0 =
 * New "Blank page" template (no header or footer) for landing pages.
 * Image alt text in every pattern is escaped for HTML attributes (esc_attr_e), as Theme Check asks.
+
+= 0.6.0 =
+* New kit, Circuit, for electricians and electrical contractors: a full website with a home page, 12 starter pages (services, a service, about, reviews, service areas, an area, offers, booking, FAQ, careers, contact, thank you) and 23 sections, with a sticky header and call button, an offer popup, FAQ, reviews and work carousels, counters and a service-area map.
+* Its sections are in the inserter under "Kit: Electricians (Circuit)".
 
 = 0.5.0 =
 * Ridge is now a full plumbing and heating website: 13 starter pages (services, a service, about, reviews, service areas, an area, offers, quote, FAQ, careers, contact, thank you) and 18 new sections, with a sticky header and call button, a newsletter popup, FAQ, reviews carousel, counters and a service-area map.
