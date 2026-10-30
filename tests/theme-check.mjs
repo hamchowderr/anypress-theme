@@ -14,6 +14,10 @@
 //   - WordPress lists the colour and typography style variations
 //   - a page with every pattern renders without PHP errors; screenshots at phone and desktop width
 //
+// Kit patterns use the AnyPress Blocks plugin (Popup, Carousel, Counter, Map), which the check installs from its latest
+// release (ANYPRESS_BLOCKS_ZIP) or mounts from a local folder (ANYPRESS_BLOCKS). Its blocks render on the server, so the
+// check validates the blocks inside them.
+//
 // Environment: ANYPRESS_THEME (theme folder, default the repository root), STARTERS (a PHP file of extra starter pages to check too),
 // PLAYGROUND_WP, PLAYGROUND_PHP (default 7.1.3 and 8.3, what stores run), PLAYGROUND_PORT (9410),
 // SHOTS (folder for screenshots, default ./shots). Screenshots need Playwright with Chromium.
@@ -45,6 +49,9 @@ const PHP = process.env.PLAYGROUND_PHP || '8.3';
 const PORT = Number(process.env.PLAYGROUND_PORT || 9410);
 const SHOTS = resolve(process.env.SHOTS || resolve(HERE, 'shots'));
 const SERVE = process.argv.includes('--serve');
+const BLOCKS_DIR = process.env.ANYPRESS_BLOCKS ? resolve(process.env.ANYPRESS_BLOCKS) : null;
+const BLOCKS_ZIP = process.env.ANYPRESS_BLOCKS_ZIP || 'https://github.com/hamchowderr/anypress-blocks/releases/latest/download/anypress-blocks.zip';
+const ANYPRESS_BLOCKS = ['anypress/popup', 'anypress/carousel', 'anypress/counter', 'anypress/map'];
 
 const failures = [];
 const fail = (msg) => { failures.push(msg); console.log(`  FAIL ${msg}`); };
@@ -61,12 +68,16 @@ const cli = await runCLI({
         steps: [
             { step: 'defineWpConfigConsts', consts: { WP_DEBUG: true, WP_DEBUG_LOG: '/tmp/debug.log', WP_DEBUG_DISPLAY: false, AUTOMATIC_UPDATER_DISABLED: true } },
             { step: 'activateTheme', themeFolderName: 'anypress' },
+            BLOCKS_DIR
+                ? { step: 'activatePlugin', pluginPath: 'anypress-blocks/anypress-blocks.php' }
+                : { step: 'installPlugin', pluginData: { resource: 'url', url: BLOCKS_ZIP }, options: { activate: true } },
             { step: 'setSiteOptions', options: { blogname: 'Springfield Roofing', blogdescription: 'Family-run roofers since 2001' } },
         ],
     },
     mount: [
         { hostPath: THEME, vfsPath: '/wordpress/wp-content/themes/anypress' },
         ...(STARTERS ? [{ hostPath: STARTERS, vfsPath: '/wordpress/wp-content/mu-plugins/anypress-starters.php' }] : []),
+        ...(BLOCKS_DIR ? [{ hostPath: BLOCKS_DIR, vfsPath: '/wordpress/wp-content/plugins/anypress-blocks' }] : []),
     ],
     verbosity: 'quiet',
 });
@@ -149,6 +160,8 @@ for (const p of patterns) {
     const invalid = [];
     for (const b of blocks) {
         if (!b.name) continue;
+        // AnyPress Blocks render on the server and save only their inner blocks, which the walk checks.
+        if (b.name.startsWith('anypress/')) { if (!ANYPRESS_BLOCKS.includes(b.name)) invalid.push(`${b.name} (unknown block)`); continue; }
         const type = getBlockType(b.name);
         if (!type) { invalid.push(`${b.name} (unknown block)`); continue; }
         const [ok, log] = validateBlock(b, type);

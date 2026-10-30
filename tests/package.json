@@ -9,7 +9,8 @@
   "scripts": {
     "theme": "node theme-check.mjs",
     "serve": "node theme-check.mjs --serve",
-    "contrast": "node contrast.mjs"
+    "contrast": "node contrast.mjs",
+    "demo": "node demo.mjs"
   },
   "dependencies": {
     "@wordpress/block-library": "12.0.0",

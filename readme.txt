@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.4.3
+Stable tag: 0.5.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,6 +125,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.5.0 =
+* Ridge is now a full plumbing and heating website: 13 starter pages (services, a service, about, reviews, service areas, an area, offers, quote, FAQ, careers, contact, thank you) and 18 new sections, with a sticky header and call button, a newsletter popup, FAQ, reviews carousel, counters and a service-area map.
+* New block styles: "Stays on screen" for groups (a sticky header) and "Lines between" for the FAQ accordion.
+* Uses the AnyPress Blocks plugin (0.2.0 or later) for the popup, carousel, counters and map.
 
 = 0.4.3 =
 * Buttons on kit home pages now jump to their sections (Book, Menu, Pricing and others) instead of going nowhere.

@@ -29,7 +29,7 @@
 
 <!-- wp:column {"width":"20%"} -->
 <div class="wp-block-column" style="flex-basis:20%"><!-- wp:paragraph {"align":"right","fontFamily":"big-shoulders","fontSize":"large","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'From $180', 'anypress' ); ?></p>
+<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'From $150', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -37,13 +37,13 @@
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
-<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Gutters', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Drains', 'anypress' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Cleared, flushed and re-hung, with photos before and after.', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Blocked sinks, toilets and main lines cleared, with a camera check.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -57,19 +57,19 @@
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
-<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Flat roofs', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Water heaters', 'anypress' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Rubber and felt roofs patched or replaced.', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Tank and tankless heaters repaired or replaced, old one taken away.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"20%"} -->
 <div class="wp-block-column" style="flex-basis:20%"><!-- wp:paragraph {"align":"right","fontFamily":"big-shoulders","fontSize":"large","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'From $650', 'anypress' ); ?></p>
+<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'From $950', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -77,19 +77,19 @@
 <!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-top"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
-<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'New roofs', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Heating', 'anypress' ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'Full replacement with a 15-year warranty.', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><?php esc_html_e( 'Boilers and furnaces serviced, repaired or replaced.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"20%"} -->
 <div class="wp-block-column" style="flex-basis:20%"><!-- wp:paragraph {"align":"right","fontFamily":"big-shoulders","fontSize":"large","style":{"typography":{"fontWeight":"800"}}} -->
-<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'Free quote', 'anypress' ); ?></p>
+<p class="has-text-align-right has-big-shoulders-font-family has-large-font-size" style="font-weight:800"><?php esc_html_e( 'From $110', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

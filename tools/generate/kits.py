@@ -239,13 +239,13 @@ def kit_page(slug, title, desc, kw, parts):
 R = "anypress/kit-home-services"
 CAPS = {"lineHeight": "0.9"}
 kit("ridge-hero", R, "Ridge hero: big words on hi-vis yellow",
- "Opening section for a trade: a very large headline in capitals on the second brand colour, one sentence, the phone number as the main button and a photo of the crew at work. Part of the Ridge kit (home services); looks as designed with the Ridge style.",
+ "Opening section for a trade: a very large headline in capitals on the second brand colour, one sentence, the phone number as the main button and a photo of the team at work. Part of the Ridge kit (home services); looks as designed with the Ridge style.",
  "hero, trades, roofer, builder, plumber, phone, quote, ridge",
  sec("Hero", cols([
-   col(N([h("Roof leaking? We can be there today.", 1, "poster"),
-          p("Family-run roofers covering the whole county since 2001. Licensed, insured and on call seven days a week.", "medium"),
+   col(N([h("Burst pipe? We can be there within the hour.", 1, "poster"),
+          p("Family-run plumbers and heating engineers covering the whole county since 2001. Licensed, insured and on call day and night.", "medium"),
           btns([("Call 555 0142", None, "tel:5550142"), ("Get a free quote", "outline", "#quote")])]), "58%", valign="center"),
-   col(img("placeholder-tall.svg", "Two roofers on ladders fitting new boards to a house", "4/5"))], "x-large", "wide", "center"),
+   col(img("placeholder-tall.svg", "A plumber fitting a new dishwasher under a kitchen counter", "4/5"))], "x-large", "wide", "center"),
    "section-second-brand", ("x-large", "x-large", None, None)))
 
 def panel(big, small, style, width=None):
@@ -254,9 +254,9 @@ kit("ridge-proof", R, "Ridge proof: three facts on coloured panels",
  "Three facts that make people trust a trade (years in business, guarantee, licence) on panels of different colours and widths, edge to edge. Part of the Ridge kit; only state facts the owner has confirmed.",
  "credentials, proof, licensed, insured, guarantee, years, ridge",
  sec("Proof", cols([
-   panel("25 years", "On the same county's roofs. Most of our work comes from neighbours of past jobs.", "section-dark", "40%"),
-   panel("15-year warranty", "On every new roof, in writing.", "section-brand"),
-   panel("Licensed", "State licence 48213. Fully insured.", "section-tint")], "0", "full", None),
+   panel("Since 2001", "In the same county. Most of our work comes from neighbors of past jobs.", "section-dark", "40%"),
+   panel("1-year guarantee", "On every repair, parts and labour, in writing.", "section-brand"),
+   panel("Licensed", "Master plumber licence 48213. Fully insured.", "section-tint")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 def svc_row(name, text, price):
@@ -265,16 +265,16 @@ kit("ridge-services", R, "Ridge services: big list with prices on dark",
  "Services as a big list on the dark section style: each row has the service in large capitals, one line about it and a starting price. No icons or cards. Part of the Ridge kit.",
  "services, prices, price list, repairs, trades, ridge",
  sec("Services", N([h("What we fix", 2, "xxx-large"), grp(N([
-   svc_row("Leaks", "Found, fixed and photographed, the same day when we can.", "From $180"),
-   svc_row("Gutters", "Cleared, flushed and re-hung, with photos before and after.", "From $120"),
-   svc_row("Flat roofs", "Rubber and felt roofs patched or replaced.", "From $650"),
-   svc_row("New roofs", "Full replacement with a 15-year warranty.", "Free quote")]), gap="large", layout={"type": "default"}, align="wide")]),
+   svc_row("Leaks", "Found, fixed and photographed, the same day when we can.", "From $150"),
+   svc_row("Drains", "Blocked sinks, toilets and main lines cleared, with a camera check.", "From $120"),
+   svc_row("Water heaters", "Tank and tankless heaters repaired or replaced, old one taken away.", "From $950"),
+   svc_row("Heating", "Boilers and furnaces serviced, repaired or replaced.", "From $110")]), gap="large", layout={"type": "default"}, align="wide")]),
    "section-dark"))
 
 kit("ridge-photo", R, "Ridge photo: full-width job photo with a caption bar",
  "One full-width photo of a real job with a short caption on a solid bar in the corner: where it was and what was done. Part of the Ridge kit; use the owner's own photo.",
  "photo, gallery, job, project, full width, caption, ridge",
- cover(grp(p("Re-roofing a 1920s farmhouse in Oak Hill, in slate from the original quarry.", "medium"), "section-card", ("medium", "medium", "medium", "medium"), layout={"type": "constrained", "contentSize": "30rem", "justifyContent": "left"}),
+ cover(grp(p("A 1920s bathroom in Chatham, re-plumbed in new copper with the old clawfoot bath kept.", "medium"), "section-card", ("medium", "medium", "medium", "medium"), layout={"type": "constrained", "contentSize": "30rem", "justifyContent": "left"}),
    "Job photo", "placeholder-wide.svg", 0, "75vh", "bottom left", ("large", "large", "medium", "medium")))
 
 kit("ridge-areas", R, "Ridge areas: towns served as a big list",
@@ -288,7 +288,7 @@ kit("ridge-reviews", R, "Ridge reviews: one big, two small",
  "Customer reviews on panels of different sizes: one long review large on the brand colour, two short ones beside it. Part of the Ridge kit; use real reviews with the customer's name and town.",
  "reviews, testimonials, customers, proof, ridge",
  sec("Reviews", cols([
-   col(quote("They found a leak two other roofers missed, fixed it the same afternoon and sent photos of every step.", "Dana R., Springfield", "xx-large", "big-shoulders"), "62%", "section-brand", PAD_CARD, "bottom"),
+   col(quote("They found a leak two other plumbers missed, fixed it the same afternoon and sent photos of every step.", "Dana R., Springfield", "xx-large", "big-shoulders"), "62%", "section-brand", PAD_CARD, "bottom"),
    col(N([grp(N([p("Booked on Monday, fixed on Tuesday, and the price did not change.", "medium"), p("Jo M., Riverside", None, "secondary")]), "section-tint", PAD_CARD, "small"),
           grp(N([p("Tidy, polite and they explained every step in plain words.", "medium"), p("Carlos T., Oak Hill", None, "secondary")]), "section-tint", PAD_CARD, "small")]))], "small", "wide", None),
    None, ("x-large", "x-large", None, None)))
@@ -298,10 +298,10 @@ kit("ridge-call", R, "Ridge closing: the phone number, huge",
  "call to action, phone, call, contact, emergency, ridge",
  sec("Call", N([p("Call us", "large", None, None, "big-shoulders", {"textTransform": "uppercase", "fontWeight": "800"}),
    p('<a href="tel:5550142">' + T("555 0142") + '</a>', "poster", None, None, "big-shoulders", {"lineHeight": "0.9", "fontWeight": "900"}, raw=True),
-   p("Seven days, 7am to 8pm. Free quotes, with photos of what we find.", "medium")]), "section-brand", ("xx-large", "xx-large", None, None)))
+   p("Office hours 7am to 7pm, seven days. Emergencies day and night. Free quotes, with photos of what we find.", "medium")]), "section-brand", ("xx-large", "xx-large", None, None)))
 
 kit_page("kit-home-services", "Home page: Ridge kit, home services",
- "A complete home page for a roofer, builder, plumber or other trade in the Ridge kit: a loud hero with the phone number, proof on coloured panels, services with prices, a job photo, areas served, reviews and a huge phone number to close. Apply the Ridge style for the look it was designed with.",
+ "A complete home page for a plumber, electrician, roofer or other trade in the Ridge kit: a loud hero with the phone number, proof on coloured panels, numbers that count up, services with prices and links to their pages, how it works, a job photo, reviews in a carousel, areas served with a map, answers to common questions and a huge phone number to close. Apply the Ridge style for the look it was designed with.",
  "home, trades, roofer, builder, plumber, electrician, cleaner, landscaper, kit, ridge",
  ["ridge-hero", "ridge-proof", "ridge-services", "ridge-photo", "ridge-areas", "ridge-reviews", "ridge-call"])
 
@@ -519,6 +519,7 @@ write("page-links", "Links page (link in bio)",
 print("everyday ok")
 
 exec(open(os.path.join(HERE, "kits_more.py")).read())
+exec(open(os.path.join(HERE, "kit_ridge.py")).read())
 
 import importlib.util as _u
 _s = _u.spec_from_file_location("bc", os.path.join(HERE, "blocks_cats.py")); _m = _u.module_from_spec(_s); _s.loader.exec_module(_m); _m.apply(OUT)
