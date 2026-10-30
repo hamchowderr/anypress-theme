@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 
-export async function checkDemo({ base, shots }) {
+export async function checkDemo({ base, shots, quote = '/get-a-quote/' }) {
     const failures = [];
     const check = (ok, msg, detail = '') => {
         if (ok) console.log(`  ok   ${msg}`);
@@ -137,7 +137,7 @@ export async function checkDemo({ base, shots }) {
         }
     };
     for (const [path, values, label] of [
-        ['/get-a-quote/', [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['input[name=phone]', '555 0100'], ['select[name=service]', ''], ['textarea[name=message]', 'Kitchen sink drains slowly.']], 'the quote form'],
+        [quote, [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['input[name=phone]', '555 0100'], ['select[name=service]', ''], ['textarea[name=message]', 'Something needs fixing.']], 'the quote form'],
         ['/contact/', [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['textarea[name=message]', 'Do you work Sundays?']], 'the contact form'],
         ['/careers/', [['#apply input[name="names[first_name]"], form input[name="names[first_name]"]', 'Test Visitor'], ['form input[name=email]', 'test@example.com'], ['form input[name=phone]', '555 0100'], ['form select[name=job]', ''], ['form textarea[name=message]', 'Five years on service work.']], 'the job application'],
     ]) {
