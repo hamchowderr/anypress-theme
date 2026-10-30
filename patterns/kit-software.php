@@ -36,7 +36,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"16/9","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'The app\'s dashboard showing paid and unpaid invoices', 'anypress' ); ?>" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'The app\'s dashboard showing paid and unpaid invoices', 'anypress' ); ?>" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image --></section>
 <!-- /wp:group -->
 

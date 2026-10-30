@@ -1024,6 +1024,13 @@
 			"postTypes": [
 				"page"
 			]
+		},
+		{
+			"name": "page-blank",
+			"title": "Blank page (no header or footer)",
+			"postTypes": [
+				"page"
+			]
 		}
 	]
 }

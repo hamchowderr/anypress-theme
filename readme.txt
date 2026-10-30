@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.6.0
+Stable tag: 0.6.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.6.1 =
+* New "Blank page" template (no header or footer) for landing pages.
+* Image alt text in every pattern is escaped for HTML attributes (esc_attr_e), as Theme Check asks.
 
 = 0.6.0 =
 * New kit, Circuit, for electricians and electrical contractors: a full website with a home page, 12 starter pages (services, a service, about, reviews, service areas, an area, offers, booking, FAQ, careers, contact, thank you) and 23 sections, with a sticky header and call button, an offer popup, FAQ, reviews and work carousels, counters and a service-area map.
