@@ -198,6 +198,21 @@ const blank = await php(`
 const blankHtml = await (await fetch(`${base}/?page_id=${blank.id}`)).text();
 blankHtml.includes('Only this') && !/<header[^>]*wp-block-template-part/.test(blankHtml) && !/<footer[^>]*wp-block-template-part/.test(blankHtml)
     ? pass('blank page template: content only, no header or footer') : fail('blank page template shows a header or footer, or no content');
+const extra = await php(`
+    $out = [];
+    foreach (['page-with-sidebar' => 'page', 'page-wide' => 'page', 'single-with-sidebar' => 'post'] as $tpl => $type) {
+        $id = wp_insert_post(['post_type' => $type, 'post_status' => 'publish', 'post_title' => $tpl, 'post_name' => $tpl . '-check', 'post_content' => '<!-- wp:paragraph --><p>Body of ' . $tpl . '</p><!-- /wp:paragraph -->']);
+        update_post_meta($id, '_wp_page_template', $tpl);
+        $out[$tpl] = $id;
+    }
+    echo json_encode($out);`);
+for (const [tpl, id] of Object.entries(extra)) {
+    const t = await (await fetch(`${base}/?${tpl.startsWith('single') ? 'p' : 'page_id'}=${id}`)).text();
+    const hasBody = t.includes(`Body of ${tpl}`);
+    const hasAside = /<aside[^>]*wp-block-template-part/.test(t) && t.includes('wp-block-search');
+    const ok = tpl.includes('sidebar') ? hasBody && hasAside : hasBody && t.includes('--wp--style--global--wide-size');
+    ok ? pass(`${tpl} template renders${tpl.includes('sidebar') ? ' with the sidebar' : ' at wide width'}`) : fail(`${tpl} template: body ${hasBody}, sidebar ${hasAside}`);
+}
 const starterPages = await php(`
     if (function_exists('anypress_register_patterns')) anypress_register_patterns();
     $out = [];

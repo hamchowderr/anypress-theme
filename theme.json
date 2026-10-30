@@ -1015,6 +1015,11 @@
 			"name": "header-checkout",
 			"title": "Checkout header",
 			"area": "header"
+		},
+		{
+			"name": "sidebar",
+			"title": "Sidebar",
+			"area": "uncategorized"
 		}
 	],
 	"customTemplates": [
@@ -1030,6 +1035,27 @@
 			"title": "Blank page (no header or footer)",
 			"postTypes": [
 				"page"
+			]
+		},
+		{
+			"name": "page-wide",
+			"title": "Wide page",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-with-sidebar",
+			"title": "Page with sidebar",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-with-sidebar",
+			"title": "Post with sidebar",
+			"postTypes": [
+				"post"
 			]
 		}
 	]
