@@ -129,6 +129,8 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 
 = 0.7.0 =
 * New templates: Wide page, Page with sidebar and Post with sidebar, with a Sidebar template part (search, latest posts, topics).
+
+= 0.6.1 =
 * New "Blank page" template (no header or footer) for landing pages.
 * Image alt text in every pattern is escaped for HTML attributes (esc_attr_e), as Theme Check asks.
 
