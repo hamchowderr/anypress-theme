@@ -34,7 +34,7 @@
 <div class="wp-block-group"><!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"},"style":{"typography":{"fontWeight":"600"}}} /-->
 
 <!-- wp:buttons {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","metadata":{"blockVisibility":{"viewport":{"mobile":false}}}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","metadata":{"blockVisibility":{"viewport":{"mobile":false}},"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="tel:5550187"><?php esc_html_e( '555 0187', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
@@ -42,7 +42,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book-a-visit/"><?php esc_html_e( 'Book a visit', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"tablet":false,"desktop":false}}}} -->
+<!-- wp:button {"metadata":{"blockVisibility":{"viewport":{"tablet":false,"desktop":false}},"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550187"><?php esc_html_e( 'Call', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

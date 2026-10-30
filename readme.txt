@@ -128,6 +128,7 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 == Changelog ==
 
 = 0.7.0 =
+* Phone numbers, email addresses, addresses and opening hours in the kits and the Contact details section are bound to the business's site details (AnyPress Blocks 0.3.0 or later): set them once and every page shows them. Without AnyPress Blocks they show their example text, as before.
 * New templates: Wide page, Page with sidebar and Post with sidebar, with a Sidebar template part (search, latest posts, topics).
 
 = 0.6.1 =

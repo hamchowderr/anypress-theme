@@ -39,14 +39,17 @@ def heading(text, level=2, size=None, align=None, extra=None):
     at = (" " + j(a)) if a else ""
     return f'<!-- wp:heading{at} -->\n<h{level} class="{" ".join(cls)}">{T(text)}</h{level}>\n<!-- /wp:heading -->'
 
-def para(text, size=None, color=None, align=None):
+def para(text, size=None, color=None, align=None, bind=None, raw=False):
+    """bind: one of AnyPress Blocks' site details (name, phone, email, address, hours, phone_linked, email_linked),
+    shown in place of the text once the business sets it."""
     a = {}; cls = []
+    if bind: a["metadata"] = {"bindings": {"content": {"source": "anypress/site-details", "args": {"key": bind}}}}
     if align: a["align"] = align; cls.append(f"has-text-align-{align}")
     if color: a["textColor"] = color; cls += [f"has-{color}-color", "has-text-color"]
     if size: a["fontSize"] = size; cls.append(f"has-{size}-font-size")
     at = (" " + j(a)) if a else ""
     c = f' class="{" ".join(cls)}"' if cls else ""
-    return f'<!-- wp:paragraph{at} -->\n<p{c}>{T(text)}</p>\n<!-- /wp:paragraph -->'
+    return f'<!-- wp:paragraph{at} -->\n<p{c}>{text if raw else T(text)}</p>\n<!-- /wp:paragraph -->'
 
 def buttons(items, justify=None):
     a = {"layout": {"type": "flex"}}
@@ -148,15 +151,20 @@ write("call-to-action-dark", "Call to action on a dark band",
  section("Call to action", "section-dark", group(heading("Ready when you are", 2, "xx-large", "center") + "\n\n" + para("Tell us what you need and we will reply within one working day.", "medium", None, "center") + "\n\n" + buttons([("Get in touch", None)], "center"), "medium"), "xx-large", "xx-large", "44rem"))
 
 # 5. Contact details
-def detail(label, lines):
-    return group(heading(label, 3, "base") + "\n\n" + "\n\n".join(para(l, None, "secondary") for l in lines), "small")
+def detail(label, lines, bind=None):
+    """A label and its lines. bind shows one site detail in their place (each line on its own row until it is set);
+    a line can also be (text, detail)."""
+    if bind:
+        return group(heading(label, 3, "base") + "\n\n" + para("<br>".join(T(l) for l in lines), None, "secondary", bind=bind, raw=True), "small")
+    rows = (para(l[0], None, "secondary", bind=l[1]) if isinstance(l, tuple) else para(l, None, "secondary") for l in lines)
+    return group(heading(label, 3, "base") + "\n\n" + "\n\n".join(rows), "small")
 write("contact-details", "Contact details: hours, address and phone",
- "Three columns with opening hours, the address and ways to get in touch, on the tint section style. Use on contact pages and near the bottom of home pages. Replace every detail with the owner's real ones.",
+ "Three columns with opening hours, the address and ways to get in touch, on the tint section style. Use on contact pages and near the bottom of home pages. With AnyPress Blocks the details are the business's own site details (set once, shown everywhere); otherwise replace them with the owner's real ones.",
  "contact, anypress-details", "contact, opening hours, address, phone, email, location",
  section("Contact details", "section-tint", heading("Visit or get in touch", 2) + "\n\n" + columns([
-   (None, detail("Opening hours", ["Monday to Friday, 7am to 4pm", "Saturday, 8am to 2pm", "Closed Sunday"])),
-   (None, detail("Address", ["14 Market Street", "Springfield"])),
-   (None, detail("Contact", ["555 0142", "hello@example.com"]))], None, "large"), "x-large", "x-large", "80rem"))
+   (None, detail("Opening hours", ["Monday to Friday, 7am to 4pm", "Saturday, 8am to 2pm", "Closed Sunday"], "hours")),
+   (None, detail("Address", ["14 Market Street", "Springfield"], "address")),
+   (None, detail("Contact", [("555 0142", "phone_linked"), ("hello@example.com", "email_linked")]))], None, "large"), "x-large", "x-large", "80rem"))
 
 # 6. Single testimonial
 def quote(text, cite):

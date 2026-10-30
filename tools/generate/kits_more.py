@@ -244,9 +244,9 @@ kit("gloss-book", K, "Gloss booking: hours, address and how to book",
  "The closing section on the second brand colour: a big invitation to book, opening hours, the address and the cancellation policy. Part of the Gloss kit.",
  "booking, book now, hours, address, contact, policy, gloss",
  sec("Book", cols([
-   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "#book"), ("Call 555 0133", "outline", "tel:5550133")])]), "55%"),
+   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "#book"), ("Call 555 0133", "outline", "tel:5550133", "phone")])]), "55%"),
    col(stackg([stackg([h("Hours", 3, "medium"), p("Tuesday to Friday, 9am to 8pm" + "", None), p("Saturday, 9am to 5pm")], "x-small"),
-               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield")], "x-small"),
+               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield", bind="address")], "x-small"),
                stackg([h("Changing a booking", 3, "medium"), p("Please give us 24 hours' notice to move or cancel.")], "x-small")], "large"))], "xx-large", "wide", None), "section-second-brand"))
 
 kit_page("kit-salon", "Home page: Gloss kit, salon and beauty",
@@ -287,7 +287,7 @@ kit("commons-join", K, "Commons membership: levels and what each includes",
    tier("Individual", "$60", "For sole traders and retired members.", ["Breakfasts at member price", "The monthly newsletter", "A vote at the annual meeting"], "section-card"),
    tier("Small business", "$240", "For businesses with up to 25 staff.", ["Everything in Individual", "A listing in the directory", "Two places at every event"], "section-brand-soft"),
    tier("Corporate", "$900", "For larger employers and sponsors.", ["Everything in Small business", "Your logo on event pages", "A seat on a committee"], "section-card")], 3, "16rem", "medium"),
-   btns([("Join online", None, "#join"), ("Ask a question", "outline", "mailto:hello@example.com")])]), "section-tint"))
+   btns([("Join online", None, "#join"), ("Ask a question", "outline", "mailto:hello@example.com", "email_link")])]), "section-tint"))
 
 kit("commons-news", K, "Commons news: the latest three posts",
  "The three newest posts with the date and title, under a heading. Part of the Commons kit; posts are written in the site's blog and appear here on their own.",
@@ -410,7 +410,7 @@ kit("frame-clients", K, "Frame clients: names in a plain grid",
 kit("frame-contact", K, "Frame contact: the email address, huge",
  "The closing section: an invitation to get in touch and the email address as large as the page allows, with social links in small type. Part of the Frame kit.",
  "contact, email, hire, commission, frame",
- sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True),
+ sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True, bind="email_linked"),
    row([mono("Instagram"), mono("Behance"), mono("Linkedin")], "left", "large")]), pad=("xx-large", "xx-large", None, None)))
 
 kit_page("kit-portfolio", "Home page: Frame kit, creative portfolio",
@@ -461,7 +461,7 @@ kit("keystone-agent", K, "Keystone agent: meet the agent",
  "agent, realtor, about, contact, licence, keystone",
  sec("Agent", cols([col(img("placeholder-tall.svg", "Portrait of the agent", "4/5"), "36%"),
    col(N([mono("Your agent"), h("Claire Hollis", 2, "xxx-large"), p("Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.", "medium"),
-          p(T("Licensed real estate broker, NY 10491201234") + "<br>" + T("845 555 0117 · claire@example.com"), None, "secondary", raw=True), btns([("Call Claire", None, "tel:8455550117"), ("Send a message", "outline", "mailto:claire@example.com")])]), None, None, None, "center")], "xx-large", "wide", "center")))
+          p(T("Licensed real estate broker, NY 10491201234") + "<br>" + T("845 555 0117 · claire@example.com"), None, "secondary", raw=True), btns([("Call Claire", None, "tel:8455550117", "phone_link"), ("Send a message", "outline", "mailto:claire@example.com", "email_link")])]), None, None, None, "center")], "xx-large", "wide", "center")))
 
 kit("keystone-valuation", K, "Keystone valuation: what's your home worth?",
  "The closing section on the second brand colour: an offer of a free valuation, how it works in one sentence and the button. Part of the Keystone kit.",
@@ -605,8 +605,8 @@ write("contact-form-section", "Contact: details beside a message box",
  "anypress-details, call-to-action", "contact, contact form, get in touch, message, enquiry",
  sec("Contact", cols([
    col(N([h("Get in touch", 2, "xx-large"), p("We answer every message within one working day.", "medium", "secondary"),
-          stackg([stackg([h(a, 3, "medium"), p(b)], "x-small") for a, b in [("Phone", "555 0142"), ("Email", "hello@example.com"), ("Visit", "14 Market Street, Springfield"), ("Hours", "Monday to Friday, 9am to 5pm")]], "medium")]), "45%"),
-   col(card(N([h("Send us a message", 3, "large"), p("Tell us what you need and the best way to reach you.", None, "secondary"), btns([("Email us", None, "mailto:hello@example.com")])]), "section-tint"))], "xx-large", "wide", None)))
+          stackg([stackg([h(a, 3, "medium"), p(b, bind=k)], "x-small") for a, b, k in [("Phone", "555 0142", "phone_linked"), ("Email", "hello@example.com", "email_linked"), ("Visit", "14 Market Street, Springfield", "address"), ("Hours", "Monday to Friday, 9am to 5pm", "hours")]], "medium")]), "45%"),
+   col(card(N([h("Send us a message", 3, "large"), p("Tell us what you need and the best way to reach you.", None, "secondary"), btns([("Email us", None, "mailto:hello@example.com", "email_link")])]), "section-tint"))], "xx-large", "wide", None)))
 
 def tfeat(title, text):
     return stackg([sep(), h(title, 3, "medium"), p(text, None, "secondary")], "small")
@@ -625,7 +625,7 @@ write("footer-columns", "Footer: columns of links",
  "footer", "footer, links, columns, sitemap, social",
  grp(N([cols([col(stackg([dyn("site-title", {"level": 0}), p("Family-run roofers covering the whole county since 2001.", None, "main-accent"), social(["facebook", "instagram"])], "medium"), "34%"),
    fcol("Pages", [("Services", "#"), ("About", "#"), ("Reviews", "#"), ("Blog", "#")]), fcol("Help", [("Get a quote", "#"), ("Questions", "#"), ("Privacy", "#")]),
-   col(stackg([h("Visit", 2, "small", None, None, {"textTransform": "uppercase", "letterSpacing": "0.08em"}), p(T("14 Market Street") + "<br>" + T("Springfield"), raw=True), p("555 0142")], "small"))], "large", None, None),
+   col(stackg([h("Visit", 2, "small", None, None, {"textTransform": "uppercase", "letterSpacing": "0.08em"}), p(T("14 Market Street") + "<br>" + T("Springfield"), raw=True, bind="address"), p("555 0142", bind="phone")], "small"))], "large", None, None),
    sep(), row([p("All rights reserved.", "small", "main-accent"), p('<a href="#">' + T("Back to top") + "</a>", "small", raw=True)])]),
    "section-dark", ("x-large", "large", None, None), "large", {"type": "constrained", "contentSize": "80rem"}, align="full", name="Footer"), "core/template-part/footer")
 

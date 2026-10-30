@@ -28,13 +28,13 @@ def ccard(inner, style="section-card", pad=PAD_CARD):
     return grp(inner, style, pad, "small", {"type": "default"}, radius="lg")
 
 def tel_link(size="xx-large", text=CPHONE):
-    return p(f'<a href="{CTEL}">' + T(text) + '</a>', size, None, None, CF, {"fontWeight": "800", "lineHeight": "1"}, raw=True)
+    return p(f'<a href="{CTEL}">' + T(text) + '</a>', size, None, None, CF, {"fontWeight": "800", "lineHeight": "1"}, raw=True, bind="phone_linked" if text == CPHONE else None)
 
 def c_call_buttons():
     """The header's buttons: Book a visit and the number on tablets and computers, just "Call" on phones."""
     book = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"mobile": False}}}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{BOOK}">{T("Book a visit")}</a></div>\n<!-- /wp:button -->'
-    call = f'<!-- wp:button {j({"className": "is-style-outline", "metadata": {"blockVisibility": {"viewport": {"mobile": False}}}})} -->\n<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="{CTEL}">{T(CPHONE)}</a></div>\n<!-- /wp:button -->'
-    short = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"tablet": False, "desktop": False}}}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{CTEL}">{T("Call")}</a></div>\n<!-- /wp:button -->'
+    call = f'<!-- wp:button {j({"className": "is-style-outline", "metadata": {"blockVisibility": {"viewport": {"mobile": False}}, "bindings": button_bindings("phone")}})} -->\n<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="{CTEL}">{T(CPHONE)}</a></div>\n<!-- /wp:button -->'
+    short = f'<!-- wp:button {j({"metadata": {"blockVisibility": {"viewport": {"tablet": False, "desktop": False}}, "bindings": button_bindings("phone_link")}})} -->\n<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="{CTEL}">{T("Call")}</a></div>\n<!-- /wp:button -->'
     return '<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"nowrap"}} -->\n<div class="wp-block-buttons">' + N([call, book, short]) + '</div>\n<!-- /wp:buttons -->'
 
 def checks(items, color="primary"):
@@ -114,7 +114,7 @@ kit("circuit-hero", C, "Circuit hero: a promise over a photo of the work",
  cover(grp(N([eyebrow("Electricians in Columbus since 2009", "primary-alt"),
               h("Safe, tidy electrical work, done right the first time", 1, "xxx-large"),
               p("Licensed electricians for homes and small businesses: repairs, panel upgrades, EV chargers and lighting. Clear prices before we start.", "medium"),
-              btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)]),
+              btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")]),
               checks(["Licensed and insured", "Same-day repairs", "2-year guarantee"])]), None, None, "medium", {"type": "constrained", "contentSize": "52rem", "justifyContent": "left"}).replace(
               '<!-- wp:group {', '<!-- wp:group {"textColor":"base",', 1).replace('class="wp-block-group', 'class="wp-block-group has-base-color has-text-color', 1),
    "Hero", "placeholder-wide.svg", 70, "88vh", "center left", ("xx-large", "xx-large", "medium", "medium")))
@@ -198,7 +198,7 @@ kit("circuit-cta", C, "Circuit call to action: book today, on yellow",
  "call to action, book, phone, banner, electrician, circuit",
  csec("Book", cols([
    col(N([h("Need an electrician today?", 2, "xxx-large"), p("Book a two-hour window online, or call and talk to a real person. Same-day repairs most weekdays.", "medium"),
-          btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)])]), "55%", valign="center"),
+          btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")])]), "55%", valign="center"),
    col(cimg("A white light fitting with a round bulb on a brick wall", "4/3"))], "x-large", "wide", "center"), "section-second-brand", ("x-large", "x-large", None, None)))
 
 kit("circuit-faq", C, "Circuit questions: answers that open and close",
@@ -248,11 +248,11 @@ CFOOTER = grp(N([
         col(N([dyn("site-title", {"level": 0, "fontSize": "x-large"}),
                p("Licensed electricians for homes and small businesses in Columbus and the suburbs since 2009.", None, "main-accent"),
                tel_link("xx-large"),
-               p('<a href="mailto:hello@example.com">hello@example.com</a>', None, None, None, None, None, raw=True),
+               p('<a href="mailto:hello@example.com">hello@example.com</a>', None, None, None, None, None, raw=True, bind="email_linked"),
                social(["facebook", "instagram", "google"])]), "34%"),
         col(cflinks("Services", [(n, f"/services/{s}/") for n, s, *_ in CSERVICES])),
         col(cflinks("Company", [("About us", "/about/"), ("Reviews", "/reviews/"), ("Service areas", "/service-areas/"), ("Special offers", "/special-offers/"), ("Careers", "/careers/"), ("Blog", "/blog/"), ("Questions", "/faq/")])),
-        col(N([h("Visit or call", 3, "medium"), p("880 King Avenue, Columbus", None, "main-accent"), p("Mon to Sat, 7am to 7pm", None, "main-accent"), p("Emergencies 24/7", None, "main-accent"),
+        col(N([h("Visit or call", 3, "medium"), p("880 King Avenue, Columbus", None, "main-accent", bind="address"), p("Mon to Sat, 7am to 7pm", None, "main-accent", bind="hours"), p("Emergencies 24/7", None, "main-accent"),
                btns([("Book a visit", None, BOOK)])]))], "large", "wide", "top"),
         sep(),
         row([p("© Brightline Electric. State electrical contractor license EL-47215.", "small", "main-accent"),
@@ -283,7 +283,7 @@ kit("circuit-service-detail", C, "Circuit service: what's included and the price
           cimg("Photo of the service: rows of breakers in an electrical distribution board", "16/9")]), "60%"),
    col(ccard(N([eyebrow("EV chargers"), p("From $950", "xxx-large", None, None, CF, {"fontWeight": "800", "lineHeight": "1"}),
                p("Most garage installs, with the charger supplied by you. Long cable runs or a panel upgrade are quoted first."),
-               btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)])]), "section-tint", PAD_CARD))], "x-large", "wide", "top")))
+               btns([("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")])]), "section-tint", PAD_CARD))], "x-large", "wide", "top")))
 
 kit("circuit-careers", C, "Circuit careers: why work here and open jobs",
  "A careers section for an electrician: four reasons to join, then each open job on a rounded card with its pay and what it needs, and the application. Part of the Circuit kit; keep the jobs current.",
@@ -321,8 +321,8 @@ kit("circuit-contact", C, "Circuit contact: details, form and map",
  "contact, phone, email, address, hours, map, form, electrician, circuit",
  csec("Contact", N([cols([
    col(N([eyebrow("Get in touch"), h("Call, write or drop by", 2, "xx-large"), tel_link("xxx-large"),
-          p('<a href="mailto:hello@example.com">hello@example.com</a>', "medium", None, None, None, None, raw=True),
-          p("880 King Avenue, Columbus", "medium"), p("Mon to Sat, 7am to 7pm. Emergencies 24/7.", None, "secondary")]), "42%"),
+          p('<a href="mailto:hello@example.com">hello@example.com</a>', "medium", None, None, None, None, raw=True, bind="email_linked"),
+          p("880 King Avenue, Columbus", "medium", bind="address"), p("Mon to Sat, 7am to 7pm. Emergencies 24/7.", None, "secondary")]), "42%"),
    col(ccard(N([h("Send a message", 3, "x-large"), form("contact", "Call " + CPHONE, CTEL, "We reply within two working hours.")]), "section-tint", PAD_CARD))], "x-large", "wide", "top"),
    mapb("880 King Avenue, Columbus, Ohio", 39.9937, -83.0219, 14, "21/9", "lg")])))
 
@@ -345,13 +345,13 @@ kit_page("kit-home-electrical", "Home page: Circuit kit, electricians",
 circuit_page("circuit-page-services", "Services page: Circuit kit",
  "A Services page for an electrician: a page heading, every service as a card linking to its own page, how a visit works, why customers choose them, common questions and a booking band. Circuit kit.",
  "services, all services, prices, electrician, circuit",
- [cpage_hero("Electrical services", "Repairs, upgrades and new installs for homes and small businesses, at a fixed price agreed before we start.", "Services", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)]),
+ [cpage_hero("Electrical services", "Repairs, upgrades and new installs for homes and small businesses, at a fixed price agreed before we start.", "Services", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")]),
   BODIES["circuit-service-cards"], BODIES["circuit-steps"], BODIES["circuit-why"], BODIES["circuit-faq"], BODIES["circuit-cta"]])
 
 circuit_page("circuit-page-service", "Service page: Circuit kit (one service)",
  "A page for one service, such as EV charger installation: a heading with a photo, what's included and the price, how a visit works, recent work, reviews, questions about this service and a booking band. Circuit kit; make one per service under Services.",
  "service page, ev charger, panel upgrade, lighting, single service, electrician, circuit",
- [cpage_hero("EV charger installation", "A Level 2 home charger on its own circuit, fitted in a day, with the permit and rebate paperwork done for you.", "Services / EV chargers", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)], "Photo of the service: a house with solar panels on the roof"),
+ [cpage_hero("EV charger installation", "A Level 2 home charger on its own circuit, fitted in a day, with the permit and rebate paperwork done for you.", "Services / EV chargers", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")], "Photo of the service: a house with solar panels on the roof"),
   BODIES["circuit-service-detail"], BODIES["circuit-steps"], BODIES["circuit-jobs"], BODIES["circuit-reviews-carousel"],
   csec("Questions", cols([col(N([eyebrow("Questions"), h("About EV chargers", 2, "xx-large")]), "36%"), col(accordion([
     ("Do I need a panel upgrade?", "Often not. Most 200-amp panels have room for a 40-amp charger circuit. We check the load first and only suggest an upgrade if you need one."),
@@ -393,7 +393,7 @@ circuit_page("circuit-page-areas", "Service areas page: Circuit kit",
 circuit_page("circuit-page-area", "Town page: Circuit kit (one service area)",
  "A page for one town served, such as Westerville: a heading, a few lines about working there with a map, the services, reviews and a booking band. Circuit kit; make one per main town under Service areas, with real local details.",
  "service area page, town, city, local, electrician near me, circuit",
- [cpage_hero("Electrician in Westerville", "Twenty minutes from our shop, so most Westerville repairs get a same-day visit.", "Service areas / Westerville", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL)]),
+ [cpage_hero("Electrician in Westerville", "Twenty minutes from our shop, so most Westerville repairs get a same-day visit.", "Service areas / Westerville", [("Book a visit", None, BOOK), ("Call " + CPHONE, "outline", CTEL, "phone")]),
   csec("Local", cols([
     col(N([h("Electrical work in Westerville", 2, "xx-large"),
            p("We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers."),

@@ -242,16 +242,8 @@
 <h3 class="wp-block-heading has-base-font-size"><?php esc_html_e( 'Opening hours', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Monday to Friday, 7am to 4pm', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Saturday, 8am to 2pm', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Closed Sunday', 'anypress' ); ?></p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}},"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Monday to Friday, 7am to 4pm', 'anypress' ); ?><br><?php esc_html_e( 'Saturday, 8am to 2pm', 'anypress' ); ?><br><?php esc_html_e( 'Closed Sunday', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -262,12 +254,8 @@
 <h3 class="wp-block-heading has-base-font-size"><?php esc_html_e( 'Address', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( '14 Market Street', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Springfield', 'anypress' ); ?></p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( '14 Market Street', 'anypress' ); ?><br><?php esc_html_e( 'Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -278,11 +266,11 @@
 <h3 class="wp-block-heading has-base-font-size"><?php esc_html_e( 'Contact', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( '555 0142', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

@@ -21,8 +21,12 @@
 <p class="has-medium-font-size"><?php esc_html_e( 'Book a free 30-minute call, or ring the office. You will speak to the person who would do your accounts.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary"} -->
-<p class="has-secondary-color has-text-color"><?php esc_html_e( '2 Park Square, Leeds LS1 2NE', 'anypress' ); ?><br><?php esc_html_e( '0113 555 0190', 'anypress' ); ?></p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( '2 Park Square, Leeds LS1 2NE', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone"}}}},"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( '0113 555 0190', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->

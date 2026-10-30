@@ -25,7 +25,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Phone', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}}} -->
 <p><?php esc_html_e( '555 0142', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -35,7 +35,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Email', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}}} -->
 <p><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -45,7 +45,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Visit', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}}} -->
 <p><?php esc_html_e( '14 Market Street, Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
@@ -55,7 +55,7 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Hours', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}}} -->
 <p><?php esc_html_e( 'Monday to Friday, 9am to 5pm', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -73,7 +73,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"email_link"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:hello@example.com"><?php esc_html_e( 'Email us', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>

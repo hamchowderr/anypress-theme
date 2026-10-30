@@ -43,11 +43,11 @@
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Licensed electricians for homes and small businesses in Columbus and the suburbs since 2009.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontFamily":"schibsted-grotesk","fontSize":"xx-large","style":{"typography":{"fontWeight":"800","lineHeight":"1"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"schibsted-grotesk","fontSize":"xx-large","style":{"typography":{"fontWeight":"800","lineHeight":"1"}}} -->
 <p class="has-schibsted-grotesk-font-family has-xx-large-font-size" style="font-weight:800;line-height:1"><a href="tel:5550187"><?php esc_html_e( '555 0187', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}}} -->
 <p><a href="mailto:hello@example.com">hello@example.com</a></p>
 <!-- /wp:paragraph -->
 
@@ -133,11 +133,11 @@
 <h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Visit or call', 'anypress' ); ?></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"main-accent"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"textColor":"main-accent"} -->
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( '880 King Avenue, Columbus', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"main-accent"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"hours"}}}},"textColor":"main-accent"} -->
 <p class="has-main-accent-color has-text-color"><?php esc_html_e( 'Mon to Sat, 7am to 7pm', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 

@@ -22,7 +22,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550142"><?php esc_html_e( 'Call 555 0142', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
@@ -599,7 +599,7 @@
 <p class="has-big-shoulders-font-family has-large-font-size" style="text-transform:uppercase;font-weight:800"><?php esc_html_e( 'Call us', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"poster","style":{"typography":{"lineHeight":"0.9","fontWeight":"900"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"big-shoulders","fontSize":"poster","style":{"typography":{"lineHeight":"0.9","fontWeight":"900"}}} -->
 <p class="has-big-shoulders-font-family has-poster-font-size" style="line-height:0.9;font-weight:900"><a href="tel:5550142"><?php esc_html_e( '555 0142', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 

@@ -26,7 +26,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550187"><?php esc_html_e( 'Call 555 0187', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -62,7 +62,7 @@
 <p><?php esc_html_e( 'Don\'t book online. Switch off the main breaker if it\'s safe, then call us now.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontFamily":"schibsted-grotesk","fontSize":"xx-large","style":{"typography":{"fontWeight":"800","lineHeight":"1"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"schibsted-grotesk","fontSize":"xx-large","style":{"typography":{"fontWeight":"800","lineHeight":"1"}}} -->
 <p class="has-schibsted-grotesk-font-family has-xx-large-font-size" style="font-weight:800;line-height:1"><a href="tel:5550187"><?php esc_html_e( '555 0187', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>

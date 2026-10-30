@@ -15,15 +15,15 @@
 <h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Call, write or visit', 'anypress' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontFamily":"big-shoulders","fontSize":"xxx-large","style":{"typography":{"fontWeight":"900","lineHeight":"1"}}} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"big-shoulders","fontSize":"xxx-large","style":{"typography":{"fontWeight":"900","lineHeight":"1"}}} -->
 <p class="has-big-shoulders-font-family has-xxx-large-font-size" style="font-weight:900;line-height:1"><a href="tel:5550142"><?php esc_html_e( '555 0142', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"fontSize":"medium"} -->
 <p class="has-medium-font-size"><a href="mailto:hello@example.com">hello@example.com</a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"fontSize":"medium"} -->
 <p class="has-medium-font-size"><?php esc_html_e( '2140 Wabash Avenue, Springfield', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -44,7 +44,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-buttons"><!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}}} -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:5550142"><?php esc_html_e( 'Call 555 0142', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
