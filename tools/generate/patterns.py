@@ -1,6 +1,8 @@
 import os, sys
 OUT = sys.argv[1]
 T = lambda s: "<?php esc_html_e( '%s', 'anypress' ); ?>" % s.replace("'", "\\'")
+# Text inside an HTML attribute (alt, aria-label) is escaped for attributes.
+A = lambda s: "<?php esc_attr_e( '%s', 'anypress' ); ?>" % s.replace("'", "\\'")
 IMG = lambda f: "<?php echo esc_url( get_theme_file_uri( 'assets/images/%s' ) ); ?>" % f
 def pad(t, b, lr=None):
     st = {"top": f"var:preset|spacing|{t}", "bottom": f"var:preset|spacing|{b}"}
@@ -70,7 +72,7 @@ def image(file, alt, ratio=None, radius="md"):
     cls = "wp-block-image size-large" + (" has-custom-border" if radius else "")
     st = f' style="{";".join(img_style)}"' if img_style else ""
     rc = ' class="has-border-radius"' if False else ""
-    return f'<!-- wp:image {j(a)} -->\n<figure class="{cls}"><img src="{IMG(file)}" alt="{T(alt)}"{st}/></figure>\n<!-- /wp:image -->'
+    return f'<!-- wp:image {j(a)} -->\n<figure class="{cls}"><img src="{IMG(file)}" alt="{A(alt)}"{st}/></figure>\n<!-- /wp:image -->'
 
 def group(inner, gap=None, layout=None, cls_extra=None):
     a = {}

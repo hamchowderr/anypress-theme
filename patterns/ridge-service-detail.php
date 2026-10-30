@@ -42,7 +42,7 @@
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"16/9","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'Photo of the service: a kitchen sink with water running from two taps', 'anypress' ); ?>" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Photo of the service: a kitchen sink with water running from two taps', 'anypress' ); ?>" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

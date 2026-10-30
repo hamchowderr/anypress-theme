@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.5.0
+Stable tag: 0.5.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,6 +125,9 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.5.1 =
+* Image alt text in every pattern is escaped for HTML attributes (esc_attr_e), as Theme Check asks.
 
 = 0.5.0 =
 * Ridge is now a full plumbing and heating website: 13 starter pages (services, a service, about, reviews, service areas, an area, offers, quote, FAQ, careers, contact, thank you) and 18 new sections, with a sticky header and call button, a newsletter popup, FAQ, reviews carousel, counters and a service-area map.
