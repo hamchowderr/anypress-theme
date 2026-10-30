@@ -191,6 +191,13 @@ const html = await (await fetch(`${base}/?page_id=${page.id}`)).text();
 /Fatal error|Warning:|Notice:|Deprecated:/.test(html) ? fail('PHP error on the rendered page') : pass('page renders without PHP errors');
 /is-style-section-[a-z-]+[^{]*\{[^}]*background-color/.test(html) ? pass('section style CSS generated for the sections used') : fail('section style CSS missing');
 html.includes('fonts/figtree.woff2') ? pass('self-hosted fonts load') : fail('font files not referenced');
+const blank = await php(`
+    $id = wp_insert_post(['post_type' => 'page', 'post_status' => 'publish', 'post_title' => 'Blank', 'post_name' => 'blank-check', 'post_content' => '<!-- wp:paragraph --><p>Only this</p><!-- /wp:paragraph -->']);
+    update_post_meta($id, '_wp_page_template', 'page-blank');
+    echo json_encode(['id' => $id]);`);
+const blankHtml = await (await fetch(`${base}/?page_id=${blank.id}`)).text();
+blankHtml.includes('Only this') && !/<header[^>]*wp-block-template-part/.test(blankHtml) && !/<footer[^>]*wp-block-template-part/.test(blankHtml)
+    ? pass('blank page template: content only, no header or footer') : fail('blank page template shows a header or footer, or no content');
 const starterPages = await php(`
     if (function_exists('anypress_register_patterns')) anypress_register_patterns();
     $out = [];

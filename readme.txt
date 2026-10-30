@@ -127,6 +127,7 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 == Changelog ==
 
 = 0.5.1 =
+* New "Blank page" template (no header or footer) for landing pages.
 * Image alt text in every pattern is escaped for HTML attributes (esc_attr_e), as Theme Check asks.
 
 = 0.5.0 =
