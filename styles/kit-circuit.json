@@ -1,0 +1,118 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Circuit (electricians)",
+	"slug": "kit-circuit",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#123c8c",
+					"name": "Brand",
+					"slug": "primary"
+				},
+				{
+					"color": "#dfe8f8",
+					"name": "Brand soft",
+					"slug": "primary-accent"
+				},
+				{
+					"color": "#ffd23f",
+					"name": "Second brand",
+					"slug": "primary-alt"
+				},
+				{
+					"color": "#1b1606",
+					"name": "Second brand deep",
+					"slug": "primary-alt-accent"
+				},
+				{
+					"color": "#0c1626",
+					"name": "Text",
+					"slug": "main"
+				},
+				{
+					"color": "#d3d9e3",
+					"name": "Text soft",
+					"slug": "main-accent"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Background",
+					"slug": "base"
+				},
+				{
+					"color": "#475163",
+					"name": "Muted text",
+					"slug": "secondary"
+				},
+				{
+					"color": "#f1f3f7",
+					"name": "Tint",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#dde2ea",
+					"name": "Border",
+					"slug": "border-light"
+				},
+				{
+					"color": "#24324a",
+					"name": "Border on dark",
+					"slug": "border-dark"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|instrument-sans"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|schibsted-grotesk",
+					"fontWeight": "700",
+					"letterSpacing": "-0.03em",
+					"lineHeight": "1.05"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "var:preset|border-radius|full"
+				},
+				"typography": {
+					"fontWeight": "600",
+					"fontSize": "var:preset|font-size|base",
+					"fontFamily": "var:preset|font-family|instrument-sans"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|schibsted-grotesk",
+					"fontWeight": "800",
+					"letterSpacing": "-0.03em"
+				}
+			},
+			"core/image": {
+				"border": {
+					"radius": "0"
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"width": "0"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"left": "0"
+					}
+				}
+			}
+		}
+	}
+}

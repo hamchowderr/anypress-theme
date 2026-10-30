@@ -1,0 +1,94 @@
+[
+	{
+		"name": "Columbus",
+		"slug": "columbus",
+		"lat": 39.9612,
+		"lon": -82.9988,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Our shop is on King Avenue, so most Columbus jobs get a visit within hours. Emergencies day or night.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Columbus is home. We've worked in its neighborhoods since 2009, from the brick homes of German Village and Clintonville to new builds downtown, and the older streets mean plenty of rewiring and panel work.",
+			"Westerville": "Columbus",
+			"Same-day repairs most weekdays": "Same-day repairs most days",
+			"Panel checks for homes built before 1985": "Rewiring for older brick homes"
+		}
+	},
+	{
+		"name": "Westerville",
+		"slug": "westerville",
+		"lat": 40.1262,
+		"lon": -82.9291,
+		"swap": {}
+	},
+	{
+		"name": "Dublin",
+		"slug": "dublin",
+		"lat": 40.0992,
+		"lon": -83.1141,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Twenty-five minutes from our shop, so most Dublin repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Dublin's newer homes mean lots of EV chargers, smart lighting and basement finishes. We know the city's permit office well and book inspections fast.",
+			"Westerville": "Dublin",
+			"Panel checks for homes built before 1985": "EV chargers fitted within the week"
+		}
+	},
+	{
+		"name": "Worthington",
+		"slug": "worthington",
+		"lat": 40.0931,
+		"lon": -83.018,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Fifteen minutes from our shop, so most Worthington repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Worthington has some of the oldest homes we work on, and a lot of original wiring behind the plaster. We rewire carefully, through small openings, and leave historic trim as we found it.",
+			"Westerville": "Worthington",
+			"Panel checks for homes built before 1985": "Careful rewiring in historic homes"
+		}
+	},
+	{
+		"name": "Hilliard",
+		"slug": "hilliard",
+		"lat": 40.0334,
+		"lon": -83.1582,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Twenty-five minutes from our shop, so most Hilliard repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "In Hilliard we fit a lot of generators and surge protection, and we're often there after summer storms. Many homes here are ready for an EV charger without a panel upgrade.",
+			"Westerville": "Hilliard",
+			"Panel checks for homes built before 1985": "Storm call-outs, day or night"
+		}
+	},
+	{
+		"name": "Grove City",
+		"slug": "grove-city",
+		"lat": 39.8815,
+		"lon": -83.093,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Twenty minutes from our shop, so most Grove City repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Grove City homeowners call us for kitchen lighting, outdoor lights and panel upgrades. We've worked on homes here since our first year.",
+			"Westerville": "Grove City",
+			"Panel checks for homes built before 1985": "Outdoor and landscape lighting"
+		}
+	},
+	{
+		"name": "Gahanna",
+		"slug": "gahanna",
+		"lat": 40.0192,
+		"lon": -82.8793,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Twenty minutes from our shop, so most Gahanna repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Gahanna has a lot of 1960s and 70s homes with original panels, some of them brands we'd replace. We check yours free with any visit.",
+			"Westerville": "Gahanna",
+			"Panel checks for homes built before 1985": "Free panel check with any visit"
+		}
+	},
+	{
+		"name": "Upper Arlington",
+		"slug": "upper-arlington",
+		"lat": 39.9945,
+		"lon": -83.0624,
+		"swap": {
+			"Twenty minutes from our shop, so most Westerville repairs get a same-day visit.": "Ten minutes from our shop, so most Upper Arlington repairs get a same-day visit.",
+			"We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.": "Upper Arlington's older homes are some of our favorite work: rewiring, new lighting plans and panel upgrades that keep the character of the house.",
+			"Westerville": "Upper Arlington",
+			"Panel checks for homes built before 1985": "Lighting plans for older homes"
+		}
+	}
+]
