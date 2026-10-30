@@ -16,7 +16,7 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"15rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Portrait of Nadia', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Portrait of Nadia', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -30,7 +30,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Portrait of Ollie', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Portrait of Ollie', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -44,7 +44,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Portrait of Bea', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Portrait of Bea', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->

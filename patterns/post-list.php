@@ -19,7 +19,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'A path along a grassy ridge', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A path along a grassy ridge', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -31,7 +31,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'A river with trees on both banks', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A river with trees on both banks', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -43,7 +43,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'A small waterfall in a wood', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A small waterfall in a wood', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

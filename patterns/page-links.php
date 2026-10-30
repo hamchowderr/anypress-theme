@@ -12,7 +12,7 @@
 ?>
 <!-- wp:group {"tagName":"section","metadata":{"name":"Links"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"28rem"}} -->
 <section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:image {"width":"8rem","aspectRatio":"1","scale":"cover","sizeSlug":"large","linkDestination":"none","align":"center","style":{"border":{"radius":"var:preset|border-radius|full"}}} -->
-<figure class="wp-block-image aligncenter size-large is-resized has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_html_e( 'Portrait of the owner', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--full);aspect-ratio:1;object-fit:cover;width:8rem;height:auto"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_attr_e( 'Portrait of the owner', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--full);aspect-ratio:1;object-fit:cover;width:8rem;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"fontSize":"x-large"} -->

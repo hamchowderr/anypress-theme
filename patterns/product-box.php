@@ -13,7 +13,7 @@
 <div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);border-radius:var(--wp--preset--border-radius--md)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|large","left":"var:preset|spacing|large"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_html_e( 'The product on a plain background', 'anypress' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_attr_e( 'The product on a plain background', 'anypress' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

@@ -38,7 +38,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'Photo of the service: a house with solar panels on the roof', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/3;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Photo of the service: a house with solar panels on the roof', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
@@ -78,7 +78,7 @@
 <!-- /wp:list -->
 
 <!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"16/9","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'Photo of the service: rows of breakers in an electrical distribution board', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:16/9;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Photo of the service: rows of breakers in an electrical distribution board', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -176,7 +176,7 @@
 <!-- wp:anypress/carousel {"perView":3,"autoplay":6,"label":"Recent work"} -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A modern ceiling light fitting with spotlights', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A modern ceiling light fitting with spotlights', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -186,7 +186,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Globe pendant lights glowing over a room', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Globe pendant lights glowing over a room', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -196,7 +196,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Recessed lights in a dark ceiling around a pendant', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Recessed lights in a dark ceiling around a pendant', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -206,7 +206,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Solar panels on the roof of a modern building', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Solar panels on the roof of a modern building', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -216,7 +216,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A glowing LED wall light in a wooden frame', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A glowing LED wall light in a wooden frame', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -422,7 +422,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_html_e( 'A white light fitting with a round bulb on a brick wall', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/3;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A white light fitting with a round bulb on a brick wall', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

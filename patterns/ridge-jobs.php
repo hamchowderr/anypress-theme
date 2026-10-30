@@ -16,7 +16,7 @@
 <!-- wp:anypress/carousel {"perView":3,"autoplay":6,"label":"Recent jobs"} -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A plumber fitting a new dishwasher under a kitchen counter', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A plumber fitting a new dishwasher under a kitchen counter', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -26,7 +26,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A tiled bathroom with a white bathtub', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A tiled bathroom with a white bathtub', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -36,7 +36,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A kitchen sink with water running from two taps', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A kitchen sink with water running from two taps', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -46,7 +46,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A heating unit on a roof under a clear sky', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A heating unit on a roof under a clear sky', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -56,7 +56,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Water dripping from a chrome tap over a white basin', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Water dripping from a chrome tap over a white basin', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->

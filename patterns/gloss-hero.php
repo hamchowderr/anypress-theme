@@ -36,7 +36,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/4","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'Make-up brushes in a pot on a pink table', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Make-up brushes in a pot on a pink table', 'anypress' ); ?>" style="aspect-ratio:3/4;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

@@ -70,7 +70,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover","style":{"border":{"radius":"var:preset|border-radius|lg"}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'An electrician in a hard hat at work on a street', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/5;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'An electrician in a hard hat at work on a street', 'anypress' ); ?>" style="border-radius:var(--wp--preset--border-radius--lg);aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

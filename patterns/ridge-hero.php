@@ -32,7 +32,7 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_html_e( 'A plumber fitting a new dishwasher under a kitchen counter', 'anypress' ); ?>" style="aspect-ratio:4/5;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'A plumber fitting a new dishwasher under a kitchen counter', 'anypress' ); ?>" style="aspect-ratio:4/5;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
