@@ -32,7 +32,7 @@ jobs:
           [ "$VERSION" = "$THEME_VERSION" ] || { echo "v$VERSION does not match style.css Version $THEME_VERSION"; exit 1; }
           if gh release view "v$VERSION" >/dev/null 2>&1; then echo "v$VERSION is already released"; exit 1; fi
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
