@@ -1,0 +1,110 @@
+{
+	"files": {
+		"kitchen-counter.jpg": "A gloved hand wiping a kitchen counter next to a caddy of cleaning supplies",
+		"mop-wood-floor.jpg": "A flat mop with a blue pad on a wooden floor",
+		"canister-vacuum.jpg": "A canister vacuum cleaner on a pink carpet",
+		"empty-apartment.jpg": "An empty apartment with bare wooden floors and a clean kitchen",
+		"guest-bedroom.jpg": "A made bed with patterned cushions in a bright guest bedroom",
+		"open-office.jpg": "A bright open-plan office with rows of white desks",
+		"carpet-stairs.jpg": "A carpeted staircase, freshly vacuumed",
+		"living-room.jpg": "A tidy living room with striped sofas and flowers on the coffee table",
+		"mops-drying.jpg": "A row of cotton mops hung out to dry on a rail",
+		"mop-dark-floor.jpg": "A flat mop cleaning a dark wooden floor",
+		"bathroom-counter.jpg": "Pink lilies in a glass vase on a white marble bathroom counter",
+		"vacuum-teal-carpet.jpg": "A vacuum cleaner head on a teal carpet",
+		"mopping-lobby.jpg": "A cleaner mopping a shiny stone floor in a long corridor",
+		"white-bedroom.jpg": "A made bed with white sheets by a window"
+	},
+	"by_alt": {
+		"A gloved hand wiping a kitchen counter next to a caddy of cleaning supplies": "kitchen-counter.jpg",
+		"A flat mop cleaning a dark wooden floor": "mop-dark-floor.jpg",
+		"A flat mop with a blue pad gliding across a wooden floor": "mop-wood-floor.jpg",
+		"A canister vacuum cleaner on a pink carpet": "canister-vacuum.jpg",
+		"An empty apartment with bare wooden floors and a clean kitchen": "empty-apartment.jpg",
+		"A made bed with fresh white sheets in a guest bedroom": "guest-bedroom.jpg",
+		"A bright open-plan office with rows of white desks": "open-office.jpg",
+		"A carpeted staircase, freshly vacuumed": "carpet-stairs.jpg",
+		"A row of cotton mops hung out to dry on a rail": "mops-drying.jpg",
+		"": "living-room.jpg",
+		"Photo of the service: an empty apartment with clean wooden floors": "empty-apartment.jpg",
+		"Photo of the service: a flat mop gliding across a wooden floor": "mop-wood-floor.jpg",
+		"Photo of the service: a canister vacuum cleaner on a carpet": "canister-vacuum.jpg",
+		"Photo of the service: a made bed with fresh white sheets": "white-bedroom.jpg",
+		"Photo of the service: a bright open-plan office with white desks": "open-office.jpg",
+		"Photo of the service: a freshly vacuumed carpeted staircase": "carpet-stairs.jpg"
+	},
+	"fallback": "kitchen-counter.jpg",
+	"posts": {
+		"often": "vacuum-teal-carpet.jpg",
+		"deposit": "white-bedroom.jpg",
+		"bathroom": "bathroom-counter.jpg",
+		"checklist": "mopping-lobby.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "kitchen-counter.jpg",
+			"title": "Cleaning Kitchen Counter",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6074009/cleaning-kitchen-counter"
+		},
+		{
+			"file": "mop-wood-floor.jpg",
+			"title": "Mop Sweeping",
+			"creator": "Michal Jarmoluk",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/mop-sweeping-J4C1WJDMMU"
+		},
+		{
+			"file": "canister-vacuum.jpg",
+			"title": "A canister vacuum cleaner on a pink carpet",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5945548/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "empty-apartment.jpg",
+			"title": "Empty apartment, real estate",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6043458/photo-image-public-domain-wood-kitchen"
+		},
+		{
+			"file": "carpet-stairs.jpg",
+			"title": "Stairway - Carpet Freshly Vacuumed (54127454416)",
+			"creator": "Tony Webster",
+			"license": "CC BY 2.0",
+			"license_url": "https://creativecommons.org/licenses/by/2.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=156599460"
+		},
+		{
+			"file": "mop-dark-floor.jpg",
+			"title": "Free mop public domain CC0",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5903631/free-mop-public-domain-cc0-photo"
+		},
+		{
+			"file": "vacuum-teal-carpet.jpg",
+			"title": "Free vacuum cleaner carpet image",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5920162/photo-image-public-domain-free-carpet"
+		},
+		{
+			"file": "mopping-lobby.jpg",
+			"title": "A person wearing white clothing is mopping a shiny, wet floor in a corridor lined with large potted plants. Another person is walking towards the camera in the background under the lit passageway.",
+			"creator": "Nilo Velez",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/31367864bb/"
+		}
+	]
+}

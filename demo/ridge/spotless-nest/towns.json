@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Raleigh",
+		"slug": "raleigh",
+		"lat": 35.7796,
+		"lon": -78.6382
+	},
+	{
+		"name": "Cary",
+		"slug": "cary",
+		"lat": 35.7915,
+		"lon": -78.7811
+	},
+	{
+		"name": "Durham",
+		"slug": "durham",
+		"lat": 35.994,
+		"lon": -78.8986
+	},
+	{
+		"name": "Apex",
+		"slug": "apex",
+		"lat": 35.7327,
+		"lon": -78.8503
+	},
+	{
+		"name": "Wake Forest",
+		"slug": "wake-forest",
+		"lat": 35.9799,
+		"lon": -78.5097
+	},
+	{
+		"name": "Garner",
+		"slug": "garner",
+		"lat": 35.7113,
+		"lon": -78.6142
+	},
+	{
+		"name": "Holly Springs",
+		"slug": "holly-springs",
+		"lat": 35.6513,
+		"lon": -78.8336
+	},
+	{
+		"name": "Knightdale",
+		"slug": "knightdale",
+		"lat": 35.7877,
+		"lon": -78.4806
+	}
+]
