@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Nashville",
+		"slug": "nashville",
+		"lat": 36.1627,
+		"lon": -86.7816
+	},
+	{
+		"name": "Franklin",
+		"slug": "franklin",
+		"lat": 35.9251,
+		"lon": -86.8689
+	},
+	{
+		"name": "Brentwood",
+		"slug": "brentwood",
+		"lat": 36.0331,
+		"lon": -86.7828
+	},
+	{
+		"name": "Murfreesboro",
+		"slug": "murfreesboro",
+		"lat": 35.8456,
+		"lon": -86.3903
+	},
+	{
+		"name": "Hendersonville",
+		"slug": "hendersonville",
+		"lat": 36.3048,
+		"lon": -86.62
+	},
+	{
+		"name": "Mount Juliet",
+		"slug": "mount-juliet",
+		"lat": 36.2001,
+		"lon": -86.5186
+	},
+	{
+		"name": "Smyrna",
+		"slug": "smyrna",
+		"lat": 35.9828,
+		"lon": -86.5186
+	},
+	{
+		"name": "Gallatin",
+		"slug": "gallatin",
+		"lat": 36.3884,
+		"lon": -86.4467
+	}
+]
