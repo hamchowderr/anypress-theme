@@ -1,0 +1,525 @@
+# Ironclad Roofing: written by scratch/ironclad_copy.py
+1	Hail hit your roof? Free inspection within 48 hours.
+2	Oklahoma City roofers since 2006. We inspect, photograph the damage and work with your insurance adjuster from the first call.
+3	Call (405) 555-0173
+4	Book a free inspection
+5	Two roofers stripping old shingles from the roof of a house
+6	Since 2006
+7	Twenty years of Oklahoma storms. Most new jobs come from neighbors of roofs we've done.
+8	10-year workmanship warranty
+9	On every new roof, in writing, on top of the shingle maker's warranty.
+10	Registered and insured
+11	Oklahoma roofing registration 80001942. $2 million liability cover.
+12	years in Oklahoma City
+13	roofs replaced or repaired
+14	from 860 reviews
+15	to tarp a storm-damaged roof
+16	What we do
+17	All services
+18	Shingles cracked and torn by hail on a sloped roof
+19	Storm damage repair
+20	Hail, wind and fallen limbs: inspected, photographed and fixed, with the insurance paperwork done for you.
+21	Free inspection
+22	Details
+23	Bundles of new shingles stacked on a roof above a gutter
+24	Roof replacement
+25	Old roof off, decking checked, new underlayment and shingles on, usually in one or two days.
+26	From $9,800
+27	Worn shingles curling along the edge of a roof
+28	Roof repair
+29	Leaks, missing shingles, lifted flashing and worn pipe boots fixed before the next storm finds them.
+30	From $450
+31	A house with a new grey standing-seam metal roof
+32	Metal roofs
+33	Standing-seam metal roofs rated for hail and 140 mph winds, with a 40-year finish warranty.
+34	From $16,000
+35	A blue tarp covering a storm-damaged roof on a street of houses
+36	Emergency tarping
+37	A hole in the roof tonight? A crew tarps it within four hours, any day, so the rain stays out.
+38	$295
+39	A new gutter running along the eave of a building
+40	Gutters and downspouts
+41	Seamless gutters and guards fitted the same week, sized for Oklahoma downpours.
+42	From $1,100
+43	How it works
+44	=
+45	Call or book an inspection
+46	Tell us what happened and when. We book a free inspection within 48 hours, often the next day.
+47	=
+48	We check the whole roof
+49	A registered roofer walks the roof, takes dated photos of every bit of damage and writes it up.
+50	=
+51	Fixed, and guaranteed
+52	We meet your adjuster, do the work, haul the old roof away and guarantee it for 10 years.
+53	A new standing-seam metal roof in Edmond, finished two days after a hail storm.
+54	4.9 from 860 reviews
+55	Read them all
+56	Customer reviews
+57	=
+58	They found hail damage two other roofers missed, met our adjuster on the roof and the claim went through first time.
+59	Dana R., Oklahoma City
+60	A limb came through the roof at 11pm. Trey's crew had it tarped by 2am and the new roof was on by Friday.
+61	Jo M., Edmond
+62	Booked online, got a text when they were on the way, and the price did not change.
+63	Carlos T., Moore
+64	Replaced our whole roof in a day and a half and ran a magnet over the yard for nails. Not one in the driveway.
+65	Priya S., Norman
+66	Tidy, polite and they covered the flower beds before the first shingle came off.
+67	Sam K., Yukon
+68	They told us a repair would do for another five years, when two other companies wanted to sell us a new roof.
+69	Linda H., Mustang
+70	Where we work
+71	Every town within 30 miles of Oklahoma City, with no travel charge. Outside that, call and ask: after big storms we go further.
+72	Oklahoma City
+73	Edmond
+74	Moore
+75	Norman
+76	Yukon
+77	Mustang
+78	Midwest City
+79	Del City
+80	Oklahoma City, Oklahoma
+81	Questions people ask
+82	Can't see yours? Call and ask: you'll talk to a roofer, not a call center.
+83	All questions
+84	Is the inspection really free?
+85	Yes. A full roof inspection with photos costs nothing and you're under no obligation. Emergency tarping is a flat $295.
+86	How soon can you come?
+87	Inspections within 48 hours, usually the next day. After a storm, tarping the same night.
+88	Do you give written quotes?
+89	Yes, free and in writing, with photos of what we found. The price doesn't change unless you change the job.
+90	Are you registered and insured?
+91	Yes. Oklahoma roofing registration 80001942 and $2 million liability insurance. We'll send copies before we start.
+92	Is the work guaranteed?
+93	Every new roof carries our 10-year workmanship warranty, on top of the shingle or metal maker's warranty.
+94	Notes from the roof
+95	All posts
+96	=
+97	Call us
+98	(405) 555-0173
+99	Office 7am to 6pm, Monday to Saturday. Storm line day and night. Free inspections, with photos of what we find.
+100	24/7 storm line:
+101	Office: 7am to 6pm, Monday to Saturday
+102	Free inspections
+103	Call
+104	Get $500 off a new roof
+105	Join the list for storm alerts, offers and the odd roof tip. Two emails a month at most.
+106	Join the list
+107	Roofs, repairs and gutters for homes and small businesses across central Oklahoma since 2006. Registered, insured, and out after every storm.
+108	=
+109	=
+110	=
+111	=
+112	=
+113	=
+114	=
+115	=
+116	=
+117	Visit or call
+118	NW 39th Street, Oklahoma City
+119	Storm line: day and night
+120	© Ironclad Roofing. Oklahoma roofing registration 80001942. Fully insured.
+121	=
+122	=
+123	Offer for new customers
+124	A roofer's tool belt and hammer lying on new shingles
+125	New customers
+126	$500 off a full roof replacement
+127	Leave your email and we'll send the code. One email, no calls.
+128	See this month's offers
+129	Family-run since 2006
+130	Ray Whitfield started with one truck and a ladder after the May 2006 hail storm. Twenty years on, his crews have roofed 9,400 homes across the metro.
+131	One truck, one rule
+132	Ray's rule from day one: show people the damage, tell them the truth, and leave the yard cleaner than you found it.
+133	We're still a family firm. Ray still climbs roofs most mornings, Carmen has handled our insurance claims for eleven years, and every roofer on your house is someone we trained ourselves.
+134	We don't chase storms from out of state, we don't use subcontractors, and if a repair will do, we won't sell you a new roof.
+135	Roofers on scaffolding stripping the old roof from a house
+136	Who climbs your roof
+137	Every roofer is ours: employed, trained and background-checked. No storm chasers, no subcontractors.
+138	RW
+139	Ray Whitfield
+140	Owner and registered roofer, 24 years
+141	CR
+142	Carmen Ruiz
+143	Insurance claims lead, 11 years
+144	TO
+145	Trey Okafor
+146	Crew lead, 9 years
+147	DH
+148	Dana Holt
+149	Office manager, 7 years
+150	Service areas / Edmond
+151	Roofer in Edmond
+152	Twenty minutes up I-35 from our yard, so most Edmond inspections happen the next day. Tarping the same night.
+153	Roofing in Edmond
+154	We've roofed in Edmond since 2006, from the older ranch houses near downtown to the newer neighborhoods off Covell. Hail hits here most springs, so we see a lot of bruised shingles and dented vents.
+155	Inspections within 48 hours
+156	No travel charge
+157	Class 4 impact-rated shingles that can lower your insurance
+158	Edmond, Oklahoma
+159	Oklahoma City and every town within 30 miles, with no travel charge.
+160	Roofing in Oklahoma City: storm repairs, new roofs, metal roofs and gutters.
+161	Roofer in Oklahoma City
+162	Roofing in Edmond: storm repairs, new roofs, metal roofs and gutters.
+163	Roofing in Moore: storm repairs, new roofs, metal roofs and gutters.
+164	Roofer in Moore
+165	Roofing in Norman: storm repairs, new roofs, metal roofs and gutters.
+166	Roofer in Norman
+167	Roofing in Yukon: storm repairs, new roofs, metal roofs and gutters.
+168	Roofer in Yukon
+169	Roofing in Mustang: storm repairs, new roofs, metal roofs and gutters.
+170	Roofer in Mustang
+171	Roofing in Midwest City: storm repairs, new roofs, metal roofs and gutters.
+172	Roofer in Midwest City
+173	Roofing in Del City: storm repairs, new roofs, metal roofs and gutters.
+174	Roofer in Del City
+175	Work with us
+176	We're hiring roofers, crew leads and an insurance claims assistant. Good pay, a company truck and home before dark.
+177	See open jobs
+178	Why roofers stay
+179	Paid well, paid weekly
+180	Above the metro rate, overtime at time and a half, and a bonus on every five-star review.
+181	A truck and proper gear
+182	A company truck for crew leads, harnesses and tools we replace when they wear out.
+183	Home before dark
+184	No roofs after sunset except storm tarping, and storm nights shared fairly across the crews.
+185	Training paid for
+186	Safety training, manufacturer certifications and an insurance adjuster course, with the fees paid.
+187	Open jobs
+188	Roofer
+189	$22 to $30 an hour
+190	Two years on residential roofs. Comfortable at height, and a clean driving record.
+191	Apply for this job
+192	Crew lead
+193	$30 to $38 an hour
+194	Five years on roofs and two running a crew. You check the work before we hand it over.
+195	Claims assistant
+196	$20 an hour to start
+197	Office based. Careful with paperwork and happy on the phone with adjusters. We train you.
+198	Apply
+199	Send your name, phone, the job you want and a few lines about you. Dana replies to every application within two working days.
+200	Email your application
+201	Contact us
+202	Call for anything urgent. For everything else, send a message and we'll reply within two working hours.
+203	Call, write or visit
+204	Office: 7am to 6pm, Monday to Saturday. Storm line: day and night.
+205	Send a message
+206	We reply within two working hours.
+207	NW 39th Street, Oklahoma City, Oklahoma
+208	Questions and answers
+209	Straight answers about prices, insurance claims, storms and our warranty.
+210	Prices and paying
+211	How do you price a new roof?
+212	By the square (100 square feet), with the shingle, underlayment and tear-off in one written price before we start.
+213	How can I pay?
+214	Card, bank transfer or check, when the job is done. On insurance jobs you pay your deductible and the insurer pays the rest.
+215	Do you offer finance?
+216	Yes, on roofs over $5,000: 12 months interest-free, or low monthly payments over 10 years, subject to approval.
+217	Booking and arrival
+218	Can I book online?
+219	Yes, on the Book a free inspection page. We call back within two working hours to fix a time.
+220	Will I know who's coming?
+221	Yes. You get a text with the roofer's name and photo when they're on the way.
+222	Do I need to be home?
+223	Not for an inspection: we only need the gate open. For a new roof, someone over 18 signs off the finished job.
+224	Storms and insurance
+225	Should I call you or my insurer first?
+226	Call us first for a free inspection, so you know there's real damage before you open a claim. Then call your insurer with our photos.
+227	What should I do while I wait?
+228	Move things away from any leak, put a bucket under it and take photos for your insurer. Never climb onto a wet or damaged roof.
+229	Do you work weekends and holidays?
+230	Yes. Storm tarping every day of the year. Inspections and roofs on Saturdays too.
+231	Warranty
+232	What if the roof leaks after you're done?
+233	If a roof we fitted leaks within 10 years because of our work, we come back and fix it free.
+234	Yes. Oklahoma roofing registration 80001942 and $2 million liability insurance.
+235	This season's savings. Mention the offer when you book and we'll take it off the bill.
+236	$0
+237	Storm damage inspection
+238	A full roof check with dated photos for your insurer. No obligation, no sales pitch.
+239	Claim this offer
+240	$500 off
+241	A full roof replacement
+242	Any new shingle or metal roof over $8,000. Mention the offer when you book.
+243	10% off
+244	Seniors and veterans
+245	On every job, every time. Just tell us when you call.
+246	One offer per job. Not with insurance-paid work beyond your deductible. Offers run to the end of the season and are renewed each season.
+247	Book a free inspection
+248	Free and in writing, with dated photos. The price doesn't change unless the job does.
+249	Book a free roof inspection
+250	Tell us what happened and when suits you. Photos help: you can add them to the form.
+251	Prefer to talk? Call us instead.
+252	What happens next
+253	We reply within two working hours, 7am to 6pm.
+254	You get a time for a free inspection, usually the next day.
+255	We text when we're on the way, and send the photos after.
+256	Roof open to the sky?
+257	Don't fill in a form. Move things away from the leak and call the storm line now.
+258	4.9 stars from 860 reviews
+259	What customers say on Google and Facebook. We read every one, and reply to every one.
+260	Leave a review
+261	Fixed two lifted shingles before the spring storms and checked the rest of the roof for free.
+262	Greg W., Midwest City
+263	Fair price on a new metal roof, fitted in two days, and the old shingles hauled away.
+264	Maria F., Del City
+265	Third storm we've called them for. Always on time, always the price they said.
+266	Ahmed B., Oklahoma City
+267	Services / Roof repair
+268	Leak in the ceiling or shingles in the yard? Most repairs done the same week, with photos before and after.
+269	=
+270	What we do
+271	A leak usually starts somewhere other than where the water shows: lifted flashing, a cracked pipe boot or nails backing out. We find where it gets in before we fix it, so it stays fixed.
+272	A full roof check with dated photos before and after
+273	Missing, cracked or lifted shingles replaced to match
+274	Flashing, pipe boots, vents and ridge caps resealed
+275	Advice on how long the roof has left, and a 2-year repair warranty
+276	Nails swept from the yard before we leave
+277	Photo of the service: worn shingles letting water through at the eave
+278	Most repairs of up to a square of shingles. Flashing and pipe boots from $250. The price is agreed before we start.
+279	Recent jobs
+280	Hail-damaged roof replaced, Edmond
+281	New shingle roof after a wind storm, Oklahoma City
+282	Torn shingles repaired, Moore
+283	Metal roof fitted, Norman
+284	Storm tarp and repair, Yukon
+285	About roof repair
+286	Can a roof be repaired after hail, or does it need replacing?
+287	It depends how many shingles are bruised. We count them square by square and show you the photos. Under a few squares, a repair usually does.
+288	How long does it take?
+289	Most repairs take two to four hours. A larger patch after a storm can take a day.
+290	What if it leaks again?
+291	Will the new shingles match?
+292	As close as we can get. We keep spare bundles from the common Oklahoma colors and show you a sample before we start.
+293	Roofing services
+294	Storm repairs, new roofs and gutters for homes and small businesses. Fixed prices, agreed before we start.
+295	Message sent
+296	Thanks. We'll call you back soon.
+297	Dana or one of the team will reply within two working hours, 7am to 6pm. Check your email for a copy of what you sent.
+298	Back to the home page
+299	Read our roof notes
+[page:storm-damage-repair]
+28	Inspection
+30	$0
+233	We send the photos and report again and ask for a re-inspection with us on the roof. If they still say no, the inspection has cost you nothing.
+267	Services / Storm damage repair
+268	Hail or wind last night? A free inspection within 48 hours, with dated photos for your insurer.
+271	Hail bruises shingles from underneath, so damage that looks small from the street can let water in within a season. We check every slope, every vent and the gutters, and photograph it all with the date, which is what adjusters ask for.
+272	A full roof inspection with dated photos
+273	A written report you can send your insurer
+274	Meeting your adjuster on the roof
+275	Repairs or a new roof from the approved estimate
+276	Nails swept from the yard before we leave
+277	Photo of the service: shingles cracked and torn by hail
+278	The inspection and photo report are free. On insurance jobs you pay only your deductible. Tarping, if you need it tonight, is a flat $295.
+285	About storm damage
+286	How do I know if hail damaged my roof?
+287	Dented gutters, vents or a car in the drive are a good sign the roof was hit too. The bruises on shingles are hard to see from the ground, so the inspection is free.
+288	How long do I have to make a claim?
+289	Most Oklahoma policies give you one year from the storm, some less. Check your policy, and get the inspection done early so the photos are dated close to the storm.
+290	What if the insurer says no?
+291	Do you work with every insurer?
+292	Yes. We've worked with all the big insurers in Oklahoma and we speak their language: squares, line items and supplements.
+[page:roof-replacement]
+28	Roof replacement
+30	From $9,800
+233	If a roof we fitted leaks within 10 years because of our work, we come back and fix it free.
+267	Services / Roof replacement
+268	Old roof off and new roof on, usually in one or two days, with a 10-year workmanship warranty.
+271	A new roof is more than shingles. We take the old roof down to the deck, replace any soft decking, fit new underlayment, ice and water shield in the valleys, new flashing and vents, then the shingles.
+272	Tear-off and haul-away of the old roof
+273	Decking checked and soft boards replaced
+274	Synthetic underlayment and new flashing
+275	Class 4 impact-rated shingle options
+276	A magnetic sweep for nails before we leave
+277	Photo of the service: bundles of new shingles stacked on a roof
+278	A typical 20-square home in architectural shingles. Class 4 shingles from $12,400. The price is agreed before we start.
+285	About roof replacement
+286	How long does a new roof take?
+287	Most homes take one day, larger or steeper roofs two. We don't start if rain is forecast.
+288	Can you roof over the old shingles?
+289	We don't. A second layer hides soft decking, adds weight and voids most shingle warranties.
+290	What if the new roof leaks?
+291	Will Class 4 shingles lower my insurance?
+292	Often, yes. Many Oklahoma insurers give a discount for impact-rated shingles. We give you the certificate to send them.
+[page:metal-roofs]
+28	Metal roofs
+30	From $16,000
+233	If a roof we fitted leaks within 10 years because of our work, we come back and fix it free.
+267	Services / Metal roofs
+268	Standing-seam steel that shrugs off hail and 140 mph winds, with a 40-year finish warranty.
+271	A metal roof costs more on day one and far less over its life: it lasts 50 years or more, sheds hail, and reflects summer heat. We fit standing-seam panels with hidden fasteners, so there are no screws to work loose.
+272	Standing-seam panels with hidden fasteners
+273	Colors matched to your house and neighborhood
+274	New underlayment, flashing and ridge vent
+275	A 40-year finish warranty from the maker
+276	A 10-year workmanship warranty from us
+277	Photo of the service: a new grey standing-seam metal roof
+278	A typical 20-square home in 24-gauge standing seam. The price is agreed before we start.
+285	About metal roofs
+286	Is a metal roof loud in the rain?
+287	Not over a deck and underlayment, the way we fit them. It's about as quiet as shingles.
+288	Will hail dent it?
+289	Large hail can leave small dents, but they don't let water in. Most metal roofs carry the highest impact rating.
+290	What if the roof leaks?
+291	Does it make the house hotter?
+292	The opposite. A light-colored metal roof reflects the sun, and most owners see lower summer power bills.
+[page:emergency-tarping]
+28	Emergency tarping
+30	$295
+233	Call the storm line and we come back and refasten it free, as many times as it takes.
+267	Services / Emergency tarping
+268	A hole in the roof tonight? A crew tarps it within four hours, any day of the year.
+271	When a limb or a storm opens the roof, the first job is keeping the rain out. We fasten a heavy tarp over the damage and past the ridge, so wind can't get under it, and photograph everything for your claim.
+272	A crew within four hours, day or night
+273	A heavy-duty tarp fastened past the ridge
+274	Fallen limbs and debris cleared from the roof
+275	Dated photos of the damage for your insurer
+276	The tarp checked again after the next storm
+277	Photo of the service: a blue tarp covering a damaged roof
+278	A flat price for most single-story homes, any hour. Most insurers pay it back as part of the claim.
+285	About emergency tarping
+286	How long can a tarp stay on?
+287	Ninety days at most. It's a stopgap: we book the repair or new roof while the tarp keeps the rain out.
+288	Will my insurer pay for it?
+289	Usually. Insurers expect you to stop further damage, and tarping is part of most claims. We give you the receipt and photos.
+290	What if it leaks under the tarp?
+291	Should I go up and tarp it myself?
+292	Please don't. A wet, damaged roof is how people get hurt. Stay inside and call us.
+[page:gutters-and-downspouts]
+28	Gutters and downspouts
+30	From $1,100
+233	If gutters we fitted overflow in normal rain within two years, we come back and fix it free.
+267	Services / Gutters and downspouts
+268	Seamless gutters and guards fitted the same week, sized for Oklahoma downpours.
+271	Gutters that overflow send water down the walls and into the foundation. We fit seamless aluminum gutters made on site to the exact length of your house, with downspouts that carry the water well away from it.
+272	Seamless gutters made on site to length
+273	Six-inch gutters for heavy rain
+274	Downspouts that carry water away from the house
+275	Leaf guards that keep them clear
+276	Old gutters taken away
+277	Photo of the service: a new gutter along an eave
+278	A typical single-story home. Leaf guards from $900. The price is agreed before we start.
+285	About gutters
+286	Five-inch or six-inch gutters?
+287	Six-inch for most Oklahoma homes. They carry half as much water again, which matters in a spring storm.
+288	Are gutter guards worth it?
+289	Under trees, yes. They save two or three cleanings a year and stop the overflows that rot fascia boards.
+290	What if they overflow after you're done?
+291	Can you match the color of my trim?
+292	Yes. We carry 25 colors and can match most trim and siding.
+[page:insurance-claims]
+28	Our fee
+30	$0
+233	We send the photos again and ask for a re-inspection with us on the roof. The inspection still costs you nothing.
+267	Insurance claims
+268	Storm damage and insurance, start to finish. You pay your deductible; we handle the rest with your insurer.
+271	Most of our roofs are paid for by insurance after hail or wind. Carmen has handled claims for eleven years: she sends your insurer the photos and report, meets the adjuster on the roof with our roofer, and asks for a supplement when the estimate misses something.
+272	A free inspection with dated photos and a written report
+273	Help opening the claim with your insurer
+274	Our roofer on the roof with your adjuster
+275	Supplements for anything the estimate missed
+276	Work from the approved estimate: you pay only your deductible
+277	Photo of the service: storm-damaged shingles on a roof
+278	Claim help is free. On approved work you pay your deductible and nothing more. Upgrades you choose, such as Class 4 shingles, are priced in writing first.
+285	About insurance claims
+286	Will a claim raise my premium?
+287	Storm claims are usually treated as acts of nature, not your fault, so most Oklahoma insurers don't raise your rate for one. Ask your agent to be sure.
+288	Do I have to use the roofer my insurer suggests?
+289	No. In Oklahoma you choose who repairs your home.
+290	What if the claim is denied?
+291	Can you waive my deductible?
+292	No, and nobody honest will. Paying the deductible is the law in Oklahoma, and a roofer who offers to cover it is breaking it.
+[page:oklahoma-city]
+150	Service areas / Oklahoma City
+151	Roofer in Oklahoma City
+152	Our yard is on NW 39th Street, so most city inspections happen the next day. Tarping within four hours, day or night.
+153	Roofing in Oklahoma City
+154	Oklahoma City is home. We've roofed its houses since 2006, from the brick bungalows in the Plaza District to the newer builds out west. Hail and wind take turns here every spring.
+155	Inspections within 48 hours
+156	No travel charge
+157	Help with insurance claims after every storm
+158	Oklahoma City, Oklahoma
+[page:moore]
+150	Service areas / Moore
+151	Roofer in Moore
+152	Fifteen minutes down I-35, so Moore inspections are usually next-day. Storm tarping the same night.
+153	Roofing in Moore
+154	Moore knows storms better than anywhere. We've rebuilt roofs here after every big one since 2006, and we fit a lot of Class 4 shingles and metal roofs for owners who are done with hail.
+155	Inspections within 48 hours
+156	No travel charge
+157	Class 4 and metal roofs built for hail
+158	Moore, Oklahoma
+[page:norman]
+150	Service areas / Norman
+151	Roofer in Norman
+152	Twenty-five minutes from our yard. Most Norman inspections happen within two days.
+153	Roofing in Norman
+154	From the older homes near campus to the neighborhoods out east, Norman roofs see hail most years. We know the city's permit office well and pull permits for every new roof.
+155	Inspections within 48 hours
+156	No travel charge
+157	Permits pulled for every new roof
+158	Norman, Oklahoma
+[page:yukon]
+150	Service areas / Yukon
+151	Roofer in Yukon
+152	Twenty minutes west on I-40, so Yukon inspections are usually next-day.
+153	Roofing in Yukon
+154	Yukon's newer neighborhoods have a lot of roofs coming up on twenty years, the age when shingles start to give. We check them free and tell you honestly how long yours has left.
+155	Inspections within 48 hours
+156	No travel charge
+157	Honest advice on how long a roof has left
+158	Yukon, Oklahoma
+[page:mustang]
+150	Service areas / Mustang
+151	Roofer in Mustang
+152	Twenty-five minutes southwest. Most Mustang inspections happen within two days.
+153	Roofing in Mustang
+154	Mustang sits right in the path of the spring storms that come up from the southwest. We fit a lot of impact-rated roofs here, and the insurance discount often pays for the upgrade.
+155	Inspections within 48 hours
+156	No travel charge
+157	Impact-rated roofs that can lower your insurance
+158	Mustang, Oklahoma
+[page:midwest-city]
+150	Service areas / Midwest City
+151	Roofer in Midwest City
+152	Fifteen minutes east on I-40, so most inspections are next-day.
+153	Roofing in Midwest City
+154	Many Midwest City homes date from the 1950s and 60s, often with two old layers of shingles. We take them both off, fix the decking underneath and fit a roof that will see the house through.
+155	Inspections within 48 hours
+156	No travel charge
+157	Old double layers stripped and decking repaired
+158	Midwest City, Oklahoma
+[page:del-city]
+150	Service areas / Del City
+151	Roofer in Del City
+152	Fifteen minutes from our yard. Most Del City inspections are next-day.
+153	Roofing in Del City
+154	Del City's ranch houses have long, low roofs that catch the wind. We see a lot of lifted shingles and torn ridge caps here, and most of them are a quick repair, not a new roof.
+155	Inspections within 48 hours
+156	No travel charge
+157	Wind repairs done the same week
+158	Del City, Oklahoma
+[raw]
+tel:5550142	tel:4055550173
+"lat":39.7817,"lon":-89.6501	"lat":35.4993,"lon":-97.5855
+{"number":25,	{"number":20,
+{"number":18400,	{"number":9400,
+"suffix":" min"	"suffix":" hrs"
+{"number":60,	{"number":4,
+"zoom":10,	"zoom":9,
+/services/emergency-plumbing/	/services/storm-damage-repair/
+/services/leak-repair/	/services/roof-replacement/
+/services/drain-cleaning/	/services/roof-repair/
+/services/water-heaters/	/services/metal-roofs/
+/services/heating/	/services/emergency-tarping/
+/services/bathrooms-and-kitchens/	/services/gutters-and-downspouts/
+/service-areas/springfield/	/service-areas/oklahoma-city/
+/service-areas/chatham/	/service-areas/edmond/
+/service-areas/rochester/	/service-areas/moore/
+/service-areas/sherman/	/service-areas/norman/
+/service-areas/riverton/	/service-areas/yukon/
+/service-areas/auburn/	/service-areas/mustang/
+/service-areas/petersburg/	/service-areas/midwest-city/
+/service-areas/new-berlin/	/service-areas/del-city/
+mailto:jobs@example.com	#apply
