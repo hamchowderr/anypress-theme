@@ -7,7 +7,13 @@
  * posts.json), its photos and photos.json, which says which photo replaces which placeholder.
  *
  * It starts from the kit's starter pages and sections, so the demo shows exactly what an owner gets, then adds the
- * business's own words, photos, forms, menus and blog posts. It replaces the site's pages, posts, menus, header,
+ * business's own words, photos, forms, menus and blog posts.
+ *
+ * A demo for another business on the same kit (demo/<kit>/<slug>/) also has swap.json, written by tools/demo/copy.py
+ * from its copy: every piece of the kit's text and what it becomes, site-wide and per page, plus raw swaps for block
+ * settings (map positions, phone links, counters). Its build.php can also set 'colors' and 'fonts' (a palette and a
+ * font pairing from styles/colors and styles/typography), 'font_map' (the kit's display font => another),
+ * 'pages' (more pages made from the kit's sections) and 'menu'. It replaces the site's pages, posts, menus, header,
  * footer and global styles: run it on an empty site only.
  *
  * @package AnyPress
@@ -17,6 +23,12 @@ defined( 'ABSPATH' ) || exit;
 
 $anypress_demo = $anypress_kit['dir'];
 $anypress_pre  = $anypress_kit['prefix'];
+$anypress_swap = is_file( $anypress_demo . '/swap.json' ) ? json_decode( file_get_contents( $anypress_demo . '/swap.json' ), true ) : array();
+$anypress_swap += array( 'site' => array(), 'pages' => array(), 'raw' => array() );
+foreach ( (array) ( $anypress_kit['font_map'] ?? array() ) as $anypress_from => $anypress_to ) {
+	$anypress_swap['raw'][ '"fontFamily":"' . $anypress_from . '"' ] = '"fontFamily":"' . $anypress_to . '"';
+	$anypress_swap['raw'][ 'has-' . $anypress_from . '-font-family' ]  = 'has-' . $anypress_to . '-font-family';
+}
 wp_set_current_user( 1 );
 require_once ABSPATH . 'wp-admin/includes/image.php';
 require_once ABSPATH . 'wp-admin/includes/file.php';
@@ -40,6 +52,15 @@ function anypress_demo_swap( $content, $pairs ) {
 		$escaped[ $from ]             = $to;
 	}
 	return strtr( $content, $escaped );
+}
+
+/** The demo's own words in place of the kit's: this page's swaps first, then the site-wide ones, then raw swaps. */
+function anypress_demo_copy( $content, $slug = '' ) {
+	global $anypress_swap;
+	if ( isset( $anypress_swap['pages'][ $slug ] ) ) {
+		$content = anypress_demo_swap( $content, $anypress_swap['pages'][ $slug ] );
+	}
+	return strtr( anypress_demo_swap( $content, $anypress_swap['site'] ), $anypress_swap['raw'] );
 }
 
 // Links in the patterns are written as /slug/; on a site in a subfolder (such as Playground's) they need the full path.
@@ -70,6 +91,14 @@ flush_rewrite_rules();
 
 // The kit's style variation, as the site's own styles.
 $anypress_variation = json_decode( file_get_contents( get_theme_file_path( 'styles/' . $anypress_kit['style'] . '.json' ) ), true );
+if ( ! empty( $anypress_kit['colors'] ) ) {
+	$anypress_colors = json_decode( file_get_contents( get_theme_file_path( 'styles/colors/' . $anypress_kit['colors'] . '.json' ) ), true );
+	$anypress_variation['settings']['color']['palette'] = $anypress_colors['settings']['color']['palette'];
+}
+if ( ! empty( $anypress_kit['fonts'] ) ) {
+	$anypress_fonts                = json_decode( file_get_contents( get_theme_file_path( 'styles/typography/' . $anypress_kit['fonts'] . '.json' ) ), true );
+	$anypress_variation['styles'] = array_replace_recursive( $anypress_variation['styles'], $anypress_fonts['styles'] );
+}
 WP_Theme_JSON_Resolver::clean_cached_data();
 $anypress_styles_id = WP_Theme_JSON_Resolver::get_user_global_styles_post_id();
 wp_update_post(
@@ -210,6 +239,7 @@ function anypress_demo_form( $title, $fields, $button, $confirmation ) {
 $anypress_pages = array();
 function anypress_demo_page( $slug, $title, $content, $parent = 0, $order = 0 ) {
 	global $anypress_pages;
+	$content = anypress_demo_copy( $content, $slug );
 	$id = wp_insert_post(
 		array(
 			'post_type'    => 'page',
@@ -297,7 +327,7 @@ $anypress_services_page = anypress_demo_page( 'services', 'Services', anypress_d
 // One page per service, from the service page pattern (written for one of them).
 $anypress_service_text = json_decode( file_get_contents( $anypress_demo . '/services.json' ), true );
 foreach ( $anypress_service_text as $anypress_i => $anypress_svc ) {
-	$anypress_content = anypress_demo_swap( anypress_demo_pattern( $anypress_pre . '-page-service' ), $anypress_svc['swap'] );
+	$anypress_content = anypress_demo_swap( anypress_demo_pattern( $anypress_pre . '-page-service' ), $anypress_svc['swap'] ?? array() );
 	anypress_demo_page( $anypress_svc['slug'], $anypress_svc['title'], $anypress_content, $anypress_services_page, $anypress_i );
 }
 
@@ -307,7 +337,7 @@ $anypress_areas_page = anypress_demo_page( 'service-areas', 'Service areas', any
 
 $anypress_towns = json_decode( file_get_contents( $anypress_demo . '/towns.json' ), true );
 foreach ( $anypress_towns as $anypress_i => $anypress_town ) {
-	$anypress_content = anypress_demo_swap( anypress_demo_pattern( $anypress_pre . '-page-area' ), $anypress_town['swap'] );
+	$anypress_content = anypress_demo_swap( anypress_demo_pattern( $anypress_pre . '-page-area' ), $anypress_town['swap'] ?? array() );
 	$anypress_content = str_replace( $anypress_kit['area_latlon'], '"lat":' . $anypress_town['lat'] . ',"lon":' . $anypress_town['lon'], $anypress_content );
 	anypress_demo_page( $anypress_town['slug'], $anypress_kit['area_title'] . $anypress_town['name'], $anypress_content, $anypress_areas_page, $anypress_i );
 }
@@ -317,10 +347,37 @@ anypress_demo_page( $anypress_q['slug'], $anypress_q['title'], anypress_demo_for
 anypress_demo_page( 'faq', 'Questions and answers', anypress_demo_pattern( $anypress_pre . '-page-faq' ), 0, 7 );
 anypress_demo_page( 'careers', 'Careers', anypress_demo_forms( str_replace( 'mailto:jobs@example.com', '#apply', anypress_demo_pattern( $anypress_pre . '-page-careers' ) ) ), 0, 8 );
 anypress_demo_page( 'contact', 'Contact', anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-page-contact' ) ), 0, 9 );
+// More pages for this business, made from the kit's sections: array( slug, title, sections, parent slug, order ).
+// A section is a pattern name, or "form:<kind>" for one of the site's forms.
+foreach ( (array) ( $anypress_kit['pages'] ?? array() ) as $anypress_more ) {
+	$anypress_content = implode(
+		"\n\n",
+		array_map(
+			fn( $part ) => str_starts_with( $part, 'form:' ) ? "<!-- wp:shortcode -->\n[fluentform id=\"" . $GLOBALS[ 'anypress_' . substr( $part, 5 ) ] . "\"]\n<!-- /wp:shortcode -->" : anypress_demo_pattern( $part ),
+			$anypress_more['sections']
+		)
+	);
+	anypress_demo_page( $anypress_more['slug'], $anypress_more['title'], anypress_demo_forms( $anypress_content ), $anypress_pages[ $anypress_more['parent'] ?? '' ] ?? 0, $anypress_more['order'] ?? 11 );
+}
+
+/** Photo credits from photos.json, for photos whose licence asks for them. */
+function anypress_demo_credits() {
+	global $anypress_photos;
+	if ( empty( $anypress_photos['credits'] ) ) {
+		return '';
+	}
+	$items = array();
+	foreach ( $anypress_photos['credits'] as $c ) {
+		$who     = empty( $c['creator'] ) ? '' : ' by ' . esc_html( $c['creator'] );
+		$items[] = "<!-- wp:list-item -->\n<li><a href=\"" . esc_url( $c['source'] ) . '">' . esc_html( $c['title'] ) . '</a>' . $who . ', <a href="' . esc_url( $c['license_url'] ) . '">' . esc_html( $c['license'] ) . "</a></li>\n<!-- /wp:list-item -->";
+	}
+	return "\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Photo credits</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\">" . implode( "\n", $items ) . "</ul>\n<!-- /wp:list -->";
+}
+
 anypress_demo_page(
 	'privacy-policy',
 	'Privacy policy',
-	"<!-- wp:group {\"tagName\":\"section\",\"metadata\":{\"name\":\"Privacy\"},\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|xx-large\",\"bottom\":\"var:preset|spacing|xx-large\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<section class=\"wp-block-group\" style=\"padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)\"><!-- wp:heading {\"level\":1} -->\n<h1 class=\"wp-block-heading\">Privacy policy</h1>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We use what you send us (your name, contact details and what you need) only to reply, book and carry out your job, and keep it for as long as the law asks us to keep job records. We never sell it. To see or delete what we hold about you, email hello@example.com.</p>\n<!-- /wp:paragraph --></section>\n<!-- /wp:group -->",
+	"<!-- wp:group {\"tagName\":\"section\",\"metadata\":{\"name\":\"Privacy\"},\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|xx-large\",\"bottom\":\"var:preset|spacing|xx-large\"}}},\"layout\":{\"type\":\"constrained\"}} -->\n<section class=\"wp-block-group\" style=\"padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)\"><!-- wp:heading {\"level\":1} -->\n<h1 class=\"wp-block-heading\">Privacy policy</h1>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We use what you send us (your name, contact details and what you need) only to reply, book and carry out your job, and keep it for as long as the law asks us to keep job records. We never sell it. To see or delete what we hold about you, email hello@example.com.</p>\n<!-- /wp:paragraph -->" . anypress_demo_credits() . "</section>\n<!-- /wp:group -->",
 	0,
 	20
 );
@@ -374,6 +431,9 @@ $anypress_menu = array(
 	array( 'label' => 'Blog', 'slug' => 'blog' ),
 	array( 'label' => 'Contact', 'slug' => 'contact' ),
 );
+if ( ! empty( $anypress_kit['menu'] ) ) {
+	$anypress_menu = $anypress_kit['menu'];
+}
 $anypress_nav = wp_insert_post(
 	array(
 		'post_type'    => 'wp_navigation',
@@ -401,9 +461,9 @@ function anypress_demo_part( $slug, $area, $content ) {
 	wp_set_object_terms( $id, $area, 'wp_template_part_area' );
 	return $id;
 }
-$anypress_header = str_replace( '<!-- wp:navigation {', '<!-- wp:navigation {"ref":' . $anypress_nav . ',', anypress_demo_pattern( $anypress_pre . '-header' ) );
+$anypress_header = str_replace( '<!-- wp:navigation {', '<!-- wp:navigation {"ref":' . $anypress_nav . ',', anypress_demo_copy( anypress_demo_pattern( $anypress_pre . '-header' ) ) );
 anypress_demo_part( 'header', 'header', anypress_demo_links( $anypress_header ) );
-anypress_demo_part( 'footer', 'footer', anypress_demo_links( anypress_demo_photos( anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-footer' ) ) ) ) );
+anypress_demo_part( 'footer', 'footer', anypress_demo_links( anypress_demo_photos( anypress_demo_forms( anypress_demo_copy( anypress_demo_pattern( $anypress_pre . '-footer' ) ) ) ) ) );
 
 // Page links in every page.
 foreach ( $anypress_pages as $anypress_id ) {
@@ -418,4 +478,4 @@ if ( $anypress_logo ) {
 	update_option( 'site_icon', $anypress_logo );
 }
 
-echo wp_json_encode( array( 'pages' => count( $anypress_pages ), 'home' => get_permalink( $anypress_home ), 'quote' => '/' . $anypress_q['slug'] . '/', 'forms' => array( $anypress_quote, $anypress_contact, $anypress_apply, $anypress_newsletter ) ) );
+echo wp_json_encode( array( 'pages' => count( $anypress_pages ), 'home' => get_permalink( $anypress_home ), 'quote' => '/' . $anypress_q['slug'] . '/', 'leftover' => $anypress_kit['leftover'] ?? array(), 'forms' => array( $anypress_quote, $anypress_contact, $anypress_apply, $anypress_newsletter ) ) );

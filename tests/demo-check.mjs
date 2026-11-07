@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 
-export async function checkDemo({ base, shots, quote = '/get-a-quote/' }) {
+export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover = [] }) {
     const failures = [];
     const check = (ok, msg, detail = '') => {
         if (ok) console.log(`  ok   ${msg}`);
@@ -57,6 +57,9 @@ export async function checkDemo({ base, shots, quote = '/get-a-quote/' }) {
         text.push(await tab.evaluate(() => document.body.innerText));
     }
     check(!/lorem ipsum/i.test(text.join(' ')), 'no lorem ipsum anywhere');
+    // A demo for another business on a kit must not keep the kit's sample business (its name, trade, town).
+    const kept = leftover.filter((word) => text.some((t) => t.toLowerCase().includes(word.toLowerCase())));
+    if (leftover.length) check(kept.length === 0, "nothing left from the kit's sample business", kept.map((w) => `${w}: ${[...seen][text.findIndex((t) => t.toLowerCase().includes(w.toLowerCase()))]}`).join('; '));
 
     const notFound = await tab.goto(`${base}/this-page-does-not-exist/`, { waitUntil: 'domcontentloaded' });
     check(notFound.status() === 404 && /not found/i.test(await tab.title() + await tab.evaluate(() => document.body.innerText)), 'a missing page shows the designed 404 page');

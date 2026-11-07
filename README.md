@@ -46,9 +46,17 @@ npm run contrast   # only the colour contrast table
 npm run demo -- ridge            # build the Ridge demo website and leave it running at http://127.0.0.1:9411
 npm run demo -- ridge --check    # build it, click through the kit checklist at desktop and phone width, take screenshots
 npm run demo -- circuit          # the Circuit (electrician) demo
+npm run demo -- ridge/ironclad-roofing   # a roofing company on the Ridge kit
 ```
 
 A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
+
+Another business on the same kit is a folder of its own, `demo/<kit>/<business>/`, holding only that business's words, photos and choices:
+
+1. `python3 tools/demo/strings.py <kit>` lists every piece of the kit's text, numbered, in `demo/<kit>/strings.txt`.
+2. Write `copy.txt` against those numbers (a line for each, `=` to keep one, `[page:<slug>]` for text on one page only, `[raw]` for phone links, map positions and counter numbers), then run `python3 tools/demo/copy.py <folder>/copy.txt` to make `swap.json`.
+3. Add `services.json`, `towns.json`, `posts.json`, `photos/` with `photos.json` (with `credits` for photos whose licence asks for them; they are listed on the privacy page) and a `build.php` with the business's name, palette and forms, and a `leftover` list of the kit's sample words that must not appear anywhere.
+4. `npm run demo -- <kit>/<business> --check` builds it and fails if any of those words is left.
 
 The check makes sure that the theme activates and WordPress reads its presets, that every pattern parses into valid blocks and uses theme tokens only (no hex colours or pixel sizes), that every pattern has a description and keywords, that every palette passes WCAG AA, and that a page with every pattern renders without PHP errors or sideways scrolling on a phone. Screenshots need Playwright with Chromium. `node shot.mjs` remakes `screenshot.png`.
 

@@ -1,0 +1,337 @@
+1	Electricians in Columbus since 2009
+2	Safe, tidy electrical work, done right the first time
+3	Licensed electricians for homes and small businesses: repairs, panel upgrades, EV chargers and lighting. Clear prices before we start.
+4	Book a visit
+5	Call 555 0187
+6	Licensed and insured
+7	Same-day repairs
+8	2-year guarantee
+9	About Brightline
+10	A team of licensed electricians who turn up, explain, and leave the place spotless
+11	On time, or the call-out is free
+12	We give a two-hour window and text when we're on the way.
+13	Every electrician is state-licensed, background-checked and ours.
+14	Prices before we start
+15	A fixed price for the job, in writing. No surprises on the bill.
+16	Guaranteed for two years
+17	Parts and labour, on every job we do.
+18	More about us
+19	An electrician in a hard hat at work on a street
+20	What we do
+21	Electrical work for homes and small businesses
+22	All services
+23	A breaker panel with neatly labelled switches
+24	Panel upgrades
+25	Old fuse boxes and full panels replaced with modern breakers, permits and inspection included.
+26	From $1,850
+27	Learn more →
+28	Rows of breakers in an electrical distribution board
+29	EV chargers
+30	Level 2 home chargers fitted in a day, on their own circuit, with the rebate paperwork done for you.
+31	From $950
+32	A modern black pendant light glowing over a room
+33	Lighting
+34	Recessed, pendant, under-cabinet and outdoor lighting, planned with you and fitted cleanly.
+35	From $180
+36	Exposed wires and a bare bulb in an unfinished room
+37	Rewiring
+38	Knob-and-tube and aluminium wiring replaced room by room, with the walls patched before we leave.
+39	Free quote
+40	A screwdriver on a wooden workbench
+41	Repairs and fault finding
+42	Tripping breakers, dead outlets and flickering lights traced to the cause and fixed the same day.
+43	From $129
+44	A row of power outlets on a white panel with indicator lights
+45	Generators and surge protection
+46	Standby generators, transfer switches and whole-home surge protection, so a storm doesn't stop the house.
+47	From $395
+48	keeping Columbus switched on
+49	jobs finished
+50	from 860 reviews
+51	to an emergency, on average
+52	Why Brightline
+53	Not just electricians. Problem solvers.
+54	Most calls start with a mystery: a breaker that won't stay on, lights that flicker, an outlet that's warm. We find the cause, fix it, and tell you how to stop it happening again.
+55	↯
+56	Fast response
+57	Same-day repairs most weekdays, and an electrician on call every night.
+58	$
+59	Upfront prices
+60	A fixed price in writing before we start. It doesn't change.
+61	✓
+62	Licensed team
+63	State-licensed electricians, employed by us. No subcontractors.
+64	◎
+65	Clean, careful work
+66	Shoe covers, dust sheets, and every bit of mess taken away.
+67	How it works
+68	Three steps to a job well done
+69	1
+70	Online or by phone. Tell us what's wrong and we'll give you a two-hour window.
+71	2
+72	We find the cause
+73	Your electrician tests, explains what they found and gives you a fixed price.
+74	3
+75	Fixed and guaranteed
+76	We fix it, test it, clean up and guarantee the work for two years.
+77	Reviews
+78	Trusted by 860 homeowners and businesses
+79	All reviews
+80	Customer reviews
+81	★★★★★
+82	“Our breakers kept tripping for months. Ana found a failing outlet behind the fridge in twenty minutes and fixed it on the spot.”
+83	Megan P., Westerville
+84	“They fitted our EV charger in a morning, dealt with the permit and even filled in the utility rebate form.”
+85	Raj D., Dublin
+86	“Clear price before they started, boots off at the door, and the new lights look exactly like the plan.”
+87	Kelly O., Worthington
+88	“Rewired a 1940s house without wrecking it. The walls were patched so well you can't tell.”
+89	Tom B., Upper Arlington
+90	“Power went out in a storm on a Saturday. They were here within two hours and had us back on before dark.”
+91	Lucia M., Hilliard
+92	“Honest advice: they told us our panel had years left in it and saved us two thousand dollars.”
+93	Dan S., Gahanna
+94	Our team
+95	Meet the people who come to your door
+96	AR
+97	Ana Ruiz
+98	Owner and master electrician
+99	MH
+100	Marcus Hill
+101	Senior electrician, 14 years
+102	JO
+103	Jade Okafor
+104	Electrician, EV and solar
+105	BC
+106	Ben Carter
+107	Apprentice, year three
+108	Need an electrician today?
+109	Book a two-hour window online, or call and talk to a real person. Same-day repairs most weekdays.
+110	A white light fitting with a round bulb on a brick wall
+111	Service areas
+112	Across Columbus and the suburbs
+113	No travel charge anywhere inside the I-270 loop and the towns around it. Further out? Call and ask.
+114	Columbus
+115	Westerville
+116	Dublin
+117	Worthington
+118	Hilliard
+119	Grove City
+120	Gahanna
+121	Upper Arlington
+122	Columbus, Ohio
+123	Questions
+124	Got questions? Here are straight answers.
+125	All questions
+126	Do you charge a call-out fee?
+127	A flat $79 diagnostic visit, which comes off the bill if you go ahead with the repair.
+128	Do you do 24/7 emergencies?
+129	Yes. For loss of power, burning smells, sparking or water near electrics, call any time, day or night.
+130	How much does a typical repair cost?
+131	Most outlet, switch and breaker repairs are $129 to $350. We give you the price before we start.
+132	Are your electricians licensed?
+133	Yes. Every electrician is state-licensed, insured and employed by us. License EL-47215.
+134	How soon can you come?
+135	Same day for most repairs booked before noon, and the next day for everything else.
+136	From the blog
+137	Tips to keep your home safe
+138	All posts
+139	New posts will appear here.
+140	Same-day service across Columbus
+141	Mon to Sat, 7am to 7pm · Emergencies 24/7:
+142	555 0187
+143	Call
+144	Get our free home safety checklist
+145	Ten things to check in ten minutes, plus seasonal offers. One email a month, at most.
+146	Send me the checklist
+147	Licensed electricians for homes and small businesses in Columbus and the suburbs since 2009.
+148	Services
+149	Company
+150	About us
+151	Special offers
+152	Careers
+153	Blog
+154	Visit or call
+155	880 King Avenue, Columbus
+156	Mon to Sat, 7am to 7pm
+157	Emergencies 24/7
+158	© Brightline Electric. State electrical contractor license EL-47215.
+159	Privacy
+160	Contact
+161	Offer for new customers
+162	Globe pendant lights with a soft yellow glow
+163	New customers
+164	$40 off your first visit
+165	Leave your email and we'll send the code. One email, no calls.
+166	See this month's offers
+167	Bright ideas, safe wiring
+168	Ana Ruiz started Brightline in 2009 with one van and a rule: do it right, explain it plainly, and leave it clean.
+169	Construction workers standing in front of a big work truck
+170	Our story
+171	From one van to a team of twelve
+172	Ana spent ten years wiring hospitals and offices before starting on her own. Homeowners kept telling her the same thing: electricians turned up late, spoke in jargon and left a mess.
+173	So Brightline does the opposite. We give you a window and keep to it, we show you what we found, and we put the price in writing before we pick up a tool.
+174	Today we're twelve electricians and apprentices, every one employed and trained by us.
+175	Two pendant lights with soft shades glowing over a room
+176	Service areas / Westerville
+177	Electrician in Westerville
+178	Twenty minutes from our shop, so most Westerville repairs get a same-day visit.
+179	Electrical work in Westerville
+180	We've worked in Westerville since 2009, from the older homes near Uptown to the newer streets out east. Many houses here still have their original 1970s panels, so we fit a lot of upgrades and EV chargers.
+181	Same-day repairs most weekdays
+182	No travel charge
+183	Panel checks for homes built before 1985
+184	Westerville, Ohio
+185	Where we work
+186	Columbus and every suburb inside and around the I-270 loop, with no travel charge.
+187	Electrical repairs, upgrades, EV chargers and lighting in Columbus.
+188	Electrician in Columbus →
+189	Electrical repairs, upgrades, EV chargers and lighting in Westerville.
+190	Electrician in Westerville →
+191	Electrical repairs, upgrades, EV chargers and lighting in Dublin.
+192	Electrician in Dublin →
+193	Electrical repairs, upgrades, EV chargers and lighting in Worthington.
+194	Electrician in Worthington →
+195	Electrical repairs, upgrades, EV chargers and lighting in Hilliard.
+196	Electrician in Hilliard →
+197	Electrical repairs, upgrades, EV chargers and lighting in Grove City.
+198	Electrician in Grove City →
+199	Electrical repairs, upgrades, EV chargers and lighting in Gahanna.
+200	Electrician in Gahanna →
+201	Electrical repairs, upgrades, EV chargers and lighting in Upper Arlington.
+202	Electrician in Upper Arlington →
+203	Pick a day, tell us what's wrong, and we'll confirm a two-hour window.
+204	Tell us what's wrong and pick a day. We'll call to confirm a two-hour window.
+205	Prefer to talk? Call us instead.
+206	What happens next
+207	We call or text within an hour, 7am to 7pm.
+208	You get a two-hour arrival window.
+209	Your electrician texts when they're on the way.
+210	Sparks, smoke or a burning smell?
+211	Don't book online. Switch off the main breaker if it's safe, then call us now.
+212	Work with us
+213	We're hiring electricians, EV installers and apprentices. Top pay, your own van and your evenings back.
+214	See open jobs
+215	Why electricians stay
+216	Top pay, paid weekly
+217	Above scale, overtime at time and a half, and a bonus for every five-star review.
+218	Your own van
+219	A new, stocked van you take home, and the tools to do the job properly.
+220	Evenings back
+221	Four ten-hour days on rotation, and on-call shared fairly.
+222	Training paid for
+223	Apprentice to master license, with the school, exams and study time paid.
+224	Open jobs
+225	Service electrician
+226	$34 to $46 an hour
+227	Journeyman license and three years of residential service work. Clean driving record.
+228	Apply for this job
+229	EV and solar installer
+230	$32 to $42 an hour
+231	Charger and solar tie-in installs. We'll train you on the brands we fit.
+232	Apprentice electrician
+233	$20 an hour to start
+234	No experience needed. Careful, reliable and keen to learn. We pay for school.
+235	Apply
+236	Send your name, phone, the job you want and a few lines about you. Ana replies to every application within two working days.
+237	Email your application
+238	Contact us
+239	Call for anything urgent. For everything else, send a message and we'll reply within two working hours.
+240	Get in touch
+241	Call, write or drop by
+242	Mon to Sat, 7am to 7pm. Emergencies 24/7.
+243	Send a message
+244	We reply within two working hours.
+245	880 King Avenue, Columbus, Ohio
+246	Questions and answers
+247	Straight answers about prices, booking, safety and our guarantee.
+248	Prices and paying
+249	Do you charge by the hour?
+250	No, by the job. You get a fixed price in writing before we start.
+251	How can I pay?
+252	Card, bank transfer or check when the job is done. For jobs over $2,500 we take a 25% deposit.
+253	Do you offer finance?
+254	Yes, on panel upgrades, generators and rewiring over $1,500: 12 months interest-free, subject to approval.
+255	Booking and arrival
+256	Can I book online?
+257	Yes, on the Book a visit page. We call or text within an hour to confirm a window.
+258	Will I know who's coming?
+259	Yes. You get a text with the electrician's name and photo when they're on the way.
+260	Do I need to be home?
+261	Someone over 18 needs to let us in and sign off the job. A neighbor or key safe is fine.
+262	Safety
+263	What counts as an emergency?
+264	A burning smell, sparks, smoke, a hot outlet, water near electrics, or no power when your neighbors have it.
+265	What should I do while I wait?
+266	If it's safe, switch off the main breaker. Don't touch anything wet or scorched, and keep everyone away from it.
+267	Is my old panel dangerous?
+268	Some brands, such as Federal Pacific and Zinsco, are known to fail. We'll check yours free with any visit.
+269	Guarantees
+270	Is the work guaranteed?
+271	Every job is guaranteed for two years, parts and labour. New fittings also carry the maker's warranty.
+272	Do you pull permits?
+273	Yes, for every job that needs one, and we're there for the inspection.
+274	Are you licensed and insured?
+275	Yes. State electrical contractor license EL-47215 and $2 million liability insurance.
+276	This month's savings. Mention the offer when you book and we'll take it off the bill.
+277	$40 off
+278	Your first visit
+279	Any repair or install over $200. Mention the offer when you book.
+280	Claim this offer
+281	$99
+282	Home safety inspection
+283	A full check of your panel, outlets, smoke alarms and grounding. Normally $149.
+284	$200 off
+285	EV charger installs
+286	Level 2 charger fitted and tested, on top of any utility rebate.
+287	One offer per job. Not for emergency call-outs. Offers run to the end of the month and are renewed each month.
+288	4.9 stars from 860 reviews
+289	What customers say on Google and Facebook. We read every review, and reply to every one.
+290	Leave a review
+291	“Replaced every outlet in our kitchen with USB ones and added under-cabinet lights. Neat as anything.”
+292	Sara L., Grove City
+293	“They spotted scorched wiring in our attic during an inspection. Probably saved the house.”
+294	Mike R., Columbus
+295	“Booked online at 9am, fixed by 2pm. That simple.”
+296	Hannah W., Westerville
+297	Services / EV chargers
+298	EV charger installation
+299	A Level 2 home charger on its own circuit, fitted in a day, with the permit and rebate paperwork done for you.
+300	Photo of the service: a house with solar panels on the roof
+301	What's included
+302	A home charger needs its own circuit, the right breaker and a panel that can take the load. We check all three before we quote, so the price is the price.
+303	A load check of your panel and supply
+304	A dedicated 240-volt circuit and breaker
+305	Fitting and testing your charger, any brand
+306	The permit and inspection
+307	Help with your utility's rebate paperwork
+308	Photo of the service: rows of breakers in an electrical distribution board
+309	Most garage installs, with the charger supplied by you. Long cable runs or a panel upgrade are quoted first.
+310	Recent work
+311	Fresh from the van
+312	A modern ceiling light fitting with spotlights
+313	Kitchen spotlights and a new fitting, Dublin
+314	Globe pendant lights glowing over a room
+315	Pendants over an island, Worthington
+316	Recessed lights in a dark ceiling around a pendant
+317	Recessed lighting throughout, Upper Arlington
+318	Solar panels on the roof of a modern building
+319	Solar tie-in and a new panel, Hilliard
+320	A glowing LED wall light in a wooden frame
+321	LED wall lights in a hallway, Gahanna
+322	About EV chargers
+323	Do I need a panel upgrade?
+324	Often not. Most 200-amp panels have room for a 40-amp charger circuit. We check the load first and only suggest an upgrade if you need one.
+325	How long does it take?
+326	Most garage installs take four to six hours. Longer runs to a driveway can take a day.
+327	Which chargers do you fit?
+328	Any brand with a UL listing: Tesla, ChargePoint, Emporia, Wallbox and the rest.
+329	Can you help with the rebate?
+330	Yes. We fill in the utility's form and send the inspection certificate they ask for.
+331	Electrical services
+332	Repairs, upgrades and new installs for homes and small businesses, at a fixed price agreed before we start.
+333	Message sent
+334	Thanks. We'll be in touch within the hour.
+335	Someone from the office will call or text to confirm, 7am to 7pm. Check your email for a copy of what you sent.
+336	Back to the home page
+337	Read our tips

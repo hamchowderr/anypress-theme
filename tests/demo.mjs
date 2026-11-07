@@ -3,6 +3,7 @@
 //   cd tests && npm ci
 //   npm run demo -- ridge            # build the Ridge demo and serve it at http://127.0.0.1:9411 (admin / password)
 //   npm run demo -- ridge --check    # build it, click through it at desktop and phone width, take screenshots, exit
+//   npm run demo -- ridge/ironclad-roofing   # another business's demo on the same kit (demo/<kit>/<slug>/build.php)
 //
 // The demo is the theme's starter pages and sections plus the business's own words, photos, forms, menus and posts,
 // built by demo/<kit>/build.php. It needs the AnyPress Blocks plugin (ANYPRESS_BLOCKS for a local folder, otherwise its
@@ -61,7 +62,7 @@ if (!CHECK) {
 
 const { checkDemo } = await import('./demo-check.mjs');
 mkdirSync(SHOTS, { recursive: true });
-const failures = await checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
+const failures = await checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, leftover: JSON.parse(built.text).leftover, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
 console.log(failures.length ? `\n${failures.length} problem(s)` : '\nThe demo passes the kit checklist checks');
 await cli[Symbol.asyncDispose]?.();
 process.exit(failures.length ? 1 : 0);
