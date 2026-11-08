@@ -1,0 +1,85 @@
+[
+	{
+		"slug": "sunrise-ridge-walk",
+		"title": "Sunrise ridge walk",
+		"swap": {}
+	},
+	{
+		"slug": "cabin-weekend",
+		"title": "Cabin weekend",
+		"swap": {
+			"1.05\">Sunrise ridge walk<": "1.05\">Cabin weekend<",
+			"Walks / Bridger Ridge": "Walks / Gallatin Range",
+			"Bridger Ridge · 6 miles · $95 a person · Saturdays, June to October": "Gallatin Range · 14 miles over two days · $340 a person · Fridays, June to September",
+			"Breakfast above the clouds": "Two days, one cabin, no signal",
+			"We meet at the Bridger Bowl lot at 4.30am and climb by headlamp to the ridge. As the sun comes up over the Crazy Mountains we stop for coffee and a hot breakfast, then walk the ridge north before dropping back down by mid-morning.": "We walk six miles in on Saturday to a Forest Service cabin by a creek, cook dinner on the stove and sleep in bunks. On Sunday we take the long way out over a pass, with lunch at a lake, and are back at the cars by four.",
+			"1.05\">$95 a person<": "1.05\">$340 a person<",
+			"This walk: the ridge at sunrise": "This walk: cabin weekend",
+			"<p>6 miles</p>": "<p>14 miles</p>",
+			"<p>2,100 ft</p>": "<p>2,800 ft</p>",
+			"<p>Up to 8</p>": "<p>Up to 6</p>",
+			"<p>Saturdays, June to October</p>": "<p>Weekends, June to September</p>",
+			"A guide who knows the ridge in the dark": "Two days with a guide",
+			"Coffee and a hot breakfast on top": "A night in a forest cabin",
+			"Headlamps and poles to borrow": "Dinner, breakfast and two lunches",
+			"A printed route card to keep": "Sleeping mats and stoves to borrow",
+			"Photos from the morning, by email": "A printed route card to keep",
+			"This walk: the climb by headlamp": "Cabin weekend: photo 1",
+			"This walk: first light on the ridge": "Cabin weekend: photo 2",
+			"This walk: breakfast on top": "Cabin weekend: photo 3",
+			"This walk: the way down": "Cabin weekend: photo 4"
+		}
+	},
+	{
+		"slug": "cook-on-the-trail",
+		"title": "Cook on the trail",
+		"swap": {
+			"1.05\">Sunrise ridge walk<": "1.05\">Cook on the trail<",
+			"Walks / Bridger Ridge": "Walks / Hyalite",
+			"Bridger Ridge · 6 miles · $95 a person · Saturdays, June to October": "Hyalite · 3 miles · $120 a person · Sundays, May to October",
+			"Breakfast above the clouds": "A short walk and a long lunch",
+			"We meet at the Bridger Bowl lot at 4.30am and climb by headlamp to the ridge. As the sun comes up over the Crazy Mountains we stop for coffee and a hot breakfast, then walk the ridge north before dropping back down by mid-morning.": "June leads a gentle walk to a lake and cooks lunch on one small stove while you help: a one-pot chili, flatbread in a pan and coffee made properly. You'll go home with the recipes and the confidence to cook outside yourself.",
+			"1.05\">$95 a person<": "1.05\">$120 a person<",
+			"This walk: the ridge at sunrise": "This walk: cook on the trail",
+			"<p>6 miles</p>": "<p>3 miles</p>",
+			"<p>2,100 ft</p>": "<p>400 ft</p>",
+			"<p>Up to 8</p>": "<p>Up to 10</p>",
+			"<p>Saturdays, June to October</p>": "<p>Sundays, May to October</p>",
+			"A guide who knows the ridge in the dark": "A gentle walk with June",
+			"Coffee and a hot breakfast on top": "A three-course lunch on the trail",
+			"Headlamps and poles to borrow": "Every recipe, printed",
+			"A printed route card to keep": "Stoves and pans to borrow",
+			"Photos from the morning, by email": "Coffee, of course",
+			"This walk: the climb by headlamp": "Cook on the trail: photo 1",
+			"This walk: first light on the ridge": "Cook on the trail: photo 2",
+			"This walk: breakfast on top": "Cook on the trail: photo 3",
+			"This walk: the way down": "Cook on the trail: photo 4"
+		}
+	},
+	{
+		"slug": "map-and-compass",
+		"title": "Map and compass day",
+		"swap": {
+			"1.05\">Sunrise ridge walk<": "1.05\">Map and compass day<",
+			"Walks / Bridger Ridge": "Walks / Sypes Canyon",
+			"Bridger Ridge · 6 miles · $95 a person · Saturdays, June to October": "Sypes Canyon · 5 miles · $110 a person · Every other Saturday",
+			"Breakfast above the clouds": "Find your way without a phone",
+			"We meet at the Bridger Bowl lot at 4.30am and climb by headlamp to the ridge. As the sun comes up over the Crazy Mountains we stop for coffee and a hot breakfast, then walk the ridge north before dropping back down by mid-morning.": "Tom teaches you to read a map, take a bearing and know where you are when the trail disappears. We practise on easy trails above town, then you lead the group back yourself.",
+			"1.05\">$95 a person<": "1.05\">$110 a person<",
+			"This walk: the ridge at sunrise": "This walk: map and compass day",
+			"<p>6 miles</p>": "<p>5 miles</p>",
+			"<p>2,100 ft</p>": "<p>900 ft</p>",
+			"<p>Up to 8</p>": "<p>Up to 8</p>",
+			"<p>Saturdays, June to October</p>": "<p>Every other Saturday</p>",
+			"A guide who knows the ridge in the dark": "A day with Tom Reyes",
+			"Coffee and a hot breakfast on top": "A map and compass to keep",
+			"Headlamps and poles to borrow": "Practice on real trails",
+			"A printed route card to keep": "A short guide to take home",
+			"Photos from the morning, by email": "Small groups, so everyone leads",
+			"This walk: the climb by headlamp": "Map and compass day: photo 1",
+			"This walk: first light on the ridge": "Map and compass day: photo 2",
+			"This walk: breakfast on top": "Map and compass day: photo 3",
+			"This walk: the way down": "Map and compass day: photo 4"
+		}
+	}
+]

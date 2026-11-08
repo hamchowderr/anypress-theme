@@ -2,7 +2,7 @@
 /**
  * Title: Byline about: who writes it, and how to subscribe
  * Slug: anypress/byline-about
- * Description: A short note from the writer beside a small portrait, with the email signup button: who they are, what they write and how often. Part of the Byline kit.
+ * Description: A short note from the writer beside a small portrait, with a link to subscribe: who they are, what they write and how often. Part of the Byline kit.
  * Categories: anypress/kit-magazine
  * Keywords: about, author, writer, newsletter, subscribe, byline
  * Viewport Width: 1400
@@ -31,7 +31,11 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:hello@example.com?subject=Subscribe"><?php esc_html_e( 'Subscribe', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/subscribe/"><?php esc_html_e( 'Subscribe', 'anypress' ); ?></a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/about/"><?php esc_html_e( 'About Field Notes', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

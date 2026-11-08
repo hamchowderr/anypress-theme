@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.18.0
+Stable tag: 0.19.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.19.0 =
+* The Byline kit, for blogs, magazines, newsletters and writers, is now a full website: 12 starter pages (walks or events, one walk, route guides, one route, subscribe, book a walk, about, letters, questions, write for us, contact, thank you) and 20 new sections, with a sticky header and Subscribe button, a top bar with the new issue and the phone number, a newsletter popup, counters, letters from readers in a carousel, questions, route guides with maps, events with photos that open full screen, subscription plans, and booking, contributor and contact forms.
+* The Byline home page adds the publication's numbers, a route of the month with a map, letters, questions and a link to every topic's page.
 
 = 0.18.0 =
 * The Keystone kit, for estate agents, realtors and property managers, is now a full website: 13 starter pages (homes for sale, one home, towns, one town, rentals, selling, free valuation, about, reviews, questions, join us, contact, thank you) and 19 new sections, with a sticky header and Valuation button, a top bar with the phone number, a valuation popup, counters, a review carousel, questions, a page for every home with photos that open full screen, town guides, the office with a map, and valuation, job and contact forms.
