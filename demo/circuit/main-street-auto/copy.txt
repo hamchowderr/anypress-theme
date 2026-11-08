@@ -1,0 +1,551 @@
+# Main Street Auto Care: car repair and servicing in Boise, on the Circuit kit
+1	Auto repair in Boise since 2006
+2	Honest car repair, done right the first time
+3	ASE-certified technicians for every make and model: oil changes, brakes, tires, check engine lights and more. A clear price before we start.
+4	Book a service
+5	Call (208) 555-0149
+6	ASE-certified
+7	Same-day repairs
+8	2-year warranty
+9	About Main Street
+10	A shop full of certified technicians who explain the problem, fix it, and hand your car back clean
+11	Ready when we say, or the labor is on us
+12	We give you a pick-up time and text the moment your car is ready.
+13	Every technician is ASE-certified, background-checked and ours.
+14	Prices before we start
+15	A written estimate for the job. Nothing gets added without your OK.
+16	Warranted for two years
+17	Parts and labor, 24,000 miles, on every repair.
+18	More about us
+19	A mechanic working on a car's front suspension in a busy shop
+20	What we do
+21	Repairs and servicing for every make and model
+22	=
+23	A mechanic under a car on a lift, with an oil pan below
+24	Oil changes and maintenance
+25	Synthetic oil changes, filters, fluids and factory-scheduled servicing that keeps your warranty valid.
+26	From $59
+27	=
+28	Hands working on a brake disc on a car lift
+29	Brakes
+30	Squeaks, grinding and soft pedals fixed: pads, rotors and fluid, with a free brake check first.
+31	From $189
+32	Close-up of tire tread
+33	Tires and alignment
+34	New tires at fair prices, fitted, balanced and aligned, plus flat repairs and seasonal swaps.
+35	From $25
+36	Car dashboard gauges
+37	Check engine light
+38	Warning lights read with proper diagnostic gear, and the real cause found, not just the code cleared.
+39	Free code read
+40	A car dashboard with round air vents
+41	AC and heating
+42	Air that blows warm in July or cold in January, traced to the cause and fixed, with the system recharged.
+43	From $149
+44	Jumper cables clamped to a car battery
+45	Batteries and starting
+46	Batteries tested free, replaced in minutes, and starters and alternators repaired so you start every morning.
+47	From $129
+48	keeping Boise on the road
+49	cars serviced
+50	from 1,140 reviews
+51	for an oil change, while you wait
+52	Why Main Street
+53	Not just mechanics. Straight talkers.
+54	Most visits start with a worry: a noise, a light on the dash, a pull to one side. We find the cause, show you the worn part, and tell you what can wait and what can't.
+55	=
+56	Fast turnaround
+57	Same-day repairs most weekdays, and free loaner cars for longer jobs.
+58	=
+59	Upfront prices
+60	A written estimate before we start. It doesn't change without your OK.
+61	=
+62	Certified team
+63	ASE-certified technicians, employed by us. No farmed-out work.
+64	=
+65	Photos of every repair
+66	We text you photos of worn parts, so you see what we see.
+67	=
+68	Three steps to a car you can trust
+69	=
+70	Online or by phone. Tell us what's wrong and pick a drop-off time.
+71	=
+72	We find the cause
+73	Your technician inspects, texts you photos and gives you a written price.
+74	=
+75	Fixed and warranted
+76	We fix it, road-test it, wash it and warrant the work for two years.
+77	=
+78	Trusted by 1,140 drivers across the Treasure Valley
+79	=
+80	=
+81	=
+82	“My check engine light had been on for a month. Colt found a cracked vacuum hose in ten minutes, and it cost less than the code reader I almost bought.”
+83	Megan P., Boise
+84	“They showed me photos of my worn brake pads, gave me a price, and had the car back by lunch.”
+85	Raj D., Meridian
+86	“Clear price before they started, and the car came back cleaner than I left it.”
+87	Kelly O., Garden City
+88	“Kept my 2004 truck running for another 80,000 miles. Honest about what was worth fixing.”
+89	Tom B., Caldwell
+90	“Battery died on a Saturday morning. They had a new one in within an hour of opening.”
+91	Lucia M., Nampa
+92	“Honest advice: they told us our tires had another year in them and saved us six hundred dollars.”
+93	Dan S., Kuna
+94	=
+95	Meet the people who look after your car
+96	RD
+97	Ray Delgado
+98	Owner and ASE master technician
+99	CJ
+100	Colt Jensen
+101	Senior technician, 15 years
+102	PN
+103	Priya Nair
+104	Service advisor
+105	MT
+106	Mia Torres
+107	Apprentice technician, year two
+108	Need your car looked at today?
+109	Book a drop-off online, or call and talk to a real person. Same-day repairs most weekdays.
+110	A red engine under an open hood
+111	=
+112	Across Boise and the Treasure Valley
+113	Free shuttle rides home or to work anywhere in Boise, Meridian and Garden City. Further out? Call and ask.
+114	Boise
+115	Meridian
+116	Eagle
+117	Garden City
+118	Nampa
+119	Kuna
+120	Star
+121	Caldwell
+122	Boise, Idaho
+123	=
+124	=
+125	=
+126	Do you charge to look at my car?
+127	Code reads and brake and battery checks are free. A full diagnostic is $99, which comes off the bill if you go ahead.
+128	Can I wait while you work?
+129	Yes, for oil changes, tires and batteries. We have Wi-Fi, coffee and a quiet waiting room.
+130	How much does a typical repair cost?
+131	Most brake, battery and sensor repairs are $129 to $450. We give you the price before we start.
+132	Are your technicians certified?
+133	Yes. Every technician is ASE-certified, insured and employed by us.
+134	How soon can you look at my car?
+135	Same day for most repairs dropped off before 10am, and the next day for everything else.
+136	From the blog
+137	Tips to keep your car running
+138	=
+139	=
+140	Same-day repairs across Boise
+141	Mon to Fri, 7:30am to 6pm · Sat, 8am to 2pm:
+142	(208) 555-0149
+143	=
+144	Get our free car care checklist
+145	Ten things to check in ten minutes before a road trip, plus seasonal offers. One email a month, at most.
+146	Send me the checklist
+147	Honest auto repair for every make and model in Boise and the Treasure Valley since 2006.
+148	=
+149	=
+150	=
+151	=
+152	=
+153	=
+154	=
+155	1420 Main Street, Boise
+156	Mon to Fri, 7:30am to 6pm
+157	Saturdays 8am to 2pm
+158	© Main Street Auto Care. ASE-certified technicians. Every repair warranted for two years.
+159	=
+160	=
+161	=
+162	Wrenches and bolts on a wooden bench
+163	=
+164	$30 off your first service
+165	=
+166	=
+167	Straight answers, solid repairs
+168	Ray Delgado opened Main Street Auto Care in 2006 with two bays and a rule: fix it right, explain it plainly, and never sell what isn't needed.
+169	A mechanic working under a car on a lift
+170	=
+171	From two bays to a shop of ten
+172	Ray spent twelve years at dealerships before opening his own shop. Drivers kept telling him the same thing: shops talked down to them, padded the bill and kept the car for days.
+173	So Main Street does the opposite. We give you a time and keep to it, we text you photos of what we found, and we put the price in writing before we pick up a wrench.
+174	Today we're ten technicians and apprentices, every one employed and trained by us.
+175	Wrenches hanging in rows on a workshop wall
+176	Service areas / Meridian
+177	Auto repair in Meridian
+178	Fifteen minutes west on I-84, with a free shuttle home while we work on your car.
+179	Car repair for Meridian drivers
+180	Meridian drivers have trusted us since 2006, from commuters on I-84 to families with three cars in the driveway. Long highway miles mean we do a lot of brakes, tires and alignments here.
+181	Same-day repairs most weekdays
+182	Free shuttle home or to work
+183	Alignment checks for highway commuters
+184	Meridian, Idaho
+185	=
+186	Boise and every town in the Treasure Valley, with a free shuttle in Boise, Meridian and Garden City.
+187	Oil changes, brakes, tires and repairs for drivers in Boise.
+188	Auto repair in Boise →
+189	Oil changes, brakes, tires and repairs for drivers in Meridian.
+190	Auto repair in Meridian →
+191	Oil changes, brakes, tires and repairs for drivers in Eagle.
+192	Auto repair in Eagle →
+193	Oil changes, brakes, tires and repairs for drivers in Garden City.
+194	Auto repair in Garden City →
+195	Oil changes, brakes, tires and repairs for drivers in Nampa.
+196	Auto repair in Nampa →
+197	Oil changes, brakes, tires and repairs for drivers in Kuna.
+198	Auto repair in Kuna →
+199	Oil changes, brakes, tires and repairs for drivers in Star.
+200	Auto repair in Star →
+201	Oil changes, brakes, tires and repairs for drivers in Caldwell.
+202	Auto repair in Caldwell →
+203	Pick a day, tell us what's wrong, and we'll confirm a drop-off time.
+204	Tell us what's wrong and pick a day. We'll call to confirm a drop-off time.
+205	=
+206	=
+207	We call or text within an hour, 7:30am to 6pm.
+208	You get a drop-off time and an estimate of when it's ready.
+209	Your technician texts photos and a price before any work.
+210	Brakes failing or smoke from the hood?
+211	Don't drive it. Pull over somewhere safe and call us: we'll arrange a tow.
+212	=
+213	We're hiring technicians, a tire tech and apprentices. Top pay, modern tools and no Sundays.
+214	=
+215	Why technicians stay
+216	Top pay, paid weekly
+217	Above the valley rate, flat-rate bonuses, and a bonus for every five-star review.
+218	Tools paid for
+219	A tool allowance every year, and the shop's scan tools and lifts are the best we can buy.
+220	Weekends back
+221	Monday to Friday for most of the team, and Saturdays shared fairly.
+222	Training paid for
+223	ASE tests, manufacturer courses and study time, all paid.
+224	=
+225	Automotive technician
+226	$28 to $42 an hour
+227	Three years of shop experience and ASE certifications. Your own hand tools and a clean driving record.
+228	=
+229	Tire and alignment tech
+230	$20 to $26 an hour
+231	Tire fitting, balancing and alignments. We'll train you on our machines.
+232	Apprentice technician
+233	$18 an hour to start
+234	No experience needed. Careful, reliable and keen to learn. We pay for your ASE tests.
+235	=
+236	Send your name, phone, the job you want and a few lines about you. Ray replies to every application within two working days.
+237	=
+238	=
+239	Call for anything urgent, like a breakdown. For everything else, send a message and we'll reply within two working hours.
+240	=
+241	Call, write or drop by
+242	Mon to Fri, 7:30am to 6pm. Saturdays 8am to 2pm.
+243	=
+244	=
+245	1420 Main Street, Boise, Idaho
+246	=
+247	Straight answers about prices, booking, warranties and waiting times.
+248	=
+249	Do you charge by the hour?
+250	You get a written estimate for the whole job before we start. It doesn't change without your OK.
+251	=
+252	Card, cash or check when you collect the car. For jobs over $2,500 we take a 25% deposit on parts.
+253	Do you offer finance?
+254	Yes, on repairs over $750: 6 months interest-free, subject to approval.
+255	Booking and drop-off
+256	=
+257	Yes, on the Book a service page. We call or text within an hour to confirm a time.
+258	Will I know what's going on?
+259	Yes. Your technician texts photos of what they find and the price before any work starts.
+260	Can I drop off early?
+261	Yes. Use the key drop box by the door any time and we'll call when we've looked.
+262	Safety
+263	When should I stop driving?
+264	A flashing check engine light, a soft or sinking brake pedal, steam or smoke from the hood, or a temperature gauge in the red.
+265	What should I do if I break down?
+266	Pull over somewhere safe, put your hazards on and call us. We'll arrange a tow to the shop.
+267	Is my old car worth fixing?
+268	We'll tell you honestly. If a repair costs more than the car is worth, we'll say so before you spend a dollar.
+269	Warranty
+270	Is the work warranted?
+271	Every repair is warranted for two years or 24,000 miles, parts and labor. Nationwide, if you're away.
+272	Will servicing here keep my factory warranty?
+273	Yes. We follow the maker's schedule with the right parts and fluids, and stamp your book.
+274	Are you insured?
+275	Yes. ASE-certified technicians and full garage liability insurance.
+276	=
+277	$30 off
+278	Your first service
+279	Any repair or service over $150. Mention the offer when you book.
+280	=
+281	$39
+282	Synthetic oil change
+283	Up to five quarts of full synthetic, a new filter and a free check of brakes, tires and battery. Normally $69.
+284	Free
+285	Brake and battery check
+286	A full brake inspection and battery test, with photos and a written report.
+287	One offer per visit. Offers run to the end of the month and are renewed each month.
+288	4.9 stars from 1,140 reviews
+289	=
+290	=
+291	“New tires, an alignment and a free check of everything else. In and out in two hours.”
+292	Sara L., Eagle
+293	“They spotted a leaking brake line during an oil change. Probably saved us from a crash.”
+294	Mike R., Boise
+295	“Booked online at 9am, fixed by 2pm. That simple.”
+296	Hannah W., Star
+297	Services / Brakes
+298	Brake repair and replacement
+299	Squeaks, grinding and soft pedals fixed: pads, rotors and fluid replaced, with a free brake check first.
+300	Photo of the service: a brake disc with the wheel off
+301	=
+302	Brakes wear a little every day, so problems creep up. We measure your pads and rotors, test the fluid and check every line, then show you photos and tell you what needs doing now and what can wait.
+303	A free brake inspection with photos
+304	Pads and rotors replaced, front or rear
+305	Brake fluid tested and flushed when it's due
+306	Calipers, hoses and lines checked and repaired
+307	A road test before we hand the car back
+308	Photo of the service: hands fitting a brake disc
+309	For pads on one axle with quality parts. Rotors from $120 more per axle. The price is agreed before we start.
+310	=
+311	Fresh out of the shop
+312	Spark plug leads on an engine
+313	New spark plugs and leads, Eagle
+314	A mechanic under a car on a lift
+315	Brakes and a fluid flush, Meridian
+316	A socket set in its case
+317	Timing belt replaced, Garden City
+318	Jumper cables clamped to a battery under the hood
+319	New battery and alternator, Nampa
+320	A brake disc with the wheel removed
+321	Front brakes and rotors, Kuna
+322	About brakes
+323	Why do my brakes squeak?
+324	Usually a wear indicator telling you the pads are getting thin. Grinding means they're gone and the rotors are being damaged, so come in soon.
+325	How long does it take?
+326	About an hour per axle for pads, two for pads and rotors. You can wait or take our shuttle.
+327	Do you use good parts?
+328	Yes: ceramic pads and coated rotors from brands we trust, matched to your car, never the cheapest.
+329	Is the brake check really free?
+330	Yes. You get photos and a written report, with no obligation to book the work here.
+331	Auto repair services
+332	Servicing and repairs for every make and model, at a price agreed before we start.
+333	=
+334	Thanks. We'll be in touch within the hour.
+335	Someone from the front desk will call or text to confirm, 7:30am to 6pm. Check your email for a copy of what you sent.
+336	=
+337	Read our car care tips
+[page:oil-changes]
+29	Oil changes
+31	From $59
+297	Services / Oil changes
+298	Oil changes and maintenance
+299	Synthetic oil changes, filters, fluids and factory-scheduled servicing that keeps your warranty valid.
+300	Photo of the service: a mechanic under a car with an oil pan
+302	Fresh oil is the cheapest way to make an engine last. We use the grade your maker asks for, change the filter, top up every fluid and give the car a free check of brakes, tires, battery and lights while it's on the lift.
+303	Full synthetic or the oil your maker specifies
+304	A new oil filter every time
+305	Every fluid checked and topped up
+306	A free check of brakes, tires and battery
+307	Your service book stamped
+308	Photo of the service: wrenches hanging on a workshop wall
+309	For up to five quarts of full synthetic and a new filter. Factory services quoted from your car's schedule.
+322	About oil changes
+323	How often should I change my oil?
+324	Most cars on synthetic oil need it every 5,000 to 7,500 miles. Your oil life monitor or service book is the best guide.
+325	Can I wait?
+326	Yes. Most oil changes take 45 minutes, with Wi-Fi and coffee in the waiting room.
+327	Will this keep my warranty?
+328	Yes. We use the right oil and parts and stamp your book.
+329	Do I need an appointment?
+330	It helps, but we take walk-ins for oil changes most mornings.
+[page:tires]
+29	Tires
+31	From $25
+297	Services / Tires
+298	Tires and alignment
+299	New tires at fair prices, fitted, balanced and aligned, plus flat repairs and seasonal swaps.
+300	Photo of the service: close-up of tire tread
+302	Tires are the only part of the car that touches the road. We help you choose the right ones for your driving, fit and balance them, align the wheels so they wear evenly, and store your winter set for you.
+303	Tires from every major brand, priced fairly
+304	Fitting, balancing and new valve stems
+305	Computer wheel alignment
+306	Flat repairs while you wait
+307	Winter tire swaps and storage
+308	Photo of the service: a socket set in its case
+309	For a flat repair. Fitting and balancing from $25 a tire, alignment from $99.
+322	About tires
+323	How do I know I need new tires?
+324	When the tread is down to 4/32 of an inch, or the tires are over six years old. We check both free.
+325	Why does my car pull to one side?
+326	Usually alignment, sometimes a tire or a sticking brake. We find which.
+327	Do you store winter tires?
+328	Yes, for $60 a season, cleaned and ready to fit.
+329	Can I bring tires I bought online?
+330	Yes. We'll fit and balance them at our usual price.
+[page:check-engine-light]
+29	Check engine light
+31	Free code read
+297	Services / Check engine light
+298	Check engine light diagnostics
+299	Warning lights read with proper diagnostic gear, and the real cause found, not just the code cleared.
+300	Photo of the service: dashboard gauges
+302	A code tells you where to look, not what's wrong. We read it free, then test the sensors and parts it points to until we find the real cause. You get a written price before anything is replaced.
+303	A free code read while you wait
+304	Full diagnostics with dealer-level scan tools
+305	Sensors, wiring and vacuum lines tested
+306	A written report of what we found
+307	The light cleared once it's fixed
+308	Photo of the service: spark plug leads on an engine
+309	The code read is free. Full diagnostics are $99, taken off the repair if you go ahead.
+322	About warning lights
+323	Is it safe to keep driving?
+324	If the light is steady, usually for a short while. If it's flashing, stop and call us: the engine is misfiring.
+325	Can't you just clear the code?
+326	We can, but it will come back. Finding the cause saves you money in the end.
+327	What are the common causes?
+328	A loose gas cap, an oxygen sensor, spark plugs or a small vacuum leak.
+329	Will it pass emissions?
+330	Once it's fixed and the system has reset, yes. We'll tell you when it's ready.
+[page:ac-and-heating]
+29	AC and heating
+31	From $149
+297	Services / AC and heating
+298	Car AC and heating repair
+299	Air that blows warm in July or cold in January, traced to the cause and fixed, with the system recharged.
+300	Photo of the service: a car dashboard with round air vents
+302	Boise summers are hot and winters are cold, so a car's climate system works hard. We test for leaks, check the compressor, fans and blend doors, and recharge the system to the maker's spec.
+303	A full AC performance test
+304	Leak detection with dye
+305	Recharge to the maker's spec
+306	Compressors, fans and blend doors repaired
+307	Cabin air filters replaced
+308	Photo of the service: wrenches on a wooden bench
+309	For a leak test and recharge. Repairs are priced after the test, before we start.
+322	About AC and heating
+323	Why is my AC blowing warm?
+324	Usually low refrigerant from a small leak, sometimes a fan or compressor. We test before we recharge.
+325	Why is the heat weak?
+326	Often low coolant, a stuck thermostat or a blend door. We find which.
+327	Does my car smell musty?
+328	A new cabin air filter and a vent clean usually fixes it.
+329	How long does it take?
+330	Most AC services take two hours. You can wait or take the shuttle.
+[page:batteries]
+29	Batteries
+31	From $129
+297	Services / Batteries
+298	Batteries, starters and alternators
+299	Batteries tested free, replaced in minutes, and starters and alternators repaired so you start every morning.
+300	Photo of the service: jumper cables on a car battery
+302	Idaho winters are hard on batteries. We test the battery, the starter and the alternator together, because a new battery won't last if the charging system is weak. Most batteries are replaced while you wait.
+303	A free battery and charging test
+304	Batteries fitted while you wait
+305	Starters and alternators repaired
+306	Terminals cleaned and protected
+307	Old batteries recycled free
+308	Photo of the service: a red engine under an open hood
+309	For a quality battery, fitted and tested. Starters and alternators priced after testing.
+322	About batteries
+323	How long do car batteries last?
+324	Three to five years in Idaho. Cold winters and hot summers both shorten them.
+325	My car clicks but won't start. Is it the battery?
+326	Often, but it can be the starter or a loose cable. We test all three.
+327	Can you come to me?
+328	We can arrange a tow, or a jump start if you're close by.
+329	Do you recycle old batteries?
+330	Yes, free, every one.
+[page:boise]
+176	Service areas / Boise
+177	Auto repair in Boise
+178	Our shop is on Main Street, so Boise drivers get a free shuttle home or to work while we fix the car.
+179	Car repair for Boise drivers
+180	Boise is home. We look after everything from commuter cars in the North End to work trucks from the Bench. Cold winters and hot summers mean a lot of batteries, AC and brakes.
+181	Same-day repairs most weekdays
+182	Free shuttle home or to work
+183	Battery tests before every winter
+184	Boise, Idaho
+[page:eagle]
+176	Service areas / Eagle
+177	Auto repair in Eagle
+178	Twenty minutes northwest. Free pick-up for factory services.
+179	Car repair for Eagle drivers
+180	Eagle drivers bring us a lot of SUVs and trucks that tow boats and campers. We keep them serviced to the maker's schedule, so the warranty stays valid.
+181	Same-day repairs most weekdays
+182	Free pick-up for factory services
+183	Towing vehicles serviced and checked
+184	Eagle, Idaho
+[page:garden-city]
+176	Service areas / Garden City
+177	Auto repair in Garden City
+178	Five minutes from the shop, with a free shuttle both ways.
+179	Car repair for Garden City drivers
+180	Garden City is our next-door neighbor. We do a lot of quick oil changes, tires and brakes for drivers who want the car back the same afternoon.
+181	Same-day repairs most weekdays
+182	Free shuttle home or to work
+183	Oil changes while you wait
+184	Garden City, Idaho
+[page:nampa]
+176	Service areas / Nampa
+177	Auto repair in Nampa
+178	Twenty-five minutes west on I-84. Most repairs back the same day.
+179	Car repair for Nampa drivers
+180	Nampa drivers put on a lot of highway miles. We see plenty of tires, alignments and cooling system repairs from the I-84 commute.
+181	Same-day repairs most weekdays
+182	Free loaner cars for longer jobs
+183	Cooling systems checked before summer
+184	Nampa, Idaho
+[page:kuna]
+176	Service areas / Kuna
+177	Auto repair in Kuna
+178	Twenty-five minutes southwest. Free loaner cars for longer jobs.
+179	Car repair for Kuna drivers
+180	Kuna's country roads and gravel are hard on tires, suspension and windshields. We fix all three, and tell you honestly what can wait.
+181	Same-day repairs most weekdays
+182	Free loaner cars for longer jobs
+183	Suspension checks for gravel roads
+184	Kuna, Idaho
+[page:star]
+176	Service areas / Star
+177	Auto repair in Star
+178	Thirty minutes northwest. Free loaner cars for longer jobs.
+179	Car repair for Star drivers
+180	Star is growing fast, and new families mean new minivans and SUVs. We keep them serviced and safe, with a free check of brakes and tires on every visit.
+181	Same-day repairs most weekdays
+182	Free loaner cars for longer jobs
+183	Free brake and tire checks
+184	Star, Idaho
+[page:caldwell]
+176	Service areas / Caldwell
+177	Auto repair in Caldwell
+178	Thirty-five minutes west on I-84. Free loaner cars for longer jobs.
+179	Car repair for Caldwell drivers
+180	Caldwell has a lot of farm trucks and older cars that are worth keeping on the road. We keep them running for less than a replacement would cost.
+181	Same-day repairs most weekdays
+182	Free loaner cars for longer jobs
+183	Older cars kept on the road
+184	Caldwell, Idaho
+[raw]
+tel:5550187	tel:2085550149
+"lat":39.9612,"lon":-82.9988	"lat":43.6150,"lon":-116.2023
+"lat":39.9937,"lon":-83.0219	"lat":43.6166,"lon":-116.2050
+"number":17,	"number":20,
+"number":9200,	"number":31000,
+"number":2,	"number":45,
+"suffix":" hrs"	"suffix":" min"
+/services/panel-upgrades/	/services/oil-changes/
+/services/ev-chargers/	/services/brakes/
+/services/lighting/	/services/tires/
+/services/rewiring/	/services/check-engine-light/
+/services/repairs/	/services/ac-and-heating/
+/services/generators/	/services/batteries/
+/service-areas/columbus/	/service-areas/boise/
+/service-areas/westerville/	/service-areas/meridian/
+/service-areas/dublin/	/service-areas/eagle/
+/service-areas/worthington/	/service-areas/garden-city/
+/service-areas/hilliard/	/service-areas/nampa/
+/service-areas/grove-city/	/service-areas/kuna/
+/service-areas/gahanna/	/service-areas/star/
+/service-areas/upper-arlington/	/service-areas/caldwell/
+mailto:jobs@example.com	#apply
