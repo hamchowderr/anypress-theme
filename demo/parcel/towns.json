@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Asheville",
+		"slug": "asheville",
+		"lat": 35.5868,
+		"lon": -82.5671,
+		"swap": {}
+	},
+	{
+		"name": "Durham",
+		"slug": "durham",
+		"lat": 35.996,
+		"lon": -78.9018,
+		"swap": {
+			"Where to buy in Asheville": "Where to buy in Durham",
+			"Stockists / Asheville": "Stockists / Durham",
+			"Our own studio shop, open five days a week, with pieces you won't find online.": "Bull City Goods on West Main Street keeps mugs, tumblers and bowls on its shelves all year.",
+			"Where to buy: shelves of handmade plates and bowls": "Where to buy in durham",
+			"The studio shop": "A shop",
+			"Park Clay, River Arts District": "Bull City Goods",
+			"191 Lyman Street, Studio 4, Asheville, NC 28801": "112 West Main Street, Durham, NC 27701",
+			"Wednesday to Sunday, 10am to 5pm": "Tuesday to Saturday, 10am to 6pm",
+			"Every collection, including pieces not online": "Mugs, tumblers and breakfast bowls",
+			"Seconds at half price": "New pieces every month",
+			"Gift wrapping while you wait": "Their café serves coffee in our mugs"
+		}
+	},
+	{
+		"name": "Charleston",
+		"slug": "charleston",
+		"lat": 32.779,
+		"lon": -79.9353,
+		"swap": {
+			"Where to buy in Asheville": "Where to buy in Charleston",
+			"Stockists / Asheville": "Stockists / Charleston",
+			"Our own studio shop, open five days a week, with pieces you won't find online.": "Tidewater Home on King Street carries our vases and bottles, beside other makers from the Carolinas.",
+			"Where to buy: shelves of handmade plates and bowls": "Where to buy in charleston",
+			"The studio shop": "A shop",
+			"Park Clay, River Arts District": "Tidewater Home",
+			"191 Lyman Street, Studio 4, Asheville, NC 28801": "245 King Street, Charleston, SC 29401",
+			"Wednesday to Sunday, 10am to 5pm": "Monday to Saturday, 10am to 7pm",
+			"Every collection, including pieces not online": "Moon vases and bud vases",
+			"Seconds at half price": "Gourd and oil bottles",
+			"Gift wrapping while you wait": "Wrapped as gifts at the counter"
+		}
+	},
+	{
+		"name": "Atlanta",
+		"slug": "atlanta",
+		"lat": 33.7643,
+		"lon": -84.3494,
+		"swap": {
+			"Where to buy in Asheville": "Where to buy in Atlanta",
+			"Stockists / Asheville": "Stockists / Atlanta",
+			"Our own studio shop, open five days a week, with pieces you won't find online.": "Our stall at the Little Five Points makers market, the first Saturday of every month.",
+			"Where to buy: shelves of handmade plates and bowls": "Where to buy in atlanta",
+			"The studio shop": "A market",
+			"Park Clay, River Arts District": "Little Five Points makers market",
+			"191 Lyman Street, Studio 4, Asheville, NC 28801": "Euclid Avenue and Moreland Avenue, Atlanta, GA 30307",
+			"Wednesday to Sunday, 10am to 5pm": "First Saturday of the month, 9am to 2pm",
+			"Every collection, including pieces not online": "A bit of every collection",
+			"Seconds at half price": "Seconds at a market price",
+			"Gift wrapping while you wait": "June at the stall, most months"
+		}
+	}
+]

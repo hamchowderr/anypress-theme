@@ -76,6 +76,7 @@ function anypress_demo_links( $content ) {
 			'{"url":"#","service":"linkedin"}'  => '{"url":"https://www.linkedin.com/","service":"linkedin"}',
 			'{"url":"#","service":"youtube"}'   => '{"url":"https://www.youtube.com/","service":"youtube"}',
 			'{"url":"#","service":"x"}'         => '{"url":"https://x.com/","service":"x"}',
+			'{"url":"#","service":"pinterest"}' => '{"url":"https://www.pinterest.com/","service":"pinterest"}',
 		)
 	);
 	return preg_replace_callback(
