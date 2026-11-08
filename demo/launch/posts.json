@@ -1,0 +1,38 @@
+[
+	{
+		"slug": "how-to-chase-a-late-invoice",
+		"title": "How to chase a late invoice without losing the client",
+		"category": "Getting paid",
+		"photo": null,
+		"key": "late",
+		"excerpt": "Three emails, three tones, and when to pick up the phone. The sequence that gets most invoices paid within a week.",
+		"content": "<!-- wp:paragraph -->\n<p>Most late invoices aren't a sign of a bad client. They're a sign of a busy one. Here's the order that works.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Day 3: assume it slipped</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A short, friendly note with the invoice attached and the Pay button. No apology, no blame.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Day 7: be clear</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Say the amount, the due date and the number of days late. Ask when you can expect payment.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Day 14: be firm, then call</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Mention your late fee if your terms have one. If there's still nothing, a phone call usually settles it in a minute.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><a href=\"/features/reminders/\">Reminders</a> can send the first three for you.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "raise-your-rates",
+		"title": "When and how to raise your rates",
+		"category": "Pricing",
+		"photo": null,
+		"key": "price",
+		"excerpt": "If you're booked solid, you're too cheap. How to tell clients, how much to add, and what to do if someone says no.",
+		"content": "<!-- wp:paragraph -->\n<p>Most freelancers raise their rates too late and too little. Here's a simple way to do it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Raise for new clients first</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Quote new clients your new rate. Nothing to explain, and you'll see quickly if it holds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Give existing clients notice</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Two months' notice, one short email, the new rate and the date. Most won't blink.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Add 10 to 20 percent</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Enough to matter, small enough that good clients stay.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Change your rate once in <a href=\"/features/invoices/\">Tally</a> and every new invoice uses it.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "setting-aside-tax",
+		"title": "How much should a freelancer set aside for tax?",
+		"category": "Tax",
+		"photo": null,
+		"key": "tax",
+		"excerpt": "A rule of thumb for each country we support, and why a separate account makes April painless.",
+		"content": "<!-- wp:paragraph -->\n<p>The short answer: more than you think, and every time you're paid.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">A rule of thumb</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Put aside 25 to 30 percent of every payment until you know your real figure. Your accountant can tell you the right number after one year.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Use a separate account</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Money you can't see is money you don't spend. Move the set-aside amount the day you're paid.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Check every quarter</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Compare what you've saved with what you'll owe, and top up if you're behind.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><a href=\"/features/tax/\">Tax set aside</a> shows the figure on every payment.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "working-remotely-with-clients",
+		"title": "Five habits of freelancers who get paid on time",
+		"category": "Getting paid",
+		"photo": null,
+		"key": "remote",
+		"excerpt": "Clear terms, deposits and invoices sent the day the work is done. Small habits that add up to weeks sooner.",
+		"content": "<!-- wp:paragraph -->\n<p>We looked at 40,000 invoices. The freelancers paid fastest have five things in common.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">1. Terms agreed before work starts</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Payment terms in the proposal, not a surprise on the invoice.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">2. Deposits on new clients</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A deposit filters out clients who won't pay and pays for the first week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">3. Invoices sent the same day</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Invoices sent the day the work is delivered are paid nine days sooner on average.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">4. Easy ways to pay</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A Pay button gets paid twice as fast as bank details at the bottom of a PDF.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">5. Reminders on</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Polite, automatic and in your words. <a href=\"/pricing/\">Start free</a> and turn them on.</p>\n<!-- /wp:paragraph -->"
+	}
+]
