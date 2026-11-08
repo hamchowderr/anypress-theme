@@ -1,0 +1,118 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Assay (regulated health products)",
+	"slug": "kit-assay",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#0e5a5f",
+					"name": "Brand",
+					"slug": "primary"
+				},
+				{
+					"color": "#d7ecea",
+					"name": "Brand soft",
+					"slug": "primary-accent"
+				},
+				{
+					"color": "#e8c872",
+					"name": "Second brand",
+					"slug": "primary-alt"
+				},
+				{
+					"color": "#2a1f05",
+					"name": "Second brand deep",
+					"slug": "primary-alt-accent"
+				},
+				{
+					"color": "#0f1d1f",
+					"name": "Text",
+					"slug": "main"
+				},
+				{
+					"color": "#d3dcdb",
+					"name": "Text soft",
+					"slug": "main-accent"
+				},
+				{
+					"color": "#fbfcfb",
+					"name": "Background",
+					"slug": "base"
+				},
+				{
+					"color": "#4a5a5c",
+					"name": "Muted text",
+					"slug": "secondary"
+				},
+				{
+					"color": "#eef3f2",
+					"name": "Tint",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#d8e2e0",
+					"name": "Border",
+					"slug": "border-light"
+				},
+				{
+					"color": "#203436",
+					"name": "Border on dark",
+					"slug": "border-dark"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|figtree"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|newsreader",
+					"fontWeight": "500",
+					"letterSpacing": "-0.015em",
+					"lineHeight": "1.08"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "var:preset|border-radius|full"
+				},
+				"typography": {
+					"fontWeight": "600",
+					"fontSize": "var:preset|font-size|base",
+					"fontFamily": "var:preset|font-family|figtree"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|newsreader",
+					"fontWeight": "600",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"core/image": {
+				"border": {
+					"radius": "0"
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"width": "0"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"left": "0"
+					}
+				}
+			}
+		}
+	}
+}
