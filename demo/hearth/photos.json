@@ -1,0 +1,230 @@
+{
+	"files": {
+		"baskets.jpg": "Loaves and rolls in baskets on a bakery counter, each with a handwritten price tag",
+		"holding.jpg": "A baker in a white shirt holding a braided loaf in a cloth",
+		"board.jpg": "A dark sourdough loaf cut open on a wooden board",
+		"round.jpg": "A round floured sourdough loaf on a plate on a checked tablecloth",
+		"buns.jpg": "Cinnamon buns on baking paper",
+		"sesame.jpg": "Sesame bagels piled together",
+		"cortado.jpg": "A cortado in a glass with a wooden spoon on a saucer",
+		"croissants.jpg": "A tray of croissants fresh from the oven",
+		"carrot-cake.jpg": "A slice of layered carrot cake being eaten with a fork",
+		"egg.jpg": "A fried egg beside a slice of seeded bread",
+		"soup.jpg": "A bowl of tomato soup with croutons and a slice of bread",
+		"latte.jpg": "A latte with a leaf drawn in the milk",
+		"shelves.jpg": "Sourdough loaves on wooden bakery shelves",
+		"scoring.jpg": "A scored round loaf on baking paper beside a kitchen scale",
+		"cheesecake.jpg": "A slice of cheesecake topped with cherries and chocolate sauce",
+		"barista.jpg": "A barista making coffee at an espresso machine",
+		"croissant-coffee.jpg": "Croissants, black coffee and jam on a breakfast table",
+		"wedding.jpg": "A three-tier white wedding cake with pink roses",
+		"market.jpg": "A market stall full of tomatoes, artichokes, garlic and mushrooms",
+		"display.jpg": "A glass counter of cakes under a chalkboard menu",
+		"cafe.jpg": "A quiet café with wooden chairs, tables and tall windows"
+	},
+	"by_alt": {
+		"": "baskets.jpg",
+		"@tall": "holding.jpg",
+		"A round sourdough loaf, floured and scored": "round.jpg",
+		"Cinnamon buns on a plate beside two cups of coffee": "buns.jpg",
+		"Sesame rolls on a baking tray": "sesame.jpg",
+		"An espresso and a small brownie": "cortado.jpg",
+		"From the oven: country loaves cooling on a rack": "shelves.jpg",
+		"From the oven: a tray of croissants": "croissants.jpg",
+		"From the oven: a baker shaping dough on a floured bench": "scoring.jpg",
+		"From the oven: a slice of cake with berries": "cheesecake.jpg",
+		"From the oven: coffee being poured at the counter": "barista.jpg",
+		"A cup of coffee and a pastry on a café table": "croissant-coffee.jpg",
+		"Inside the bakery: the café with its wooden tables": "cafe.jpg",
+		"Inside the bakery: loaves of sourdough bread on a wooden board": "board.jpg",
+		"On the counter: sourdough loaves on wooden shelves": "baskets.jpg",
+		"Inside the bakery: pastries": "croissants.jpg",
+		"On the counter: pastries": "buns.jpg",
+		"Inside the bakery: cakes": "carrot-cake.jpg",
+		"On the counter: cakes": "wedding.jpg",
+		"Inside the bakery: breakfast": "egg.jpg",
+		"On the counter: breakfast": "display.jpg",
+		"Inside the bakery: lunch": "soup.jpg",
+		"On the counter: lunch": "cafe.jpg",
+		"Inside the bakery: coffee": "latte.jpg",
+		"On the counter: coffee": "cortado.jpg"
+	},
+	"fallback": "baskets.jpg",
+	"posts": {
+		"keep": "round.jpg",
+		"wedding": "wedding.jpg",
+		"soup": "soup.jpg",
+		"market": "market.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "baskets.jpg",
+			"title": "Freshly Baked",
+			"creator": "Daria Shevtsova",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/freshly-baked-NKU48AAAWF"
+		},
+		{
+			"file": "holding.jpg",
+			"title": "Thanksgiving Autum",
+			"creator": "Element5 Digital",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/thanksgiving-autum-L4B2YC09F2"
+		},
+		{
+			"file": "board.jpg",
+			"title": "Free close slice sourdough image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5910724/image-public-domain-food-branch"
+		},
+		{
+			"file": "round.jpg",
+			"title": "Sourdough Bread Loaf",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5969750/sourdough-bread-loaf"
+		},
+		{
+			"file": "buns.jpg",
+			"title": "Free cinnamon roll image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5919792/photo-image-background-public-domain-food"
+		},
+		{
+			"file": "sesame.jpg",
+			"title": "Bagels Bread",
+			"creator": "Foodie Girl",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/bagels-bread-GI73BADLXF"
+		},
+		{
+			"file": "cortado.jpg",
+			"title": "Coffee Cup",
+			"creator": "phatonlaphat thongsriphong",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/coffee-cup-CQQMILRZPU"
+		},
+		{
+			"file": "croissants.jpg",
+			"title": "Croissant Bread",
+			"creator": "Olia Gozha",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/croissant-bread-8GMCKXR6GE"
+		},
+		{
+			"file": "carrot-cake.jpg",
+			"title": "Cake Dessert",
+			"creator": "Adrianna Calvo",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cake-dessert-NYBRCP91R9"
+		},
+		{
+			"file": "egg.jpg",
+			"title": "Fried Egg",
+			"creator": "Pawel Kadysz",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/fried-egg-7TZ228CGEN"
+		},
+		{
+			"file": "soup.jpg",
+			"title": "Bowl Soup",
+			"creator": "Foodie Girl",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/bowl-soup-WOZ7PQGMMI"
+		},
+		{
+			"file": "latte.jpg",
+			"title": "Coffee Latte",
+			"creator": "Athena Lam",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/coffee-latte-ZJZWZJL0DB"
+		},
+		{
+			"file": "shelves.jpg",
+			"title": "Loaf bread",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6040722/loaf-bread-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "scoring.jpg",
+			"title": "sourdough loaf of bread",
+			"creator": "Mary Jane Duford",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/576654da75/"
+		},
+		{
+			"file": "cheesecake.jpg",
+			"title": "Cheesecake Cake",
+			"creator": "Valeria Boltneva",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cheesecake-cake-BTS87FY8YX"
+		},
+		{
+			"file": "barista.jpg",
+			"title": "People Man",
+			"creator": "Zachary Staines",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-man-V5ZVS5WP3K"
+		},
+		{
+			"file": "croissant-coffee.jpg",
+			"title": "Croissants Jam",
+			"creator": "JESHOOTS.com",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/croissants-jam-3D88A11AF9"
+		},
+		{
+			"file": "wedding.jpg",
+			"title": "Cake Food",
+			"creator": "Ana Paula Lima",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cake-food-GNWZ7VU0EC"
+		},
+		{
+			"file": "market.jpg",
+			"title": "Free fresh vegetables stand image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5913527/image-public-domain-plant-green"
+		},
+		{
+			"file": "display.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5944309/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "cafe.jpg",
+			"title": "A cozy cafe interior with wooden chairs and tables arranged neatly on a patterned tile floor. Large windows allow natural light to illuminate the space. The decor features rustic elements, creating a warm and inviting atmosphere.",
+			"creator": "Nilo Velez",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/78067a4728/"
+		}
+	]
+}

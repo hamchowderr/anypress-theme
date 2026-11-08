@@ -543,6 +543,7 @@ exec(open(os.path.join(HERE, "kit_circuit.py")).read())
 exec(open(os.path.join(HERE, "kit_commons.py")).read())
 exec(open(os.path.join(HERE, "kit_chapter.py")).read())
 exec(open(os.path.join(HERE, "kit_launch.py")).read())
+exec(open(os.path.join(HERE, "kit_hearth.py")).read())
 
 import importlib.util as _u
 _s = _u.spec_from_file_location("bc", os.path.join(HERE, "blocks_cats.py")); _m = _u.module_from_spec(_s); _s.loader.exec_module(_m); _m.apply(OUT)
