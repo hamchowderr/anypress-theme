@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "oil-changes",
+		"title": "Oil changes"
+	},
+	{
+		"slug": "brakes",
+		"title": "Brakes"
+	},
+	{
+		"slug": "tires",
+		"title": "Tires"
+	},
+	{
+		"slug": "check-engine-light",
+		"title": "Check engine light"
+	},
+	{
+		"slug": "ac-and-heating",
+		"title": "AC and heating"
+	},
+	{
+		"slug": "batteries",
+		"title": "Batteries"
+	}
+]

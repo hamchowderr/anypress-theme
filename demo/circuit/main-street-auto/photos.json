@@ -1,0 +1,171 @@
+{
+ "files": {
+  "mechanic-suspension.jpg": "A mechanic working on a car's front suspension in a busy shop",
+  "oil-change.jpg": "A mechanic under a car on a lift, with an oil pan below",
+  "fitting-brake-disc.jpg": "Hands working on a brake disc on a car lift",
+  "tire-tread.jpg": "Close-up of tire tread",
+  "dashboard-gauges.jpg": "Car dashboard gauges",
+  "dashboard-vents.jpg": "A car dashboard with round air vents",
+  "jumper-cables.jpg": "Jumper cables clamped to a car battery",
+  "red-engine.jpg": "A red engine under an open hood",
+  "wrenches-on-bench.jpg": "Wrenches and bolts on a wooden bench",
+  "mechanic-on-lift.jpg": "A mechanic working under a car on a lift",
+  "wrench-wall.jpg": "Wrenches hanging in rows on a workshop wall",
+  "brake-disc.jpg": "Photo of the service: a brake disc with the wheel off",
+  "spark-plug-leads.jpg": "Spark plug leads on an engine",
+  "socket-set.jpg": "A socket set in its case"
+ },
+ "by_alt": {
+  "A mechanic working on a car's front suspension in a busy shop": "mechanic-suspension.jpg",
+  "A mechanic under a car on a lift, with an oil pan below": "oil-change.jpg",
+  "Hands working on a brake disc on a car lift": "fitting-brake-disc.jpg",
+  "Close-up of tire tread": "tire-tread.jpg",
+  "Car dashboard gauges": "dashboard-gauges.jpg",
+  "A car dashboard with round air vents": "dashboard-vents.jpg",
+  "Jumper cables clamped to a car battery": "jumper-cables.jpg",
+  "A red engine under an open hood": "red-engine.jpg",
+  "Wrenches and bolts on a wooden bench": "wrenches-on-bench.jpg",
+  "A mechanic working under a car on a lift": "mechanic-on-lift.jpg",
+  "Wrenches hanging in rows on a workshop wall": "wrench-wall.jpg",
+  "": "socket-set.jpg",
+  "Photo of the service: a brake disc with the wheel off": "brake-disc.jpg",
+  "Photo of the service: hands fitting a brake disc": "fitting-brake-disc.jpg",
+  "Spark plug leads on an engine": "spark-plug-leads.jpg",
+  "A mechanic under a car on a lift": "mechanic-on-lift.jpg",
+  "A socket set in its case": "socket-set.jpg",
+  "Jumper cables clamped to a battery under the hood": "jumper-cables.jpg",
+  "A brake disc with the wheel removed": "brake-disc.jpg",
+  "Photo of the service: a mechanic under a car with an oil pan": "oil-change.jpg",
+  "Photo of the service: wrenches hanging on a workshop wall": "wrench-wall.jpg",
+  "Photo of the service: close-up of tire tread": "tire-tread.jpg",
+  "Photo of the service: a socket set in its case": "socket-set.jpg",
+  "Photo of the service: dashboard gauges": "dashboard-gauges.jpg",
+  "Photo of the service: spark plug leads on an engine": "spark-plug-leads.jpg",
+  "Photo of the service: a car dashboard with round air vents": "dashboard-vents.jpg",
+  "Photo of the service: wrenches on a wooden bench": "wrenches-on-bench.jpg",
+  "Photo of the service: jumper cables on a car battery": "jumper-cables.jpg",
+  "Photo of the service: a red engine under an open hood": "red-engine.jpg"
+ },
+ "fallback": "mechanic-on-lift.jpg",
+ "posts": {
+  "oil": "oil-change.jpg",
+  "brakes": "brake-disc.jpg",
+  "tires": "tire-tread.jpg",
+  "battery": "jumper-cables.jpg"
+ },
+ "logo": null,
+ "credits": [
+  {
+   "file": "mechanic-suspension.jpg",
+   "title": "Fleet Division Public Works Fleet",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/9676803/image-person-fire-public-domain"
+  },
+  {
+   "file": "mechanic-on-lift.jpg",
+   "title": "Fleet Division Public Works Fleet",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/9676801/image-face-person-fire"
+  },
+  {
+   "file": "oil-change.jpg",
+   "title": "Public Works Fleet Division, Greenville",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/9659062/image-person-fire-public-domain"
+  },
+  {
+   "file": "fitting-brake-disc.jpg",
+   "title": "Photo",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/5960386/free-public-domain-cc0-photo"
+  },
+  {
+   "file": "brake-disc.jpg",
+   "title": "A close-up view of a vehicle\u2019s brake system, featuring a rusted brake disc and caliper.",
+   "creator": "Stephen Dumba",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://wordpress.org/photos/photo/34869495e5/"
+  },
+  {
+   "file": "tire-tread.jpg",
+   "title": "Tire Thread",
+   "creator": "Matt Bango",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/tire-thread-MUVDMYQQXF"
+  },
+  {
+   "file": "dashboard-gauges.jpg",
+   "title": "Car Dashboard",
+   "creator": "Freestocks.org",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/car-dashboard-AHOSNADWVQ"
+  },
+  {
+   "file": "dashboard-vents.jpg",
+   "title": "Steeringwheel Dashboard",
+   "creator": "Revac Film's&Photography",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/steeringwheel-dashboard-26ZGCDWZM3"
+  },
+  {
+   "file": "jumper-cables.jpg",
+   "title": "Jumpercables Battery",
+   "creator": "Pawel Kadysz",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/jumpercables-battery-T7T37KWY8G"
+  },
+  {
+   "file": "red-engine.jpg",
+   "title": "Ferrari car engine, location unknown",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/6112764/photo-image-public-domain-logo-free"
+  },
+  {
+   "file": "spark-plug-leads.jpg",
+   "title": "Car engine",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/6038859/car-engine-free-public-domain-cc0-photo"
+  },
+  {
+   "file": "wrench-wall.jpg",
+   "title": "Train Mechanic Wrenches And Tools",
+   "creator": "Jennifer Bourn",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://wordpress.org/photos/photo/395634db9b/"
+  },
+  {
+   "file": "socket-set.jpg",
+   "title": "Wrench Sockets",
+   "creator": "Jarosław Puszczyński",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/wrench-sockets-M07SV6AMBD"
+  },
+  {
+   "file": "wrenches-on-bench.jpg",
+   "title": "Workshop Wrench",
+   "creator": "The World is a Stage",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/workshop-wrench-O8DVPXYOIY"
+  }
+ ]
+}
