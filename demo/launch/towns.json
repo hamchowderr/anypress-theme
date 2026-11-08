@@ -1,0 +1,114 @@
+[
+	{
+		"name": "Tally for designers",
+		"slug": "designers",
+		"lat": 0,
+		"lon": 0,
+		"swap": {}
+	},
+	{
+		"name": "Tally for developers",
+		"slug": "developers",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tally for designers": "Tally for developers",
+			"Who it's for / Designers": "Who it's for / Developers",
+			"Deposits, stages and clients abroad, without the awkward money emails.": "Hours from your timer, retainers that bill themselves, and clients in any currency.",
+			"Built for how designers get paid": "Built for how developers get paid",
+			"Deposits, stages and the endless last round of changes: Tally handles the money side of design work.": "Hourly work, retainers and long projects: Tally turns your tracked time into invoices and keeps the cash coming.",
+			"I invoice a deposit before I open Figma now. It changed how clients treat my time.": "My retainers invoice themselves on the first of the month. I haven't thought about billing in a year.",
+			"Ines Ferreira, Brand designer": "Sam Okoye, Freelance developer",
+			"Deposits and stages": "Hours in, invoice out",
+			"Invoice 50% up front and the rest on delivery, from one project.": "Bring hours in from your time tracker and invoice them in one go.",
+			"Extra rounds, billed": "Retainers on autopilot",
+			"Add a line for the extra round of changes in a click, with your rate already on it.": "Monthly retainers invoice themselves on the same day every month.",
+			"Clients abroad": "Clients anywhere",
+			"Bill in their currency and get paid in yours, at a fair rate.": "Bill in dollars, pounds or euros and get paid in yours."
+		}
+	},
+	{
+		"name": "Tally for photographers",
+		"slug": "photographers",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tally for designers": "Tally for photographers",
+			"Who it's for / Designers": "Who it's for / Photographers",
+			"Deposits, stages and clients abroad, without the awkward money emails.": "Booking fees, shoot-day balances and usage licences, paid from one link.",
+			"Built for how designers get paid": "Built for how photographers get paid",
+			"Deposits, stages and the endless last round of changes: Tally handles the money side of design work.": "Booking fees, balances on the day and licences for extra use: Tally keeps each shoot's money in one place.",
+			"I invoice a deposit before I open Figma now. It changed how clients treat my time.": "Clients pay the balance from their phone before I've packed the lights away.",
+			"Ines Ferreira, Brand designer": "Lucy Chen, Photographer",
+			"Deposits and stages": "Booking fees",
+			"Invoice 50% up front and the rest on delivery, from one project.": "Take a fee to hold the date, and invoice the balance after the shoot.",
+			"Extra rounds, billed": "Licences and extras",
+			"Add a line for the extra round of changes in a click, with your rate already on it.": "Add usage licences and extra edits as lines with your own prices.",
+			"Clients abroad": "Paid on the spot",
+			"Bill in their currency and get paid in yours, at a fair rate.": "Clients pay by card from their phone before you've packed up."
+		}
+	},
+	{
+		"name": "Tally for writers",
+		"slug": "writers",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tally for designers": "Tally for writers",
+			"Who it's for / Designers": "Who it's for / Writers",
+			"Deposits, stages and clients abroad, without the awkward money emails.": "Per word, per piece or per day, invoiced in a minute and chased politely.",
+			"Built for how designers get paid": "Built for how writers get paid",
+			"Deposits, stages and the endless last round of changes: Tally handles the money side of design work.": "Per-word rates, kill fees and editors who forget to pay: Tally keeps every commission tracked and paid.",
+			"I invoice a deposit before I open Figma now. It changed how clients treat my time.": "Editors pay on time now, because the reminders ask so I don't have to.",
+			"Ines Ferreira, Brand designer": "Aisha Bello, Copywriter",
+			"Deposits and stages": "Per word or per piece",
+			"Invoice 50% up front and the rest on delivery, from one project.": "Set your rate once and invoice any length in a minute.",
+			"Extra rounds, billed": "Kill fees, covered",
+			"Add a line for the extra round of changes in a click, with your rate already on it.": "Add a kill fee to any commission that's dropped, at the rate you agreed.",
+			"Clients abroad": "Editors, reminded",
+			"Bill in their currency and get paid in yours, at a fair rate.": "Polite reminders go to the right editor, so you never have to ask twice."
+		}
+	},
+	{
+		"name": "Tally for consultants",
+		"slug": "consultants",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tally for designers": "Tally for consultants",
+			"Who it's for / Designers": "Who it's for / Consultants",
+			"Deposits, stages and clients abroad, without the awkward money emails.": "Day rates, expenses and long engagements, invoiced on time every month.",
+			"Built for how designers get paid": "Built for how consultants get paid",
+			"Deposits, stages and the endless last round of changes: Tally handles the money side of design work.": "Day rates, expenses and engagements that run for months: Tally keeps every client's billing on schedule.",
+			"I invoice a deposit before I open Figma now. It changed how clients treat my time.": "Adding the PO number got me paid in nine days instead of sixty.",
+			"Ines Ferreira, Brand designer": "Tom Hale, Consultant",
+			"Deposits and stages": "Day rates and expenses",
+			"Invoice 50% up front and the rest on delivery, from one project.": "Add days and receipts to one invoice, with your rate already on it.",
+			"Extra rounds, billed": "Monthly billing",
+			"Add a line for the extra round of changes in a click, with your rate already on it.": "Long engagements invoice on the same day every month.",
+			"Clients abroad": "Purchase orders",
+			"Bill in their currency and get paid in yours, at a fair rate.": "Add the client's PO number so their finance team pays first time."
+		}
+	},
+	{
+		"name": "Tally for small studios",
+		"slug": "studios",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tally for designers": "Tally for small studios",
+			"Who it's for / Designers": "Who it's for / Small studios",
+			"Deposits, stages and clients abroad, without the awkward money emails.": "Shared clients, approvals and one view of who owes the studio money.",
+			"Built for how designers get paid": "Built for how studios get paid",
+			"Deposits, stages and the endless last round of changes: Tally handles the money side of design work.": "Several people, shared clients and invoices that need a second look: Tally Team keeps the studio's money tidy.",
+			"I invoice a deposit before I open Figma now. It changed how clients treat my time.": "We're four people now and still on Tally. Shared clients and approvals keep it tidy.",
+			"Ines Ferreira, Brand designer": "Marco Rossi, Northwind Studio",
+			"Deposits and stages": "Shared clients",
+			"Invoice 50% up front and the rest on delivery, from one project.": "Everyone sees the same clients and invoices, with their own login.",
+			"Extra rounds, billed": "Approvals",
+			"Add a line for the extra round of changes in a click, with your rate already on it.": "Invoices over an amount you set wait for a second pair of eyes.",
+			"Clients abroad": "One view of what's owed",
+			"Bill in their currency and get paid in yours, at a fair rate.": "See every unpaid invoice across the studio in one list."
+		}
+	}
+]

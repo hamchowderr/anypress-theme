@@ -1,0 +1,143 @@
+{
+	"files": {
+		"typing.jpg": "Hands typing on a laptop at a wooden table by a brick wall",
+		"card.jpg": "Someone taking a bank card from a wallet in front of a laptop",
+		"phone.jpg": "A woman checking her phone while writing in a notebook",
+		"calculator.jpg": "A hand with a pencil checking receipts beside a calculator",
+		"pair.jpg": "Two people at a desk going over charts on a laptop and a planner",
+		"dashboard.jpg": "A laptop showing charts, beside a tablet",
+		"overhead.jpg": "A woman working on a laptop at a dark wooden desk, seen from above",
+		"team.jpg": "A small team talking around a table with laptops and drinks",
+		"chart-paper.jpg": "A printed bar chart beside a laptop and a coffee",
+		"calc-bw.jpg": "A calculator on printed charts next to a laptop",
+		"sofa.jpg": "A woman working on a laptop with her feet up by a brick wall",
+		"notebook.jpg": "A notebook, phone, pencil and glasses beside a laptop on a white desk"
+	},
+	"by_alt": {
+		"": "dashboard.jpg",
+		"A freelancer typing on a laptop at a wooden desk": "typing.jpg",
+		"Someone paying with a card on a laptop": "card.jpg",
+		"A phone on a desk showing a new message": "phone.jpg",
+		"A calculator, a notebook and receipts on a desk": "calculator.jpg",
+		"Two people looking at charts on a laptop screen": "pair.jpg",
+		"The app's dashboard showing paid and unpaid invoices": "dashboard.jpg",
+		"This feature: an invoice being written in the app": "overhead.jpg",
+		"This feature: a freelancer typing on a laptop at a wooden desk": "typing.jpg",
+		"This feature: someone paying with a card on a laptop": "card.jpg",
+		"This feature: a phone on a desk showing a new message": "phone.jpg",
+		"This feature: a calculator, a notebook and receipts on a desk": "calculator.jpg",
+		"This feature: two people looking at charts on a laptop screen": "pair.jpg",
+		"This feature: an accountant working through papers with a pen": "calc-bw.jpg",
+		"Inside Reminders: the app at work": "notebook.jpg",
+		"Inside Payments: the app at work": "dashboard.jpg",
+		"Inside Tax: the app at work": "chart-paper.jpg",
+		"Inside Bank matching: the app at work": "overhead.jpg",
+		"Inside For accountants: the app at work": "calculator.jpg"
+	},
+	"fallback": "typing.jpg",
+	"posts": {
+		"late": "phone.jpg",
+		"price": "chart-paper.jpg",
+		"tax": "calc-bw.jpg",
+		"remote": "sofa.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "typing.jpg",
+			"title": "Macbook Laptop",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/macbook-laptop-LEJ7HJ5BEA"
+		},
+		{
+			"file": "card.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5959339/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "phone.jpg",
+			"title": "Writing Paper",
+			"creator": "Wilfred Iven",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/writing-paper-GS53C70S0A"
+		},
+		{
+			"file": "calculator.jpg",
+			"title": "Accountant. Free public domain CC0",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5913662/accountant-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "pair.jpg",
+			"title": "Free business woman laptop plans",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5926528/photo-image-background-public-domain-notebook"
+		},
+		{
+			"file": "dashboard.jpg",
+			"title": "Business Working",
+			"creator": "Marc Chouinard",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-working-PHE63L27S6"
+		},
+		{
+			"file": "overhead.jpg",
+			"title": "View woman working laptop desk",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8809250/photo-image-books-hands-social-media"
+		},
+		{
+			"file": "team.jpg",
+			"title": "Team Meeting",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/team-meeting-VQXYE2ZEHC"
+		},
+		{
+			"file": "chart-paper.jpg",
+			"title": "Charts Paper Laptop Desk Wood",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5966857/charts-paper-laptop-desk-wood"
+		},
+		{
+			"file": "calc-bw.jpg",
+			"title": "Calculator Numbers",
+			"creator": "Negative Space",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/calculator-numbers-GIDMT5TDUF"
+		},
+		{
+			"file": "sofa.jpg",
+			"title": "Macbook Laptop",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/macbook-laptop-RLC58MRIX8"
+		},
+		{
+			"file": "notebook.jpg",
+			"title": "Laptop Apple",
+			"creator": "JESHOOTS.com",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/laptop-apple-N6NK9J8V0A"
+		}
+	]
+}

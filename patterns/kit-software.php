@@ -2,7 +2,7 @@
 /**
  * Title: Home page: Launch kit, startup and software
  * Slug: anypress/kit-software
- * Description: A complete home page for a software product, app or startup in the Launch kit: what the product does with a screenshot, customer names, six features, three steps, pricing, questions and a sign-up close. Apply the Launch style for the look it was designed with.
+ * Description: A complete home page for a software product, app or startup in the Launch kit: what the product does with a screenshot, customer names, numbers that count up, six features, three steps, customer stories in a carousel, pricing, the team with a map, questions and a sign-up close. Apply the Launch style for the look it was designed with.
  * Categories: anypress/pages
  * Keywords: home, saas, software, app, startup, product, pricing, kit, launch
  * Viewport Width: 1400
@@ -65,6 +65,42 @@
 <!-- wp:paragraph {"textColor":"secondary","fontFamily":"schibsted-grotesk","fontSize":"large","style":{"typography":{"fontWeight":"800","letterSpacing":"-0.02em"}}} -->
 <p class="has-secondary-color has-text-color has-schibsted-grotesk-font-family has-large-font-size" style="font-weight:800;letter-spacing:-0.02em"><?php esc_html_e( 'Brightside', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Numbers"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"14rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":3000,"suffix":"+","style":{"typography":{"fontWeight":"900","lineHeight":"0.9"}},"fontSize":"xx-large","fontFamily":"schibsted-grotesk"} /-->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'studios and freelancers', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":48,"prefix":"$","suffix":"M","style":{"typography":{"fontWeight":"900","lineHeight":"0.9"}},"fontSize":"xx-large","fontFamily":"schibsted-grotesk"} /-->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'invoiced through Tally last year', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":22,"suffix":" days","style":{"typography":{"fontWeight":"900","lineHeight":"0.9"}},"fontSize":"xx-large","fontFamily":"schibsted-grotesk"} /-->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'sooner paid, on average', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":99.98,"decimals":2,"suffix":"%","style":{"typography":{"fontWeight":"900","lineHeight":"0.9"}},"fontSize":"xx-large","fontFamily":"schibsted-grotesk"} /-->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'uptime over the last year', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
@@ -244,6 +280,88 @@
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
+<!-- wp:group {"tagName":"section","metadata":{"name":"Customer stories"},"align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Customer stories', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Freelancers who stopped chasing', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/customers/"><?php esc_html_e( 'All stories', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:anypress/carousel {"perView":3,"label":"Customer stories"} -->
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“I used to spend every other Friday chasing invoices. Now the reminders do it and I just get paid.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Ines Ferreira, Brand designer', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“Moving from spreadsheets took ten minutes. My accountant actually thanked me this year.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Sam Okoye, Freelance developer', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“The tax figure on every payment changed how I sleep. I know exactly what\'s mine.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Lucy Chen, Photographer', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“We\'re four people now and still on Tally. Shared clients and approvals keep it tidy.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Marco Rossi, Northwind Studio', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“Clients pay faster when they can tap a card. Average time to paid went from 31 days to 9.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Aisha Bello, Copywriter', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.4"}}} -->
+<p class="has-medium-font-size" style="line-height:1.4"><?php esc_html_e( '“Support answered in eleven minutes, on a Sunday. From a real person who knew invoicing.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Tom Hale, Consultant', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- /wp:anypress/carousel --></section>
+<!-- /wp:group -->
+
 <!-- wp:group {"tagName":"section","metadata":{"name":"Pricing"},"anchor":"pricing","align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
 <section id="pricing" class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:heading {"textAlign":"center","fontSize":"xxx-large"} -->
 <h2 class="wp-block-heading has-text-align-center has-xxx-large-font-size"><?php esc_html_e( 'Simple pricing', 'anypress' ); ?></h2>
@@ -380,44 +498,132 @@
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Questions"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
-<div class="wp-block-columns alignwide"><!-- wp:column {"width":"35%"} -->
-<div class="wp-block-column" style="flex-basis:35%"><!-- wp:heading {"fontSize":"xxx-large"} -->
-<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Questions', 'anypress' ); ?></h2>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Office"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Real people', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Made in Lisbon, used in 40 countries', 'anypress' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="mailto:help@example.com"><?php esc_html_e( 'Ask us anything', 'anypress' ); ?></a></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Fourteen of us in a small office by the river, plus support in three time zones. When you write, a person who knows invoicing writes back, usually within the hour.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><?php esc_html_e( 'Support every day, 7am to midnight UK time', 'anypress' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Sales calls on weekdays', 'anypress' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Visitors welcome; book first', 'anypress' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/contact/"><?php esc_html_e( 'Talk to us', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:details {"fontSize":"medium"} -->
-<details class="wp-block-details has-medium-font-size"><summary><?php esc_html_e( 'Is my data safe?', 'anypress' ); ?></summary><!-- wp:paragraph -->
+<div class="wp-block-column"><!-- wp:anypress/map {"address":"Rua da Prata 80, Lisbon, Portugal","lat":38.7092,"lon":-9.1366,"zoom":15,"aspect":"4/3"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Questions"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-top"><!-- wp:column {"width":"36%"} -->
+<div class="wp-block-column" style="flex-basis:36%"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Questions', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Before you sign up', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Can\'t see yours? Ask in the chat or call sales. A person answers.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/faq/"><?php esc_html_e( 'All questions', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:accordion {"className":"is-style-divided"} -->
+<div role="group" class="wp-block-accordion is-style-divided"><!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Is my data safe?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
 <p><?php esc_html_e( 'Your data is encrypted, backed up every day and never sold. You can export or delete it at any time.', 'anypress' ); ?></p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
 
-<!-- wp:details {"fontSize":"medium"} -->
-<details class="wp-block-details has-medium-font-size"><summary><?php esc_html_e( 'Can I import my old invoices?', 'anypress' ); ?></summary><!-- wp:paragraph -->
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Can I import my old invoices?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
 <p><?php esc_html_e( 'Yes. Upload a spreadsheet or connect your old tool and we bring everything across.', 'anypress' ); ?></p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
 
-<!-- wp:details {"fontSize":"medium"} -->
-<details class="wp-block-details has-medium-font-size"><summary><?php esc_html_e( 'What happens when the trial ends?', 'anypress' ); ?></summary><!-- wp:paragraph -->
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'What happens when the trial ends?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
 <p><?php esc_html_e( 'You choose a plan or stay on Free. Nothing is deleted.', 'anypress' ); ?></p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
 
-<!-- wp:details {"fontSize":"medium"} -->
-<details class="wp-block-details has-medium-font-size"><summary><?php esc_html_e( 'Do you take a cut of payments?', 'anypress' ); ?></summary><!-- wp:paragraph -->
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Do you take a cut of payments?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
 <p><?php esc_html_e( 'No. Card payments cost the processor\'s fee, and bank payments are free.', 'anypress' ); ?></p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details --></div>
-<!-- /wp:group --></div>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Can I cancel any time?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Yes, in two clicks, and you keep your invoices to download.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item --></div>
+<!-- /wp:accordion --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
 <!-- /wp:group -->

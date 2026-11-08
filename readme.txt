@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.9.0
+Stable tag: 0.10.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.10.0 =
+* The Launch kit, for software products, apps and startups, is now a full website: 14 starter pages (features, a feature, customer stories, who it's for, one audience, pricing, book a demo, integrations, what's new, about, questions, careers, contact, thank you) and 19 new sections, with a sticky header and call button, a switcher offer popup, questions, customer story and screenshot carousels, counters, a plan comparison table, an office map and demo, job and contact forms.
+* The Launch home page adds numbers, customer stories, the team with a map and questions that open and close.
 
 = 0.9.0 =
 * The Chapter kit, for online courses, memberships and coaching, is now a full website: 14 starter pages (courses, a course, the community, about, student stories, workshops, a workshop city, offers, join, questions, teach with us, contact, thank you) and 20 new sections, with a sticky header and call button, a free-lesson popup, questions, student story and student work carousels, counters, a workshop map and question, application and contact forms.
