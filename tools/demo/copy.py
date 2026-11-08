@@ -58,6 +58,14 @@ def compile_copy(path):
     missing = [i for i in range(1, len(kit_text) + 1) if i not in seen]
     if missing:
         problems.append(f"{len(missing)} of the kit's text have no site-wide line: " + ", ".join(map(str, missing[:40])) + (" ..." if len(missing) > 40 else ""))
+    # Swaps match inside longer text too, so a kept piece that contains a swapped one would come out half-changed
+    # (keeping "Free quotes" while "Free quote" becomes a price gives "From $110s").
+    for i, kept in enumerate(kit_text, 1):
+        if kept in out["site"]:
+            continue
+        for original, text in out["site"].items():
+            if original != kept and original in kept:
+                problems.append(f"{i} is kept as \"{kept}\", but it contains \"{original}\", which becomes \"{text}\": write {i} out in full")
     if problems:
         sys.exit("\n".join(problems))
     dest = os.path.join(folder, "swap.json")

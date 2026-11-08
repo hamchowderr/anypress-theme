@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Orlando",
+		"slug": "orlando",
+		"lat": 28.5384,
+		"lon": -81.3789
+	},
+	{
+		"name": "Winter Park",
+		"slug": "winter-park",
+		"lat": 28.6,
+		"lon": -81.3392
+	},
+	{
+		"name": "Kissimmee",
+		"slug": "kissimmee",
+		"lat": 28.292,
+		"lon": -81.4076
+	},
+	{
+		"name": "Sanford",
+		"slug": "sanford",
+		"lat": 28.8029,
+		"lon": -81.2695
+	},
+	{
+		"name": "Oviedo",
+		"slug": "oviedo",
+		"lat": 28.67,
+		"lon": -81.2081
+	},
+	{
+		"name": "Apopka",
+		"slug": "apopka",
+		"lat": 28.6934,
+		"lon": -81.5322
+	},
+	{
+		"name": "Clermont",
+		"slug": "clermont",
+		"lat": 28.5494,
+		"lon": -81.7729
+	},
+	{
+		"name": "Winter Garden",
+		"slug": "winter-garden",
+		"lat": 28.5653,
+		"lon": -81.5862
+	}
+]

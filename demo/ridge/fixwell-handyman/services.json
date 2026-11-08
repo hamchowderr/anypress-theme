@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "home-repairs",
+		"title": "Home repairs"
+	},
+	{
+		"slug": "drywall-repair",
+		"title": "Drywall repair"
+	},
+	{
+		"slug": "carpentry",
+		"title": "Carpentry"
+	},
+	{
+		"slug": "painting",
+		"title": "Painting"
+	},
+	{
+		"slug": "mounting-and-assembly",
+		"title": "Mounting and assembly"
+	},
+	{
+		"slug": "doors-and-windows",
+		"title": "Doors and windows"
+	}
+]
