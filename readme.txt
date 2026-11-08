@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.19.0
+Stable tag: 0.20.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Style variations: six colour palettes (Forest, Plum, Ocean, Charcoal and gold, R
 
 Starter pages: home pages for trades and local services, food and drink, and classes and memberships, plus About, Services and Contact pages, a long sales page, an email signup page and a thank-you page. A links page (for the link in a social media bio) is there too. They appear when a new page is created.
 
-Kits: fourteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
+Kits: sixteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
 
 * Ridge, for trades and home services: condensed capitals, hi-vis yellow, flat colour panels and the phone number as the main action.
 * Circuit, for electricians: one bright grotesk, deep electric blue with a yellow spark, rounded cards and pill buttons.
@@ -33,6 +33,8 @@ Kits: fourteen sets designed for one kind of business each. A kit is a style var
 * Keystone, for estate agents and realtors: listings with price and facts, a featured home, forest green and brass.
 * Launch, for software products and startups: one grotesk at every size, features without icons, pricing and questions.
 * Byline, for blogs, magazines and newsletters: a masthead between rules, the newest post large and the rest in a grid.
+* Assay, for shops that sell regulated health products such as peptides, supplements and CBD: lab results in a table, prescription and compliance notices, a calm serif, deep teal and amber glass.
+* Branch, for franchises and businesses with several locations: every location with its own page and a map, programmes, a free trial and a franchise enquiry, pool blue and sunny orange.
 
 Apply the kit's style in Appearance > Editor > Styles, then start a page from the kit's home page. The kit's sections are in the inserter under "Kit: ...".
 
@@ -126,6 +128,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.20.0 =
+* New kit: Assay, for shops that sell regulated health products (peptides, supplements, CBD and other goods that need lab results and careful wording). A full website: a home page, 14 starter pages (treatments, one treatment, lab results, how it works, where we treat, one state, pricing, get started, about, reviews, questions, careers, contact, thank you) and 24 sections, with a prescription notice in the top bar, a compliance notice in the footer, lab results in a table, a first-month offer popup, counters, reviews in a carousel and a map.
+* New kit: Branch, for franchises and businesses with several locations. A full website: a home page, 13 starter pages (programmes, one programme, locations, one location, own a franchise, offers, free trial, about, reviews, questions, careers, contact, thank you) and 23 sections, with every location on a map and its own page, what's the same at every location, a free-trial popup, the franchise investment, support and steps, and an enquiry form.
 
 = 0.19.0 =
 * The Byline kit, for blogs, magazines, newsletters and writers, is now a full website: 12 starter pages (walks or events, one walk, route guides, one route, subscribe, book a walk, about, letters, questions, write for us, contact, thank you) and 20 new sections, with a sticky header and Subscribe button, a top bar with the new issue and the phone number, a newsletter popup, counters, letters from readers in a carousel, questions, route guides with maps, events with photos that open full screen, subscription plans, and booking, contributor and contact forms.

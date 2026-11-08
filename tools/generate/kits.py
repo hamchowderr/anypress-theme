@@ -552,6 +552,8 @@ exec(open(os.path.join(HERE, "kit_rep.py")).read())
 exec(open(os.path.join(HERE, "kit_frame.py")).read())
 exec(open(os.path.join(HERE, "kit_keystone.py")).read())
 exec(open(os.path.join(HERE, "kit_byline.py")).read())
+exec(open(os.path.join(HERE, "kit_assay.py")).read())
+exec(open(os.path.join(HERE, "kit_branch.py")).read())
 
 import importlib.util as _u
 _s = _u.spec_from_file_location("bc", os.path.join(HERE, "blocks_cats.py")); _m = _u.module_from_spec(_s); _s.loader.exec_module(_m); _m.apply(OUT)

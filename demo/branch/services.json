@@ -1,0 +1,79 @@
+[
+	{
+		"slug": "little-splashers",
+		"title": "Little splashers",
+		"swap": {}
+	},
+	{
+		"slug": "preschool",
+		"title": "Preschool",
+		"swap": {
+			"0.98\">Little splashers<": "0.98\">Preschool<",
+			"Programmes / Little splashers": "Programmes / Preschool",
+			"Parent and baby in the water together: songs, floating and getting happy with a splash.": "Four children, one instructor, and the first big steps: kicking, floating and blowing bubbles.",
+			"Each thirty-minute class is a parent and baby in the water with one instructor and up to five other families. We sing, float, splash and practise safe entries, and babies learn to love the water before they learn to swim.": "Each thirty-minute class has four children and one instructor in the warm teaching pool. Parents watch from the viewing area while children learn to put their faces in, float on their own and kick across the pool with a noodle.",
+			"font-weight:800\">$98 a month<": "font-weight:800\">$124 a month<",
+			"Programme page: Little splashers": "Programme page: Preschool",
+			"6 months to 3 years</p>": "3 to 5 years</p>",
+			"Up to 6 families</p>": "Up to 4 children</p>",
+			"30 minutes, weekly</p>": "30 minutes, weekly</p>",
+			"Happy in the water, face wet and all": "Putting their face in and blowing bubbles",
+			"Floating on their back with help": "Floating on their front and back",
+			"Kicking and reaching for a toy": "Kicking across the pool with a noodle",
+			"Holding on to the wall on their own": "Jumping in and turning back to the wall",
+			"Safe ways to get in and out": "Listening to the instructor in the water",
+			"This class: in the water together": "Preschool: photo 1",
+			"This class: first splashes": "Preschool: photo 2",
+			"This class: floating and kicking": "Preschool: photo 3",
+			"This class: big smiles after": "Preschool: photo 4"
+		}
+	},
+	{
+		"slug": "learn-to-swim",
+		"title": "Learn to swim",
+		"swap": {
+			"0.98\">Little splashers<": "0.98\">Learn to swim<",
+			"Programmes / Little splashers": "Programmes / Learn to swim",
+			"Parent and baby in the water together: songs, floating and getting happy with a splash.": "From the first width to four strokes and safe treading water, at your child's own pace.",
+			"Each thirty-minute class is a parent and baby in the water with one instructor and up to five other families. We sing, float, splash and practise safe entries, and babies learn to love the water before they learn to swim.": "Each forty-five-minute class has four children working through eight levels, from the first unaided width to all four strokes. Swimmers move up when they're ready, and get a new level card each time they do.",
+			"font-weight:800\">$98 a month<": "font-weight:800\">$124 a month<",
+			"Programme page: Little splashers": "Programme page: Learn to swim",
+			"6 months to 3 years</p>": "5 to 12 years</p>",
+			"Up to 6 families</p>": "Up to 4 children</p>",
+			"30 minutes, weekly</p>": "45 minutes, weekly</p>",
+			"Happy in the water, face wet and all": "Swimming a width, then a length, on their own",
+			"Floating on their back with help": "Front crawl and backstroke with good breathing",
+			"Kicking and reaching for a toy": "Treading water for a full minute",
+			"Holding on to the wall on their own": "Safe entries, including from the deep end",
+			"Safe ways to get in and out": "Breaststroke and butterfly in the top levels",
+			"This class: in the water together": "Learn to swim: photo 1",
+			"This class: first splashes": "Learn to swim: photo 2",
+			"This class: floating and kicking": "Learn to swim: photo 3",
+			"This class: big smiles after": "Learn to swim: photo 4"
+		}
+	},
+	{
+		"slug": "swim-team-prep",
+		"title": "Swim team prep",
+		"swap": {
+			"0.98\">Little splashers<": "0.98\">Swim team prep<",
+			"Programmes / Little splashers": "Programmes / Swim team prep",
+			"Parent and baby in the water together: songs, floating and getting happy with a splash.": "Turns, starts and stamina for swimmers getting ready to join a team.",
+			"Each thirty-minute class is a parent and baby in the water with one instructor and up to five other families. We sing, float, splash and practise safe entries, and babies learn to love the water before they learn to swim.": "Each forty-five-minute session in the lane pool works on starts from the block, tumble turns, pacing and stamina. Swimmers get a short plan to practise between sessions, and a tryout checklist at the end of the term.",
+			"font-weight:800\">$98 a month<": "font-weight:800\">$148 a month<",
+			"Programme page: Little splashers": "Programme page: Swim team prep",
+			"6 months to 3 years</p>": "7 to 14 years</p>",
+			"Up to 6 families</p>": "Up to 6 swimmers</p>",
+			"30 minutes, weekly</p>": "45 minutes, weekly</p>",
+			"Happy in the water, face wet and all": "Dives and starts from the block",
+			"Floating on their back with help": "Tumble turns and open turns",
+			"Kicking and reaching for a toy": "Pacing over 50 and 100 yards",
+			"Holding on to the wall on their own": "All four strokes, cleaned up",
+			"Safe ways to get in and out": "How to train between sessions",
+			"This class: in the water together": "Swim team prep: photo 1",
+			"This class: first splashes": "Swim team prep: photo 2",
+			"This class: floating and kicking": "Swim team prep: photo 3",
+			"This class: big smiles after": "Swim team prep: photo 4"
+		}
+	}
+]
