@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.10.0
+Stable tag: 0.11.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.11.0 =
+* The Hearth kit, for cafés, bakeries and restaurants, is now a full website: 13 starter pages (menu, one part of the menu, order a cake, catering, markets, one market, reviews, offers, about, questions, jobs, visit and contact, thank you) and 18 new sections, with a sticky header and call button, a free coffee popup, questions, review and photo carousels, counters, a map, catering packages and order, job and contact forms.
+* The Hearth home page adds numbers, reviews, questions and a map.
 
 = 0.10.0 =
 * The Launch kit, for software products, apps and startups, is now a full website: 14 starter pages (features, a feature, customer stories, who it's for, one audience, pricing, book a demo, integrations, what's new, about, questions, careers, contact, thank you) and 19 new sections, with a sticky header and call button, a switcher offer popup, questions, customer story and screenshot carousels, counters, a plan comparison table, an office map and demo, job and contact forms.

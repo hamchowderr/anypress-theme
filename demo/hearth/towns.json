@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Downtown Saturday market",
+		"slug": "downtown",
+		"lat": 39.8017,
+		"lon": -89.6436,
+		"swap": {}
+	},
+	{
+		"name": "Old Town Sunday market",
+		"slug": "old-town",
+		"lat": 39.8086,
+		"lon": -89.6515,
+		"swap": {
+			"Downtown Saturday market": "Old Town Sunday market",
+			"Markets / Downtown": "Markets / Old Town",
+			"Every loaf from the shop and the full pastry table, under the clock on Main Square.": "Bread, buns and coffee from the van, by the fountain on Church Lane.",
+			"Under the clock on Main Square": "By the fountain on Church Lane",
+			"Saturdays, 8am to 1pm, all year except the two weeks after Christmas.": "Sundays, 9am to 1pm, April to December.",
+			"Look for the olive awning by the clock. Luca runs it with two of the bakers, and there's coffee from the van from 8.": "The olive van parks by the fountain. It's a smaller table than Saturday, so the rye and the cinnamon buns go first.",
+			"Main Square, Springfield": "Church Lane, Springfield",
+			"Every loaf from the shop": "Country loaves, rye and baguettes",
+			"The full pastry table": "Cinnamon buns and croissants",
+			"Whole cakes to order, picked up here": "Coffee from the van",
+			"Cards and cash": "Cards and cash"
+		}
+	},
+	{
+		"name": "Westside Wednesday market",
+		"slug": "westside",
+		"lat": 39.7905,
+		"lon": -89.693,
+		"swap": {
+			"Downtown Saturday market": "Westside Wednesday market",
+			"Markets / Downtown": "Markets / Westside",
+			"Every loaf from the shop and the full pastry table, under the clock on Main Square.": "An after-work stall with bread, cake and the next day's sandwich loaves.",
+			"Under the clock on Main Square": "In the Westside school car park",
+			"Saturdays, 8am to 1pm, all year except the two weeks after Christmas.": "Wednesdays, 3pm to 7pm, May to October.",
+			"Look for the olive awning by the clock. Luca runs it with two of the bakers, and there's coffee from the van from 8.": "Made for the walk home: a loaf for dinner, a cake for after and a sandwich loaf for tomorrow's lunch boxes.",
+			"Main Square, Springfield": "Westside Avenue, Springfield",
+			"Every loaf from the shop": "Bread for dinner",
+			"The full pastry table": "Cake by the slice or whole",
+			"Whole cakes to order, picked up here": "Sandwich loaves for the week",
+			"Cards and cash": "Cards only"
+		}
+	},
+	{
+		"name": "University farmers market",
+		"slug": "university",
+		"lat": 39.73,
+		"lon": -89.618,
+		"swap": {
+			"Downtown Saturday market": "University farmers market",
+			"Markets / Downtown": "Markets / University",
+			"Every loaf from the shop and the full pastry table, under the clock on Main Square.": "Lunch for students and staff: soup, sandwiches and slices of tart.",
+			"Under the clock on Main Square": "On the lawn by the library",
+			"Saturdays, 8am to 1pm, all year except the two weeks after Christmas.": "Thursdays, 11am to 2pm, during term.",
+			"Look for the olive awning by the clock. Luca runs it with two of the bakers, and there's coffee from the van from 8.": "Lunch on the lawn: soup in a cup, sandwiches on the morning's bread and tart by the slice. Students get 10% off with a card.",
+			"Main Square, Springfield": "University Plaza, Springfield",
+			"Every loaf from the shop": "Soup and bread",
+			"The full pastry table": "Sandwiches and tart",
+			"Whole cakes to order, picked up here": "Coffee and cake",
+			"Cards and cash": "Cards only, 10% off for students"
+		}
+	}
+]

@@ -154,6 +154,10 @@ function anypress_demo_photos( $content ) {
 			if ( preg_match( '#alt="([^"]*)"#', $m[3], $a ) ) {
 				$alt = html_entity_decode( $a[1], ENT_QUOTES );
 			}
+			// A cover with no alt can still pick its own photo by its placeholder's shape ("@tall", "@wide").
+			if ( '' === $alt && preg_match( '#placeholder-([a-z]+)\.svg#', $m[0], $shape ) && isset( $anypress_photos['by_alt'][ '@' . $shape[1] ] ) ) {
+				$alt = '@' . $shape[1];
+			}
 			$file = $anypress_photos['by_alt'][ $alt ] ?? $anypress_photos['fallback'];
 			$media = $anypress_media[ $file ];
 			$attrs = json_decode( $m[2], true );

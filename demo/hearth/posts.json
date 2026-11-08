@@ -1,0 +1,38 @@
+[
+	{
+		"slug": "how-to-keep-bread-fresh",
+		"title": "How to keep a sourdough loaf fresh all week",
+		"category": "From the bakery",
+		"photo": null,
+		"key": "keep",
+		"excerpt": "A cloth bag, a cut side down and a freezer for the last third. Luca's three rules for bread that lasts.",
+		"content": "<!-- wp:paragraph -->\n<p>A good sourdough loaf should last you most of a week. Here's how we keep ours at home.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Keep it out of plastic</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Plastic keeps the moisture in and turns the crust soft and the crumb damp. A cotton or linen bag lets it breathe.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Cut side down</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Stand the loaf on its cut side on a wooden board. The crust protects the rest of it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Freeze the last third</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>By day four, slice what's left and freeze it. Toast it straight from the freezer.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "choosing-a-wedding-cake",
+		"title": "Choosing a wedding cake: what to ask your baker",
+		"category": "Cakes",
+		"photo": null,
+		"key": "wedding",
+		"excerpt": "Tiers, flavours, tastings and when to book. Everything couples ask us, answered before the first meeting.",
+		"content": "<!-- wp:paragraph -->\n<p>We make around forty wedding cakes a year. These are the questions we get most.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How far ahead should we book?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Four weeks is our minimum, but spring and autumn Saturdays fill up three months ahead.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">How many tiers do we need?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Three tiers feeds around a hundred people. If you're also having dessert, two will do.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Can we taste first?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Yes. Every wedding cake starts with a tasting of four flavours at the bakery, on a weekday afternoon.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "soup-season",
+		"title": "Soup season is back",
+		"category": "On the menu",
+		"photo": null,
+		"key": "soup",
+		"excerpt": "From October the soup changes every day. Here's the week's list, and the bread we serve with each one.",
+		"content": "<!-- wp:paragraph -->\n<p>The first cold morning means one thing at the counter: soup, every day, until April.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">This week</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Tomato and red pepper, leek and potato, lentil with lemon, and Friday's French onion with a cheese toast on top.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The bread</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every bowl comes with a slab of the country loaf. Ask for rye instead if you like.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "new-market-stall",
+		"title": "Find us at the university on Thursdays",
+		"category": "News",
+		"photo": null,
+		"key": "market",
+		"excerpt": "Our fourth market stall opens on the lawn by the library, with soup, sandwiches and tart for lunch.",
+		"content": "<!-- wp:paragraph -->\n<p>From this term, you'll find us at the University farmers market every Thursday from 11 to 2.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What's on the table</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Soup in a cup, sandwiches on the morning's bread, slices of tart and coffee from the van.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">For students</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Show a student card for 10% off anything on the table.</p>\n<!-- /wp:paragraph -->"
+	}
+]
