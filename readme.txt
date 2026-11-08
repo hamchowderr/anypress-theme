@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.14.0
+Stable tag: 0.15.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.15.0 =
+* The Gloss kit, for hair salons, barbers, nail bars and beauty studios, is now a full website: 13 starter pages (services, a service, prices, book, our team, one stylist, about, reviews, offers, questions, careers, contact, thank you) and 16 new sections, with a sticky header and Book online button, a first-visit popup, counters, a review carousel, questions, every stylist with their own page, a salon map, and booking, job and contact forms.
+* The Gloss home page adds numbers, reviews, questions and the salon with a map; its gallery photos open full screen and its team links to each stylist.
 
 = 0.14.0 =
 * The Parcel kit, for online shops and makers, is now a full website: 13 starter pages (shop, a collection, order, our story, reviews, stockists, one stockist, offers, shipping and returns, work with us, contact, thank you) and 18 new sections, with a sticky header and Shop button, a first-order popup, how it's made, questions, a review carousel, counters, the studio team, a studio map, and order, job and contact forms.
