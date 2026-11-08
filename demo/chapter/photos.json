@@ -1,0 +1,154 @@
+{
+	"files": {
+		"sketchbook.jpg": "An open sketchbook with a pencil portrait, beside a keyboard",
+		"hand-sketch.jpg": "A hand drawing with a pen on a sheet of paper at a café table",
+		"portrait.jpg": "A loose ink sketch of a woman in a wide hat",
+		"cafe.jpg": "A sketchbook, pens and two coffees on a wooden café table",
+		"watercolor.jpg": "A paint palette, brushes and a small painted landscape on a wooden table",
+		"hands.jpg": "Two hands at work on a page of pencil sketches",
+		"teacher.jpg": "A woman painting at her desk among jars of brushes and pencils",
+		"easel.jpg": "A woman painting at an easel in a bright studio",
+		"figures.jpg": "A pencil study of a ribcage and spine from an old sketchbook",
+		"pencils.jpg": "Drawing pencils, colored pencils and a sharpener on a desk",
+		"pans.jpg": "A pan of bright watercolor paints",
+		"painting.jpg": "A hand painting watercolor strokes on paper",
+		"pen.jpg": "A hand drawing a line with a technical pen"
+	},
+	"by_alt": {
+		"": "easel.jpg",
+		"A sketchbook open on a table with pencil drawings of people": "sketchbook.jpg",
+		"A hand drawing in a small sketchbook with a pen": "hand-sketch.jpg",
+		"A pencil portrait of a woman's face on paper": "portrait.jpg",
+		"Someone sketching a city street from a café table": "cafe.jpg",
+		"Watercolor paints and brushes beside a painted sketch": "watercolor.jpg",
+		"Pencil studies of hands on a sheet of paper": "hands.jpg",
+		"The teacher at a desk with a sketchbook": "teacher.jpg",
+		"Students drawing at easels in a bright studio": "easel.jpg",
+		"This course: a page of quick figure drawings in pencil": "figures.jpg",
+		"This course: a sketchbook open on a table with pencil drawings of people": "sketchbook.jpg",
+		"This course: a hand drawing in a small sketchbook with a pen": "hand-sketch.jpg",
+		"This course: a pencil portrait of a woman's face on paper": "portrait.jpg",
+		"This course: someone sketching a city street from a café table": "cafe.jpg",
+		"This course: watercolor paints and brushes beside a painted sketch": "watercolor.jpg",
+		"This course: pencil studies of hands on a sheet of paper": "hands.jpg",
+		"Inside The sketchbook habit: a lesson page": "pen.jpg",
+		"Inside Faces and portraits: a lesson page": "sketchbook.jpg",
+		"Inside Urban sketching: a lesson page": "hand-sketch.jpg",
+		"Inside Watercolor for sketchers: a lesson page": "painting.jpg",
+		"Inside Hands and feet: a lesson page": "hands.jpg"
+	},
+	"fallback": "sketchbook.jpg",
+	"posts": {
+		"supplies": "pencils.jpg",
+		"habit": "pen.jpg",
+		"color": "pans.jpg",
+		"faces": "portrait.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "sketchbook.jpg",
+			"title": "Designer Sketch",
+			"creator": "Messala Ciulla",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/designer-sketch-BUX1AZWHVI"
+		},
+		{
+			"file": "hand-sketch.jpg",
+			"title": "Writing Drawing",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/writing-drawing-Y2P39NGLLO"
+		},
+		{
+			"file": "portrait.jpg",
+			"title": "(unknown)part of a sketchbook",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/9710255/unknownpart-sketchbook"
+		},
+		{
+			"file": "cafe.jpg",
+			"title": "Sketch Design",
+			"creator": "Jakub Kapusnak",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sketch-design-3VJLANA7FD"
+		},
+		{
+			"file": "watercolor.jpg",
+			"title": "Paint Supplies",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/paint-supplies-TCHBOFXNQ1"
+		},
+		{
+			"file": "hands.jpg",
+			"title": "Sketch Designer",
+			"creator": "Bruce Mars",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sketch-designer-4PMI1YMWDY"
+		},
+		{
+			"file": "teacher.jpg",
+			"title": "Designer Art",
+			"creator": "Bruce Mars",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/designer-art-KMFUUDYLGA"
+		},
+		{
+			"file": "easel.jpg",
+			"title": "Studio Woman",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/studio-woman-ZAJ8B3VGGD"
+		},
+		{
+			"file": "figures.jpg",
+			"title": "(unknown) part sketchbook, Albert Edelfelt",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8864073/image-art-public-domain-illustration"
+		},
+		{
+			"file": "pencils.jpg",
+			"title": "A photograph of drawing pencils that include graphite, ranging from H to B pencils, colored pencils, woodless pencils, matt pencils, and a pencil sharpener.",
+			"creator": "esanchezlmc",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/674696a85c/"
+		},
+		{
+			"file": "pans.jpg",
+			"title": "Watercolor Paint",
+			"creator": "Miguel%20%C1.%20Padri%F1%E1n",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/watercolor-paint-2RY71UDSXO"
+		},
+		{
+			"file": "painting.jpg",
+			"title": "Painting Painter",
+			"creator": "Bench Accounting",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/painting-painter-BEWOYG4VRW"
+		},
+		{
+			"file": "pen.jpg",
+			"title": "Sketch Drawing",
+			"creator": "Lukasz Kowalewski",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sketch-drawing-XDMB0IC7TX"
+		}
+	]
+}

@@ -184,7 +184,7 @@ kit("chapter-community", K, "Chapter community: you won't do it alone",
    col(quote("I had started and quit drawing three times. The group is why I finished this time.", "Tom B., student since 2023", "x-large", "fraunces"), None, None, None, "center")], "xx-large", "wide", None), "section-dark"))
 
 def plan(name, price, per, items, label, style, featured=False):
-    inner = [h(name, 3, "large"), row([p(price, "xxx-large", None, None, "fraunces", {"lineHeight": "1"}), p(per, None, None)], "left", "x-small", valign="bottom"), lst(items), btns([(label, None if featured else "outline", "/shop/")])]
+    inner = [h(name, 3, "large"), row([p(price, "xxx-large", None, None, "fraunces", {"lineHeight": "1"}), p(per, None, None)], "left", "x-small", valign="bottom"), lst(items), btns([(label, None if featured else "outline", "/join/")])]
     return card(N(inner), style)
 kit("chapter-pricing", K, "Chapter pricing: course alone or with the community",
  "Two ways to join side by side: the course on its own for a single price, and the course with the community by the month. Part of the Chapter kit; match the prices to the shop's products.",

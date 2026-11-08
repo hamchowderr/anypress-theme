@@ -277,7 +277,7 @@ kit("commons-events-list", K, "Commons events: the full calendar",
  "Every upcoming event as a row with a date block, title, time, place and a link to book, under a heading. Part of the Commons kit; for the Events page, kept to the next two or three months.",
  "events, calendar, schedule, upcoming, book, commons",
  sec("Calendar", N([mhead("Calendar", "The next three months"),
-   stackg([event(*e).replace('href="/events/"', f'href="{JOIN}"').replace(">Details<", ">Book a place<") for e in EVENTS], "medium")]), content="64rem"))
+   stackg([event(*e).replace('href="/events/"', f'href="{JOIN}"').replace(T("Details"), T("Book a place")) for e in EVENTS], "medium")]), content="64rem"))
 
 # The home page, now with numbers, programs, stories and the directory.
 kit_page("kit-community", "Home page: Commons kit, associations, chambers and churches",
