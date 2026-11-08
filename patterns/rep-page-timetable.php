@@ -1,0 +1,121 @@
+<?php
+/**
+ * Title: Timetable page: Rep kit
+ * Slug: anypress/rep-page-timetable
+ * Description: A Timetable page for a gym: a heading, the weekly timetable, every class with a link to its page and the free trial. Rep kit; keep it current.
+ * Categories: anypress/pages
+ * Keywords: timetable, schedule, class times, rep
+ * Viewport Width: 1400
+ * Block Types: core/post-content
+ * Post Types: page
+ */
+?>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Page hero"},"align":"full","className":"is-style-section-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull is-style-section-dark" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained","contentSize":"56rem","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"archivo","fontSize":"small","style":{"typography":{"fontWeight":"800","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
+<p class="has-archivo-font-family has-small-font-size" style="font-weight:800;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Timetable', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1,"fontSize":"xxx-large","style":{"typography":{"lineHeight":"0.95"}}} -->
+<h1 class="wp-block-heading has-xxx-large-font-size" style="line-height:0.95"><?php esc_html_e( 'Timetable', 'anypress' ); ?></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( 'Thirty-eight classes a week, from 6:30am to 6pm, plus Saturday\'s team workout.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/trial/"><?php esc_html_e( 'Book a free week', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Timetable"},"anchor":"timetable","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section id="timetable" class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'This week', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/trial/"><?php esc_html_e( 'Book a class', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:table {"hasFixedLayout":false,"className":"is-style-stripes"} -->
+<figure class="wp-block-table is-style-stripes"><table><thead><tr><th><?php esc_html_e( '', 'anypress' ); ?></th><th><?php esc_html_e( '6:30am', 'anypress' ); ?></th><th><?php esc_html_e( '12:15pm', 'anypress' ); ?></th><th><?php esc_html_e( '6pm', 'anypress' ); ?></th></tr></thead><tbody><tr><td><?php esc_html_e( 'Mon', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td><td><?php esc_html_e( 'Conditioning', 'anypress' ); ?></td><td><?php esc_html_e( 'Boxing', 'anypress' ); ?></td></tr><tr><td><?php esc_html_e( 'Tue', 'anypress' ); ?></td><td><?php esc_html_e( 'Conditioning', 'anypress' ); ?></td><td><?php esc_html_e( 'Mobility', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td></tr><tr><td><?php esc_html_e( 'Wed', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td><td><?php esc_html_e( 'Conditioning', 'anypress' ); ?></td><td><?php esc_html_e( 'Boxing', 'anypress' ); ?></td></tr><tr><td><?php esc_html_e( 'Thu', 'anypress' ); ?></td><td><?php esc_html_e( 'Conditioning', 'anypress' ); ?></td><td><?php esc_html_e( 'Mobility', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td></tr><tr><td><?php esc_html_e( 'Fri', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td><td><?php esc_html_e( 'Conditioning', 'anypress' ); ?></td><td><?php esc_html_e( 'Strength', 'anypress' ); ?></td></tr><tr><td><?php esc_html_e( 'Sat', 'anypress' ); ?></td><td><?php esc_html_e( 'Team workout, 9am', 'anypress' ); ?></td><td><?php esc_html_e( '', 'anypress' ); ?></td><td><?php esc_html_e( '', 'anypress' ); ?></td></tr></tbody></table></figure>
+<!-- /wp:table --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Classes"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Classes', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"18rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-section-second-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-second-brand" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
+<h3 class="wp-block-heading has-x-large-font-size"><a href="/classes/strength/"><?php esc_html_e( 'Strength', 'anypress' ); ?></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( '60 min · All levels', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-dark" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
+<h3 class="wp-block-heading has-x-large-font-size"><a href="/classes/conditioning/"><?php esc_html_e( 'Conditioning', 'anypress' ); ?></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( '45 min · All levels', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-brand" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
+<h3 class="wp-block-heading has-x-large-font-size"><a href="/classes/boxing/"><?php esc_html_e( 'Boxing', 'anypress' ); ?></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( '50 min · Beginners welcome', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"fontSize":"x-large"} -->
+<h3 class="wp-block-heading has-x-large-font-size"><a href="/classes/mobility/"><?php esc_html_e( 'Mobility', 'anypress' ); ?></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( '30 min · Easy', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Trial"},"anchor":"trial","align":"full","className":"is-style-section-second-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section id="trial" class="wp-block-group alignfull is-style-section-second-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"bottom","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-bottom"><!-- wp:column {"width":"60%"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:heading {"fontSize":"poster"} -->
+<h2 class="wp-block-heading has-poster-font-size"><?php esc_html_e( 'First week free', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( 'Come to any class for seven days. Bring trainers and water; we\'ll show you the rest.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/trial/"><?php esc_html_e( 'Claim your free week', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->

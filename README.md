@@ -6,7 +6,7 @@ A WordPress block theme built to be edited by people and by AI agents. Every col
 
 It includes:
 
-- **14 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Circuit (electricians), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software) and Byline (blogs and magazines). Ridge, Circuit, Hearth, Still, Ledger, Parcel, Gloss, Commons, Chapter and Launch are full websites: 13 starter pages each (services or programs, service areas or a member directory, reviews, offers, quote or join, FAQ, careers or volunteering, contact and more), a sticky header with a call button, an offer popup, FAQ, carousels, counters and a map.
+- **14 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Circuit (electricians), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software) and Byline (blogs and magazines). Ridge, Circuit, Hearth, Still, Ledger, Parcel, Gloss, Rep, Commons, Chapter and Launch are full websites: 13 starter pages each (services or programs, service areas or a member directory, reviews, offers, quote or join, FAQ, careers or volunteering, contact and more), a sticky header with a call button, an offer popup, FAQ, carousels, counters and a map.
 - **AnyPress Blocks**: 32 sections any site can use, whatever its kit, in eight inserter groups (Heroes, About, Services and prices, Proof, Calls to action, Contact, Blog, Footers).
 - **Starter pages** offered when you create a page (home pages, About, Services, Contact, sales, signup, thank-you and links pages) and **post outlines** for how-to, list and review posts.
 - **Six colour palettes and four font pairings** under Appearance > Editor > Styles. Every palette keeps text at WCAG AA contrast in every section style.
@@ -60,6 +60,7 @@ npm run demo -- still            # the Still (massage practice) demo
 npm run demo -- ledger           # the Ledger (accountants) demo
 npm run demo -- parcel           # the Parcel (pottery shop) demo
 npm run demo -- gloss            # the Gloss (hair salon) demo
+npm run demo -- rep              # the Rep (gym) demo
 ```
 
 A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.

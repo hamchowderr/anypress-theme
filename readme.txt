@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.15.0
+Stable tag: 0.16.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.16.0 =
+* The Rep kit, for gyms, boxing clubs, CrossFit boxes and fitness studios, is now a full website: 13 starter pages (classes, a class, timetable, memberships, free week, coaches, one coach, about, reviews, questions, careers, contact, thank you) and 17 new sections, with a sticky header and Free week button, a free-week popup, counters, a gallery that opens full screen, a review carousel, questions, every coach with their own page, a gym map, and trial, job and contact forms.
+* The Rep home page adds numbers, a gallery, reviews, questions and the gym with a map; its class tiles link to each class and its coaches to each coach's page.
 
 = 0.15.0 =
 * The Gloss kit, for hair salons, barbers, nail bars and beauty studios, is now a full website: 13 starter pages (services, a service, prices, book, our team, one stylist, about, reviews, offers, questions, careers, contact, thank you) and 16 new sections, with a sticky header and Book online button, a first-visit popup, counters, a review carousel, questions, every stylist with their own page, a salon map, and booking, job and contact forms.

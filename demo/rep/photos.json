@@ -1,0 +1,347 @@
+{
+	"files": {
+		"hero.jpg": "Chalked hands gripping a barbell",
+		"plates.jpg": "Barbells and red and black plates on a gym floor",
+		"dumbbells.jpg": "A rack of dumbbells",
+		"barbell.jpg": "A loaded barbell on the floor, ready to lift",
+		"kettlebells.jpg": "Kettlebells lined up on a gym floor",
+		"kb.jpg": "A 20kg kettlebell on a concrete floor",
+		"kbclass.jpg": "A coach leading a kettlebell class",
+		"glove.jpg": "A blue boxing glove by the ring ropes",
+		"bag.jpg": "A man punching a heavy bag",
+		"gloves.jpg": "Red and blue boxing gloves",
+		"ring.jpg": "A boxing ring in a big gym",
+		"interior.jpg": "Bikes and racks in a bright gym",
+		"class.jpg": "A coach and members in a group class",
+		"squat.jpg": "A woman in an orange top in a gym",
+		"stretch.jpg": "A woman stretching on a mat by a big window",
+		"mat.jpg": "A woman stretching on a pink mat",
+		"trainer.jpg": "A personal trainer in a branded top",
+		"pt.jpg": "A coach showing a member his plan on a tablet",
+		"lift.jpg": "A lifter with a loaded barbell",
+		"pullup.jpg": "A woman doing a pull-up",
+		"pushup.jpg": "A man doing a push-up outdoors",
+		"ropes.jpg": "A woman with battle ropes",
+		"medball.jpg": "Medicine balls on a gym floor",
+		"bars.jpg": "People doing pull-ups on outdoor bars",
+		"older.jpg": "An older man doing a push-up",
+		"marcus.jpg": "A smiling coach stretching his arm",
+		"priya.jpg": "A boxer in a black top, side on",
+		"dee.jpg": "A woman curling a dumbbell in a gym",
+		"tom.jpg": "A man doing a dip on outdoor bars",
+		"marcus-wide.jpg": "A smiling coach stretching his arm",
+		"priya-wide.jpg": "A boxer in a black top, side on",
+		"dee-wide.jpg": "A woman curling a dumbbell in a gym",
+		"tom-wide.jpg": "A man doing a dip on outdoor bars"
+	},
+	"by_alt": {
+		"@wide": "hero.jpg",
+		"@tall": "squat.jpg",
+		"@square": "kb.jpg",
+		"Kettlebells lined up on a gym floor": "kettlebells.jpg",
+		"Marcus coaching a class": "marcus-wide.jpg",
+		"Priya coaching a class": "priya-wide.jpg",
+		"Inside the gym: barbells and plates on the floor": "plates.jpg",
+		"Inside the gym: a kettlebell class": "kbclass.jpg",
+		"Inside the gym: boxing on the heavy bag": "bag.jpg",
+		"Inside the gym: stretching on mats by the window": "stretch.jpg",
+		"Inside the gym: a coach and members in a kettlebell class": "class.jpg",
+		"Coach: Marcus": "marcus.jpg",
+		"Coach: Priya": "priya.jpg",
+		"Coach: Dee": "dee.jpg",
+		"Coach: Tom": "tom.jpg",
+		"Class: strength": "lift.jpg",
+		"Class: conditioning": "ropes.jpg",
+		"Class: boxing": "glove.jpg",
+		"Class: mobility": "mat.jpg",
+		"Class: personal training": "pt.jpg",
+		"Classes: a lifter with a loaded barbell": "lift.jpg",
+		"This class: hands gripping a barbell before a lift": "barbell.jpg",
+		"Classes: conditioning": "ropes.jpg",
+		"This class: conditioning": "medball.jpg",
+		"Classes: boxing": "bag.jpg",
+		"This class: boxing": "gloves.jpg",
+		"Classes: mobility": "mat.jpg",
+		"This class: mobility": "stretch.jpg",
+		"Classes: personal training": "pt.jpg",
+		"This class: personal training": "trainer.jpg",
+		"Coach: Marcus at the gym": "marcus-wide.jpg",
+		"Coach: Priya at the gym": "priya-wide.jpg",
+		"Coach: Dee at the gym": "dee-wide.jpg",
+		"Coach: Tom at the gym": "tom-wide.jpg"
+	},
+	"fallback": "interior.jpg",
+	"posts": {
+		"pullup": "pullup.jpg",
+		"deadlift": "plates.jpg",
+		"boxing": "ring.jpg",
+		"older": "older.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "Man lifting barbell gym",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6031193/photo-image-public-domain-hands-person"
+		},
+		{
+			"file": "plates.jpg",
+			"title": "Free weight bar plates image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5923091/photo-image-public-domain-free-plates"
+		},
+		{
+			"file": "dumbbells.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5945662/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "barbell.jpg",
+			"title": "Free deadlift barbell weights image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5905913/photo-image-public-domain-black-person"
+		},
+		{
+			"file": "kettlebells.jpg",
+			"title": "Gym equipment floor",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6038283/photo-image-public-domain-free-sport"
+		},
+		{
+			"file": "kb.jpg",
+			"title": "Closeup gym kettlebell gym floor",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6016552/photo-image-public-domain-free-sport"
+		},
+		{
+			"file": "kbclass.jpg",
+			"title": "Fitness programming Greenville Aquatics &",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/9658035/image-face-people-woman"
+		},
+		{
+			"file": "glove.jpg",
+			"title": "Boxing gloves close up",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5917470/image-public-domain-hand-blue"
+		},
+		{
+			"file": "bag.jpg",
+			"title": "U.S. Navy Hospital Corpsman Seaman",
+			"creator": "U.S. Forest Service (source)",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8742191/photo-image-public-domain-person"
+		},
+		{
+			"file": "gloves.jpg",
+			"title": "Boxing gloves close up",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5905623/photo-image-public-domain-blue-red"
+		},
+		{
+			"file": "ring.jpg",
+			"title": "Ring Gym",
+			"creator": "Vinicius Amano",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/ring-gym-GAB4IVSO2F"
+		},
+		{
+			"file": "interior.jpg",
+			"title": "Gym Interior",
+			"creator": "Humphrey Muleba",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/gym-interior-LNCLN1NE6K"
+		},
+		{
+			"file": "class.jpg",
+			"title": "Functional Fitness Training",
+			"creator": "U.S. Army Europe",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/4040355/functional-fitness-training"
+		},
+		{
+			"file": "squat.jpg",
+			"title": "MEDITERRANEAN SEA (June 30, 2017)",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3393479/free-photo-image-fitness-woman-working-out-aircraft-carrier"
+		},
+		{
+			"file": "stretch.jpg",
+			"title": "Woman Stretch",
+			"creator": "Daria Shevtsova",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-stretch-MVCPFTBOTT"
+		},
+		{
+			"file": "mat.jpg",
+			"title": "Woman Stretch",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-stretch-SUQUSI7SXM"
+		},
+		{
+			"file": "trainer.jpg",
+			"title": "Free back personal trainer gym",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5925411/photo-image-public-domain-free-workout"
+		},
+		{
+			"file": "pt.jpg",
+			"title": "People Senior",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-senior-RM3X5RQPVY"
+		},
+		{
+			"file": "lift.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5945369/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "pullup.jpg",
+			"title": "Marine Corps Field Meet competition",
+			"creator": "U.S. Army",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/4040323/marine-corps-field-meet-competition"
+		},
+		{
+			"file": "pushup.jpg",
+			"title": "A man performing clapping push-ups",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5975045/man-performing-clapping-push-ups"
+		},
+		{
+			"file": "ropes.jpg",
+			"title": "Girl Woman",
+			"creator": "Scott Webb",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-woman-MRTPJW5I7U"
+		},
+		{
+			"file": "medball.jpg",
+			"title": "Free swiss balls image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924275/photo-image-public-domain-yoga-free"
+		},
+		{
+			"file": "bars.jpg",
+			"title": "U.S. Marine Corps enlistees conduct",
+			"creator": "U.S. Forest Service (source)",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8738912/photo-image-public-domain-women-men"
+		},
+		{
+			"file": "older.jpg",
+			"title": "Push Ups",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/push-ups-STT1QKT5MF"
+		},
+		{
+			"file": "marcus.jpg",
+			"title": "Stretching Exercises",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/stretching-exercises-ZBLTKREN5L"
+		},
+		{
+			"file": "priya.jpg",
+			"title": "Girl Woman",
+			"creator": "Scott Webb",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-woman-373LUTBH99"
+		},
+		{
+			"file": "dee.jpg",
+			"title": "Girl Gym",
+			"creator": "Khusen Rustamov",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-gym-00RNNUWGLM"
+		},
+		{
+			"file": "tom.jpg",
+			"title": "Free man exercising outdoors image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5908828/image-public-domain-free-fitness"
+		},
+		{
+			"file": "marcus-wide.jpg",
+			"title": "Stretching Exercises",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/stretching-exercises-ZBLTKREN5L"
+		},
+		{
+			"file": "priya-wide.jpg",
+			"title": "Girl Woman",
+			"creator": "Scott Webb",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-woman-373LUTBH99"
+		},
+		{
+			"file": "dee-wide.jpg",
+			"title": "Girl Gym",
+			"creator": "Khusen Rustamov",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-gym-00RNNUWGLM"
+		},
+		{
+			"file": "tom-wide.jpg",
+			"title": "Free man exercising outdoors image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5908828/image-public-domain-free-fitness"
+		}
+	]
+}
