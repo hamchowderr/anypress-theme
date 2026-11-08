@@ -432,27 +432,27 @@ kit("keystone-hero", K, "Keystone hero: a home photo with buy, sell and rent",
  "hero, real estate, realtor, estate agent, property, homes, keystone",
  cover(on_photo(grp(N([h("Homes in the Hudson Valley, sold with care", 1, "poster", None, None, {"lineHeight": "1"}),
    p("A small agency that answers the phone, knows every town by name and has sold here for 22 years.", "large"),
-   btns([("Homes for sale", None, "#listings"), ("Sell with us", "outline", "#valuation"), ("Rentals", "outline", "#listings")])]), gap="medium", layout={"type": "constrained", "contentSize": "52rem", "justifyContent": "left"})),
+   btns([("Homes for sale", None, "/homes/"), ("Sell with us", "outline", "/valuation/"), ("Rentals", "outline", "/rentals/")])]), gap="medium", layout={"type": "constrained", "contentSize": "52rem", "justifyContent": "left"})),
    "Hero", "placeholder-wide.svg", 50, "88vh", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem"))
 
-def listing(file, alt, status, price, address, facts):
-    return stackg([img(file, alt, "4/3"), mono(status, "primary"), p(price, "xx-large", None, None, "gloock", {"lineHeight": "1"}), p(address, "medium"), p(facts, None, "secondary")])
+def listing(file, alt, status, price, address, facts, href):
+    return stackg([zoom(img(file, alt, "4/3")), mono(status, "primary"), p(price, "xx-large", None, None, "gloock", {"lineHeight": "1"}), p(f'<a href="{href}">' + T(address) + "</a>", "medium", raw=True), p(facts, None, "secondary")])
 kit("keystone-listings", K, "Keystone listings: three homes for sale",
  "Three homes as cards with a photo, status, price, address and the basic facts (beds, baths, size). Part of the Keystone kit; link each to its listing page, and remove a home when it sells.",
  "listings, homes for sale, properties, real estate, keystone",
- sec("Listings", N([row([h("Just listed", 2, "xx-large"), p('<a href="#">' + T("All homes for sale") + "</a>", "medium", raw=True)], valign="bottom"), grid([
-   listing("placeholder-wide.svg", "A bright living room with a striped sofa", "Just listed", "$485,000", "12 Orchard Lane, Rhinebeck", "3 bed · 2 bath · 1,850 sq ft"),
-   listing("placeholder-wide.svg", "A bedroom with an arched headboard wall", "Open house Sunday", "$629,000", "4 Mill Road, Kingston", "4 bed · 3 bath · 2,400 sq ft"),
-   listing("placeholder-wide.svg", "A stone house with green shutters", "Price reduced", "$1,150,000", "The Old Rectory, Hudson", "5 bed · 4 bath · 3,900 sq ft")], 3, "16rem", "large")])))
+ sec("Listings", N([row([h("Just listed", 2, "xx-large"), p('<a href="/homes/">' + T("All homes for sale") + "</a>", "medium", raw=True)], valign="bottom"), grid([
+   listing("placeholder-wide.svg", "Home for sale: 12 Orchard Lane", "Just listed", "$485,000", "12 Orchard Lane, Rhinebeck", "3 bed · 2 bath · 1,850 sq ft", "/homes/12-orchard-lane/"),
+   listing("placeholder-wide.svg", "Home for sale: 4 Mill Road", "Open house Sunday", "$629,000", "4 Mill Road, Kingston", "4 bed · 3 bath · 2,400 sq ft", "/homes/4-mill-road/"),
+   listing("placeholder-wide.svg", "Home for sale: The Old Rectory", "Price reduced", "$1,150,000", "The Old Rectory, Hudson", "5 bed · 4 bath · 3,900 sq ft", "/homes/the-old-rectory/")], 3, "16rem", "large")])))
 
 kit("keystone-feature", K, "Keystone featured home: photo beside the details",
  "One home in depth: a large photo edge to edge beside a panel with the price, address, the main facts and a button to book a viewing. Part of the Keystone kit.",
  "featured property, featured listing, home, viewing, keystone",
  sec("Featured home", cols([
-   col(fill("placeholder-wide.svg", 38), "58%"),
+   col(fill("placeholder-tall.svg", 38), "58%"),
    col(N([mono("Featured home", "base"), h("The Old Rectory, Hudson", 2, "xx-large"), p("$1,150,000", "xx-large", None, None, "gloock"),
           p("An 1840s stone house on two acres, with the original floors, a walled garden and a barn ready to become a studio.", "medium"),
-          lst(["5 bedrooms, 4 bathrooms", "3,900 sq ft on 2 acres", "Ten minutes to the Amtrak station"]), btns([("Book a viewing", None, "#agent")])]), None, "section-brand", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
+          lst(["5 bedrooms, 4 bathrooms", "3,900 sq ft on 2 acres", "Ten minutes to the Amtrak station"]), btns([("Book a viewing", None, "/contact/")])]), None, "section-brand", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 def stat(n, label, family):
@@ -474,7 +474,7 @@ kit("keystone-valuation", K, "Keystone valuation: what's your home worth?",
  "The closing section on the second brand colour: an offer of a free valuation, how it works in one sentence and the button. Part of the Keystone kit.",
  "valuation, appraisal, sell, home value, call to action, keystone",
  sec("Valuation", cols([col(h("What is your home worth?", 2, "xxx-large"), "55%"),
-   col(N([p("Claire visits, looks at what has sold nearby and gives you a price in writing within two days. Free, and no obligation.", "large"), btns([("Get a free valuation", None, "#valuation")])]), None, None, None, "center")], "xx-large", "wide", "center"),
+   col(N([p("Claire visits, looks at what has sold nearby and gives you a price in writing within two days. Free, and no obligation.", "large"), btns([("Get a free valuation", None, "/valuation/")])]), None, None, None, "center")], "xx-large", "wide", "center"),
    "section-second-brand"))
 
 kit_page("kit-real-estate", "Home page: Keystone kit, real estate",

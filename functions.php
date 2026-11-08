@@ -143,3 +143,44 @@ function anypress_enqueue_styles() {
 	wp_add_inline_style( 'anypress', '.wp-site-blocks>footer{margin-block-start:0}.wp-block-column>.wp-block-cover:only-child{height:100%}:where(p,h1,h2,h3,h4) a{overflow-wrap:anywhere}.wp-block-table{overflow-x:auto}' );
 }
 add_action( 'wp_enqueue_scripts', 'anypress_enqueue_styles' );
+
+/**
+ * A header menu that doesn't fit on one line folds into the menu button, at any screen width.
+ *
+ * Core folds the menu only below 600px, so a long menu wraps into a column on tablets and small laptops. This checks
+ * whether the header's menu fits beside the logo on one line and, when it doesn't, switches it to core's own
+ * "always show the menu button" mode, so the button and the full-screen menu behave exactly as they do on phones.
+ * It runs once on load and again when the header changes size; pages without a header menu do nothing.
+ */
+function anypress_fold_header_menu() {
+	?>
+<script>
+(function () {
+	var navs = document.querySelectorAll('header .wp-block-navigation');
+	if (!navs.length || !window.ResizeObserver) return;
+	function mid(el) { var r = el.getBoundingClientRect(); return r.top + r.height / 2; }
+	navs.forEach(function (nav) {
+		var box = nav.querySelector('.wp-block-navigation__responsive-container');
+		var btn = nav.querySelector('.wp-block-navigation__responsive-container-open');
+		if (!box || !btn || box.classList.contains('hidden-by-default')) return;
+		var brand = nav.closest('header').querySelector('.wp-block-site-title, .wp-block-site-logo');
+		function fold(on) { box.classList.toggle('hidden-by-default', on); btn.classList.toggle('always-shown', on); }
+		function check() {
+			if (box.classList.contains('is-menu-open')) return;
+			fold(false);
+			if (getComputedStyle(btn).display !== 'none') return; // Phone width: core already folds it.
+			var tops = {};
+			nav.querySelectorAll('.wp-block-navigation__container > li').forEach(function (li) { tops[Math.round(li.getBoundingClientRect().top)] = 1; });
+			var oneLine = Object.keys(tops).length <= 1;
+			var besideBrand = !brand || Math.abs(mid(nav) - mid(brand)) < 16;
+			fold(!(oneLine && besideBrand));
+		}
+		var frame;
+		new ResizeObserver(function () { cancelAnimationFrame(frame); frame = requestAnimationFrame(check); }).observe(nav.closest('header'));
+		check();
+	});
+})();
+</script>
+	<?php
+}
+add_action( 'wp_footer', 'anypress_fold_header_menu', 1 );

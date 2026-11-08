@@ -1,0 +1,38 @@
+[
+	{
+		"slug": "hudson-valley-market-autumn",
+		"title": "The Hudson Valley market this autumn",
+		"category": "Market",
+		"photo": null,
+		"key": "market",
+		"excerpt": "Prices are steady, homes are selling in about three weeks, and there are more buyers than houses under $500,000.",
+		"content": "<!-- wp:paragraph -->\n<p>Here's what we're seeing across the valley this season.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Prices</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Steady in most towns, and still rising a little in Rhinebeck and Hudson.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Speed</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Homes priced well are selling in about three weeks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Buyers</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>More buyers than houses under $500,000, so those go quickly.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "first-home-checklist",
+		"title": "Buying your first home: a checklist",
+		"category": "Buying",
+		"photo": null,
+		"key": "keys",
+		"excerpt": "From a mortgage letter to the final walk-through. Everything first-time buyers ask Ana about.",
+		"content": "<!-- wp:paragraph -->\n<p>Buying your first home is a lot of steps. Here they are in order.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Before you look</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Get a letter from a lender, so sellers take your offer seriously.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">When you find one</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Make an offer with an inspection, and keep some money aside for surprises.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Before you close</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Walk through the house again the day before, and check everything works.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "repairs-before-selling",
+		"title": "Which repairs pay for themselves before you sell",
+		"category": "Selling",
+		"photo": null,
+		"key": "kitchen",
+		"excerpt": "Paint, yes. A new kitchen, usually not. What Claire tells sellers before they spend a dollar.",
+		"content": "<!-- wp:paragraph -->\n<p>Most sellers spend too much on the wrong things. Here's what pays.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Worth doing</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Fresh paint, a tidy garden and fixing anything that drips or sticks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Usually not</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>New kitchens and bathrooms rarely earn back what they cost.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Ask first</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We'll walk round with you and tell you honestly.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "moving-up-from-the-city",
+		"title": "Moving up from the city: what to know",
+		"category": "Moving",
+		"photo": null,
+		"key": "valley",
+		"excerpt": "Commutes, winters, internet and schools. The questions we hear most from buyers leaving New York.",
+		"content": "<!-- wp:paragraph -->\n<p>Every week someone calls from the city. These are their questions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">The commute</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Hudson and Rhinebeck have trains; Woodstock is better for working from home.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Winter</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Ask about heating costs and who plows the road.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Internet</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Check before you offer. Most villages have fiber; some lanes don't.</p>\n<!-- /wp:paragraph -->"
+	}
+]
