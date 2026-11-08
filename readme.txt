@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.12.0
+Stable tag: 0.13.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.13.0 =
+* The Ledger kit, for accountants, lawyers, consultants and agencies, is now a full website: 13 starter pages (services, a service, book a call, our team, who we help, one industry, client stories, fees, about, questions, careers, contact, thank you) and 18 new sections, with a sticky header and call button, a switcher popup, how we work, questions, a client story carousel, counters, the team, an office map, and booking, job and contact forms.
+* The Ledger home page adds numbers, how we work, client stories, questions and the office with a map.
 
 = 0.12.0 =
 * The Still kit, for spas, massage practices, therapists and studios, is now a full website: 13 starter pages (treatments, a treatment, book, the rooms, coming from nearby, one town, kind words, gifts and offers, about, questions, work with us, contact, thank you) and 18 new sections, with a sticky header and call button, a first visit popup, questions, review and room carousels, counters, the therapists, a map, and booking, job and contact forms.

@@ -1,0 +1,38 @@
+[
+	{
+		"slug": "sole-trader-or-limited-company",
+		"title": "Sole trader or limited company? How to choose",
+		"category": "Starting out",
+		"photo": null,
+		"key": "calc",
+		"excerpt": "It mostly comes down to how much you'll make and what you'll do with it. Here's how we work it out with new clients.",
+		"content": "<!-- wp:paragraph -->\n<p>It's the first question most new businesses ask us. There's no single answer, but there is a simple way to think about it.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Start simple</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>If you're testing an idea or earning a little on the side, start as a sole trader. It's quick and cheap to run.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">When a company makes sense</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Once your profit is well into five figures and you don't need all of it to live on, a company usually saves tax.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Ask us for the numbers</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>We'll show you both side by side, for your figures, on the free call.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "five-dates-for-your-calendar",
+		"title": "Five tax dates every small business should know",
+		"category": "Deadlines",
+		"photo": null,
+		"key": "table",
+		"excerpt": "Miss one and the penalties start at once. Put these in your calendar now, or let us remind you.",
+		"content": "<!-- wp:paragraph -->\n<p>Most penalties we see come from simply missing a date. These are the five that matter most.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">31 January</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Personal tax returns, and the first payment on account.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Every quarter</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>VAT returns, one month and seven days after each quarter ends.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Nine months after year-end</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Corporation tax is due, three months before the return.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "how-dentists-can-save-tax",
+		"title": "How dental practices can save tax this year",
+		"category": "Dentists",
+		"photo": null,
+		"key": "dental",
+		"excerpt": "Equipment, associate pay and pensions: three places most practices leave money on the table.",
+		"content": "<!-- wp:paragraph -->\n<p>We look after forty practices, and the same three savings come up again and again.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Equipment</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Chairs, scanners and X-ray machines can usually be claimed in full the year you buy them.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Associate pay</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Getting the associate split right protects you if the tax office ever asks.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Pensions</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Paying into a pension from the practice is one of the most tax-efficient things a principal can do.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "cis-explained-for-builders",
+		"title": "CIS explained, for builders and their subcontractors",
+		"category": "Builders",
+		"photo": null,
+		"key": "builder",
+		"excerpt": "What the Construction Industry Scheme is, who has to register and how to get your deductions back.",
+		"content": "<!-- wp:paragraph -->\n<p>If you work in building, the Construction Industry Scheme affects you, whether you hire or get hired.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">If you hire subcontractors</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>You check each one, take tax off their pay, and file a return every month.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">If you're a subcontractor</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Tax is taken off your pay. Register properly and the rate drops from 30% to 20%.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Getting it back</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Most subcontractors are owed some of it back at the end of the year. We claim it for you.</p>\n<!-- /wp:paragraph -->"
+	}
+]

@@ -1,0 +1,242 @@
+{
+	"files": {
+		"masthead.jpg": "Two women talking across a small table by a tall window",
+		"popup.jpg": "Two people going through papers and a phone at a desk with coffee",
+		"desk.jpg": "Hands on a calculator beside a laptop showing a spreadsheet",
+		"papers.jpg": "Someone in a brown jacket reading through papers at a desk",
+		"meeting.jpg": "A small team meeting around a table with laptops",
+		"sheet1.jpg": "Hands typing on a laptop showing a spreadsheet, beside a phone and glasses",
+		"sheet2.jpg": "A laptop showing bar and pie charts",
+		"chart.jpg": "A laptop on a desk showing a report with charts",
+		"calc.jpg": "A grey calculator with red keys and a pen",
+		"sticky.jpg": "A calculator, a pencil and a yellow sticky note",
+		"sign.jpg": "Hands holding a pen over a document on a desk",
+		"advice.jpg": "Two colleagues smiling over a laptop in a meeting room",
+		"team.jpg": "Colleagues working together around a wooden table with laptops and notes",
+		"handshake.jpg": "Two people shaking hands across a white desk",
+		"notebook.jpg": "An open notebook with a pen, sticky tabs and a calculator",
+		"calc2.jpg": "A blue calculator with a pencil and a sticky note",
+		"table.jpg": "People working at a wooden table covered in laptops and papers",
+		"dental.jpg": "A modern dentist's chair in a bright treatment room",
+		"builder.jpg": "A builder in work boots drilling into a brick wall",
+		"helen.jpg": "A woman with short grey hair and glasses smiling at a tablet",
+		"david.jpg": "A bearded man in a sweater vest smiling at a tablet",
+		"mei.jpg": "A young woman with dark hair in a black jacket on a city street",
+		"kwame.jpg": "A smiling man in a navy polo shirt with his arms folded on a desk"
+	},
+	"by_alt": {
+		"": "masthead.jpg",
+		"Two people going through papers at a desk": "popup.jpg",
+		"Inside the firm: a meeting around a table with laptops": "meeting.jpg",
+		"Our team: Helen Hartley": "helen.jpg",
+		"Our team: David Shaw": "david.jpg",
+		"Our team: Mei Lin": "mei.jpg",
+		"Our team: Kwame Asante": "kwame.jpg",
+		"Inside the firm: an accountant at a desk with a calculator and papers": "desk.jpg",
+		"This service: an accountant going through a set of accounts": "papers.jpg",
+		"Inside the firm: bookkeeping and vat": "sheet1.jpg",
+		"This service: bookkeeping and vat": "sheet2.jpg",
+		"Inside the firm: payroll": "chart.jpg",
+		"This service: payroll": "calc.jpg",
+		"Inside the firm: personal tax returns": "sticky.jpg",
+		"This service: personal tax returns": "sign.jpg",
+		"Inside the firm: business advice": "advice.jpg",
+		"This service: business advice": "team.jpg",
+		"Inside the firm: starting a business": "handshake.jpg",
+		"This service: starting a business": "notebook.jpg"
+	},
+	"fallback": "masthead.jpg",
+	"posts": {
+		"calc": "calc2.jpg",
+		"table": "table.jpg",
+		"dental": "dental.jpg",
+		"builder": "builder.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "masthead.jpg",
+			"title": "Business Meeting",
+			"creator": "Christina Morillo",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-meeting-SKBXLJOILI"
+		},
+		{
+			"file": "popup.jpg",
+			"title": "Free business meeting cafe coffee",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5916638/image-public-domain-person-notebook"
+		},
+		{
+			"file": "desk.jpg",
+			"title": "Accounting Finance",
+			"creator": "Wilfred Iven",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/accounting-finance-JONMP7TPGK"
+		},
+		{
+			"file": "papers.jpg",
+			"title": "Paperwork Desk",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/paperwork-desk-3YJOHX53SQ"
+		},
+		{
+			"file": "meeting.jpg",
+			"title": "Business Meeting",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-meeting-Z1ZIMB54UM"
+		},
+		{
+			"file": "sheet1.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5974308/photo-image-laptop-work-macbook"
+		},
+		{
+			"file": "sheet2.jpg",
+			"title": "Business Working",
+			"creator": "Marc Chouinard",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-working-PHE63L27S6"
+		},
+		{
+			"file": "chart.jpg",
+			"title": "Macbook Laptop",
+			"creator": "Negative Space",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/macbook-laptop-UNB7V2H5L4"
+		},
+		{
+			"file": "calc.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5958772/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "sticky.jpg",
+			"title": "Calculator Numbers",
+			"creator": "Martin Vorel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/calculator-numbers-JY874BSKKC"
+		},
+		{
+			"file": "sign.jpg",
+			"title": "Finance Flatlay",
+			"creator": "Artsy Crafty",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/finance-flatlay-M9MYHLGNDA"
+		},
+		{
+			"file": "advice.jpg",
+			"title": "Business Meeting",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-meeting-SSKSJIBMMP"
+		},
+		{
+			"file": "team.jpg",
+			"title": "Team Meeting",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/team-meeting-JBW2PXDOL6"
+		},
+		{
+			"file": "handshake.jpg",
+			"title": "Work Business",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/work-business-J5LXKNDREC"
+		},
+		{
+			"file": "notebook.jpg",
+			"title": "Finance Flatlay",
+			"creator": "Artsy Crafty",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/finance-flatlay-LPD3QR7VQG"
+		},
+		{
+			"file": "calc2.jpg",
+			"title": "Calculator Numbers",
+			"creator": "Martin Vorel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/calculator-numbers-VVXW9WBTB8"
+		},
+		{
+			"file": "table.jpg",
+			"title": "Team Meeting",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/team-meeting-VQXYE2ZEHC"
+		},
+		{
+			"file": "dental.jpg",
+			"title": "Chair Dentist",
+			"creator": "Daniel Frank",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/chair-dentist-3J10QN5PTS"
+		},
+		{
+			"file": "builder.jpg",
+			"title": "Builder work construction site",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6015966/photo-image-public-domain-wooden-person"
+		},
+		{
+			"file": "helen.jpg",
+			"title": "Business Woman",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-woman-ZRNIM4IB6S"
+		},
+		{
+			"file": "david.jpg",
+			"title": "Business People",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-people-HXDODYZKFS"
+		},
+		{
+			"file": "mei.jpg",
+			"title": "Woman Urban",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-urban-G4YYZSAXAT"
+		},
+		{
+			"file": "kwame.jpg",
+			"title": "Black Portrait",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/black-portrait-T8VNJRQH7F"
+		}
+	]
+}
