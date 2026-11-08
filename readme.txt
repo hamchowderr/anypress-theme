@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.17.0
+Stable tag: 0.18.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.18.0 =
+* The Keystone kit, for estate agents, realtors and property managers, is now a full website: 13 starter pages (homes for sale, one home, towns, one town, rentals, selling, free valuation, about, reviews, questions, join us, contact, thank you) and 19 new sections, with a sticky header and Valuation button, a top bar with the phone number, a valuation popup, counters, a review carousel, questions, a page for every home with photos that open full screen, town guides, the office with a map, and valuation, job and contact forms.
+* The Keystone home page adds reviews, questions and the office with a map; its record counts up, and its listings open full screen and link to each home's page.
+* A header menu that doesn't fit on one line now folds into the menu button at any screen width, so long menus no longer stack into a column on tablets and small laptops.
 
 = 0.17.0 =
 * The Frame kit, for photographers, designers, illustrators and architects, is now a full website: 13 starter pages (services, a service, work, a project, prints, commission, about, kind words, questions, assisting, contact, thank you) and 16 new sections, with a sticky header and Commission button, a first-print popup, counters, kind words in a carousel, questions, a page for every project with photos that open full screen, prints for sale, a studio map, and commission, assistant and contact forms.

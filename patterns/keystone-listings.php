@@ -15,14 +15,14 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'All homes for sale', 'anypress' ); ?></a></p>
+<p class="has-medium-font-size"><a href="/homes/"><?php esc_html_e( 'All homes for sale', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A bright living room with a striped sofa', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: 12 Orchard Lane', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -34,7 +34,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( '12 Orchard Lane, Rhinebeck', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/12-orchard-lane/"><?php esc_html_e( '12 Orchard Lane, Rhinebeck', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -43,8 +43,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A bedroom with an arched headboard wall', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: 4 Mill Road', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -56,7 +56,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( '4 Mill Road, Kingston', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/4-mill-road/"><?php esc_html_e( '4 Mill Road, Kingston', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -65,8 +65,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A stone house with green shutters', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: The Old Rectory', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -78,7 +78,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'The Old Rectory, Hudson', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/the-old-rectory/"><?php esc_html_e( 'The Old Rectory, Hudson', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
