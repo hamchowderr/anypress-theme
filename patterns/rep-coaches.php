@@ -21,7 +21,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"xx-large"} -->
-<h3 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Marcus', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-xx-large-font-size"><a href="/coaches/marcus/"><?php esc_html_e( 'Marcus', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
@@ -37,7 +37,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"xx-large"} -->
-<h3 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Priya', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-xx-large-font-size"><a href="/coaches/priya/"><?php esc_html_e( 'Priya', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->

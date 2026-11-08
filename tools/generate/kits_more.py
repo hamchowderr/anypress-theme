@@ -329,11 +329,11 @@ kit("rep-hero", K, "Rep hero: a training photo with a loud headline",
  "hero, gym, fitness, crossfit, boxing, studio, classes, trial, rep",
  cover(on_photo(grp(N([h("Lift with people who know your name", 1, "poster", None, None, {"lineHeight": "0.9"}),
    p("Small-group strength and conditioning in Eastside. Coached every session, from your first lift.", "large"),
-   btns([("Try a week free", None, "#trial"), ("See the timetable", "outline", "#timetable")])]), gap="medium", layout={"type": "constrained", "contentSize": "72rem", "justifyContent": "left"})),
+   btns([("Try a week free", None, "/trial/"), ("See the timetable", "outline", "/timetable/")])]), gap="medium", layout={"type": "constrained", "contentSize": "72rem", "justifyContent": "left"})),
    "Hero", "placeholder-wide.svg", 60, "92vh", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem"))
 
 def cls_tile(name, length, level, style):
-    return grp(N([h(name, 3, "xx-large"), p(f"{length} · {level}", "medium")]), style, ("x-large", "x-large", "large", "large"), "small")
+    return grp(N([hlink(name, f"/classes/{name.lower()}/", 3, "x-large"), p(f"{length} · {level}", "medium")]), style, ("x-large", "x-large", "large", "large"), "small")
 kit("rep-classes", K, "Rep classes: four classes on bold tiles",
  "The main classes on tiles of different colours, each with its name in big capitals, length and level. Part of the Rep kit.",
  "classes, programs, workouts, sessions, rep",
@@ -344,7 +344,7 @@ kit("rep-classes", K, "Rep classes: four classes on bold tiles",
 kit("rep-timetable", K, "Rep timetable: the week in a table",
  "The weekly timetable as a table: days down the side, morning, lunchtime and evening across. Part of the Rep kit; keep it current, or link to the booking system's live timetable.",
  "timetable, schedule, class times, week, rep",
- sec("Timetable", N([row([h("This week", 2, "xxx-large"), btns([("Book a class", None, "#trial")])], valign="bottom"),
+ sec("Timetable", N([row([h("This week", 2, "xxx-large"), btns([("Book a class", None, "/trial/")])], valign="bottom"),
    table(["", "6:30am", "12:15pm", "6pm"], [["Mon", "Strength", "Conditioning", "Boxing"], ["Tue", "Conditioning", "Mobility", "Strength"],
      ["Wed", "Strength", "Conditioning", "Boxing"], ["Thu", "Conditioning", "Mobility", "Strength"], ["Fri", "Strength", "Conditioning", "Strength"],
      ["Sat", "Team workout, 9am", "", ""]], "stripes")])))
@@ -360,7 +360,7 @@ kit("rep-prices", K, "Rep memberships: three prices, big",
    membership("Ten-class pass", "$150", ["Use within three months", "Share with a friend"], "section-card")], 3, "15rem", "small")]), "section-dark"))
 
 def coach(name, text):
-    return stackg([img("placeholder-wide.svg", f"{name} coaching a class", "3/2"), h(name, 3, "xx-large"), p(text, "medium")])
+    return stackg([img("placeholder-wide.svg", f"{name} coaching a class", "3/2"), hlink(name, f"/coaches/{name.lower()}/", 3, "xx-large"), p(text, "medium")])
 kit("rep-coaches", K, "Rep coaches: who will coach you",
  "Two coaches side by side, each with a photo, name and what they are known for. Part of the Rep kit; use the real coaches.",
  "coaches, trainers, team, staff, rep",
@@ -371,7 +371,7 @@ kit("rep-trial", K, "Rep trial: first week free, huge",
  "The closing section on the second brand colour: the trial offer in huge capitals, what it includes and the button. Part of the Rep kit.",
  "trial, free week, offer, call to action, join, rep",
  sec("Trial", cols([col(h("First week free", 2, "poster", None, None, None), "60%"),
-   col(N([p("Come to any class for seven days. Bring trainers and water; we'll show you the rest.", "large"), btns([("Claim your free week", None, "#trial")])]), None, None, None, "bottom")], "x-large", "wide", "bottom"),
+   col(N([p("Come to any class for seven days. Bring trainers and water; we'll show you the rest.", "large"), btns([("Claim your free week", None, "/trial/")])]), None, None, None, "bottom")], "x-large", "wide", "bottom"),
    "section-second-brand", ("xx-large", "xx-large", None, None)))
 
 kit_page("kit-fitness", "Home page: Rep kit, gym and classes",

@@ -1,0 +1,38 @@
+[
+	{
+		"slug": "your-first-pull-up",
+		"title": "Your first pull-up: Tom's eight-week plan",
+		"category": "Training",
+		"photo": null,
+		"key": "pullup",
+		"excerpt": "Hangs, slow lowers and bands. The plan Tom has used to get more than fifty members their first pull-up.",
+		"content": "<!-- wp:paragraph -->\n<p>A first pull-up is one of the best feelings in the gym. Here's how we get there.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Weeks one and two: hang</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Hang from the bar for as long as you can, three times, twice a week.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Weeks three to five: lower slowly</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Jump to the top and lower yourself as slowly as you can.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Weeks six to eight: add a band</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>A band takes some of your weight while you build the strength for the real thing.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "deadlift-basics",
+		"title": "Deadlift basics: five things Marcus tells every beginner",
+		"category": "Strength",
+		"photo": null,
+		"key": "deadlift",
+		"excerpt": "Bar over your feet, chest up, push the floor away. The deadlift is simpler than it looks.",
+		"content": "<!-- wp:paragraph -->\n<p>The deadlift is the lift beginners fear most and come to love most.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Bar over the middle of your foot</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Start with the bar close. It should travel in a straight line.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Push the floor away</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Think of it as a leg press, not a back lift.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Stand tall, then stop</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>At the top, stand straight. Don't lean back.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "boxing-for-beginners",
+		"title": "Boxing for complete beginners: what to expect",
+		"category": "Boxing",
+		"photo": null,
+		"key": "boxing",
+		"excerpt": "Nobody gets hit, gloves are there to borrow and you'll learn a combination in your first class.",
+		"content": "<!-- wp:paragraph -->\n<p>Priya answers the questions she hears most from nervous beginners.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Will I get hit?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>No. There's no sparring in class.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What do I need?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Trainers and water. We lend gloves and wraps.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Will I keep up?</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Everyone works at their own pace. The bag doesn't judge.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "never-too-late-to-start",
+		"title": "It's never too late to start lifting",
+		"category": "Members",
+		"photo": null,
+		"key": "older",
+		"excerpt": "Our oldest member started at 71. Why strength training matters even more as we get older.",
+		"content": "<!-- wp:paragraph -->\n<p>Strength training is one of the best things you can do for your health at any age.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Stronger bones</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Lifting helps keep bones strong as we age.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Better balance</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Stronger legs mean fewer falls.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Start where you are</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Every exercise has an easier version. The coach will find yours.</p>\n<!-- /wp:paragraph -->"
+	}
+]
