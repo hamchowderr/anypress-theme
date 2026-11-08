@@ -1,0 +1,145 @@
+{
+	"files": {
+		"hero.jpg": "Two women talking with glasses in hand at a busy business reception",
+		"breakfast.jpg": "Two people with coffee and notebooks talking across a wooden table",
+		"breakfast-table.jpg": "Colleagues with drinks, laptops and notes around a wooden table",
+		"mentoring.jpg": "A small group working through notes together around a table",
+		"speaker.jpg": "A speaker on stage in front of a full hall, with his slides on screens",
+		"workshop.jpg": "A packed lecture room taking notes during a talk",
+		"city-hall.jpg": "A domed city hall with flags along the front",
+		"young.jpg": "Four young friends laughing together outdoors at sunset",
+		"main-street.jpg": "A row of painted shopfronts along a main street",
+		"open.jpg": "An Open sign hanging in a shop door",
+		"cleanup.jpg": "Volunteers on their knees clearing litter and weeds from woodland",
+		"coffee-shop.jpg": "A man sitting in the window of a bright coffee shop",
+		"meeting-room.jpg": "An empty meeting room with a long table and tall windows"
+	},
+	"by_alt": {
+		"": "hero.jpg",
+		"Members talking over coffee at a business breakfast": "breakfast.jpg",
+		"Photo of the program: members at a breakfast table": "breakfast-table.jpg",
+		"Two colleagues talking across a desk with a laptop": "mentoring.jpg",
+		"A speaker addressing a seated audience in a hall": "speaker.jpg",
+		"People taking notes at a workshop around a long table": "workshop.jpg",
+		"A city hall building with a flag outside": "city-hall.jpg",
+		"A group of young people laughing at an evening event": "young.jpg",
+		"A crowd at a summer street fair on Main Street": "main-street.jpg",
+		"A ribbon being cut outside a new shop": "open.jpg",
+		"Volunteers in matching shirts picking up litter": "cleanup.jpg",
+		"This program: members talking over coffee at a business breakfast": "breakfast.jpg"
+	},
+	"fallback": "hero.jpg",
+	"posts": {
+		"new": "open.jpg",
+		"listing": "coffee-shop.jpg",
+		"meeting": "meeting-room.jpg",
+		"parking": "main-street.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "American Chamber Commerce Reception, March",
+			"creator": "usembassynewzealand",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8734098/photo-image-public-domain-woman-kid"
+		},
+		{
+			"file": "breakfast.jpg",
+			"title": "Two people having meeting displaying",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3305153/free-photo-image-ipad-business-meeting-blog"
+		},
+		{
+			"file": "breakfast-table.jpg",
+			"title": "Team Meeting",
+			"creator": "Startup Stock Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/team-meeting-VQXYE2ZEHC"
+		},
+		{
+			"file": "mentoring.jpg",
+			"title": "People Girls",
+			"creator": "Brodie Vissers",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-girls-Y2AHVPYB51"
+		},
+		{
+			"file": "speaker.jpg",
+			"title": "Secretary Defense Mark Esper speaks",
+			"creator": "usbotschaftberlin",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8761509/photo-image-public-domain-person-room"
+		},
+		{
+			"file": "workshop.jpg",
+			"title": "Dr Dava Newman, NASA Deputy",
+			"creator": "usembassynewzealand",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8734108/photo-image-public-domain-person-room"
+		},
+		{
+			"file": "city-hall.jpg",
+			"title": "San Francisco City Hall, re-opened",
+			"creator": "Carol M Highsmith",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2110763/carol-highsmiths-california"
+		},
+		{
+			"file": "young.jpg",
+			"title": "Group Friends",
+			"creator": "Helena Lopes",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/group-friends-YBGQFVYDDC"
+		},
+		{
+			"file": "main-street.jpg",
+			"title": "Main Street stores, angle view",
+			"creator": "libraryofcongress",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3799865/photo-image-house-vintage-retro"
+		},
+		{
+			"file": "open.jpg",
+			"title": "Shop Store",
+			"creator": "Mike Petrucci",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/shop-store-I93PW8NE0F"
+		},
+		{
+			"file": "cleanup.jpg",
+			"title": "Fulbright MENA Community Service Activities",
+			"creator": "Bureau of Educational and Cultural Affairs",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6200680/photo-image-public-domain-plant-nature"
+		},
+		{
+			"file": "coffee-shop.jpg",
+			"title": "Free man coffee shop image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5908312/image-public-domain-free-man"
+		},
+		{
+			"file": "meeting-room.jpg",
+			"title": "Empty office meeting room",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5927697/photo-image-public-domain-business-room"
+		}
+	]
+}
