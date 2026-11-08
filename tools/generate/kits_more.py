@@ -93,6 +93,9 @@ kit("parcel-promise", K, "Parcel promise: shipping, returns and where it's made"
    ("Free shipping over $60", "Packed in paper and card, no plastic."), ("30 days to change your mind", "Send it back unused for a full refund."), ("Made in Asheville", "Every piece is thrown and glazed in our studio.")]],
    "large", "wide", None), "section-second-brand", ("large", "large", None, None)))
 
+def zoom(markup):
+    """An image that opens full screen when clicked (core lightbox)."""
+    return markup.replace("<!-- wp:image {", '<!-- wp:image {"lightbox":{"enabled":true},', 1)
 def hlink(text, href, level=2, size=None):
     return h(text, level, size).replace(T(text), f'<a href="{href}">' + T(text) + "</a>", 1)
 def tile(file, alt, name, count, href="/shop/"):
@@ -208,7 +211,7 @@ kit("gloss-hero", K, "Gloss hero: a big name beside a tall photo",
  sec("Hero", cols([
    col(N([mono("Hair, colour and brows on Elm Street", "secondary"), h("Colour that grows out beautifully", 1, "xxx-large", None, None, {"lineHeight": "1"}),
           p("Lived-in colour, precise cuts and an hour that is just for you.", "large"),
-          btns([("Book online", None, "#book"), ("See prices", "outline", "#prices")])]), "55%", valign="center"),
+          btns([("Book online", None, "/book/"), ("See prices", "outline", "/prices/")])]), "55%", valign="center"),
    col(img("placeholder-tall.svg", "Make-up brushes in a pot on a pink table", "3/4"))], "xx-large", "wide", "center"), "section-brand-soft", ("x-large", "x-large", None, None)))
 
 def price_line(name, price, note=None):
@@ -227,7 +230,7 @@ kit("gloss-prices", K, "Gloss prices: services in groups, with dotted lines to t
                      price_group("Treatments", [("Bond repair", "$30"), ("Scalp treatment", "$35")])], "x-large"))], "xx-large", "wide", None)]), content="64rem"))
 
 def stylist(name, role):
-    return stackg([img("placeholder-tall.svg", f"Portrait of {name}", "3/4"), h(name, 3, "large"), p(role, None, "secondary")])
+    return stackg([img("placeholder-tall.svg", f"Portrait of {name}", "3/4"), hlink(name, f"/team/{name.lower()}/", 3, "large"), p(role, None, "secondary")])
 kit("gloss-team", K, "Gloss team: the stylists",
  "The people who do the work, each with a portrait, name and what they love doing. Part of the Gloss kit; clients book a person, so show the real team.",
  "team, stylists, staff, people, barbers, gloss",
@@ -236,19 +239,20 @@ kit("gloss-team", K, "Gloss team: the stylists",
    stylist("Bea", "Brows and lashes. Fixes over-plucked brows.")], 3, "15rem", "large")])))
 
 kit("gloss-gallery", K, "Gloss gallery: four photos of different sizes",
- "Four photos of recent work or the salon at different sizes, edge to edge. Part of the Gloss kit; the salon's own photos, with the client's permission.",
+ "Four photos of recent work or the salon at different sizes, edge to edge, each opening full screen when clicked. Part of the Gloss kit; the salon's own photos, with the client's permission.",
  "gallery, photos, work, portfolio, before and after, gloss",
- sec("Gallery", cols([col(fill("placeholder-tall.svg", 36), "50%"),
-   col(grp(N([fill("placeholder-wide.svg", 18), cols([col(fill("placeholder-square.svg", 18)), col(fill("placeholder-square.svg", 18))], "0", None, None, False)]), gap="0", layout={"type": "default"}))], "0", "full", None),
+ sec("Gallery", cols([col(zoom(img("placeholder-tall.svg", "Recent work: soft copper colour on long waves", "4/5")), "50%"),
+   col(grp(N([zoom(img("placeholder-wide.svg", "Recent work: a blow-dry being finished with a round brush", "4/3")),
+              cols([col(zoom(img("placeholder-square.svg", "Recent work: curls cut dry, one by one", "1"))), col(zoom(img("placeholder-square.svg", "Inside the salon: chairs by the window", "1")))], "0", None, None, False)]), gap="0", layout={"type": "default"}))], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 kit("gloss-book", K, "Gloss booking: hours, address and how to book",
  "The closing section on the second brand colour: a big invitation to book, opening hours, the address and the cancellation policy. Part of the Gloss kit.",
  "booking, book now, hours, address, contact, policy, gloss",
  sec("Book", cols([
-   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "#book"), ("Call 555 0133", "outline", "tel:5550133", "phone")])]), "55%"),
+   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "/book/"), ("Call (217) 555-0133", "outline", "tel:2175550133", "phone")])]), "55%"),
    col(stackg([stackg([h("Hours", 3, "medium"), p("Tuesday to Friday, 9am to 8pm" + "", None), p("Saturday, 9am to 5pm")], "x-small"),
-               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield", bind="address")], "x-small"),
+               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield, IL 62701", bind="address")], "x-small"),
                stackg([h("Changing a booking", 3, "medium"), p("Please give us 24 hours' notice to move or cancel.")], "x-small")], "large"))], "xx-large", "wide", None), "section-second-brand"))
 
 kit_page("kit-salon", "Home page: Gloss kit, salon and beauty",
