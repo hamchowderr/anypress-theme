@@ -1,0 +1,294 @@
+{
+	"files": {
+		"hero.jpg": "A rolled towel with white flowers on a massage table, a candle behind",
+		"room.jpg": "A light treatment room with two massage tables and cushions",
+		"orchid.jpg": "A white orchid among bamboo stems and dark stones",
+		"towels.jpg": "Folded white towels on a dark wooden bench",
+		"stones.jpg": "Rolled towels, black stones, white flowers and tea lights on grey",
+		"bath.jpg": "A bath with a grey cloth over its edge, a bath bomb and a candle",
+		"tea.jpg": "A glass cup of tea on burlap beside fresh nettle leaves",
+		"plant.jpg": "Hands holding a small potted plant",
+		"popup.jpg": "Orange towels, white orchids, pebbles and two candles",
+		"back.jpg": "A therapist's hands working on a client's upper back",
+		"shoulder.jpg": "Hands pressing into the muscles of a man's shoulder",
+		"hotstone.jpg": "A smooth black stone being moved over a client's back",
+		"hotstone2.jpg": "A therapist placing a warm stone on a client's skin",
+		"pregnant.jpg": "A pregnant woman resting her hands on her bump in an armchair",
+		"pregnant2.jpg": "A pregnant woman in a white dress holding her bump",
+		"facial.jpg": "A woman with clear skin and a dropper of facial oil",
+		"facial2.jpg": "A smiling woman in a white towel with cream on her cheek",
+		"feet.jpg": "A therapist's hands pressing the sole of a client's foot",
+		"rosebath.jpg": "A woman resting in a bath scattered with petals, by a tall window",
+		"robe.jpg": "A dark bath with a soft cloth, a candle and a bath bomb by a window",
+		"window.jpg": "A white robe with a sprig of lavender hanging by a window",
+		"herbal.jpg": "Two glass cups of mint tea seen from above",
+		"yoga.jpg": "Someone standing in a yoga pose against a pale sky",
+		"stones2.jpg": "Black stones, white flowers and rolled towels on grey",
+		"sarah.jpg": "A smiling woman with braided hair, outdoors",
+		"amir.jpg": "A smiling bearded man in a light shirt holding a coffee cup",
+		"holly.jpg": "A woman with long brown hair smiling by some steps",
+		"grace.jpg": "A woman with long curly hair in a denim jacket by a window"
+	},
+	"by_alt": {
+		"": "hero.jpg",
+		"The treatment room with a bath and a plant": "room.jpg",
+		"A white peace lily": "orchid.jpg",
+		"The rooms: a massage table with folded towels": "towels.jpg",
+		"The rooms: warm stones laid out on a cloth": "stones.jpg",
+		"The rooms: a deep bath by a window": "bath.jpg",
+		"The rooms: a pot of tea and two cups": "tea.jpg",
+		"The rooms: green plants on a windowsill": "plant.jpg",
+		"A massage room with towels and a plant": "popup.jpg",
+		"Inside the mill: a calm room with a chair and soft light": "window.jpg",
+		"A therapist: Sarah, smiling": "sarah.jpg",
+		"A therapist: Amir": "amir.jpg",
+		"A therapist: Holly": "holly.jpg",
+		"A therapist: Grace": "grace.jpg",
+		"Inside the treatment: a massage on the upper back": "back.jpg",
+		"This treatment: a therapist working on a client's back": "shoulder.jpg",
+		"Inside the treatment: hot stone massage": "hotstone.jpg",
+		"This treatment: hot stone massage": "hotstone2.jpg",
+		"Inside the treatment: pregnancy massage": "pregnant.jpg",
+		"This treatment: pregnancy massage": "pregnant2.jpg",
+		"Inside the treatment: facials": "facial.jpg",
+		"This treatment: facials": "facial2.jpg",
+		"Inside the treatment: reflexology": "feet.jpg",
+		"This treatment: reflexology": "stones2.jpg",
+		"Inside the treatment: the quiet room": "rosebath.jpg",
+		"This treatment: the quiet room": "herbal.jpg"
+	},
+	"fallback": "hero.jpg",
+	"posts": {
+		"stones": "stones2.jpg",
+		"pregnancy": "pregnant2.jpg",
+		"tea": "herbal.jpg",
+		"yoga": "yoga.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "White flower spa",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6033264/photo-image-flower-public-domain-plant"
+		},
+		{
+			"file": "room.jpg",
+			"title": "Free spa bed image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5920238/free-spa-bed-image-public-domain-cc0-photo"
+		},
+		{
+			"file": "orchid.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5948748/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "towels.jpg",
+			"title": "Spa White",
+			"creator": "Leeroy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/spa-white-811926DC8B"
+		},
+		{
+			"file": "stones.jpg",
+			"title": "Spa Wellness",
+			"creator": "Healthy Living",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/spa-wellness-PL9R5H2KKH"
+		},
+		{
+			"file": "bath.jpg",
+			"title": "Close sphere bath bomb spa",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5919562/image-public-domain-free-candle"
+		},
+		{
+			"file": "tea.jpg",
+			"title": "Tea Herbaltea",
+			"creator": "Marina Pershina",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/tea-herbaltea-UASWOBMBJ0"
+		},
+		{
+			"file": "plant.jpg",
+			"title": "Holding Plant",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/holding-plant-FEUE6TYV4R"
+		},
+		{
+			"file": "popup.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5945007/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "back.jpg",
+			"title": "Free back massage spa image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5922511/photo-image-public-domain-people-free"
+		},
+		{
+			"file": "shoulder.jpg",
+			"title": "Free back massage spa image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924895/photo-image-public-domain-people-free"
+		},
+		{
+			"file": "hotstone.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5962683/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "hotstone2.jpg",
+			"title": "Free back massage spa image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5913670/image-public-domain-people-free"
+		},
+		{
+			"file": "pregnant.jpg",
+			"title": "Pregnant Woman",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/pregnant-woman-URMURJLZOO"
+		},
+		{
+			"file": "pregnant2.jpg",
+			"title": "Pregnant Woman",
+			"creator": "Matt Bango",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/pregnant-woman-GXKGNGWFHJ"
+		},
+		{
+			"file": "facial.jpg",
+			"title": "Beauty Skincare",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/beauty-skincare-CC9TYE8VJY"
+		},
+		{
+			"file": "facial2.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-JF6DZWDDO3"
+		},
+		{
+			"file": "feet.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5912518/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "rosebath.jpg",
+			"title": "Woman Bathtub",
+			"creator": "Matt Bango",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-bathtub-OBM5JBLMN9"
+		},
+		{
+			"file": "robe.jpg",
+			"title": "White yellow bath bomb wooden",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5928241/photo-image-public-domain-free-candle"
+		},
+		{
+			"file": "window.jpg",
+			"title": "Lavender Cosmetics Spa Body Care",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5965106/photo-image-flower-public-domain-floral"
+		},
+		{
+			"file": "herbal.jpg",
+			"title": "Herbal Tea",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5968441/herbal-tea"
+		},
+		{
+			"file": "yoga.jpg",
+			"title": "Taichee Yoga",
+			"creator": "Patrick Hendry",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/taichee-yoga-D8SW90PLFX"
+		},
+		{
+			"file": "stones2.jpg",
+			"title": "Spa Concept",
+			"creator": "Healthy Living",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/spa-concept-ZCLKDUY2CZ"
+		},
+		{
+			"file": "sarah.jpg",
+			"title": "Smiling Woman",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/smiling-woman-W6GFOSFAXA"
+		},
+		{
+			"file": "amir.jpg",
+			"title": "Business Man",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-man-7BQNRHB6EX"
+		},
+		{
+			"file": "holly.jpg",
+			"title": "Woman Portrait",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-portrait-FL7B8THF3Q"
+		},
+		{
+			"file": "grace.jpg",
+			"title": "Beautiful Bright",
+			"creator": "Jonas Svidras",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/beautiful-bright-3I4TABQT6Q"
+		}
+	]
+}
