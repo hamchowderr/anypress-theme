@@ -83,7 +83,7 @@ kit("parcel-hero", K, "Parcel hero: product photo beside the collection",
    col(fill("placeholder-tall.svg", 40), "55%"),
    col(N([mono("New this autumn"), h("Stoneware, thrown by hand in small batches", 1, "xxx-large"),
           p("Mugs, bowls and vases made in our Asheville studio and fired twice. Every piece is a little different.", "medium"),
-          btns([("Shop the collection", None, "#shop"), ("How it's made", "outline", "#story")])]), None, "section-tint", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
+          btns([("Shop the collection", None, "/shop/"), ("How it's made", "outline", "/about/")])]), None, "section-tint", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 kit("parcel-promise", K, "Parcel promise: shipping, returns and where it's made",
@@ -93,35 +93,37 @@ kit("parcel-promise", K, "Parcel promise: shipping, returns and where it's made"
    ("Free shipping over $60", "Packed in paper and card, no plastic."), ("30 days to change your mind", "Send it back unused for a full refund."), ("Made in Asheville", "Every piece is thrown and glazed in our studio.")]],
    "large", "wide", None), "section-second-brand", ("large", "large", None, None)))
 
-def tile(file, alt, name, count):
-    return stackg([img(file, alt, "4/5"), row([h(name, 3, "large"), p(count, None, "secondary")], valign="bottom")])
+def hlink(text, href, level=2, size=None):
+    return h(text, level, size).replace(T(text), f'<a href="{href}">' + T(text) + "</a>", 1)
+def tile(file, alt, name, count, href="/shop/"):
+    return stackg([img(file, alt, "4/5"), row([hlink(name, href, 3, "large"), p(count, None, "secondary")], valign="bottom")])
 kit("parcel-categories", K, "Parcel categories: three collections with photos",
  "Three collections as tall photos with the name and number of pieces under each, and a link to everything. Part of the Parcel kit; link each to its collection page.",
  "categories, collections, shop, departments, parcel",
- sec("Categories", N([row([h("Shop by collection", 2, "xx-large"), p('<a href="#shop">' + T("See everything") + "</a>", "medium", raw=True)], valign="bottom"),
-   grid([tile("placeholder-tall.svg", "Three clay cups on a shelf", "Cups and mugs", "14 pieces"),
-         tile("placeholder-tall.svg", "A small vase with a hole through the middle", "Vases", "9 pieces"),
-         tile("placeholder-tall.svg", "A glazed blue bottle on a wooden table", "Bottles", "6 pieces")], 3, "16rem", "medium")])))
+ sec("Categories", N([row([h("Shop by collection", 2, "xx-large"), p('<a href="/shop/">' + T("See everything") + "</a>", "medium", raw=True)], valign="bottom"),
+   grid([tile("placeholder-tall.svg", "Three clay cups on a shelf", "Cups and mugs", "14 pieces", "/shop/cups-and-mugs/"),
+         tile("placeholder-tall.svg", "A small vase with a hole through the middle", "Vases", "9 pieces", "/shop/vases/"),
+         tile("placeholder-tall.svg", "A glazed blue bottle on a wooden table", "Bottles", "6 pieces", "/shop/bottles/")], 3, "16rem", "medium")])))
 
-def product(file, alt, name, price, note=None):
-    meta = [h(name, 3, "medium"), p(price)]
+def product(file, alt, name, price, note=None, href="/shop/"):
+    meta = [hlink(name, href, 3, "medium"), p(price)]
     if note: meta.append(p(note, "small", "secondary"))
     return stackg([img(file, alt, "1"), stackg(meta, "x-small")])
 kit("parcel-products", K, "Parcel products: four best sellers",
  "Four products in a row with a square photo, name and price. Part of the Parcel kit; when the shop's products are set up, the shop's own product blocks can replace these so prices and stock stay current.",
  "products, best sellers, featured products, shop, grid, parcel",
  sec("Best sellers", N([h("Best sellers", 2, "xx-large"), grid([
-   product("placeholder-square.svg", "A cup and saucer with a crackle glaze", "Crackle cup and saucer", "$38"),
-   product("placeholder-square.svg", "Three terracotta tumblers", "Ridged tumbler", "$24", "Set of three, $64"),
-   product("placeholder-square.svg", "A round stoneware vase with a hole in the middle", "Moon vase", "$56"),
-   product("placeholder-square.svg", "A blue glazed bottle with a brass stopper", "Indigo bottle", "$72", "Only two left")], 4, "13rem", "medium")]), "section-tint"))
+   product("placeholder-square.svg", "A cup and saucer with a crackle glaze", "Crackle cup and saucer", "$38", None, "/shop/cups-and-mugs/"),
+   product("placeholder-square.svg", "Three terracotta tumblers", "Ridged tumbler", "$24", "Set of three, $64", "/shop/cups-and-mugs/"),
+   product("placeholder-square.svg", "A round stoneware vase with a hole in the middle", "Moon vase", "$56", None, "/shop/vases/"),
+   product("placeholder-square.svg", "A blue glazed vase with a soft drip", "Indigo vase", "$64", "Only two left", "/shop/vases/")], 4, "13rem", "medium")]), "section-tint"))
 
 kit("parcel-story", K, "Parcel story: the maker in their own words",
  "The maker's story in large italic type beside a photo of the workshop, with their name. Part of the Parcel kit; the owner's own words, two or three sentences.",
  "about, story, maker, handmade, studio, parcel",
  sec("Story", cols([
    col(N([p("I started with one wheel in a garage. Ten years on, every mug still goes through my hands at least four times before it reaches you.", "xx-large", None, None, "instrument-serif", {"fontStyle": "italic", "lineHeight": "1.15"}),
-          p("June Park, potter and owner", "medium", "secondary"), btns([("Read our story", "outline", "#story")])]), "55%", valign="center"),
+          p("June Park, potter and owner", "medium", "secondary"), btns([("Read our story", "outline", "/about/")])]), "55%", valign="center"),
    col(img("placeholder-tall.svg", "The potter's wheel and shelves of drying pots", "4/5"))], "xx-large", "wide", "center")))
 
 kit_page("kit-shop", "Home page: Parcel kit, online shop",
