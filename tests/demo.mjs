@@ -62,7 +62,7 @@ if (!CHECK) {
 
 const { checkDemo } = await import('./demo-check.mjs');
 mkdirSync(SHOTS, { recursive: true });
-const failures = await checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, leftover: JSON.parse(built.text).leftover, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
+const failures = await checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, paths: JSON.parse(built.text).paths, leftover: JSON.parse(built.text).leftover, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
 console.log(failures.length ? `\n${failures.length} problem(s)` : '\nThe demo passes the kit checklist checks');
 await cli[Symbol.asyncDispose]?.();
 process.exit(failures.length ? 1 : 0);

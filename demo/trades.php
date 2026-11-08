@@ -13,7 +13,8 @@
  * from its copy: every piece of the kit's text and what it becomes, site-wide and per page, plus raw swaps for block
  * settings (map positions, phone links, counters). Its build.php can also set 'colors' and 'fonts' (a palette and a
  * font pairing from styles/colors and styles/typography), 'font_map' (the kit's display font => another),
- * 'pages' (more pages made from the kit's sections) and 'menu'. It replaces the site's pages, posts, menus, header,
+ * 'pages' (more pages made from the kit's sections), 'menu', 'sitemap' (other slugs and titles for the main pages,
+ * for a kit that isn't a trade), 'apply' (the application form's title and job label) and the quote form's 'labels'. It replaces the site's pages, posts, menus, header,
  * footer and global styles: run it on an empty site only.
  *
  * @package AnyPress
@@ -72,6 +73,7 @@ function anypress_demo_links( $content ) {
 			'{"url":"#","service":"facebook"}'  => '{"url":"https://www.facebook.com/","service":"facebook"}',
 			'{"url":"#","service":"instagram"}' => '{"url":"https://www.instagram.com/","service":"instagram"}',
 			'{"url":"#","service":"google"}'    => '{"url":"https://www.google.com/maps","service":"google"}',
+			'{"url":"#","service":"linkedin"}'  => '{"url":"https://www.linkedin.com/","service":"linkedin"}',
 		)
 	);
 	return preg_replace_callback(
@@ -208,7 +210,7 @@ function anypress_demo_field( $kind, $name, $label, $required = false, $extra = 
 
 function anypress_demo_form( $title, $fields, $button, $confirmation ) {
 	$form = array(
-		'fields'       => $fields,
+		'fields'       => array_values( array_filter( $fields ) ),
 		'submitButton' => array(
 			'uniqElKey'      => 'el_submit',
 			'element'        => 'button',
@@ -256,20 +258,48 @@ function anypress_demo_page( $slug, $title, $content, $parent = 0, $order = 0 ) 
 	return $id;
 }
 
+// Where each of the site's main pages lives and what it's called. A kit for another kind of business can rename them
+// in its build.php ('sitemap' => array( 'services' => array( 'programs', 'Programs' ) ...)).
+$anypress_map = array_merge(
+	array(
+		'services' => array( 'services', 'Services' ),
+		'about'    => array( 'about', 'About us' ),
+		'reviews'  => array( 'reviews', 'Reviews' ),
+		'areas'    => array( 'service-areas', 'Service areas' ),
+		'offers'   => array( 'special-offers', 'Special offers' ),
+		'faq'      => array( 'faq', 'Questions and answers' ),
+		'careers'  => array( 'careers', 'Careers' ),
+		'contact'  => array( 'contact', 'Contact' ),
+		'blog'     => array( 'blog', 'Blog' ),
+	),
+	(array) ( $anypress_kit['sitemap'] ?? array() )
+);
+
 // The thank-you page first: the forms send visitors there.
 anypress_demo_page( 'thank-you', 'Thank you', anypress_demo_pattern( $anypress_pre . '-page-thanks' ) );
 
 $anypress_q     = $anypress_kit['quote'];
+// The quote form's labels, which a kit for another kind of business can change ('date' => false leaves the date out).
+$anypress_ql    = array_merge(
+	array(
+		'service' => 'What do you need?',
+		'choose'  => 'Choose a service',
+		'date'    => 'Best day for a visit',
+		'address' => 'Address or town',
+		'message' => "What's wrong?",
+	),
+	(array) ( $anypress_q['labels'] ?? array() )
+);
 $anypress_quote = anypress_demo_form(
 	$anypress_q['title'],
 	array(
 		anypress_demo_field( 'input_name', 'names', 'Your name', true ),
 		anypress_demo_field( 'input_email', 'email', 'Email', true ),
 		anypress_demo_field( 'input_text', 'phone', 'Phone', true, array( 'attributes.type' => 'tel', 'attributes.autocomplete' => 'tel' ) ),
-		anypress_demo_field( 'select', 'service', 'What do you need?', true, array( 'settings.placeholder' => 'Choose a service', 'settings.advanced_options' => array_map( fn( $s ) => array( 'label' => $s, 'value' => $s, 'calc_value' => '' ), $anypress_kit['services'] ) ) ),
-		anypress_demo_field( 'input_date', 'preferred_date', 'Best day for a visit', false, array( 'settings.date_format' => 'm/d/Y', 'settings.is_time_enabled' => false ) ),
-		anypress_demo_field( 'input_text', 'address', 'Address or town', false ),
-		anypress_demo_field( 'textarea', 'message', "What's wrong?", true, array( 'attributes.rows' => 4 ) ),
+		anypress_demo_field( 'select', 'service', $anypress_ql['service'], true, array( 'settings.placeholder' => $anypress_ql['choose'], 'settings.advanced_options' => array_map( fn( $s ) => array( 'label' => $s, 'value' => $s, 'calc_value' => '' ), $anypress_kit['services'] ) ) ),
+		$anypress_ql['date'] ? anypress_demo_field( 'input_date', 'preferred_date', $anypress_ql['date'], false, array( 'settings.date_format' => 'm/d/Y', 'settings.is_time_enabled' => false ) ) : null,
+		anypress_demo_field( 'input_text', 'address', $anypress_ql['address'], false ),
+		anypress_demo_field( 'textarea', 'message', $anypress_ql['message'], true, array( 'attributes.rows' => 4 ) ),
 	),
 	$anypress_q['button'],
 	array( 'redirectTo' => 'customPage', 'customPage' => $anypress_pages['thank-you'], 'messageToShow' => '', 'samePageFormBehavior' => 'hide_form' )
@@ -286,12 +316,12 @@ $anypress_contact = anypress_demo_form(
 	array( 'redirectTo' => 'customPage', 'customPage' => $anypress_pages['thank-you'], 'messageToShow' => '', 'samePageFormBehavior' => 'hide_form' )
 );
 $anypress_apply = anypress_demo_form(
-	'Job application',
+	$anypress_kit['apply']['title'] ?? 'Job application',
 	array(
 		anypress_demo_field( 'input_name', 'names', 'Your name', true ),
 		anypress_demo_field( 'input_email', 'email', 'Email', true ),
 		anypress_demo_field( 'input_text', 'phone', 'Phone', true, array( 'attributes.type' => 'tel', 'attributes.autocomplete' => 'tel' ) ),
-		anypress_demo_field( 'select', 'job', 'Which job?', true, array( 'settings.placeholder' => 'Choose a job', 'settings.advanced_options' => array_map( fn( $s ) => array( 'label' => $s, 'value' => $s, 'calc_value' => '' ), $anypress_kit['jobs'] ) ) ),
+		anypress_demo_field( 'select', 'job', $anypress_kit['apply']['label'] ?? 'Which job?', true, array( 'settings.placeholder' => $anypress_kit['apply']['choose'] ?? 'Choose a job', 'settings.advanced_options' => array_map( fn( $s ) => array( 'label' => $s, 'value' => $s, 'calc_value' => '' ), $anypress_kit['jobs'] ) ) ),
 		anypress_demo_field( 'textarea', 'message', 'A few lines about you', true, array( 'attributes.rows' => 5 ) ),
 	),
 	'Send my application',
@@ -322,7 +352,7 @@ $anypress_home = anypress_demo_page( 'home', 'Home', anypress_demo_forms( anypre
 update_option( 'show_on_front', 'page' );
 update_option( 'page_on_front', $anypress_home );
 
-$anypress_services_page = anypress_demo_page( 'services', 'Services', anypress_demo_pattern( $anypress_pre . '-page-services' ), 0, 1 );
+$anypress_services_page = anypress_demo_page( $anypress_map['services'][0], $anypress_map['services'][1], anypress_demo_pattern( $anypress_pre . '-page-services' ), 0, 1 );
 
 // One page per service, from the service page pattern (written for one of them).
 $anypress_service_text = json_decode( file_get_contents( $anypress_demo . '/services.json' ), true );
@@ -331,9 +361,9 @@ foreach ( $anypress_service_text as $anypress_i => $anypress_svc ) {
 	anypress_demo_page( $anypress_svc['slug'], $anypress_svc['title'], $anypress_content, $anypress_services_page, $anypress_i );
 }
 
-anypress_demo_page( 'about', 'About us', anypress_demo_pattern( $anypress_pre . '-page-about' ), 0, 2 );
-anypress_demo_page( 'reviews', 'Reviews', anypress_demo_pattern( $anypress_pre . '-page-reviews' ), 0, 3 );
-$anypress_areas_page = anypress_demo_page( 'service-areas', 'Service areas', anypress_demo_pattern( $anypress_pre . '-page-areas' ), 0, 4 );
+anypress_demo_page( $anypress_map['about'][0], $anypress_map['about'][1], anypress_demo_pattern( $anypress_pre . '-page-about' ), 0, 2 );
+anypress_demo_page( $anypress_map['reviews'][0], $anypress_map['reviews'][1], anypress_demo_pattern( $anypress_pre . '-page-reviews' ), 0, 3 );
+$anypress_areas_page = anypress_demo_page( $anypress_map['areas'][0], $anypress_map['areas'][1], anypress_demo_pattern( $anypress_pre . '-page-areas' ), 0, 4 );
 
 $anypress_towns = json_decode( file_get_contents( $anypress_demo . '/towns.json' ), true );
 foreach ( $anypress_towns as $anypress_i => $anypress_town ) {
@@ -342,11 +372,11 @@ foreach ( $anypress_towns as $anypress_i => $anypress_town ) {
 	anypress_demo_page( $anypress_town['slug'], $anypress_kit['area_title'] . $anypress_town['name'], $anypress_content, $anypress_areas_page, $anypress_i );
 }
 
-anypress_demo_page( 'special-offers', 'Special offers', anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-page-offers' ) ), 0, 5 );
+anypress_demo_page( $anypress_map['offers'][0], $anypress_map['offers'][1], anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-page-offers' ) ), 0, 5 );
 anypress_demo_page( $anypress_q['slug'], $anypress_q['title'], anypress_demo_forms( anypress_demo_pattern( $anypress_q['pattern'] ) ), 0, 6 );
-anypress_demo_page( 'faq', 'Questions and answers', anypress_demo_pattern( $anypress_pre . '-page-faq' ), 0, 7 );
-anypress_demo_page( 'careers', 'Careers', anypress_demo_forms( str_replace( 'mailto:jobs@example.com', '#apply', anypress_demo_pattern( $anypress_pre . '-page-careers' ) ) ), 0, 8 );
-anypress_demo_page( 'contact', 'Contact', anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-page-contact' ) ), 0, 9 );
+anypress_demo_page( $anypress_map['faq'][0], $anypress_map['faq'][1], anypress_demo_pattern( $anypress_pre . '-page-faq' ), 0, 7 );
+anypress_demo_page( $anypress_map['careers'][0], $anypress_map['careers'][1], anypress_demo_forms( str_replace( 'mailto:jobs@example.com', '#apply', anypress_demo_pattern( $anypress_pre . '-page-careers' ) ) ), 0, 8 );
+anypress_demo_page( $anypress_map['contact'][0], $anypress_map['contact'][1], anypress_demo_forms( anypress_demo_pattern( $anypress_pre . '-page-contact' ) ), 0, 9 );
 // More pages for this business, made from the kit's sections: array( slug, title, sections, parent slug, order ).
 // A section is a pattern name, or "form:<kind>" for one of the site's forms.
 foreach ( (array) ( $anypress_kit['pages'] ?? array() ) as $anypress_more ) {
@@ -384,7 +414,7 @@ anypress_demo_page(
 update_option( 'wp_page_for_privacy_policy', $anypress_pages['privacy-policy'] );
 
 // The blog: a page for the posts, and posts with photos.
-$anypress_blog = anypress_demo_page( 'blog', 'Blog', '', 0, 10 );
+$anypress_blog = anypress_demo_page( $anypress_map['blog'][0], $anypress_map['blog'][1], '', 0, 10 );
 update_option( 'page_for_posts', $anypress_blog );
 wp_update_term( (int) get_option( 'default_category' ), 'category', array( 'name' => 'Tips', 'slug' => 'tips' ) );
 $anypress_posts = json_decode( file_get_contents( $anypress_demo . '/posts.json' ), true );
@@ -424,12 +454,12 @@ function anypress_demo_menu_item( $item ) {
 	return '<!-- wp:navigation-link ' . wp_json_encode( anypress_demo_link( $item['label'], $item['slug'] ), JSON_UNESCAPED_SLASHES ) . ' /-->';
 }
 $anypress_menu = array(
-	array( 'label' => 'Services', 'slug' => 'services', 'children' => array_merge( array( array( 'label' => 'All services', 'slug' => 'services' ) ), array_map( fn( $s ) => array( 'label' => $s['title'], 'slug' => $s['slug'] ), $anypress_service_text ) ) ),
-	array( 'label' => 'Areas', 'slug' => 'service-areas', 'children' => array_merge( array( array( 'label' => 'All areas', 'slug' => 'service-areas' ) ), array_map( fn( $t ) => array( 'label' => $t['name'], 'slug' => $t['slug'] ), $anypress_towns ) ) ),
-	array( 'label' => 'About', 'slug' => 'about', 'children' => array( array( 'label' => 'About us', 'slug' => 'about' ), array( 'label' => 'Reviews', 'slug' => 'reviews' ), array( 'label' => 'Careers', 'slug' => 'careers' ), array( 'label' => 'Questions', 'slug' => 'faq' ) ) ),
-	array( 'label' => 'Offers', 'slug' => 'special-offers' ),
-	array( 'label' => 'Blog', 'slug' => 'blog' ),
-	array( 'label' => 'Contact', 'slug' => 'contact' ),
+	array( 'label' => 'Services', 'slug' => $anypress_map['services'][0], 'children' => array_merge( array( array( 'label' => 'All services', 'slug' => $anypress_map['services'][0] ) ), array_map( fn( $s ) => array( 'label' => $s['title'], 'slug' => $s['slug'] ), $anypress_service_text ) ) ),
+	array( 'label' => 'Areas', 'slug' => $anypress_map['areas'][0], 'children' => array_merge( array( array( 'label' => 'All areas', 'slug' => $anypress_map['areas'][0] ) ), array_map( fn( $t ) => array( 'label' => $t['name'], 'slug' => $t['slug'] ), $anypress_towns ) ) ),
+	array( 'label' => 'About', 'slug' => $anypress_map['about'][0], 'children' => array( array( 'label' => 'About us', 'slug' => $anypress_map['about'][0] ), array( 'label' => 'Reviews', 'slug' => $anypress_map['reviews'][0] ), array( 'label' => 'Careers', 'slug' => $anypress_map['careers'][0] ), array( 'label' => 'Questions', 'slug' => $anypress_map['faq'][0] ) ) ),
+	array( 'label' => 'Offers', 'slug' => $anypress_map['offers'][0] ),
+	array( 'label' => 'Blog', 'slug' => $anypress_map['blog'][0] ),
+	array( 'label' => 'Contact', 'slug' => $anypress_map['contact'][0] ),
 );
 if ( ! empty( $anypress_kit['menu'] ) ) {
 	$anypress_menu = $anypress_kit['menu'];
@@ -478,4 +508,4 @@ if ( $anypress_logo ) {
 	update_option( 'site_icon', $anypress_logo );
 }
 
-echo wp_json_encode( array( 'pages' => count( $anypress_pages ), 'home' => get_permalink( $anypress_home ), 'quote' => '/' . $anypress_q['slug'] . '/', 'leftover' => $anypress_kit['leftover'] ?? array(), 'forms' => array( $anypress_quote, $anypress_contact, $anypress_apply, $anypress_newsletter ) ) );
+echo wp_json_encode( array( 'pages' => count( $anypress_pages ), 'home' => get_permalink( $anypress_home ), 'quote' => '/' . $anypress_q['slug'] . '/', 'paths' => array_map( fn( $m ) => '/' . $m[0] . '/', $anypress_map ), 'leftover' => $anypress_kit['leftover'] ?? array(), 'forms' => array( $anypress_quote, $anypress_contact, $anypress_apply, $anypress_newsletter ) ) );

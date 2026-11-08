@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.7.0
+Stable tag: 0.8.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.8.0 =
+* The Commons kit, for chambers of commerce, associations, clubs and churches, is now a full website: 13 starter pages (programs, a program, events, about, member stories, member directory, a directory category, member deals, join, questions, volunteer, contact, thank you) and new sections, with a sticky header and call button, a guest offer popup, questions, member story and photo carousels, counters, a directory map and application, volunteer and contact forms.
+* The Commons home page adds common questions, and its event and get-involved links now go to real pages.
 
 = 0.7.0 =
 * Phone numbers, email addresses, addresses and opening hours in the kits and the Contact details section are bound to the business's site details (AnyPress Blocks 0.3.0 or later): set them once and every page shows them. Without AnyPress Blocks they show their example text, as before.

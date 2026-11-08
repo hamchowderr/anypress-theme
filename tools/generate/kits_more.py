@@ -267,12 +267,12 @@ kit("commons-hero", K, "Commons hero: who you are and how to join",
 def event(day, month, title, when, where):
     date = grp(N([p(day, "xx-large", None, "center", "crimson-pro", {"lineHeight": "1", "fontWeight": "700"}), p(month, "small", None, "center", None, {"textTransform": "uppercase", "letterSpacing": "0.08em"})]),
                "section-brand", ("small", "small", "small", "small"), "x-small")
-    return cols([col(date, "6rem"), col(stackg([h(title, 3, "large"), p(f"{when} · {where}", None, "secondary"), p('<a href="#">' + T("Details") + "</a>", None, None, None, None, None, True)], "x-small"), None, None, None, "center")],
+    return cols([col(date, "6rem"), col(stackg([h(title, 3, "large"), p(f"{when} · {where}", None, "secondary"), p('<a href="/events/">' + T("Details") + "</a>", None, None, None, None, None, True)], "x-small"), None, None, None, "center")],
                 "large", None, "center", False)
 kit("commons-events", K, "Commons events: what's coming up",
  "The next few events as rows with a date block, the title, time and place, and a link to the details. Part of the Commons kit; keep it to the next four or five and take old ones down.",
  "events, calendar, upcoming, meetings, services, schedule, commons",
- sec("Events", N([row([h("Coming up", 2, "xx-large"), p('<a href="#">' + T("Full calendar") + "</a>", "medium", raw=True)], valign="bottom"),
+ sec("Events", N([row([h("Coming up", 2, "xx-large"), p('<a href="/events/">' + T("Full calendar") + "</a>", "medium", raw=True)], valign="bottom"),
    stackg([event("14", "Mar", "Business breakfast: hiring your first employee", "7:30am to 9am", "The Grand Hotel"),
            event("21", "Mar", "Main Street clean-up", "10am to 1pm", "Meet at the town hall"),
            event("04", "Apr", "Members' evening and awards", "6pm to 9pm", "Riverside Brewery"),
@@ -306,10 +306,10 @@ kit("commons-leaders", K, "Commons leaders: the board or staff by name",
 kit("commons-involved", K, "Commons get involved: give, volunteer, sponsor",
  "The closing section on the second brand colour: three ways to help (give, volunteer, sponsor), each with a sentence and a link. Part of the Commons kit; change the three to what the group really needs.",
  "donate, give, volunteer, sponsor, get involved, support, commons",
- sec("Get involved", N([h("Get involved", 2, "xxx-large"), cols([col(stackg([h(a, 3, "large"), p(b), p(f'<a href="#">{T(c)}</a>', None, None, None, None, None, True)])) for a, b, c in [
-   ("Volunteer", "Help at an event, mentor a new business or join a committee.", "See open roles"),
-   ("Sponsor", "Put your name on the breakfast series or the summer street fair.", "Sponsorship packs"),
-   ("Give", "Our scholarship fund sends two local students to college every year.", "Give to the fund")]], "x-large", "wide", None)]), "section-second-brand"))
+ sec("Get involved", N([h("Get involved", 2, "xxx-large"), cols([col(stackg([h(a, 3, "large"), p(b), p(f'<a href="{u}">{T(c)}</a>', None, None, None, None, None, True)])) for a, b, c, u in [
+   ("Volunteer", "Help at an event, mentor a new business or join a committee.", "See open roles", "/volunteer/"),
+   ("Sponsor", "Put your name on the breakfast series or the summer street fair.", "Sponsorship packs", "/contact/"),
+   ("Give", "Our scholarship fund sends two local students to college every year.", "Give to the fund", "/contact/")]], "x-large", "wide", None)]), "section-second-brand"))
 
 kit_page("kit-community", "Home page: Commons kit, associations, chambers and churches",
  "A complete home page for a chamber of commerce, association, club, nonprofit or church in the Commons kit: a photo of members with how to join, upcoming events, membership levels, the latest news, the people who run it and ways to get involved. Apply the Commons style for the look it was designed with.",

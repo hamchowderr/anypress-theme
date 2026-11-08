@@ -6,7 +6,8 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 
-export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover = [] }) {
+export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover = [], paths = {} }) {
+    const P = { services: '/services/', careers: '/careers/', contact: '/contact/', ...paths };
     const failures = [];
     const check = (ok, msg, detail = '') => {
         if (ok) console.log(`  ok   ${msg}`);
@@ -63,7 +64,7 @@ export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover
 
     const notFound = await tab.goto(`${base}/this-page-does-not-exist/`, { waitUntil: 'domcontentloaded' });
     check(notFound.status() === 404 && /not found/i.test(await tab.title() + await tab.evaluate(() => document.body.innerText)), 'a missing page shows the designed 404 page');
-    await tab.goto(`${base}/blog/`, { waitUntil: 'domcontentloaded' });
+    await tab.goto(`${base}${P.blog || "/blog/"}`, { waitUntil: 'domcontentloaded' });
     const posts = await tab.$$eval('.wp-block-post-title a', (as) => as.map((a) => a.href));
     check(posts.length >= 3, `the blog lists ${posts.length} posts (3 or more)`);
 
@@ -97,7 +98,7 @@ export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover
     await tab.waitForTimeout(900);
     check((await track.evaluate((t) => t.scrollLeft)) > 0, 'the reviews carousel moves on');
     check(await tab.locator('.wp-block-anypress-counter').count() >= 4, 'numbers count up (Counter blocks)');
-    const gallery = [...seen].find((u) => /\/services\/[^/]+\/$/.test(u));
+    const gallery = [...seen].find((u) => new URL(u).pathname.startsWith(P.services) && new URL(u).pathname.length > P.services.length);
     await tab.goto(gallery, { waitUntil: 'networkidle' });
     const zoom = tab.locator('.wp-lightbox-container button').first();
     if (await zoom.count()) {
@@ -125,7 +126,7 @@ export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover
     await ptab.keyboard.press('Escape');
     await ptab.waitForTimeout(300);
     check(!(await ptab.$eval('#offer', (d) => d.open)), 'it closes with Escape');
-    await ptab.goto(`${base}/services/`, { waitUntil: 'domcontentloaded' });
+    await ptab.goto(`${base}${P.services}`, { waitUntil: 'domcontentloaded' });
     await ptab.waitForTimeout(6500);
     check(!(await ptab.$eval('#offer', (d) => d.open)), 'and does not open again on the next page');
     await fresh.close();
@@ -141,15 +142,15 @@ export async function checkDemo({ base, shots, quote = '/get-a-quote/', leftover
     };
     for (const [path, values, label] of [
         [quote, [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['input[name=phone]', '555 0100'], ['select[name=service]', ''], ['textarea[name=message]', 'Something needs fixing.']], 'the quote form'],
-        ['/contact/', [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['textarea[name=message]', 'Do you work Sundays?']], 'the contact form'],
-        ['/careers/', [['#apply input[name="names[first_name]"], form input[name="names[first_name]"]', 'Test Visitor'], ['form input[name=email]', 'test@example.com'], ['form input[name=phone]', '555 0100'], ['form select[name=job]', ''], ['form textarea[name=message]', 'Five years on service work.']], 'the job application'],
+        [P.contact, [['input[name="names[first_name]"]', 'Test Visitor'], ['input[name=email]', 'test@example.com'], ['textarea[name=message]', 'Do you work Sundays?']], 'the contact form'],
+        [P.careers, [['#apply input[name="names[first_name]"], form input[name="names[first_name]"]', 'Test Visitor'], ['form input[name=email]', 'test@example.com'], ['form input[name=phone]', '555 0100'], ['form select[name=job]', ''], ['form textarea[name=message]', 'Five years on service work.']], 'the job application'],
     ]) {
         await tab.goto(`${base}${path}`, { waitUntil: 'networkidle' });
         await fill(tab, values);
         await Promise.all([tab.waitForURL(/thank-you/, { timeout: 15000 }).catch(() => {}), tab.locator('main .ff-btn-submit, .entry-content .ff-btn-submit, form .ff-btn-submit').first().click()]);
         check(/thank-you/.test(tab.url()), `${label} sends and shows the thank-you page`, tab.url());
     }
-    await tab.goto(`${base}/services/`, { waitUntil: 'networkidle' });
+    await tab.goto(`${base}${P.services}`, { waitUntil: 'networkidle' });
     const signup = tab.locator('footer form').first();
     await signup.locator('input[type=email]').fill('test@example.com');
     await signup.locator('.ff-btn-submit').click();
