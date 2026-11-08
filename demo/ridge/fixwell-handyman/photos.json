@@ -1,0 +1,132 @@
+{
+ "files": {
+  "carpenter-measuring.jpg": "A carpenter marking a pine board on sawhorses, with a drill beside her",
+  "paint-roller.jpg": "A paint roller against a half-painted wall",
+  "hand-tools.jpg": "Hammer, pliers, wrench and screwdrivers laid out on a workbench",
+  "drywall-ceiling.jpg": "A man in a hard hat smoothing joint compound on a drywall ceiling",
+  "framing-carpenters.jpg": "Two carpenters on ladders framing a wall around a window",
+  "painter-yellow-wall.jpg": "A painter in overalls painting stripes on a yellow wall",
+  "drill-and-screws.jpg": "A cordless drill, screws and a tape measure on a wooden floor",
+  "door-key.jpg": "A key in the lock of a front door",
+  "two-story-home.jpg": "A two-story home with a double garage at dusk",
+  "suburban-street.jpg": "A quiet suburban street lined with palms",
+  "deck-bench.jpg": "A weathered wooden deck with a bench"
+ },
+ "by_alt": {
+  "A carpenter marking a pine board on sawhorses, with a drill beside her": "carpenter-measuring.jpg",
+  "A paint roller against a half-painted wall": "paint-roller.jpg",
+  "Hammer, pliers, wrench and screwdrivers laid out on a workbench": "hand-tools.jpg",
+  "A man in a hard hat smoothing joint compound on a drywall ceiling": "drywall-ceiling.jpg",
+  "Two carpenters on ladders framing a wall around a window": "framing-carpenters.jpg",
+  "A painter in overalls painting stripes on a yellow wall": "painter-yellow-wall.jpg",
+  "A cordless drill, screws and a tape measure on a wooden floor": "drill-and-screws.jpg",
+  "A key in the lock of a front door": "door-key.jpg",
+  "A two-story home with a double garage at dusk": "two-story-home.jpg",
+  "A weathered wooden deck with a bench": "deck-bench.jpg",
+  "": "suburban-street.jpg",
+  "Photo of the service: a wooden deck and bench": "deck-bench.jpg",
+  "Photo of the service: hand tools on a workbench": "hand-tools.jpg",
+  "Photo of the service: joint compound on a drywall ceiling": "drywall-ceiling.jpg",
+  "Photo of the service: a painter at a yellow wall": "painter-yellow-wall.jpg",
+  "Photo of the service: a drill, screws and a tape measure": "drill-and-screws.jpg",
+  "Photo of the service: a key in a front door lock": "door-key.jpg"
+ },
+ "fallback": "two-story-home.jpg",
+ "posts": {
+  "drywall": "drywall-ceiling.jpg",
+  "paint": "painter-yellow-wall.jpg",
+  "deck": "deck-bench.jpg",
+  "door": "door-key.jpg"
+ },
+ "logo": null,
+ "credits": [
+  {
+   "file": "carpenter-measuring.jpg",
+   "title": "Free woman carpenter workshop image",
+   "creator": "rawpixel",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://www.rawpixel.com/image/5904636/photo-image-background-design-public-domain"
+  },
+  {
+   "file": "paint-roller.jpg",
+   "title": "A paint roller with a red handle, covered in beige paint, is held up against a wall partially painted in a muted blue",
+   "creator": "Anup Neupane",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://wordpress.org/photos/photo/8756a21a02/"
+  },
+  {
+   "file": "hand-tools.jpg",
+   "title": "Tools Hammer",
+   "creator": "energepic.com",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/tools-hammer-12ZHB0V43M"
+  },
+  {
+   "file": "drywall-ceiling.jpg",
+   "title": "Applying drywall joint compound",
+   "creator": "Georgia National Guard",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "source": "https://www.flickr.com/photos/40994485@N04/5891937812"
+  },
+  {
+   "file": "framing-carpenters.jpg",
+   "title": "Two people on ladders doing carpentry/building.",
+   "creator": "Mandt contract",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://wordpress.org/photos/photo/5136332c7e/"
+  },
+  {
+   "file": "painter-yellow-wall.jpg",
+   "title": "Guy Man",
+   "creator": "Michal Jarmoluk",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/guy-man-Q67DPDQSC1"
+  },
+  {
+   "file": "drill-and-screws.jpg",
+   "title": "Tools Hammer",
+   "creator": "Taduuda",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/tools-hammer-6K150QNG2N"
+  },
+  {
+   "file": "door-key.jpg",
+   "title": "Keys Door",
+   "creator": "WDnet Studio",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/keys-door-Z1TKDI29FZ"
+  },
+  {
+   "file": "two-story-home.jpg",
+   "title": "House Home",
+   "creator": "Binyamin Mellish",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/house-home-LJ515CPAKI"
+  },
+  {
+   "file": "suburban-street.jpg",
+   "title": "Suburban Street",
+   "creator": "Mike Moloney",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://stocksnap.io/photo/suburban-street-JDQIGEGDBB"
+  },
+  {
+   "file": "deck-bench.jpg",
+   "title": "A simple wooden bench on a wooden deck overlooks the raked gravel of the Zen Garden. A quiet resting spot in Portland Japanese Garden.",
+   "creator": "Bigul Malayi",
+   "license": "CC0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "https://wordpress.org/photos/photo/48068d4c94/"
+  }
+ ]
+}
