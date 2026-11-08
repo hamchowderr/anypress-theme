@@ -1,0 +1,380 @@
+{
+	"files": {
+		"spiral.jpg": "A white spiral staircase seen from above",
+		"spiral2.jpg": "A white spiral stair curling down",
+		"spiral3.jpg": "A dark spiral stair with a round skylight",
+		"stairstack.jpg": "A white stairwell seen from below",
+		"bluewall.jpg": "A pale blue wall with small square windows",
+		"whiteblock.jpg": "A white apartment block against a blue sky",
+		"redwhite.jpg": "A white housing block with red window frames",
+		"bluedoor.jpg": "A wooden door in a pale blue wall",
+		"whiteabs.jpg": "White concrete steps and shadows",
+		"balconies.jpg": "Stacked white balconies",
+		"whiteconc.jpg": "A white concrete building with deep windows",
+		"wavy.jpg": "White curving balconies",
+		"teal.jpg": "A teal glass tower narrowing to a point",
+		"blueglass.jpg": "A blue glass tower against the sky",
+		"lookup.jpg": "Looking up between glass towers",
+		"glasswide.jpg": "A wall of blue glass panels",
+		"glass2.jpg": "A curved glass facade",
+		"market.jpg": "Stalls under the roof of a market hall",
+		"hall.jpg": "Travellers crossing a grand station hall",
+		"arches.jpg": "Light through a row of dark arches",
+		"walkway.jpg": "People walking through a covered walkway",
+		"concrete.jpg": "A concrete tower rising into a pale sky",
+		"sofa.jpg": "A pale blue sofa in a bright room",
+		"dining.jpg": "A white dining room with a long table",
+		"yellow.jpg": "A person walking past a bright yellow wall",
+		"grass.jpg": "People resting on a lawn by the city",
+		"bridge.jpg": "People walking on a bridge",
+		"sunset.jpg": "People on a terrace at sunset",
+		"ines.jpg": "A photographer with a camera to her eye",
+		"camera.jpg": "A camera hanging from a shoulder strap",
+		"roof.jpg": "A white roof of folded panels",
+		"corridor.jpg": "A long concrete corridor with a slot of light",
+		"glassstair.jpg": "A steel stair under a glass roof",
+		"stairwell.jpg": "A square stairwell seen from above"
+	},
+	"by_alt": {
+		"@wide": "glasswide.jpg",
+		"@tall": "teal.jpg",
+		"@square": "spiral.jpg",
+		"A spiral staircase seen from above": "spiral.jpg",
+		"A white outdoor stair against a grey wall": "whiteabs.jpg",
+		"A blue painted building with white windows": "bluewall.jpg",
+		"A curving glass tower under a blue sky": "teal.jpg",
+		"A white spiral stair seen from below": "spiral2.jpg",
+		"Ines Duarte with her camera": "ines.jpg",
+		"Service: architecture": "concrete.jpg",
+		"Service: interiors": "sofa.jpg",
+		"Service: people and places": "yellow.jpg",
+		"Service: editorial": "bridge.jpg",
+		"Project: Casa Moreira": "spiral3.jpg",
+		"Project: Azul": "redwhite.jpg",
+		"Project: Marvila studios": "wavy.jpg",
+		"Project: Tower One": "blueglass.jpg",
+		"Project: Mercado Novo": "market.jpg",
+		"Print: Spiral, Porto": "spiral.jpg",
+		"Print: Blue wall, Setúbal": "bluewall.jpg",
+		"Print: White stair, Marvila": "balconies.jpg",
+		"Services: a concrete building rising into a pale sky": "whiteblock.jpg",
+		"This service: a white concrete building against a blue sky": "whiteconc.jpg",
+		"This service: a stair seen from above": "stairwell.jpg",
+		"Services: interiors": "dining.jpg",
+		"This service: interiors, one": "sofa.jpg",
+		"This service: interiors, two": "glassstair.jpg",
+		"Services: people and places": "grass.jpg",
+		"This service: people and places, one": "yellow.jpg",
+		"This service: people and places, two": "walkway.jpg",
+		"Services: editorial": "bridge.jpg",
+		"This service: editorial, one": "sunset.jpg",
+		"This service: editorial, two": "hall.jpg",
+		"Casa Moreira: the project from outside": "stairstack.jpg",
+		"Casa Moreira: photo 1": "spiral.jpg",
+		"Casa Moreira: photo 2": "spiral2.jpg",
+		"Casa Moreira: photo 3": "spiral3.jpg",
+		"Casa Moreira: photo 4": "glassstair.jpg",
+		"Azul: the project from outside": "bluedoor.jpg",
+		"Azul: photo 1": "bluewall.jpg",
+		"Azul: photo 2": "whiteblock.jpg",
+		"Azul: photo 3": "redwhite.jpg",
+		"Azul: photo 4": "balconies.jpg",
+		"Marvila studios: the project from outside": "corridor.jpg",
+		"Marvila studios: photo 1": "whiteabs.jpg",
+		"Marvila studios: photo 2": "whiteconc.jpg",
+		"Marvila studios: photo 3": "wavy.jpg",
+		"Marvila studios: photo 4": "roof.jpg",
+		"Tower One: the glass tower seen from below": "lookup.jpg",
+		"Tower One: the glass tower against a blue sky": "blueglass.jpg",
+		"Tower One: looking up between two glass walls": "glass2.jpg",
+		"Tower One: the facade on a grey day": "teal.jpg",
+		"Tower One: the glass in the evening": "glasswide.jpg",
+		"Mercado Novo: the project from outside": "market.jpg",
+		"Mercado Novo: photo 1": "hall.jpg",
+		"Mercado Novo: photo 2": "arches.jpg",
+		"Mercado Novo: photo 3": "walkway.jpg",
+		"Mercado Novo: photo 4": "sunset.jpg"
+	},
+	"fallback": "whiteblock.jpg",
+	"posts": {
+		"white": "whiteconc.jpg",
+		"brief": "camera.jpg",
+		"people": "grass.jpg",
+		"porto": "spiral2.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "spiral.jpg",
+			"title": "Spiral Staircase",
+			"creator": "Ludde Lorentz",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/spiral-staircase-COJQ6XJU0V"
+		},
+		{
+			"file": "spiral2.jpg",
+			"title": "Free spiral staircase image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5927354/photo-image-public-domain-people-free"
+		},
+		{
+			"file": "spiral3.jpg",
+			"title": "Spiral staircase Ljubljana",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3304371/free-photo-image-lens-heaven-banister"
+		},
+		{
+			"file": "stairstack.jpg",
+			"title": "Spiral staircase",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6018643/spiral-staircase-free-public-domain-cc0-image"
+		},
+		{
+			"file": "bluewall.jpg",
+			"title": "Concrete Building Wall",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5967835/concrete-building-wall"
+		},
+		{
+			"file": "whiteblock.jpg",
+			"title": "Building Exterior",
+			"creator": "The Building Envelope",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/building-exterior-AJU8JTAEJQ"
+		},
+		{
+			"file": "redwhite.jpg",
+			"title": "White red concrete building",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3286932/free-photo-image-modern-white-car-sport"
+		},
+		{
+			"file": "bluedoor.jpg",
+			"title": "Old Door",
+			"creator": "Nathalie E. Julien",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/old-door-GQVQESD35N"
+		},
+		{
+			"file": "whiteabs.jpg",
+			"title": "Modern Architecture",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/modern-architecture-NWN0VBXEV4"
+		},
+		{
+			"file": "balconies.jpg",
+			"title": "Modern architecture Madrid, Spain",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3299067/free-photo-image-sky-city-apartment-building-architecture"
+		},
+		{
+			"file": "whiteconc.jpg",
+			"title": "gray concrete building columns its",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3285881/free-photo-image-architecture-wall-brick"
+		},
+		{
+			"file": "wavy.jpg",
+			"title": "White concrete building wall Chicago",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3286117/free-photo-image-white-buildings-architecture-texture"
+		},
+		{
+			"file": "teal.jpg",
+			"title": "Modern Architecture",
+			"creator": "Tom Hill",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/modern-architecture-2NXVMGDETI"
+		},
+		{
+			"file": "blueglass.jpg",
+			"title": "Modern Architecture",
+			"creator": "One Idea LLC",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/modern-architecture-N8YZMSK4ML"
+		},
+		{
+			"file": "lookup.jpg",
+			"title": "Building Structure",
+			"creator": "wu yi",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/building-structure-UZYGHVVP5H"
+		},
+		{
+			"file": "glasswide.jpg",
+			"title": "Glass Wall",
+			"creator": "The Building Envelope",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/glass-wall-3LES6HIL1H"
+		},
+		{
+			"file": "glass2.jpg",
+			"title": "Modern Building",
+			"creator": "The Building Envelope",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/modern-building-VEYC6MJ2D3"
+		},
+		{
+			"file": "market.jpg",
+			"title": "West Side Market, Cleveland, United",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3337483/free-photo-image-bookstore-restaurant-food-factory"
+		},
+		{
+			"file": "hall.jpg",
+			"title": "Grandcentralstation Newyork",
+			"creator": "Nicolai Berntsen",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/grandcentralstation-newyork-BYHQAKMRUN"
+		},
+		{
+			"file": "arches.jpg",
+			"title": "People Architecture",
+			"creator": "Anthony Delanoix",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-architecture-6XYJN163QX"
+		},
+		{
+			"file": "walkway.jpg",
+			"title": "Airport Travel",
+			"creator": "Negative Space",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/airport-travel-GLR3UURE7M"
+		},
+		{
+			"file": "concrete.jpg",
+			"title": "Concrete Building",
+			"creator": "One Idea LLC",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/concrete-building-DVNUJHG6EP"
+		},
+		{
+			"file": "sofa.jpg",
+			"title": "Interior Living Room Blue Sofa",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5964979/photo-image-light-public-domain-tree"
+		},
+		{
+			"file": "dining.jpg",
+			"title": "Minimal style kitchen",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042746/photo-image-public-domain-minimal-wood"
+		},
+		{
+			"file": "yellow.jpg",
+			"title": "Yellow Wall",
+			"creator": "Rodion Kutsaev",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/yellow-wall-Y6MLB3ZXLC"
+		},
+		{
+			"file": "grass.jpg",
+			"title": "Guy Man",
+			"creator": "Brooke Cagle",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/guy-man-94356BMTJ5"
+		},
+		{
+			"file": "bridge.jpg",
+			"title": "Brooklybridge Running",
+			"creator": "Curtis Mac Newton",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/brooklybridge-running-X2Q7LBUF6U"
+		},
+		{
+			"file": "sunset.jpg",
+			"title": "Girls Women",
+			"creator": "Ben Duchac",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girls-women-MPU1111YLS"
+		},
+		{
+			"file": "ines.jpg",
+			"title": "Photographer Camera",
+			"creator": "Leeroy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/photographer-camera-LWKE5NGA77"
+		},
+		{
+			"file": "camera.jpg",
+			"title": "Free photographer camera image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5903474/photo-image-public-domain-person-camera"
+		},
+		{
+			"file": "roof.jpg",
+			"title": "Angular modern architecture pattern North",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3286905/free-photo-image-cc0-pattern-architecture-buildings"
+		},
+		{
+			"file": "corridor.jpg",
+			"title": "Monotone concrete building",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023193/photo-image-public-domain-black-concrete"
+		},
+		{
+			"file": "glassstair.jpg",
+			"title": "Triangle Staircase",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/triangle-staircase-DNA7ILF8DA"
+		},
+		{
+			"file": "stairwell.jpg",
+			"title": "Stairwell Staircase",
+			"creator": "Pawel Kadysz",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/stairwell-staircase-HK7ZGP98YM"
+		}
+	]
+}

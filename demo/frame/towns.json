@@ -1,0 +1,105 @@
+[
+	{
+		"name": "Casa Moreira",
+		"slug": "casa-moreira",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tower One": "Casa Moreira",
+			"Work / Tower One": "Work / Casa Moreira",
+			"Tower One: the glass tower seen from below": "Casa Moreira: the project from outside",
+			"Atelier Sul": "Moreira Arquitectos",
+			"A glass tower for Atelier Sul, shot on eleven days over three weeks.": "A spiral stair in a Porto townhouse, shot in one long afternoon.",
+			"Three weeks for the right grey day": "One stair, one afternoon, one window",
+			"Atelier Sul wanted Tower One shown as it really is: a glass building that changes colour with the weather. We shot it on eleven days over three weeks and chose the light, not the angle, for each photo. The set went into the competition entry and later a book.": "The whole house turns around a white spiral stair under a round skylight. The architects asked for the stair alone, so I spent an afternoon on it, moving down a step at a time as the sun came round, and made four photos from two hundred.",
+			"2023": "2025",
+			"Photography": "Photography",
+			"Competition, book": "Awards, website",
+			"Tower One: the glass tower against a blue sky": "Casa Moreira: photo 1",
+			"Tower One: looking up between two glass walls": "Casa Moreira: photo 2",
+			"Tower One: the facade on a grey day": "Casa Moreira: photo 3",
+			"Tower One: the glass in the evening": "Casa Moreira: photo 4",
+			"Ines shot our tower over three weeks and waited for the light. The photos won us the competition.": "She notices the things we spent months on: a handrail, a shadow, a join in the stone.",
+			"Rita Sousa": "Pedro Moreira"
+		}
+	},
+	{
+		"name": "Azul",
+		"slug": "azul",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tower One": "Azul",
+			"Work / Tower One": "Work / Azul",
+			"Tower One: the glass tower seen from below": "Azul: the project from outside",
+			"Atelier Sul": "Habitar Setúbal",
+			"A glass tower for Atelier Sul, shot on eleven days over three weeks.": "Social housing in Setúbal, photographed with the families who live there.",
+			"Three weeks for the right grey day": "A blue building and the people in it",
+			"Atelier Sul wanted Tower One shown as it really is: a glass building that changes colour with the weather. We shot it on eleven days over three weeks and chose the light, not the angle, for each photo. The set went into the competition entry and later a book.": "Habitar Setúbal wanted photos of their new homes for a funding report, with the tenants in them. I spent two days in the building, mostly drinking coffee in kitchens, and photographed people where they felt most at home.",
+			"2023": "2025",
+			"Photography": "Photography, releases",
+			"Competition, book": "Report, press",
+			"Tower One: the glass tower against a blue sky": "Azul: photo 1",
+			"Tower One: looking up between two glass walls": "Azul: photo 2",
+			"Tower One: the facade on a grey day": "Azul: photo 3",
+			"Tower One: the glass in the evening": "Azul: photo 4",
+			"Ines shot our tower over three weeks and waited for the light. The photos won us the competition.": "The people in her photos make the buildings feel lived in. Our tenants loved seeing themselves.",
+			"Rita Sousa": "Joana Reis"
+		}
+	},
+	{
+		"name": "Marvila studios",
+		"slug": "marvila-studios",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tower One": "Marvila studios",
+			"Work / Tower One": "Work / Marvila studios",
+			"Tower One: the glass tower seen from below": "Marvila studios: the project from outside",
+			"Atelier Sul": "Studio Ferro",
+			"A glass tower for Atelier Sul, shot on eleven days over three weeks.": "Artists' studios in an old warehouse, just down the road from mine.",
+			"Three weeks for the right grey day": "White on white, in the hardest light",
+			"Atelier Sul wanted Tower One shown as it really is: a glass building that changes colour with the weather. We shot it on eleven days over three weeks and chose the light, not the angle, for each photo. The set went into the competition entry and later a book.": "Studio Ferro turned a riverside warehouse into twelve studios with white concrete stairs and walls. White is the hardest thing to photograph, so we waited for a hazy morning, when the shadows were soft but still there.",
+			"2023": "2024",
+			"Photography": "Photography",
+			"Competition, book": "Website, magazine",
+			"Tower One: the glass tower against a blue sky": "Marvila studios: photo 1",
+			"Tower One: looking up between two glass walls": "Marvila studios: photo 2",
+			"Tower One: the facade on a grey day": "Marvila studios: photo 3",
+			"Tower One: the glass in the evening": "Marvila studios: photo 4",
+			"Ines shot our tower over three weeks and waited for the light. The photos won us the competition.": "She printed one for our office and it's the first thing visitors ask about.",
+			"Rita Sousa": "Ana Ferro"
+		}
+	},
+	{
+		"name": "Tower One",
+		"slug": "tower-one",
+		"lat": 0,
+		"lon": 0,
+		"swap": {}
+	},
+	{
+		"name": "Mercado Novo",
+		"slug": "mercado-novo",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Tower One": "Mercado Novo",
+			"Work / Tower One": "Work / Mercado Novo",
+			"Tower One: the glass tower seen from below": "Mercado Novo: the project from outside",
+			"Atelier Sul": "Câmara de Vila Nova",
+			"A glass tower for Atelier Sul, shot on eleven days over three weeks.": "A market hall brought back to life, on opening day and the week after.",
+			"Three weeks for the right grey day": "Opening day, and an ordinary Tuesday",
+			"Atelier Sul wanted Tower One shown as it really is: a glass building that changes colour with the weather. We shot it on eleven days over three weeks and chose the light, not the angle, for each photo. The set went into the competition entry and later a book.": "The council restored a nineteenth-century market hall and asked for photos of the opening. I said yes, and asked to come back on an ordinary Tuesday too. The Tuesday photos are the ones they still use.",
+			"2023": "2022",
+			"Photography": "Photography",
+			"Competition, book": "Press, posters",
+			"Tower One: the glass tower against a blue sky": "Mercado Novo: photo 1",
+			"Tower One: looking up between two glass walls": "Mercado Novo: photo 2",
+			"Tower One: the facade on a grey day": "Mercado Novo: photo 3",
+			"Tower One: the glass in the evening": "Mercado Novo: photo 4",
+			"Ines shot our tower over three weeks and waited for the light. The photos won us the competition.": "We still use her photos of the market hall, four years on.",
+			"Rita Sousa": "Helena Costa"
+		}
+	}
+]
