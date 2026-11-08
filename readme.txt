@@ -131,6 +131,7 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 * The Parcel kit, for online shops and makers, is now a full website: 13 starter pages (shop, a collection, order, our story, reviews, stockists, one stockist, offers, shipping and returns, work with us, contact, thank you) and 18 new sections, with a sticky header and Shop button, a first-order popup, how it's made, questions, a review carousel, counters, the studio team, a studio map, and order, job and contact forms.
 * The Parcel home page adds numbers, reviews, questions and the studio shop with a map, and its collections and best sellers link to their pages.
 * Demo social links to Pinterest now point at Pinterest.
+* CI and the release workflow fetch AnyPress Blocks with retries before the Playground check, so a slow GitHub download no longer fails them.
 
 = 0.13.0 =
 * The Ledger kit, for accountants, lawyers, consultants and agencies, is now a full website: 13 starter pages (services, a service, book a call, our team, who we help, one industry, client stories, fees, about, questions, careers, contact, thank you) and 18 new sections, with a sticky header and call button, a switcher popup, how we work, questions, a client story carousel, counters, the team, an office map, and booking, job and contact forms.

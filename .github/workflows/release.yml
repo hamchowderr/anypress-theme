@@ -37,6 +37,16 @@ jobs:
           node-version: 24
           cache: npm
           cache-dependency-path: tests/package-lock.json
+      - name: Get AnyPress Blocks (latest release, retried)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in 1 2 3 4 5; do
+            gh release download -R hamchowderr/anypress-blocks -p anypress-blocks.zip -D "$RUNNER_TEMP" --clobber && break
+            [ "$i" = 5 ] && exit 1; sleep $((i * 15))
+          done
+          unzip -q "$RUNNER_TEMP/anypress-blocks.zip" -d "$RUNNER_TEMP/blocks"
+          echo "ANYPRESS_BLOCKS=$RUNNER_TEMP/blocks/anypress-blocks" >> "$GITHUB_ENV"
       - name: Theme check on WordPress Playground
         working-directory: tests
         run: |
