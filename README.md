@@ -49,6 +49,7 @@ npm run demo -- circuit          # the Circuit (electrician) demo
 npm run demo -- ridge/ironclad-roofing   # a roofing company on the Ridge kit
 npm run demo -- ridge/spotless-nest      # a house cleaning company on the Ridge kit
 npm run demo -- ridge/greenline-landscaping   # a landscaping company on the Ridge kit
+npm run demo -- ridge/guardian-pest-control  # a pest control company on the Ridge kit
 ```
 
 A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
