@@ -68,7 +68,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -98,7 +98,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -128,7 +128,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -158,7 +158,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -188,7 +188,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -218,7 +218,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="/join/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/join/"><?php esc_html_e( 'Book a place', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

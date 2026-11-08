@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.8.0
+Stable tag: 0.9.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.9.0 =
+* The Chapter kit, for online courses, memberships and coaching, is now a full website: 14 starter pages (courses, a course, the community, about, student stories, workshops, a workshop city, offers, join, questions, teach with us, contact, thank you) and 20 new sections, with a sticky header and call button, a free-lesson popup, questions, student story and student work carousels, counters, a workshop map and question, application and contact forms.
+* The Chapter home page adds numbers, every course, student stories, in-person workshops with a map and common questions; its pricing buttons now go to the Join page.
+* The Commons events calendar's links now read "Book a place".
 
 = 0.8.0 =
 * The Commons kit, for chambers of commerce, associations, clubs and churches, is now a full website: 13 starter pages (programs, a program, events, about, member stories, member directory, a directory category, member deals, join, questions, volunteer, contact, thank you) and new sections, with a sticky header and call button, a guest offer popup, questions, member story and photo carousels, counters, a directory map and application, volunteer and contact forms.

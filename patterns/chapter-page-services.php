@@ -1,0 +1,391 @@
+<?php
+/**
+ * Title: Courses page: Chapter kit
+ * Slug: anypress/chapter-page-services
+ * Description: A Courses page for an online school: a heading, every course as a card linking to its own page, how it works, student stories and a closing band. Chapter kit.
+ * Categories: anypress/pages
+ * Keywords: courses, catalogue, all courses, products, chapter
+ * Viewport Width: 1400
+ * Block Types: core/post-content
+ * Post Types: page
+ */
+?>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Page hero"},"align":"full","className":"is-style-section-second-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull is-style-section-second-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:paragraph {"textColor":"primary-alt-accent","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-alt-accent-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'All courses', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
+<h1 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Courses', 'anypress' ); ?></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"medium"} -->
+<p class="has-medium-font-size"><?php esc_html_e( 'Six courses, from your first sketchbook to finished portraits. Every first lesson is free.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/join/"><?php esc_html_e( 'Join a course', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Courses"},"align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Six courses', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Start where you are', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/courses/"><?php esc_html_e( 'All courses', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"18rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A sketchbook open on a table with pencil drawings of people', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '30 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Draw people in 30 days', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Fifteen minutes a day, one short lesson at a time, with feedback from a working illustrator.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$149', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/draw-people-in-30-days/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A hand drawing in a small sketchbook with a pen', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '14 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'The sketchbook habit', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Fourteen days of tiny prompts that get you drawing every day, even when you\'re busy.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$49', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/sketchbook-habit/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A pencil portrait of a woman\'s face on paper', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '20 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Faces and portraits', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Likeness, expression and light, from quick heads to a finished portrait you\'re proud of.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$99', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/faces-and-portraits/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Someone sketching a city street from a café table', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '18 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Urban sketching', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Draw streets, cafés and buildings on the spot, with simple perspective and quick colour.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$99', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/urban-sketching/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Watercolor paints and brushes beside a painted sketch', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '16 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Watercolor for sketchers', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Add loose, fresh colour to your line drawings with a small travel palette.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$99', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/watercolor-for-sketchers/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium)"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"3/2","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Pencil studies of hands on a sheet of paper', 'anypress' ); ?>" style="aspect-ratio:3/2;object-fit:cover"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( '10 lessons', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Hands and feet', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'The two things everyone hides in their drawings, made simple in ten short lessons.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-large-font-size" style="line-height:1;font-weight:600"><?php esc_html_e( '$59', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/courses/hands-and-feet/"><?php esc_html_e( 'See the course →', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"How it works"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'How it works', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Fifteen minutes a day', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"fraunces","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"300"}}} -->
+<p class="has-primary-color has-text-color has-fraunces-font-family has-xxx-large-font-size" style="line-height:1;font-weight:300"><?php esc_html_e( '01', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Watch a short lesson', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Every lesson is a 10 to 15 minute video you can watch on any device, whenever suits you.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"fraunces","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"300"}}} -->
+<p class="has-primary-color has-text-color has-fraunces-font-family has-xxx-large-font-size" style="line-height:1;font-weight:300"><?php esc_html_e( '02', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Do one exercise', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Each lesson ends with one drawing to do. Paper and a pencil are all you need to start.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"fraunces","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"300"}}} -->
+<p class="has-primary-color has-text-color has-fraunces-font-family has-xxx-large-font-size" style="line-height:1;font-weight:300"><?php esc_html_e( '03', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"large"} -->
+<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Get feedback', 'anypress' ); ?></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Post your drawing in the group and get notes from Mara or a teaching assistant within two days.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Student stories"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Student stories', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( '4,800 students and counting', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/student-stories/"><?php esc_html_e( 'All stories', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:anypress/carousel {"perView":3,"label":"Student stories"} -->
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“I had started and quit drawing three times. The group is why I finished this time.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Tom B., Draw people in 30 days', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“Fifteen minutes a day was the trick. I drew on the bus, at lunch, in waiting rooms. Now I can\'t stop.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Priya S., The sketchbook habit', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“Mara\'s notes on my drawings were kind and exact. I improved more in a month than in a year on my own.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Daniel K., Draw people in 30 days', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“I drew my grandmother from life for the first time. She asked for a copy for the fridge.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Ana M., Faces and portraits', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“I sketch every café I visit now. My travel journals are the best souvenirs I own.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Leo R., Urban sketching', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-tint" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontFamily":"fraunces","fontSize":"medium","style":{"typography":{"lineHeight":"1.35"}}} -->
+<p class="has-fraunces-font-family has-medium-font-size" style="line-height:1.35"><?php esc_html_e( '“The live sessions feel like a real class. I\'ve made friends in four countries.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700"}}} -->
+<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Hannah W., Course and community', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- /wp:anypress/carousel --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Join us"},"align":"full","className":"is-style-section-second-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull is-style-section-second-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:heading {"fontSize":"xxx-large"} -->
+<h2 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Start drawing this week', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( 'Courses from $49. Thirty days to change your mind.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/join/"><?php esc_html_e( 'Join a course', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p><?php esc_html_e( 'Questions? Call or text', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"phone_linked"}}}},"fontFamily":"fraunces","fontSize":"xx-large","style":{"typography":{"lineHeight":"1","fontWeight":"600"}}} -->
+<p class="has-fraunces-font-family has-xx-large-font-size" style="line-height:1;font-weight:600"><a href="tel:5550142"><?php esc_html_e( '555 0142', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->

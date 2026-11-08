@@ -1,0 +1,89 @@
+[
+	{
+		"name": "Portland",
+		"slug": "portland",
+		"lat": 45.5221,
+		"lon": -122.661,
+		"swap": {}
+	},
+	{
+		"name": "Seattle",
+		"slug": "seattle",
+		"lat": 47.6145,
+		"lon": -122.327,
+		"swap": {
+			"Portland, Oregon": "Seattle",
+			"Drawing weekends at the home studio, with a model, good coffee and twelve people at most.": "A faces and portraits weekend at Pike Street Studios, with two models and twelve people at most.",
+			"A weekend at the studio": "Faces in Seattle",
+			"Two days, ten till four, in the studio where the courses are filmed. Saturday is gesture and proportion with a model; Sunday we draw faces in the morning and go out to sketch the neighbourhood after lunch.": "Two days, ten till four, in a light-filled studio on Capitol Hill. Saturday is the head in simple shapes and likeness; Sunday is expression, light and one finished portrait.",
+			"$290 for the weekend, $240 for members": "$290 for the weekend, $240 for members",
+			"Workshops / Portland": "Workshops / Seattle",
+			"Portland: drawing people from life": "Portland: drawing people from life",
+			"Portland": "Seattle"
+		}
+	},
+	{
+		"name": "San Francisco",
+		"slug": "san-francisco",
+		"lat": 37.7955,
+		"lon": -122.3937,
+		"swap": {
+			"Portland, Oregon": "San Francisco",
+			"Drawing weekends at the home studio, with a model, good coffee and twelve people at most.": "An urban sketching weekend around the Ferry Building and the Embarcadero, rain or shine.",
+			"A weekend at the studio": "Sketching San Francisco",
+			"Two days, ten till four, in the studio where the courses are filmed. Saturday is gesture and proportion with a model; Sunday we draw faces in the morning and go out to sketch the neighbourhood after lunch.": "Two days, nine till three, out on the streets. Saturday is perspective by eye along the waterfront; Sunday we add people and quick colour in North Beach.",
+			"$290 for the weekend, $240 for members": "$260 for the weekend, $210 for members",
+			"Workshops / Portland": "Workshops / San Francisco",
+			"Portland: drawing people from life": "Portland: drawing people from life",
+			"Portland": "San Francisco"
+		}
+	},
+	{
+		"name": "Denver",
+		"slug": "denver",
+		"lat": 39.7684,
+		"lon": -104.981,
+		"swap": {
+			"Portland, Oregon": "Denver",
+			"Drawing weekends at the home studio, with a model, good coffee and twelve people at most.": "Drawing people from life at RiNo Art Hall, with a model both days.",
+			"A weekend at the studio": "People in Denver",
+			"Two days, ten till four, in the studio where the courses are filmed. Saturday is gesture and proportion with a model; Sunday we draw faces in the morning and go out to sketch the neighbourhood after lunch.": "Two days, ten till four, in a warehouse studio in the River North arts district. Saturday is gesture and proportion; Sunday is faces, hands and longer poses.",
+			"$290 for the weekend, $240 for members": "$290 for the weekend, $240 for members",
+			"Workshops / Portland": "Workshops / Denver",
+			"Portland: drawing people from life": "Portland: drawing people from life",
+			"Portland": "Denver"
+		}
+	},
+	{
+		"name": "Chicago",
+		"slug": "chicago",
+		"lat": 41.8838,
+		"lon": -87.625,
+		"swap": {
+			"Portland, Oregon": "Chicago",
+			"Drawing weekends at the home studio, with a model, good coffee and twelve people at most.": "An urban sketching weekend starting at the Cultural Center, with the Loop as our studio.",
+			"A weekend at the studio": "Sketching Chicago",
+			"Two days, ten till four, in the studio where the courses are filmed. Saturday is gesture and proportion with a model; Sunday we draw faces in the morning and go out to sketch the neighbourhood after lunch.": "Two days, nine till three. Saturday we draw the big buildings along Michigan Avenue; Sunday we sketch people and the river walk, with lunch indoors if it's cold.",
+			"$290 for the weekend, $240 for members": "$260 for the weekend, $210 for members",
+			"Workshops / Portland": "Workshops / Chicago",
+			"Portland: drawing people from life": "Portland: drawing people from life",
+			"Portland": "Chicago"
+		}
+	},
+	{
+		"name": "Brooklyn",
+		"slug": "brooklyn",
+		"lat": 40.7033,
+		"lon": -73.9881,
+		"swap": {
+			"Portland, Oregon": "Brooklyn",
+			"Drawing weekends at the home studio, with a model, good coffee and twelve people at most.": "A faces and portraits weekend at the Dumbo Drawing Room, under the bridge.",
+			"A weekend at the studio": "Faces in Brooklyn",
+			"Two days, ten till four, in the studio where the courses are filmed. Saturday is gesture and proportion with a model; Sunday we draw faces in the morning and go out to sketch the neighbourhood after lunch.": "Two days, ten till four, in a studio with a view of the Manhattan Bridge. Saturday is likeness and features; Sunday is expression, light and one finished portrait.",
+			"$290 for the weekend, $240 for members": "$290 for the weekend, $240 for members",
+			"Workshops / Portland": "Workshops / Brooklyn",
+			"Portland: drawing people from life": "Portland: drawing people from life",
+			"Portland": "Brooklyn"
+		}
+	}
+]

@@ -74,6 +74,7 @@ function anypress_demo_links( $content ) {
 			'{"url":"#","service":"instagram"}' => '{"url":"https://www.instagram.com/","service":"instagram"}',
 			'{"url":"#","service":"google"}'    => '{"url":"https://www.google.com/maps","service":"google"}',
 			'{"url":"#","service":"linkedin"}'  => '{"url":"https://www.linkedin.com/","service":"linkedin"}',
+			'{"url":"#","service":"youtube"}'   => '{"url":"https://www.youtube.com/","service":"youtube"}',
 		)
 	);
 	return preg_replace_callback(
