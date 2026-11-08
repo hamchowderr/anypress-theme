@@ -3,7 +3,7 @@ Contributors: anypress
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.16.0
+Stable tag: 0.17.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.17.0 =
+* The Frame kit, for photographers, designers, illustrators and architects, is now a full website: 13 starter pages (services, a service, work, a project, prints, commission, about, kind words, questions, assisting, contact, thank you) and 16 new sections, with a sticky header and Commission button, a first-print popup, counters, kind words in a carousel, questions, a page for every project with photos that open full screen, prints for sale, a studio map, and commission, assistant and contact forms.
+* The Frame home page adds numbers, kind words, questions and the studio with a map; its selected work opens full screen, and its closing section is a huge Write to me link with the address under it, so long addresses no longer break on phones.
 
 = 0.16.0 =
 * The Rep kit, for gyms, boxing clubs, CrossFit boxes and fitness studios, is now a full website: 13 starter pages (classes, a class, timetable, memberships, free week, coaches, one coach, about, reviews, questions, careers, contact, thank you) and 17 new sections, with a sticky header and Free week button, a free-week popup, counters, a gallery that opens full screen, a review carousel, questions, every coach with their own page, a gym map, and trial, job and contact forms.

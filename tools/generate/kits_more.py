@@ -385,10 +385,10 @@ kit("frame-hero", K, "Frame hero: who you are, in one big sentence",
  "Opening section for a photographer, designer, illustrator or architect: one very large sentence saying who they are and what they make, with where they work and availability in small type. No photo, so the work below does the talking. Part of the Frame kit (creative portfolio).",
  "hero, portfolio, photographer, designer, illustrator, architect, statement, frame",
  sec("Hero", N([h("Ines Duarte photographs buildings and the people who use them.", 1, "poster", None, None, {"lineHeight": "0.95"}),
-   row([mono("Lisbon and Porto"), mono("Taking commissions from March"), p('<a href="#contact">' + T("hello@example.com") + "</a>", "medium", raw=True)], "left", "large")]), pad=("xx-large", "x-large", None, None)))
+   row([mono("Lisbon and Porto"), mono("Taking commissions from March"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "medium", raw=True, bind="email_linked")], "left", "large")]), pad=("xx-large", "x-large", None, None)))
 
 def work(file, alt, ratio, cap):
-    return captioned(file, alt, ratio, cap)
+    return zoom(captioned(file, alt, ratio, cap))
 kit("frame-work", K, "Frame work: selected projects, staggered",
  "Selected work as large photos in two staggered columns, each with a numbered caption in small type: the project, place and year. Part of the Frame kit; link each photo to its project page.",
  "work, projects, portfolio, gallery, case studies, frame",
@@ -413,10 +413,11 @@ kit("frame-clients", K, "Frame clients: names in a plain grid",
    col(grid([p(n, "x-large", None, None, "bricolage-grotesque", {"lineHeight": "1.1", "fontWeight": "600"}) for n in ["Atelier Sul", "Casa Moreira", "Revista Linha", "Norte Weekly", "Studio Ferro", "Câmara de Vila Nova", "Oficina Azul", "Lisbon Design Week"]], 2, "14rem", "medium"))], "large", "wide", None),
    "section-tint"))
 
-kit("frame-contact", K, "Frame contact: the email address, huge",
- "The closing section: an invitation to get in touch and the email address as large as the page allows, with social links in small type. Part of the Frame kit.",
+kit("frame-contact", K, "Frame contact: Write to me, huge",
+ "The closing section: an invitation to get in touch as large as the page allows, linking to the email address shown under it, with social links in small type. Part of the Frame kit.",
  "contact, email, hire, commission, frame",
- sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True, bind="email_linked"),
+ sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("Write to me") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True),
+   p('<a href="mailto:hello@example.com">hello@example.com</a>', "x-large", None, None, None, None, True, bind="email_linked"),
    row([mono("Instagram"), mono("Behance"), mono("Linkedin")], "left", "large")]), pad=("xx-large", "xx-large", None, None)))
 
 kit_page("kit-portfolio", "Home page: Frame kit, creative portfolio",

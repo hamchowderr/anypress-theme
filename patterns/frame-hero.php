@@ -22,8 +22,8 @@
 <p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Taking commissions from March', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="#contact"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></a></p>
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"fontSize":"medium"} -->
+<p class="has-medium-font-size"><a href="mailto:hello@example.com"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->
