@@ -68,6 +68,15 @@ npm run demo -- assay            # the Assay (peptide therapy shop) demo
 npm run demo -- branch           # the Branch (swim school franchise) demo
 ```
 
+Every kit's demo also opens in WordPress Playground in your browser, with nothing to install:
+
+```
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/<kit>/blueprint.json
+```
+
+Each `demo/<kit>/blueprint.json` installs the latest theme and AnyPress Blocks releases and Fluent Forms, then builds the demo from `main`, so the links never need a version bump.
+
+
 A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
 
 Another business on the same kit is a folder of its own, `demo/<kit>/<business>/`, holding only that business's words, photos and choices:
