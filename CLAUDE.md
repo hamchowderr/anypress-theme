@@ -18,7 +18,7 @@ Node 22+: `cd tests && npm ci && npm run theme`. It must pass before pushing; CI
 
 ## Releasing
 
-Bump `Version` in `style.css`, `Stable tag` in `readme.txt` and add a changelog entry, in the same PR as the change. After merging, run the **Release** workflow (`release.yml`, GitHub `actions_run_trigger`) with the version; it tags `v<version>` and attaches `anypress.zip` and `SHA256SUMS`. Stores get a new theme version only when `waas-provisioning-api/templates/anypress-store/build.sh` pins it (version and checksum) and a new store template version is built, published and made production. That is a publish to customers: do it when the owner has asked for it.
+Bump `Version` in `style.css`, `Stable tag` in `readme.txt` and add a changelog entry, in the same PR as the change. Merging it releases it: **Release on merge** starts the **Release** workflow (`release.yml`) when the merge raises the version, and Release tags `v<version>` and attaches `anypress.zip` and `SHA256SUMS`. Stores get a new theme version when the API's **Update pins** workflow moves the store template's pin to it (within the hour) and a new store template version is built, published and made production. That is a publish to customers: do it when the owner has asked for it.
 
 ## Building for WordPress
 
