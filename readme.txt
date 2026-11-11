@@ -1,5 +1,5 @@
 === AnyPress ===
-Contributors: anypress
+Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
