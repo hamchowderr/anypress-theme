@@ -12,6 +12,10 @@ file comes from an address any site may read, and nothing is pinned, so a demo a
 - the demo's own files and photos: raw.githubusercontent.com on main, one writeFile each (no git step, which needs
   Playground's download helper). Only the kit's own files and photos/; demos in subfolders have their own builds.
 
+After the build, AnyPress Client is added with the store template's site types and the "website" type, so wp-admin looks
+as on an AnyPress website store (its clean Dashboard and wp-admin). Client's zip is its newest release, from
+api.anypress.io like the others.
+
 Each Blueprint keeps its meta, landing page and build step. Run this after adding, renaming or removing a demo file.
 """
 import json
@@ -26,6 +30,9 @@ THEME_DIR = "/wordpress/wp-content/themes/anypress"
 # Files the build reads; strings.txt and the photo credits are for people and tools, not the demo.
 DATA = {".php", ".json"}
 PHOTOS = {".jpg", ".jpeg", ".png", ".webp"}
+# The store template's site types, read by AnyPress Client.
+ROLES = "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/roles.json"
+CLIENT_DATA = "/wordpress/wp-content/plugins/anypress-client-data"
 
 
 def kit_files(kit):
@@ -63,6 +70,16 @@ def blueprint(kit, old):
     if os.path.exists(os.path.join(DEMO, "trades.php")) and "trades.php" in open(os.path.join(DEMO, kit, "build.php")).read():
         steps.append(write_file("demo/trades.php", f"Writing the {name} pages"))
     steps.append({"step": "runPHP", "code": build["code"], "progress": {"caption": f"Building the {name} demo"}})
+    # wp-admin as on an AnyPress website store: AnyPress Client with the "website" site type.
+    steps += [
+        {"step": "mkdir", "path": CLIENT_DATA},
+        {"step": "writeFile", "path": f"{CLIENT_DATA}/roles.json", "data": {"resource": "url", "url": ROLES},
+         "progress": {"caption": "Setting up wp-admin"}},
+        {"step": "writeFile", "path": "/wordpress/wp-content/mu-plugins/0-anypress-store-env.php",
+         "data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', 'website');"},
+        {"step": "installPlugin", "pluginData": {"resource": "url", "url": ZIPS + "anypress-client.zip"},
+         "options": {"activate": True, "targetFolderName": "anypress-client"}, "progress": {"caption": "Setting up wp-admin"}},
+    ]
     out = {k: v for k, v in old.items() if k != "steps"}
     out["steps"] = steps
     return out
