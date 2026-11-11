@@ -3,7 +3,7 @@
  * AnyPress theme setup.
  *
  * Presentation only: pattern categories and a few block styles. Everything a store does
- * (bindings, abilities, site tools) lives in the WaaS Client plugin.
+ * (bindings, abilities, site tools) lives in the AnyPress Client plugin.
  *
  * @package AnyPress
  */
