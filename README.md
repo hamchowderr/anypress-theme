@@ -33,6 +33,10 @@ Each release lists the zip's SHA-256 checksum in `SHA256SUMS`.
 
 Pick the kit's style in Appearance > Editor > Styles, then start a page from the kit's home page (it is offered when you create a page). The kit's own sections are in the inserter under "Kit: ...". AnyPress Blocks work with every kit.
 
+## Selling with FluentCart
+
+With [FluentCart](https://wordpress.org/plugins/fluent-cart/) active, the theme's own templates show its product pages (`single-fluent-products`), category and brand pages (`taxonomy-product-categories`, `taxonomy-product-brands`) and the Shop page (`page-shop`), built from the same styles as every kit, so the shop changes with the style you pick. Edit them under Appearance > Editor > Templates. Product cards and buttons take the style's fonts and corners; for the colours, set FluentCart's Settings > Appearance to "Inherit from theme". The "AnyPress Blocks: Shop" sections put a product list on any page.
+
 ## Development
 
 The theme files sit at the repository root, as WordPress installs them. `tests/` holds the checks, which run WordPress on [WordPress Playground](https://wordpress.org/playground/) inside Node, with no Docker or database:

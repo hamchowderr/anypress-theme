@@ -1024,6 +1024,13 @@
 	],
 	"customTemplates": [
 		{
+			"name": "page-shop",
+			"title": "Shop page (products, with the page title on a band)",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
 			"name": "page-no-title",
 			"title": "Page without title",
 			"postTypes": [

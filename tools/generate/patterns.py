@@ -341,3 +341,56 @@ page("page-contact", "Contact page",
  "contact, hours, address, phone, location",
  ["contact-details", "faq"])
 print("pages ok")
+
+# Shop (FluentCart): the headings of its category and brand pages, and its product list as a section any page can use.
+# The theme's FluentCart templates (templates/single-fluent-products.html, taxonomy-product-*.html, page-shop.html) use
+# these, so their words can be translated. The product list keeps FluentCart's own blocks (filters, cards, pages of
+# results), so the owner edits it in the Site Editor like any FluentCart list.
+EYEBROW = lambda text: ('<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"}}} -->\n'
+    '<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:600;letter-spacing:0.08em;text-transform:uppercase">' + T(text) + '</p>\n<!-- /wp:paragraph -->')
+def shop_hero(eyebrow):
+    return section("Page hero", "section-tint", group(
+        EYEBROW(eyebrow) + "\n\n"
+        + '<!-- wp:query-title {"type":"archive","showPrefix":false,"level":1,"fontSize":"xxx-large"} /-->\n\n'
+        + '<!-- wp:term-description {"fontSize":"large"} /-->',
+        gap="small", layout={"type": "constrained", "contentSize": "48rem", "justifyContent": "left"}), t="xx-large", b="x-large", content="80rem")
+for kind, word, what in (("category", "Shop", "a product category"), ("brand", "Brand", "a brand")):
+    write(f"shop-hero-{kind}", f"Shop: {kind} heading",
+          f"The top of {what}'s page in the shop: a small label, the {kind} name and its description, on the tint section style. FluentCart's {kind} pages use it.",
+          "anypress/blocks-shop", f"shop, {kind}, products, heading, fluentcart",
+          shop_hero(word), extra_head=" * Inserter: no\n")
+
+def products(filters):
+    attrs = {"colors": {}}
+    if filters:
+        attrs.update({"enable_filter": True, "enable_wildcard_filter": True, "filters": {
+            "product-categories": {"filter_type": "options", "is_meta": True, "label": "Categories", "enabled": True, "multiple": False},
+            "price_range": {"filter_type": "range", "is_meta": False, "label": "Price", "enabled": True}}})
+    return ('<!-- wp:fluent-cart/products ' + j(attrs) + ' -->\n'
+        '<div class="wp-block-fluent-cart-products"><div class="fct-products-wrapper" data-fluent-cart-shop-app="true" data-fluent-cart-product-wrapper=""><!-- wp:fluent-cart/shopapp-product-view-switcher {"className":"fluent-product-view-switcher","metadata":{"name":"View Switcher"}} /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-container {"className":"fluent-product-container"} -->\n'
+        '<div class="wp-block-fluent-cart-shopapp-product-container fluent-product-container"><!-- wp:fluent-cart/shopapp-product-filter -->\n'
+        '<div class="fluent-cart-product-filter-wrapper"><!-- wp:fluent-cart/shopapp-product-filter-search-box /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-filters /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-button -->\n'
+        '<div class="fct-product-block-filter-item"><!-- wp:fluent-cart/shopapp-product-filter-apply-button /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-reset-button /--></div>\n<!-- /wp:fluent-cart/shopapp-product-filter-button --></div>\n<!-- /wp:fluent-cart/shopapp-product-filter -->\n\n'
+        # FluentCart keeps the card's design under this id, to draw more cards the same way when visitors filter or page.
+        '<!-- wp:fluent-cart/shopapp-product-loop {"wp_client_id":"anypress-shop-products' + ('-filtered' if filters else '') + '","className":"fluent-product-loop","metadata":{"name":"Product Loop"}} -->\n'
+        '<div class="fluent-cart-product-loop fct-product-block-editor-product-card"><!-- wp:fluent-cart/shopapp-product-image -->\n<div class="fluent-cart-product-image"></div>\n<!-- /wp:fluent-cart/shopapp-product-image -->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-title /-->\n\n<!-- wp:fluent-cart/shopapp-product-price /-->\n\n<!-- wp:fluent-cart/shopapp-product-buttons /--></div>\n<!-- /wp:fluent-cart/shopapp-product-loop --></div>\n<!-- /wp:fluent-cart/shopapp-product-container -->\n\n'
+        '<!-- wp:fluent-cart/product-paginator {"className":"fluent-product-paginator","metadata":{"name":"Paginator"}} -->\n'
+        '<div class="fluent-cart-product-paginator"><!-- wp:fluent-cart/product-paginator-info /-->\n\n<!-- wp:fluent-cart/product-paginator-number /--></div>\n<!-- /wp:fluent-cart/product-paginator -->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-no-result {"className":"fluent-product-no-result","metadata":{"name":"No Result"}} -->\n'
+        '<div class="fluent-cart-shop-no-result-wrap">' + para("Nothing here yet", size="large", align="center") + "\n\n"
+        + para("Try clearing the filters, or look through everything in the shop.", color="secondary", align="center")
+        + '</div>\n<!-- /wp:fluent-cart/shopapp-product-no-result --></div></div>\n<!-- /wp:fluent-cart/products -->')
+write("shop-products", "Shop: products",
+      "The shop's products as cards with photo, name, price and button, in pages, with a switch between grid and list. FluentCart's category and brand pages use it; add it to any page to show products there.",
+      "anypress/blocks-shop", "shop, products, product grid, catalogue, store, fluentcart",
+      section("Products", None, products(False), t="medium", b="xx-large", content="80rem"))
+write("shop-products-filtered", "Shop: products with search and filters",
+      "The shop's products with a search box and filters for category and price beside them, then cards in pages. For a shop page with many products.",
+      "anypress/blocks-shop", "shop, products, filter, search, catalogue, store, fluentcart",
+      section("Products", None, products(True), t="medium", b="xx-large", content="80rem"))
+print("shop ok")
