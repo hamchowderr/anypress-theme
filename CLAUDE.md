@@ -14,7 +14,7 @@ A kit ships only when its demo passes `docs/kit-checklist.md`, checked by clicki
 
 ## Building and testing
 
-Node 22+: `cd tests && npm ci && npm run theme`. It must pass before pushing; CI runs the same check plus `php -l` on PHP 8.1. Patterns use theme tokens only (no hex colours, no pixel sizes), each has a description and keywords, and every palette keeps WCAG AA contrast in every section style.
+Node 22+: `cd tests && npm ci && npm run theme`. It must pass before pushing; CI runs the same check, `php -l` on PHP 8.1, and wordpress.org's Theme Check on the release zip (`bin/build-zip.sh && cd tests && npm run wporg`, fails on REQUIRED and WARNING). Patterns use theme tokens only (no hex colours, no pixel sizes), each has a description and keywords, and every palette keeps WCAG AA contrast in every section style.
 
 ## Releasing
 

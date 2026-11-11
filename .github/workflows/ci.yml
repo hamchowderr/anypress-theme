@@ -45,6 +45,9 @@ jobs:
         run: npm run theme
       - name: Build the zip
         run: bin/build-zip.sh
+      - name: wordpress.org Theme Check on the zip (fails on REQUIRED and WARNING)
+        working-directory: tests
+        run: npm run wporg
       - uses: actions/upload-artifact@v4
         with:
           name: anypress-theme
