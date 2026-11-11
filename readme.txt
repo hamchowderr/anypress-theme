@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.21.0
+Stable tag: 0.22.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,6 +128,12 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.22.0 =
+* Shop icons in the header: with FluentCart selling at least one product, every header shows a search button for products, a link to the customer's account and a cart with the number of items, beside the menu. On phones they sit next to the menu button and the header's own buttons get smaller so everything fits. FluentCart's floating cart button hides while the header cart is there.
+* Cart, checkout, account and receipt pages in the site's design: each has its own template with the right width, and checkout uses the simple header without the menu.
+* New sections under AnyPress Blocks: Shop: New arrivals (the four newest products) and Shop by category (a tile for each product category).
+* Sale and Sold out badges on product cards, and the sale badge with the percentage beside the price on the product page. FluentCart's quick view takes the style's corners.
 
 = 0.21.0 =
 * Shop pages in the site's own design: FluentCart's product page, product category and brand pages and the Shop page now have templates built from the theme's styles, so they match every kit and change with the style the owner picks. Owners edit them in the Site Editor like any other template.

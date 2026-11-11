@@ -35,7 +35,7 @@ Pick the kit's style in Appearance > Editor > Styles, then start a page from the
 
 ## Selling with FluentCart
 
-With [FluentCart](https://wordpress.org/plugins/fluent-cart/) active, the theme's own templates show its product pages (`single-fluent-products`), category and brand pages (`taxonomy-product-categories`, `taxonomy-product-brands`) and the Shop page (`page-shop`), built from the same styles as every kit, so the shop changes with the style you pick. Edit them under Appearance > Editor > Templates. Product cards and buttons take the style's fonts and corners; for the colours, set FluentCart's Settings > Appearance to "Inherit from theme". The "AnyPress Blocks: Shop" sections put a product list on any page.
+With [FluentCart](https://wordpress.org/plugins/fluent-cart/) active, the theme's own templates show its product pages (`single-fluent-products`), category and brand pages (`taxonomy-product-categories`, `taxonomy-product-brands`) and the Shop page (`page-shop`), built from the same styles as every kit, so the shop changes with the style you pick. Edit them under Appearance > Editor > Templates. Product cards and buttons take the style's fonts and corners; for the colours, set FluentCart's Settings > Appearance to "Inherit from theme". The "AnyPress Blocks: Shop" sections put a product list on any page. The header shows a product search, the customer's account and the cart once the shop has a published product, and the cart, checkout, account and receipt pages have their own templates (`page-cart`, `page-checkout`, `page-account`, `page-receipt`). Product cards show Sale and Sold out badges; the New arrivals and Shop by category sections fit a home page.
 
 ## Development
 
