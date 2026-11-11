@@ -38,6 +38,8 @@ jobs:
           done
           unzip -q "$RUNNER_TEMP/anypress-blocks.zip" -d "$RUNNER_TEMP/blocks"
           echo "ANYPRESS_BLOCKS=$RUNNER_TEMP/blocks/anypress-blocks" >> "$GITHUB_ENV"
+      - name: Demo Blueprints are up to date
+        run: python3 tools/demo/blueprints.py --check
       - name: Theme check on WordPress Playground
         working-directory: tests
         run: npm run theme

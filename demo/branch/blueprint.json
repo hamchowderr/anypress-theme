@@ -18,21 +18,28 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-theme/releases/latest/download/anypress.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
 			},
 			"options": {
 				"activate": true,
 				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
 			}
 		},
 		{
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-blocks/releases/latest/download/anypress-blocks.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
 			},
 			"options": {
-				"activate": true
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
 			}
 		},
 		{
@@ -43,17 +50,486 @@
 			},
 			"options": {
 				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
 			}
 		},
 		{
-			"step": "writeFiles",
-			"writeToPath": "/wordpress/wp-content/themes/anypress/demo/branch",
-			"filesTree": {
-				"resource": "git:directory",
-				"url": "https://github.com/hamchowderr/anypress-theme",
-				"ref": "main",
-				"refType": "branch",
-				"path": "demo/branch"
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/services.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/services.json"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/towns.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/towns.json"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/baby.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/baby.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/back.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/back.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/beachkid.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/beachkid.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/boyjump.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/boyjump.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/breath.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/breath.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/couple.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/couple.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/crawl.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/crawl.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/family.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/family.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/flamingo.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/flamingo.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/float.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/float.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/fly.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/fly.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/fly2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/fly2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/fountain.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/fountain.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/frog.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/frog.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/girls.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/girls.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/glass.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/glass.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/gogglegirl.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/gogglegirl.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/goggles.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/goggles.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/hall.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/hall.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/hall2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/hall2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/hug.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/hug.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/indoor.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/indoor.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/kitcap.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/kitcap.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/lake.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/lake.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/lane.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/lane.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/lanes.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/lanes.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/lanes2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/lanes2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/man.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/man.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/mask.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/mask.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/pink.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/pink.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/pinkring.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/pinkring.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/pool.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/pool.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/poolgoggles.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/poolgoggles.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/ring.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/ring.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/round.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/round.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/splash.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/splash.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/swim.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/swim.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/branch/photos/woman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/branch/photos/woman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Branch photos"
 			}
 		},
 		{
@@ -62,11 +538,17 @@
 			"data": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/trades.php"
+			},
+			"progress": {
+				"caption": "Writing the Branch pages"
 			}
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/branch/build.php' );"
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/branch/build.php' );",
+			"progress": {
+				"caption": "Building the Branch demo"
+			}
 		}
 	]
 }

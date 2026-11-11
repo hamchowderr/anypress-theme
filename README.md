@@ -74,7 +74,7 @@ Every kit's demo also opens in WordPress Playground in your browser, with nothin
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/<kit>/blueprint.json
 ```
 
-Each `demo/<kit>/blueprint.json` installs the latest theme and AnyPress Blocks releases and Fluent Forms, then builds the demo from `main`, so the links never need a version bump.
+Each `demo/<kit>/blueprint.json` installs the latest theme and AnyPress Blocks releases and Fluent Forms, then builds the demo from `main`, so the links never need a version bump. Every file comes from an address any site can read, so the Blueprints also run on a copy of Playground without a download helper of its own. `python3 tools/demo/blueprints.py` writes them from each demo folder's files; run it after adding or removing a demo file (CI checks they are up to date).
 
 
 A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.

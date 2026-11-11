@@ -18,21 +18,28 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-theme/releases/latest/download/anypress.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
 			},
 			"options": {
 				"activate": true,
 				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
 			}
 		},
 		{
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-blocks/releases/latest/download/anypress-blocks.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
 			},
 			"options": {
-				"activate": true
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
 			}
 		},
 		{
@@ -43,17 +50,442 @@
 			},
 			"options": {
 				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
 			}
 		},
 		{
-			"step": "writeFiles",
-			"writeToPath": "/wordpress/wp-content/themes/anypress/demo/frame",
-			"filesTree": {
-				"resource": "git:directory",
-				"url": "https://github.com/hamchowderr/anypress-theme",
-				"ref": "main",
-				"refType": "branch",
-				"path": "demo/frame"
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/services.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/services.json"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/towns.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/towns.json"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/arches.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/arches.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/balconies.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/balconies.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/bluedoor.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/bluedoor.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/blueglass.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/blueglass.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/bluewall.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/bluewall.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/bridge.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/bridge.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/camera.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/camera.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/concrete.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/concrete.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/corridor.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/corridor.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/dining.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/dining.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/glass2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/glass2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/glassstair.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/glassstair.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/glasswide.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/glasswide.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/grass.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/grass.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/hall.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/hall.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/ines.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/ines.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/lookup.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/lookup.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/market.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/market.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/redwhite.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/redwhite.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/roof.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/roof.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/sofa.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/sofa.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/spiral.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/spiral.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/spiral2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/spiral2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/spiral3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/spiral3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/stairstack.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/stairstack.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/stairwell.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/stairwell.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/sunset.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/sunset.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/teal.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/teal.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/walkway.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/walkway.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/wavy.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/wavy.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/whiteabs.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/whiteabs.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/whiteblock.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/whiteblock.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/whiteconc.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/whiteconc.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/frame/photos/yellow.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/frame/photos/yellow.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Frame photos"
 			}
 		},
 		{
@@ -62,11 +494,17 @@
 			"data": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/trades.php"
+			},
+			"progress": {
+				"caption": "Writing the Frame pages"
 			}
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/frame/build.php' );"
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/frame/build.php' );",
+			"progress": {
+				"caption": "Building the Frame demo"
+			}
 		}
 	]
 }

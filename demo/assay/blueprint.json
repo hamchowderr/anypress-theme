@@ -18,21 +18,28 @@
 			"step": "installTheme",
 			"themeData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-theme/releases/latest/download/anypress.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
 			},
 			"options": {
 				"activate": true,
 				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
 			}
 		},
 		{
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "url",
-				"url": "https://github.com/hamchowderr/anypress-blocks/releases/latest/download/anypress-blocks.zip"
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
 			},
 			"options": {
-				"activate": true
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
 			}
 		},
 		{
@@ -43,17 +50,574 @@
 			},
 			"options": {
 				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
 			}
 		},
 		{
-			"step": "writeFiles",
-			"writeToPath": "/wordpress/wp-content/themes/anypress/demo/assay",
-			"filesTree": {
-				"resource": "git:directory",
-				"url": "https://github.com/hamchowderr/anypress-theme",
-				"ref": "main",
-				"refType": "branch",
-				"path": "demo/assay"
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/services.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/services.json"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/towns.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/towns.json"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/avocado.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/avocado.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/bluetube.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/bluetube.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/box.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/box.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/boxes.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/boxes.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/bridge.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/bridge.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/caps.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/caps.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/clinic.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/clinic.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/coffeeman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/coffeeman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/couple.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/couple.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/courier.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/courier.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/dab.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/dab.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/deskman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/deskman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/docman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/docman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/docnurse.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/docnurse.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/doctablet.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/doctablet.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/docwoman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/docwoman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/family.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/family.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/fruit.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/fruit.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/glovevial.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/glovevial.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/jar.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/jar.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/jartowel.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/jartowel.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/kayak.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/kayak.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/labpair.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/labpair.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/labwoman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/labwoman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/legs.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/legs.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/lens.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/lens.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/micro.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/micro.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/micro2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/micro2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/nurse.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/nurse.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/nurseman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/nurseman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/nursetab.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/nursetab.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/orange.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/orange.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/pipblue.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/pipblue.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/pipette.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/pipette.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/piporange.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/piporange.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/plate.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/plate.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/rack.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/rack.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/runner.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/runner.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/scientist.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/scientist.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/seniorman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/seniorman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/smilecream.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/smilecream.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/smileman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/smileman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/towel.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/towel.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/trail.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/trail.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/vialhand.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/vialhand.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/assay/photos/warehouse.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/assay/photos/warehouse.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Assay photos"
 			}
 		},
 		{
@@ -62,11 +626,17 @@
 			"data": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/trades.php"
+			},
+			"progress": {
+				"caption": "Writing the Assay pages"
 			}
 		},
 		{
 			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/assay/build.php' );"
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/assay/build.php' );",
+			"progress": {
+				"caption": "Building the Assay demo"
+			}
 		}
 	]
 }
