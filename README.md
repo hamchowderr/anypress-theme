@@ -41,6 +41,7 @@ The theme files sit at the repository root, as WordPress installs them. `tests/`
 cd tests
 npm ci
 npm run theme      # load the theme, validate every pattern, check contrast, render a page, take screenshots
+npm run wporg      # wordpress.org's Theme Check on dist/anypress.zip (run bin/build-zip.sh first)
 npm run serve      # the same site, left running at http://127.0.0.1:9410 (admin / password)
 npm run contrast   # only the colour contrast table
 npm run demo -- ridge            # build the Ridge demo website and leave it running at http://127.0.0.1:9411
