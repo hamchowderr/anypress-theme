@@ -27,6 +27,7 @@ function anypress_register_pattern_categories() {
 		'anypress/blocks-contact'         => array( __( 'AnyPress Blocks: Contact', 'anypress' ), __( 'Contact details, a contact section ready for a form, and questions and answers.', 'anypress' ) ),
 		'anypress/blocks-blog'            => array( __( 'AnyPress Blocks: Blog', 'anypress' ), __( 'Latest posts, an author box, pros and cons, and on-this-page links.', 'anypress' ) ),
 		'anypress/blocks-footers'         => array( __( 'AnyPress Blocks: Footers', 'anypress' ), __( 'Site footers: columns of links, or one line.', 'anypress' ) ),
+		'anypress/blocks-shop'            => array( __( 'AnyPress Blocks: Shop', 'anypress' ), __( 'Products from the shop (FluentCart): product lists with or without filters, and the headings of category and brand pages.', 'anypress' ) ),
 		// The same category the store template's starter pages use, so the site tools find both.
 		'anypress/pages'    => array( __( 'Starter pages', 'anypress' ), __( 'Whole pages to start from, for this kind of website.', 'anypress' ) ),
 		// Kits: sections designed together for one kind of business, each with its own style variation.
@@ -186,3 +187,46 @@ function anypress_fold_header_menu() {
 	<?php
 }
 add_action( 'wp_footer', 'anypress_fold_header_menu', 1 );
+
+/**
+ * FluentCart's shop, product cards, product page and cart take the site's own type and corners.
+ *
+ * FluentCart reads the site's colours itself (its Settings → Appearance → "Inherit from theme"), but not its fonts or
+ * the corners of its product cards. Its buttons get the theme's button lettering and its product names and section
+ * titles the heading lettering, both read from the site's Styles, so they change with the kit or style the owner
+ * picks. Product cards and photos take the image corners. Nothing is added on sites without FluentCart.
+ */
+function anypress_fluent_cart_styles() {
+	if ( ! defined( 'FLUENTCART_VERSION' ) ) {
+		return;
+	}
+	$lettering = function ( $element ) {
+		$type = (array) wp_get_global_styles( array( 'elements', $element, 'typography' ) );
+		$type = array_intersect_key( $type, array_flip( array( 'fontFamily', 'fontWeight', 'fontStyle', 'letterSpacing', 'textTransform' ) ) );
+		$css  = wp_style_engine_get_styles( array( 'typography' => $type ) );
+		return $css['css'] ?? '';
+	};
+	$buttons  = '.fluent-cart-add-to-cart-button,.fluent-cart-direct-checkout-button,.fct-product-view-button,.fct-review-cta-btn,.fct-review-submit-btn';
+	$headings = '.fct-product-card-title,.fct-product-list-heading,.fct-reviews-section-title,.fct-review-drawer-title';
+
+	// The corners photos have in this style (core Image), else the theme's medium corner.
+	$radius = wp_get_global_styles( array( 'blocks', 'core/image', 'border', 'radius' ) );
+	$radius = is_string( $radius ) && '' !== $radius ? $radius : 'var:preset|border-radius|md';
+	$radius = preg_replace( '/^var:preset\|border-radius\|([a-z0-9-]+)$/', 'var(--wp--preset--border-radius--$1)', $radius );
+	$radius = preg_match( '/^(0|[0-9.]+(px|rem|em)|var\(--wp--preset--border-radius--[a-z0-9-]+\))$/', $radius ) ? $radius : 'var(--wp--preset--border-radius--md)';
+
+	$css  = 'body{--fct-card-radius:' . $radius . ';--fct-container-radius:' . $radius . '}body .fct-product-gallery-thumb img{border-radius:var(--fct-container-radius)}';
+	$css .= 'body :is(' . $buttons . '){' . $lettering( 'button' ) . '}';
+	$css .= 'body :is(' . $headings . '){' . $lettering( 'heading' ) . '}';
+	$css .= 'body .fct-product-card-title{font-size:var(--wp--preset--font-size--medium);line-height:1.25}';
+	// Cards in a row line up: the price and button sit at the foot of every card, however long the name.
+	$css .= 'body .fct-product-card{display:flex;flex-direction:column}body .fct-product-card .fct-product-card-prices{margin-top:auto}body .fct-product-card .fct-product-card-prices~*{margin-top:0}body .fct-product-list-item{display:flex}body .fct-product-list-item>.fct-product-card{flex:1}';
+	// The product list lines up with the page's other sections, which already keep their distance from the screen edge.
+	$css .= '.wp-block-fluent-cart-products .fct-products-wrapper{padding-inline:0;box-sizing:border-box}';
+	$css .= 'body .fct-product-list-heading{font-size:var(--wp--preset--font-size--x-large);margin-block-end:var(--wp--preset--spacing--medium)}';
+	$css .= '.anypress-related .fct-similar-product-list-container{padding-inline:0}';
+	// Phones show two products side by side, as shops usually do, instead of one long column.
+	$css .= '@media (max-width:600px){body .fct-products-wrapper .fct-products-wrapper-inner:not(.mode-list) .fct-products-container[class]{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wp--preset--spacing--small)}body .fct-product-list{--fct-product-list-columns:2!important;gap:var(--wp--preset--spacing--small)}body .fct-product-card-title{font-size:var(--wp--preset--font-size--base)}}';
+	wp_add_inline_style( 'anypress', $css );
+}
+add_action( 'wp_enqueue_scripts', 'anypress_fluent_cart_styles', 20 );

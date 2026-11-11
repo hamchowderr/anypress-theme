@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.20.0
+Stable tag: 0.21.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,6 +128,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.21.0 =
+* Shop pages in the site's own design: FluentCart's product page, product category and brand pages and the Shop page now have templates built from the theme's styles, so they match every kit and change with the style the owner picks. Owners edit them in the Site Editor like any other template.
+* FluentCart's product cards and buttons take the style's fonts and corners, and cards in a row line up. New sections under AnyPress Blocks: Shop: products, products with search and filters, and the category and brand headings.
 
 = 0.20.0 =
 * New kit: Assay, for shops that sell regulated health products (peptides, supplements, CBD and other goods that need lab results and careful wording). A full website: a home page, 14 starter pages (treatments, one treatment, lab results, how it works, where we treat, one state, pricing, get started, about, reviews, questions, careers, contact, thank you) and 24 sections, with a prescription notice in the top bar, a compliance notice in the footer, lab results in a table, a first-month offer popup, counters, reviews in a carousel and a map.
