@@ -47,6 +47,7 @@ function anypress_register_pattern_categories() {
 		'anypress/kit-magazine'      => array( __( 'Kit: Blog and magazine (Byline)', 'anypress' ), __( 'Sections for blogs, magazines, newsletters and writers. They look as designed with the Byline style.', 'anypress' ) ),
 		'anypress/kit-regulated'     => array( __( 'Kit: Regulated health products (Assay)', 'anypress' ), __( 'Sections for shops that sell peptides, supplements, CBD and other products that need lab results and careful wording. They look as designed with the Assay style.', 'anypress' ) ),
 		'anypress/kit-franchise'     => array( __( 'Kit: Franchise and multi-location (Branch)', 'anypress' ), __( 'Sections for franchises and businesses with several locations. They look as designed with the Branch style.', 'anypress' ) ),
+		'anypress/kit-store'         => array( __( 'Kit: Clothing store (Aisle)', 'anypress' ), __( 'Sections for online shops on FluentCart, written for a clothing brand. They look as designed with the Aisle style.', 'anypress' ) ),
 		// Starting structures for blog posts (how-to, list, review).
 		'anypress/posts'             => array( __( 'Post outlines', 'anypress' ), __( 'Starting structures for common kinds of blog post.', 'anypress' ) ),
 	);

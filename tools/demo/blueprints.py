@@ -12,8 +12,12 @@ file comes from an address any site may read, and nothing is pinned, so a demo a
 - the demo's own files and photos: raw.githubusercontent.com on main, one writeFile each (no git step, which needs
   Playground's download helper). Only the kit's own files and photos/; demos in subfolders have their own builds.
 
-After the build, AnyPress Client is added with the store template's site types and the "website" type, so wp-admin looks
-as on an AnyPress website store (its clean Dashboard and wp-admin). Client's zip is its newest release, from
+A shop kit (one with shop.json) also gets FluentCart from wordpress.org, and a small must-use plugin that teaches
+Playground's SQLite database the few MySQL functions FluentCart uses (demo/playground-sqlite.php).
+
+After the build, AnyPress Client is added with the store template's site types and the kit's site type ("online-store"
+for a shop kit, "website" for the others), so wp-admin looks as on an AnyPress store of that type (its clean Dashboard
+and wp-admin). Client's zip is its newest release, from
 api.anypress.io like the others.
 
 Each Blueprint keeps its meta, landing page and build step. Run this after adding, renaming or removing a demo file.
@@ -54,6 +58,8 @@ def blueprint(kit, old):
     build = next(s for s in old["steps"] if s["step"] == "runPHP")
     name = kit.capitalize()
     files = kit_files(kit)
+    shop = os.path.exists(os.path.join(DEMO, kit, "shop.json"))
+    site_type = "online-store" if shop else "website"
     steps = [
         {"step": "login"},
         {"step": "installTheme", "themeData": {"resource": "url", "url": ZIPS + "anypress-theme.zip"},
@@ -63,20 +69,29 @@ def blueprint(kit, old):
          "progress": {"caption": "Adding the page sections"}},
         {"step": "installPlugin", "pluginData": {"resource": "wordpress.org/plugins", "slug": "fluentform"},
          "options": {"activate": True}, "progress": {"caption": "Adding the forms"}},
+        *([{"step": "installPlugin", "pluginData": {"resource": "wordpress.org/plugins", "slug": "fluent-cart"},
+             "options": {"activate": True}, "progress": {"caption": "Adding the shop"}},
+           {"step": "writeFile", "path": "/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php",
+            "data": {"resource": "url", "url": RAW + "demo/playground-sqlite.php"}, "progress": {"caption": "Adding the shop"}}]
+          if shop else []),
         {"step": "mkdir", "path": f"{THEME_DIR}/demo/{kit}/photos"},
         *[write_file(f"demo/{kit}/{f}", f"Adding the {name} photos" if f.startswith("photos/") else f"Writing the {name} pages")
           for f in files],
     ]
-    if os.path.exists(os.path.join(DEMO, "trades.php")) and "trades.php" in open(os.path.join(DEMO, kit, "build.php")).read():
-        steps.append(write_file("demo/trades.php", f"Writing the {name} pages"))
+    # The shared builder the kit's build.php requires, and the helpers it shares with the other builder.
+    build_php = open(os.path.join(DEMO, kit, "build.php")).read()
+    for engine in ("trades.php", "shop.php"):
+        if os.path.exists(os.path.join(DEMO, engine)) and engine in build_php:
+            steps.append(write_file("demo/lib.php", f"Writing the {name} pages"))
+            steps.append(write_file(f"demo/{engine}", f"Writing the {name} pages"))
     steps.append({"step": "runPHP", "code": build["code"], "progress": {"caption": f"Building the {name} demo"}})
-    # wp-admin as on an AnyPress website store: AnyPress Client with the "website" site type.
+    # wp-admin as on an AnyPress store of the kit's site type: AnyPress Client with that type.
     steps += [
         {"step": "mkdir", "path": CLIENT_DATA},
         {"step": "writeFile", "path": f"{CLIENT_DATA}/roles.json", "data": {"resource": "url", "url": ROLES},
          "progress": {"caption": "Setting up wp-admin"}},
         {"step": "writeFile", "path": "/wordpress/wp-content/mu-plugins/0-anypress-store-env.php",
-         "data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', 'website');"},
+         "data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', '" + site_type + "');"},
         {"step": "installPlugin", "pluginData": {"resource": "url", "url": ZIPS + "anypress-client.zip"},
          "options": {"activate": True, "targetFolderName": "anypress-client"}, "progress": {"caption": "Setting up wp-admin"}},
     ]
