@@ -30,6 +30,10 @@
 <div class="fluent-cart-product-image"></div>
 <!-- /wp:fluent-cart/shopapp-product-image -->
 
+<!-- wp:fluent-cart/sale-badge {"show_percentage":true} /-->
+
+<!-- wp:fluent-cart/sold-out-badge /-->
+
 <!-- wp:fluent-cart/shopapp-product-title /-->
 
 <!-- wp:fluent-cart/shopapp-product-price /-->

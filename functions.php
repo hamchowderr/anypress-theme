@@ -144,6 +144,8 @@ function anypress_enqueue_styles() {
 	// A photo alone in a column fills the column's height, so it meets the panel beside it.
 	// Long links (an email address set huge) wrap instead of pushing the page sideways on phones, and wide tables scroll inside their box.
 	wp_add_inline_style( 'anypress', '.wp-site-blocks>footer{margin-block-start:0}.wp-block-column>.wp-block-cover:only-child{height:100%}:where(p,h1,h2,h3,h4) a{overflow-wrap:anywhere}.wp-block-table{overflow-x:auto}' );
+	// A category tile (Shop: shop by category) opens its category wherever it is clicked, not only on the name.
+	wp_add_inline_style( 'anypress', '.anypress-category-tiles .fct-categories-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:var(--wp--preset--spacing--small)}.anypress-category-tiles .fct-product-categories-list .fct-categories-list>li.fct-category-item{position:relative;min-height:7rem;padding:var(--wp--preset--spacing--medium);border-radius:var(--wp--preset--border-radius--md);background:var(--wp--preset--color--tertiary);color:var(--wp--preset--color--main)}.anypress-category-tiles .fct-category-link-wrap{display:flex;flex-direction:column;justify-content:space-between;height:100%;gap:var(--wp--preset--spacing--x-small)}.anypress-category-tiles .fct-category-link{color:inherit;text-decoration:none;font-size:var(--wp--preset--font-size--medium);font-weight:600}.anypress-category-tiles .fct-category-link::after{content:"";position:absolute;inset:0;border-radius:inherit}.anypress-category-tiles li:hover .fct-category-link,.anypress-category-tiles li:focus-within .fct-category-link{text-decoration:underline}.anypress-category-tiles .fct-product-categories-list .fct-category-count{margin:0;color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small)}' );
 }
 add_action( 'wp_enqueue_scripts', 'anypress_enqueue_styles' );
 
@@ -227,6 +229,97 @@ function anypress_fluent_cart_styles() {
 	$css .= '.anypress-related .fct-similar-product-list-container{padding-inline:0}';
 	// Phones show two products side by side, as shops usually do, instead of one long column.
 	$css .= '@media (max-width:600px){body .fct-products-wrapper .fct-products-wrapper-inner:not(.mode-list) .fct-products-container[class]{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wp--preset--spacing--small)}body .fct-product-list{--fct-product-list-columns:2!important;gap:var(--wp--preset--spacing--small)}body .fct-product-card-title{font-size:var(--wp--preset--font-size--base)}}';
+	// With the cart in the header, FluentCart's floating cart button would be a second cart; it comes back if the owner
+	// removes the header one.
+	$css .= 'body:has(header .fct-mini-cart-button) .fct-cart-drawer-open-btn{display:none}';
+	// Quick view (the window "View Options" opens) takes the style's corners too.
+	$css .= 'body .fct-product-modal-body{border-radius:var(--fct-card-radius)}';
 	wp_add_inline_style( 'anypress', $css );
 }
 add_action( 'wp_enqueue_scripts', 'anypress_fluent_cart_styles', 20 );
+
+/**
+ * Shop links in the header: product search, the shopper's account and the cart, beside the header menu.
+ *
+ * They appear once the site sells something (FluentCart is active and has a published product), in the theme's
+ * header and in every kit's header, and owners can move or remove them in the Site Editor like any other block.
+ * They use WordPress's Block Hooks, so headers the owner has already edited get them too, and a removed one
+ * stays removed.
+ *
+ * @param string[]                        $hooked   Block types to insert.
+ * @param string                          $position Where, relative to the anchor block.
+ * @param string                          $anchor   The anchor block type.
+ * @param WP_Block_Template|array|WP_Post $context  The template part, pattern or post being rendered.
+ * @return string[]
+ */
+function anypress_shop_links_hook( $hooked, $position, $anchor, $context ) {
+	if ( 'core/navigation' !== $anchor || 'after' !== $position || ! anypress_sells_products() ) {
+		return $hooked;
+	}
+	$is_header = ( $context instanceof WP_Block_Template && 'header' === $context->area )
+		|| ( is_array( $context ) && isset( $context['slug'] ) && str_ends_with( $context['slug'], '-header' ) );
+	if ( $is_header ) {
+		$hooked[] = 'core/group';
+	}
+	return $hooked;
+}
+add_filter( 'hooked_block_types', 'anypress_shop_links_hook', 10, 4 );
+
+/**
+ * The header shop links' look (see anypress_shop_links_hook()), in the editor as on the site: plain icons in the
+ * header's own colour, beside the menu. FluentCart's product search shows there on wide screens when the header has no buttons of its own;
+ * the Shop page always has it. On phones the menu button comes last and the account link shows only its icon.
+ */
+function anypress_shop_links_styles() {
+	if ( ! defined( 'FLUENTCART_VERSION' ) ) {
+		return;
+	}
+	$css  = '';
+	$css .= 'header .wp-block-navigation:has(+.anypress-shop-links){margin-inline-start:auto}';
+	$css .= '.anypress-shop-links{align-items:center}.anypress-shop-links svg{width:1.35em;height:1.35em}';
+	$css .= '.anypress-shop-links .fluent-cart-search-bar-app-wrapper{width:11rem;flex-shrink:1;min-width:0}header:has(.wp-block-buttons) .anypress-shop-links .fluent-cart-search-bar-app-wrapper{display:none}@media (max-width:1279px){.anypress-shop-links .fluent-cart-search-bar-app-wrapper{display:none}}';
+	$css .= '.anypress-shop-links .fct-customer-dashboard-link{display:inline-flex;align-items:center;gap:.35em;color:inherit;text-decoration:none}.anypress-shop-links .fct-customer-dashboard-icon{display:inline-flex}';
+	$css .= '.anypress-shop-links .fct-mini-cart-button{background:none;color:inherit;border:0;padding:.25em;cursor:pointer}';
+	$css .= '@media (max-width:781px){.anypress-shop-links .fct-customer-dashboard-link>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}header .wp-block-group:has(>.anypress-shop-links)>.wp-block-navigation{order:2;margin-inline-start:0}.anypress-shop-links{margin-inline-start:auto;gap:.35rem}header:has(.anypress-shop-links) .wp-block-site-title a{overflow-wrap:normal}}@media (max-width:600px){header:has(.anypress-shop-links) .wp-block-buttons .wp-block-button__link{padding:.5em .8em;font-size:var(--wp--preset--font-size--small);white-space:nowrap}.anypress-shop-links,header:has(.anypress-shop-links) .wp-block-buttons{flex-shrink:0}header:has(.anypress-shop-links) .wp-block-group:has(>.wp-block-site-title){min-width:0;flex-shrink:1}header:has(.anypress-shop-links) .wp-block-site-title{min-width:0}}';
+	wp_register_style( 'anypress-shop-links', false, array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'anypress-shop-links' );
+	wp_add_inline_style( 'anypress-shop-links', $css );
+}
+add_action( 'enqueue_block_assets', 'anypress_shop_links_styles' );
+
+/**
+ * The group of shop links that anypress_shop_links_hook() inserts after the header menu.
+ *
+ * @param array|null $block    The parsed block WordPress would insert.
+ * @param string     $type     The hooked block type.
+ * @param string     $position Where, relative to the anchor block.
+ * @param array      $anchor   The parsed anchor block.
+ * @return array|null
+ */
+function anypress_shop_links_block( $block, $type, $position, $anchor ) {
+	if ( null === $block || 'after' !== $position || 'core/navigation' !== ( $anchor['blockName'] ?? '' ) ) {
+		return $block;
+	}
+	$account = esc_html__( 'Account', 'anypress' );
+	$markup  = '<!-- wp:group {"metadata":{"name":"' . esc_attr__( 'Shop links', 'anypress' ) . '"},"className":"anypress-shop-links","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->'
+		. '<div class="wp-block-group anypress-shop-links">'
+		. '<!-- wp:fluent-cart/fluent-products-search-bar {"url_mode":"current-tab"} /-->'
+		. '<!-- wp:fluent-cart/customer-dashboard-button {"display_type":"link","button_text":"' . $account . '"} /-->'
+		. '<!-- wp:fluent-cart/mini-cart {"show_total_price":false,"count_mode":"total_quantity"} /-->'
+		. '</div><!-- /wp:group -->';
+	$parsed = parse_blocks( $markup );
+	return $parsed[0] ?? $block;
+}
+add_filter( 'hooked_block_core/group', 'anypress_shop_links_block', 10, 4 );
+
+/**
+ * Whether the site sells something: FluentCart is active and has at least one published product.
+ *
+ * @return bool
+ */
+function anypress_sells_products() {
+	if ( ! defined( 'FLUENTCART_VERSION' ) || ! post_type_exists( 'fluent-products' ) ) {
+		return false;
+	}
+	return (int) ( wp_count_posts( 'fluent-products' )->publish ?? 0 ) > 0;
+}
