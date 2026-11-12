@@ -76,9 +76,11 @@ export async function checkShop({ base, shots, paths = {}, items = {} }) {
     await tab.goto(`${base}/checkout/`, { waitUntil: 'networkidle' });
     await tab.fill('#billing_full_name', 'Sam Rivera');
     await tab.fill('#billing_email', 'sam@anypress.example');
-    const at = async (country, state, city, zip) => {
+    const at = async (country, state, city, zip, expect) => {
         await tab.evaluate((c) => { const s = document.querySelector('#billing_country'); s.value = c; s.dispatchEvent(new Event('change', { bubbles: true })); }, country);
-        await tab.waitForTimeout(2000);
+        // FluentCart loads the country's states and shipping after the change: wait for it, not a fixed time.
+        await tab.waitForLoadState('networkidle').catch(() => {});
+        await tab.waitForTimeout(1000);
         await tab.fill('#billing_address_1', '12 Example Street');
         const tag = await tab.locator('#billing_state').evaluate((e) => e.tagName).catch(() => null);
         if (tag === 'SELECT') await tab.evaluate((v) => { const s = document.querySelector('#billing_state'); s.value = v; s.dispatchEvent(new Event('change', { bubbles: true })); }, state);
@@ -86,15 +88,19 @@ export async function checkShop({ base, shots, paths = {}, items = {} }) {
         await tab.fill('#billing_city', city);
         await tab.fill('#billing_postcode', zip);
         await tab.locator('#billing_postcode').blur();
-        await tab.waitForTimeout(3000);
+        // FluentCart works out shipping and tax for the address on the server; wait until the address's own shipping
+        // shows (Playground can be slow), then a moment more for the tax line.
+        await tab.waitForFunction((re) => new RegExp(re).test(document.body.innerText), expect, { timeout: 20000 }).catch(() => {});
+        await tab.waitForLoadState('networkidle').catch(() => {});
+        await tab.waitForTimeout(2000);
         return tab.locator('body').innerText();
     };
-    const de = await at('DE', 'BE', 'Berlin', '10115');
+    const de = await at('DE', 'BE', 'Berlin', '10115', 'Shipping\\s*\\$22');
     check(/Shipping\s*\$22/.test(de) && /Tax[\s\S]{0,40}\$\d/.test(de), 'an EU address gets EU shipping and its VAT');
     await tab.screenshot({ path: `${shots}/checkout-eu.png`, fullPage: true });
-    const gb = await at('GB', 'London', 'London', 'SW1A 1AA');
+    const gb = await at('GB', 'London', 'London', 'SW1A 1AA', 'United Kingdom|Tax');
     check(/Tax[\s\S]{0,40}\$\d/.test(gb), 'a UK address gets UK VAT');
-    const us = await at('US', 'OR', 'Portland', '97202');
+    const us = await at('US', 'OR', 'Portland', '97202', 'Pick up');
     check(/Standard/.test(us) && /Pick up/.test(us), 'a US address gets standard, express and pick-up');
     await tab.locator('#fluent_cart_payment_method_offline_payment').check({ force: true }).catch(() => {});
     await tab.getByRole('button', { name: /place order/i }).click();
