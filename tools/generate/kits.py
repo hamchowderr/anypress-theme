@@ -155,10 +155,10 @@ def cover(inner, name, file, dim=40, minh="80vh", pos="bottom left", pad=("xx-la
     return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover alignfull{hc}" style="{css}"><img class="wp-block-cover__image-background" alt="{alt or ""}" src="{IMG(file)}" data-object-fit="cover"/>'
             f'<span aria-hidden="true" class="wp-block-cover__background has-{overlay}-background-color {dimc}"></span><div class="wp-block-cover__inner-container">{inner}</div></div>\n<!-- /wp:cover -->')
 
-def fill(file, rem):
-    """A photo that fills its column: a cover with no overlay and nothing on it."""
-    a = {"url": IMG(file), "dimRatio": 0, "overlayColor": "main", "isUserOverlayColor": True, "minHeight": rem, "minHeightUnit": "rem", "layout": {"type": "constrained"}}
-    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover" style="min-height:{rem}rem"><img class="wp-block-cover__image-background" alt="" src="{IMG(file)}" data-object-fit="cover"/>'
+def fill(file, rem, alt=None):
+    """A photo that fills its column: a cover with no overlay and nothing on it (alt names the photo for the demo)."""
+    a = {"url": IMG(file), **({"alt": alt} if alt else {}), "dimRatio": 0, "overlayColor": "main", "isUserOverlayColor": True, "minHeight": rem, "minHeightUnit": "rem", "layout": {"type": "constrained"}}
+    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover" style="min-height:{rem}rem"><img class="wp-block-cover__image-background" alt="{alt or ""}" src="{IMG(file)}" data-object-fit="cover"/>'
             f'<span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>\n<!-- /wp:cover -->')
 
 def on_photo(markup):
@@ -184,7 +184,7 @@ order = ["primary", "primary-accent", "primary-alt", "primary-alt-accent", "main
 theme = json.load(open("theme.json"))
 names = {c["slug"]: c["name"] for c in theme["settings"]["color"]["palette"]}
 
-def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elements=None, blocks=None, transform=None):
+def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elements=None, blocks=None, transform=None, css=None):
     assert set(pal) == set(order), slug
     heading_t = {"fontFamily": f"var:preset|font-family|{head}", "fontWeight": weight, "letterSpacing": ls, "lineHeight": lh}
     if transform: heading_t["textTransform"] = transform
@@ -195,6 +195,7 @@ def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elemen
             "styles": {"typography": {"fontFamily": f"var:preset|font-family|{body}"}, "elements": els,
                        "blocks": {**(blocks or {}), "core/image": {"border": {"radius": "0"}},
                                   "core/quote": {"border": {"left": {"width": "0"}}, "spacing": {"padding": {"left": "0"}}}}}}
+    if css: data["styles"]["css"] = css  # the style's own touches, only while it is the active style
     path = f"styles/{slug}.json"
     json.dump(data, open(path, "w"), indent="\t", ensure_ascii=False); open(path, "a").write("\n")
 

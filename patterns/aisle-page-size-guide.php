@@ -10,44 +10,50 @@
  * Post Types: page
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Page hero"},"align":"full","className":"is-style-section-brand anypress-stitch","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull is-style-section-brand anypress-stitch" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained","contentSize":"44rem","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"base","fontSize":"small","style":{"typography":{"fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
-<p class="has-base-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Help / Size guide', 'anypress' ); ?></p>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Page hero"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"center","className":"is-style-section-brand-soft","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|x-large","right":"var:preset|spacing|x-large"}}},"width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center is-style-section-brand-soft" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large);flex-basis:50%"><!-- wp:paragraph {"textColor":"secondary","fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-secondary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><?php esc_html_e( 'Help / Size guide', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
 <h1 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Size guide', 'anypress' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size"><?php esc_html_e( 'Measurements for every fit, and the two-minute trick that saves almost every return.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
+<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Measurements for every fit, and the two-minute trick that saves almost every return.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","justifyContent":"flex-start"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/help/shipping/"><?php esc_html_e( 'Shipping', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/help/returns/"><?php esc_html_e( 'Returns', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/help/track-order/"><?php esc_html_e( 'Track an order', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/help/faq/"><?php esc_html_e( 'Questions', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/help/contact/"><?php esc_html_e( 'Contact us', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group -->
+<!-- /wp:group --></div>
+<!-- /wp:column -->
 
-<!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/help/shipping/"><?php esc_html_e( 'Shipping', 'anypress' ); ?></a></div>
-<!-- /wp:button -->
-
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/help/returns/"><?php esc_html_e( 'Returns', 'anypress' ); ?></a></div>
-<!-- /wp:button -->
-
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/help/track-order/"><?php esc_html_e( 'Track an order', 'anypress' ); ?></a></div>
-<!-- /wp:button -->
-
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/help/faq/"><?php esc_html_e( 'Questions', 'anypress' ); ?></a></div>
-<!-- /wp:button -->
-
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/help/contact/"><?php esc_html_e( 'Contact us', 'anypress' ); ?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></section>
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>","alt":"Hands at an old sewing machine with a spool of thread","dimRatio":0,"overlayColor":"main","isUserOverlayColor":true,"minHeight":26,"minHeightUnit":"rem","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:26rem"><img class="wp-block-cover__image-background" alt="Hands at an old sewing machine with a spool of thread" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","metadata":{"name":"Size guide"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->

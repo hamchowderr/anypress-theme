@@ -11,8 +11,8 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Returns"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
 <section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"14rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"schibsted-grotesk","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
-<p class="has-primary-color has-text-color has-schibsted-grotesk-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '1', 'anypress' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"instrument-serif","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
+<p class="has-primary-color has-text-color has-instrument-serif-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '1', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -25,8 +25,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"schibsted-grotesk","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
-<p class="has-primary-color has-text-color has-schibsted-grotesk-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '2', 'anypress' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"instrument-serif","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
+<p class="has-primary-color has-text-color has-instrument-serif-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '2', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
@@ -39,8 +39,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"schibsted-grotesk","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
-<p class="has-primary-color has-text-color has-schibsted-grotesk-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '3', 'anypress' ); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"instrument-serif","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1","fontWeight":"700"}}} -->
+<p class="has-primary-color has-text-color has-instrument-serif-font-family has-xxx-large-font-size" style="line-height:1;font-weight:700"><?php esc_html_e( '3', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->

@@ -1,8 +1,11 @@
 # Aisle (0.23.0): a whole online shop on FluentCart, written for a small clothing brand. Run by kits.py after
 # kit_branch.py, so every helper in kits.py, kits_more.py, kit_ridge.py and the kits before it is in scope.
 #
-# Clean and photo-led: a firm grotesk for headings and prices, a soft sans for reading, ink on warm white with moss
-# green. Everything a shopper buys with is FluentCart's own: the product grids are its Products block, the product,
+# Editorial and photo-led, as the best-selling fashion shop themes are: a light serif for headings, a plain sans for
+# everything else, small spaced capitals for labels and buttons, photos edge to edge with no corners, and product cards
+# with no box (a tall photo, the name, the price, and quick add on the photo when it's hovered). Sections change shape
+# as the page goes down (full photos, product rows, two photos side by side, one big quote) instead of repeating one
+# block. Ink on warm white with moss green. Everything a shopper buys with is FluentCart's own: the product grids are its Products block, the product,
 # category, cart, checkout, receipt and account pages are its own templates, and the header gets its search, account
 # link and mini cart from the theme as soon as a product is published. The kit adds the pages around them, linked by
 # slug: /shop/ (FluentCart's), /product-categories/<slug>/ for Tops, Bottoms, Outerwear, Accessories and Last few,
@@ -11,7 +14,8 @@
 # Forms are named groups, as in Ridge.
 
 AK = "anypress/kit-store"
-AHEAD = "schibsted-grotesk"
+AHEAD = "instrument-serif"
+ABODY = "instrument-sans"
 AADDR = "2118 SE Division Street, Portland, OR 97202"
 AHOURS = "Pick-ups Tuesday to Saturday, 11am to 5pm"
 AMAIL = "hello@example.com"
@@ -25,35 +29,84 @@ ACATS = [
 _ps = open(os.path.join(HERE, "patterns.py")).read()
 exec(_ps[_ps.index("def products("): _ps.index('write("shop-products"')])  # FluentCart's Products block, as the theme writes it
 
-variation("kit-aisle", "Aisle (clothing store)", PALS["aisle"], "manrope", AHEAD, "700", "-0.02em", "1.02",
-    button("0", AHEAD, "700", None, "var:preset|font-size|base", "0.01em"), blocks=site_title(AHEAD, "800", None, "-0.03em"))
+# The style's own CSS: FluentCart's product cards, product page and category page in the editorial look, and the
+# header menu in small capitals. Only while Aisle is the active style; tokens only.
+ACSS = "".join([
+    # Product cards: no box, a tall photo, then a small name and price.
+    "body .wp-site-blocks .fct-product-card{display:grid;grid-template-columns:minmax(0,1fr);align-content:start;gap:.3rem;border:0;border-radius:0;box-shadow:none;background:none;padding:0}",
+    "body .wp-site-blocks .fct-product-card>*{margin:0;padding-inline:0}body .wp-site-blocks .fct-product-card>p:empty,body .wp-site-blocks .fct-product-card .fct-product-card-excerpt{display:none}",
+    "body .wp-site-blocks .fct-product-card-image-wrap{grid-area:1/1;aspect-ratio:4/5;overflow:hidden;border-radius:0;margin-bottom:.45rem;background:var(--wp--preset--color--tertiary)}",
+    "body .wp-site-blocks .fct-product-card-image{width:100%;height:100%;object-fit:cover;border-radius:0;transition:transform .8s cubic-bezier(.2,.6,.2,1)}",
+    "body .wp-site-blocks .fct-product-card:hover .fct-product-card-image{transform:scale(1.04)}",
+    "body .wp-site-blocks .fct-product-card .fct-product-card-title,body .wp-site-blocks .fct-product-card .fct-product-card-title a{font-family:var(--wp--preset--font-family--instrument-sans);font-size:var(--wp--preset--font-size--small);font-weight:500;letter-spacing:0;line-height:1.35;text-transform:none;text-decoration:none;color:inherit}",
+    "body .wp-site-blocks .fct-product-card .fct-product-card-prices{font-size:var(--wp--preset--font-size--small);color:var(--wp--preset--color--secondary);margin-top:0}",
+    # Quick add sits on the photo and shows when the card is hovered or a key reaches it; touch screens open the product.
+    "body .wp-site-blocks .fct-product-card>:is(.fct-product-view-button,.fluent-cart-add-to-cart-button,p:has(button)){grid-area:1/1;align-self:end;margin:.75rem .75rem 1.2rem;opacity:0;transform:translateY(.4rem);transition:opacity .25s,transform .25s;z-index:1}",
+    "body .wp-site-blocks .fct-product-card :is(.fct-product-view-button,.fluent-cart-add-to-cart-button){width:100%;background:var(--wp--preset--color--base);color:var(--wp--preset--color--main);border:0;border-radius:0;padding:.8rem;font-size:var(--wp--preset--font-size--x-small)}",
+    "body .wp-site-blocks .fct-product-card:is(:hover,:focus-within)>:is(.fct-product-view-button,.fluent-cart-add-to-cart-button,p:has(button)){opacity:1;transform:none}",
+    "@media (hover:none){body .wp-site-blocks .fct-product-card>:is(.fct-product-view-button,.fluent-cart-add-to-cart-button,p:has(button)){display:none}}",
+    "@media (prefers-reduced-motion:reduce){body .wp-site-blocks .fct-product-card *{transition:none!important;transform:none!important}}",
+    "body .wp-site-blocks .fct-products-container[class]{column-gap:var(--wp--preset--spacing--small);row-gap:var(--wp--preset--spacing--large)}",
+    "body .wp-site-blocks .fct-product-list-heading{text-align:center;font-size:var(--wp--preset--font-size--x-large)}",
+    # Product page: a quieter right column, square size boxes and full-width buttons.
+    "body .product-info-block-wrapper .wp-block-post-title{font-size:var(--wp--preset--font-size--xx-large);margin-bottom:.5rem}",
+    "body .product-info-block-wrapper .fct-product-card-prices{font-size:var(--wp--preset--font-size--medium)}",
+    "body .product-info-block-wrapper .fct-product-card-excerpt{color:var(--wp--preset--color--secondary)}",
+    "body .wp-site-blocks .fct-product-variant-item{border-radius:0}body .wp-site-blocks .fct-product-variant-item.selected{box-shadow:inset 0 0 0 1px var(--wp--preset--color--main);border-color:var(--wp--preset--color--main)}",
+    "body .wp-site-blocks .fct-product-buttons-wrap{display:grid;grid-template-columns:1fr;gap:.6rem}",
+    "body .wp-site-blocks .fct-product-buttons-wrap :is(.fluent-cart-direct-checkout-button,.fluent-cart-add-to-cart-button){width:100%;box-sizing:border-box;text-align:center;border-radius:0;padding:1rem;font-size:var(--wp--preset--font-size--x-small)}",
+    "body .wp-site-blocks .fct-product-buttons-wrap .fluent-cart-direct-checkout-button{background:var(--wp--preset--color--main);background-image:none;color:var(--wp--preset--color--base);border-color:var(--wp--preset--color--main)}",
+    "body .wp-site-blocks .fct-product-buttons-wrap .fluent-cart-add-to-cart-button{background:transparent;color:var(--wp--preset--color--main);border:1px solid var(--wp--preset--color--main)}",
+    "body .wp-site-blocks .fct-product-quantity-container *{border-radius:0}",
+    # Category pages (FluentCart's own template): the title and its line centred on the page, with no band.
+    "html body.tax-product-categories main>.wp-block-query-title{border-image:none;text-align:center;font-size:var(--wp--preset--font-size--xx-large);padding-bottom:var(--wp--preset--spacing--small)}",
+    "html body.tax-product-categories main>.wp-block-query-title::after{display:none}",
+    "html body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description{border-image:none;text-align:center;color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);padding-bottom:var(--wp--preset--spacing--large)}",
+    "html body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description>*{margin-inline:auto}",
+    # The Shop page's photo opening: the title centred on a soft shade instead of the side scrim.
+    "body .anypress-page-cover{justify-content:center;align-items:center;text-align:center}body .anypress-page-cover .wp-block-post-title{text-align:center}body .anypress-page-cover.anypress-scrim>.wp-block-cover__background{background:var(--wp--preset--color--main);opacity:.35}",
+    # The header menu in small spaced capitals.
+    "header .wp-block-navigation{font-size:var(--wp--preset--font-size--x-small);text-transform:uppercase;letter-spacing:.12em;font-weight:500}",
+    "header .wp-block-navigation .wp-block-navigation__submenu-container{text-transform:none;letter-spacing:0;font-size:var(--wp--preset--font-size--small)}",
+    # Photo tiles are shorter on phones, two categories to a row.
+    "@media (max-width:781px){body .wp-block-cover.aisle-tile{min-height:24rem!important;padding:var(--wp--preset--spacing--medium)!important}body .aisle-tile h3{font-size:var(--wp--preset--font-size--x-large)!important}}",
+    "@media (max-width:600px){body .wp-block-cover.aisle-tile{min-height:17rem!important}body .aisle-tile h3{font-size:var(--wp--preset--font-size--large)!important}body .aisle-tile p:not(:last-child){display:none}}",
+    # Titles that link, on photos, are underlined only on hover.
+    "body .wp-block-cover :is(h2,h3) a{text-decoration:none}body .wp-block-cover :is(h2,h3) a:is(:hover,:focus-visible){text-decoration:underline;text-decoration-thickness:.04em;text-underline-offset:.12em}",
+    # A photo beside words fills its half to the bottom.
+    "body .wp-site-blocks .wp-block-columns.alignfull>.wp-block-column>.wp-block-cover:only-child{height:100%}",
+])
+variation("kit-aisle", "Aisle (clothing store)", PALS["aisle"], ABODY, AHEAD, "400", "-0.01em", "1.05",
+    button("0", ABODY, "600", "uppercase", "var:preset|font-size|x-small", "0.12em"), blocks=site_title(AHEAD, "400", None, "-0.01em"), css=ACSS)
 
-def alabel(text, color="secondary", size="small"):
-    return p(text, size, color, None, None, {"fontWeight": "700", "letterSpacing": "0.1em", "textTransform": "uppercase"})
+def alabel(text, color="secondary", size="x-small", align=None):
+    return p(text, size, color, align, None, {"fontWeight": "600", "letterSpacing": "0.14em", "textTransform": "uppercase"})
+
+def alink(label, href, align="center", color=None):
+    """A small link in spaced capitals, underlined: how fashion shops say "see all"."""
+    return p(f'<a href="{href}">' + T(label) + '</a>', "x-small", color, align, None, {"fontWeight": "600", "letterSpacing": "0.14em", "textTransform": "uppercase"}, raw=True)
 
 def ahead(label, title, link=None, size="xx-large"):
-    left = stackg([alabel(label), h(title, 2, size)])
-    return row([left, p(f'<a href="{link[1]}">' + T(link[0]) + " →</a>", "medium", None, None, None, {"fontWeight": "600"}, raw=True)] if link else [left], valign="bottom")
+    """A section's title, centred and quiet: a small label, the title in the serif, and a "see all" link under it."""
+    return stackg([alabel(label, align="center"), h(title, 2, size, "center")] + ([alink(*link)] if link else []))
 
 def apage_hero(title, text, crumb, buttons=None, alt=None):
-    """A page's opening: the page's own photo full width, darkened toward the words (class anypress-scrim), as fashion
-    shops open a collection. Kept short on pages that list products, so the first row of products still shows."""
-    words = N([alabel(crumb, "base"), h(title, 1, "xxx-large"), p(text, "large")] + ([btns(buttons)] if buttons else []))
-    return cover(grp(words, gap="medium", layout={"type": "constrained", "contentSize": "40rem", "justifyContent": "left"}),
-                 "Page hero", "placeholder-wide.svg", 50, "30rem", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem", alt=alt, cls="anypress-scrim")
+    """A page's opening, as fashion shops open a collection: the page's own photo full width under a soft shade, with
+    the title centred on it in the serif. Kept short, so the first row of what follows still shows."""
+    words = N([alabel(crumb, "base", align="center"), h(title, 1, "xxx-large", "center"), p(text, "medium", None, "center")] + ([btns(buttons, "center")] if buttons else []))
+    return cover(grp(words, gap="small", layout={"type": "constrained", "contentSize": "40rem"}),
+                 "Page hero", "placeholder-wide.svg", 50, "28rem", "center center", ("xx-large", "xx-large", "medium", "medium"), "80rem", alt=alt)
 
 AHELP_PILLS = [("Shipping", "/help/shipping/"), ("Returns", "/help/returns/"), ("Size guide", "/help/size-guide/"), ("Track an order", "/help/track-order/"),
          ("Questions", "/help/faq/"), ("Contact us", "/help/contact/")]
 
-def ahelp_hero(title, text, crumb, here=None):
-    """A help page's opening: the brand colour with stitching around its edge and thread rings behind it (class
-    anypress-stitch), and a row of the other help pages, so every answer is one click from any help page."""
-    words = N([alabel(crumb, "base"), h(title, 1, "xxx-large"), p(text, "large")])
-    pills = btns([(label, "outline", href) for label, href in AHELP_PILLS if href != here])
-    inner = grp(N([grp(words, gap="medium", layout={"type": "constrained", "contentSize": "44rem", "justifyContent": "left"}), pills]), gap="large")
-    return grp(inner, "section-brand", ("xx-large", "xx-large", None, None), None, {"type": "constrained", "contentSize": "80rem"}, "section", "full", "Page hero").replace(
-        '"className":"is-style-section-brand"', '"className":"is-style-section-brand anypress-stitch"').replace(
-        'class="wp-block-group alignfull is-style-section-brand"', 'class="wp-block-group alignfull is-style-section-brand anypress-stitch"', 1)
+def ahelp_hero(title, text, crumb, here=None, alt="Wooden hangers on a rail"):
+    """A help page's opening, split in two edge to edge: the words on the soft brand colour with the other help pages
+    as small links under them (every answer one click from any help page), and a photo filling the other half."""
+    links = row([alink(label, href, None) for label, href in AHELP_PILLS if href != here], "flex-start", "medium")
+    words = col(N([alabel(crumb), h(title, 1, "xxx-large"), p(text, "medium", "secondary"), links]), "50%", "section-brand-soft", ("xx-large", "xx-large", "x-large", "x-large"), "center")
+    photo = col(fill("placeholder-tall.svg", 26, alt))
+    return grp(cols([words, photo], "0", "full"), None, None, None, {"type": "default"}, "section", "full", "Page hero")
 
 def alinks(items):
     """A list of links, each in large type with an arrow."""
@@ -100,11 +153,11 @@ write("aisle-header", "Aisle header: shop menu, search, account and cart",
  "header", "header, menu, navigation, sticky, shop, cart, search, account, ecommerce, aisle", AHEADER, "core/template-part/header")
 
 kit("aisle-signup", AK, "Aisle signup: the newsletter, with 10% off",
- "A band asking visitors to join the shop's monthly letter for new colours first and 10% off the first order, with the signup form beside it. Part of the Aisle kit; sits above the footer on every page.",
+ "A quiet centred band asking visitors to join the shop's monthly letter for new colours first and 10% off the first order, with the signup form under it. Part of the Aisle kit; sits above the footer on every page.",
  "newsletter, signup, email, discount, first order, aisle",
- sec("Signup", cols([
-   col(N([h("New colours first, and 10% off", 2, "xx-large"), p("The Thread comes once a month: what's new, care tips and a look behind the seams. Join and we'll send a code for 10% off your first order.", "medium")]), "55%", valign="center"),
-   col(form("newsletter", "See what's new", "/new-in/"), valign="center")], "large", "wide", "center"), "section-brand", ("x-large", "x-large", None, None)))
+ sec("Signup", N([alabel("The Thread", align="center"), h("New colours first, and 10% off", 2, "xx-large", "center"),
+   p("Once a month: what's new, care tips and a look behind the seams. Join and we'll send a code for 10% off your first order.", None, "secondary", "center"),
+   grp(form("newsletter", "See what's new", "/new-in/"), layout={"type": "constrained", "contentSize": "30rem"})]), "section-tint", ("xx-large", "xx-large", None, None), "40rem"))
 
 APOP = popup("offer", N([
     img("placeholder-wide.svg", "Neatly folded t-shirts in a stack of colours", "16/9"),
@@ -137,95 +190,102 @@ write("aisle-footer", "Aisle footer: newsletter, shop and help links",
 
 # ---------------------------------------------------------------- home sections
 kit("aisle-hero", AK, "Aisle hero: a full-width photo with two ways in",
- "The first thing visitors see: a full-width photo of the clothes being worn, a short promise and two buttons, one to what's new and one to the whole shop. Part of the Aisle kit; use a real photo of the shop's own clothes.",
+ "The first thing visitors see: a full-screen photo of the clothes being worn, the promise centred in a large serif and two buttons, one to what's new and one to the whole shop. Part of the Aisle kit; use a real photo of the shop's own clothes.",
  "hero, banner, photo, new collection, shop, aisle",
- cover(N([alabel("The winter collection", "base"), h("Everyday clothes, made to last.", 1, "poster", None, None, {"lineHeight": "0.92"}),
-          p("Hoodies, tees and jackets from two family mills, cut to fit and packed by hand. Free shipping over $75.", "large"),
-          btns([("Shop new in", None, "/new-in/"), ("Shop everything", "outline", "/shop/")])]),
-       "Hero", "placeholder-wide.svg", 40, "88vh", "bottom left", ("xx-large", "xx-large", "medium", "medium"), "80rem"))
+ cover(N([alabel("The winter collection", "base", align="center"), h("Everyday clothes, made to last.", 1, "poster", "center", None, {"lineHeight": "0.95"}),
+          p("Hoodies, tees and jackets from two family mills, cut to fit and packed by hand.", "medium", None, "center"),
+          btns([("Shop new in", None, "/new-in/"), ("Shop everything", "outline", "/shop/")], "center")]),
+       "Hero", "placeholder-wide.svg", 30, "92vh", "bottom center", ("xx-large", "xx-large", "medium", "medium"), "60rem"))
 
 kit("aisle-promises", AK, "Aisle promises: four reasons to buy here",
- "Four short promises in a row (free shipping, same-day dispatch, returns, repairs), each with its detail, right under the hero where shoppers look for them. Part of the Aisle kit; keep them true to the shop's settings.",
+ "Four short promises in one thin row (free shipping, same-day dispatch, returns, repairs), right under the hero where shoppers look for them. Part of the Aisle kit; keep them true to the shop's settings.",
  "promises, shipping, returns, guarantee, trust, aisle",
- sec("Promises", grid([stackg([h(t, 3, "medium"), p(d, "small", "secondary")]) for t, d in [
-    ("Free shipping over $75", "$8 below that, anywhere in the US. Canada, the UK and the EU at checkout."),
-    ("Order by 2pm, sent today", "Packed by hand in Portland, Monday to Friday, in recycled paper mailers."),
-    ("60 days to return", "Free returns in the US, or a size swap that leaves before yours comes back."),
-    ("Free repairs for a year", "A seam goes or a zip breaks in the first year? We fix it.")]], 4, "13rem", "large"), "section-tint", ("large", "large", None, None)))
+ sec("Promises", grid([stackg([p(t, "small", None, "center", None, {"fontWeight": "600"}), p(d, "x-small", "secondary", "center")], "0") for t, d in [
+    ("Free shipping over $75", "Anywhere in the US"),
+    ("Order by 2pm, sent today", "Packed by hand in Portland"),
+    ("60 days to return", "Or swap a size for free"),
+    ("Free repairs for a year", "Seams, zips and cuffs")]], 4, "9rem", "medium"), None, ("large", "large", None, None)))
 
-kit("aisle-categories", AK, "Aisle categories: four photo tiles",
- "The shop's four main categories as tall photos with the name and what's in each, each opening its FluentCart category page. Part of the Aisle kit; link each tile to the shop's own category.",
+def atile(name, href, text, alt, minh="36rem", size="xx-large", button="Shop now"):
+    """A photo tile: the photo fills it, the name in the serif and a small link sit at its foot."""
+    return cover(stackg([hlink(name, href, 3, size), p(text, "small"), alink(button, href, None)], "small"),
+                 name, "placeholder-tall.svg", 30, minh, "bottom left", ("large", "large", "large", "large"), "80rem", alt=alt, cls="aisle-tile")
+
+kit("aisle-categories", AK, "Aisle categories: four photos, edge to edge",
+ "The shop's four main categories as tall photos running edge to edge, each with its name, what's in it and a link to its FluentCart category page. Part of the Aisle kit; link each tile to the shop's own category.",
  "categories, collections, departments, shop by category, aisle",
- sec("Categories", N([ahead("Shop by category", "Find your next favourite", ("Shop everything", "/shop/")),
-   grid([stackg([img("placeholder-tall.svg", alt, "3/4"), hlink(n, f"/product-categories/{s}/", 3, "large"), p(d, None, "secondary")], "small") for n, s, d, alt in ACATS], 4, "14rem", "medium")])))
+ sec("Categories", N([ahead("Shop by category", "Find your next favourite"),
+   grid([atile(n, f"/product-categories/{s}/", d, alt) for n, s, d, alt in ACATS], 4, "9rem", "small")]), None, ("xx-large", "small", "small", "small"), layout={"type": "default"}))
 
 kit("aisle-new-in", AK, "Aisle new in: the eight newest products",
- "The eight newest products as FluentCart product cards (photo, name, price, sale and sold-out badges, add to cart), under a heading with a link to everything new. Part of the Aisle kit; it fills itself from the shop.",
+ "The eight newest products as FluentCart product cards (a tall photo, the name, the price, sale and sold-out badges, and quick add on the photo), under a centred title with a link to everything new. Part of the Aisle kit; it fills itself from the shop.",
  "new in, new arrivals, latest, products, fluentcart, aisle",
- sec("New in", N([ahead("Just landed", "New in", ("See everything new", "/new-in/")), ashop("aisle-new-in", 8)])))
+ sec("New in", N([ahead("Just landed", "New in", ("Shop everything new", "/new-in/")), ashop("aisle-new-in", 8)]), None, ("xx-large", "xx-large", "small", "small"), "90rem"))
 
 kit("aisle-look", AK, "Aisle shop the look: one outfit, piece by piece",
- "A large photo of an outfit beside the pieces in it, each linking to its product, with a button to the lookbook. Part of the Aisle kit; point each piece at the shop's own product.",
+ "A photo of an outfit filling half the screen beside the pieces in it, each linking to its product, with a button to the lookbook. Part of the Aisle kit; point each piece at the shop's own product.",
  "shop the look, outfit, lookbook, styling, aisle",
- sec("Shop the look", cols([
-   col(img("placeholder-tall.svg", "A man in a beanie drinking coffee by a tent", "4/5"), "52%"),
-   col(N([alabel("Shop the look"), h("Weekend, sorted", 2, "xx-large"),
+ grp(cols([
+   col(fill("placeholder-tall.svg", 40, "A man in a beanie drinking coffee by a tent"), "55%"),
+   col(N([alabel("Shop the look"), h("Weekend, sorted", 2, "xxx-large"),
           p("Tess styled this one for a night out at Trillium Lake: a hoodie you can live in, jeans that soften with every wash and a cap for when it drizzles.", "medium", "secondary"),
           alinks([("Classic zipper hoodie", "/item/classic-zipper-hoodie/"), ("Slim fit jeans", "/item/mens-slim-fit-jeans/"), ("Classic cap", "/item/classic-cap/")]),
-          btns([("See the lookbook", "outline", "/lookbook/")])]), valign="center")], "xx-large", "wide", "center"), "section-tint"))
+          btns([("See the lookbook", "outline", "/lookbook/")])]), None, "section-tint", ("xx-large", "xx-large", "xx-large", "xx-large"), "center")], "0", "full"),
+   None, None, None, {"type": "default"}, "section", "full", "Shop the look"))
 
-def aspot(name, title, label, head, text, points, photo, button, link, flip=False):
-    words = col(N([alabel(label), h(head, 2, "xx-large"), p(text, "medium", "secondary"), lst(points),
-                   btns([(button, None, link)])]), valign="center")
-    pic = col(img("placeholder-tall.svg", photo, "4/5"), "52%")
-    kit(name, AK, title,
-        "One category in the spotlight: a large photo beside why it is worth a look, what makes it different and a button to the category. Part of the Aisle kit; use one for each category you want to push, alternating sides.",
-        "category, spotlight, feature, collection, promotion, aisle",
-        sec("Category spotlight", cols([words, pic] if flip else [pic, words], "xx-large", "wide", "center")))
+kit("aisle-spotlight", AK, "Aisle banner: one category on a full-width photo",
+ "One category in the spotlight on a photo that fills the screen: a label, a large serif title, a line on why it's worth a look and a button to the category. Part of the Aisle kit; use one between product rows to change the pace.",
+ "category, spotlight, banner, feature, collection, promotion, aisle",
+ cover(grp(N([alabel("The outerwear edit", "base"), h("Built for the walk to work, and the weekend after", 2, "xxx-large"),
+              p("Cut a little longer and lined where it counts, so they keep the rain out on Monday and still look right on Saturday.", "medium"),
+              btns([("Shop outerwear", None, "/product-categories/outerwear/")])]), gap="medium", layout={"type": "constrained", "contentSize": "36rem", "justifyContent": "left"}),
+       "Category banner", "placeholder-wide.svg", 40, "85vh", "bottom left", ("xx-large", "xx-large", "x-large", "x-large"), "80rem", alt="A woman in a red checked jacket on a lake pier", cls="anypress-scrim"))
 
-aspot("aisle-spotlight", "Aisle category spotlight: outerwear, photo on the left", "The outerwear edit",
-      "Built for the walk to work, and the weekend after",
-      "Our jackets are cut a little longer and lined where it counts, so they keep the rain out on Monday and still look right on Saturday.",
-      ["Water-resistant shells that breathe", "Pockets big enough for a phone and a book", "Free repairs on zips and seams for a year"],
-      "A woman in a red checked jacket on a lake pier", "Shop outerwear", "/product-categories/outerwear/")
-aspot("aisle-spotlight-2", "Aisle category spotlight: denim, photo on the right", "Denim that softens",
-      "Jeans that get better every time you wash them",
-      "Heavy cotton from a family mill, washed once before it reaches you. Pick your fit in the size guide and it stays that shape.",
-      ["Slim, straight and relaxed fits", "Hemmed for free if you send us your length", "Made to wear for years, not one season"],
-      "Close up of dark blue jeans", "Shop bottoms", "/product-categories/bottoms/", flip=True)
+kit("aisle-spotlight-2", AK, "Aisle two photos: two collections side by side",
+ "Two collections side by side as tall photos, each with its name, a line and a link, so the home page changes shape between product rows. Part of the Aisle kit; point each at the shop's own category.",
+ "collections, categories, two photos, feature, promotion, aisle",
+ sec("Two collections", grid([
+   atile("The everyday tee", "/product-categories/tops/", "Heavy cotton, five colours, made to be worn every day.", "A stack of folded tees in grey, red and green", "44rem", "xxx-large", "Shop tops"),
+   atile("Knits for cold mornings", "/product-categories/accessories/", "Scarves, caps and socks that keep their shape.", "A woman in a checked scarf checking her watch", "44rem", "xxx-large", "Shop accessories")], 2, "20rem", "small"),
+   None, ("small", "small", "small", "small"), layout={"type": "default"}))
+
+def aquote(text, name, piece):
+    return stackg([p("★★★★★", "small", "primary", "center", None, {"letterSpacing": "0.2em"}),
+                   p("“" + text + "”", "x-large", None, "center", AHEAD, {"lineHeight": "1.25"}),
+                   p(f"{name} · {piece}", "x-small", "secondary", "center", None, {"fontWeight": "600", "letterSpacing": "0.14em", "textTransform": "uppercase"})], "medium")
+
+kit("aisle-reviews", AK, "Aisle reviews: one big quote at a time",
+ "Customers in their own words, one large quote at a time in a carousel, with stars, a name and what each bought, under the shop's overall rating. Needs the AnyPress Blocks plugin. Part of the Aisle kit; use real reviews, with permission.",
+ "reviews, testimonials, customers, stars, rating, carousel, quote, aisle",
+ sec("Reviews", N([alabel("Rated 4.8 out of 5 from 1,200 reviews", align="center"),
+                   carousel([aquote(*r) for r in AREVIEWS], 1, "Customer reviews"), alink("Read all reviews", "/reviews/")]), "section-tint", ("xx-large", "xx-large", None, None), "52rem"))
 
 kit("aisle-story", AK, "Aisle story: who makes the clothes",
- "A short story of the brand beside a photo of the workroom, with three things it stands for and a link to the full story. Part of the Aisle kit; the owners' own words.",
+ "The brand's story in a few lines centred in the serif, three things it stands for and a link to the full story, over a wide photo of the workroom. Part of the Aisle kit; the owners' own words.",
  "about, story, brand, values, made to last, aisle",
- sec("Story", cols([
-   col(N([alabel("Our story"), h("Started at a kitchen table, still packed by hand", 2, "xx-large"),
-          p("Iris and Malik started Thread & Co. in 2020 with one hoodie and a promise: clothes that still look good after fifty washes. The fabric comes from two family mills we've visited ourselves.", "medium"),
-          grid([stackg([h(t, 3, "medium"), p(d, "small", "secondary")]) for t, d in [
-              ("Made to last", "Heavier fabric and better seams."), ("Fair all the way", "Mills that pay a fair wage."), ("No fake sales", "Fair prices all year.")]], 3, "9rem", "medium"),
-          btns([("Read our story", "outline", "/our-story/")])]), "52%", valign="center"),
-   col(img("placeholder-tall.svg", "A sewing machine stitching a piece of fabric", "4/5"))], "xx-large", "wide", "center")))
-
-kit("aisle-reviews", AK, "Aisle reviews: what customers say, in a carousel",
- "Customers in their own words, in a carousel, three at a time on a computer and one on a phone, with stars, a name and what each bought, under the shop's overall rating. Needs the AnyPress Blocks plugin. Part of the Aisle kit; use real reviews, with permission.",
- "reviews, testimonials, customers, stars, rating, carousel, aisle",
- sec("Reviews", N([ahead("Rated 4.8 out of 5 from 1,200 reviews", "Worn, washed, and still loved", ("All reviews", "/reviews/")),
-                   carousel([areview(*r) for r in AREVIEWS], 3, "Customer reviews")]), "section-tint"))
+ sec("Story", N([
+   grp(N([alabel("Our story", align="center"), h("Started at a kitchen table, still packed by hand", 2, "xx-large", "center"),
+          p("Iris and Malik started Thread & Co. in 2020 with one hoodie and a promise: clothes that still look good after fifty washes. The fabric comes from two family mills we've visited ourselves.", "medium", "secondary", "center"),
+          alink("Read our story", "/our-story/")]), gap="medium", layout={"type": "constrained", "contentSize": "46rem"}),
+   grid([stackg([p(t, "small", None, "center", None, {"fontWeight": "600"}), p(d, "small", "secondary", "center")], "0") for t, d in [
+       ("Made to last", "Heavier fabric and better seams."), ("Fair all the way", "Mills that pay a fair wage."), ("No fake sales", "Fair prices all year.")]], 3, "10rem", "medium"),
+   fill("placeholder-wide.svg", 30, "A sewing machine stitching a piece of fabric")])))
 
 kit("aisle-club", AK, "Aisle club and gift cards: two easy ways to give",
- "Two cards side by side: a monthly subscription (a fresh pair of socks every month) and gift cards, each with its price and a button to its product. Part of the Aisle kit; point the buttons at the shop's own products.",
+ "Two blocks side by side: a monthly subscription (a fresh pair of socks every month) and gift cards, each with its price and a button to its product. Part of the Aisle kit; point the buttons at the shop's own products.",
  "subscription, sock club, gift card, gifts, aisle",
- sec("Club and gifts", grid([grp(N([alabel(lbl, c), h(t, 2, "xx-large"), p(d, "medium"), p(price, "x-large", None, None, AHEAD, {"fontWeight": "700"}), btns([(b, None, href)])]), st, PAD_CARD, "small", {"type": "default"}) for lbl, c, t, d, price, b, href, st in [
+ sec("Club and gifts", grid([grp(N([alabel(lbl, c), h(t, 2, "xx-large"), p(d, "medium", "secondary"), p(price, "large"), btns([(b, None, href)])]), st, ("x-large", "x-large", "x-large", "x-large"), "small", {"type": "default"}) for lbl, c, t, d, price, b, href, st in [
     ("Every month", "primary", "The Sock club", "A fresh pair every month in a colour we pick for you. Skip a month or stop any time from your account.", "$12 a month", "Join the Sock club", "/item/sock-club/", "section-brand-soft"),
-    ("For anyone", "secondary", "Gift cards", "Sent by email with your note, on the day you choose. Good for anything in the shop, and it never runs out.", "From $25", "Buy a gift card", "/gift-cards/", "section-card")]], 2, "18rem", "large")))
+    ("For anyone", "secondary", "Gift cards", "Sent by email with your note, on the day you choose. Good for anything in the shop, and it never runs out.", "From $25", "Buy a gift card", "/gift-cards/", "section-tint")]], 2, "18rem", "small")))
 
 kit("aisle-journal", AK, "Aisle journal: the three latest posts",
- "The three latest posts from the journal with photo, title and date, and a link to all posts. Part of the Aisle kit.",
+ "The three latest posts from the journal with a tall photo, title and date, under a centred title and a link to all posts. Part of the Aisle kit.",
  "blog, journal, posts, style notes, care guides, aisle",
  sec("Journal", N([ahead("From the journal", "Style notes and care guides", ("All posts", "/journal/")),
-   query(3, 0, 3, N([dyn("post-featured-image", {"isLink": True, "aspectRatio": "4/3"}), dyn("post-title", {"isLink": True, "level": 3, "fontSize": "large"}), dyn("post-date", {"fontSize": "small", "textColor": "secondary"})]), 31)])))
+   query(3, 0, 3, N([dyn("post-featured-image", {"isLink": True, "aspectRatio": "4/5"}), dyn("post-date", {"fontSize": "x-small", "textColor": "secondary"}), dyn("post-title", {"isLink": True, "level": 3, "fontSize": "large"})]), 31)])))
 
 kit_page("kit-store", "Home page: Aisle kit, clothing store",
- "A complete home page for an online clothing shop on FluentCart in the Aisle kit: a full-width photo, four promises, categories with photos, the newest products, two category spotlights around a look to shop, reviews in a carousel, the brand's story, the subscription and gift cards, the journal, and a first-order popup. Apply the Aisle style for the look it was designed with.",
+ "A complete home page for an online clothing shop on FluentCart in the Aisle kit: a full-screen photo, four promises in a thin row, categories as photos edge to edge, the newest products, a full-width banner, a look to shop, two collections side by side, one big review at a time, the brand's story, the subscription and gift cards, the journal, and a first-order popup. Apply the Aisle style for the look it was designed with.",
  "home, shop, store, clothing, fashion, ecommerce, fluentcart, products, kit, aisle",
  ["aisle-hero", "aisle-promises", "aisle-categories", "aisle-new-in", "aisle-spotlight", "aisle-look", "aisle-spotlight-2", "aisle-reviews", "aisle-story", "aisle-club", "aisle-journal", "aisle-popup"])
 
@@ -410,6 +470,9 @@ aisle_page("aisle-page-help", "Help centre page: Aisle kit",
  [ahelp_hero("How can we help?", "Answers about delivery, returns, sizes and your order. Can't find it? A person replies the same working day.", "Help"),
   BODIES["aisle-help-grid"], BODIES["aisle-faq-short"]])
 
+AHELP_PHOTOS = {"shipping": "Neatly folded t-shirts in a stack of colours", "returns": "A hand picking a striped top from a rail",
+                "size-guide": "Hands at an old sewing machine with a spool of thread", "track-order": "A woman in a reindeer jumper holding a wrapped present",
+                "faq": "Clothes hanging on a rail in a bright shop", "contact": "A sewing machine stitching a piece of fabric"}
 for slug, title, crumb, text, body, kw in [
     ("shipping", "Shipping and delivery", "Help / Shipping", "What delivery costs, how long it takes and where we send. Free in the US on orders over $75.", "aisle-shipping", "shipping, delivery, international, vat"),
     ("returns", "Returns and exchanges", "Help / Returns", "60 days to send it back or swap a size, free in the US. Here's how.", "aisle-returns", "returns, exchanges, refunds, withdrawal"),
@@ -420,12 +483,12 @@ for slug, title, crumb, text, body, kw in [
 ]:
     aisle_page(f"aisle-page-{slug}", f"{title} page: Aisle kit",
      f"A {title} page for an online shop: a heading, " + {"shipping": "delivery options and costs, sending abroad with VAT for the EU and UK", "returns": "how to return in three steps and the rules, including the EU's 14 days to cancel", "size-guide": "how to measure and size charts for tops and bottoms", "track-order": "where to find an order and what each status means", "faq": "every question grouped by topic", "contact": "the email address, studio and hours beside the contact form"}[slug] + ", and links to the other help pages. Aisle kit.",
-     kw + ", help, aisle", [ahelp_hero(title, text, crumb, f"/help/{slug}/"), BODIES[body]] + ([BODIES["aisle-help-grid"]] if slug != "faq" else [BODIES["aisle-contact"]]))
+     kw + ", help, aisle", [ahelp_hero(title, text, crumb, f"/help/{slug}/", AHELP_PHOTOS[slug]), BODIES[body]] + ([BODIES["aisle-help-grid"]] if slug != "faq" else [BODIES["aisle-contact"]]))
 
 aisle_page("aisle-page-cancel", "Cancel an order page: Aisle kit",
  "The page where EU and UK shoppers cancel an order within 14 days: a heading, the cancellation form from FluentCart's free Customer Rights add-on, what happens next, and links to the other help pages. Aisle kit; needs the Customer Rights add-on (FluentCart, Settings, Features and addons). Put it on the page the add-on makes, Withdraw from contract.",
  "cancel order, withdrawal, eu, 14 days, right to cancel, customer rights, help, aisle",
- [ahelp_hero("Cancel an order", "Shopping from the EU or the UK? You have 14 days from delivery to cancel any order, no reason needed. Fill this in and we'll confirm by email straight away.", "Help / Cancel an order"),
+ [ahelp_hero("Cancel an order", "Shopping from the EU or the UK? You have 14 days from delivery to cancel any order, no reason needed. Fill this in and we'll confirm by email straight away.", "Help / Cancel an order", None, "A stack of folded tees in grey, red and green"),
   sec("Cancellation form", cols([
     col(N(['<!-- wp:shortcode -->\n[fluent_cart_withdrawal]\n<!-- /wp:shortcode -->']), "60%"),
     col(card(N([h("What happens next", 3, "large"), lst([

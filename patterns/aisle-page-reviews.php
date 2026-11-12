@@ -10,21 +10,21 @@
  * Post Types: page
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>","alt":"A couple walking past a stone building","dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":30,"minHeightUnit":"rem","contentPosition":"bottom left","align":"full","metadata":{"name":"Page hero"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"},"className":"anypress-scrim"} -->
-<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left anypress-scrim" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);min-height:30rem"><img class="wp-block-cover__image-background" alt="A couple walking past a stone building" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained","contentSize":"40rem","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"base","fontSize":"small","style":{"typography":{"fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
-<p class="has-base-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Reviews', 'anypress' ); ?></p>
+<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>","alt":"A couple walking past a stone building","dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":28,"minHeightUnit":"rem","contentPosition":"center center","align":"full","metadata":{"name":"Page hero"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);min-height:28rem"><img class="wp-block-cover__image-background" alt="A couple walking past a stone building" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","contentSize":"40rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-text-align-center has-base-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><?php esc_html_e( 'Reviews', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
-<h1 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'Reviews', 'anypress' ); ?></h1>
+<!-- wp:heading {"textAlign":"center","level":1,"fontSize":"xxx-large"} -->
+<h1 class="wp-block-heading has-text-align-center has-xxx-large-font-size"><?php esc_html_e( 'Reviews', 'anypress' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size"><?php esc_html_e( 'Rated 4.8 out of 5 from more than 1,200 reviews. Every product page has its own reviews too.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size"><?php esc_html_e( 'Rated 4.8 out of 5 from more than 1,200 reviews. Every product page has its own reviews too.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/shop/"><?php esc_html_e( 'Shop everything', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
@@ -162,64 +162,62 @@
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Promises"},"align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"13rem"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Free shipping over $75', 'anypress' ); ?></h3>
-<!-- /wp:heading -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Promises"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"9rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"small","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="has-text-align-center has-small-font-size" style="font-weight:600"><?php esc_html_e( 'Free shipping over $75', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->
-<p class="has-secondary-color has-text-color has-small-font-size"><?php esc_html_e( '$8 below that, anywhere in the US. Canada, the UK and the EU at checkout.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"x-small"} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Anywhere in the US', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Order by 2pm, sent today', 'anypress' ); ?></h3>
-<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"small","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="has-text-align-center has-small-font-size" style="font-weight:600"><?php esc_html_e( 'Order by 2pm, sent today', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->
-<p class="has-secondary-color has-text-color has-small-font-size"><?php esc_html_e( 'Packed by hand in Portland, Monday to Friday, in recycled paper mailers.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"x-small"} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Packed by hand in Portland', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( '60 days to return', 'anypress' ); ?></h3>
-<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"small","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="has-text-align-center has-small-font-size" style="font-weight:600"><?php esc_html_e( '60 days to return', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->
-<p class="has-secondary-color has-text-color has-small-font-size"><?php esc_html_e( 'Free returns in the US, or a size swap that leaves before yours comes back.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"x-small"} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Or swap a size for free', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Free repairs for a year', 'anypress' ); ?></h3>
-<!-- /wp:heading -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"small","style":{"typography":{"fontWeight":"600"}}} -->
+<p class="has-text-align-center has-small-font-size" style="font-weight:600"><?php esc_html_e( 'Free repairs for a year', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->
-<p class="has-secondary-color has-text-color has-small-font-size"><?php esc_html_e( 'A seam goes or a zip breaks in the first year? We fix it.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"x-small"} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-x-small-font-size"><?php esc_html_e( 'Seams, zips and cuffs', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"New in"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
-<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Just landed', 'anypress' ); ?></p>
+<!-- wp:group {"tagName":"section","metadata":{"name":"New in"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|small","right":"var:preset|spacing|small"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"90rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><?php esc_html_e( 'Just landed', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"fontSize":"xx-large"} -->
-<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'New in', 'anypress' ); ?></h2>
-<!-- /wp:heading --></div>
-<!-- /wp:group -->
+<!-- wp:heading {"textAlign":"center","fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'New in', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"fontWeight":"600"}}} -->
-<p class="has-medium-font-size" style="font-weight:600"><a href="/new-in/"><?php esc_html_e( 'See everything new', 'anypress' ); ?> →</a></p>
+<!-- wp:paragraph {"align":"center","fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-text-align-center has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/new-in/"><?php esc_html_e( 'Shop everything new', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

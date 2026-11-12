@@ -1,53 +1,45 @@
 <?php
 /**
- * Title: Aisle category spotlight: denim, photo on the right
+ * Title: Aisle two photos: two collections side by side
  * Slug: anypress/aisle-spotlight-2
- * Description: One category in the spotlight: a large photo beside why it is worth a look, what makes it different and a button to the category. Part of the Aisle kit; use one for each category you want to push, alternating sides.
+ * Description: Two collections side by side as tall photos, each with its name, a line and a link, so the home page changes shape between product rows. Part of the Aisle kit; point each at the shop's own category.
  * Categories: anypress/kit-store
- * Keywords: category, spotlight, feature, collection, promotion, aisle
+ * Keywords: collections, categories, two photos, feature, promotion, aisle
  * Viewport Width: 1400
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Category spotlight"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
-<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Denim that softens', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"fontSize":"xx-large"} -->
-<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Jeans that get better every time you wash them', 'anypress' ); ?></h2>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Two collections"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":"20rem"}} -->
+<div class="wp-block-group alignwide"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>","alt":"A stack of folded tees in grey, red and green","dimRatio":30,"overlayColor":"main","isUserOverlayColor":true,"minHeight":44,"minHeightUnit":"rem","contentPosition":"bottom left","align":"full","metadata":{"name":"The everyday tee"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"},"className":"aisle-tile"} -->
+<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left aisle-tile" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);min-height:44rem"><img class="wp-block-cover__image-background" alt="A stack of folded tees in grey, red and green" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"xxx-large"} -->
+<h3 class="wp-block-heading has-xxx-large-font-size"><a href="/product-categories/tops/"><?php esc_html_e( 'The everyday tee', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"secondary","fontSize":"medium"} -->
-<p class="has-secondary-color has-text-color has-medium-font-size"><?php esc_html_e( 'Heavy cotton from a family mill, washed once before it reaches you. Pick your fit in the size guide and it stays that shape.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><?php esc_html_e( 'Heavy cotton, five colours, made to be worn every day.', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><?php esc_html_e( 'Slim, straight and relaxed fits', 'anypress' ); ?></li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/product-categories/tops/"><?php esc_html_e( 'Shop tops', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
 
-<!-- wp:list-item -->
-<li><?php esc_html_e( 'Hemmed for free if you send us your length', 'anypress' ); ?></li>
-<!-- /wp:list-item -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>","alt":"A woman in a checked scarf checking her watch","dimRatio":30,"overlayColor":"main","isUserOverlayColor":true,"minHeight":44,"minHeightUnit":"rem","contentPosition":"bottom left","align":"full","metadata":{"name":"Knits for cold mornings"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"},"className":"aisle-tile"} -->
+<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left aisle-tile" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);min-height:44rem"><img class="wp-block-cover__image-background" alt="A woman in a checked scarf checking her watch" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-30 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"xxx-large"} -->
+<h3 class="wp-block-heading has-xxx-large-font-size"><a href="/product-categories/accessories/"><?php esc_html_e( 'Knits for cold mornings', 'anypress' ); ?></a></h3>
+<!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li><?php esc_html_e( 'Made to wear for years, not one season', 'anypress' ); ?></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size"><?php esc_html_e( 'Scarves, caps and socks that keep their shape.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/product-categories/bottoms/"><?php esc_html_e( 'Shop bottoms', 'anypress' ); ?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"52%"} -->
-<div class="wp-block-column" style="flex-basis:52%"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/5","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" alt="<?php esc_attr_e( 'Close up of dark blue jeans', 'anypress' ); ?>" style="aspect-ratio:4/5;object-fit:cover"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></section>
+<!-- wp:paragraph {"fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><a href="/product-categories/accessories/"><?php esc_html_e( 'Shop accessories', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:group --></section>
 <!-- /wp:group -->

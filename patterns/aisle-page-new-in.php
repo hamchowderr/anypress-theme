@@ -10,18 +10,18 @@
  * Post Types: page
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>","alt":"A hand picking a striped top from a rail","dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":30,"minHeightUnit":"rem","contentPosition":"bottom left","align":"full","metadata":{"name":"Page hero"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"},"className":"anypress-scrim"} -->
-<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left anypress-scrim" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);min-height:30rem"><img class="wp-block-cover__image-background" alt="A hand picking a striped top from a rail" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"constrained","contentSize":"40rem","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"base","fontSize":"small","style":{"typography":{"fontWeight":"700","letterSpacing":"0.1em","textTransform":"uppercase"}}} -->
-<p class="has-base-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase"><?php esc_html_e( 'Shop / New in', 'anypress' ); ?></p>
+<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>","alt":"A hand picking a striped top from a rail","dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":28,"minHeightUnit":"rem","contentPosition":"center center","align":"full","metadata":{"name":"Page hero"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);min-height:28rem"><img class="wp-block-cover__image-background" alt="A hand picking a striped top from a rail" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","contentSize":"40rem"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"x-small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.14em","textTransform":"uppercase"}}} -->
+<p class="has-text-align-center has-base-color has-text-color has-x-small-font-size" style="font-weight:600;letter-spacing:0.14em;text-transform:uppercase"><?php esc_html_e( 'Shop / New in', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":1,"fontSize":"xxx-large"} -->
-<h1 class="wp-block-heading has-xxx-large-font-size"><?php esc_html_e( 'New in', 'anypress' ); ?></h1>
+<!-- wp:heading {"textAlign":"center","level":1,"fontSize":"xxx-large"} -->
+<h1 class="wp-block-heading has-text-align-center has-xxx-large-font-size"><?php esc_html_e( 'New in', 'anypress' ); ?></h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size"><?php esc_html_e( 'Fresh from the mills this month: heavier fleece, forest green and oatmeal, and the zipper hoodie is back.', 'anypress' ); ?></p>
+<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size"><?php esc_html_e( 'Fresh from the mills this month: heavier fleece, forest green and oatmeal, and the zipper hoodie is back.', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
