@@ -284,6 +284,16 @@ foreach ( $anypress_kit['pages'] as $anypress_i => $anypress_more ) {
 	anypress_demo_page( $anypress_more[0], $anypress_more[1], anypress_demo_forms( anypress_demo_pattern( $anypress_more[2] ) ), $anypress_pages[ $anypress_more[3] ?? '' ] ?? 0, $anypress_i + 1 );
 }
 
+// The EU cancellation form: FluentCart's free Customer Rights add-on shows it on the page set as its withdrawal page.
+if ( class_exists( 'FluentCartCustomerRights' ) && ! empty( $anypress_pages['withdraw-from-contract'] ) ) {
+	( new \FluentCart\Api\StoreSettings() )->set( 'withdrawal_page_id', $anypress_pages['withdraw-from-contract'] );
+}
+
+// The Shop page opens on its own photo (the theme's Shop template shows a page's featured image behind its title).
+if ( ! empty( $anypress_shop['shop_photo'] ) && ! empty( $anypress_pages['shop'] ) ) {
+	set_post_thumbnail( $anypress_pages['shop'], $anypress_media[ $anypress_shop['shop_photo'] ]['id'] );
+}
+
 anypress_demo_page(
 	'privacy-policy',
 	'Privacy policy',

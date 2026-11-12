@@ -102,6 +102,28 @@ export async function checkShop({ base, shots, paths = {}, items = {} }) {
     check(/receipt/.test(tab.url()), 'placing an order opens its receipt', tab.url());
     await tab.screenshot({ path: `${shots}/receipt.png`, fullPage: true });
 
+    // ------------------------------------------------------------------ EU cancellation (FluentCart Customer Rights)
+    console.log('Cancel an order');
+    const cancel = await tab.goto(`${base}/withdraw-from-contract/`, { waitUntil: 'networkidle' });
+    check(cancel?.status() === 200 && await tab.locator('[data-fctcr-form]').count() === 1, 'the Cancel an order page has the cancellation form');
+    if (await tab.locator('[data-fctcr-form]').count()) {
+        await tab.fill('#fctcr-first-name', 'Sam');
+        await tab.fill('#fctcr-last-name', 'Rivera');
+        await tab.fill('#fctcr-order', '1');
+        await tab.fill('#fctcr-email', 'sam@anypress.example');
+        await tab.locator('[data-fctcr-continue]').click();
+        await tab.locator('[data-fctcr-confirm]').waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+        await tab.locator('[data-fctcr-confirm]').click({ timeout: 5000 }).catch(() => {});
+        await tab.waitForTimeout(3000);
+        check(/withdrawal has been received/i.test(await tab.locator('body').innerText()), 'a cancellation is received and acknowledged');
+        await tab.screenshot({ path: `${shots}/cancel.png`, fullPage: true });
+    }
+    for (const [path, name] of [[paths.shop || '/shop/', 'shop'], ['/new-in/', 'new-in'], ['/help/', 'help'], ['/product-categories/tops/', 'category']]) {
+        await tab.goto(`${base}${path}`, { waitUntil: 'networkidle' });
+        await tab.screenshot({ path: `${shots}/hero-${name}.png` });
+    }
+    check(await tab.evaluate(async (u) => { const d = new DOMParser().parseFromString(await (await fetch(u)).text(), 'text/html'); return !!d.querySelector('.anypress-page-cover > img'); }, `${base}${paths.shop || '/shop/'}`), 'the Shop page opens on its photo');
+
     // ------------------------------------------------------------------ forms and popup
     console.log('Forms and popup');
     await tab.goto(`${base}${paths.contact || '/contact/'}`, { waitUntil: 'networkidle' });
@@ -130,6 +152,10 @@ export async function checkShop({ base, shots, paths = {}, items = {} }) {
         if (await mob.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) wide.push(path);
     }
     check(wide.length === 0, 'no sideways scroll on a phone', wide.join(', '));
+    for (const [path, name] of [[paths.shop || '/shop/', 'shop'], ['/new-in/', 'new-in'], ['/help/', 'help'], ['/product-categories/tops/', 'category']]) {
+        await mob.goto(`${base}${path}`, { waitUntil: 'networkidle' });
+        await mob.screenshot({ path: `${shots}/phone-hero-${name}.png` });
+    }
     await mob.goto(`${base}/`, { waitUntil: 'networkidle' });
     await mob.screenshot({ path: `${shots}/phone-home.png`, fullPage: true });
     const open = mob.locator('header .wp-block-navigation__responsive-container-open').first();

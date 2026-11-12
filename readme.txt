@@ -131,7 +131,8 @@ Placeholder images in assets/images and screenshot.png were made for this theme 
 == Changelog ==
 
 = 0.23.0 =
-* New kit: Aisle, for online clothing shops on FluentCart. A style, 28 sections and 14 starter pages: a home page with a full-width photo, promises, category tiles, the newest products, two category spotlights, a look to shop, reviews, the brand's story, a subscription and gift cards, the journal and a first-order popup; plus new in, lookbook, gift cards, a help centre (shipping, returns and exchanges, size guide, track an order, questions, contact), our story, reviews and a thank-you page. Products, cart, checkout and account stay FluentCart's own.
+* New kit: Aisle, for online clothing shops on FluentCart. A style, 28 sections and 15 starter pages: a home page with a full-width photo, promises, category tiles, the newest products, two category spotlights, a look to shop, reviews, the brand's story, a subscription and gift cards, the journal and a first-order popup; plus new in, lookbook, gift cards, a help centre (shipping, returns and exchanges, size guide, track an order, questions, contact), our story, reviews, a thank-you page and a Cancel an order page for FluentCart's free Customer Rights add-on (the EU's 14 days to cancel). Products, cart, checkout and account stay FluentCart's own. Its pages open on their own photo, darkened toward the words, and its help pages on the brand colour with stitching and a row of links to the other help pages.
+* The Shop page opens on the page's featured image behind its title, or on the brand colour when it has none. Category pages (FluentCart's own template) open on a band of the brand's soft colour.
 * Fluent Forms and FluentCart buttons inside a coloured section now take that section's button colours, so a form's button never disappears on a brand-coloured band.
 * FluentCart's related products list stays inside the page on phones, with space below it.
 

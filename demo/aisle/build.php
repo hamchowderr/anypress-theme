@@ -36,6 +36,7 @@ $anypress_kit = array(
 		array( 'track-order', 'Track an order', 'aisle-page-track-order', 'help' ),
 		array( 'faq', 'Questions', 'aisle-page-faq', 'help' ),
 		array( 'contact', 'Contact us', 'aisle-page-contact', 'help' ),
+		array( 'withdraw-from-contract', 'Cancel an order', 'aisle-page-cancel' ),
 		array( 'our-story', 'Our story', 'aisle-page-about' ),
 		array( 'reviews', 'Reviews', 'aisle-page-reviews' ),
 	),
@@ -79,6 +80,7 @@ $anypress_kit['menu'] = array(
 			array( 'label' => 'Track an order', 'slug' => 'track-order' ),
 			array( 'label' => 'Questions', 'slug' => 'faq' ),
 			array( 'label' => 'Contact us', 'slug' => 'contact' ),
+			array( 'label' => 'Cancel an order (EU)', 'slug' => 'withdraw-from-contract' ),
 		),
 	),
 );

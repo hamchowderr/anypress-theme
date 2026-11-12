@@ -139,16 +139,20 @@ def lst(items, size=None, family=None, typo=None, style=None):
 def img(file, alt, ratio=None, radius=None):
     return image(file, alt, ratio, radius)
 
-def cover(inner, name, file, dim=40, minh="80vh", pos="bottom left", pad=("xx-large", "xx-large", "medium", "medium"), content="80rem", overlay="main"):
+def cover(inner, name, file, dim=40, minh="80vh", pos="bottom left", pad=("xx-large", "xx-large", "medium", "medium"), content="80rem", overlay="main", alt=None, cls=None):
     pa, pc = padding(pad)
-    mh, unit = (minh[:-2], "vh") if minh.endswith("vh") else (minh, None)
+    mh, unit = (minh[:-2], "vh") if minh.endswith("vh") else (minh[:-3], "rem") if minh.endswith("rem") else (minh, None)
     a = {"url": IMG(file), "dimRatio": dim, "overlayColor": overlay, "isUserOverlayColor": True, "minHeight": int(mh), "minHeightUnit": unit, "contentPosition": pos, "align": "full", "metadata": {"name": name},
          "style": {"spacing": {"padding": pa, "margin": {"top": "0", "bottom": "0"}}}, "layout": {"type": "constrained", "contentSize": content}}
+    # alt names the photo (the demo picks its photo by it); cls adds a class such as anypress-scrim.
+    if alt: a = {"url": a["url"], "alt": alt, **{k: v for k, v in a.items() if k != "url"}}
+    if cls: a["className"] = cls
     posc = "is-position-" + pos.replace(" ", "-")
     hc = " has-custom-content-position " + posc if pos != "center center" else ""
+    hc += f" {cls}" if cls else ""
     dimc = "has-background-dim" if dim == 50 else f"has-background-dim-{dim} has-background-dim" if dim else "has-background-dim-0 has-background-dim"
     css = f"margin-top:0;margin-bottom:0;{pc};min-height:{mh}{unit or 'px'}"
-    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover alignfull{hc}" style="{css}"><img class="wp-block-cover__image-background" alt="" src="{IMG(file)}" data-object-fit="cover"/>'
+    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover alignfull{hc}" style="{css}"><img class="wp-block-cover__image-background" alt="{alt or ""}" src="{IMG(file)}" data-object-fit="cover"/>'
             f'<span aria-hidden="true" class="wp-block-cover__background has-{overlay}-background-color {dimc}"></span><div class="wp-block-cover__inner-container">{inner}</div></div>\n<!-- /wp:cover -->')
 
 def fill(file, rem):

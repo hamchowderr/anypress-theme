@@ -36,10 +36,24 @@ def ahead(label, title, link=None, size="xx-large"):
     return row([left, p(f'<a href="{link[1]}">' + T(link[0]) + " →</a>", "medium", None, None, None, {"fontWeight": "600"}, raw=True)] if link else [left], valign="bottom")
 
 def apage_hero(title, text, crumb, buttons=None, alt=None):
-    words = N([alabel(crumb), h(title, 1, "xxx-large"), p(text, "large", "secondary")] + ([btns(buttons)] if buttons else []))
-    if not alt:
-        return sec("Page hero", grp(words, gap="medium", layout={"type": "constrained", "contentSize": "48rem", "justifyContent": "left"}), "section-tint", ("xx-large", "x-large", None, None), "80rem")
-    return sec("Page hero", cols([col(words, "50%", valign="center"), col(img("placeholder-wide.svg", alt, "4/3"))], "xx-large", "wide", "center"), "section-tint", ("xx-large", "x-large", None, None), "80rem")
+    """A page's opening: the page's own photo full width, darkened toward the words (class anypress-scrim), as fashion
+    shops open a collection. Kept short on pages that list products, so the first row of products still shows."""
+    words = N([alabel(crumb, "base"), h(title, 1, "xxx-large"), p(text, "large")] + ([btns(buttons)] if buttons else []))
+    return cover(grp(words, gap="medium", layout={"type": "constrained", "contentSize": "40rem", "justifyContent": "left"}),
+                 "Page hero", "placeholder-wide.svg", 50, "30rem", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem", alt=alt, cls="anypress-scrim")
+
+AHELP_PILLS = [("Shipping", "/help/shipping/"), ("Returns", "/help/returns/"), ("Size guide", "/help/size-guide/"), ("Track an order", "/help/track-order/"),
+         ("Questions", "/help/faq/"), ("Contact us", "/help/contact/")]
+
+def ahelp_hero(title, text, crumb, here=None):
+    """A help page's opening: the brand colour with stitching around its edge and thread rings behind it (class
+    anypress-stitch), and a row of the other help pages, so every answer is one click from any help page."""
+    words = N([alabel(crumb, "base"), h(title, 1, "xxx-large"), p(text, "large")])
+    pills = btns([(label, "outline", href) for label, href in AHELP_PILLS if href != here])
+    inner = grp(N([grp(words, gap="medium", layout={"type": "constrained", "contentSize": "44rem", "justifyContent": "left"}), pills]), gap="large")
+    return grp(inner, "section-brand", ("xx-large", "xx-large", None, None), None, {"type": "constrained", "contentSize": "80rem"}, "section", "full", "Page hero").replace(
+        '"className":"is-style-section-brand"', '"className":"is-style-section-brand anypress-stitch"').replace(
+        'class="wp-block-group alignfull is-style-section-brand"', 'class="wp-block-group alignfull is-style-section-brand anypress-stitch"', 1)
 
 def alinks(items):
     """A list of links, each in large type with an arrow."""
@@ -247,7 +261,7 @@ kit("aisle-shipping", AK, "Aisle shipping: what it costs and how long it takes",
    p("For the EU and the UK the VAT is worked out for your country at checkout, so there's nothing more to pay at the door. Buying for a business? Add your VAT number at checkout and the VAT comes off.", None, "secondary")]), content="56rem"))
 
 kit("aisle-returns", AK, "Aisle returns: how to send something back",
- "How to return or exchange in three numbered steps, then the rules in plain words: how long, what can come back, refunds and the 14-day right to cancel for EU customers. Part of the Aisle kit; keep it the same as the shop's real policy.",
+ "How to return or exchange in three numbered steps, then the rules in plain words: how long, what can come back, refunds and the 14-day right to cancel for EU customers, with a button to the cancellation form (FluentCart's Customer Rights add-on makes its page at /withdraw-from-contract/). Part of the Aisle kit; keep it the same as the shop's real policy.",
  "returns, exchanges, refunds, size swap, withdrawal, eu, aisle",
  sec("Returns", N([
    grid([stackg([p(n, "xxx-large", "primary", None, AHEAD, {"lineHeight": "1", "fontWeight": "700"}), h(t, 3, "large"), p(d, None, "secondary")]) for n, t, d in [
@@ -263,7 +277,8 @@ kit("aisle-returns", AK, "Aisle returns: how to send something back",
          "Last few pieces can be swapped but not refunded",
          "Something faulty? We pay the postage and fix or replace it"])]), "55%"),
      col(card(N([h("In the EU? 14 days to change your mind", 3, "large"),
-                 p("Under EU law you can cancel any order within 14 days of receiving it, for any reason. Tell us by email or through your account and we'll refund you, including the standard shipping, within 14 days of getting it back.", None)]), "section-brand-soft"))], "xx-large", "wide", "top")])))
+                 p("Under EU law you can cancel any order within 14 days of receiving it, for any reason. Use the cancellation form, cancel from your account or email us, and we'll refund you, including the standard shipping, within 14 days of getting it back.", None),
+                 btns([("Cancel an order", None, "/withdraw-from-contract/")])]), "section-brand-soft"))], "xx-large", "wide", "top")])))
 
 kit("aisle-size-guide", AK, "Aisle size guide: tables and how to measure",
  "Size charts for tops and bottoms in inches, how to measure in three steps and what to do between sizes. Part of the Aisle kit; put the shop's own measurements here.",
@@ -374,25 +389,25 @@ def aisle_page(slug, title, desc, kw, parts):
 aisle_page("aisle-page-new-in", "New in page: Aisle kit",
  "A New in page for an online shop: a heading, every product newest first as FluentCart product cards in pages, and the newsletter. Aisle kit.",
  "new in, new arrivals, latest, products, aisle",
- [apage_hero("New in", "Fresh from the mills this month: heavier fleece, forest green and oatmeal, and the zipper hoodie is back.", "Shop / New in"),
+ [apage_hero("New in", "Fresh from the mills this month: heavier fleece, forest green and oatmeal, and the zipper hoodie is back.", "Shop / New in", None, "A hand picking a striped top from a rail"),
   sec("Products", ashop("aisle-new-in-all", 12, paginate=True), None, ("large", "xx-large", None, None))])
 
 aisle_page("aisle-page-lookbook", "Lookbook page: Aisle kit",
  "A Lookbook page for a clothing shop: a heading, the season's photos that open full screen, one look to shop piece by piece and the newest products. Aisle kit.",
  "lookbook, gallery, outfits, season, aisle",
- [apage_hero("The winter lookbook", "Shot around Portland on friends, customers and occasionally our parents. Click a photo to see it full size.", "Lookbook"),
+ [apage_hero("The winter lookbook", "Shot around Portland on friends, customers and occasionally our parents. Click a photo to see it full size.", "Lookbook", None, "A woman in a checked scarf checking her watch"),
   BODIES["aisle-lookbook"], BODIES["aisle-look"], BODIES["aisle-new-in"]])
 
 aisle_page("aisle-page-gift-cards", "Gift cards page: Aisle kit",
  "A Gift cards page for an online shop: a heading, how gift cards work with a button to buy one, the subscription beside it and questions. Aisle kit.",
  "gift cards, gifts, present, subscription, aisle",
- [apage_hero("Gift cards", "For the person who already has everything, or who'd rather choose. Sent by email, on the day you pick.", "Shop / Gift cards"),
+ [apage_hero("Gift cards", "For the person who already has everything, or who'd rather choose. Sent by email, on the day you pick.", "Shop / Gift cards", [("Buy a gift card", None, "/item/gift-card/")], "A woman in a warm jumper holding a sparkler"),
   BODIES["aisle-gift"], BODIES["aisle-club"], sec("Questions", accordion(AFAQ[3][1] + [("Can I use a gift card and a discount code together?", "Yes. Add the code at checkout, then pay what's left with the gift card.")]), None, ("x-large", "xx-large", None, None), "56rem")])
 
 aisle_page("aisle-page-help", "Help centre page: Aisle kit",
  "A Help centre page for an online shop: a heading, a card for every help page, the questions shoppers ask most and how to reach a person. Aisle kit.",
  "help, help centre, support, customer service, aisle",
- [apage_hero("How can we help?", "Answers about delivery, returns, sizes and your order. Can't find it? A person replies the same working day.", "Help"),
+ [ahelp_hero("How can we help?", "Answers about delivery, returns, sizes and your order. Can't find it? A person replies the same working day.", "Help"),
   BODIES["aisle-help-grid"], BODIES["aisle-faq-short"]])
 
 for slug, title, crumb, text, body, kw in [
@@ -405,7 +420,20 @@ for slug, title, crumb, text, body, kw in [
 ]:
     aisle_page(f"aisle-page-{slug}", f"{title} page: Aisle kit",
      f"A {title} page for an online shop: a heading, " + {"shipping": "delivery options and costs, sending abroad with VAT for the EU and UK", "returns": "how to return in three steps and the rules, including the EU's 14 days to cancel", "size-guide": "how to measure and size charts for tops and bottoms", "track-order": "where to find an order and what each status means", "faq": "every question grouped by topic", "contact": "the email address, studio and hours beside the contact form"}[slug] + ", and links to the other help pages. Aisle kit.",
-     kw + ", help, aisle", [apage_hero(title, text, crumb), BODIES[body]] + ([BODIES["aisle-help-grid"]] if slug != "faq" else [BODIES["aisle-contact"]]))
+     kw + ", help, aisle", [ahelp_hero(title, text, crumb, f"/help/{slug}/"), BODIES[body]] + ([BODIES["aisle-help-grid"]] if slug != "faq" else [BODIES["aisle-contact"]]))
+
+aisle_page("aisle-page-cancel", "Cancel an order page: Aisle kit",
+ "The page where EU and UK shoppers cancel an order within 14 days: a heading, the cancellation form from FluentCart's free Customer Rights add-on, what happens next, and links to the other help pages. Aisle kit; needs the Customer Rights add-on (FluentCart, Settings, Features and addons). Put it on the page the add-on makes, Withdraw from contract.",
+ "cancel order, withdrawal, eu, 14 days, right to cancel, customer rights, help, aisle",
+ [ahelp_hero("Cancel an order", "Shopping from the EU or the UK? You have 14 days from delivery to cancel any order, no reason needed. Fill this in and we'll confirm by email straight away.", "Help / Cancel an order"),
+  sec("Cancellation form", cols([
+    col(N(['<!-- wp:shortcode -->\n[fluent_cart_withdrawal]\n<!-- /wp:shortcode -->']), "60%"),
+    col(card(N([h("What happens next", 3, "large"), lst([
+        "You get an email at once with what you sent and when",
+        "We reply within one working day with a free return label",
+        "Your refund, including the standard shipping, reaches your card within 14 days of the parcel getting back to us"]),
+        p("Not in the EU or the UK? Our 60-day returns cover you. <a href=\"/help/returns/\">How returns work</a>", None, "secondary", raw=True)]), "section-brand-soft"))], "xx-large", "wide", "top"), None, ("x-large", "xx-large", None, None)),
+  BODIES["aisle-help-grid"]])
 
 aisle_page("aisle-page-about", "Our story page: Aisle kit",
  "An Our story page for a clothing brand: a heading with a photo, the story, numbers that count up, what the brand stands for, the team and the newest products. Aisle kit.",
@@ -421,7 +449,7 @@ aisle_page("aisle-page-about", "Our story page: Aisle kit",
 aisle_page("aisle-page-reviews", "Reviews page: Aisle kit",
  "A Reviews page for an online shop: a heading with the overall rating, reviews as cards with stars, names and what each person bought, the promises and the newest products. Aisle kit; use real reviews, with permission.",
  "reviews, testimonials, customers, rating, aisle",
- [apage_hero("Reviews", "Rated 4.8 out of 5 from more than 1,200 reviews. Every product page has its own reviews too.", "Reviews", [("Shop everything", None, "/shop/")]),
+ [apage_hero("Reviews", "Rated 4.8 out of 5 from more than 1,200 reviews. Every product page has its own reviews too.", "Reviews", [("Shop everything", None, "/shop/")], "A couple walking past a stone building"),
   sec("All reviews", grid([areview(*r) for r in AREVIEWS + [
     ("Bought the Sock club for my dad. He now talks about socks. Thank you, I think.", "Hannah L.", "Sock club"),
     ("Sent a gift card to my sister in Berlin. The VAT was all sorted at checkout, nothing extra to pay.", "Paul D.", "Gift card"),

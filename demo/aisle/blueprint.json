@@ -69,6 +69,20 @@
 			}
 		},
 		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/plugins/fluent-cart-customer-rights-0.1.3.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "fluent-cart-customer-rights"
+			},
+			"progress": {
+				"caption": "Adding the shop"
+			}
+		},
+		{
 			"step": "writeFile",
 			"path": "/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php",
 			"data": {

@@ -43,6 +43,8 @@ const cli = await runCLI({
             { step: 'installPlugin', pluginData: { resource: 'wordpress.org/plugins', slug: 'fluentform' }, options: { activate: true } },
             ...(SHOP ? [
                 { step: 'installPlugin', pluginData: { resource: 'wordpress.org/plugins', slug: 'fluent-cart' }, options: { activate: true } },
+                // FluentCart's free Customer Rights add-on (the EU cancellation form), from FluentCart's own add-on downloads.
+                { step: 'installPlugin', pluginData: { resource: 'url', url: process.env.CUSTOMER_RIGHTS_ZIP || 'https://addons-cdn.fluentcart.com/fluent-cart-customer-rights.zip' }, options: { activate: true, targetFolderName: 'fluent-cart-customer-rights' } },
                 { step: 'mkdir', path: '/wordpress/wp-content/mu-plugins' },
                 { step: 'writeFile', path: '/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php', data: "<?php require WP_CONTENT_DIR . '/themes/anypress/demo/playground-sqlite.php';\n" },
             ] : []),

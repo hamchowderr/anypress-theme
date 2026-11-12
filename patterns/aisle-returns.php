@@ -2,7 +2,7 @@
 /**
  * Title: Aisle returns: how to send something back
  * Slug: anypress/aisle-returns
- * Description: How to return or exchange in three numbered steps, then the rules in plain words: how long, what can come back, refunds and the 14-day right to cancel for EU customers. Part of the Aisle kit; keep it the same as the shop's real policy.
+ * Description: How to return or exchange in three numbered steps, then the rules in plain words: how long, what can come back, refunds and the 14-day right to cancel for EU customers, with a button to the cancellation form (FluentCart's Customer Rights add-on makes its page at /withdraw-from-contract/). Part of the Aisle kit; keep it the same as the shop's real policy.
  * Categories: anypress/kit-store
  * Keywords: returns, exchanges, refunds, size swap, withdrawal, eu, aisle
  * Viewport Width: 1400
@@ -93,8 +93,14 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'Under EU law you can cancel any order within 14 days of receiving it, for any reason. Tell us by email or through your account and we\'ll refund you, including the standard shipping, within 14 days of getting it back.', 'anypress' ); ?></p>
-<!-- /wp:paragraph --></div>
+<p><?php esc_html_e( 'Under EU law you can cancel any order within 14 days of receiving it, for any reason. Use the cancellation form, cancel from your account or email us, and we\'ll refund you, including the standard shipping, within 14 days of getting it back.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/withdraw-from-contract/"><?php esc_html_e( 'Cancel an order', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

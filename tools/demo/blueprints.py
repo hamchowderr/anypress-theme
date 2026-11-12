@@ -12,7 +12,8 @@ file comes from an address any site may read, and nothing is pinned, so a demo a
 - the demo's own files and photos: raw.githubusercontent.com on main, one writeFile each (no git step, which needs
   Playground's download helper). Only the kit's own files and photos/; demos in subfolders have their own builds.
 
-A shop kit (one with shop.json) also gets FluentCart from wordpress.org, and a small must-use plugin that teaches
+A shop kit (one with shop.json) also gets FluentCart from wordpress.org, its free Customer Rights add-on (from the
+store template's copy), and a small must-use plugin that teaches
 Playground's SQLite database the few MySQL functions FluentCart uses (demo/playground-sqlite.php).
 
 After the build, AnyPress Client is added with the store template's site types and the kit's site type ("online-store"
@@ -37,6 +38,9 @@ PHOTOS = {".jpg", ".jpeg", ".png", ".webp"}
 # The store template's site types, read by AnyPress Client.
 ROLES = "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/roles.json"
 CLIENT_DATA = "/wordpress/wp-content/plugins/anypress-client-data"
+# FluentCart's free Customer Rights add-on (the EU cancellation form). FluentCart's own add-on downloads can't be read
+# by another site, so shop demos take the copy the store template ships, from raw.githubusercontent.com.
+CUSTOMER_RIGHTS = "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/plugins/fluent-cart-customer-rights-0.1.3.zip"
 
 
 def kit_files(kit):
@@ -71,6 +75,8 @@ def blueprint(kit, old):
          "options": {"activate": True}, "progress": {"caption": "Adding the forms"}},
         *([{"step": "installPlugin", "pluginData": {"resource": "wordpress.org/plugins", "slug": "fluent-cart"},
              "options": {"activate": True}, "progress": {"caption": "Adding the shop"}},
+           {"step": "installPlugin", "pluginData": {"resource": "url", "url": CUSTOMER_RIGHTS},
+            "options": {"activate": True, "targetFolderName": "fluent-cart-customer-rights"}, "progress": {"caption": "Adding the shop"}},
            {"step": "writeFile", "path": "/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php",
             "data": {"resource": "url", "url": RAW + "demo/playground-sqlite.php"}, "progress": {"caption": "Adding the shop"}}]
           if shop else []),

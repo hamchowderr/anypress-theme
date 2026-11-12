@@ -82,7 +82,9 @@ function anypress_demo_photos( $content ) {
 			$attrs = json_decode( $m[2], true );
 			$attrs['id'] = $media['id'];
 			if ( 'cover' === $m[1] ) {
+				// A cover's photo is decoration behind its words: its alt only chose the photo.
 				$attrs['url'] = $media['full'];
+				unset( $attrs['alt'] );
 			}
 			$inner = preg_replace( '#alt="[^"]*"#', 'alt="' . esc_attr( 'cover' === $m[1] ? '' : $anypress_photos['files'][ $file ] ) . '"', $m[3], 1 );
 			$inner = preg_replace( '#src="[^"]*placeholder-[a-z]+\.svg"#', 'src="' . esc_url( 'cover' === $m[1] ? $media['full'] : $media['url'] ) . '"', $inner );
