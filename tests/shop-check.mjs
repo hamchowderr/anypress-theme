@@ -105,7 +105,7 @@ export async function checkShop({ base, shots, paths = {}, items = {} }) {
     // ------------------------------------------------------------------ EU cancellation (FluentCart Customer Rights)
     console.log('Cancel an order');
     const cancel = await tab.goto(`${base}/withdraw-from-contract/`, { waitUntil: 'networkidle' });
-    check(cancel?.status() === 200 && await tab.locator('[data-fctcr-form]').count() === 1, 'the Cancel an order page has the cancellation form');
+    check(cancel?.status() === 200 && await tab.locator('h1', { hasText: 'Cancel an order' }).count() === 1 && await tab.locator('[data-fctcr-form]').count() === 1, 'the Cancel an order page is the kit\'s, with the cancellation form');
     if (await tab.locator('[data-fctcr-form]').count()) {
         await tab.fill('#fctcr-first-name', 'Sam');
         await tab.fill('#fctcr-last-name', 'Rivera');

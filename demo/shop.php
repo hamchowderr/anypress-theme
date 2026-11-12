@@ -41,8 +41,9 @@ function anypress_demo_fc( $method, $route, $params = array() ) {
 
 // ---------------------------------------------------------------------------------------------------------- the store
 ( new \FluentCart\Api\StoreSettings() )->set( 'store_name', $anypress_kit['name'] );
-// FluentCart's own pages, as its onboarding makes them: shop, cart, checkout, receipt, order review and account.
-( new \FluentCart\App\CPT\Pages() )->createPages();
+// FluentCart's own pages, as its onboarding makes them: shop, cart, checkout, receipt, order review and account. The
+// Customer Rights add-on's page (withdrawal) is the kit's own Cancel an order page instead, made with the others below.
+( new \FluentCart\App\CPT\Pages() )->createPages( array( 'withdrawal' ) );
 flush_rewrite_rules();
 
 /** Makes one of the demo's photos a product's picture and its gallery. */
