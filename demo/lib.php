@@ -278,12 +278,15 @@ function anypress_demo_start( $anypress_kit ) {
 	wp_update_post(
 		array(
 			'ID'           => $anypress_styles_id,
-			'post_content' => wp_json_encode(
-				array(
-					'version'                     => 3,
+			// Slashed, as wp_update_post() unslashes: a style's css can hold quotes (content:"").
+			'post_content' => wp_slash(
+				wp_json_encode(
+					array(
+						'version'                     => 3,
 					'isGlobalStylesUserThemeJSON' => true,
-					'settings'                    => array( 'color' => array( 'palette' => array( 'theme' => $anypress_variation['settings']['color']['palette'] ) ) ),
-					'styles'                      => $anypress_variation['styles'],
+						'settings'                    => array( 'color' => array( 'palette' => array( 'theme' => $anypress_variation['settings']['color']['palette'] ) ) ),
+						'styles'                      => $anypress_variation['styles'],
+					)
 				)
 			),
 		)

@@ -195,7 +195,9 @@ def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elemen
             "styles": {"typography": {"fontFamily": f"var:preset|font-family|{body}"}, "elements": els,
                        "blocks": {**(blocks or {}), "core/image": {"border": {"radius": "0"}},
                                   "core/quote": {"border": {"left": {"width": "0"}}, "spacing": {"padding": {"left": "0"}}}}}}
-    if css: data["styles"]["css"] = css  # the style's own touches, only while it is the active style
+    # The style's own touches, only while it is the active style. A style's css replaces theme.json's rather than
+    # adding to it, so the theme's own css goes first.
+    if css: data["styles"]["css"] = json.load(open("theme.json"))["styles"]["css"] + css
     path = f"styles/{slug}.json"
     json.dump(data, open(path, "w"), indent="\t", ensure_ascii=False); open(path, "a").write("\n")
 

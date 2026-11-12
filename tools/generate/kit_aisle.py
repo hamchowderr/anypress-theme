@@ -64,7 +64,7 @@ ACSS = "".join([
     "html body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description{border-image:none;text-align:center;color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--medium);padding-bottom:var(--wp--preset--spacing--large)}",
     "html body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description>*{margin-inline:auto}",
     # The Shop page's photo opening: the title centred on a soft shade instead of the side scrim.
-    "body .anypress-page-cover{justify-content:center;align-items:center;text-align:center}body .anypress-page-cover .wp-block-post-title{text-align:center}body .anypress-page-cover.anypress-scrim>.wp-block-cover__background{background:var(--wp--preset--color--main);opacity:.35}",
+    "body .anypress-page-cover{justify-content:center;align-items:center;text-align:center}body .anypress-page-cover .wp-block-post-title{text-align:center}body .anypress-page-cover.anypress-scrim>.wp-block-cover__background{background:var(--wp--preset--color--main)!important;opacity:.4!important}",
     # The header menu in small spaced capitals.
     "header .wp-block-navigation{font-size:var(--wp--preset--font-size--x-small);text-transform:uppercase;letter-spacing:.12em;font-weight:500}",
     "header .wp-block-navigation .wp-block-navigation__submenu-container{text-transform:none;letter-spacing:0;font-size:var(--wp--preset--font-size--small)}",
