@@ -239,6 +239,113 @@ function anypress_fluent_cart_styles() {
 add_action( 'wp_enqueue_scripts', 'anypress_fluent_cart_styles', 20 );
 
 /**
+ * Product card photos load at a size that fits the card.
+ *
+ * FluentCart prints each product card's photo at its full uploaded size, often 1500px or more for a card about 300px
+ * wide, without a srcset. Its own hooks run just before and after that photo, so the theme catches the photo's markup
+ * there and adds WordPress's srcset and sizes from the photo's Media Library copies; the browser then downloads the
+ * smallest copy that fits the card. Nothing changes when a photo is not in the Media Library, when FluentCart already
+ * adds a srcset, or on sites without FluentCart (the hooks never run).
+ *
+ * @param array $context FluentCart's render context; product cards have scope "product_card".
+ */
+function anypress_product_card_photo_start( $context ) {
+	$GLOBALS['anypress_card_photo_open'] = is_array( $context ) && 'product_card' === ( $context['scope'] ?? '' ) && ob_start();
+}
+add_action( 'fluent_cart/product/group/before_image_block', 'anypress_product_card_photo_start', PHP_INT_MAX );
+
+/**
+ * Adds srcset and sizes to the product card photo caught by anypress_product_card_photo_start().
+ *
+ * @param array $context FluentCart's render context, with the card's product.
+ */
+function anypress_product_card_photo_end( $context ) {
+	if ( empty( $GLOBALS['anypress_card_photo_open'] ) ) {
+		return;
+	}
+	$GLOBALS['anypress_card_photo_open'] = false;
+	$html                                = (string) ob_get_clean();
+	$detail                              = $context['product']->detail ?? null;
+	$media                               = $detail ? (array) $detail->featured_media : array();
+	$id                                  = (int) ( $media['id'] ?? 0 );
+	$meta                                = $id && wp_attachment_is_image( $id ) ? wp_get_attachment_metadata( $id ) : false;
+	if ( is_array( $meta ) && ! empty( $meta['width'] ) && ! str_contains( $html, 'srcset=' ) ) {
+		$html = preg_replace_callback(
+			'/<img\b[^>]*\bclass="fct-product-card-image"[^>]*>/',
+			function ( $img ) use ( $id, $meta ) {
+				$src    = preg_match( '/\ssrc="([^"]+)"/', $img[0], $found ) ? html_entity_decode( $found[1] ) : '';
+				$srcset = $src ? wp_calculate_image_srcset( array( (int) $meta['width'], (int) $meta['height'] ), $src, $meta, $id ) : false;
+				if ( ! $srcset ) {
+					return $img[0];
+				}
+				// Cards crop photos to a square. A photo wider than tall fills that square by its height, so each copy is
+				// listed by the width of the square it fills sharply (its height); the browser then picks a copy big
+				// enough for the card, also when it uses the card's real width ("auto", which WordPress adds to lazy
+				// photos).
+				$wide = max( 1, (int) $meta['width'] / max( 1, (int) $meta['height'] ) );
+				if ( $wide > 1 ) {
+					$srcset = preg_replace_callback(
+						'/ (\d+)w(,|$)/',
+						function ( $copy ) use ( $wide ) {
+							return ' ' . (int) round( (int) $copy[1] / $wide ) . 'w' . $copy[2];
+						},
+						$srcset
+					);
+				}
+				// Two cards a row on phones, three or four on wider screens.
+				$sizes = '(max-width: 600px) 50vw, (max-width: 1024px) 33vw, 25vw';
+				return str_replace( '<img ', '<img srcset="' . esc_attr( $srcset ) . '" sizes="' . esc_attr( $sizes ) . '" ', $img[0] );
+			},
+			$html,
+			1
+		);
+	}
+	echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- FluentCart's own card markup, already escaped by FluentCart; the added attributes are escaped above.
+}
+add_action( 'fluent_cart/product/group/after_image_block', 'anypress_product_card_photo_end', PHP_INT_MIN );
+
+/**
+ * Wishio (a wishlist add-on for FluentCart that sellers can install) in the store's own colours and lettering.
+ *
+ * Wishio's hearts already follow FluentCart's colours, which follow the theme. Its floating wishlist button, the
+ * wishlist page's table and its buttons use Wishio's own greys and navy instead; this points them at the colours,
+ * button style and corners of the kit or style the owner picks. Nothing is added on sites without Wishio.
+ */
+function anypress_wishio_styles() {
+	if ( ! defined( 'WISHIO_FCT_VERSION' ) ) {
+		return;
+	}
+	$color = function ( $path, $fallback ) {
+		$value = wp_get_global_styles( $path );
+		$value = is_string( $value ) ? preg_replace( '/^var:preset\|color\|([a-z0-9-]+)$/', 'var(--wp--preset--color--$1)', $value ) : '';
+		return preg_match( '/^(var\(--wp--preset--color--[a-z0-9-]+\)|#[0-9a-fA-F]{3,8})$/', $value ) ? $value : $fallback;
+	};
+	$button = $color( array( 'elements', 'button', 'color', 'background' ), 'var(--wp--preset--color--primary)' );
+	$label  = $color( array( 'elements', 'button', 'color', 'text' ), 'var(--wp--preset--color--base)' );
+	$main   = 'var(--wp--preset--color--main)';
+	$base   = 'var(--wp--preset--color--base)';
+	$hover  = 'color-mix(in srgb,' . $button . ' 85%,' . $main . ')';
+
+	$css  = 'body{--wishio-fct-text-dark:' . $main . ';--wishio-fct-text-mid:var(--wp--preset--color--secondary);--wishio-fct-text-light:color-mix(in srgb,var(--wp--preset--color--secondary) 75%,' . $base . ')';
+	$css .= ';--wishio-fct-border:var(--wp--preset--color--border-light);--wishio-fct-border-strong:var(--wp--preset--color--main-accent)';
+	$css .= ';--wishio-fct-surface:' . $base . ';--wishio-fct-surface-alt:var(--wp--preset--color--tertiary);--wishio-fct-bg-soft:var(--wp--preset--color--tertiary)';
+	$css .= ';--wishio-fct-float-bg:' . $button . ';--wishio-fct-float-color:' . $label . '}';
+	$css .= 'body .wishio-fct-wishlist-count.wishio-fct-wishlist-count--float{border-radius:var(--fct-card-radius,var(--wp--preset--border-radius--md))}';
+	// The wishlist page's buttons look like the site's other buttons: filled for the main action, outlined otherwise.
+	$css .= 'body .wishio-fct-btn-primary,body .wishio-fct-btn-primary:is(:focus,:active){background:' . $button . ';border-color:' . $button . ';color:' . $label . '}';
+	$css .= 'body .wishio-fct-btn-primary:hover{background:' . $hover . ';border-color:' . $hover . ';color:' . $label . '}';
+	$css .= 'body .wishio-fct-btn-secondary,body .wishio-fct-btn-secondary:is(:focus,:active){background:' . $base . ';border-color:var(--wp--preset--color--border-light);color:' . $main . '}';
+	$css .= 'body .wishio-fct-btn-secondary:hover{background:' . $button . ';border-color:' . $button . ';color:' . $label . '}';
+	$type = (array) wp_get_global_styles( array( 'elements', 'button', 'typography' ) );
+	$type = wp_style_engine_get_styles( array( 'typography' => array_intersect_key( $type, array_flip( array( 'fontFamily', 'fontWeight', 'letterSpacing', 'textTransform' ) ) ) ) );
+	if ( ! empty( $type['css'] ) ) {
+		$css .= 'body :is(.wishio-fct-btn-primary,.wishio-fct-btn-secondary){' . $type['css'] . '}';
+	}
+	wp_add_inline_style( 'anypress', $css );
+}
+add_action( 'wp_enqueue_scripts', 'anypress_wishio_styles', 20 );
+
+/**
  * Shop links in the header: product search, the shopper's account and the cart, beside the header menu.
  *
  * They appear once the site sells something (FluentCart is active and has a published product), in the theme's

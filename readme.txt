@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.22.0
+Stable tag: 0.22.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,6 +128,10 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.22.1 =
+* Product photos in FluentCart's shop lists and carousels now load a size that fits the card instead of the full-size upload, so shop pages open faster, most of all on phones. Product pages are left as FluentCart makes them.
+* Wishio wishlists match the style: the floating wishlist button, the wishlist page's buttons and its table take the style's button colour, text colours, borders and corners.
 
 = 0.22.0 =
 * Product and category pages now use FluentCart's own templates again, so nothing FluentCart shows is left out (such as package size and weight). They load the theme's header and footer, and the theme styles FluentCart's parts with the style's fonts and corners.
