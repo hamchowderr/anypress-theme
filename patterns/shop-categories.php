@@ -31,13 +31,5 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:terms-query {"termQuery":{"perPage":8,"taxonomy":"product-categories","order":"desc","orderBy":"count","include":[],"hideEmpty":true,"showNested":false,"inherit":false}} -->
-<div class="wp-block-terms-query"><!-- wp:term-template {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"9rem"}} -->
-<!-- wp:group {"className":"is-style-section-tint anypress-category-tile","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|x-small"},"border":{"radius":"var:preset|border-radius|md"},"dimensions":{"minHeight":"7rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","verticalAlignment":"space-between"}} -->
-<div class="wp-block-group is-style-section-tint anypress-category-tile" style="border-radius:var(--wp--preset--border-radius--md);min-height:7rem;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:term-name {"level":3,"isLink":true,"fontSize":"medium"} /-->
-
-<!-- wp:term-count {"textColor":"secondary","fontSize":"small"} /--></div>
-<!-- /wp:group -->
-<!-- /wp:term-template --></div>
-<!-- /wp:terms-query --></section>
+<!-- wp:fluent-cart/product-categories-list {"display_style":"list","show_product_count":true,"show_hierarchy":false,"show_empty":false,"className":"anypress-category-tiles"} /--></section>
 <!-- /wp:group -->

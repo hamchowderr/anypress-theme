@@ -343,7 +343,7 @@ page("page-contact", "Contact page",
 print("pages ok")
 
 # Shop (FluentCart): the headings of its category and brand pages, and its product list as a section any page can use.
-# The theme's FluentCart templates (templates/single-fluent-products.html, taxonomy-product-*.html, page-shop.html) use
+# The theme's FluentCart page templates (taxonomy-product-brands.html, page-shop.html) use
 # these, so their words can be translated. The product list keeps FluentCart's own blocks (filters, cards, pages of
 # results), so the owner edits it in the Site Editor like any FluentCart list.
 EYEBROW = lambda text: ('<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"}}} -->\n'
@@ -416,15 +416,11 @@ for slug, title, desc, kw, eyebrow, h, text, label, style, extra in (
           section(h, style, showcase_head(eyebrow, h, text, label) + "\n\n" + products(False, cid="anypress-" + slug, extra=extra, switcher=False, paginator=False),
                   t="xx-large", b="xx-large", content="80rem"))
 
-CATEGORY_TILE = ('<!-- wp:group {"className":"is-style-section-tint anypress-category-tile","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|x-small"},"border":{"radius":"var:preset|border-radius|md"},"dimensions":{"minHeight":"7rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","verticalAlignment":"space-between"}} -->\n'
-    '<div class="wp-block-group is-style-section-tint anypress-category-tile" style="border-radius:var(--wp--preset--border-radius--md);min-height:7rem;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">'
-    '<!-- wp:term-name {"level":3,"isLink":true,"fontSize":"medium"} /-->\n\n<!-- wp:term-count {"textColor":"secondary","fontSize":"small"} /--></div>\n<!-- /wp:group -->')
 write("shop-categories", "Shop: shop by category",
       "The shop's product categories as tiles with their names and how many products each has, each opening its category page, under a heading. For a home page.",
       "anypress/blocks-shop", "shop, categories, collections, browse, home, fluentcart",
       section("Shop by category", None,
               showcase_head("Browse", "Shop by category", "Find what you came for.", "Shop everything") + "\n\n"
-              + '<!-- wp:terms-query {"termQuery":{"perPage":8,"taxonomy":"product-categories","order":"desc","orderBy":"count","include":[],"hideEmpty":true,"showNested":false,"inherit":false}} -->\n<div class="wp-block-terms-query">'
-              + '<!-- wp:term-template {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"9rem"}} -->\n' + CATEGORY_TILE + '\n<!-- /wp:term-template --></div>\n<!-- /wp:terms-query -->',
+              + '<!-- wp:fluent-cart/product-categories-list {"display_style":"list","show_product_count":true,"show_hierarchy":false,"show_empty":false,"className":"anypress-category-tiles"} /-->',
               t="xx-large", b="xx-large", content="80rem"))
 print("shop ok")

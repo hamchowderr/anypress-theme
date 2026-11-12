@@ -145,7 +145,7 @@ function anypress_enqueue_styles() {
 	// Long links (an email address set huge) wrap instead of pushing the page sideways on phones, and wide tables scroll inside their box.
 	wp_add_inline_style( 'anypress', '.wp-site-blocks>footer{margin-block-start:0}.wp-block-column>.wp-block-cover:only-child{height:100%}:where(p,h1,h2,h3,h4) a{overflow-wrap:anywhere}.wp-block-table{overflow-x:auto}' );
 	// A category tile (Shop: shop by category) opens its category wherever it is clicked, not only on the name.
-	wp_add_inline_style( 'anypress', '.anypress-category-tile{position:relative}.anypress-category-tile .wp-block-term-name a{color:inherit;text-decoration:none}.anypress-category-tile .wp-block-term-name a::after{content:"";position:absolute;inset:0;border-radius:inherit}.anypress-category-tile:hover .wp-block-term-name a,.anypress-category-tile:focus-within .wp-block-term-name a{text-decoration:underline}' );
+	wp_add_inline_style( 'anypress', '.anypress-category-tiles .fct-categories-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(9rem,1fr));gap:var(--wp--preset--spacing--small)}.anypress-category-tiles .fct-categories-list>li{position:relative;min-height:7rem;padding:var(--wp--preset--spacing--medium);border-radius:var(--wp--preset--border-radius--md);background:var(--wp--preset--color--tertiary);color:var(--wp--preset--color--main)}.anypress-category-tiles .fct-category-link-wrap{display:flex;flex-direction:column;justify-content:space-between;height:100%;gap:var(--wp--preset--spacing--x-small)}.anypress-category-tiles .fct-category-link{color:inherit;text-decoration:none;font-size:var(--wp--preset--font-size--medium);font-weight:600}.anypress-category-tiles .fct-category-link::after{content:"";position:absolute;inset:0;border-radius:inherit}.anypress-category-tiles li:hover .fct-category-link,.anypress-category-tiles li:focus-within .fct-category-link{text-decoration:underline}.anypress-category-tiles .fct-category-count{color:var(--wp--preset--color--secondary);font-size:var(--wp--preset--font-size--small)}' );
 }
 add_action( 'wp_enqueue_scripts', 'anypress_enqueue_styles' );
 
@@ -267,7 +267,8 @@ add_filter( 'hooked_block_types', 'anypress_shop_links_hook', 10, 4 );
 
 /**
  * The header shop links' look (see anypress_shop_links_hook()), in the editor as on the site: plain icons in the
- * header's own colour, beside the menu. On phones the menu button comes last and the account link shows only its icon.
+ * header's own colour, beside the menu. FluentCart's product search shows there on wide screens when the header has no buttons of its own;
+ * the Shop page always has it. On phones the menu button comes last and the account link shows only its icon.
  */
 function anypress_shop_links_styles() {
 	if ( ! defined( 'FLUENTCART_VERSION' ) ) {
@@ -276,10 +277,10 @@ function anypress_shop_links_styles() {
 	$css  = '';
 	$css .= 'header .wp-block-navigation:has(+.anypress-shop-links){margin-inline-start:auto}';
 	$css .= '.anypress-shop-links{align-items:center}.anypress-shop-links svg{width:1.35em;height:1.35em}';
-	$css .= '.anypress-shop-links .wp-block-search__button{background:none;color:inherit;border:0;padding:.25em;margin:0;box-shadow:none}.anypress-shop-links .wp-block-search__button svg{fill:currentColor}';
+	$css .= '.anypress-shop-links .fluent-cart-search-bar-app-wrapper{width:11rem;flex-shrink:1;min-width:0}header:has(.wp-block-buttons) .anypress-shop-links .fluent-cart-search-bar-app-wrapper{display:none}@media (max-width:1279px){.anypress-shop-links .fluent-cart-search-bar-app-wrapper{display:none}}';
 	$css .= '.anypress-shop-links .fct-customer-dashboard-link{display:inline-flex;align-items:center;gap:.35em;color:inherit;text-decoration:none}.anypress-shop-links .fct-customer-dashboard-icon{display:inline-flex}';
 	$css .= '.anypress-shop-links .fct-mini-cart-button{background:none;color:inherit;border:0;padding:.25em;cursor:pointer}';
-	$css .= '@media (max-width:781px){.anypress-shop-links .fct-customer-dashboard-link>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}header .wp-block-group:has(>.anypress-shop-links)>.wp-block-navigation{order:2;margin-inline-start:0}.anypress-shop-links{margin-inline-start:auto;gap:.35rem}header:has(.anypress-shop-links) .wp-block-site-title a{overflow-wrap:normal}}@media (max-width:600px){.anypress-shop-links .wp-block-search{display:none}header:has(.anypress-shop-links) .wp-block-buttons .wp-block-button__link{padding:.5em .8em;font-size:var(--wp--preset--font-size--small);white-space:nowrap}.anypress-shop-links,header:has(.anypress-shop-links) .wp-block-buttons{flex-shrink:0}header:has(.anypress-shop-links) .wp-block-group:has(>.wp-block-site-title){min-width:0;flex-shrink:1}header:has(.anypress-shop-links) .wp-block-site-title{min-width:0}}';
+	$css .= '@media (max-width:781px){.anypress-shop-links .fct-customer-dashboard-link>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}header .wp-block-group:has(>.anypress-shop-links)>.wp-block-navigation{order:2;margin-inline-start:0}.anypress-shop-links{margin-inline-start:auto;gap:.35rem}header:has(.anypress-shop-links) .wp-block-site-title a{overflow-wrap:normal}}@media (max-width:600px){header:has(.anypress-shop-links) .wp-block-buttons .wp-block-button__link{padding:.5em .8em;font-size:var(--wp--preset--font-size--small);white-space:nowrap}.anypress-shop-links,header:has(.anypress-shop-links) .wp-block-buttons{flex-shrink:0}header:has(.anypress-shop-links) .wp-block-group:has(>.wp-block-site-title){min-width:0;flex-shrink:1}header:has(.anypress-shop-links) .wp-block-site-title{min-width:0}}';
 	wp_register_style( 'anypress-shop-links', false, array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'anypress-shop-links' );
 	wp_add_inline_style( 'anypress-shop-links', $css );
@@ -299,11 +300,10 @@ function anypress_shop_links_block( $block, $type, $position, $anchor ) {
 	if ( null === $block || 'after' !== $position || 'core/navigation' !== ( $anchor['blockName'] ?? '' ) ) {
 		return $block;
 	}
-	$search  = esc_attr__( 'Search products', 'anypress' );
 	$account = esc_html__( 'Account', 'anypress' );
 	$markup  = '<!-- wp:group {"metadata":{"name":"' . esc_attr__( 'Shop links', 'anypress' ) . '"},"className":"anypress-shop-links","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->'
 		. '<div class="wp-block-group anypress-shop-links">'
-		. '<!-- wp:search {"label":"' . $search . '","showLabel":false,"placeholder":"' . $search . '","buttonText":"' . $search . '","buttonPosition":"button-only","buttonUseIcon":true,"isSearchFieldHidden":true,"query":{"post_type":"fluent-products"}} /-->'
+		. '<!-- wp:fluent-cart/fluent-products-search-bar {"url_mode":"current-tab"} /-->'
 		. '<!-- wp:fluent-cart/customer-dashboard-button {"display_type":"link","button_text":"' . $account . '"} /-->'
 		. '<!-- wp:fluent-cart/mini-cart {"show_total_price":false,"count_mode":"total_quantity"} /-->'
 		. '</div><!-- /wp:group -->';
