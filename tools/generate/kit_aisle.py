@@ -197,14 +197,20 @@ kit("aisle-hero", AK, "Aisle hero: a full-width photo with two ways in",
           btns([("Shop new in", None, "/new-in/"), ("Shop everything", "outline", "/shop/")], "center")]),
        "Hero", "placeholder-wide.svg", 30, "92vh", "bottom center", ("xx-large", "xx-large", "medium", "medium"), "60rem"))
 
+def aicon(par, icon):
+    """A line icon in the brand colour above a paragraph: the theme's anypress-icon classes (truck, clock, return,
+    repair). Change the icon in the block's Additional CSS class(es)."""
+    cls = f"anypress-icon anypress-icon-{icon}"
+    return par.replace('<!-- wp:paragraph {', '<!-- wp:paragraph {"className":"' + cls + '",', 1).replace('<p class="', f'<p class="{cls} ', 1)
+
 kit("aisle-promises", AK, "Aisle promises: four reasons to buy here",
- "Four short promises in one thin row (free shipping, same-day dispatch, returns, repairs), right under the hero where shoppers look for them. Part of the Aisle kit; keep them true to the shop's settings.",
+ "Four short promises in one thin row, each under a small line icon (free shipping, same-day dispatch, returns, repairs), right under the hero where shoppers look for them. Part of the Aisle kit; keep them true to the shop's settings.",
  "promises, shipping, returns, guarantee, trust, aisle",
- sec("Promises", grid([stackg([p(t, "small", None, "center", None, {"fontWeight": "600"}), p(d, "x-small", "secondary", "center")], "0") for t, d in [
-    ("Free shipping over $75", "Anywhere in the US"),
-    ("Order by 2pm, sent today", "Packed by hand in Portland"),
-    ("60 days to return", "Or swap a size for free"),
-    ("Free repairs for a year", "Seams, zips and cuffs")]], 4, "9rem", "medium"), None, ("large", "large", None, None)))
+ sec("Promises", grid([stackg([aicon(p(t, "small", None, "center", None, {"fontWeight": "600"}), icon), p(d, "x-small", "secondary", "center")], "0") for icon, t, d in [
+    ("truck", "Free shipping over $75", "Anywhere in the US"),
+    ("clock", "Order by 2pm, sent today", "Packed by hand in Portland"),
+    ("return", "60 days to return", "Or swap a size for free"),
+    ("repair", "Free repairs for a year", "Seams, zips and cuffs")]], 4, "9rem", "medium"), None, ("large", "large", None, None)))
 
 def atile(name, href, text, alt, minh="36rem", size="xx-large", button="Shop now"):
     """A photo tile: the photo fills it, the name in the serif and a small link sit at its foot."""
