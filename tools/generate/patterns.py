@@ -341,3 +341,86 @@ page("page-contact", "Contact page",
  "contact, hours, address, phone, location",
  ["contact-details", "faq"])
 print("pages ok")
+
+# Shop (FluentCart): the headings of its category and brand pages, and its product list as a section any page can use.
+# The theme's FluentCart page templates (taxonomy-product-brands.html, page-shop.html) use
+# these, so their words can be translated. The product list keeps FluentCart's own blocks (filters, cards, pages of
+# results), so the owner edits it in the Site Editor like any FluentCart list.
+EYEBROW = lambda text: ('<!-- wp:paragraph {"textColor":"secondary","fontSize":"small","style":{"typography":{"fontWeight":"600","letterSpacing":"0.08em","textTransform":"uppercase"}}} -->\n'
+    '<p class="has-secondary-color has-text-color has-small-font-size" style="font-weight:600;letter-spacing:0.08em;text-transform:uppercase">' + T(text) + '</p>\n<!-- /wp:paragraph -->')
+def shop_hero(eyebrow):
+    return section("Page hero", "section-tint", group(
+        EYEBROW(eyebrow) + "\n\n"
+        + '<!-- wp:query-title {"type":"archive","showPrefix":false,"level":1,"fontSize":"xxx-large"} /-->\n\n'
+        + '<!-- wp:term-description {"fontSize":"large"} /-->',
+        gap="small", layout={"type": "constrained", "contentSize": "48rem", "justifyContent": "left"}), t="xx-large", b="x-large", content="80rem")
+for kind, word, what in (("category", "Shop", "a product category"), ("brand", "Brand", "a brand")):
+    write(f"shop-hero-{kind}", f"Shop: {kind} heading",
+          f"The top of {what}'s page in the shop: a small label, the {kind} name and its description, on the tint section style. FluentCart's {kind} pages use it.",
+          "anypress/blocks-shop", f"shop, {kind}, products, heading, fluentcart",
+          shop_hero(word), extra_head=" * Inserter: no\n")
+
+def products(filters, cid=None, extra=None, switcher=True, paginator=True):
+    """cid: the id FluentCart keeps the card design under; extra: more products block attributes (how many, in what order)."""
+    attrs = {"colors": {}}
+    if extra: attrs.update(extra)
+    if filters:
+        attrs.update({"enable_filter": True, "enable_wildcard_filter": True, "filters": {
+            "product-categories": {"filter_type": "options", "is_meta": True, "label": "Categories", "enabled": True, "multiple": False},
+            "price_range": {"filter_type": "range", "is_meta": False, "label": "Price", "enabled": True}}})
+    return ('<!-- wp:fluent-cart/products ' + j(attrs) + ' -->\n'
+        '<div class="wp-block-fluent-cart-products"><div class="fct-products-wrapper" data-fluent-cart-shop-app="true" data-fluent-cart-product-wrapper="">'
+        + ('<!-- wp:fluent-cart/shopapp-product-view-switcher {"className":"fluent-product-view-switcher","metadata":{"name":"View Switcher"}} /-->\n\n' if switcher else '') +
+        '<!-- wp:fluent-cart/shopapp-product-container {"className":"fluent-product-container"} -->\n'
+        '<div class="wp-block-fluent-cart-shopapp-product-container fluent-product-container"><!-- wp:fluent-cart/shopapp-product-filter -->\n'
+        '<div class="fluent-cart-product-filter-wrapper"><!-- wp:fluent-cart/shopapp-product-filter-search-box /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-filters /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-button -->\n'
+        '<div class="fct-product-block-filter-item"><!-- wp:fluent-cart/shopapp-product-filter-apply-button /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-filter-reset-button /--></div>\n<!-- /wp:fluent-cart/shopapp-product-filter-button --></div>\n<!-- /wp:fluent-cart/shopapp-product-filter -->\n\n'
+        # FluentCart keeps the card's design under this id, to draw more cards the same way when visitors filter or page.
+        '<!-- wp:fluent-cart/shopapp-product-loop {"wp_client_id":"' + (cid or 'anypress-shop-products' + ('-filtered' if filters else '')) + '","className":"fluent-product-loop","metadata":{"name":"Product Loop"}} -->\n'
+        '<div class="fluent-cart-product-loop fct-product-block-editor-product-card"><!-- wp:fluent-cart/shopapp-product-image -->\n<div class="fluent-cart-product-image"></div>\n<!-- /wp:fluent-cart/shopapp-product-image -->\n\n'
+        # A Sale badge on discounted products and a Sold out badge on products out of stock, over the photo's corner.
+        '<!-- wp:fluent-cart/sale-badge {"show_percentage":true} /-->\n\n<!-- wp:fluent-cart/sold-out-badge /-->\n\n'
+        '<!-- wp:fluent-cart/shopapp-product-title /-->\n\n<!-- wp:fluent-cart/shopapp-product-price /-->\n\n<!-- wp:fluent-cart/shopapp-product-buttons /--></div>\n<!-- /wp:fluent-cart/shopapp-product-loop --></div>\n<!-- /wp:fluent-cart/shopapp-product-container -->\n\n'
+        + ('<!-- wp:fluent-cart/product-paginator {"className":"fluent-product-paginator","metadata":{"name":"Paginator"}} -->\n'
+        '<div class="fluent-cart-product-paginator"><!-- wp:fluent-cart/product-paginator-info /-->\n\n<!-- wp:fluent-cart/product-paginator-number /--></div>\n<!-- /wp:fluent-cart/product-paginator -->\n\n' if paginator else '') +
+        '<!-- wp:fluent-cart/shopapp-product-no-result {"className":"fluent-product-no-result","metadata":{"name":"No Result"}} -->\n'
+        '<div class="fluent-cart-shop-no-result-wrap">' + para("Nothing here yet", size="large", align="center") + "\n\n"
+        + para("Try clearing the filters, or look through everything in the shop.", color="secondary", align="center")
+        + '</div>\n<!-- /wp:fluent-cart/shopapp-product-no-result --></div></div>\n<!-- /wp:fluent-cart/products -->')
+write("shop-products", "Shop: products",
+      "The shop's products as cards with photo, name, price and button, in pages, with a switch between grid and list. FluentCart's category and brand pages use it; add it to any page to show products there.",
+      "anypress/blocks-shop", "shop, products, product grid, catalogue, store, fluentcart",
+      section("Products", None, products(False), t="medium", b="xx-large", content="80rem"))
+write("shop-products-filtered", "Shop: products with search and filters",
+      "The shop's products with a search box and filters for category and price beside them, then cards in pages. For a shop page with many products.",
+      "anypress/blocks-shop", "shop, products, filter, search, catalogue, store, fluentcart",
+      section("Products", None, products(True), t="medium", b="xx-large", content="80rem"))
+# Sections for a home page or any page: a few products with a link to the whole shop, and the shop's categories.
+VIEW_ALL = lambda label: ('<!-- wp:buttons -->\n<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->\n'
+    '<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( \'/shop/\' ) ); ?>">' + T(label) + '</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons -->')
+def showcase_head(eyebrow, title, text, label):
+    return ('<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->\n<div class="wp-block-group">'
+        + group(EYEBROW(eyebrow) + "\n\n" + heading(title, size="xx-large") + "\n\n" + para(text, color="secondary"), gap="small", layout={"type": "constrained", "contentSize": "40rem", "justifyContent": "left"})
+        + "\n\n" + VIEW_ALL(label) + '</div>\n<!-- /wp:group -->')
+for slug, title, desc, kw, eyebrow, h, text, label, style, extra in (
+    ("shop-new-arrivals", "Shop: new arrivals",
+     "The four newest products as cards with photo, name, price and button, under a heading, with a link to the whole shop. For a home page.",
+     "shop, products, new, latest, arrivals, home, fluentcart", "Just in", "New arrivals",
+     "The latest additions to the shop.", "Shop everything", None,
+     {"per_page": 4, "order_by": "ID", "order_type": "DESC", "paginator": "numbers"}),  # "numbers" with no page links: no loading more on scroll
+):
+    write(slug, title, desc, "anypress/blocks-shop", kw,
+          section(h, style, showcase_head(eyebrow, h, text, label) + "\n\n" + products(False, cid="anypress-" + slug, extra=extra, switcher=False, paginator=False),
+                  t="xx-large", b="xx-large", content="80rem"))
+
+write("shop-categories", "Shop: shop by category",
+      "The shop's product categories as tiles with their names and how many products each has, each opening its category page, under a heading. For a home page.",
+      "anypress/blocks-shop", "shop, categories, collections, browse, home, fluentcart",
+      section("Shop by category", None,
+              showcase_head("Browse", "Shop by category", "Find what you came for.", "Shop everything") + "\n\n"
+              + '<!-- wp:fluent-cart/product-categories-list {"display_style":"list","show_product_count":true,"show_hierarchy":false,"show_empty":false,"className":"anypress-category-tiles"} /-->',
+              t="xx-large", b="xx-large", content="80rem"))
+print("shop ok")

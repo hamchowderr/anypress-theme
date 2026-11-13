@@ -20,7 +20,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Nadia', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/team/nadia/"><?php esc_html_e( 'Nadia', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -34,7 +34,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Ollie', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/team/ollie/"><?php esc_html_e( 'Ollie', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -48,7 +48,7 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Bea', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/team/bea/"><?php esc_html_e( 'Bea', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->

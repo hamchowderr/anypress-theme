@@ -1,0 +1,402 @@
+{
+	"files": {
+		"baby.jpg": "A toddler laughing and splashing",
+		"back.jpg": "A swimmer doing backstroke between lane ropes",
+		"beachkid.jpg": "A little girl in armbands running into the water",
+		"boyjump.jpg": "A boy jumping into the pool",
+		"breath.jpg": "A swimmer coming up for air in goggles",
+		"couple.jpg": "Rosa and Mark Delgado, founders",
+		"crawl.jpg": "A swimmer doing front crawl",
+		"family.jpg": "A family laughing in a park",
+		"flamingo.jpg": "A pink flamingo pool float",
+		"float.jpg": "A child floating on a ring",
+		"fly.jpg": "A swimmer doing butterfly",
+		"fly2.jpg": "A swimmer doing butterfly down the lane",
+		"fountain.jpg": "A child playing in a splash fountain",
+		"frog.jpg": "Swimmers training in lanes",
+		"girls.jpg": "Three girls in goggles at the side of the pool",
+		"glass.jpg": "A pool under a glass roof",
+		"gogglegirl.jpg": "A little girl in pink goggles",
+		"goggles.jpg": "Two girls in goggles",
+		"hall.jpg": "A big indoor pool with flags",
+		"hall2.jpg": "A clean indoor teaching pool",
+		"hug.jpg": "A mother hugging her child in the pool",
+		"indoor.jpg": "A warm indoor teaching pool",
+		"kitcap.jpg": "A swim cap, goggles and pool shoes",
+		"lake.jpg": "Two girls jumping into the water",
+		"lane.jpg": "A swimmer in a lane",
+		"lanes.jpg": "An indoor pool with lanes",
+		"lanes2.jpg": "Empty pool lanes",
+		"man.jpg": "Luis Herrera, franchise partner",
+		"mask.jpg": "A swim mask held up to the light",
+		"pink.jpg": "A swimmer in a pink cap",
+		"pinkring.jpg": "A pink ring floating on the pool",
+		"pool.jpg": "A long pool in a sunny courtyard",
+		"poolgoggles.jpg": "Goggles at the edge of the pool",
+		"ring.jpg": "A striped ring on sparkling water",
+		"round.jpg": "A round pool seen from above",
+		"splash.jpg": "A boy splashing in the water",
+		"swim.jpg": "Swimmers in an outdoor pool",
+		"woman.jpg": "Dani Okafor, head of teaching"
+	},
+	"by_alt": {
+		"@wide": "lanes.jpg",
+		"@tall": "boyjump.jpg",
+		"@square": "ring.jpg",
+		"Two girls in goggles smiling at the side of the pool": "girls.jpg",
+		"A child floating on a ring in a blue pool": "float.jpg",
+		"Franchise partner: Luis Herrera": "man.jpg",
+		"Franchise: a new pool, ready for opening day": "hall2.jpg",
+		"Own a franchise: a finished teaching pool": "indoor.jpg",
+		"Our story: children learning in the teaching pool": "hug.jpg",
+		"Team: Rosa and Mark Delgado": "couple.jpg",
+		"Team: Dani Okafor": "woman.jpg",
+		"Team: Luis Herrera": "man.jpg",
+		"Programme: Little splashers": "baby.jpg",
+		"Programme: Preschool": "gogglegirl.jpg",
+		"Programme: Learn to swim": "goggles.jpg",
+		"Programme: Swim team prep": "breath.jpg",
+		"Programme page: Little splashers": "hug.jpg",
+		"This class: in the water together": "hug.jpg",
+		"This class: first splashes": "baby.jpg",
+		"This class: floating and kicking": "float.jpg",
+		"This class: big smiles after": "fountain.jpg",
+		"Programme page: Preschool": "gogglegirl.jpg",
+		"Preschool: photo 1": "gogglegirl.jpg",
+		"Preschool: photo 2": "splash.jpg",
+		"Preschool: photo 3": "beachkid.jpg",
+		"Preschool: photo 4": "pinkring.jpg",
+		"Programme page: Learn to swim": "goggles.jpg",
+		"Learn to swim: photo 1": "goggles.jpg",
+		"Learn to swim: photo 2": "boyjump.jpg",
+		"Learn to swim: photo 3": "lake.jpg",
+		"Learn to swim: photo 4": "poolgoggles.jpg",
+		"Programme page: Swim team prep": "breath.jpg",
+		"Swim team prep: photo 1": "fly2.jpg",
+		"Swim team prep: photo 2": "frog.jpg",
+		"Swim team prep: photo 3": "back.jpg",
+		"Swim team prep: photo 4": "lanes.jpg",
+		"Location page: Austin, South Lamar": "lanes.jpg",
+		"Location page: Austin": "lanes.jpg",
+		"Location page: Round Rock": "hall2.jpg",
+		"Location page: San Antonio, Stone Oak": "hall.jpg",
+		"Location page: Houston, the Heights": "glass.jpg",
+		"Location page: Frisco": "indoor.jpg",
+		"Location page: Fort Worth": "round.jpg"
+	},
+	"fallback": "lanes.jpg",
+	"posts": {
+		"frisco": "indoor.jpg",
+		"nerves": "gogglegirl.jpg",
+		"summer": "beachkid.jpg",
+		"open": "hall2.jpg",
+		"warm": "hug.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "baby.jpg",
+			"title": "Child Bathing",
+			"creator": "Bath Time",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/child-bathing-TI78URJOOR"
+		},
+		{
+			"file": "back.jpg",
+			"title": "Navy team’s Petty Officer 2nd",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388467/free-photo-image-olympics-athlete-cc0"
+		},
+		{
+			"file": "beachkid.jpg",
+			"title": "Kid Child",
+			"creator": "Leo Rivas-Micoud",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/kid-child-J9ELBYMMBM"
+		},
+		{
+			"file": "boyjump.jpg",
+			"title": "Boy Swimming",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/boy-swimming-GARU2AJF85"
+		},
+		{
+			"file": "breath.jpg",
+			"title": "Army Reservist Chasity Kuczer swims",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388415/free-photo-image-water-sports-army-reservist-chasity-kuczer-athlete"
+		},
+		{
+			"file": "couple.jpg",
+			"title": "Kate Danner, Aledo, Illinois, raises",
+			"creator": "U.S. Department of Agriculture",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3306648/free-photo-image-owner-fashion-arcade-game-machine"
+		},
+		{
+			"file": "crawl.jpg",
+			"title": "Special Operations Command’s Sean Walsh",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388433/free-photo-image-athlete-cc0-chassity-kuczer"
+		},
+		{
+			"file": "family.jpg",
+			"title": "Black Family",
+			"creator": "Family First",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/black-family-6KRBT8MYES"
+		},
+		{
+			"file": "flamingo.jpg",
+			"title": "Blow flamingo drink holder pool",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11515773/blow-flamingo-drink-holder-for-pool"
+		},
+		{
+			"file": "float.jpg",
+			"title": "Young Boy",
+			"creator": "Oleksandr Pidvalnyi",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/young-boy-EW66URWTJZ"
+		},
+		{
+			"file": "fly.jpg",
+			"title": "United Kingdom’s Andy Grant swims",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388454/free-photo-image-andy-grant-athlete-cc0"
+		},
+		{
+			"file": "fly2.jpg",
+			"title": "Coast Guard Cadet Erin Talbot",
+			"creator": "U.S. Coast Guard Academy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5803456/photo-image-public-domain-person-water"
+		},
+		{
+			"file": "fountain.jpg",
+			"title": "Water Fountain",
+			"creator": "frank mckenna",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/water-fountain-KQJSTQHS3S"
+		},
+		{
+			"file": "frog.jpg",
+			"title": "United Kingdom’s Daniell Hampson-Carroll swims",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388440/free-photo-image-women-competitive-swimming-race-competition"
+		},
+		{
+			"file": "girls.jpg",
+			"title": "ANNAPOLIS, Md. (July 15, 2022)",
+			"creator": "U.S. Naval Academy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11073032/photo-image-face-people-public-domain"
+		},
+		{
+			"file": "glass.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6053285/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "gogglegirl.jpg",
+			"title": "Child Bathing",
+			"creator": "Bath Time",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/child-bathing-OAIZ6X2GNK"
+		},
+		{
+			"file": "goggles.jpg",
+			"title": "Kids Swimming",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/kids-swimming-SFW9PTO8C7"
+		},
+		{
+			"file": "hall.jpg",
+			"title": "Swimming Pool",
+			"creator": "Artem Verbo",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/swimming-pool-UUJL1P193T"
+		},
+		{
+			"file": "hall2.jpg",
+			"title": "Homowack indoor pool, Mamakating, New",
+			"creator": "libraryofcongress",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3801622/photo-image-vintage-retro-water"
+		},
+		{
+			"file": "hug.jpg",
+			"title": "Kids Swimming",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/kids-swimming-NST0RHLXC5"
+		},
+		{
+			"file": "indoor.jpg",
+			"title": "Free indoors swimming pool image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5922205/photo-image-public-domain-blue-water"
+		},
+		{
+			"file": "kitcap.jpg",
+			"title": "Swimming wear",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042203/swimming-wear-free-public-domain-cc0-image"
+		},
+		{
+			"file": "lake.jpg",
+			"title": "Children Lake",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/children-lake-L50TFWIPHZ"
+		},
+		{
+			"file": "lane.jpg",
+			"title": "Midshipmen 4th Class, plebes, United",
+			"creator": "U.S. Naval Academy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8708509/photo-image-public-domain-person-water"
+		},
+		{
+			"file": "lanes.jpg",
+			"title": "ANNAPOLIS, Md. (July 15, 2022)",
+			"creator": "U.S. Naval Academy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11072816/photo-image-person-public-domain-women"
+		},
+		{
+			"file": "lanes2.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5942856/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "man.jpg",
+			"title": "Captain David Thomas offloading his",
+			"creator": "U.S. Department of Agriculture",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3306937/free-photo-image-smile-small-business-owner"
+		},
+		{
+			"file": "mask.jpg",
+			"title": "Closeup snorkeling goggles ocean",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6041457/photo-image-public-domain-ocean-free"
+		},
+		{
+			"file": "pink.jpg",
+			"title": "Marines Cpl. Kyle Reid swims",
+			"creator": "U.S. Department of Defense",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3388475/free-photo-image-olympics-swimming-pool"
+		},
+		{
+			"file": "pinkring.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5959521/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "pool.jpg",
+			"title": "Swimming Pool",
+			"creator": "Jason Briscoe",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/swimming-pool-3HC5EH2ITW"
+		},
+		{
+			"file": "poolgoggles.jpg",
+			"title": "Snorkel goggles pool edge",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3299428/free-photo-image-scuba-diving-accessory-adventure"
+		},
+		{
+			"file": "ring.jpg",
+			"title": "Free floating balloon swimming pool",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5911758/image-public-domain-balloon-summer"
+		},
+		{
+			"file": "round.jpg",
+			"title": "High-angle view of a serene indoor swimming pool area with clear blue water and large windows letting in natural light.",
+			"creator": "Alina Kakshapati",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/5756a2050d/"
+		},
+		{
+			"file": "splash.jpg",
+			"title": "Sea Ocean",
+			"creator": "Janko Ferlic",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sea-ocean-BZKL1ONTMB"
+		},
+		{
+			"file": "swim.jpg",
+			"title": "Free people swimming race image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5911628/image-public-domain-blue-wave"
+		},
+		{
+			"file": "woman.jpg",
+			"title": "Smiling Woman",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/smiling-woman-W6GFOSFAXA"
+		}
+	]
+}

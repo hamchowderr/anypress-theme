@@ -1,0 +1,316 @@
+{
+	"files": {
+		"hero.jpg": "Make-up brushes in a pot beside pink roses and a mirror",
+		"popup.jpg": "Pale pink roses on a pale table",
+		"chairs.jpg": "Red salon chairs and a plant by a tall window",
+		"salon.jpg": "A row of white salon chairs and mirrors",
+		"salon2.jpg": "Red salon chairs along a mirrored wall",
+		"counter.jpg": "A barber's counter with an oil bottle and a tin of wax",
+		"cutting.jpg": "A stylist cutting long dark hair with scissors",
+		"scissors.jpg": "Scissors trimming short brown hair between two fingers",
+		"colour.jpg": "A woman with long red hair",
+		"purple.jpg": "A woman with big purple curls among autumn leaves",
+		"autumn.jpg": "A woman with long brown hair lying in autumn leaves",
+		"brunette.jpg": "A woman with soft brown waves",
+		"redcurls.jpg": "A woman with long copper curls",
+		"curls.jpg": "Close-up of loose brown curls",
+		"blowdry.jpg": "A stylist blow-drying hair with a rose gold dryer",
+		"dryer.jpg": "A round brush and a hair dryer",
+		"braids.jpg": "A woman with two braids pulled back from her face",
+		"brows.jpg": "A close-up of an eye with a shaped brow and long lashes",
+		"eyes.jpg": "Two faces side by side, showing groomed brows",
+		"flatlay.jpg": "Make-up brushes, an eyeshadow palette and a lash curler",
+		"brushes.jpg": "Make-up brushes laid out in a leather case",
+		"blush.jpg": "A pink blush compact and a brush",
+		"lipstick.jpg": "A row of gold lipsticks in the sun",
+		"barber.jpg": "A barber with tattooed arms clipping a client's hair",
+		"barber2.jpg": "A bearded barber trimming a client's hair",
+		"nadia.jpg": "A smiling woman with short dark hair",
+		"ollie.jpg": "A smiling young man running a hand through his hair",
+		"bea.jpg": "A woman with long brown hair smiling outdoors",
+		"jess.jpg": "A woman with long dark curls in a blue top"
+	},
+	"by_alt": {
+		"@tall": "chairs.jpg",
+		"@wide": "salon.jpg",
+		"@square": "curls.jpg",
+		"Make-up brushes in a pot on a pink table": "hero.jpg",
+		"Pink roses on a pale table": "popup.jpg",
+		"Recent work: soft copper colour on long waves": "redcurls.jpg",
+		"Recent work: a blow-dry being finished with a round brush": "blowdry.jpg",
+		"Recent work: curls cut dry, one by one": "curls.jpg",
+		"Inside the salon: chairs by the window": "salon2.jpg",
+		"Portrait of Nadia": "nadia.jpg",
+		"Portrait of Ollie": "ollie.jpg",
+		"Portrait of Bea": "bea.jpg",
+		"Our team: Nadia": "nadia.jpg",
+		"Our team: Ollie": "ollie.jpg",
+		"Our team: Bea": "bea.jpg",
+		"Our team: Jess": "jess.jpg",
+		"Inside the salon: red chairs and plants by a tall window": "chairs.jpg",
+		"Service: cut and style": "cutting.jpg",
+		"Service: colour": "colour.jpg",
+		"Service: balayage": "autumn.jpg",
+		"Service: blow-dry and styling": "blowdry.jpg",
+		"Service: brows and lashes": "brows.jpg",
+		"Service: men's cuts": "barber.jpg",
+		"Services: a stylist cutting long dark hair": "cutting.jpg",
+		"This service: a stylist cutting a client's hair": "scissors.jpg",
+		"Services: colour": "colour.jpg",
+		"This service: colour": "brunette.jpg",
+		"Services: balayage": "autumn.jpg",
+		"This service: balayage": "redcurls.jpg",
+		"Services: blow-dry and styling": "blowdry.jpg",
+		"This service: blow-dry and styling": "dryer.jpg",
+		"Services: brows and lashes": "brows.jpg",
+		"This service: brows and lashes": "eyes.jpg",
+		"Services: men's cuts": "barber.jpg",
+		"This service: men's cuts": "barber2.jpg",
+		"Our team: Nadia in the salon": "nadia.jpg",
+		"Our team: Ollie in the salon": "ollie.jpg",
+		"Our team: Bea in the salon": "bea.jpg",
+		"Our team: Jess in the salon": "jess.jpg"
+	},
+	"fallback": "chairs.jpg",
+	"posts": {
+		"colour": "purple.jpg",
+		"curls": "jess.jpg",
+		"blowdry": "braids.jpg",
+		"brows": "flatlay.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "Makeup Brush",
+			"creator": "Freestocks.org",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/makeup-brush-EXKVSL1OHJ"
+		},
+		{
+			"file": "popup.jpg",
+			"title": "Pink Flowers",
+			"creator": "Daria Shevtsova",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/pink-flowers-GIBUVDUHR2"
+		},
+		{
+			"file": "chairs.jpg",
+			"title": "Salon red seats",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023213/photo-image-public-domain-plant-house"
+		},
+		{
+			"file": "salon.jpg",
+			"title": "Beauty Salon",
+			"creator": "Leeroy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/beauty-salon-0AA03E91E8"
+		},
+		{
+			"file": "salon2.jpg",
+			"title": "Untitled",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5945436/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "counter.jpg",
+			"title": "Hair salon",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5919224/hair-salon-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "cutting.jpg",
+			"title": "Free woman getting haircut photo",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924894/photo-image-public-domain-person-woman"
+		},
+		{
+			"file": "scissors.jpg",
+			"title": "Hairdresser Cut",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/hairdresser-cut-S7UEWWIRTD"
+		},
+		{
+			"file": "colour.jpg",
+			"title": "Woman Portrait",
+			"creator": "Joseph L. Etchingham",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-portrait-OLT5TSPKH5"
+		},
+		{
+			"file": "purple.jpg",
+			"title": "Nature Plants",
+			"creator": "Tiko Giorgadze",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/nature-plants-33E6Y3TB4E"
+		},
+		{
+			"file": "autumn.jpg",
+			"title": "Romantic Park",
+			"creator": "Dana Tentis",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/romantic-park-FIGLTLWW8E"
+		},
+		{
+			"file": "brunette.jpg",
+			"title": "Woman Portrait",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-portrait-E0WBOPWDCM"
+		},
+		{
+			"file": "redcurls.jpg",
+			"title": "Beautiful Bright",
+			"creator": "Jonas Svidras",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/beautiful-bright-3I4TABQT6Q"
+		},
+		{
+			"file": "curls.jpg",
+			"title": "Close curly hair texture",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023211/photo-image-texture-public-domain-women"
+		},
+		{
+			"file": "blowdry.jpg",
+			"title": "Free hair stylist drying client's",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5907502/image-public-domain-woman-beauty"
+		},
+		{
+			"file": "dryer.jpg",
+			"title": "Roller hair brushes, black boar",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5803524/photo-image-public-domain-cc0"
+		},
+		{
+			"file": "braids.jpg",
+			"title": "Braided Hair",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/braided-hair-EH7GKJMHBV"
+		},
+		{
+			"file": "brows.jpg",
+			"title": "Eye Closeup",
+			"creator": "Lisa Fotios",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/eye-closeup-LXZ77IYCTB"
+		},
+		{
+			"file": "eyes.jpg",
+			"title": "Eyes Eyelashes",
+			"creator": "Soroush Karimi",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/eyes-eyelashes-2B47ZJBEU3"
+		},
+		{
+			"file": "flatlay.jpg",
+			"title": "Brush Makeup",
+			"creator": "kinkate",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/brush-makeup-W55QEDBEXB"
+		},
+		{
+			"file": "brushes.jpg",
+			"title": "Makeup Brush",
+			"creator": "Freestocks.org",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/makeup-brush-PZ0Z7K0JRR"
+		},
+		{
+			"file": "blush.jpg",
+			"title": "Makeup Brush",
+			"creator": "Studio 7042",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/makeup-brush-K00RNBNJGC"
+		},
+		{
+			"file": "lipstick.jpg",
+			"title": "Lipstick Beauty",
+			"creator": "Valeria Boltneva",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lipstick-beauty-7BQYY7CGAE"
+		},
+		{
+			"file": "barber.jpg",
+			"title": "Free hairdresser image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5923938/photo-image-public-domain-black-person"
+		},
+		{
+			"file": "barber2.jpg",
+			"title": "Barber Cutting",
+			"creator": "Nick Demou",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/barber-cutting-O6KYUCUFY4"
+		},
+		{
+			"file": "nadia.jpg",
+			"title": "Woman Portrait",
+			"creator": "Candace McDaniel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-portrait-KSXH58AKBR"
+		},
+		{
+			"file": "ollie.jpg",
+			"title": "Smiling Man",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/smiling-man-3LMPSCJQGQ"
+		},
+		{
+			"file": "bea.jpg",
+			"title": "Woman Portrait",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-portrait-FL7B8THF3Q"
+		},
+		{
+			"file": "jess.jpg",
+			"title": "Girl Autumn",
+			"creator": "Jonas Svidras",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-autumn-KVJUCEE9JY"
+		}
+	]
+}

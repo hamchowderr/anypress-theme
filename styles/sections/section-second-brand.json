@@ -75,6 +75,7 @@
 					}
 				}
 			}
-		}
+		},
+		"css": "&{--anypress-form-button-text:var(--wp--preset--color--primary-alt);--fluentform-primary:var(--wp--preset--color--primary-alt-accent);--fct-btn-bg-color:var(--wp--preset--color--primary-alt-accent);--fct-btn-text-color:var(--wp--preset--color--primary-alt);--fct-btn-border-color:var(--wp--preset--color--primary-alt-accent);--fct-btn-hover-bg-color:color-mix(in srgb, var(--wp--preset--color--primary-alt-accent) 85%, var(--wp--preset--color--primary-alt));--fct-btn-hover-text-color:var(--wp--preset--color--primary-alt)}"
 	}
 }

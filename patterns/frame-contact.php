@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Frame contact: the email address, huge
+ * Title: Frame contact: Write to me, huge
  * Slug: anypress/frame-contact
- * Description: The closing section: an invitation to get in touch and the email address as large as the page allows, with social links in small type. Part of the Frame kit.
+ * Description: The closing section: an invitation to get in touch as large as the page allows, linking to the email address shown under it, with social links in small type. Part of the Frame kit.
  * Categories: anypress/kit-portfolio
  * Keywords: contact, email, hire, commission, frame
  * Viewport Width: 1400
@@ -13,8 +13,12 @@
 <p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Commissions, prints and talks', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"fontFamily":"bricolage-grotesque","fontSize":"poster","style":{"typography":{"lineHeight":"1","fontWeight":"700","letterSpacing":"-0.04em"}}} -->
-<p class="has-bricolage-grotesque-font-family has-poster-font-size" style="line-height:1;font-weight:700;letter-spacing:-0.04em"><a href="mailto:hello@example.com"><?php esc_html_e( 'hello@example.com', 'anypress' ); ?></a></p>
+<!-- wp:paragraph {"fontFamily":"bricolage-grotesque","fontSize":"poster","style":{"typography":{"lineHeight":"1","fontWeight":"700","letterSpacing":"-0.04em"}}} -->
+<p class="has-bricolage-grotesque-font-family has-poster-font-size" style="line-height:1;font-weight:700;letter-spacing:-0.04em"><a href="mailto:hello@example.com"><?php esc_html_e( 'Write to me', 'anypress' ); ?></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"email_linked"}}}},"fontSize":"x-large"} -->
+<p class="has-x-large-font-size"><a href="mailto:hello@example.com">hello@example.com</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"flex","justifyContent":"left"}} -->

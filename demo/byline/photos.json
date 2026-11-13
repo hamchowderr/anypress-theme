@@ -1,0 +1,492 @@
+{
+	"files": {
+		"ridge.jpg": "A green ridge with a trail along the top",
+		"meadow.jpg": "A path through a mountain meadow",
+		"creek.jpg": "A hiker by a rocky mountain stream",
+		"tarn.jpg": "A hiker beside a small mountain lake",
+		"rock.jpg": "A hiker on a rock above a blue lake",
+		"climb.jpg": "Hikers climbing a sunny mountain path",
+		"pair.jpg": "Two hikers walking toward a mountain",
+		"snowwalk.jpg": "A hiker on a snowy ridge",
+		"peak.jpg": "A hiker below a snowy peak",
+		"dry.jpg": "A woman hiking through dry hills",
+		"golden.jpg": "A hiker on a golden ridge at sunset",
+		"valley.jpg": "A deep green valley between mountains",
+		"pines.jpg": "Pines and cliffs under a blue sky",
+		"alpine.jpg": "A hiker among mountains and autumn trees",
+		"icelake.jpg": "A frozen lake below mountains",
+		"shore.jpg": "A lake shore with a fence and trees",
+		"calm.jpg": "A calm lake with a peak behind",
+		"mirror.jpg": "Mountains mirrored in a still lake",
+		"sunlake.jpg": "Sun on a lake below wooded hills",
+		"bluelake.jpg": "A blue lake under snowy mountains",
+		"larches.jpg": "A green lake below rocky peaks",
+		"laces.jpg": "Hands tying hiking boot laces",
+		"boots.jpg": "Hiking boots on dusty ground",
+		"meadowboots.jpg": "Hiking boots in a flowery meadow",
+		"mapboots.jpg": "Boots and a map on the grass",
+		"standing.jpg": "Boots and socks on a grassy trail",
+		"stove.jpg": "A pot on a campfire in the snow",
+		"tent.jpg": "A lake seen from inside a tent",
+		"feet.jpg": "Feet up above a misty lake",
+		"cabin.jpg": "A cabin in the snow with smoke from the chimney",
+		"forestcabin.jpg": "A small cabin among tall trees",
+		"valleycabin.jpg": "A wide valley with a forest and mountains",
+		"mug.jpg": "A hiker holding a tin mug",
+		"fire.jpg": "A campfire in the woods",
+		"pot.jpg": "A pot hanging over a campfire",
+		"hanna.jpg": "Hanna Berg in a green valley",
+		"cheer.jpg": "A hiker in a yellow jacket cheering",
+		"notebook.jpg": "Writing in a notebook on the grass",
+		"desk.jpg": "A notebook and coffee on a desk",
+		"mag.jpg": "An open magazine on a table",
+		"mags.jpg": "A magazine beside a tablet",
+		"packwoman.jpg": "A woman with a backpack looking at the hills",
+		"man.jpg": "Tom Reyes looking into a forest valley",
+		"yellowpack.jpg": "June Okafor with a yellow backpack",
+		"canyon.jpg": "A hiker in a narrow canyon",
+		"couple.jpg": "Two hikers on a forest trail",
+		"gear.jpg": "Packs and a lantern in the back of a car",
+		"forestpath.jpg": "A hiker on a forest path"
+	},
+	"by_alt": {
+		"@wide": "valley.jpg",
+		"@tall": "peak.jpg",
+		"@square": "tent.jpg",
+		"Portrait of the writer outdoors": "hanna.jpg",
+		"Writer: Hanna Berg": "hanna.jpg",
+		"Writer: Tom Reyes": "man.jpg",
+		"Writer: June Okafor": "yellowpack.jpg",
+		"A lake below the mountains at first light": "calm.jpg",
+		"The office: a notebook and coffee on a desk": "desk.jpg",
+		"Route: Hyalite Lake": "bluelake.jpg",
+		"Route: Lava Lake": "larches.jpg",
+		"Route: Bridger Ridge": "climb.jpg",
+		"Route: Sypes Canyon": "canyon.jpg",
+		"Walk: Sunrise ridge walk": "golden.jpg",
+		"This walk: the ridge at sunrise": "ridge.jpg",
+		"This walk: the climb by headlamp": "forestpath.jpg",
+		"This walk: first light on the ridge": "golden.jpg",
+		"This walk: breakfast on top": "mug.jpg",
+		"This walk: the way down": "pair.jpg",
+		"Walk: Cabin weekend": "cabin.jpg",
+		"This walk: cabin weekend": "forestcabin.jpg",
+		"Cabin weekend: photo 1": "valleycabin.jpg",
+		"Cabin weekend: photo 2": "fire.jpg",
+		"Cabin weekend: photo 3": "pot.jpg",
+		"Cabin weekend: photo 4": "couple.jpg",
+		"Walk: Cook on the trail": "stove.jpg",
+		"This walk: cook on the trail": "sunlake.jpg",
+		"Cook on the trail: photo 1": "pot.jpg",
+		"Cook on the trail: photo 2": "mug.jpg",
+		"Cook on the trail: photo 3": "fire.jpg",
+		"Cook on the trail: photo 4": "shore.jpg",
+		"Walk: Map and compass day": "mapboots.jpg",
+		"This walk: map and compass day": "meadow.jpg",
+		"Map and compass day: photo 1": "mapboots.jpg",
+		"Map and compass day: photo 2": "laces.jpg",
+		"Map and compass day: photo 3": "standing.jpg",
+		"Map and compass day: photo 4": "pines.jpg",
+		"Routes: the lake under Hyalite Peak": "calm.jpg",
+		"Routes: Lava Lake": "mirror.jpg",
+		"Routes: Bridger Ridge": "ridge.jpg",
+		"Routes: Sypes Canyon": "valley.jpg"
+	},
+	"fallback": "valley.jpg",
+	"posts": {
+		"long": "packwoman.jpg",
+		"cabin": "cabin.jpg",
+		"cook": "stove.jpg",
+		"boots": "boots.jpg",
+		"hyalite": "bluelake.jpg",
+		"lookout": "peak.jpg",
+		"alone": "tarn.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "ridge.jpg",
+			"title": "Green Grass",
+			"creator": "Aleksandra Boguslawska",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/green-grass-89CD67A255"
+		},
+		{
+			"file": "meadow.jpg",
+			"title": "Summer Sun",
+			"creator": "eberhard grossgasteiger",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/summer-sun-Q7M49RXBQR"
+		},
+		{
+			"file": "creek.jpg",
+			"title": "Mountains Cliffs",
+			"creator": "Jay Mantri",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/mountains-cliffs-E544644D29"
+		},
+		{
+			"file": "tarn.jpg",
+			"title": "Dolomites Hiker",
+			"creator": "Ales Krivec",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/dolomites-hiker-TIKDJWH7CU"
+		},
+		{
+			"file": "rock.jpg",
+			"title": "A hiker with a backpack stands on a large, steep boulder on the right, looking out over a deep blue alpine lake. Rocky mountain ridges stretch across the background under a completely clear blue sky, with a low blanket of white clouds visible on the distant horizon behind the hiker.",
+			"creator": "Sakin Shrestha",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/4586a11bf2/"
+		},
+		{
+			"file": "climb.jpg",
+			"title": "White flower on a grassy slope beside a trail with two hikers wearing backpacks walking toward snow-capped mountains, sun shining in the sky",
+			"creator": "Uttkrista Chhetri",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/2496a49f31/"
+		},
+		{
+			"file": "pair.jpg",
+			"title": "Hikers walk up a grassy mountain path under a bright sun with a snow-capped peak and blue sky in the background. Wispy clouds surround the mountain’s summit.",
+			"creator": "Manjil Aryal",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/496a2558ed/"
+		},
+		{
+			"file": "snowwalk.jpg",
+			"title": "A lone hiker wearing a bright red backpack and holding a trekking pole walks along a narrow, snowy ridge path. Other hikers are visible in the distance on the snow-covered mountain slope, which is cast in deep blue shadows and bright sunlight.",
+			"creator": "Madan G.C.",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/9536a26e9f/"
+		},
+		{
+			"file": "peak.jpg",
+			"title": "Snow-covered mountain ridge with hikers trekking toward a dramatic Himalayan peak under a deep blue sky.",
+			"creator": "Madan G.C.",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/3596a0b368/"
+		},
+		{
+			"file": "dry.jpg",
+			"title": "Person hiking on a ridge in a desert landscape with the focus on the hiker and the landscape unfolding in the background.",
+			"creator": "annezazu",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/38965a88ba/"
+		},
+		{
+			"file": "golden.jpg",
+			"title": "A lone hiker in a bright red jacket stands on a rocky outcrop, overlooking golden grass-covered ridges, distant blue peaks, and a sea of white clouds under a clear sky.",
+			"creator": "Madan G.C.",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/2916a0c97c/"
+		},
+		{
+			"file": "valley.jpg",
+			"title": "Mountains Peaks",
+			"creator": "Andrew Collins",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/mountains-peaks-228FD76D78"
+		},
+		{
+			"file": "pines.jpg",
+			"title": "Scenic Snowy",
+			"creator": "Tricia Gray",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/scenic-snowy-MIDRMSZGTG"
+		},
+		{
+			"file": "alpine.jpg",
+			"title": "Sky Clouds",
+			"creator": "Samuel Zeller",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sky-clouds-8D4A1945C1"
+		},
+		{
+			"file": "icelake.jpg",
+			"title": "Lake Mountains",
+			"creator": "Elliott Chau",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountains-VZBJUVPO25"
+		},
+		{
+			"file": "shore.jpg",
+			"title": "Lake Mountains",
+			"creator": "eberhard grossgasteiger",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountains-XX0FZY0UPY"
+		},
+		{
+			"file": "calm.jpg",
+			"title": "Lake Mountains",
+			"creator": "Sam Jotham Sutharson",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountains-ZJCT5H4VXR"
+		},
+		{
+			"file": "mirror.jpg",
+			"title": "Lake Mountain",
+			"creator": "Sergei Gussev",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountain-BJYLPQX4XD"
+		},
+		{
+			"file": "sunlake.jpg",
+			"title": "Lake Mountain",
+			"creator": "Sergei Gussev",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountain-4EZK2ZUCBG"
+		},
+		{
+			"file": "bluelake.jpg",
+			"title": "Lake Mountain",
+			"creator": "Sergei Gussev",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountain-VZCUHHVBER"
+		},
+		{
+			"file": "larches.jpg",
+			"title": "Lake mountains, tree",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3301164/free-photo-image-forest-sea-abies-canada"
+		},
+		{
+			"file": "laces.jpg",
+			"title": "Free tying hiking boots shoelaces",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5912026/image-public-domain-hands-person"
+		},
+		{
+			"file": "boots.jpg",
+			"title": "Hiking boots, fashion",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023251/photo-image-public-domain-nature-person"
+		},
+		{
+			"file": "meadowboots.jpg",
+			"title": "Hiking boots grass",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023074/photo-image-public-domain-nature-fashion"
+		},
+		{
+			"file": "mapboots.jpg",
+			"title": "Hiking boots grass",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023116/photo-image-public-domain-nature-fashion"
+		},
+		{
+			"file": "standing.jpg",
+			"title": "Hiking boots, footwear & apparel",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6027850/photo-image-public-domain-nature-person"
+		},
+		{
+			"file": "stove.jpg",
+			"title": "metal pot sitting wood firepit",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3300262/free-photo-image-bbq-stove-wooden-oven"
+		},
+		{
+			"file": "tent.jpg",
+			"title": "Camping Tent",
+			"creator": "Elliott Chau",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/camping-tent-OCXLY7U3OG"
+		},
+		{
+			"file": "feet.jpg",
+			"title": "Lake Mountain",
+			"creator": "Elliott Chau",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/lake-mountain-ADA9OJZFGI"
+		},
+		{
+			"file": "cabin.jpg",
+			"title": "cabin woods winter snow roof",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3296963/free-photo-image-blizzard-building-cabin"
+		},
+		{
+			"file": "forestcabin.jpg",
+			"title": "Free cabin woods image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5918371/image-public-domain-leaves-trees"
+		},
+		{
+			"file": "valleycabin.jpg",
+			"title": "Two cabins wooded slope smooth",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3290624/free-photo-image-abies-cc0-conifer"
+		},
+		{
+			"file": "mug.jpg",
+			"title": "Man Campfire",
+			"creator": "Anggoro Sakti",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/man-campfire-HRLU7ZESP0"
+		},
+		{
+			"file": "fire.jpg",
+			"title": "Campfire. Original public domain image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3370598/free-photo-image-2014-bonfire-burning"
+		},
+		{
+			"file": "pot.jpg",
+			"title": "Free hot pot campfire",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5922223/free-hot-pot-campfire-public-domain-cc0-photo"
+		},
+		{
+			"file": "hanna.jpg",
+			"title": "People Girl",
+			"creator": "Anthony Tran",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-girl-HQR8BJFZID"
+		},
+		{
+			"file": "cheer.jpg",
+			"title": "Woman Hiking",
+			"creator": "Hiking Adventures",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-hiking-VNZRUMO13J"
+		},
+		{
+			"file": "notebook.jpg",
+			"title": "Writing Writer",
+			"creator": "Negative Space",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/writing-writer-9QEVP5YHO3"
+		},
+		{
+			"file": "desk.jpg",
+			"title": "Journal Notepad",
+			"creator": "Cathryn Lavery",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/journal-notepad-DPKNIIN5X3"
+		},
+		{
+			"file": "mag.jpg",
+			"title": "Magazine Layout",
+			"creator": "Ross Sokolovski",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/magazine-layout-D6I619GI0B"
+		},
+		{
+			"file": "mags.jpg",
+			"title": "Stack Magazines",
+			"creator": "Jess Watters",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/stack-magazines-F2I7WODMGP"
+		},
+		{
+			"file": "packwoman.jpg",
+			"title": "Backpacking Trip",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/backpacking-trip-W50PW8YI9U"
+		},
+		{
+			"file": "man.jpg",
+			"title": "Man Backpack",
+			"creator": "Lucas Allmann",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/man-backpack-DTBCL8UIWE"
+		},
+		{
+			"file": "yellowpack.jpg",
+			"title": "Yellow Backpack",
+			"creator": "Felix Russell-Saw",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/yellow-backpack-LE23HHZVIF"
+		},
+		{
+			"file": "canyon.jpg",
+			"title": "Girl Backpack",
+			"creator": "Elliott Chau",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-backpack-AUPPEMBA5J"
+		},
+		{
+			"file": "couple.jpg",
+			"title": "Backpack Woman",
+			"creator": "Josh Willink",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/backpack-woman-BQ4PSC7CV5"
+		},
+		{
+			"file": "gear.jpg",
+			"title": "Backpacking Hiking",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/backpacking-hiking-40ZTQ6FVOF"
+		},
+		{
+			"file": "forestpath.jpg",
+			"title": "Backpack People",
+			"creator": "Chad Madden",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/backpack-people-7YKHFQ7BT4"
+		}
+	]
+}

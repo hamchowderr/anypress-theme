@@ -1,0 +1,471 @@
+{
+	"files": {
+		"pipette.jpg": "A drop from a pipette onto a lab slide",
+		"scientist.jpg": "A scientist loading samples into a lab machine",
+		"vialhand.jpg": "A gloved hand holding a small vial",
+		"glovevial.jpg": "A gloved hand holding up a labelled glass vial",
+		"bluetube.jpg": "A blue-gloved hand holding a sample tube",
+		"labpair.jpg": "Two scientists checking a sample in the lab",
+		"caps.jpg": "Rows of sample tubes with purple caps",
+		"rack.jpg": "Vials in a rack on a lab bench",
+		"micro.jpg": "A microscope over a slide",
+		"micro2.jpg": "A white lab microscope",
+		"lens.jpg": "A close view of a microscope lens",
+		"pipblue.jpg": "A pipette filling a tray of tubes",
+		"piporange.jpg": "A pipette and a small amber bottle",
+		"labwoman.jpg": "Dr. Maya Okonkwo at work in the lab",
+		"docwoman.jpg": "A provider listening to a patient",
+		"docman.jpg": "A doctor talking with a patient at his desk",
+		"docnurse.jpg": "A doctor and a nurse with a patient",
+		"doctablet.jpg": "A provider showing a patient her plan on a tablet",
+		"clinic.jpg": "A provider and a patient in a bright clinic",
+		"seniorman.jpg": "A smiling older man at home",
+		"coffeeman.jpg": "Daniel Reyes, pharmacy lead",
+		"smileman.jpg": "A smiling young man",
+		"deskman.jpg": "A man on a video visit at his laptop",
+		"couple.jpg": "An older couple smiling outdoors",
+		"family.jpg": "A family laughing in a park",
+		"towel.jpg": "A woman in a towel smiling",
+		"smilecream.jpg": "A smiling woman with clear skin",
+		"dab.jpg": "A woman putting serum on her cheek",
+		"jar.jpg": "A woman holding a small jar of serum",
+		"jartowel.jpg": "A woman holding a pot of skin cream",
+		"box.jpg": "A plain cardboard box on a conveyor",
+		"courier.jpg": "A courier with parcels at his van",
+		"warehouse.jpg": "Boxes packed for shipping",
+		"boxes.jpg": "Medicine boxes packed in a carton",
+		"runner.jpg": "A runner on a path by the sea",
+		"legs.jpg": "Running shoes on a path at sunset",
+		"trail.jpg": "A runner on a sandy trail",
+		"nurse.jpg": "A nurse reassuring a patient",
+		"nursetab.jpg": "Sara Lindqvist, care team lead",
+		"nurseman.jpg": "A nurse checking messages on a phone",
+		"bridge.jpg": "Runners crossing a bridge in the morning",
+		"kayak.jpg": "A kayaker on a lake at sunset",
+		"orange.jpg": "Slicing an orange for breakfast",
+		"fruit.jpg": "Fresh fruit and juice on a table",
+		"avocado.jpg": "Avocado, kiwi and lime on a board",
+		"plate.jpg": "A healthy breakfast plate"
+	},
+	"by_alt": {
+		"@wide": "labpair.jpg",
+		"@tall": "scientist.jpg",
+		"@square": "caps.jpg",
+		"A scientist checking samples in the lab": "scientist.jpg",
+		"About us: a doctor talking with a patient": "docwoman.jpg",
+		"Gloved hands holding a small glass vial": "glovevial.jpg",
+		"How it works: a video visit on a laptop": "deskman.jpg",
+		"Lab results: a scientist with a tray of samples": "pipblue.jpg",
+		"Your first visit: a provider with a patient": "doctablet.jpg",
+		"Team: Dr. Maya Okonkwo": "labwoman.jpg",
+		"Team: Daniel Reyes, PharmD": "coffeeman.jpg",
+		"Team: Sara Lindqvist, RN": "nursetab.jpg",
+		"Treatment: NAD+": "vialhand.jpg",
+		"Treatment: Sermorelin": "rack.jpg",
+		"Treatment: Glutathione": "bluetube.jpg",
+		"Treatment: Copper peptide serum": "jar.jpg",
+		"Treatment page: NAD+": "glovevial.jpg",
+		"This treatment: made by the pharmacy": "piporange.jpg",
+		"This treatment: tested by the lab": "labpair.jpg",
+		"This treatment: in your kit": "boxes.jpg",
+		"This treatment: part of your week": "runner.jpg",
+		"Treatment page: Sermorelin": "caps.jpg",
+		"Sermorelin: photo 1": "pipette.jpg",
+		"Sermorelin: photo 2": "micro.jpg",
+		"Sermorelin: photo 3": "box.jpg",
+		"Sermorelin: photo 4": "kayak.jpg",
+		"Treatment page: Glutathione": "bluetube.jpg",
+		"Glutathione: photo 1": "micro2.jpg",
+		"Glutathione: photo 2": "rack.jpg",
+		"Glutathione: photo 3": "warehouse.jpg",
+		"Glutathione: photo 4": "plate.jpg",
+		"Treatment page: Copper peptide serum": "dab.jpg",
+		"Copper peptide serum: photo 1": "jartowel.jpg",
+		"Copper peptide serum: photo 2": "smilecream.jpg",
+		"Copper peptide serum: photo 3": "towel.jpg",
+		"Copper peptide serum: photo 4": "fruit.jpg",
+		"State page: Arizona": "clinic.jpg",
+		"State page: Texas": "docman.jpg",
+		"State page: Florida": "nurse.jpg",
+		"State page: Colorado": "docnurse.jpg"
+	},
+	"fallback": "labpair.jpg",
+	"posts": {
+		"report": "pipette.jpg",
+		"pharmacy": "labpair.jpg",
+		"visit": "deskman.jpg",
+		"home": "nurse.jpg",
+		"habits": "orange.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "pipette.jpg",
+			"title": "Pacific Northwestern National Laboratory scientist",
+			"creator": "U.S. Department of Energy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3322308/free-photo-image-laboratory-pipette-331-building"
+		},
+		{
+			"file": "scientist.jpg",
+			"title": "Ambassador Brown visit Malaghan Institute",
+			"creator": "usembassynewzealand",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8733924/photo-image-public-domain-woman-person"
+		},
+		{
+			"file": "vialhand.jpg",
+			"title": "The Joint Center for Artificial",
+			"creator": "U.S. Department of Energy",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3322329/free-photo-image-laboratory-vaccine-bottle-cc0"
+		},
+		{
+			"file": "glovevial.jpg",
+			"title": "The NASA Astrobiology Icy Worlds team at NASA's Jet Propulsion Laboratory are collecting samples from a simulated ocean vent to see if they can detect organic molecules being brewed. Original from NASA . Digitally enhanced by rawpixel.",
+			"creator": "NASA",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/440657/free-photo-image-lab-laboratory-chemistry"
+		},
+		{
+			"file": "bluetube.jpg",
+			"title": "Lab tube",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3338342/free-photo-image-blood-collection-tube-cc0-creative-commons"
+		},
+		{
+			"file": "labpair.jpg",
+			"title": "Scientists lab, looking test tube",
+			"creator": "usdoe",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8708845/photo-image-medicine-public-domain-covid-19"
+		},
+		{
+			"file": "caps.jpg",
+			"title": "A test tube tray containing",
+			"creator": "Centers for Disease Control and Prevention",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2288494/free-photo-image-laboratory-medical-test"
+		},
+		{
+			"file": "rack.jpg",
+			"title": "U.S. Department Agriculture, Agricultural Marketing",
+			"creator": "U.S. Department of Agriculture",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/10995834/photo-image-public-domain-technology-marketing"
+		},
+		{
+			"file": "micro.jpg",
+			"title": "Free microscope public domain CC0",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924826/free-microscope-public-domain-cc0-photo"
+		},
+		{
+			"file": "micro2.jpg",
+			"title": "Free microscope science equipment image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5921725/photo-image-background-design-public-domain"
+		},
+		{
+			"file": "lens.jpg",
+			"title": "person's hands using microscope",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5803543/photo-image-public-domain-hand-person"
+		},
+		{
+			"file": "pipblue.jpg",
+			"title": "A scientist preparing samples for mass spectrometry in order to determine the presence of a bacterial toxin. Original image sourced from US Government department: Public Health Image Library, Centers for Disease Control and Prevention. Under US law this image is copyright free, please credit the government department whenever you can&rdquo;.",
+			"creator": "Centers for Disease Control and Prevention",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2288538/free-photo-image-pipette-pipettes-laboratory-bacterial"
+		},
+		{
+			"file": "piporange.jpg",
+			"title": "A scientist testing a sample",
+			"creator": "Centers for Disease Control and Prevention",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2288529/free-photo-image-pipette-medical-test-tubes"
+		},
+		{
+			"file": "labwoman.jpg",
+			"title": "Scientist pipetting samples of bronchoalveolar",
+			"creator": "Centers for Disease Control and Prevention",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2288582/free-photo-image-scientist-laboratory-medication"
+		},
+		{
+			"file": "docwoman.jpg",
+			"title": "Doctor Patient",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/doctor-patient-EDI8LWKSBB"
+		},
+		{
+			"file": "docman.jpg",
+			"title": "Doctor Patient",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/doctor-patient-7NQJS4WWQW"
+		},
+		{
+			"file": "docnurse.jpg",
+			"title": "Doctor Patient",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/doctor-patient-N9YCBA2UBU"
+		},
+		{
+			"file": "doctablet.jpg",
+			"title": "Doctor Patient",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/doctor-patient-LRKRNXOMAL"
+		},
+		{
+			"file": "clinic.jpg",
+			"title": "Doctor Patient",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/doctor-patient-JMTEFIRWGX"
+		},
+		{
+			"file": "seniorman.jpg",
+			"title": "Senior Business",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/senior-business-UTEZRDTKPP"
+		},
+		{
+			"file": "coffeeman.jpg",
+			"title": "Business Man",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-man-7BQNRHB6EX"
+		},
+		{
+			"file": "smileman.jpg",
+			"title": "Smiling Man",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/smiling-man-3LMPSCJQGQ"
+		},
+		{
+			"file": "deskman.jpg",
+			"title": "Male Professional",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/male-professional-6QXAIH13O6"
+		},
+		{
+			"file": "couple.jpg",
+			"title": "Senior Couple",
+			"creator": "Senior Living",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/senior-couple-AGFQZGRJBC"
+		},
+		{
+			"file": "family.jpg",
+			"title": "Black Family",
+			"creator": "Family First",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/black-family-FOMJTSRHS3"
+		},
+		{
+			"file": "towel.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-JF6DZWDDO3"
+		},
+		{
+			"file": "smilecream.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-J8ZJI2D5UQ"
+		},
+		{
+			"file": "dab.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-FA7UVQPL7W"
+		},
+		{
+			"file": "jar.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-8GLBROK819"
+		},
+		{
+			"file": "jartowel.jpg",
+			"title": "Woman Skin",
+			"creator": "Authentic Stock",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-skin-GRQG0LUZMW"
+		},
+		{
+			"file": "box.jpg",
+			"title": "Food boxes enter the more",
+			"creator": "U.S. Department of Agriculture",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3261721/free-photo-image-cardboard-boxes-parcel-box"
+		},
+		{
+			"file": "courier.jpg",
+			"title": "CFRS Covid Response",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/7433411/cfrs-covid-response"
+		},
+		{
+			"file": "warehouse.jpg",
+			"title": "U.S. Department of Agriculture (USDA)",
+			"creator": "U.S. Department of Agriculture",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3306173/free-photo-image-logistics-box-cardboard"
+		},
+		{
+			"file": "boxes.jpg",
+			"title": "COVID-19 Vaccine doses delivery",
+			"creator": "U.S. Department of State",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8732163/photo-image-public-domain-covid-19-vaccines"
+		},
+		{
+			"file": "runner.jpg",
+			"title": "Woman Running",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-running-J5OPJDPN2R"
+		},
+		{
+			"file": "legs.jpg",
+			"title": "Nike trainees woman running, location",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6113573/photo-image-public-domain-plant-person"
+		},
+		{
+			"file": "trail.jpg",
+			"title": "Woman running sand",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3284397/free-photo-image-road-action-apparel"
+		},
+		{
+			"file": "nurse.jpg",
+			"title": "Caregiver Nurse",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/caregiver-nurse-PMZZ7WLOAJ"
+		},
+		{
+			"file": "nursetab.jpg",
+			"title": "Female Nurse",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/female-nurse-XYNYITNTU1"
+		},
+		{
+			"file": "nurseman.jpg",
+			"title": "Male Nurse",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/male-nurse-FVE8PSHMKY"
+		},
+		{
+			"file": "bridge.jpg",
+			"title": "Brooklybridge Running",
+			"creator": "Curtis Mac Newton",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/brooklybridge-running-X2Q7LBUF6U"
+		},
+		{
+			"file": "kayak.jpg",
+			"title": "Guy Man",
+			"creator": "Pete Nowicki",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/guy-man-FKX9UUUWQE"
+		},
+		{
+			"file": "orange.jpg",
+			"title": "Cutting Fruit",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cutting-fruit-ULIKLNPKK0"
+		},
+		{
+			"file": "fruit.jpg",
+			"title": "Healthy Smoothie",
+			"creator": "Healthy Living",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/healthy-smoothie-49CRAQPKUQ"
+		},
+		{
+			"file": "avocado.jpg",
+			"title": "Healthy Kiwi",
+			"creator": "Healthy Living",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/healthy-kiwi-HHXDCVCD7H"
+		},
+		{
+			"file": "plate.jpg",
+			"title": "Free English breakfast image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5905496/photo-image-public-domain-shape-blue"
+		}
+	]
+}

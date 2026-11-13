@@ -1,0 +1,709 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "AnyPress theme: Byline demo",
+		"author": "hamchowderr",
+		"description": "An example website for blog and magazine, built with the AnyPress theme's Byline kit, AnyPress Blocks and Fluent Forms."
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "fluentform"
+			},
+			"options": {
+				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/services.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/services.json"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/towns.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/towns.json"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/alpine.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/alpine.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/bluelake.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/bluelake.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/boots.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/boots.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/cabin.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/cabin.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/calm.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/calm.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/canyon.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/canyon.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/cheer.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/cheer.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/climb.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/climb.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/couple.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/couple.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/creek.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/creek.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/desk.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/desk.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/dry.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/dry.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/feet.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/feet.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/fire.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/fire.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/forestcabin.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/forestcabin.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/forestpath.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/forestpath.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/gear.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/gear.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/golden.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/golden.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/hanna.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/hanna.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/icelake.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/icelake.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/laces.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/laces.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/larches.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/larches.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/mag.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/mag.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/mags.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/mags.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/man.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/man.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/mapboots.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/mapboots.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/meadow.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/meadow.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/meadowboots.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/meadowboots.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/mirror.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/mirror.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/mug.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/mug.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/notebook.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/notebook.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/packwoman.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/packwoman.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/pair.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/pair.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/peak.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/peak.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/pines.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/pines.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/pot.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/pot.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/ridge.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/ridge.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/rock.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/rock.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/shore.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/shore.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/snowwalk.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/snowwalk.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/standing.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/standing.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/stove.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/stove.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/sunlake.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/sunlake.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/tarn.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/tarn.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/tent.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/tent.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/valley.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/valley.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/valleycabin.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/valleycabin.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/byline/photos/yellowpack.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/byline/photos/yellowpack.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Byline photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/lib.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/lib.php"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/trades.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/trades.php"
+			},
+			"progress": {
+				"caption": "Writing the Byline pages"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/byline/build.php' );",
+			"progress": {
+				"caption": "Building the Byline demo"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data/roles.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/roles.json"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/0-anypress-store-env.php",
+			"data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', 'website');"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-client.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-client"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		}
+	]
+}

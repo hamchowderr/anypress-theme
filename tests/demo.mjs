@@ -7,9 +7,9 @@
 //
 // The demo is the theme's starter pages and sections plus the business's own words, photos, forms, menus and posts,
 // built by demo/<kit>/build.php. It needs the AnyPress Blocks plugin (ANYPRESS_BLOCKS for a local folder, otherwise its
-// latest release) and Fluent Forms (from wordpress.org).
+// latest release) and Fluent Forms (from wordpress.org); a shop kit's demo also needs FluentCart (from wordpress.org).
 
-import { mkdirSync } from 'node:fs';
+import { existsSync, mkdirSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,6 +23,8 @@ const CHECK = process.argv.includes('--check');
 const BLOCKS_DIR = process.env.ANYPRESS_BLOCKS ? resolve(process.env.ANYPRESS_BLOCKS) : null;
 const BLOCKS_ZIP = process.env.ANYPRESS_BLOCKS_ZIP || 'https://github.com/hamchowderr/anypress-blocks/releases/latest/download/anypress-blocks.zip';
 const PORT = Number(process.env.PLAYGROUND_PORT || 9411);
+// A shop kit (one with demo/<kit>/shop.json) runs on FluentCart, from wordpress.org.
+const SHOP = existsSync(resolve(THEME, 'demo', KIT.split('/')[0], 'shop.json'));
 const SHOTS = resolve(process.env.SHOTS || resolve(HERE, 'shots', `demo-${KIT}`));
 
 const cli = await runCLI({
@@ -39,6 +41,13 @@ const cli = await runCLI({
                 ? { step: 'activatePlugin', pluginPath: 'anypress-blocks/anypress-blocks.php' }
                 : { step: 'installPlugin', pluginData: { resource: 'url', url: BLOCKS_ZIP }, options: { activate: true } },
             { step: 'installPlugin', pluginData: { resource: 'wordpress.org/plugins', slug: 'fluentform' }, options: { activate: true } },
+            ...(SHOP ? [
+                { step: 'installPlugin', pluginData: { resource: 'wordpress.org/plugins', slug: 'fluent-cart' }, options: { activate: true } },
+                // FluentCart's free Customer Rights add-on (the EU cancellation form), from FluentCart's own add-on downloads.
+                { step: 'installPlugin', pluginData: { resource: 'url', url: process.env.CUSTOMER_RIGHTS_ZIP || 'https://addons-cdn.fluentcart.com/fluent-cart-customer-rights.zip' }, options: { activate: true, targetFolderName: 'fluent-cart-customer-rights' } },
+                { step: 'mkdir', path: '/wordpress/wp-content/mu-plugins' },
+                { step: 'writeFile', path: '/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php', data: "<?php require WP_CONTENT_DIR . '/themes/anypress/demo/playground-sqlite.php';\n" },
+            ] : []),
         ],
     },
     mount: [
@@ -48,7 +57,7 @@ const cli = await runCLI({
     verbosity: 'quiet',
 });
 const base = cli.serverUrl.replace(/\/$/, '');
-const built = await cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; require get_theme_file_path('demo/${KIT}/build.php');` });
+const built = await cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; register_shutdown_function(function () { $e = error_get_last(); if ($e) { echo 'LAST: ' . $e['message'] . ' at ' . $e['file'] . ':' . $e['line']; } }); try { require get_theme_file_path('demo/${KIT}/build.php'); } catch (Throwable $e) { echo get_class($e) . ': ' . $e->getMessage() . ' at ' . $e->getFile() . ':' . $e->getLine(); }` });
 if (built.errors || !built.text.trim().startsWith('{')) {
     console.error(built.errors || built.text);
     process.exit(1);
@@ -60,9 +69,11 @@ if (!CHECK) {
     await new Promise(() => {});
 }
 
-const { checkDemo } = await import('./demo-check.mjs');
 mkdirSync(SHOTS, { recursive: true });
-const failures = await checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, paths: JSON.parse(built.text).paths, leftover: JSON.parse(built.text).leftover, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
+const result = JSON.parse(built.text);
+const failures = SHOP
+    ? await (await import('./shop-check.mjs')).checkShop({ base, shots: SHOTS, paths: result.paths, items: result.items })
+    : await (await import('./demo-check.mjs')).checkDemo({ base, shots: SHOTS, quote: JSON.parse(built.text).quote, paths: JSON.parse(built.text).paths, leftover: JSON.parse(built.text).leftover, php: (code) => cli.playground.run({ code: `<?php require '/wordpress/wp-load.php'; ${code}` }) });
 console.log(failures.length ? `\n${failures.length} problem(s)` : '\nThe demo passes the kit checklist checks');
 await cli[Symbol.asyncDispose]?.();
 process.exit(failures.length ? 1 : 0);

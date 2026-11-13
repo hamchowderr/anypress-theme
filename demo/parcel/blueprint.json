@@ -1,0 +1,566 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "AnyPress theme: Parcel demo",
+		"author": "hamchowderr",
+		"description": "An example website for online shop, built with the AnyPress theme's Parcel kit, AnyPress Blocks and Fluent Forms."
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "fluentform"
+			},
+			"options": {
+				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/services.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/services.json"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/towns.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/towns.json"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bottle1.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bottle1.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bottle2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bottle2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bottle3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bottle3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bottlehero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bottlehero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bowl1.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bowl1.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bowl2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bowl2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bowl3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bowl3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/bowlhero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/bowlhero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/box.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/box.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/cafe.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/cafe.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/camera.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/camera.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/class.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/class.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/ellie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/ellie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/hands.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/hands.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/hero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/hero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/june.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/june.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/marcus.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/marcus.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/mug1.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/mug1.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/mug2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/mug2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/mug3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/mug3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/mughero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/mughero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/plate1.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/plate1.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/plate2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/plate2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/plate3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/plate3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/platehero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/platehero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/popup.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/popup.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/shelves.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/shelves.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/shelves2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/shelves2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/story.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/story.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/vase1.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/vase1.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/vase2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/vase2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/vase3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/vase3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/vasehero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/vasehero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/wheel.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/wheel.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/parcel/photos/wheeltop.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/parcel/photos/wheeltop.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Parcel photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/lib.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/lib.php"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/trades.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/trades.php"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/parcel/build.php' );",
+			"progress": {
+				"caption": "Building the Parcel demo"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data/roles.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/roles.json"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/0-anypress-store-env.php",
+			"data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', 'website');"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-client.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-client"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		}
+	]
+}

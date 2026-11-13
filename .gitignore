@@ -2,3 +2,6 @@ dist/
 tests/node_modules/
 tests/shots/
 __pycache__/
+
+# Beads lock files
+*.gate.lock*

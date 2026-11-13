@@ -1,0 +1,88 @@
+[
+	{
+		"slug": "nad-plus",
+		"title": "NAD+",
+		"swap": {}
+	},
+	{
+		"slug": "sermorelin",
+		"title": "Sermorelin",
+		"swap": {
+			"1.05\">NAD+<": "1.05\">Sermorelin<",
+			"Treatments / NAD+": "Treatments / Sermorelin",
+			"Small injections at home, a few times a week, for people who want to support energy and healthy ageing.": "A nightly injection that asks your own body to make more growth hormone, often chosen for sleep and recovery.",
+			"What NAD+ is": "What sermorelin is",
+			"NAD+ is a molecule every cell in your body uses to turn food into energy, and levels fall as we age. Our NAD+ is made by a US pharmacy for you alone and taken as a small injection under the skin, a few times a week.": "Sermorelin is a short peptide that signals the pituitary gland to release more of your own growth hormone, rather than replacing it. Ours is made by a US pharmacy for you alone and taken as a small injection under the skin at bedtime.",
+			"Adults who want to support energy and healthy ageing, alongside sleep, food and exercise. It isn't for people who are pregnant or breastfeeding, or anyone being treated for cancer. Your provider will go through the rest.": "Adults whose provider thinks it may help with sleep and recovery, usually after a blood test. It isn't for people who are pregnant, have an underactive thyroid that isn't treated, or have had cancer. Your provider will go through the rest.",
+			"1.05\">From $149 a month<": "1.05\">From $199 a month<",
+			"Treatment page: NAD+": "Treatment page: Sermorelin",
+			"The most common side effects are redness where you inject and, for some people, mild flushing or nausea. Stop and call us if anything worries you; a nurse answers the same day.": "The most common side effects are redness where you inject, a flushed face or a headache in the first weeks. Stop and call us if anything worries you; a nurse answers the same day.",
+			"<p>Injection, 3 times a week</p>": "<p>Injection, nightly</p>",
+			"<p>30 days</p>": "<p>30 days</p>",
+			"<p>Required</p>": "<p>Required</p>",
+			"A video visit with a licensed provider": "A video visit and a blood test review",
+			"Your medicine, made to order and lab tested": "Your medicine, made to order and lab tested",
+			"Syringes, swabs and a sharps box": "Syringes, swabs and a sharps box",
+			"A nurse check-in after the first month": "A nurse check-in after the first month",
+			"Free cold-packed shipping": "Free cold-packed shipping",
+			"This treatment: made by the pharmacy": "Sermorelin: photo 1",
+			"This treatment: tested by the lab": "Sermorelin: photo 2",
+			"This treatment: in your kit": "Sermorelin: photo 3",
+			"This treatment: part of your week": "Sermorelin: photo 4"
+		}
+	},
+	{
+		"slug": "glutathione",
+		"title": "Glutathione",
+		"swap": {
+			"1.05\">NAD+<": "1.05\">Glutathione<",
+			"Treatments / NAD+": "Treatments / Glutathione",
+			"Small injections at home, a few times a week, for people who want to support energy and healthy ageing.": "A weekly injection of the body's own antioxidant, prescribed alongside a plan for everyday wellness.",
+			"What NAD+ is": "What glutathione is",
+			"NAD+ is a molecule every cell in your body uses to turn food into energy, and levels fall as we age. Our NAD+ is made by a US pharmacy for you alone and taken as a small injection under the skin, a few times a week.": "Glutathione is an antioxidant your body makes from three amino acids. Ours is made by a US pharmacy for you alone and taken as a small injection once a week, as part of a plan your provider writes with you.",
+			"Adults who want to support energy and healthy ageing, alongside sleep, food and exercise. It isn't for people who are pregnant or breastfeeding, or anyone being treated for cancer. Your provider will go through the rest.": "Adults who want to support everyday wellness and have talked it through with a provider. It isn't for people with asthma who react to sulphites, or anyone pregnant or breastfeeding. Your provider will go through the rest.",
+			"1.05\">From $149 a month<": "1.05\">From $119 a month<",
+			"Treatment page: NAD+": "Treatment page: Glutathione",
+			"The most common side effects are redness where you inject and, for some people, mild flushing or nausea. Stop and call us if anything worries you; a nurse answers the same day.": "Side effects are rare; the most common is redness or tenderness where you inject. Stop and call us if anything worries you; a nurse answers the same day.",
+			"<p>Injection, 3 times a week</p>": "<p>Injection, once a week</p>",
+			"<p>30 days</p>": "<p>4 weeks</p>",
+			"<p>Required</p>": "<p>Required</p>",
+			"A video visit with a licensed provider": "A video visit with a licensed provider",
+			"Your medicine, made to order and lab tested": "Your medicine, made to order and lab tested",
+			"Syringes, swabs and a sharps box": "Syringes, swabs and a sharps box",
+			"A nurse check-in after the first month": "A nurse check-in after the first month",
+			"Free cold-packed shipping": "A simple food and sleep plan",
+			"This treatment: made by the pharmacy": "Glutathione: photo 1",
+			"This treatment: tested by the lab": "Glutathione: photo 2",
+			"This treatment: in your kit": "Glutathione: photo 3",
+			"This treatment: part of your week": "Glutathione: photo 4"
+		}
+	},
+	{
+		"slug": "copper-peptide-serum",
+		"title": "Copper peptide serum",
+		"swap": {
+			"1.05\">NAD+<": "1.05\">Copper peptide serum<",
+			"Treatments / NAD+": "Treatments / Copper peptide serum",
+			"Small injections at home, a few times a week, for people who want to support energy and healthy ageing.": "GHK-Cu in a light serum for the face and neck. No prescription needed; tested like everything else.",
+			"What NAD+ is": "What copper peptide serum is",
+			"NAD+ is a molecule every cell in your body uses to turn food into energy, and levels fall as we age. Our NAD+ is made by a US pharmacy for you alone and taken as a small injection under the skin, a few times a week.": "GHK-Cu is a small copper peptide found naturally in skin. Our serum is a light, unscented gel made in Arizona, tested by the same independent lab as our medicines, and used morning and night after cleansing.",
+			"Adults who want to support energy and healthy ageing, alongside sleep, food and exercise. It isn't for people who are pregnant or breastfeeding, or anyone being treated for cancer. Your provider will go through the rest.": "Adults who want a gentle serum for the face and neck. Try it on a small patch of skin first, and don't use it on broken skin or with strong acid peels on the same day.",
+			"1.05\">From $149 a month<": "1.05\">$89 a bottle<",
+			"Treatment page: NAD+": "Treatment page: Copper peptide serum",
+			"The most common side effects are redness where you inject and, for some people, mild flushing or nausea. Stop and call us if anything worries you; a nurse answers the same day.": "Most people use it without trouble. If your skin stings or reddens for more than a day, stop and tell us; we'll refund an opened bottle in the first 30 days.",
+			"<p>Injection, 3 times a week</p>": "<p>Serum, morning and night</p>",
+			"<p>30 days</p>": "<p>About 2 months</p>",
+			"<p>Required</p>": "<p>Not needed</p>",
+			"A video visit with a licensed provider": "One 30 ml bottle, about two months",
+			"Your medicine, made to order and lab tested": "Made in small batches and lab tested",
+			"Syringes, swabs and a sharps box": "A batch report you can look up",
+			"A nurse check-in after the first month": "Free shipping on two or more",
+			"Free cold-packed shipping": "Our 30-day return promise",
+			"This treatment: made by the pharmacy": "Copper peptide serum: photo 1",
+			"This treatment: tested by the lab": "Copper peptide serum: photo 2",
+			"This treatment: in your kit": "Copper peptide serum: photo 3",
+			"This treatment: part of your week": "Copper peptide serum: photo 4"
+		}
+	}
+]

@@ -17,6 +17,12 @@ PALS = {
    "main": "#121212", "main-accent": "#d8d6cf", "base": "#f4f3ef", "secondary": "#55534e", "tertiary": "#e9e7e0", "border-light": "#d8d5cc", "border-dark": "#2a2a28"},
  "byline": {"primary": "#a91f1b", "primary-accent": "#f5dcd9", "primary-alt": "#1d2b3a", "primary-alt-accent": "#f3efe6",
    "main": "#1a1a1a", "main-accent": "#dad6cc", "base": "#faf8f3", "secondary": "#57534c", "tertiary": "#efebe1", "border-light": "#ddd7ca", "border-dark": "#2e2e2e"},
+ "assay": {"primary": "#0e5a5f", "primary-accent": "#d7ecea", "primary-alt": "#e8c872", "primary-alt-accent": "#2a1f05",
+   "main": "#0f1d1f", "main-accent": "#d3dcdb", "base": "#fbfcfb", "secondary": "#4a5a5c", "tertiary": "#eef3f2", "border-light": "#d8e2e0", "border-dark": "#203436"},
+ "branch": {"primary": "#005f7a", "primary-accent": "#d4eef4", "primary-alt": "#ffb547", "primary-alt-accent": "#2b1600",
+   "main": "#0b2530", "main-accent": "#d0dde2", "base": "#fbfdfd", "secondary": "#45606b", "tertiary": "#eaf5f7", "border-light": "#cfe3e8", "border-dark": "#14394a"},
+ "aisle": {"primary": "#33502f", "primary-accent": "#e2eadd", "primary-alt": "#c9d8e3", "primary-alt-accent": "#13283a",
+   "main": "#151515", "main-accent": "#d9d7d1", "base": "#fafaf7", "secondary": "#52524e", "tertiary": "#efede7", "border-light": "#dedbd3", "border-dark": "#2b2b2b"},
  "circuit": {"primary": "#123c8c", "primary-accent": "#dfe8f8", "primary-alt": "#ffd23f", "primary-alt-accent": "#1b1606",
    "main": "#0c1626", "main-accent": "#d3d9e3", "base": "#ffffff", "secondary": "#475163", "tertiary": "#f1f3f7", "border-light": "#dde2ea", "border-dark": "#24324a"},
 }

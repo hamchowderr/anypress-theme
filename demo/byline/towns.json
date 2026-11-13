@@ -1,0 +1,81 @@
+[
+	{
+		"name": "Hyalite Lake",
+		"slug": "hyalite-lake",
+		"lat": 45.4383,
+		"lon": -110.9603,
+		"swap": {}
+	},
+	{
+		"name": "Lava Lake",
+		"slug": "lava-lake",
+		"lat": 45.422,
+		"lon": -111.224,
+		"swap": {
+			"1.05\">Hyalite Lake<": "1.05\">Lava Lake<",
+			"Routes / Gallatin Range": "Routes / Madison Range",
+			"11 miles · 1,800 ft climb · Moderate. Eleven waterfalls on the way up to a lake under Hyalite Peak.": "6 miles · 1,600 ft climb · Moderate. A steep forest climb to a deep green lake in the Madison Range.",
+			"Walking to Hyalite Lake": "Walking to Lava Lake",
+			"This is the walk we send visitors on first. The trail climbs gently up a canyon past eleven named waterfalls, then opens out at a lake under the peak. It's busy on summer weekends and quiet the rest of the time.": "A short, steep walk up a creek through old forest to one of the prettiest lakes near town. Swim if you're brave; the water stays cold all summer.",
+			"Hyalite Lake trailhead, Gallatin National Forest, MT": "Lava Lake trailhead, Gallatin Canyon, MT",
+			"Routes: the lake under Hyalite Peak": "Routes: Lava Lake",
+			"<p>11 miles</p>": "<p>6 miles</p>",
+			"<p>1,800 ft</p>": "<p>1,600 ft</p>",
+			"<p>5 to 6 hours</p>": "<p>3 to 4 hours</p>",
+			"<p>Moderate</p>": "<p>Moderate</p>",
+			"<p>July to October</p>": "<p>June to October</p>",
+			"Start at the Hyalite Lake trailhead, at the end of the reservoir road": "Park at the Lava Lake trailhead off Highway 191, south of Big Sky Resort Road",
+			"Follow the creek past Grotto and Arch Falls": "Cross the bridge and climb with Cascade Creek on your right",
+			"Keep right at the junction with the Emerald Lake trail": "Keep going when the trail steepens through the rock garden",
+			"Climb the last switchbacks to the lake, and come back the same way": "Walk the shore to the far end for lunch, and come back the same way"
+		}
+	},
+	{
+		"name": "Bridger Ridge",
+		"slug": "bridger-ridge",
+		"lat": 45.829,
+		"lon": -110.93,
+		"swap": {
+			"1.05\">Hyalite Lake<": "1.05\">Bridger Ridge<",
+			"Routes / Gallatin Range": "Routes / Bridger Range",
+			"11 miles · 1,800 ft climb · Moderate. Eleven waterfalls on the way up to a lake under Hyalite Peak.": "20 miles · 6,500 ft climb · Hard. The whole ridge above town, end to end, in one long day.",
+			"Walking to Hyalite Lake": "Walking Bridger Ridge",
+			"This is the walk we send visitors on first. The trail climbs gently up a canyon past eleven named waterfalls, then opens out at a lake under the peak. It's busy on summer weekends and quiet the rest of the time.": "The ridge you can see from every street in Bozeman. Walking all of it is a long, exposed day with a lot of up and down, and the views of the valley never stop.",
+			"Hyalite Lake trailhead, Gallatin National Forest, MT": "Fairy Lake trailhead, Bridger Range, MT",
+			"Routes: the lake under Hyalite Peak": "Routes: Bridger Ridge",
+			"<p>11 miles</p>": "<p>20 miles</p>",
+			"<p>1,800 ft</p>": "<p>6,500 ft</p>",
+			"<p>5 to 6 hours</p>": "<p>10 to 12 hours</p>",
+			"<p>Moderate</p>": "<p>Hard</p>",
+			"<p>July to October</p>": "<p>July to September</p>",
+			"Start at the Hyalite Lake trailhead, at the end of the reservoir road": "Leave a car at the M trailhead and start from Fairy Lake at first light",
+			"Follow the creek past Grotto and Arch Falls": "Climb Sacagawea Peak, then follow the ridge south",
+			"Keep right at the junction with the Emerald Lake trail": "Keep to the crest over Ross Peak and Baldy",
+			"Climb the last switchbacks to the lake, and come back the same way": "Drop down past the M to the car before dark"
+		}
+	},
+	{
+		"name": "Sypes Canyon",
+		"slug": "sypes-canyon",
+		"lat": 45.7275,
+		"lon": -110.991,
+		"swap": {
+			"1.05\">Hyalite Lake<": "1.05\">Sypes Canyon<",
+			"Routes / Gallatin Range": "Routes / Bridger Range",
+			"11 miles · 1,800 ft climb · Moderate. Eleven waterfalls on the way up to a lake under Hyalite Peak.": "6 miles · 1,700 ft climb · Easy to moderate. The after-work walk: a canyon trail to a view over the valley.",
+			"Walking to Hyalite Lake": "Walking Sypes Canyon",
+			"This is the walk we send visitors on first. The trail climbs gently up a canyon past eleven named waterfalls, then opens out at a lake under the peak. It's busy on summer weekends and quiet the rest of the time.": "Fifteen minutes from downtown, this is where we go on a weekday evening. A steady climb through a dry canyon ends at an overlook with the whole valley below.",
+			"Hyalite Lake trailhead, Gallatin National Forest, MT": "Sypes Canyon trailhead, Bozeman, MT",
+			"Routes: the lake under Hyalite Peak": "Routes: Sypes Canyon",
+			"<p>11 miles</p>": "<p>6 miles</p>",
+			"<p>1,800 ft</p>": "<p>1,700 ft</p>",
+			"<p>5 to 6 hours</p>": "<p>2 to 3 hours</p>",
+			"<p>Moderate</p>": "<p>Easy to moderate</p>",
+			"<p>July to October</p>": "<p>April to November</p>",
+			"Start at the Hyalite Lake trailhead, at the end of the reservoir road": "Start at the Sypes Canyon trailhead at the end of Sypes Canyon Road",
+			"Follow the creek past Grotto and Arch Falls": "Follow the trail up the canyon floor",
+			"Keep right at the junction with the Emerald Lake trail": "Climb the switchbacks to the overlook",
+			"Climb the last switchbacks to the lake, and come back the same way": "Come back the same way as the sun goes down"
+		}
+	}
+]

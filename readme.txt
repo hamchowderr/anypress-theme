@@ -1,9 +1,9 @@
 === AnyPress ===
-Contributors: anypress
+Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.14.0
+Stable tag: 0.23.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Style variations: six colour palettes (Forest, Plum, Ocean, Charcoal and gold, R
 
 Starter pages: home pages for trades and local services, food and drink, and classes and memberships, plus About, Services and Contact pages, a long sales page, an email signup page and a thank-you page. A links page (for the link in a social media bio) is there too. They appear when a new page is created.
 
-Kits: fourteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
+Kits: seventeen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
 
 * Ridge, for trades and home services: condensed capitals, hi-vis yellow, flat colour panels and the phone number as the main action.
 * Circuit, for electricians: one bright grotesk, deep electric blue with a yellow spark, rounded cards and pill buttons.
@@ -33,6 +33,9 @@ Kits: fourteen sets designed for one kind of business each. A kit is a style var
 * Keystone, for estate agents and realtors: listings with price and facts, a featured home, forest green and brass.
 * Launch, for software products and startups: one grotesk at every size, features without icons, pricing and questions.
 * Byline, for blogs, magazines and newsletters: a masthead between rules, the newest post large and the rest in a grid.
+* Assay, for shops that sell regulated health products such as peptides, supplements and CBD: lab results in a table, prescription and compliance notices, a calm serif, deep teal and amber glass.
+* Branch, for franchises and businesses with several locations: every location with its own page and a map, programmes, a free trial and a franchise enquiry, pool blue and sunny orange.
+* Aisle, for online clothing shops on FluentCart: a full-width photo, category tiles, category spotlights and a look to shop, a help centre with shipping, returns and a size guide, forest green on warm white.
 
 Apply the kit's style in Appearance > Editor > Styles, then start a page from the kit's home page. The kit's sections are in the inserter under "Kit: ...".
 
@@ -126,6 +129,64 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.23.2 =
+* Shop pages on phones: space between the Filter button and the first row of products, and a little more room between product cards.
+* Product card buttons keep the same distance from the card's edges as the product name and price.
+* Related products no longer overlap their rows and line up with the rest of the page.
+
+= 0.23.1 =
+* On phones, a bar with the product's name and an Add to cart button stays at the foot of the screen once the buyer scrolls past the product page's own buttons. It presses FluentCart's own Add to cart button, so the chosen size or colour, quantity and stock checks all still apply.
+* FluentCart's phone Filter button and filter panel match the style, the panel's search box fits the screen, and the panel opens above floating buttons.
+* Wishio's floating wishlist button is a little smaller on phones and moves up while the Add to cart bar is showing.
+
+= 0.23.0 =
+* New kit: Aisle, for online clothing shops on FluentCart, in an editorial look: a light serif for headings, a plain sans and small spaced capitals for labels and buttons, photos edge to edge with no corners. A style, 28 sections and 15 starter pages: a home page with a full-screen photo, promises in a thin row, categories as photos edge to edge, the newest products, a full-width banner, a look to shop, two collections side by side, one big review at a time, the brand's story, a subscription and gift cards, the journal and a first-order popup; plus new in, lookbook, gift cards, a help centre (shipping, returns and exchanges, size guide, track an order, questions, contact), our story, reviews, a thank-you page and a Cancel an order page for FluentCart's free Customer Rights add-on (the EU's 14 days to cancel). Products, cart, checkout and account stay FluentCart's own; with the Aisle style, FluentCart's product cards have no box (a tall photo, the name and price, and quick add on the photo when hovered), its product page has square size boxes and full-width buttons, and category pages open on their title centred. Pages open on their own photo with the title centred, and help pages split in two, the words and links to the other help pages beside a photo.
+* The Shop page opens on the page's featured image behind its title, or on the brand colour when it has none, with the shop's categories (FluentCart's Product Categories List) as a row of chips above the products. Category pages (FluentCart's own template) open on a band of the brand's soft colour.
+* Line icons for any paragraph or heading: add the class anypress-icon plus anypress-icon-truck, -clock, -return or -repair, and a small icon in the brand colour sits above it. Aisle's promises use them.
+* Style variations can carry their own CSS (the kit generator's css option), applied only while that style is active.
+* Fluent Forms and FluentCart buttons inside a coloured section now take that section's button colours, so a form's button never disappears on a brand-coloured band.
+* FluentCart's related products list stays inside the page on phones, with space below it.
+
+= 0.22.1 =
+* Product photos in FluentCart's shop lists and carousels now load a size that fits the card instead of the full-size upload, so shop pages open faster, most of all on phones. Product pages are left as FluentCart makes them.
+* Wishio wishlists match the style: the floating wishlist button, the wishlist page's buttons and its table take the style's button colour, text colours, borders and corners.
+
+= 0.22.0 =
+* Product and category pages now use FluentCart's own templates again, so nothing FluentCart shows is left out (such as package size and weight). They load the theme's header and footer, and the theme styles FluentCart's parts with the style's fonts and corners.
+* Shop icons in the header: with FluentCart selling at least one product, every header shows FluentCart's product search, a link to the customer's account and FluentCart's cart with the number of items, beside the menu. On phones the search moves to the Shop page and the header's own buttons get smaller so everything fits. FluentCart's floating cart button hides while the header cart is there.
+* Cart, checkout, account and receipt pages get the theme's width and title around FluentCart's own content, and checkout uses the simple header without the menu.
+* New sections under AnyPress Blocks: Shop: New arrivals (FluentCart's product list, newest four) and Shop by category (FluentCart's Product Categories List shown as tiles).
+* Sale and Sold out badges (FluentCart's blocks) on product cards in the shop sections. FluentCart's quick view takes the style's corners.
+
+= 0.21.0 =
+* Shop pages in the site's own design: FluentCart's product page, product category and brand pages and the Shop page now have templates built from the theme's styles, so they match every kit and change with the style the owner picks. Owners edit them in the Site Editor like any other template.
+* FluentCart's product cards and buttons take the style's fonts and corners, and cards in a row line up. New sections under AnyPress Blocks: Shop: products, products with search and filters, and the category and brand headings.
+
+= 0.20.0 =
+* New kit: Assay, for shops that sell regulated health products (peptides, supplements, CBD and other goods that need lab results and careful wording). A full website: a home page, 14 starter pages (treatments, one treatment, lab results, how it works, where we treat, one state, pricing, get started, about, reviews, questions, careers, contact, thank you) and 24 sections, with a prescription notice in the top bar, a compliance notice in the footer, lab results in a table, a first-month offer popup, counters, reviews in a carousel and a map.
+* New kit: Branch, for franchises and businesses with several locations. A full website: a home page, 13 starter pages (programmes, one programme, locations, one location, own a franchise, offers, free trial, about, reviews, questions, careers, contact, thank you) and 23 sections, with every location on a map and its own page, what's the same at every location, a free-trial popup, the franchise investment, support and steps, and an enquiry form.
+
+= 0.19.0 =
+* The Byline kit, for blogs, magazines, newsletters and writers, is now a full website: 12 starter pages (walks or events, one walk, route guides, one route, subscribe, book a walk, about, letters, questions, write for us, contact, thank you) and 20 new sections, with a sticky header and Subscribe button, a top bar with the new issue and the phone number, a newsletter popup, counters, letters from readers in a carousel, questions, route guides with maps, events with photos that open full screen, subscription plans, and booking, contributor and contact forms.
+* The Byline home page adds the publication's numbers, a route of the month with a map, letters, questions and a link to every topic's page.
+
+= 0.18.0 =
+* The Keystone kit, for estate agents, realtors and property managers, is now a full website: 13 starter pages (homes for sale, one home, towns, one town, rentals, selling, free valuation, about, reviews, questions, join us, contact, thank you) and 19 new sections, with a sticky header and Valuation button, a top bar with the phone number, a valuation popup, counters, a review carousel, questions, a page for every home with photos that open full screen, town guides, the office with a map, and valuation, job and contact forms.
+* The Keystone home page adds reviews, questions and the office with a map; its record counts up, and its listings open full screen and link to each home's page.
+* A header menu that doesn't fit on one line now folds into the menu button at any screen width, so long menus no longer stack into a column on tablets and small laptops.
+
+= 0.17.0 =
+* The Frame kit, for photographers, designers, illustrators and architects, is now a full website: 13 starter pages (services, a service, work, a project, prints, commission, about, kind words, questions, assisting, contact, thank you) and 16 new sections, with a sticky header and Commission button, a first-print popup, counters, kind words in a carousel, questions, a page for every project with photos that open full screen, prints for sale, a studio map, and commission, assistant and contact forms.
+* The Frame home page adds numbers, kind words, questions and the studio with a map; its selected work opens full screen, and its closing section is a huge Write to me link with the address under it, so long addresses no longer break on phones.
+
+= 0.16.0 =
+* The Rep kit, for gyms, boxing clubs, CrossFit boxes and fitness studios, is now a full website: 13 starter pages (classes, a class, timetable, memberships, free week, coaches, one coach, about, reviews, questions, careers, contact, thank you) and 17 new sections, with a sticky header and Free week button, a free-week popup, counters, a gallery that opens full screen, a review carousel, questions, every coach with their own page, a gym map, and trial, job and contact forms.
+* The Rep home page adds numbers, a gallery, reviews, questions and the gym with a map; its class tiles link to each class and its coaches to each coach's page.
+
+= 0.15.0 =
+* The Gloss kit, for hair salons, barbers, nail bars and beauty studios, is now a full website: 13 starter pages (services, a service, prices, book, our team, one stylist, about, reviews, offers, questions, careers, contact, thank you) and 16 new sections, with a sticky header and Book online button, a first-visit popup, counters, a review carousel, questions, every stylist with their own page, a salon map, and booking, job and contact forms.
+* The Gloss home page adds numbers, reviews, questions and the salon with a map; its gallery photos open full screen and its team links to each stylist.
 
 = 0.14.0 =
 * The Parcel kit, for online shops and makers, is now a full website: 13 starter pages (shop, a collection, order, our story, reviews, stockists, one stockist, offers, shipping and returns, work with us, contact, thank you) and 18 new sections, with a sticky header and Shop button, a first-order popup, how it's made, questions, a review carousel, counters, the studio team, a studio map, and order, job and contact forms.
