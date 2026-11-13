@@ -17,7 +17,7 @@ jobs:
           tools: none
       - name: PHP syntax (8.1, the lowest version the theme supports)
         run: find . -name '*.php' -not -path './tests/node_modules/*' -print0 | xargs -0 -n1 php -l > /dev/null
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
