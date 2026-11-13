@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.22.1
+Stable tag: 0.22.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,6 +128,12 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.22.2 =
+* On phones, a bar with the product's name and an Add to cart button stays at the foot of the screen once the buyer scrolls past the product page's own buttons. It presses FluentCart's own Add to cart button, so the chosen size or colour, quantity and stock checks all still apply.
+* FluentCart's phone Filter button and filter panel match the style, the panel's search box fits the screen, and the panel opens above floating buttons.
+* FluentCart's related products no longer run past the screen edge on phones.
+* Wishio's floating wishlist button is a little smaller on phones and moves up while the Add to cart bar is showing.
 
 = 0.22.1 =
 * Product photos in FluentCart's shop lists and carousels now load a size that fits the card instead of the full-size upload, so shop pages open faster, most of all on phones. Product pages are left as FluentCart makes them.
