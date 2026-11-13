@@ -223,13 +223,18 @@ function anypress_fluent_cart_styles() {
 	$css .= 'body :is(' . $headings . '){' . $lettering( 'heading' ) . '}';
 	$css .= 'body .fct-product-card-title{font-size:var(--wp--preset--font-size--medium);line-height:1.25}';
 	// Cards in a row line up: the price and button sit at the foot of every card, however long the name.
-	$css .= 'body .fct-product-card{display:flex;flex-direction:column}body .fct-product-card .fct-product-card-prices{margin-top:auto}body .fct-product-card .fct-product-card-prices~*{margin-top:0}body .fct-product-list-item{display:flex}body .fct-product-list-item>.fct-product-card{flex:1}';
+	$css .= 'body .fct-product-card{display:flex;flex-direction:column}body .fct-product-card .fct-product-card-prices{margin-top:auto}body .fct-product-card .fct-product-card-prices~*{margin-top:0}body .fct-product-list-item{display:flex}body .fct-product-list-item>.fct-product-card{flex:1;box-sizing:border-box}';
+	// The card's button keeps the same distance from the card's edges as its name and price, instead of running almost to
+	// the border.
+	$css .= 'body .fct-product-card>.wp-block-fluent-cart-shopapp-product-buttons{margin:0 0.75rem 0.75rem;width:auto}';
+	$css .= 'body .mode-list .fct-product-card>.wp-block-fluent-cart-shopapp-product-buttons{margin-inline:0}';
 	// The product list lines up with the page's other sections, which already keep their distance from the screen edge.
 	$css .= '.wp-block-fluent-cart-products .fct-products-wrapper{padding-inline:0;box-sizing:border-box}';
 	$css .= 'body .fct-product-list-heading{font-size:var(--wp--preset--font-size--x-large);margin-block-end:var(--wp--preset--spacing--medium)}';
-	$css .= '.anypress-related .fct-similar-product-list-container{padding-inline:0}';
+	// Related products line up with the rest of the page instead of sitting further in.
+	$css .= 'body .fct-similar-product-list-container{padding-inline:0}';
 	// Phones show two products side by side, as shops usually do, instead of one long column.
-	$css .= '@media (max-width:600px){body .fct-products-wrapper .fct-products-wrapper-inner:not(.mode-list) .fct-products-container[class]{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wp--preset--spacing--small)}body .fct-product-list{--fct-product-list-columns:2!important;gap:var(--wp--preset--spacing--small)}body .fct-product-card-title{font-size:var(--wp--preset--font-size--base)}}';
+	$css .= '@media (max-width:600px){body .fct-products-wrapper .fct-products-wrapper-inner:not(.mode-list) .fct-products-container[class]{grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--wp--preset--spacing--small) * 1.5)}body .fct-product-list{--fct-product-list-columns:2!important;gap:var(--wp--preset--spacing--small)}body .fct-product-card-title{font-size:var(--wp--preset--font-size--base)}}';
 	// With the cart in the header, FluentCart's floating cart button would be a second cart; it comes back if the owner
 	// removes the header one.
 	$css .= 'body:has(header .fct-mini-cart-button) .fct-cart-drawer-open-btn{display:none}';
@@ -374,6 +379,8 @@ function anypress_fluent_cart_filter_panel_styles() {
 	}
 	$css  = 'body .fct-shop-filter-toggle-button{font-family:inherit;font-size:var(--wp--preset--font-size--small);color:var(--wp--preset--color--main);border:1px solid var(--wp--preset--color--border-dark);border-radius:var(--fct-card-radius,var(--wp--preset--border-radius--md));padding:0.65em 1.1em;gap:0.6em}';
 	$css .= 'body .fct-shop-filter-toggle-button svg path{stroke:currentColor}';
+	// Room between the Filter button and the first row of products.
+	$css .= 'body .fct-products-wrapper>.fct-shop-filter-toggle-button{margin-block-end:var(--wp--preset--spacing--medium)}';
 	$css .= 'body .fct-shop-responsive-filter-wrapper{z-index:100000}';
 	$css .= 'body .fct-shop-responsive-filter-container :is(.fct-shop-filter-form,.fct-shop-input){box-sizing:border-box}';
 	wp_add_inline_style( 'anypress', $css );
