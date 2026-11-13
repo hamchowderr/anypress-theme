@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.23.1
+Stable tag: 0.23.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -129,6 +129,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.23.2 =
+* Shop pages on phones: space between the Filter button and the first row of products, and a little more room between product cards.
+* Product card buttons keep the same distance from the card's edges as the product name and price.
+* Related products no longer overlap their rows and line up with the rest of the page.
 
 = 0.23.1 =
 * On phones, a bar with the product's name and an Add to cart button stays at the foot of the screen once the buyer scrolls past the product page's own buttons. It presses FluentCart's own Add to cart button, so the chosen size or colour, quantity and stock checks all still apply.
