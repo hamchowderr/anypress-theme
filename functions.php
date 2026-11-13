@@ -353,9 +353,115 @@ function anypress_wishio_styles() {
 	if ( ! empty( $type['css'] ) ) {
 		$css .= 'body :is(.wishio-fct-btn-primary,.wishio-fct-btn-secondary){' . $type['css'] . '}';
 	}
+	// On phones the floating button is a little smaller and closer to the corner, sits under FluentCart's filter panel
+	// rather than over it, and moves up while the Add to cart bar (below) is showing.
+	$css .= '@media (max-width:781px){body .wishio-fct-wishlist-count.wishio-fct-wishlist-count--float{width:44px;height:44px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}}';
+	$css .= 'body.anypress-buy-bar-on .wishio-fct-wishlist-count.wishio-fct-wishlist-count--float{bottom:calc(var(--anypress-buy-bar-height,72px) + 12px + env(safe-area-inset-bottom))}';
 	wp_add_inline_style( 'anypress', $css );
 }
 add_action( 'wp_enqueue_scripts', 'anypress_wishio_styles', 20 );
+
+/**
+ * FluentCart's own phone filter panel in the store's style.
+ *
+ * On phones FluentCart folds the shop's filters behind its own "Filter" button, which opens them in a side panel. The
+ * theme only styles them: the button looks like the site's other outlined controls, the panel's search box fits
+ * inside the panel, and the panel opens above floating buttons such as a wishlist's.
+ */
+function anypress_fluent_cart_filter_panel_styles() {
+	if ( ! defined( 'FLUENTCART_VERSION' ) ) {
+		return;
+	}
+	$css  = 'body .fct-shop-filter-toggle-button{font-family:inherit;font-size:var(--wp--preset--font-size--small);color:var(--wp--preset--color--main);border:1px solid var(--wp--preset--color--border-dark);border-radius:var(--fct-card-radius,var(--wp--preset--border-radius--md));padding:0.65em 1.1em;gap:0.6em}';
+	$css .= 'body .fct-shop-filter-toggle-button svg path{stroke:currentColor}';
+	$css .= 'body .fct-shop-responsive-filter-wrapper{z-index:100000}';
+	$css .= 'body .fct-shop-responsive-filter-container :is(.fct-shop-filter-form,.fct-shop-input){box-sizing:border-box}';
+	wp_add_inline_style( 'anypress', $css );
+}
+add_action( 'wp_enqueue_scripts', 'anypress_fluent_cart_filter_panel_styles', 20 );
+
+/**
+ * A bar with the product's name and an Add to cart button stays at the foot of the screen on phones, once the buyer
+ * has scrolled past FluentCart's own buttons on a product page.
+ *
+ * The bar's button presses FluentCart's own Add to cart button, so the size, colour and quantity the buyer picked,
+ * stock checks, error messages and the cart that opens afterwards are all FluentCart's. It copies that button's
+ * wording, its label for screen readers and whether it can be pressed, and shows the chosen option (such as a colour)
+ * under the name. Nothing is added on wider screens, on other pages or on sites without FluentCart.
+ */
+function anypress_product_buy_bar() {
+	if ( ! defined( 'FLUENTCART_VERSION' ) || ! is_singular( 'fluent-products' ) ) {
+		return;
+	}
+	?>
+<div class="anypress-buy-bar" data-anypress-buy-bar hidden>
+	<p class="anypress-buy-bar__text"><span class="anypress-buy-bar__name"><?php echo esc_html( get_the_title() ); ?></span><span class="anypress-buy-bar__choice"></span></p>
+	<button type="button" class="wp-element-button anypress-buy-bar__button"></button>
+</div>
+<style>
+.anypress-buy-bar{position:fixed;inset-inline:0;bottom:0;z-index:9990;display:flex;align-items:center;gap:var(--wp--preset--spacing--small);padding:0.75rem var(--wp--style--root--padding-right,1rem) calc(0.75rem + env(safe-area-inset-bottom)) var(--wp--style--root--padding-left,1rem);background:var(--wp--preset--color--base);color:var(--wp--preset--color--main);border-top:1px solid var(--wp--preset--color--border-light);box-shadow:0 -6px 20px color-mix(in srgb,var(--wp--preset--color--main) 10%,transparent);transform:translateY(110%);transition:transform .25s ease}
+.anypress-buy-bar[hidden]{display:none}
+.anypress-buy-bar.is-shown{transform:none}
+.anypress-buy-bar__text{flex:1;min-width:0;margin:0;display:flex;flex-direction:column;line-height:1.3}
+.anypress-buy-bar__name{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.anypress-buy-bar__choice{font-size:var(--wp--preset--font-size--small);color:var(--wp--preset--color--secondary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.anypress-buy-bar__choice:empty{display:none}
+.anypress-buy-bar__button{flex:none;margin:0;white-space:nowrap}
+.anypress-buy-bar__button:disabled{opacity:.5;cursor:not-allowed}
+body.anypress-buy-bar-on{padding-bottom:var(--anypress-buy-bar-height,72px)}
+body.anypress-buy-bar-on .fct-cart-drawer-open-btn{bottom:calc(var(--anypress-buy-bar-height,72px) + 12px)}
+@media (min-width:782px){.anypress-buy-bar{display:none!important}body.anypress-buy-bar-on{padding-bottom:0}}
+@media (prefers-reduced-motion:reduce){.anypress-buy-bar{transition:none}}
+</style>
+<script>
+(function () {
+	var bar = document.querySelector('[data-anypress-buy-bar]');
+	var main = document.querySelector('.fct_buy_section [data-fluent-cart-add-to-cart-button]');
+	if (!bar || !main) { return; }
+	var button = bar.querySelector('button');
+	var choice = bar.querySelector('.anypress-buy-bar__choice');
+	var phone = window.matchMedia('(max-width: 781px)');
+	var past = false;
+	function copy() {
+		var label = main.getAttribute('aria-label') || '';
+		button.textContent = main.textContent.trim();
+		button.setAttribute('aria-label', label || button.textContent);
+		button.disabled = main.disabled || main.getAttribute('aria-disabled') === 'true';
+		var parts = label.split(' - ');
+		choice.textContent = main.getAttribute('data-variation-type') === 'simple' ? '' : (parts.length > 1 ? parts[parts.length - 1] : '');
+	}
+	function update() {
+		var on = past && phone.matches;
+		bar.hidden = !on && !bar.classList.contains('is-shown');
+		if (on) {
+			bar.hidden = false;
+			document.body.style.setProperty('--anypress-buy-bar-height', bar.offsetHeight + 'px');
+			requestAnimationFrame(function () { bar.classList.add('is-shown'); });
+		} else {
+			bar.classList.remove('is-shown');
+		}
+		document.body.classList.toggle('anypress-buy-bar-on', on);
+	}
+	bar.addEventListener('transitionend', function () { if (!bar.classList.contains('is-shown')) { bar.hidden = true; } });
+	button.addEventListener('click', function () { main.click(); });
+	new MutationObserver(copy).observe(main, { attributes: true, childList: true, subtree: true, characterData: true });
+	// Checked on scroll rather than with an IntersectionObserver, which says nothing when a fast scroll jumps right past
+	// the button.
+	var frame = 0;
+	function check() {
+		frame = 0;
+		var now = main.getBoundingClientRect().bottom < 0;
+		if (now !== past) { past = now; update(); }
+	}
+	window.addEventListener('scroll', function () { if (!frame) { frame = requestAnimationFrame(check); } }, { passive: true });
+	phone.addEventListener('change', update);
+	check();
+	copy();
+})();
+</script>
+	<?php
+}
+add_action( 'wp_footer', 'anypress_product_buy_bar' );
 
 /**
  * Shop links in the header: product search, the shopper's account and the cart, beside the header menu.

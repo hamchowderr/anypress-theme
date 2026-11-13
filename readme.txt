@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.23.0
+Stable tag: 0.23.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -129,6 +129,11 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.23.1 =
+* On phones, a bar with the product's name and an Add to cart button stays at the foot of the screen once the buyer scrolls past the product page's own buttons. It presses FluentCart's own Add to cart button, so the chosen size or colour, quantity and stock checks all still apply.
+* FluentCart's phone Filter button and filter panel match the style, the panel's search box fits the screen, and the panel opens above floating buttons.
+* Wishio's floating wishlist button is a little smaller on phones and moves up while the Add to cart bar is showing.
 
 = 0.23.0 =
 * New kit: Aisle, for online clothing shops on FluentCart, in an editorial look: a light serif for headings, a plain sans and small spaced capitals for labels and buttons, photos edge to edge with no corners. A style, 28 sections and 15 starter pages: a home page with a full-screen photo, promises in a thin row, categories as photos edge to edge, the newest products, a full-width banner, a look to shop, two collections side by side, one big review at a time, the brand's story, a subscription and gift cards, the journal and a first-order popup; plus new in, lookbook, gift cards, a help centre (shipping, returns and exchanges, size guide, track an order, questions, contact), our story, reviews, a thank-you page and a Cancel an order page for FluentCart's free Customer Rights add-on (the EU's 14 days to cancel). Products, cart, checkout and account stay FluentCart's own; with the Aisle style, FluentCart's product cards have no box (a tall photo, the name and price, and quick add on the photo when hovered), its product page has square size boxes and full-width buttons, and category pages open on their title centred. Pages open on their own photo with the title centred, and help pages split in two, the words and links to the other help pages beside a photo.
