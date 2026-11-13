@@ -139,22 +139,26 @@ def lst(items, size=None, family=None, typo=None, style=None):
 def img(file, alt, ratio=None, radius=None):
     return image(file, alt, ratio, radius)
 
-def cover(inner, name, file, dim=40, minh="80vh", pos="bottom left", pad=("xx-large", "xx-large", "medium", "medium"), content="80rem", overlay="main"):
+def cover(inner, name, file, dim=40, minh="80vh", pos="bottom left", pad=("xx-large", "xx-large", "medium", "medium"), content="80rem", overlay="main", alt=None, cls=None):
     pa, pc = padding(pad)
-    mh, unit = (minh[:-2], "vh") if minh.endswith("vh") else (minh, None)
+    mh, unit = (minh[:-2], "vh") if minh.endswith("vh") else (minh[:-3], "rem") if minh.endswith("rem") else (minh, None)
     a = {"url": IMG(file), "dimRatio": dim, "overlayColor": overlay, "isUserOverlayColor": True, "minHeight": int(mh), "minHeightUnit": unit, "contentPosition": pos, "align": "full", "metadata": {"name": name},
          "style": {"spacing": {"padding": pa, "margin": {"top": "0", "bottom": "0"}}}, "layout": {"type": "constrained", "contentSize": content}}
+    # alt names the photo (the demo picks its photo by it); cls adds a class such as anypress-scrim.
+    if alt: a = {"url": a["url"], "alt": alt, **{k: v for k, v in a.items() if k != "url"}}
+    if cls: a["className"] = cls
     posc = "is-position-" + pos.replace(" ", "-")
     hc = " has-custom-content-position " + posc if pos != "center center" else ""
+    hc += f" {cls}" if cls else ""
     dimc = "has-background-dim" if dim == 50 else f"has-background-dim-{dim} has-background-dim" if dim else "has-background-dim-0 has-background-dim"
     css = f"margin-top:0;margin-bottom:0;{pc};min-height:{mh}{unit or 'px'}"
-    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover alignfull{hc}" style="{css}"><img class="wp-block-cover__image-background" alt="" src="{IMG(file)}" data-object-fit="cover"/>'
+    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover alignfull{hc}" style="{css}"><img class="wp-block-cover__image-background" alt="{alt or ""}" src="{IMG(file)}" data-object-fit="cover"/>'
             f'<span aria-hidden="true" class="wp-block-cover__background has-{overlay}-background-color {dimc}"></span><div class="wp-block-cover__inner-container">{inner}</div></div>\n<!-- /wp:cover -->')
 
-def fill(file, rem):
-    """A photo that fills its column: a cover with no overlay and nothing on it."""
-    a = {"url": IMG(file), "dimRatio": 0, "overlayColor": "main", "isUserOverlayColor": True, "minHeight": rem, "minHeightUnit": "rem", "layout": {"type": "constrained"}}
-    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover" style="min-height:{rem}rem"><img class="wp-block-cover__image-background" alt="" src="{IMG(file)}" data-object-fit="cover"/>'
+def fill(file, rem, alt=None):
+    """A photo that fills its column: a cover with no overlay and nothing on it (alt names the photo for the demo)."""
+    a = {"url": IMG(file), **({"alt": alt} if alt else {}), "dimRatio": 0, "overlayColor": "main", "isUserOverlayColor": True, "minHeight": rem, "minHeightUnit": "rem", "layout": {"type": "constrained"}}
+    return (f'<!-- wp:cover {j(a)} -->\n<div class="wp-block-cover" style="min-height:{rem}rem"><img class="wp-block-cover__image-background" alt="{alt or ""}" src="{IMG(file)}" data-object-fit="cover"/>'
             f'<span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>\n<!-- /wp:cover -->')
 
 def on_photo(markup):
@@ -180,7 +184,7 @@ order = ["primary", "primary-accent", "primary-alt", "primary-alt-accent", "main
 theme = json.load(open("theme.json"))
 names = {c["slug"]: c["name"] for c in theme["settings"]["color"]["palette"]}
 
-def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elements=None, blocks=None, transform=None):
+def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elements=None, blocks=None, transform=None, css=None):
     assert set(pal) == set(order), slug
     heading_t = {"fontFamily": f"var:preset|font-family|{head}", "fontWeight": weight, "letterSpacing": ls, "lineHeight": lh}
     if transform: heading_t["textTransform"] = transform
@@ -191,6 +195,9 @@ def variation(slug, title, pal, body, head, weight, ls, lh, button, extra_elemen
             "styles": {"typography": {"fontFamily": f"var:preset|font-family|{body}"}, "elements": els,
                        "blocks": {**(blocks or {}), "core/image": {"border": {"radius": "0"}},
                                   "core/quote": {"border": {"left": {"width": "0"}}, "spacing": {"padding": {"left": "0"}}}}}}
+    # The style's own touches, only while it is the active style. A style's css replaces theme.json's rather than
+    # adding to it, so the theme's own css goes first.
+    if css: data["styles"]["css"] = json.load(open("theme.json"))["styles"]["css"] + css
     path = f"styles/{slug}.json"
     json.dump(data, open(path, "w"), indent="\t", ensure_ascii=False); open(path, "a").write("\n")
 
@@ -554,6 +561,7 @@ exec(open(os.path.join(HERE, "kit_keystone.py")).read())
 exec(open(os.path.join(HERE, "kit_byline.py")).read())
 exec(open(os.path.join(HERE, "kit_assay.py")).read())
 exec(open(os.path.join(HERE, "kit_branch.py")).read())
+exec(open(os.path.join(HERE, "kit_aisle.py")).read())
 
 import importlib.util as _u
 _s = _u.spec_from_file_location("bc", os.path.join(HERE, "blocks_cats.py")); _m = _u.module_from_spec(_s); _s.loader.exec_module(_m); _m.apply(OUT)

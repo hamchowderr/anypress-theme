@@ -89,6 +89,7 @@
 				"left": "var:preset|spacing|medium",
 				"right": "var:preset|spacing|medium"
 			}
-		}
+		},
+		"css": "&{--anypress-form-button-text:var(--wp--preset--color--base);--fluentform-primary:var(--wp--preset--color--primary);--fct-btn-bg-color:var(--wp--preset--color--primary);--fct-btn-text-color:var(--wp--preset--color--base);--fct-btn-border-color:var(--wp--preset--color--primary);--fct-btn-hover-bg-color:color-mix(in srgb, var(--wp--preset--color--primary) 85%, var(--wp--preset--color--base));--fct-btn-hover-text-color:var(--wp--preset--color--base)}"
 	}
 }

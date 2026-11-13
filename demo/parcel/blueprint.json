@@ -501,6 +501,17 @@
 		},
 		{
 			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/lib.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/lib.php"
+			},
+			"progress": {
+				"caption": "Writing the Parcel pages"
+			}
+		},
+		{
+			"step": "writeFile",
 			"path": "/wordpress/wp-content/themes/anypress/demo/trades.php",
 			"data": {
 				"resource": "url",
