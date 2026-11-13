@@ -6,7 +6,7 @@ A WordPress block theme built to be edited by people and by AI agents. Every col
 
 It includes:
 
-- **16 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Circuit (electricians), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software), Byline (blogs and magazines), Assay (regulated health products) and Branch (franchises and multi-location). All sixteen are full websites: 13 starter pages each (services or programs, service areas or a member directory, reviews, offers, quote or join, FAQ, careers or volunteering, contact and more), a sticky header with a call button, an offer popup, FAQ, carousels, counters and a map.
+- **17 kits**, each a style variation, its own sections and a complete home page for one kind of business: Ridge (trades and home services), Circuit (electricians), Hearth (food and drink), Still (wellness), Ledger (professional services), Parcel (online shops), Chapter (courses and memberships), Gloss (salons and beauty), Commons (associations, chambers and churches), Rep (gyms), Frame (portfolios), Keystone (real estate), Launch (software), Byline (blogs and magazines), Assay (regulated health products), Branch (franchises and multi-location) and Aisle (clothing shops on FluentCart). All seventeen are full websites: 13 starter pages each (services or programs, service areas or a member directory, reviews, offers, quote or join, FAQ, careers or volunteering, contact and more), a sticky header with a call button, an offer popup, FAQ, carousels, counters and a map.
 - **AnyPress Blocks**: 32 sections any site can use, whatever its kit, in eight inserter groups (Heroes, About, Services and prices, Proof, Calls to action, Contact, Blog, Footers).
 - **Starter pages** offered when you create a page (home pages, About, Services, Contact, sales, signup, thank-you and links pages) and **post outlines** for how-to, list and review posts.
 - **Six colour palettes and four font pairings** under Appearance > Editor > Styles. Every palette keeps text at WCAG AA contrast in every section style.
@@ -32,6 +32,10 @@ Each release lists the zip's SHA-256 checksum in `SHA256SUMS`.
 ## Using a kit
 
 Pick the kit's style in Appearance > Editor > Styles, then start a page from the kit's home page (it is offered when you create a page). The kit's own sections are in the inserter under "Kit: ...". AnyPress Blocks work with every kit.
+
+## Selling with FluentCart
+
+With [FluentCart](https://wordpress.org/plugins/fluent-cart/) active, product and category pages use FluentCart's own templates, which load the theme's header and footer; the theme styles FluentCart's cards, buttons and forms with the style's fonts and corners, and for the colours you set FluentCart's Settings > Appearance to "Inherit from theme". Brand pages (`taxonomy-product-brands`), which FluentCart has no template for, and the Shop, cart, checkout, account and receipt pages (`page-shop`, `page-cart`, `page-checkout`, `page-account`, `page-receipt`) get the theme's page width and title around FluentCart's own content. The header shows FluentCart's product search, the customer's account and the cart once the shop has a published product. The "AnyPress Blocks: Shop" sections put FluentCart's product list, New arrivals or Shop by category on any page.
 
 ## Development
 
@@ -60,6 +64,7 @@ npm run demo -- hearth           # the Hearth (bakery café) demo
 npm run demo -- still            # the Still (massage practice) demo
 npm run demo -- ledger           # the Ledger (accountants) demo
 npm run demo -- parcel           # the Parcel (pottery shop) demo
+npm run demo -- aisle --check    # the Aisle (clothing shop) demo on FluentCart, with test orders from the US, the UK and the EU
 npm run demo -- gloss            # the Gloss (hair salon) demo
 npm run demo -- rep              # the Rep (gym) demo
 npm run demo -- frame            # the Frame (photographer) demo
@@ -78,7 +83,7 @@ https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.co
 Each `demo/<kit>/blueprint.json` installs the latest theme and AnyPress Blocks releases and Fluent Forms, then builds the demo from `main`, so the links never need a version bump. Every file comes from an address any site can read, so the Blueprints also run on a copy of Playground without a download helper of its own. `python3 tools/demo/blueprints.py` writes them from each demo folder's files; run it after adding or removing a demo file (CI checks they are up to date).
 
 
-A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
+A kit's demo is built by `demo/<kit>/build.php` (trade kits share `demo/trades.php`; shop kits on FluentCart share `demo/shop.php`, which also makes the products, prices, reviews, coupons, shipping and tax from the kit's `shop.json`) from the kit's own pages and sections plus a sample business's words, photos, forms, menus and blog posts. Set `ANYPRESS_BLOCKS` to a local AnyPress Blocks folder to test against it instead of its latest release. The demo folder is left out of the release zip.
 
 Another business on the same kit is a folder of its own, `demo/<kit>/<business>/`, holding only that business's words, photos and choices:
 
