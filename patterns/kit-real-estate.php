@@ -2,7 +2,7 @@
 /**
  * Title: Home page: Keystone kit, real estate
  * Slug: anypress/kit-real-estate
- * Description: A complete home page for an estate agent, realtor or property manager in the Keystone kit: a home photo with buy, sell and rent, three listings, a featured home, the agency's record, the agent and a free valuation. Apply the Keystone style for the look it was designed with.
+ * Description: A complete home page for an estate agent, realtor or property manager in the Keystone kit: a home photo with buy, sell and rent, three listings whose photos open full screen, a featured home, the agency's record counting up, the agent, reviews in a carousel, questions, the office with a map and a free valuation. Apply the Keystone style for the look it was designed with.
  * Categories: anypress/pages
  * Keywords: home, real estate, realtor, estate agent, property, homes for sale, rentals, kit, keystone
  * Viewport Width: 1400
@@ -22,15 +22,15 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#listings"><?php esc_html_e( 'Homes for sale', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/homes/"><?php esc_html_e( 'Homes for sale', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#valuation"><?php esc_html_e( 'Sell with us', 'anypress' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/valuation/"><?php esc_html_e( 'Sell with us', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="#listings"><?php esc_html_e( 'Rentals', 'anypress' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/rentals/"><?php esc_html_e( 'Rentals', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>
@@ -43,14 +43,14 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'All homes for sale', 'anypress' ); ?></a></p>
+<p class="has-medium-font-size"><a href="/homes/"><?php esc_html_e( 'All homes for sale', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A bright living room with a striped sofa', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: 12 Orchard Lane', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -62,7 +62,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( '12 Orchard Lane, Rhinebeck', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/12-orchard-lane/"><?php esc_html_e( '12 Orchard Lane, Rhinebeck', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -71,8 +71,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A bedroom with an arched headboard wall', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: 4 Mill Road', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -84,7 +84,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( '4 Mill Road, Kingston', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/4-mill-road/"><?php esc_html_e( '4 Mill Road, Kingston', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -93,8 +93,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'A stone house with green shutters', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
+<div class="wp-block-group"><!-- wp:image {"lightbox":{"enabled":true},"sizeSlug":"large","linkDestination":"none","aspectRatio":"4/3","scale":"cover"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" alt="<?php esc_attr_e( 'Home for sale: The Old Rectory', 'anypress' ); ?>" style="aspect-ratio:4/3;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
@@ -106,7 +106,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><?php esc_html_e( 'The Old Rectory, Hudson', 'anypress' ); ?></p>
+<p class="has-medium-font-size"><a href="/homes/the-old-rectory/"><?php esc_html_e( 'The Old Rectory, Hudson', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -119,8 +119,8 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Featured home"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
 <section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignfull"><!-- wp:column {"width":"58%"} -->
-<div class="wp-block-column" style="flex-basis:58%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>","dimRatio":0,"overlayColor":"main","isUserOverlayColor":true,"minHeight":38,"minHeightUnit":"rem","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover" style="min-height:38rem"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-wide.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>
+<div class="wp-block-column" style="flex-basis:58%"><!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>","dimRatio":0,"overlayColor":"main","isUserOverlayColor":true,"minHeight":38,"minHeightUnit":"rem","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:38rem"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-tall.svg' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
 
@@ -157,7 +157,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#agent"><?php esc_html_e( 'Book a viewing', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/contact/"><?php esc_html_e( 'Book a viewing', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -167,9 +167,7 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Record"},"align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
 <section class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":"12rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"gloock","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1"}}} -->
-<p class="has-gloock-font-family has-xxx-large-font-size" style="line-height:1"><?php esc_html_e( '340', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":340,"style":{"typography":{"fontWeight":"400","lineHeight":"0.9"}},"fontSize":"xxx-large","fontFamily":"gloock"} /-->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'homes sold since 2019', 'anypress' ); ?></p>
@@ -177,9 +175,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"gloock","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1"}}} -->
-<p class="has-gloock-font-family has-xxx-large-font-size" style="line-height:1"><?php esc_html_e( '21 days', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":21,"suffix":" days","style":{"typography":{"fontWeight":"400","lineHeight":"0.9"}},"fontSize":"xxx-large","fontFamily":"gloock"} /-->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'on the market, on average', 'anypress' ); ?></p>
@@ -187,9 +183,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"gloock","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1"}}} -->
-<p class="has-gloock-font-family has-xxx-large-font-size" style="line-height:1"><?php esc_html_e( '98%', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":98,"suffix":"%","style":{"typography":{"fontWeight":"400","lineHeight":"0.9"}},"fontSize":"xxx-large","fontFamily":"gloock"} /-->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'of asking price achieved', 'anypress' ); ?></p>
@@ -197,9 +191,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"gloock","fontSize":"xxx-large","style":{"typography":{"lineHeight":"1"}}} -->
-<p class="has-gloock-font-family has-xxx-large-font-size" style="line-height:1"><?php esc_html_e( '4.9 / 5', 'anypress' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group"><!-- wp:anypress/counter {"number":4.9,"decimals":1,"suffix":" / 5","style":{"typography":{"fontWeight":"400","lineHeight":"0.9"}},"fontSize":"xxx-large","fontFamily":"gloock"} /-->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
 <p class="has-secondary-color has-text-color"><?php esc_html_e( 'from 210 reviews', 'anypress' ); ?></p>
@@ -246,6 +238,240 @@
 <!-- /wp:columns --></section>
 <!-- /wp:group -->
 
+<!-- wp:group {"tagName":"section","metadata":{"name":"Reviews"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Reviews', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( '4.9 from 210 buyers and sellers', 'anypress' ); ?></h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/reviews/"><?php esc_html_e( 'All reviews', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:anypress/carousel {"perView":3,"label":"Client reviews"} -->
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“Claire priced our house honestly, and it sold in nine days for more than we asked.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Laura and Ben T. · Sold in Rhinebeck', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“Ana found us a rental in two weeks, from three hours away, and sent videos of every room.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Marcus D. · Rented in Kingston', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“They answer the phone. That sounds small until you\'ve tried other agents.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Joan F. · Bought in Hudson', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“Claire told us which repairs mattered and which didn\'t. It saved us thousands.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Sam and Priya K. · Sold in Woodstock', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“First home, no idea what we were doing. Ana walked us through every step.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Ella W. · Bought in Saugerties', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-section-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-section-card" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"textColor":"primary"} -->
+<p class="has-primary-color has-text-color"><?php esc_html_e( '★★★★★', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"medium","style":{"typography":{"lineHeight":"1.45"}}} -->
+<p class="has-medium-font-size" style="line-height:1.45"><?php esc_html_e( '“Our tenants are happy and we never hear about a dripping tap. That\'s the point.”', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"secondary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-secondary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Robert M. · Rental owner', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- /wp:anypress/carousel --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Questions"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"top","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-top"><!-- wp:column {"width":"36%"} -->
+<div class="wp-block-column" style="flex-basis:36%"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'Before you call', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Good to know', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"secondary"} -->
+<p class="has-secondary-color has-text-color"><?php esc_html_e( 'Something else? Call the office and ask for Claire.', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/faq/"><?php esc_html_e( 'All questions', 'anypress' ); ?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:accordion {"className":"is-style-divided"} -->
+<div role="group" class="wp-block-accordion is-style-divided"><!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'What do you charge to sell?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( '5% of the sale price, shared with the buyer\'s agent, and nothing at all if your home doesn\'t sell.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'How long will it take to sell?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Homes we price well sell in about three weeks here. We\'ll tell you honestly if yours might take longer.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Do I pay you to help me buy?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( 'No. As a buyer, our fee is paid by the seller.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Do you manage rentals?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Yes, about sixty homes across the valley, from finding tenants to fixing the boiler.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Is the valuation really free?', 'anypress' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p><?php esc_html_e( 'Yes. Claire visits, writes it up within two days, and there\'s no obligation.', 'anypress' ); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item --></div>
+<!-- /wp:accordion --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Office"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<section class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:paragraph {"textColor":"primary","fontFamily":"monospace","fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
+<p class="has-primary-color has-text-color has-monospace-font-family has-small-font-size" style="text-transform:uppercase;letter-spacing:0.08em"><?php esc_html_e( 'The office', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'On East Market Street', 'anypress' ); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}},"fontSize":"large"} -->
+<p class="has-large-font-size"><?php esc_html_e( '38 East Market Street, Rhinebeck, NY 12572', 'anypress' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><?php esc_html_e( 'Monday to Saturday, 9am to 6pm', 'anypress' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Sundays by appointment', 'anypress' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Parking behind the building', 'anypress' ); ?></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><?php esc_html_e( 'Listings in the window, day and night', 'anypress' ); ?></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:anypress/map {"address":"38 East Market Street, Rhinebeck, NY 12572","lat":41.9268,"lon":-73.9124,"zoom":15,"aspect":"4/3"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->
+
 <!-- wp:group {"tagName":"section","metadata":{"name":"Valuation"},"anchor":"valuation","align":"full","className":"is-style-section-second-brand","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
 <section id="valuation" class="wp-block-group alignfull is-style-section-second-brand" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"width":"55%"} -->
@@ -261,7 +487,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#valuation"><?php esc_html_e( 'Get a free valuation', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/valuation/"><?php esc_html_e( 'Get a free valuation', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "theme": "node theme-check.mjs",
+    "wporg": "node wporg-check.mjs",
     "serve": "node theme-check.mjs --serve",
     "contrast": "node contrast.mjs",
     "demo": "node demo.mjs"

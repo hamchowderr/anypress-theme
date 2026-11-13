@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "lawn-care",
+		"title": "Lawn care"
+	},
+	{
+		"slug": "landscape-design",
+		"title": "Landscape design"
+	},
+	{
+		"slug": "patios-and-walkways",
+		"title": "Patios and walkways"
+	},
+	{
+		"slug": "tree-and-shrub-care",
+		"title": "Tree and shrub care"
+	},
+	{
+		"slug": "irrigation",
+		"title": "Irrigation"
+	},
+	{
+		"slug": "seasonal-cleanups",
+		"title": "Seasonal cleanups"
+	}
+]

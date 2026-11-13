@@ -1,0 +1,109 @@
+[
+	{
+		"name": "Austin, South Lamar",
+		"slug": "austin",
+		"lat": 30.2493,
+		"lon": -97.781,
+		"swap": {}
+	},
+	{
+		"name": "Round Rock",
+		"slug": "round-rock",
+		"lat": 30.5196,
+		"lon": -97.6527,
+		"swap": {
+			">Austin, South Lamar<": ">Round Rock<",
+			">Our first pool<": ">Six lanes by the ballpark<",
+			"Where Bluegill started in 2012, and where every instructor still trains. A warm teaching pool, a six-lane pool for older swimmers and a big viewing area with free coffee.": "A bright pool with a warm teaching pool and six lanes, five minutes from the Dell Diamond. Saturday mornings are our busiest; book early.",
+			"3400 South Lamar Boulevard, Austin, TX 78704": "2701 Parker Drive, Round Rock, TX 78681",
+			"Location page: Austin": "Location page: Round Rock",
+			"Bluegill Austin, South Lamar": "Bluegill Round Rock",
+			"Our first pool, open since 2012. Lessons every weekday afternoon and weekend morning.": "Six lanes and a warm teaching pool, five minutes from the Dell Diamond.",
+			"Locations / Austin": "Locations / Round Rock",
+			"3400 South Lamar Boulevard</p>": "2701 Parker Drive</p>",
+			"Weekdays 3 to 8pm, weekends 8am to 2pm</p>": "Weekdays 3 to 8pm, weekends 8am to 2pm</p>",
+			"Teaching pool and 6 lanes</p>": "Teaching pool and 6 lanes</p>",
+			"Priya Shah</p>": "Marcus Lee</p>"
+		}
+	},
+	{
+		"name": "San Antonio, Stone Oak",
+		"slug": "san-antonio",
+		"lat": 29.6449,
+		"lon": -98.488,
+		"swap": {
+			">Austin, South Lamar<": ">San Antonio, Stone Oak<",
+			">Our first pool<": ">Our biggest pool<",
+			"Where Bluegill started in 2012, and where every instructor still trains. A warm teaching pool, a six-lane pool for older swimmers and a big viewing area with free coffee.": "Two teaching pools and eight lanes under one roof, with family swims every Saturday afternoon and holiday camps every school break.",
+			"3400 South Lamar Boulevard, Austin, TX 78704": "20079 Stone Oak Parkway, San Antonio, TX 78258",
+			"Location page: Austin": "Location page: San Antonio, Stone Oak",
+			"Bluegill Austin, South Lamar": "Bluegill San Antonio, Stone Oak",
+			"Our first pool, open since 2012. Lessons every weekday afternoon and weekend morning.": "Our biggest pool, with Saturday family swims and holiday camps.",
+			"Locations / Austin": "Locations / San Antonio, Stone Oak",
+			"3400 South Lamar Boulevard</p>": "20079 Stone Oak Parkway</p>",
+			"Weekdays 3 to 8pm, weekends 8am to 2pm</p>": "Weekdays 3 to 8pm, weekends 8am to 4pm</p>",
+			"Teaching pool and 6 lanes</p>": "2 teaching pools and 8 lanes</p>",
+			"Priya Shah</p>": "Elena Garza</p>"
+		}
+	},
+	{
+		"name": "Houston, the Heights",
+		"slug": "houston",
+		"lat": 29.7984,
+		"lon": -95.398,
+		"swap": {
+			">Austin, South Lamar<": ">Houston, the Heights<",
+			">Our first pool<": ">Under a glass roof<",
+			"Where Bluegill started in 2012, and where every instructor still trains. A warm teaching pool, a six-lane pool for older swimmers and a big viewing area with free coffee.": "A warm pool under a glass roof, a short walk from Heights Boulevard. Lots of baby classes, and evening lessons until 8pm.",
+			"3400 South Lamar Boulevard, Austin, TX 78704": "1201 Yale Street, Houston, TX 77008",
+			"Location page: Austin": "Location page: Houston, the Heights",
+			"Bluegill Austin, South Lamar": "Bluegill Houston, the Heights",
+			"Our first pool, open since 2012. Lessons every weekday afternoon and weekend morning.": "A glass-roofed pool, a short walk from Heights Boulevard.",
+			"Locations / Austin": "Locations / Houston, the Heights",
+			"3400 South Lamar Boulevard</p>": "1201 Yale Street</p>",
+			"Weekdays 3 to 8pm, weekends 8am to 2pm</p>": "Weekdays 3 to 8pm, weekends 8am to 2pm</p>",
+			"Teaching pool and 6 lanes</p>": "Teaching pool and 4 lanes</p>",
+			"Priya Shah</p>": "Kevin Tran</p>"
+		}
+	},
+	{
+		"name": "Frisco",
+		"slug": "frisco",
+		"lat": 33.105,
+		"lon": -96.8236,
+		"swap": {
+			">Austin, South Lamar<": ">Frisco<",
+			">Our first pool<": ">Our newest pool<",
+			"Where Bluegill started in 2012, and where every instructor still trains. A warm teaching pool, a six-lane pool for older swimmers and a big viewing area with free coffee.": "Opened this spring, with a big viewing area, family changing rooms and free parking. Plenty of space in every class for now.",
+			"3400 South Lamar Boulevard, Austin, TX 78704": "6800 Warren Parkway, Frisco, TX 75034",
+			"Location page: Austin": "Location page: Frisco",
+			"Bluegill Austin, South Lamar": "Bluegill Frisco",
+			"Our first pool, open since 2012. Lessons every weekday afternoon and weekend morning.": "Our newest pool, opened this spring, with space in every class.",
+			"Locations / Austin": "Locations / Frisco",
+			"3400 South Lamar Boulevard</p>": "6800 Warren Parkway</p>",
+			"Weekdays 3 to 8pm, weekends 8am to 2pm</p>": "Weekdays 3 to 8pm, weekends 8am to 2pm</p>",
+			"Teaching pool and 6 lanes</p>": "Teaching pool and 6 lanes</p>",
+			"Priya Shah</p>": "Hiring now</p>"
+		}
+	},
+	{
+		"name": "Fort Worth",
+		"slug": "fort-worth",
+		"lat": 32.7495,
+		"lon": -97.36,
+		"swap": {
+			">Austin, South Lamar<": ">Fort Worth<",
+			">Our first pool<": ">A family-owned franchise<",
+			"Where Bluegill started in 2012, and where every instructor still trains. A warm teaching pool, a six-lane pool for older swimmers and a big viewing area with free coffee.": "Owned and run by Luis Herrera, who managed pools for ten years before opening his own Bluegill. Same lessons, same prices, same app.",
+			"3400 South Lamar Boulevard, Austin, TX 78704": "2900 West 7th Street, Fort Worth, TX 76107",
+			"Location page: Austin": "Location page: Fort Worth",
+			"Bluegill Austin, South Lamar": "Bluegill Fort Worth",
+			"Our first pool, open since 2012. Lessons every weekday afternoon and weekend morning.": "A family-owned franchise near the Cultural District.",
+			"Locations / Austin": "Locations / Fort Worth",
+			"3400 South Lamar Boulevard</p>": "2900 West 7th Street</p>",
+			"Weekdays 3 to 8pm, weekends 8am to 2pm</p>": "Weekdays 3 to 8pm, weekends 8am to 2pm</p>",
+			"Teaching pool and 6 lanes</p>": "Teaching pool and 4 lanes</p>",
+			"Priya Shah</p>": "Luis Herrera, owner</p>"
+		}
+	}
+]

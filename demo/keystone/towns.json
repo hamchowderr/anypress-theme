@@ -1,0 +1,90 @@
+[
+	{
+		"name": "Rhinebeck",
+		"slug": "rhinebeck",
+		"lat": 41.9268,
+		"lon": -73.9124,
+		"swap": {}
+	},
+	{
+		"name": "Kingston",
+		"slug": "kingston",
+		"lat": 41.927,
+		"lon": -73.9974,
+		"swap": {
+			"12 Orchard Lane, Rhinebeck": "12 Orchard Lane, Rhinebeck",
+			"3 bed · 2 bath · 1,850 sq ft": "3 bed · 2 bath · 1,850 sq ft",
+			"Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.": "Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.",
+			"Rhinebeck": "Kingston",
+			"Towns / Rhinebeck": "Towns / Kingston",
+			"Living in Rhinebeck": "Living in Kingston",
+			"Rhinebeck in numbers": "Kingston in numbers",
+			"Homes in Rhinebeck": "Homes in Kingston",
+			"Towns: the main street in Rhinebeck": "Towns: Kingston",
+			"A village of old inns, a Sunday market and the county fair.": "The old state capital, with a busy uptown and a waterfront.",
+			"Rhinebeck is a village of old inns, bookshops and a Sunday farmers' market, with the Hudson a short drive west. Most homes are within a walk of the village, and the county fair arrives every August.": "Kingston was New York's first capital, and its stone houses and busy uptown still show it. The Rondout waterfront has restaurants and boats, and homes here cost less than across the river.",
+			"The Sunday farmers' market": "Uptown's Saturday market",
+			"Upstate Films, the little cinema": "The Rondout waterfront",
+			"Walks at Poets' Walk park": "The rail trail to the reservoir",
+			"The Dutchess County Fair": "Old stone houses on every street",
+			"$575,000": "$385,000",
+			"2 hours by train": "2 hours by bus",
+			"Rhinebeck Central": "Kingston City Schools",
+			"64 since 2019": "71 since 2019"
+		}
+	},
+	{
+		"name": "Hudson",
+		"slug": "hudson",
+		"lat": 42.2529,
+		"lon": -73.791,
+		"swap": {
+			"12 Orchard Lane, Rhinebeck": "12 Orchard Lane, Rhinebeck",
+			"3 bed · 2 bath · 1,850 sq ft": "3 bed · 2 bath · 1,850 sq ft",
+			"Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.": "Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.",
+			"Rhinebeck": "Hudson",
+			"Towns / Rhinebeck": "Towns / Hudson",
+			"Living in Rhinebeck": "Living in Hudson",
+			"Rhinebeck in numbers": "Hudson in numbers",
+			"Homes in Rhinebeck": "Homes in Hudson",
+			"Towns: the main street in Rhinebeck": "Towns: Hudson",
+			"A village of old inns, a Sunday market and the county fair.": "Antique shops, restaurants and the Amtrak station on Warren Street.",
+			"Rhinebeck is a village of old inns, bookshops and a Sunday farmers' market, with the Hudson a short drive west. Most homes are within a walk of the village, and the county fair arrives every August.": "Hudson is a small city of brick houses, antique shops and some of the best restaurants in the valley. Warren Street runs from the river to the hills, and the train reaches New York in two hours.",
+			"The Sunday farmers' market": "Warren Street's shops",
+			"Upstate Films, the little cinema": "The riverfront park",
+			"Walks at Poets' Walk park": "Dinner out, every night of the week",
+			"The Dutchess County Fair": "The train to New York",
+			"$575,000": "$520,000",
+			"2 hours by train": "2 hours by train",
+			"Rhinebeck Central": "Hudson City Schools",
+			"64 since 2019": "48 since 2019"
+		}
+	},
+	{
+		"name": "Woodstock",
+		"slug": "woodstock",
+		"lat": 42.0409,
+		"lon": -74.1182,
+		"swap": {
+			"12 Orchard Lane, Rhinebeck": "12 Orchard Lane, Rhinebeck",
+			"3 bed · 2 bath · 1,850 sq ft": "3 bed · 2 bath · 1,850 sq ft",
+			"Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.": "Claire grew up in Rhinebeck, sold her first house here in 2003 and still shows every home herself. She will tell you what a house is worth, not what you want to hear.",
+			"Rhinebeck": "Woodstock",
+			"Towns / Rhinebeck": "Towns / Woodstock",
+			"Living in Rhinebeck": "Living in Woodstock",
+			"Rhinebeck in numbers": "Woodstock in numbers",
+			"Homes in Rhinebeck": "Homes in Woodstock",
+			"Towns: the main street in Rhinebeck": "Towns: Woodstock",
+			"A village of old inns, a Sunday market and the county fair.": "Artists, music and walks in the Catskills from your door.",
+			"Rhinebeck is a village of old inns, bookshops and a Sunday farmers' market, with the Hudson a short drive west. Most homes are within a walk of the village, and the county fair arrives every August.": "Woodstock is a village of artists, musicians and walkers, at the foot of the Catskills. Homes range from cabins in the woods to houses on the green, and the trails start at the end of most roads.",
+			"The Sunday farmers' market": "Overlook Mountain trail",
+			"Upstate Films, the little cinema": "Concerts at the Maverick",
+			"Walks at Poets' Walk park": "The village green",
+			"The Dutchess County Fair": "Galleries on Tinker Street",
+			"$575,000": "$610,000",
+			"2 hours by train": "2.5 hours by car",
+			"Rhinebeck Central": "Onteora Central",
+			"64 since 2019": "39 since 2019"
+		}
+	}
+]

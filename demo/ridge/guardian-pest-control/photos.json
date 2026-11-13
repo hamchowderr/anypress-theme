@@ -1,0 +1,131 @@
+{
+	"files": {
+		"wasp-nest-spraying.jpg": "A technician spraying a wasp nest high in a tree with a long pole sprayer",
+		"cockroach.jpg": "An American cockroach on a white background",
+		"termite-workers.jpg": "Pale termite workers inside a damaged piece of wood",
+		"house-mouse.jpg": "A brown house mouse on a concrete floor",
+		"mosquito.jpg": "A mosquito feeding on human skin",
+		"bed-bug.jpg": "A bed bug on skin, seen up close",
+		"paper-wasps.jpg": "Paper wasps on their nest under the eaves",
+		"fire-ant-mound.jpg": "A fire ant mound of loose red soil in the grass",
+		"bungalow.jpg": "A craftsman bungalow with a porch and a neat front garden",
+		"houses-from-above.jpg": "Homes among trees, seen from above",
+		"brown-rats.jpg": "Brown rats feeding at the water's edge"
+	},
+	"by_alt": {
+		"A technician spraying a wasp nest high in a tree with a long pole sprayer": "wasp-nest-spraying.jpg",
+		"A fire ant mound of loose red soil in the grass": "fire-ant-mound.jpg",
+		"An American cockroach on a white background": "cockroach.jpg",
+		"Pale termite workers inside a damaged piece of wood": "termite-workers.jpg",
+		"A brown house mouse on a concrete floor": "house-mouse.jpg",
+		"A mosquito feeding on human skin": "mosquito.jpg",
+		"A bed bug on skin, seen up close": "bed-bug.jpg",
+		"Paper wasps on their nest under the eaves": "paper-wasps.jpg",
+		"A craftsman bungalow with a porch and a neat front garden": "bungalow.jpg",
+		"": "houses-from-above.jpg",
+		"Photo of the service: brown rats by the water's edge": "brown-rats.jpg",
+		"Photo of the service: an American cockroach": "cockroach.jpg",
+		"Photo of the service: termite workers in damaged wood": "termite-workers.jpg",
+		"Photo of the service: a mosquito on skin": "mosquito.jpg",
+		"Photo of the service: a bed bug, close up": "bed-bug.jpg",
+		"Photo of the service: paper wasps on their nest": "paper-wasps.jpg"
+	},
+	"fallback": "bungalow.jpg",
+	"posts": {
+		"mosquito": "mosquito.jpg",
+		"termite": "termite-workers.jpg",
+		"fireant": "fire-ant-mound.jpg",
+		"rodent": "brown-rats.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "wasp-nest-spraying.jpg",
+			"title": "Prallethrin applied to bald-faced hornet wasp nest",
+			"creator": "Logg Tandy",
+			"license": "CC BY 4.0",
+			"license_url": "https://creativecommons.org/licenses/by/4.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=195454496"
+		},
+		{
+			"file": "cockroach.jpg",
+			"title": "Periplaneta americana - American cockroach (25859665686) (cropped)",
+			"creator": "Insects Unlocked",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=137738713"
+		},
+		{
+			"file": "termite-workers.jpg",
+			"title": "CSIRO ScienceImage 3702 Workers of the drywood termite Cryptotermes domesticus",
+			"creator": "Ra Inta, CSIRO",
+			"license": "CC BY 3.0",
+			"license_url": "https://creativecommons.org/licenses/by/3.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=35478124"
+		},
+		{
+			"file": "house-mouse.jpg",
+			"title": "House mouse (Mus musculus) 2766",
+			"creator": "Ahunt",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=138609881"
+		},
+		{
+			"file": "mosquito.jpg",
+			"title": "Mosquito on human skin",
+			"creator": "James Gathany, USCDCP",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=83022999"
+		},
+		{
+			"file": "bed-bug.jpg",
+			"title": "A left lateral view of a common bed bug, Cimex lectularius. Original image sourced from US Government department: Public Health Image Library, Centers for Disease Control and Prevention. Under US law this image is copyright free, please credit the government department whenever you can&rdquo;.",
+			"creator": "Centers for Disease Control and Prevention",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/2288471/free-photo-image-bed-bug-bed-bugs-insect"
+		},
+		{
+			"file": "paper-wasps.jpg",
+			"title": "File:Paper wasp nest (Vespidae, Polistes apachus) (30960058872).jpg",
+			"creator": "Insects Unlocked",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=61275775"
+		},
+		{
+			"file": "fire-ant-mound.jpg",
+			"title": "Fire Ant Mound",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6075931/fire-ant-mound"
+		},
+		{
+			"file": "bungalow.jpg",
+			"title": "Suburban housing, real estate",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023013/photo-image-public-domain-house-free"
+		},
+		{
+			"file": "houses-from-above.jpg",
+			"title": "Suburban houses near a forest (Unsplash)",
+			"creator": "Nathan Anderson nathananderson",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=61883353"
+		},
+		{
+			"file": "brown-rats.jpg",
+			"title": "Brown Rat, Slimbridge, Gloucester, England, GB imported from iNaturalist photo 196979508",
+			"creator": "no rights reserved",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=181549616"
+		}
+	]
+}

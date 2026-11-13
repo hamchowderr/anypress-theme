@@ -1,0 +1,375 @@
+{
+	"files": {
+		"hero.jpg": "Hands shaping a pot on a spinning potter's wheel",
+		"story.jpg": "Clay-covered hands pressing a lump of clay on a table",
+		"hands.jpg": "Hands in clay holding a freshly thrown mug on the wheel",
+		"popup.jpg": "A mug of coffee beside a vase of flowers on a wooden table",
+		"mughero.jpg": "A mug of tea on a warm wooden table",
+		"mug1.jpg": "A grey speckled mug on a wooden table",
+		"mug2.jpg": "A white cup and saucer by a window",
+		"mug3.jpg": "A handleless cup with blue brush marks on a wooden coaster",
+		"bowlhero.jpg": "Breakfast bowls of granola and fruit on a marble table",
+		"bowl1.jpg": "A deep white stoneware bowl",
+		"bowl2.jpg": "A dark brown bowl with a rust-coloured rim",
+		"bowl3.jpg": "A wide pale green bowl with throwing lines",
+		"platehero.jpg": "A stack of plates in soft glazes",
+		"plate1.jpg": "A shallow pink glazed plate",
+		"plate2.jpg": "A plain white dinner plate on an orange cloth",
+		"plate3.jpg": "A charcoal plate of avocado toast on a dark table",
+		"vasehero.jpg": "A yellow vase of dried flowers",
+		"vase1.jpg": "A round white stoneware vase",
+		"vase2.jpg": "A small blue vase with a soft drip glaze",
+		"vase3.jpg": "A white bud vase with dried flowers on a green shelf",
+		"bottlehero.jpg": "Rows of green and blue glazed bottles",
+		"bottle1.jpg": "A white double-gourd bottle",
+		"bottle2.jpg": "A dark brown bottle with a narrow neck",
+		"bottle3.jpg": "A square black bottle with a short neck",
+		"shelves.jpg": "Shelves stacked with handmade plates and bowls",
+		"shelves2.jpg": "Shelves of colourful plates, cups and bowls",
+		"cafe.jpg": "Coffee cups and a doughnut on a café table",
+		"camera.jpg": "A coffee cup, a camera and flowers on a table",
+		"june.jpg": "A smiling woman with dark hair in a white shirt",
+		"ellie.jpg": "A woman with blonde hair and red lipstick looking down",
+		"marcus.jpg": "A smiling man in a navy polo shirt with his arms folded on a table",
+		"box.jpg": "A cardboard shipping box",
+		"wheel.jpg": "Hands centring clay on the wheel, in black and white",
+		"wheeltop.jpg": "Looking down at hands opening a pot on the wheel",
+		"class.jpg": "Hands shaping clay at a pottery class"
+	},
+	"by_alt": {
+		"@tall": "hero.jpg",
+		"@wide": "hero.jpg",
+		"The potter's wheel and shelves of drying pots": "story.jpg",
+		"Three clay cups on a shelf": "mughero.jpg",
+		"A small vase with a hole through the middle": "vasehero.jpg",
+		"A glazed blue bottle on a wooden table": "bottlehero.jpg",
+		"A cup and saucer with a crackle glaze": "mug2.jpg",
+		"Three terracotta tumblers": "mug3.jpg",
+		"A round stoneware vase with a hole in the middle": "vase1.jpg",
+		"A blue glazed vase with a soft drip": "vase2.jpg",
+		"A mug of coffee beside a vase of flowers": "popup.jpg",
+		"Shop: cups and mugs": "mughero.jpg",
+		"Shop: bowls": "bowlhero.jpg",
+		"Shop: plates": "platehero.jpg",
+		"Shop: vases": "vasehero.jpg",
+		"Shop: bottles": "bottlehero.jpg",
+		"Our story: clay-covered hands holding a freshly thrown mug": "hands.jpg",
+		"The studio: June Park": "june.jpg",
+		"The studio: Ellie Novak": "ellie.jpg",
+		"The studio: Marcus Reid": "marcus.jpg",
+		"The collection: a mug of tea on a wooden table": "mughero.jpg",
+		"Cups and mugs: a grey speckled mug on a wooden table": "mug1.jpg",
+		"Cups and mugs: a white cup with a matching saucer": "mug2.jpg",
+		"Cups and mugs: a tumbler with blue brush marks": "mug3.jpg",
+		"The collection: bowls": "bowlhero.jpg",
+		"Bowls: a deep white stoneware bowl": "bowl1.jpg",
+		"Bowls: a dark bowl with a rust-coloured rim": "bowl2.jpg",
+		"Bowls: a wide pale green serving bowl": "bowl3.jpg",
+		"The collection: plates": "platehero.jpg",
+		"Plates: a shallow pink glazed plate": "plate1.jpg",
+		"Plates: a plain white dinner plate": "plate2.jpg",
+		"Plates: a charcoal dinner plate with a ridged rim": "plate3.jpg",
+		"The collection: vases": "vasehero.jpg",
+		"Vases: a round white stoneware vase": "vase1.jpg",
+		"Vases: a small blue vase with a soft drip glaze": "vase2.jpg",
+		"Vases: a white bud vase with a red band": "vase3.jpg",
+		"The collection: bottles": "bottlehero.jpg",
+		"Bottles: a white double-gourd bottle": "bottle1.jpg",
+		"Bottles: a dark brown bottle with a narrow neck": "bottle2.jpg",
+		"Bottles: a square black bottle": "bottle3.jpg",
+		"Where to buy: shelves of handmade plates and bowls": "shelves.jpg",
+		"Where to buy in durham": "cafe.jpg",
+		"Where to buy in charleston": "shelves2.jpg",
+		"Where to buy in atlanta": "camera.jpg"
+	},
+	"fallback": "hero.jpg",
+	"posts": {
+		"box": "box.jpg",
+		"wheeltop": "wheeltop.jpg",
+		"wheel": "wheel.jpg",
+		"class": "class.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "Creating pottery",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5923366/creating-pottery-free-public-domain-cc0-image"
+		},
+		{
+			"file": "story.jpg",
+			"title": "Clay Hands",
+			"creator": "Alex Jones",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/clay-hands-469424D4C3"
+		},
+		{
+			"file": "hands.jpg",
+			"title": "Working clay potetry studio",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6033745/photo-image-public-domain-art-hand"
+		},
+		{
+			"file": "popup.jpg",
+			"title": "Coffee Flowers",
+			"creator": "Kelly Ishmael",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/coffee-flowers-96XIPRZQ6Z"
+		},
+		{
+			"file": "mughero.jpg",
+			"title": "Coffee cup table",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6039173/photo-image-public-domain-wood-black"
+		},
+		{
+			"file": "mug1.jpg",
+			"title": "Ceramic mug wooden table",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3283727/free-photo-image-coffee-table-wooden"
+		},
+		{
+			"file": "mug2.jpg",
+			"title": "White ceramic mug plate table",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3283201/free-photo-image-cafe-table-beverage"
+		},
+		{
+			"file": "mug3.jpg",
+			"title": "Ceramic mug on a wooden tray.",
+			"creator": "Uttkrista Chhetri",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/54769c7e74/"
+		},
+		{
+			"file": "bowlhero.jpg",
+			"title": "Oatmeal Honey",
+			"creator": "Jennifer Pallian",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/oatmeal-honey-NBCKVD5IDL"
+		},
+		{
+			"file": "bowl1.jpg",
+			"title": "Minimalist white ceramic bowl",
+			"creator": "lacma",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11800347/bowl"
+		},
+		{
+			"file": "bowl2.jpg",
+			"title": "Elegant handcrafted ceramic bowl design",
+			"creator": "artinstitutechicago",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8947083/bowl"
+		},
+		{
+			"file": "bowl3.jpg",
+			"title": "Rustic ceramic bowl, artisanal design",
+			"creator": "lacma",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11801540/cup"
+		},
+		{
+			"file": "platehero.jpg",
+			"title": "Stacked colorful plates",
+			"creator": "Markus Spiske",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/432122/stacked-plates"
+		},
+		{
+			"file": "plate1.jpg",
+			"title": "Paan Celadon Plate, stoneware; clear",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/7470673/paan-celadon-plate-stoneware-clear-celadon-glaze"
+		},
+		{
+			"file": "plate2.jpg",
+			"title": "Fall Table",
+			"creator": "Altered Reality",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/fall-table-AI1N2XNR9H"
+		},
+		{
+			"file": "plate3.jpg",
+			"title": "Avocado Toast",
+			"creator": "Lisa Fotios",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/avocado-toast-NQNFUT9KD7"
+		},
+		{
+			"file": "vasehero.jpg",
+			"title": "A bright yellow ceramic vase filled with dried flowers in shades of orange, yellow, green, and purple sits on a light surface near a window with a sheer curtain.",
+			"creator": "Olesja Debrova",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/78169383cd/"
+		},
+		{
+			"file": "vase1.jpg",
+			"title": "Elegant minimalist white ceramic vase",
+			"creator": "lacma",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11800244/jarlet"
+		},
+		{
+			"file": "vase2.jpg",
+			"title": "Elegant blue ceramic vase",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/9064149/vase"
+		},
+		{
+			"file": "vase3.jpg",
+			"title": "A close-up, still-life photograph of a delicate bunch of off-white dried baby’s breath flowers arranged in a minimalist ceramic vase. The cream-colored vase features a single terracotta brown stripe and stands against a deep matte green wall.",
+			"creator": "Tilak Bahadur Karki",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/4016a0c06d/"
+		},
+		{
+			"file": "bottlehero.jpg",
+			"title": "Green blue ceramic bottles",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3282495/free-photo-image-jar-ceramic-pottery"
+		},
+		{
+			"file": "bottle1.jpg",
+			"title": "Double Gourd-shaped Bottle: Ding ware",
+			"creator": "clevelandart",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/9626450/double-gourd-shaped-bottle-ding-ware"
+		},
+		{
+			"file": "bottle2.jpg",
+			"title": "Vase by Albert Robert Valentien",
+			"creator": "artinstitutechicago",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8940900/vase-albert-robert-valentien"
+		},
+		{
+			"file": "bottle3.jpg",
+			"title": "Antique ceramic square bottle",
+			"creator": "themet",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/9329629/bottle"
+		},
+		{
+			"file": "shelves.jpg",
+			"title": "Studio. Original public domain image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3282616/free-photo-image-art-bowl-cats"
+		},
+		{
+			"file": "shelves2.jpg",
+			"title": "Studio Is Clean",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3282609/free-photo-image-art-cupboard-table"
+		},
+		{
+			"file": "cafe.jpg",
+			"title": "Coffee Cappuccino",
+			"creator": "Vicky Gu",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/coffee-cappuccino-9QUVG8OY1I"
+		},
+		{
+			"file": "camera.jpg",
+			"title": "Coffee Latte",
+			"creator": "Travel Coffee Book",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/coffee-latte-9DC943FC24"
+		},
+		{
+			"file": "june.jpg",
+			"title": "Woman Smartphone",
+			"creator": "Icons8 team",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-smartphone-MLEPUKHYUU"
+		},
+		{
+			"file": "ellie.jpg",
+			"title": "Woman Smile",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-smile-Q9FEBL9RFS"
+		},
+		{
+			"file": "marcus.jpg",
+			"title": "Black Portrait",
+			"creator": "Kristin Hardwick",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/black-portrait-T8VNJRQH7F"
+		},
+		{
+			"file": "box.jpg",
+			"title": "Cardboard Box",
+			"creator": "Matt Bango",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cardboard-box-USP4WCYPBW"
+		},
+		{
+			"file": "wheel.jpg",
+			"title": "Messy hands sculpting pottery wheel",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3282629/free-photo-image-cultura-mano-artesania"
+		},
+		{
+			"file": "wheeltop.jpg",
+			"title": "person's hands crafting pottery spinning",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3305530/free-photo-image-pottery-public-domain-cc0"
+		},
+		{
+			"file": "class.jpg",
+			"title": "Working clay potetry studio",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6033512/photo-image-public-domain-arts-hand"
+		}
+	]
+}

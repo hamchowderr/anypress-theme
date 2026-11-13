@@ -1,0 +1,30 @@
+[
+	{
+		"slug": "storm-damage-repair",
+		"title": "Storm damage repair"
+	},
+	{
+		"slug": "roof-replacement",
+		"title": "Roof replacement"
+	},
+	{
+		"slug": "roof-repair",
+		"title": "Roof repair"
+	},
+	{
+		"slug": "metal-roofs",
+		"title": "Metal roofs"
+	},
+	{
+		"slug": "emergency-tarping",
+		"title": "Emergency tarping"
+	},
+	{
+		"slug": "gutters-and-downspouts",
+		"title": "Gutters and downspouts"
+	},
+	{
+		"slug": "insurance-claims",
+		"title": "Insurance claims"
+	}
+]

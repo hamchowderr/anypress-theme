@@ -1,0 +1,63 @@
+[
+	{
+		"name": "Hebden Bridge",
+		"slug": "hebden-bridge",
+		"lat": 53.7424,
+		"lon": -2.0137,
+		"swap": {}
+	},
+	{
+		"name": "Todmorden",
+		"slug": "todmorden",
+		"lat": 53.7135,
+		"lon": -2.098,
+		"swap": {
+			"Massage near Hebden Bridge": "Massage near Todmorden",
+			"Visiting / Hebden Bridge": "Visiting / Todmorden",
+			"Five minutes' walk along the canal from the town centre.": "Twelve minutes on the train, or twenty by bike along the towpath.",
+			"A walk along the canal": "Twelve minutes on the train",
+			"From the town centre, follow the canal path east for five minutes. The old mill is on your right, with our door on the canal side.": "Trains from Todmorden run every half hour. From Hebden Bridge station, walk down to the canal and turn left; we're eight minutes from the platform.",
+			"Most people from Hebden Bridge come on a weekday evening, after work, for a deep tissue massage or the quiet room.": "People from Todmorden often make a morning of it: the quiet room, then a massage, then lunch in town.",
+			"Hebden Bridge, UK": "Todmorden, UK",
+			"Five minutes on foot": "Twelve minutes by train",
+			"Step-free all the way": "Twenty minutes by bike on the towpath",
+			"Bike racks by the door": "Bike racks by the door"
+		}
+	},
+	{
+		"name": "Halifax",
+		"slug": "halifax",
+		"lat": 53.7248,
+		"lon": -1.8658,
+		"swap": {
+			"Massage near Hebden Bridge": "Massage near Halifax",
+			"Visiting / Hebden Bridge": "Visiting / Halifax",
+			"Five minutes' walk along the canal from the town centre.": "Twenty-five minutes on the train, or half an hour by car.",
+			"A walk along the canal": "Half an hour from Halifax",
+			"From the town centre, follow the canal path east for five minutes. The old mill is on your right, with our door on the canal side.": "Take the train west to Hebden Bridge, or drive the A646 and park on Station Road. Either way, the mill is a short walk from where you arrive.",
+			"Most people from Hebden Bridge come on a weekday evening, after work, for a deep tissue massage or the quiet room.": "People from Halifax tend to book hot stones or a facial on a Saturday, and stay for the quiet room.",
+			"Hebden Bridge, UK": "Halifax, UK",
+			"Five minutes on foot": "Twenty-five minutes by train",
+			"Step-free all the way": "Thirty minutes by car",
+			"Bike racks by the door": "Parking on Station Road"
+		}
+	},
+	{
+		"name": "Burnley",
+		"slug": "burnley",
+		"lat": 53.7893,
+		"lon": -2.2405,
+		"swap": {
+			"Massage near Hebden Bridge": "Massage near Burnley",
+			"Visiting / Hebden Bridge": "Visiting / Burnley",
+			"Five minutes' walk along the canal from the town centre.": "Thirty minutes over the tops by car, with parking on Station Road.",
+			"A walk along the canal": "Over the tops from Burnley",
+			"From the town centre, follow the canal path east for five minutes. The old mill is on your right, with our door on the canal side.": "Drive over the moor road to Hebden Bridge and park on Station Road, two minutes' walk from our door. Allow extra time in snow.",
+			"Most people from Hebden Bridge come on a weekday evening, after work, for a deep tissue massage or the quiet room.": "People from Burnley often book a longer treatment, ninety minutes or more, to make the drive worth it.",
+			"Hebden Bridge, UK": "Burnley, UK",
+			"Five minutes on foot": "Thirty minutes by car",
+			"Step-free all the way": "Parking on Station Road",
+			"Bike racks by the door": "Step-free from the car park"
+		}
+	}
+]

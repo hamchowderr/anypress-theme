@@ -25,7 +25,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'See open roles', 'anypress' ); ?></a></p>
+<p><a href="/volunteer/"><?php esc_html_e( 'See open roles', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -41,7 +41,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Sponsorship packs', 'anypress' ); ?></a></p>
+<p><a href="/contact/"><?php esc_html_e( 'Sponsorship packs', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -57,7 +57,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Give to the fund', 'anypress' ); ?></a></p>
+<p><a href="/contact/"><?php esc_html_e( 'Give to the fund', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

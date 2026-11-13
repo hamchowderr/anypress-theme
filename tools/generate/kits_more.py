@@ -83,7 +83,7 @@ kit("parcel-hero", K, "Parcel hero: product photo beside the collection",
    col(fill("placeholder-tall.svg", 40), "55%"),
    col(N([mono("New this autumn"), h("Stoneware, thrown by hand in small batches", 1, "xxx-large"),
           p("Mugs, bowls and vases made in our Asheville studio and fired twice. Every piece is a little different.", "medium"),
-          btns([("Shop the collection", None, "#shop"), ("How it's made", "outline", "#story")])]), None, "section-tint", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
+          btns([("Shop the collection", None, "/shop/"), ("How it's made", "outline", "/about/")])]), None, "section-tint", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 kit("parcel-promise", K, "Parcel promise: shipping, returns and where it's made",
@@ -93,35 +93,40 @@ kit("parcel-promise", K, "Parcel promise: shipping, returns and where it's made"
    ("Free shipping over $60", "Packed in paper and card, no plastic."), ("30 days to change your mind", "Send it back unused for a full refund."), ("Made in Asheville", "Every piece is thrown and glazed in our studio.")]],
    "large", "wide", None), "section-second-brand", ("large", "large", None, None)))
 
-def tile(file, alt, name, count):
-    return stackg([img(file, alt, "4/5"), row([h(name, 3, "large"), p(count, None, "secondary")], valign="bottom")])
+def zoom(markup):
+    """An image that opens full screen when clicked (core lightbox)."""
+    return markup.replace("<!-- wp:image {", '<!-- wp:image {"lightbox":{"enabled":true},', 1)
+def hlink(text, href, level=2, size=None):
+    return h(text, level, size).replace(T(text), f'<a href="{href}">' + T(text) + "</a>", 1)
+def tile(file, alt, name, count, href="/shop/"):
+    return stackg([img(file, alt, "4/5"), row([hlink(name, href, 3, "large"), p(count, None, "secondary")], valign="bottom")])
 kit("parcel-categories", K, "Parcel categories: three collections with photos",
  "Three collections as tall photos with the name and number of pieces under each, and a link to everything. Part of the Parcel kit; link each to its collection page.",
  "categories, collections, shop, departments, parcel",
- sec("Categories", N([row([h("Shop by collection", 2, "xx-large"), p('<a href="#shop">' + T("See everything") + "</a>", "medium", raw=True)], valign="bottom"),
-   grid([tile("placeholder-tall.svg", "Three clay cups on a shelf", "Cups and mugs", "14 pieces"),
-         tile("placeholder-tall.svg", "A small vase with a hole through the middle", "Vases", "9 pieces"),
-         tile("placeholder-tall.svg", "A glazed blue bottle on a wooden table", "Bottles", "6 pieces")], 3, "16rem", "medium")])))
+ sec("Categories", N([row([h("Shop by collection", 2, "xx-large"), p('<a href="/shop/">' + T("See everything") + "</a>", "medium", raw=True)], valign="bottom"),
+   grid([tile("placeholder-tall.svg", "Three clay cups on a shelf", "Cups and mugs", "14 pieces", "/shop/cups-and-mugs/"),
+         tile("placeholder-tall.svg", "A small vase with a hole through the middle", "Vases", "9 pieces", "/shop/vases/"),
+         tile("placeholder-tall.svg", "A glazed blue bottle on a wooden table", "Bottles", "6 pieces", "/shop/bottles/")], 3, "16rem", "medium")])))
 
-def product(file, alt, name, price, note=None):
-    meta = [h(name, 3, "medium"), p(price)]
+def product(file, alt, name, price, note=None, href="/shop/"):
+    meta = [hlink(name, href, 3, "medium"), p(price)]
     if note: meta.append(p(note, "small", "secondary"))
     return stackg([img(file, alt, "1"), stackg(meta, "x-small")])
 kit("parcel-products", K, "Parcel products: four best sellers",
  "Four products in a row with a square photo, name and price. Part of the Parcel kit; when the shop's products are set up, the shop's own product blocks can replace these so prices and stock stay current.",
  "products, best sellers, featured products, shop, grid, parcel",
  sec("Best sellers", N([h("Best sellers", 2, "xx-large"), grid([
-   product("placeholder-square.svg", "A cup and saucer with a crackle glaze", "Crackle cup and saucer", "$38"),
-   product("placeholder-square.svg", "Three terracotta tumblers", "Ridged tumbler", "$24", "Set of three, $64"),
-   product("placeholder-square.svg", "A round stoneware vase with a hole in the middle", "Moon vase", "$56"),
-   product("placeholder-square.svg", "A blue glazed bottle with a brass stopper", "Indigo bottle", "$72", "Only two left")], 4, "13rem", "medium")]), "section-tint"))
+   product("placeholder-square.svg", "A cup and saucer with a crackle glaze", "Crackle cup and saucer", "$38", None, "/shop/cups-and-mugs/"),
+   product("placeholder-square.svg", "Three terracotta tumblers", "Ridged tumbler", "$24", "Set of three, $64", "/shop/cups-and-mugs/"),
+   product("placeholder-square.svg", "A round stoneware vase with a hole in the middle", "Moon vase", "$56", None, "/shop/vases/"),
+   product("placeholder-square.svg", "A blue glazed vase with a soft drip", "Indigo vase", "$64", "Only two left", "/shop/vases/")], 4, "13rem", "medium")]), "section-tint"))
 
 kit("parcel-story", K, "Parcel story: the maker in their own words",
  "The maker's story in large italic type beside a photo of the workshop, with their name. Part of the Parcel kit; the owner's own words, two or three sentences.",
  "about, story, maker, handmade, studio, parcel",
  sec("Story", cols([
    col(N([p("I started with one wheel in a garage. Ten years on, every mug still goes through my hands at least four times before it reaches you.", "xx-large", None, None, "instrument-serif", {"fontStyle": "italic", "lineHeight": "1.15"}),
-          p("June Park, potter and owner", "medium", "secondary"), btns([("Read our story", "outline", "#story")])]), "55%", valign="center"),
+          p("June Park, potter and owner", "medium", "secondary"), btns([("Read our story", "outline", "/about/")])]), "55%", valign="center"),
    col(img("placeholder-tall.svg", "The potter's wheel and shelves of drying pots", "4/5"))], "xx-large", "wide", "center")))
 
 kit_page("kit-shop", "Home page: Parcel kit, online shop",
@@ -184,7 +189,7 @@ kit("chapter-community", K, "Chapter community: you won't do it alone",
    col(quote("I had started and quit drawing three times. The group is why I finished this time.", "Tom B., student since 2023", "x-large", "fraunces"), None, None, None, "center")], "xx-large", "wide", None), "section-dark"))
 
 def plan(name, price, per, items, label, style, featured=False):
-    inner = [h(name, 3, "large"), row([p(price, "xxx-large", None, None, "fraunces", {"lineHeight": "1"}), p(per, None, None)], "left", "x-small", valign="bottom"), lst(items), btns([(label, None if featured else "outline", "/shop/")])]
+    inner = [h(name, 3, "large"), row([p(price, "xxx-large", None, None, "fraunces", {"lineHeight": "1"}), p(per, None, None)], "left", "x-small", valign="bottom"), lst(items), btns([(label, None if featured else "outline", "/join/")])]
     return card(N(inner), style)
 kit("chapter-pricing", K, "Chapter pricing: course alone or with the community",
  "Two ways to join side by side: the course on its own for a single price, and the course with the community by the month. Part of the Chapter kit; match the prices to the shop's products.",
@@ -206,7 +211,7 @@ kit("gloss-hero", K, "Gloss hero: a big name beside a tall photo",
  sec("Hero", cols([
    col(N([mono("Hair, colour and brows on Elm Street", "secondary"), h("Colour that grows out beautifully", 1, "xxx-large", None, None, {"lineHeight": "1"}),
           p("Lived-in colour, precise cuts and an hour that is just for you.", "large"),
-          btns([("Book online", None, "#book"), ("See prices", "outline", "#prices")])]), "55%", valign="center"),
+          btns([("Book online", None, "/book/"), ("See prices", "outline", "/prices/")])]), "55%", valign="center"),
    col(img("placeholder-tall.svg", "Make-up brushes in a pot on a pink table", "3/4"))], "xx-large", "wide", "center"), "section-brand-soft", ("x-large", "x-large", None, None)))
 
 def price_line(name, price, note=None):
@@ -225,7 +230,7 @@ kit("gloss-prices", K, "Gloss prices: services in groups, with dotted lines to t
                      price_group("Treatments", [("Bond repair", "$30"), ("Scalp treatment", "$35")])], "x-large"))], "xx-large", "wide", None)]), content="64rem"))
 
 def stylist(name, role):
-    return stackg([img("placeholder-tall.svg", f"Portrait of {name}", "3/4"), h(name, 3, "large"), p(role, None, "secondary")])
+    return stackg([img("placeholder-tall.svg", f"Portrait of {name}", "3/4"), hlink(name, f"/team/{name.lower()}/", 3, "large"), p(role, None, "secondary")])
 kit("gloss-team", K, "Gloss team: the stylists",
  "The people who do the work, each with a portrait, name and what they love doing. Part of the Gloss kit; clients book a person, so show the real team.",
  "team, stylists, staff, people, barbers, gloss",
@@ -234,19 +239,20 @@ kit("gloss-team", K, "Gloss team: the stylists",
    stylist("Bea", "Brows and lashes. Fixes over-plucked brows.")], 3, "15rem", "large")])))
 
 kit("gloss-gallery", K, "Gloss gallery: four photos of different sizes",
- "Four photos of recent work or the salon at different sizes, edge to edge. Part of the Gloss kit; the salon's own photos, with the client's permission.",
+ "Four photos of recent work or the salon at different sizes, edge to edge, each opening full screen when clicked. Part of the Gloss kit; the salon's own photos, with the client's permission.",
  "gallery, photos, work, portfolio, before and after, gloss",
- sec("Gallery", cols([col(fill("placeholder-tall.svg", 36), "50%"),
-   col(grp(N([fill("placeholder-wide.svg", 18), cols([col(fill("placeholder-square.svg", 18)), col(fill("placeholder-square.svg", 18))], "0", None, None, False)]), gap="0", layout={"type": "default"}))], "0", "full", None),
+ sec("Gallery", cols([col(zoom(img("placeholder-tall.svg", "Recent work: soft copper colour on long waves", "4/5")), "50%"),
+   col(grp(N([zoom(img("placeholder-wide.svg", "Recent work: a blow-dry being finished with a round brush", "4/3")),
+              cols([col(zoom(img("placeholder-square.svg", "Recent work: curls cut dry, one by one", "1"))), col(zoom(img("placeholder-square.svg", "Inside the salon: chairs by the window", "1")))], "0", None, None, False)]), gap="0", layout={"type": "default"}))], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 kit("gloss-book", K, "Gloss booking: hours, address and how to book",
  "The closing section on the second brand colour: a big invitation to book, opening hours, the address and the cancellation policy. Part of the Gloss kit.",
  "booking, book now, hours, address, contact, policy, gloss",
  sec("Book", cols([
-   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "#book"), ("Call 555 0133", "outline", "tel:5550133", "phone")])]), "55%"),
+   col(N([h("Book in two minutes", 2, "xxx-large"), p("Choose your stylist and a time online, or call us.", "large"), btns([("Book online", None, "/book/"), ("Call (217) 555-0133", "outline", "tel:2175550133", "phone")])]), "55%"),
    col(stackg([stackg([h("Hours", 3, "medium"), p("Tuesday to Friday, 9am to 8pm" + "", None), p("Saturday, 9am to 5pm")], "x-small"),
-               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield", bind="address")], "x-small"),
+               stackg([h("Find us", 3, "medium"), p("21 Elm Street, Springfield, IL 62701", bind="address")], "x-small"),
                stackg([h("Changing a booking", 3, "medium"), p("Please give us 24 hours' notice to move or cancel.")], "x-small")], "large"))], "xx-large", "wide", None), "section-second-brand"))
 
 kit_page("kit-salon", "Home page: Gloss kit, salon and beauty",
@@ -267,12 +273,12 @@ kit("commons-hero", K, "Commons hero: who you are and how to join",
 def event(day, month, title, when, where):
     date = grp(N([p(day, "xx-large", None, "center", "crimson-pro", {"lineHeight": "1", "fontWeight": "700"}), p(month, "small", None, "center", None, {"textTransform": "uppercase", "letterSpacing": "0.08em"})]),
                "section-brand", ("small", "small", "small", "small"), "x-small")
-    return cols([col(date, "6rem"), col(stackg([h(title, 3, "large"), p(f"{when} · {where}", None, "secondary"), p('<a href="#">' + T("Details") + "</a>", None, None, None, None, None, True)], "x-small"), None, None, None, "center")],
+    return cols([col(date, "6rem"), col(stackg([h(title, 3, "large"), p(f"{when} · {where}", None, "secondary"), p('<a href="/events/">' + T("Details") + "</a>", None, None, None, None, None, True)], "x-small"), None, None, None, "center")],
                 "large", None, "center", False)
 kit("commons-events", K, "Commons events: what's coming up",
  "The next few events as rows with a date block, the title, time and place, and a link to the details. Part of the Commons kit; keep it to the next four or five and take old ones down.",
  "events, calendar, upcoming, meetings, services, schedule, commons",
- sec("Events", N([row([h("Coming up", 2, "xx-large"), p('<a href="#">' + T("Full calendar") + "</a>", "medium", raw=True)], valign="bottom"),
+ sec("Events", N([row([h("Coming up", 2, "xx-large"), p('<a href="/events/">' + T("Full calendar") + "</a>", "medium", raw=True)], valign="bottom"),
    stackg([event("14", "Mar", "Business breakfast: hiring your first employee", "7:30am to 9am", "The Grand Hotel"),
            event("21", "Mar", "Main Street clean-up", "10am to 1pm", "Meet at the town hall"),
            event("04", "Apr", "Members' evening and awards", "6pm to 9pm", "Riverside Brewery"),
@@ -306,10 +312,10 @@ kit("commons-leaders", K, "Commons leaders: the board or staff by name",
 kit("commons-involved", K, "Commons get involved: give, volunteer, sponsor",
  "The closing section on the second brand colour: three ways to help (give, volunteer, sponsor), each with a sentence and a link. Part of the Commons kit; change the three to what the group really needs.",
  "donate, give, volunteer, sponsor, get involved, support, commons",
- sec("Get involved", N([h("Get involved", 2, "xxx-large"), cols([col(stackg([h(a, 3, "large"), p(b), p(f'<a href="#">{T(c)}</a>', None, None, None, None, None, True)])) for a, b, c in [
-   ("Volunteer", "Help at an event, mentor a new business or join a committee.", "See open roles"),
-   ("Sponsor", "Put your name on the breakfast series or the summer street fair.", "Sponsorship packs"),
-   ("Give", "Our scholarship fund sends two local students to college every year.", "Give to the fund")]], "x-large", "wide", None)]), "section-second-brand"))
+ sec("Get involved", N([h("Get involved", 2, "xxx-large"), cols([col(stackg([h(a, 3, "large"), p(b), p(f'<a href="{u}">{T(c)}</a>', None, None, None, None, None, True)])) for a, b, c, u in [
+   ("Volunteer", "Help at an event, mentor a new business or join a committee.", "See open roles", "/volunteer/"),
+   ("Sponsor", "Put your name on the breakfast series or the summer street fair.", "Sponsorship packs", "/contact/"),
+   ("Give", "Our scholarship fund sends two local students to college every year.", "Give to the fund", "/contact/")]], "x-large", "wide", None)]), "section-second-brand"))
 
 kit_page("kit-community", "Home page: Commons kit, associations, chambers and churches",
  "A complete home page for a chamber of commerce, association, club, nonprofit or church in the Commons kit: a photo of members with how to join, upcoming events, membership levels, the latest news, the people who run it and ways to get involved. Apply the Commons style for the look it was designed with.",
@@ -323,11 +329,11 @@ kit("rep-hero", K, "Rep hero: a training photo with a loud headline",
  "hero, gym, fitness, crossfit, boxing, studio, classes, trial, rep",
  cover(on_photo(grp(N([h("Lift with people who know your name", 1, "poster", None, None, {"lineHeight": "0.9"}),
    p("Small-group strength and conditioning in Eastside. Coached every session, from your first lift.", "large"),
-   btns([("Try a week free", None, "#trial"), ("See the timetable", "outline", "#timetable")])]), gap="medium", layout={"type": "constrained", "contentSize": "72rem", "justifyContent": "left"})),
+   btns([("Try a week free", None, "/trial/"), ("See the timetable", "outline", "/timetable/")])]), gap="medium", layout={"type": "constrained", "contentSize": "72rem", "justifyContent": "left"})),
    "Hero", "placeholder-wide.svg", 60, "92vh", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem"))
 
 def cls_tile(name, length, level, style):
-    return grp(N([h(name, 3, "xx-large"), p(f"{length} · {level}", "medium")]), style, ("x-large", "x-large", "large", "large"), "small")
+    return grp(N([hlink(name, f"/classes/{name.lower()}/", 3, "x-large"), p(f"{length} · {level}", "medium")]), style, ("x-large", "x-large", "large", "large"), "small")
 kit("rep-classes", K, "Rep classes: four classes on bold tiles",
  "The main classes on tiles of different colours, each with its name in big capitals, length and level. Part of the Rep kit.",
  "classes, programs, workouts, sessions, rep",
@@ -338,7 +344,7 @@ kit("rep-classes", K, "Rep classes: four classes on bold tiles",
 kit("rep-timetable", K, "Rep timetable: the week in a table",
  "The weekly timetable as a table: days down the side, morning, lunchtime and evening across. Part of the Rep kit; keep it current, or link to the booking system's live timetable.",
  "timetable, schedule, class times, week, rep",
- sec("Timetable", N([row([h("This week", 2, "xxx-large"), btns([("Book a class", None, "#trial")])], valign="bottom"),
+ sec("Timetable", N([row([h("This week", 2, "xxx-large"), btns([("Book a class", None, "/trial/")])], valign="bottom"),
    table(["", "6:30am", "12:15pm", "6pm"], [["Mon", "Strength", "Conditioning", "Boxing"], ["Tue", "Conditioning", "Mobility", "Strength"],
      ["Wed", "Strength", "Conditioning", "Boxing"], ["Thu", "Conditioning", "Mobility", "Strength"], ["Fri", "Strength", "Conditioning", "Strength"],
      ["Sat", "Team workout, 9am", "", ""]], "stripes")])))
@@ -354,7 +360,7 @@ kit("rep-prices", K, "Rep memberships: three prices, big",
    membership("Ten-class pass", "$150", ["Use within three months", "Share with a friend"], "section-card")], 3, "15rem", "small")]), "section-dark"))
 
 def coach(name, text):
-    return stackg([img("placeholder-wide.svg", f"{name} coaching a class", "3/2"), h(name, 3, "xx-large"), p(text, "medium")])
+    return stackg([img("placeholder-wide.svg", f"{name} coaching a class", "3/2"), hlink(name, f"/coaches/{name.lower()}/", 3, "xx-large"), p(text, "medium")])
 kit("rep-coaches", K, "Rep coaches: who will coach you",
  "Two coaches side by side, each with a photo, name and what they are known for. Part of the Rep kit; use the real coaches.",
  "coaches, trainers, team, staff, rep",
@@ -365,7 +371,7 @@ kit("rep-trial", K, "Rep trial: first week free, huge",
  "The closing section on the second brand colour: the trial offer in huge capitals, what it includes and the button. Part of the Rep kit.",
  "trial, free week, offer, call to action, join, rep",
  sec("Trial", cols([col(h("First week free", 2, "poster", None, None, None), "60%"),
-   col(N([p("Come to any class for seven days. Bring trainers and water; we'll show you the rest.", "large"), btns([("Claim your free week", None, "#trial")])]), None, None, None, "bottom")], "x-large", "wide", "bottom"),
+   col(N([p("Come to any class for seven days. Bring trainers and water; we'll show you the rest.", "large"), btns([("Claim your free week", None, "/trial/")])]), None, None, None, "bottom")], "x-large", "wide", "bottom"),
    "section-second-brand", ("xx-large", "xx-large", None, None)))
 
 kit_page("kit-fitness", "Home page: Rep kit, gym and classes",
@@ -379,10 +385,10 @@ kit("frame-hero", K, "Frame hero: who you are, in one big sentence",
  "Opening section for a photographer, designer, illustrator or architect: one very large sentence saying who they are and what they make, with where they work and availability in small type. No photo, so the work below does the talking. Part of the Frame kit (creative portfolio).",
  "hero, portfolio, photographer, designer, illustrator, architect, statement, frame",
  sec("Hero", N([h("Ines Duarte photographs buildings and the people who use them.", 1, "poster", None, None, {"lineHeight": "0.95"}),
-   row([mono("Lisbon and Porto"), mono("Taking commissions from March"), p('<a href="#contact">' + T("hello@example.com") + "</a>", "medium", raw=True)], "left", "large")]), pad=("xx-large", "x-large", None, None)))
+   row([mono("Lisbon and Porto"), mono("Taking commissions from March"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "medium", raw=True, bind="email_linked")], "left", "large")]), pad=("xx-large", "x-large", None, None)))
 
 def work(file, alt, ratio, cap):
-    return captioned(file, alt, ratio, cap)
+    return zoom(captioned(file, alt, ratio, cap))
 kit("frame-work", K, "Frame work: selected projects, staggered",
  "Selected work as large photos in two staggered columns, each with a numbered caption in small type: the project, place and year. Part of the Frame kit; link each photo to its project page.",
  "work, projects, portfolio, gallery, case studies, frame",
@@ -407,10 +413,11 @@ kit("frame-clients", K, "Frame clients: names in a plain grid",
    col(grid([p(n, "x-large", None, None, "bricolage-grotesque", {"lineHeight": "1.1", "fontWeight": "600"}) for n in ["Atelier Sul", "Casa Moreira", "Revista Linha", "Norte Weekly", "Studio Ferro", "Câmara de Vila Nova", "Oficina Azul", "Lisbon Design Week"]], 2, "14rem", "medium"))], "large", "wide", None),
    "section-tint"))
 
-kit("frame-contact", K, "Frame contact: the email address, huge",
- "The closing section: an invitation to get in touch and the email address as large as the page allows, with social links in small type. Part of the Frame kit.",
+kit("frame-contact", K, "Frame contact: Write to me, huge",
+ "The closing section: an invitation to get in touch as large as the page allows, linking to the email address shown under it, with social links in small type. Part of the Frame kit.",
  "contact, email, hire, commission, frame",
- sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("hello@example.com") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True, bind="email_linked"),
+ sec("Contact", N([mono("Commissions, prints and talks"), p('<a href="mailto:hello@example.com">' + T("Write to me") + "</a>", "poster", None, None, "bricolage-grotesque", {"lineHeight": "1", "fontWeight": "700", "letterSpacing": "-0.04em"}, True),
+   p('<a href="mailto:hello@example.com">hello@example.com</a>', "x-large", None, None, None, None, True, bind="email_linked"),
    row([mono("Instagram"), mono("Behance"), mono("Linkedin")], "left", "large")]), pad=("xx-large", "xx-large", None, None)))
 
 kit_page("kit-portfolio", "Home page: Frame kit, creative portfolio",
@@ -425,27 +432,27 @@ kit("keystone-hero", K, "Keystone hero: a home photo with buy, sell and rent",
  "hero, real estate, realtor, estate agent, property, homes, keystone",
  cover(on_photo(grp(N([h("Homes in the Hudson Valley, sold with care", 1, "poster", None, None, {"lineHeight": "1"}),
    p("A small agency that answers the phone, knows every town by name and has sold here for 22 years.", "large"),
-   btns([("Homes for sale", None, "#listings"), ("Sell with us", "outline", "#valuation"), ("Rentals", "outline", "#listings")])]), gap="medium", layout={"type": "constrained", "contentSize": "52rem", "justifyContent": "left"})),
+   btns([("Homes for sale", None, "/homes/"), ("Sell with us", "outline", "/valuation/"), ("Rentals", "outline", "/rentals/")])]), gap="medium", layout={"type": "constrained", "contentSize": "52rem", "justifyContent": "left"})),
    "Hero", "placeholder-wide.svg", 50, "88vh", "bottom left", ("xx-large", "x-large", "medium", "medium"), "80rem"))
 
-def listing(file, alt, status, price, address, facts):
-    return stackg([img(file, alt, "4/3"), mono(status, "primary"), p(price, "xx-large", None, None, "gloock", {"lineHeight": "1"}), p(address, "medium"), p(facts, None, "secondary")])
+def listing(file, alt, status, price, address, facts, href):
+    return stackg([zoom(img(file, alt, "4/3")), mono(status, "primary"), p(price, "xx-large", None, None, "gloock", {"lineHeight": "1"}), p(f'<a href="{href}">' + T(address) + "</a>", "medium", raw=True), p(facts, None, "secondary")])
 kit("keystone-listings", K, "Keystone listings: three homes for sale",
  "Three homes as cards with a photo, status, price, address and the basic facts (beds, baths, size). Part of the Keystone kit; link each to its listing page, and remove a home when it sells.",
  "listings, homes for sale, properties, real estate, keystone",
- sec("Listings", N([row([h("Just listed", 2, "xx-large"), p('<a href="#">' + T("All homes for sale") + "</a>", "medium", raw=True)], valign="bottom"), grid([
-   listing("placeholder-wide.svg", "A bright living room with a striped sofa", "Just listed", "$485,000", "12 Orchard Lane, Rhinebeck", "3 bed · 2 bath · 1,850 sq ft"),
-   listing("placeholder-wide.svg", "A bedroom with an arched headboard wall", "Open house Sunday", "$629,000", "4 Mill Road, Kingston", "4 bed · 3 bath · 2,400 sq ft"),
-   listing("placeholder-wide.svg", "A stone house with green shutters", "Price reduced", "$1,150,000", "The Old Rectory, Hudson", "5 bed · 4 bath · 3,900 sq ft")], 3, "16rem", "large")])))
+ sec("Listings", N([row([h("Just listed", 2, "xx-large"), p('<a href="/homes/">' + T("All homes for sale") + "</a>", "medium", raw=True)], valign="bottom"), grid([
+   listing("placeholder-wide.svg", "Home for sale: 12 Orchard Lane", "Just listed", "$485,000", "12 Orchard Lane, Rhinebeck", "3 bed · 2 bath · 1,850 sq ft", "/homes/12-orchard-lane/"),
+   listing("placeholder-wide.svg", "Home for sale: 4 Mill Road", "Open house Sunday", "$629,000", "4 Mill Road, Kingston", "4 bed · 3 bath · 2,400 sq ft", "/homes/4-mill-road/"),
+   listing("placeholder-wide.svg", "Home for sale: The Old Rectory", "Price reduced", "$1,150,000", "The Old Rectory, Hudson", "5 bed · 4 bath · 3,900 sq ft", "/homes/the-old-rectory/")], 3, "16rem", "large")])))
 
 kit("keystone-feature", K, "Keystone featured home: photo beside the details",
  "One home in depth: a large photo edge to edge beside a panel with the price, address, the main facts and a button to book a viewing. Part of the Keystone kit.",
  "featured property, featured listing, home, viewing, keystone",
  sec("Featured home", cols([
-   col(fill("placeholder-wide.svg", 38), "58%"),
+   col(fill("placeholder-tall.svg", 38), "58%"),
    col(N([mono("Featured home", "base"), h("The Old Rectory, Hudson", 2, "xx-large"), p("$1,150,000", "xx-large", None, None, "gloock"),
           p("An 1840s stone house on two acres, with the original floors, a walled garden and a barn ready to become a studio.", "medium"),
-          lst(["5 bedrooms, 4 bathrooms", "3,900 sq ft on 2 acres", "Ten minutes to the Amtrak station"]), btns([("Book a viewing", None, "#agent")])]), None, "section-brand", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
+          lst(["5 bedrooms, 4 bathrooms", "3,900 sq ft on 2 acres", "Ten minutes to the Amtrak station"]), btns([("Book a viewing", None, "/contact/")])]), None, "section-brand", ("xx-large", "xx-large", "x-large", "x-large"), "center")], "0", "full", None),
    None, (None, None, None, None), layout={"type": "default"}))
 
 def stat(n, label, family):
@@ -467,7 +474,7 @@ kit("keystone-valuation", K, "Keystone valuation: what's your home worth?",
  "The closing section on the second brand colour: an offer of a free valuation, how it works in one sentence and the button. Part of the Keystone kit.",
  "valuation, appraisal, sell, home value, call to action, keystone",
  sec("Valuation", cols([col(h("What is your home worth?", 2, "xxx-large"), "55%"),
-   col(N([p("Claire visits, looks at what has sold nearby and gives you a price in writing within two days. Free, and no obligation.", "large"), btns([("Get a free valuation", None, "#valuation")])]), None, None, None, "center")], "xx-large", "wide", "center"),
+   col(N([p("Claire visits, looks at what has sold nearby and gives you a price in writing within two days. Free, and no obligation.", "large"), btns([("Get a free valuation", None, "/valuation/")])]), None, None, None, "center")], "xx-large", "wide", "center"),
    "section-second-brand"))
 
 kit_page("kit-real-estate", "Home page: Keystone kit, real estate",

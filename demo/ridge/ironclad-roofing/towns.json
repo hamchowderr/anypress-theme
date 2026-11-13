@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Oklahoma City",
+		"slug": "oklahoma-city",
+		"lat": 35.4676,
+		"lon": -97.5164
+	},
+	{
+		"name": "Edmond",
+		"slug": "edmond",
+		"lat": 35.6528,
+		"lon": -97.4781
+	},
+	{
+		"name": "Moore",
+		"slug": "moore",
+		"lat": 35.3395,
+		"lon": -97.4867
+	},
+	{
+		"name": "Norman",
+		"slug": "norman",
+		"lat": 35.2226,
+		"lon": -97.4395
+	},
+	{
+		"name": "Yukon",
+		"slug": "yukon",
+		"lat": 35.5067,
+		"lon": -97.7625
+	},
+	{
+		"name": "Mustang",
+		"slug": "mustang",
+		"lat": 35.3842,
+		"lon": -97.7245
+	},
+	{
+		"name": "Midwest City",
+		"slug": "midwest-city",
+		"lat": 35.4495,
+		"lon": -97.3967
+	},
+	{
+		"name": "Del City",
+		"slug": "del-city",
+		"lat": 35.442,
+		"lon": -97.4409
+	}
+]

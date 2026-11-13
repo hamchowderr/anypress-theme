@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Houston",
+		"slug": "houston",
+		"lat": 29.7604,
+		"lon": -95.3698
+	},
+	{
+		"name": "Katy",
+		"slug": "katy",
+		"lat": 29.7858,
+		"lon": -95.8245
+	},
+	{
+		"name": "Sugar Land",
+		"slug": "sugar-land",
+		"lat": 29.6197,
+		"lon": -95.6349
+	},
+	{
+		"name": "Pearland",
+		"slug": "pearland",
+		"lat": 29.5636,
+		"lon": -95.286
+	},
+	{
+		"name": "The Woodlands",
+		"slug": "the-woodlands",
+		"lat": 30.1658,
+		"lon": -95.4613
+	},
+	{
+		"name": "Spring",
+		"slug": "spring",
+		"lat": 30.0799,
+		"lon": -95.4172
+	},
+	{
+		"name": "Cypress",
+		"slug": "cypress",
+		"lat": 29.9691,
+		"lon": -95.6972
+	},
+	{
+		"name": "Pasadena",
+		"slug": "pasadena",
+		"lat": 29.6911,
+		"lon": -95.2091
+	}
+]

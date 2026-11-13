@@ -21,11 +21,11 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#book"><?php esc_html_e( 'Book online', 'anypress' ); ?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/"><?php esc_html_e( 'Book online', 'anypress' ); ?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"metadata":{"bindings":{"url":{"source":"anypress/site-details","args":{"key":"phone_link"}},"text":{"source":"anypress/site-details","args":{"key":"phone"}}}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="tel:5550133"><?php esc_html_e( 'Call 555 0133', 'anypress' ); ?></a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="tel:2175550133"><?php esc_html_e( 'Call (217) 555-0133', 'anypress' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -52,7 +52,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"anypress/site-details","args":{"key":"address"}}}}} -->
-<p><?php esc_html_e( '21 Elm Street, Springfield', 'anypress' ); ?></p>
+<p><?php esc_html_e( '21 Elm Street, Springfield, IL 62701', 'anypress' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

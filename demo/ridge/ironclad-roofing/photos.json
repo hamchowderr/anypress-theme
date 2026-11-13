@@ -1,0 +1,141 @@
+{
+	"files": {
+		"roofers-at-work.jpg": "Two roofers working on a sloped shingle roof",
+		"tool-belt-shingles.jpg": "A roofer's tool belt and hammer lying on new shingles",
+		"shingle-bundles.jpg": "Bundles of new shingles stacked on a roof above a gutter",
+		"metal-roof-aerial.jpg": "A house with a dark standing-seam metal roof, seen from above",
+		"metal-roof-grey.jpg": "A low-pitch grey standing-seam metal roof",
+		"worn-shingles.jpg": "Worn asphalt shingles along the eave of a roof",
+		"failing-shingles.jpg": "Old asphalt shingles cracked and lifting, letting water in",
+		"storm-damaged-shingles.jpg": "Asphalt shingles torn and missing after a storm",
+		"blue-tarp-roof.jpg": "Blue tarps covering storm-damaged roofs on a street of houses",
+		"hailstones.jpg": "A handful of hailstones on the ground after a storm",
+		"roofers-scaffolding.jpg": "Roofers on scaffolding stripping the old roof from a house",
+		"gutter.jpg": "A metal rain gutter running along the eave of a building"
+	},
+	"by_alt": {
+		"Two roofers stripping old shingles from the roof of a house": "roofers-at-work.jpg",
+		"A roofer's tool belt and hammer lying on new shingles": "tool-belt-shingles.jpg",
+		"Shingles cracked and torn by hail on a sloped roof": "storm-damaged-shingles.jpg",
+		"Bundles of new shingles stacked on a roof above a gutter": "shingle-bundles.jpg",
+		"Worn shingles curling along the edge of a roof": "worn-shingles.jpg",
+		"A house with a new grey standing-seam metal roof": "metal-roof-grey.jpg",
+		"A blue tarp covering a storm-damaged roof on a street of houses": "blue-tarp-roof.jpg",
+		"A new gutter running along the eave of a building": "gutter.jpg",
+		"Roofers on scaffolding stripping the old roof from a house": "roofers-scaffolding.jpg",
+		"": "metal-roof-aerial.jpg",
+		"Photo of the service: worn shingles letting water through at the eave": "failing-shingles.jpg",
+		"Photo of the service: shingles cracked and torn by hail": "storm-damaged-shingles.jpg",
+		"Photo of the service: bundles of new shingles stacked on a roof": "shingle-bundles.jpg",
+		"Photo of the service: a new grey standing-seam metal roof": "metal-roof-grey.jpg",
+		"Photo of the service: a blue tarp covering a damaged roof": "blue-tarp-roof.jpg",
+		"Photo of the service: a new gutter along an eave": "gutter.jpg",
+		"Photo of the service: storm-damaged shingles on a roof": "storm-damaged-shingles.jpg"
+	},
+	"fallback": "roofers-at-work.jpg",
+	"posts": {
+		"hail": "hailstones.jpg",
+		"signs": "failing-shingles.jpg",
+		"metal": "metal-roof-aerial.jpg",
+		"claim": "storm-damaged-shingles.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "roofers-at-work.jpg",
+			"title": "Two roofers at work, New Orleans February 2006",
+			"creator": "Editor B",
+			"license": "CC BY 2.0",
+			"license_url": "https://creativecommons.org/licenses/by/2.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=1652739"
+		},
+		{
+			"file": "tool-belt-shingles.jpg",
+			"title": "A roofer's tool belt and hammer lying on new shingles",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5942657/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "shingle-bundles.jpg",
+			"title": "Shingles atop roof",
+			"creator": "Joe Mabel",
+			"license": "CC BY 4.0",
+			"license_url": "https://creativecommons.org/licenses/by/4.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=61474309"
+		},
+		{
+			"file": "metal-roof-aerial.jpg",
+			"title": "Standing seam metal roof 3",
+			"creator": "Wikideas1",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=133391168"
+		},
+		{
+			"file": "metal-roof-grey.jpg",
+			"title": "Standing seam metal roof low pitch roof-2",
+			"creator": "Wikideas1",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=137161353"
+		},
+		{
+			"file": "worn-shingles.jpg",
+			"title": "Faster wear of asphalt shingles along eaves",
+			"creator": "DMahalko, Dale Mahalko, Gilman, WI, USA",
+			"license": "CC BY-SA 3.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=7020826"
+		},
+		{
+			"file": "failing-shingles.jpg",
+			"title": "Failure of asphalt shingles allowing roof leakage",
+			"creator": "DMahalko, Dale Mahalko, Gilman, WI, USA",
+			"license": "CC BY-SA 3.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=7020936"
+		},
+		{
+			"file": "storm-damaged-shingles.jpg",
+			"title": "Asphalt shingles damage",
+			"creator": "Samuel Bolton",
+			"license": "CC BY-SA 4.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=93520444"
+		},
+		{
+			"file": "blue-tarp-roof.jpg",
+			"title": "Post-Hurricane Ida Blue Roof Tarps, Willow & Dante Streets, New Orleans 01",
+			"creator": "Infrogmation of New Orleans",
+			"license": "CC BY-SA 4.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=114049530"
+		},
+		{
+			"file": "hailstones.jpg",
+			"title": "Hailstones (mid-afternoon, 15 October 2024) (Ohio State University at Newark campus, Newark, Ohio, USA) 1",
+			"creator": "James St. John",
+			"license": "CC BY 2.0",
+			"license_url": "https://creativecommons.org/licenses/by/2.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=153990885"
+		},
+		{
+			"file": "roofers-scaffolding.jpg",
+			"title": "Seattle - 619 W Comstock roofers",
+			"creator": "Joe Mabel",
+			"license": "CC BY-SA 3.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=2707289"
+		},
+		{
+			"file": "gutter.jpg",
+			"title": "Rain Gutter on Commercial Building 05",
+			"creator": "Stilfehler",
+			"license": "CC BY-SA 4.0",
+			"license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=87745360"
+		}
+	]
+}

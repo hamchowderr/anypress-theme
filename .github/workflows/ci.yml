@@ -28,11 +28,26 @@ jobs:
           npm ci
           npm install --no-save playwright@1.64.1
           npx playwright install --with-deps chromium
+      - name: Get AnyPress Blocks (latest release, retried)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in 1 2 3 4 5; do
+            gh release download -R hamchowderr/anypress-blocks -p anypress-blocks.zip -D "$RUNNER_TEMP" --clobber && break
+            [ "$i" = 5 ] && exit 1; sleep $((i * 15))
+          done
+          unzip -q "$RUNNER_TEMP/anypress-blocks.zip" -d "$RUNNER_TEMP/blocks"
+          echo "ANYPRESS_BLOCKS=$RUNNER_TEMP/blocks/anypress-blocks" >> "$GITHUB_ENV"
+      - name: Demo Blueprints are up to date
+        run: python3 tools/demo/blueprints.py --check
       - name: Theme check on WordPress Playground
         working-directory: tests
         run: npm run theme
       - name: Build the zip
         run: bin/build-zip.sh
+      - name: wordpress.org Theme Check on the zip (fails on REQUIRED and WARNING)
+        working-directory: tests
+        run: npm run wporg
       - uses: actions/upload-artifact@v4
         with:
           name: anypress-theme

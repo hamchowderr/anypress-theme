@@ -21,7 +21,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Crackle cup and saucer', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><a href="/shop/cups-and-mugs/"><?php esc_html_e( 'Crackle cup and saucer', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -37,7 +37,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Ridged tumbler', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><a href="/shop/cups-and-mugs/"><?php esc_html_e( 'Ridged tumbler', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -57,7 +57,7 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Moon vase', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><a href="/shop/vases/"><?php esc_html_e( 'Moon vase', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -68,16 +68,16 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none","aspectRatio":"1","scale":"cover"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_attr_e( 'A blue glazed bottle with a brass stopper', 'anypress' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder-square.svg' ) ); ?>" alt="<?php esc_attr_e( 'A blue glazed vase with a soft drip', 'anypress' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"medium"} -->
-<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Indigo bottle', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-medium-font-size"><a href="/shop/vases/"><?php esc_html_e( 'Indigo vase', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><?php esc_html_e( '$72', 'anypress' ); ?></p>
+<p><?php esc_html_e( '$64', 'anypress' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"secondary","fontSize":"small"} -->

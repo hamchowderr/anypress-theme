@@ -1,0 +1,362 @@
+{
+	"files": {
+		"porchhouse.jpg": "A grey farmhouse with a white porch and a red roof",
+		"stone1.jpg": "A stone and brick house with a front garden",
+		"rectory.jpg": "An old stone house with steep gables",
+		"victorian.jpg": "A white house with two long porches",
+		"modern.jpg": "A modern brick house with a lawn",
+		"farmhouse.jpg": "An old brick house on a green lawn",
+		"stone2.jpg": "A stone house with a green lawn",
+		"brick.jpg": "A brick house with a black door",
+		"living1.jpg": "A bright living room with white sofas",
+		"living2.jpg": "An empty room with wood floors and a radiator",
+		"living3.jpg": "A living room with a stone fireplace",
+		"living4.jpg": "A living room with striped sofas",
+		"living5.jpg": "A living room with a wood ceiling",
+		"living6.jpg": "A white living room with a fireplace",
+		"kitchen1.jpg": "A long white kitchen with a wood floor",
+		"kitchen2.jpg": "A white kitchen with an island",
+		"kitchen3.jpg": "A kitchen with a wood island and stools",
+		"kitchen4.jpg": "A cream kitchen with a stone island",
+		"bed1.jpg": "A bedroom with a wood-panelled wall",
+		"bed2.jpg": "A bedroom with a warm light",
+		"bed3.jpg": "A bedroom with big windows",
+		"bed4.jpg": "A bright bedroom with a plant",
+		"porch1.jpg": "A covered porch with a sofa",
+		"porch2.jpg": "A wooden porch among trees",
+		"keys.jpg": "A hand holding house keys",
+		"mainst.jpg": "A main street with shops and parked cars",
+		"valley.jpg": "Hills in autumn colours above a river",
+		"river.jpg": "A wide river between hills",
+		"office.jpg": "A long table by a brick wall",
+		"office2.jpg": "A table and chairs by a brick wall",
+		"claire.jpg": "Claire Hollis, smiling, with her arms folded",
+		"ana.jpg": "Ana Mensah, smiling"
+	},
+	"by_alt": {
+		"@wide": "stone2.jpg",
+		"@tall": "rectory.jpg",
+		"@square": "keys.jpg",
+		"A stone house with green shutters": "rectory.jpg",
+		"A stone house with a green lawn": "stone2.jpg",
+		"A bright living room with a striped sofa": "living4.jpg",
+		"A bedroom with an arched headboard wall": "bed2.jpg",
+		"Portrait of the agent": "claire.jpg",
+		"Agent: Claire Hollis": "claire.jpg",
+		"Agent: Ana Mensah": "ana.jpg",
+		"Inside the office: a long table by a brick wall": "office.jpg",
+		"Rental: an apartment with a big window": "living2.jpg",
+		"Rental: a cottage by the river": "porch2.jpg",
+		"Rental: a family house with a garden": "farmhouse.jpg",
+		"Town: Rhinebeck": "mainst.jpg",
+		"Town: Kingston": "river.jpg",
+		"Town: Hudson": "brick.jpg",
+		"Town: Woodstock": "valley.jpg",
+		"This home: the farmhouse from the lane": "porchhouse.jpg",
+		"Home for sale: 12 Orchard Lane": "porchhouse.jpg",
+		"This home: the living room": "living1.jpg",
+		"This home: the kitchen": "kitchen1.jpg",
+		"This home: a bedroom": "bed1.jpg",
+		"This home: the porch": "porch1.jpg",
+		"This home: 4 Mill Road from the street": "stone1.jpg",
+		"Home for sale: 4 Mill Road": "stone1.jpg",
+		"4 Mill Road: the living room": "living3.jpg",
+		"4 Mill Road: the kitchen": "kitchen2.jpg",
+		"4 Mill Road: a bedroom": "bed3.jpg",
+		"4 Mill Road: the porch": "porch2.jpg",
+		"This home: The Old Rectory from the street": "rectory.jpg",
+		"Home for sale: The Old Rectory": "rectory.jpg",
+		"The Old Rectory: the living room": "living6.jpg",
+		"The Old Rectory: the kitchen": "kitchen4.jpg",
+		"The Old Rectory: a bedroom": "bed2.jpg",
+		"The Old Rectory: the porch": "porch1.jpg",
+		"This home: 27 Tinker Street from the street": "victorian.jpg",
+		"Home for sale: 27 Tinker Street": "victorian.jpg",
+		"27 Tinker Street: the living room": "living5.jpg",
+		"27 Tinker Street: the kitchen": "kitchen3.jpg",
+		"27 Tinker Street: a bedroom": "bed4.jpg",
+		"27 Tinker Street: the porch": "porch2.jpg",
+		"This home: 9 River View Drive from the street": "modern.jpg",
+		"Home for sale: 9 River View Drive": "modern.jpg",
+		"9 River View Drive: the living room": "living1.jpg",
+		"9 River View Drive: the kitchen": "kitchen2.jpg",
+		"9 River View Drive: a bedroom": "bed3.jpg",
+		"9 River View Drive: the porch": "porch1.jpg",
+		"This home: 2 Church Street from the street": "farmhouse.jpg",
+		"Home for sale: 2 Church Street": "farmhouse.jpg",
+		"2 Church Street: the living room": "living4.jpg",
+		"2 Church Street: the kitchen": "kitchen1.jpg",
+		"2 Church Street: a bedroom": "bed1.jpg",
+		"2 Church Street: the porch": "porch2.jpg",
+		"Towns: the main street in Rhinebeck": "mainst.jpg",
+		"Towns: Kingston": "river.jpg",
+		"Towns: Hudson": "brick.jpg",
+		"Towns: Woodstock": "valley.jpg"
+	},
+	"fallback": "stone2.jpg",
+	"posts": {
+		"market": "mainst.jpg",
+		"keys": "keys.jpg",
+		"kitchen": "kitchen2.jpg",
+		"valley": "valley.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "porchhouse.jpg",
+			"title": "Beautiful garden house",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6023159/photo-image-public-domain-tree-plant"
+		},
+		{
+			"file": "stone1.jpg",
+			"title": "Stone house lawn",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5903486/photo-image-flowers-public-domain-tree"
+		},
+		{
+			"file": "rectory.jpg",
+			"title": "Stone house",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6022808/stone-house-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "victorian.jpg",
+			"title": "One Historic Wooden Houses Key",
+			"creator": "U.S. National Archives",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/8803027/photo-image-house-door-arch"
+		},
+		{
+			"file": "modern.jpg",
+			"title": "Porch sunny day",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6043047/porch-sunny-day-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "farmhouse.jpg",
+			"title": "Pre-revolutionary war farmhouse, Kinderhook, NY",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5940584/pre-revolutionary-war-farmhouse-kinderhook"
+		},
+		{
+			"file": "stone2.jpg",
+			"title": "Stone house lawn",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5919905/photo-image-flowers-public-domain-tree"
+		},
+		{
+			"file": "brick.jpg",
+			"title": "Brick house exterior",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042788/photo-image-public-domain-house-home"
+		},
+		{
+			"file": "living1.jpg",
+			"title": "Free modern living room image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924880/photo-image-public-domain-living-room"
+		},
+		{
+			"file": "living2.jpg",
+			"title": "Free empty living room image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5903577/photo-image-public-domain-house-living-room"
+		},
+		{
+			"file": "living3.jpg",
+			"title": "Cozy living room",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042875/cozy-living-room-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "living4.jpg",
+			"title": "Living room furniture, interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6036495/photo-image-desktop-wallpaper-light-public-domain"
+		},
+		{
+			"file": "living5.jpg",
+			"title": "Living room furniture, interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6021708/photo-image-public-domain-tree-plant"
+		},
+		{
+			"file": "living6.jpg",
+			"title": "Free living room design image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5921101/photo-image-public-domain-house-living-room"
+		},
+		{
+			"file": "kitchen1.jpg",
+			"title": "Kitchen Interior",
+			"creator": "Matt Bango",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/kitchen-interior-3ZX53UFU8B"
+		},
+		{
+			"file": "kitchen2.jpg",
+			"title": "Kitchen Interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6043001/photo-image-public-domain-house-kitchen"
+		},
+		{
+			"file": "kitchen3.jpg",
+			"title": "Free modern kitchen interior image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5906894/photo-image-public-domain-kitchen-interior"
+		},
+		{
+			"file": "kitchen4.jpg",
+			"title": "Kitchen Interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042580/photo-image-public-domain-house-kitchen"
+		},
+		{
+			"file": "bed1.jpg",
+			"title": "Free bedroom interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5903851/photo-image-public-domain-interior-free"
+		},
+		{
+			"file": "bed2.jpg",
+			"title": "Free bedroom interior image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5917601/image-public-domain-wood-house"
+		},
+		{
+			"file": "bed3.jpg",
+			"title": "Bedroom interior design",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5920688/photo-image-public-domain-house-home"
+		},
+		{
+			"file": "bed4.jpg",
+			"title": "Bed Table",
+			"creator": "Sylwia Pietruszka",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/bed-table-FND1JADL6W"
+		},
+		{
+			"file": "porch1.jpg",
+			"title": "House Home",
+			"creator": "Joshua Ness",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/house-home-CLD6T4J9VZ"
+		},
+		{
+			"file": "porch2.jpg",
+			"title": "A covered wooden porch with a terracotta-tiled roof, a folding orange and gray camping chair, a wall-mounted fan, and a metal table, overlooking a dense bamboo and green forest through a wooden railing.",
+			"creator": "fiolss",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/9316a5ee19/"
+		},
+		{
+			"file": "keys.jpg",
+			"title": "House Keys",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5969541/house-keys"
+		},
+		{
+			"file": "mainst.jpg",
+			"title": "Main Street In A Small Mid-West Town",
+			"creator": "Jennifer Bourn",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://wordpress.org/photos/photo/48161eb2d0/"
+		},
+		{
+			"file": "valley.jpg",
+			"title": "Colorado's Dolores River Valley autumn",
+			"creator": "Carol M Highsmith",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/433939/free-photo-image-scenic-forest-landscape-autumn"
+		},
+		{
+			"file": "river.jpg",
+			"title": "Autumn Mountains",
+			"creator": "Bonnie Moreland",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/autumn-mountains-PQXQNH2GR3"
+		},
+		{
+			"file": "office.jpg",
+			"title": "Office Desk",
+			"creator": "Snappa.io",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/office-desk-QFLSQDYET6"
+		},
+		{
+			"file": "office2.jpg",
+			"title": "Office Desk",
+			"creator": "Snappa.io",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/office-desk-OVWKT15VV0"
+		},
+		{
+			"file": "claire.jpg",
+			"title": "Business Woman",
+			"creator": "Direct Media",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/business-woman-FPQIEQBMPA"
+		},
+		{
+			"file": "ana.jpg",
+			"title": "Smiling Woman",
+			"creator": "Matt Moloney",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/smiling-woman-W6GFOSFAXA"
+		}
+	]
+}

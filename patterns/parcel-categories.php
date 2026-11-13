@@ -15,7 +15,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="#shop"><?php esc_html_e( 'See everything', 'anypress' ); ?></a></p>
+<p class="has-medium-font-size"><a href="/shop/"><?php esc_html_e( 'See everything', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -27,7 +27,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Cups and mugs', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/shop/cups-and-mugs/"><?php esc_html_e( 'Cups and mugs', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -43,7 +43,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Vases', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/shop/vases/"><?php esc_html_e( 'Vases', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->
@@ -59,7 +59,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"fontSize":"large"} -->
-<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Bottles', 'anypress' ); ?></h3>
+<h3 class="wp-block-heading has-large-font-size"><a href="/shop/bottles/"><?php esc_html_e( 'Bottles', 'anypress' ); ?></a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"secondary"} -->

@@ -15,7 +15,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"medium"} -->
-<p class="has-medium-font-size"><a href="#"><?php esc_html_e( 'Full calendar', 'anypress' ); ?></a></p>
+<p class="has-medium-font-size"><a href="/events/"><?php esc_html_e( 'Full calendar', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -44,7 +44,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/events/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -74,7 +74,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/events/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -104,7 +104,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/events/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -134,7 +134,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
+<p><a href="/events/"><?php esc_html_e( 'Details', 'anypress' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

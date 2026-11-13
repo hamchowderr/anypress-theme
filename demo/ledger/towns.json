@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Dentists",
+		"slug": "dentists",
+		"lat": 0,
+		"lon": 0,
+		"swap": {}
+	},
+	{
+		"name": "Builders and trades",
+		"slug": "builders",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Accountants for dentists": "Accountants for builders and trades",
+			"Who we help / Dentists": "Who we help / Builders and trades",
+			"Associates, NHS contracts and private fees, handled by people who do it for 40 practices.": "CIS returns, vans and stage payments, for builders, electricians and plumbers across Leeds.",
+			"Accounts that understand a dental practice": "Accounts that understand building work",
+			"Associates, NHS contracts, private fees and a practice that might one day be sold: we know how the money works.": "Stage payments, subcontractors, vans and tools: we know where the money goes on a job, and how to keep more of it.",
+			"Associate pay": "CIS done right",
+			"Associate fees and lab bills worked out right, every month.": "Monthly returns for you and your subcontractors, filed on time.",
+			"NHS and private income": "Vans and tools",
+			"Both kinds of income tracked apart, so you can see what pays.": "Every allowance claimed, and advice before you buy.",
+			"Ready to sell": "Cash between jobs",
+			"Clean accounts that hold up when a buyer looks at them.": "A forecast so you know you can cover the wage bill.",
+			"They found us eleven thousand pounds in the first year, and they explained how in plain English.": "They told us not to buy the van that year, and showed us why. They were right.",
+			"Priya S., Owner, Northside Dental": "Chris W., Wright Brothers Building"
+		}
+	},
+	{
+		"name": "Restaurants and cafés",
+		"slug": "restaurants",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Accountants for dentists": "Accountants for restaurants and cafés",
+			"Who we help / Dentists": "Who we help / Restaurants and cafés",
+			"Associates, NHS contracts and private fees, handled by people who do it for 40 practices.": "Tips, rotas and VAT on food, for cafés, bars and restaurants across Leeds.",
+			"Accounts that understand a dental practice": "Accounts that understand a busy kitchen",
+			"Associates, NHS contracts, private fees and a practice that might one day be sold: we know how the money works.": "Tips, part-time staff, food costs and the different VAT on eat-in and takeaway: we know how hospitality works.",
+			"Associate pay": "Tips and payroll",
+			"Associate fees and lab bills worked out right, every month.": "Tips shared fairly and paid through payroll properly.",
+			"NHS and private income": "VAT on food",
+			"Both kinds of income tracked apart, so you can see what pays.": "Eat-in, takeaway and drinks sorted right every quarter.",
+			"Ready to sell": "Food costs",
+			"Clean accounts that hold up when a buyer looks at them.": "Your gross margin every month, by menu if you want it.",
+			"They found us eleven thousand pounds in the first year, and they explained how in plain English.": "When we hired our tenth person, payroll just carried on. Nobody noticed, which is the point.",
+			"Priya S., Owner, Northside Dental": "Laura and Ben K., Two Pans Café"
+		}
+	},
+	{
+		"name": "Creative agencies",
+		"slug": "creative-agencies",
+		"lat": 0,
+		"lon": 0,
+		"swap": {
+			"Accountants for dentists": "Accountants for creative agencies",
+			"Who we help / Dentists": "Who we help / Creative agencies",
+			"Associates, NHS contracts and private fees, handled by people who do it for 40 practices.": "Project costs, freelancers and research tax credits, for design and digital studios.",
+			"Accounts that understand a dental practice": "Accounts that understand a studio",
+			"Associates, NHS contracts, private fees and a practice that might one day be sold: we know how the money works.": "Retainers, freelancers, project overruns and research tax credits: we know how creative work gets paid for.",
+			"Associate pay": "Profit by project",
+			"Associate fees and lab bills worked out right, every month.": "See which clients and projects actually make money.",
+			"NHS and private income": "Freelancers",
+			"Both kinds of income tracked apart, so you can see what pays.": "Contractors paid right and kept on the right side of the rules.",
+			"Ready to sell": "Research tax credits",
+			"Clean accounts that hold up when a buyer looks at them.": "Claims for the new things you build, done properly.",
+			"They found us eleven thousand pounds in the first year, and they explained how in plain English.": "Helen answers her own phone. After two firms where I never spoke to the same person twice, that's worth the fee alone.",
+			"Priya S., Owner, Northside Dental": "Sam T., Director, Tall Order Design"
+		}
+	}
+]

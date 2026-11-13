@@ -1,0 +1,47 @@
+[
+	{
+		"slug": "how-to-read-a-lab-report",
+		"title": "How to read a lab report",
+		"category": "Lab testing",
+		"photo": null,
+		"key": "report",
+		"excerpt": "Purity, strength, sterility and endotoxins: what each line on a certificate of analysis means, and what to look for.",
+		"content": "<!-- wp:paragraph -->\n<p>Every batch we ship has a lab report. Here's how to read one in two minutes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Identity</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Is it the right molecule? The lab checks its mass and compares it with a known standard.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Purity and strength</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Purity is how much of the vial is the peptide. Strength is whether there's as much as the label says.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Sterility and endotoxins</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>For anything injected, these matter most. Both must pass, every time.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "what-compounded-means",
+		"title": "What \"compounded\" means, and what it doesn't",
+		"category": "The basics",
+		"photo": null,
+		"key": "pharmacy",
+		"excerpt": "Compounded medicines are made for one patient by a licensed pharmacy. They're legal, regulated and not FDA approved. Here's the difference.",
+		"content": "<!-- wp:paragraph -->\n<p>A compounding pharmacy makes a medicine for one patient, from a prescription.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Who regulates it</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>State pharmacy boards license and inspect compounding pharmacies.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">What it isn't</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Compounded medicines don't go through FDA approval, so testing every batch matters.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Why we publish results</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>So you don't have to take our word for it.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "your-first-video-visit",
+		"title": "Your first video visit, step by step",
+		"category": "The basics",
+		"photo": null,
+		"key": "visit",
+		"excerpt": "Twenty minutes, a photo ID and your questions. What to expect when you meet your provider for the first time.",
+		"content": "<!-- wp:paragraph -->\n<p>Most first visits take about twenty minutes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Before</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Fill in the health form and have a photo ID nearby.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">During</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Your provider asks about your health and goals, and answers your questions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">After</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>If a treatment suits you, the pharmacy starts your order the same day.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "injecting-at-home",
+		"title": "Injecting at home for the first time",
+		"category": "Living with treatment",
+		"photo": null,
+		"key": "home",
+		"excerpt": "Small needles, a quiet minute and a sharps box. Sara from our care team walks you through it.",
+		"content": "<!-- wp:paragraph -->\n<p>Most people are surprised how small the needle is.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Get ready</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Wash your hands, wipe the top of the vial and the skin with a swab.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Inject</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Pinch a little skin on your tummy, put the needle in at an angle and press slowly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Afterwards</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Put the needle straight into the sharps box, and call us with any questions.</p>\n<!-- /wp:paragraph -->"
+	},
+	{
+		"slug": "sleep-food-and-movement",
+		"title": "Sleep, food and movement come first",
+		"category": "Living with treatment",
+		"photo": null,
+		"key": "habits",
+		"excerpt": "No peptide replaces the basics. Dr. Okonkwo on the three habits she asks every patient about.",
+		"content": "<!-- wp:paragraph -->\n<p>Every plan starts with the same three questions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Sleep</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Seven hours, at roughly the same time each night.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Food</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Mostly whole foods, enough protein and plenty of water.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Movement</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Something every day, even a walk.</p>\n<!-- /wp:paragraph -->"
+	}
+]

@@ -1,0 +1,84 @@
+{
+	"files": {
+		"canna-bed.jpg": "A curved garden bed of red and green plants edged with stone pavers beside a lawn",
+		"riding-mower.jpg": "A red riding mower on a freshly cut lawn under a flowering tree",
+		"terraced-garden.jpg": "A terraced garden with shrubs, palms and stone steps under a rainbow",
+		"stone-pavers.jpg": "Square stone pavers set in a gravel path",
+		"paver-path.jpg": "A long paver path between two green lawns",
+		"hedge-trimming.jpg": "A man trimming a round hedge with long shears",
+		"sprinkler.jpg": "A sprinkler watering a green lawn in the shade of a tree",
+		"leaf-rake.jpg": "A green rake beside a pile of brown leaves on a lawn",
+		"autumn-leaves.jpg": "A rake in a pile of yellow and brown autumn leaves on a lawn",
+		"topiary.jpg": "Clipped topiary shrubs on a lawn under a blue sky",
+		"evergreens.jpg": "Two trimmed evergreen shrubs beside a stone patio",
+		"stone-patio.jpg": "A stone patio beside a pool, edged with green shrubs"
+	},
+	"by_alt": {
+		"A curved garden bed of red and green plants edged with stone pavers": "canna-bed.jpg",
+		"A rake in a pile of yellow and brown autumn leaves on a lawn": "autumn-leaves.jpg",
+		"A red riding mower on a freshly cut lawn under a flowering tree": "riding-mower.jpg",
+		"A terraced garden with shrubs, palms and stone steps under a rainbow": "terraced-garden.jpg",
+		"Square stone pavers set in a gravel path": "stone-pavers.jpg",
+		"A man trimming a round hedge with long shears": "hedge-trimming.jpg",
+		"A sprinkler watering a green lawn in the shade of a tree": "sprinkler.jpg",
+		"A green rake beside a pile of brown leaves on a lawn": "leaf-rake.jpg",
+		"Two trimmed evergreen shrubs beside a stone patio": "evergreens.jpg",
+		"": "topiary.jpg",
+		"Photo of the service: a path of square stone pavers": "paver-path.jpg",
+		"Photo of the service: a riding mower on a freshly cut lawn": "riding-mower.jpg",
+		"Photo of the service: a terraced garden with shrubs and stone steps": "terraced-garden.jpg",
+		"Photo of the service: a man trimming a round hedge with shears": "hedge-trimming.jpg",
+		"Photo of the service: a sprinkler watering a shaded lawn": "sprinkler.jpg",
+		"Photo of the service: a rake beside a pile of brown leaves": "leaf-rake.jpg"
+	},
+	"fallback": "canna-bed.jpg",
+	"posts": {
+		"water": "sprinkler.jpg",
+		"fall": "autumn-leaves.jpg",
+		"patio": "stone-patio.jpg",
+		"prune": "topiary.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "riding-mower.jpg",
+			"title": "Lawn mowing with a red Honda riding mower under a tree in a garden undefined",
+			"creator": "Shixart1985",
+			"license": "CC BY 2.0",
+			"license_url": "https://creativecommons.org/licenses/by/2.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=191746524"
+		},
+		{
+			"file": "hedge-trimming.jpg",
+			"title": "0031Men of the Philippines with secateurs pruning shrubs 30",
+			"creator": "Judgefloro",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=98543799"
+		},
+		{
+			"file": "sprinkler.jpg",
+			"title": "water sprinkler grass",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6024391/photo-image-public-domain-plant-green"
+		},
+		{
+			"file": "leaf-rake.jpg",
+			"title": "Leaf rake and leaves",
+			"creator": "David Goehring",
+			"license": "CC BY 2.0",
+			"license_url": "https://creativecommons.org/licenses/by/2.0/",
+			"source": "https://commons.wikimedia.org/w/index.php?curid=14735158"
+		},
+		{
+			"file": "autumn-leaves.jpg",
+			"title": "Free raked leaves photo",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5920039/photo-image-public-domain-leaves-free"
+		}
+	]
+}

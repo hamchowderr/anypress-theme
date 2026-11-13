@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "regular-cleaning",
+		"title": "Regular cleaning"
+	},
+	{
+		"slug": "deep-cleaning",
+		"title": "Deep cleaning"
+	},
+	{
+		"slug": "move-out-cleaning",
+		"title": "Move-out cleaning"
+	},
+	{
+		"slug": "rental-turnovers",
+		"title": "Rental turnovers"
+	},
+	{
+		"slug": "office-cleaning",
+		"title": "Office cleaning"
+	},
+	{
+		"slug": "carpet-and-upholstery",
+		"title": "Carpet and upholstery"
+	}
+]

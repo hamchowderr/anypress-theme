@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "general-pest-control",
+		"title": "General pest control"
+	},
+	{
+		"slug": "termite-control",
+		"title": "Termite control"
+	},
+	{
+		"slug": "rodent-control",
+		"title": "Rodent control"
+	},
+	{
+		"slug": "mosquito-control",
+		"title": "Mosquito control"
+	},
+	{
+		"slug": "bed-bug-treatment",
+		"title": "Bed bug treatment"
+	},
+	{
+		"slug": "wasps-and-bees",
+		"title": "Wasps and bees"
+	}
+]

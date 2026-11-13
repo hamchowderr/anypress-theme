@@ -1,0 +1,648 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "AnyPress theme: Aisle demo",
+		"author": "hamchowderr",
+		"description": "An example online clothing shop, built with the AnyPress theme's Aisle kit, AnyPress Blocks, Fluent Forms and FluentCart."
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-theme.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress"
+			},
+			"progress": {
+				"caption": "Setting up the design"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-blocks.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-blocks"
+			},
+			"progress": {
+				"caption": "Adding the page sections"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "fluentform"
+			},
+			"options": {
+				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the forms"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "fluent-cart"
+			},
+			"options": {
+				"activate": true
+			},
+			"progress": {
+				"caption": "Adding the shop"
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/plugins/fluent-cart-customer-rights-0.1.3.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "fluent-cart-customer-rights"
+			},
+			"progress": {
+				"caption": "Adding the shop"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/anypress-playground-sqlite.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/playground-sqlite.php"
+			},
+			"progress": {
+				"caption": "Adding the shop"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/build.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/build.php"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos.json"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/posts.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/posts.json"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/shop.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/shop.json"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/accessories.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/accessories.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/basics-2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/basics-2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/basics.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/basics.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/couple-walk.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/couple-walk.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/gift.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/gift.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/hangers.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/hangers.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/hero.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/hero.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-basic-mens-t-shirt.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-basic-mens-t-shirt.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-casual-classic-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-casual-classic-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-classic-cap.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-classic-cap.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-classic-zipper-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-classic-zipper-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-cozy-fleece-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-cozy-fleece-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-dual-tone-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-dual-tone-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-fleece-jacket.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-fleece-jacket.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-mens-classic-white-t-shirt.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-mens-classic-white-t-shirt.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-mens-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-mens-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-mens-leather-jacket.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-mens-leather-jacket.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-mens-slim-fit-jeans.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-mens-slim-fit-jeans.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-modern-sweatshirt.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-modern-sweatshirt.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-sock-club.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-sock-club.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-unisex-baseball-cap.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-unisex-baseball-cap.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-unisex-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-unisex-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-womens-cozy-knit-sweater.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-womens-cozy-knit-sweater.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-womens-floral-summer-dress.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-womens-floral-summer-dress.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-womens-high-waisted-leggings.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-womens-high-waisted-leggings.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/item-zipper-hoodie.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/item-zipper-hoodie.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/knitwear.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/knitwear.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-10.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-10.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-3.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-3.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-4.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-4.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-5.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-5.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/look-6.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/look-6.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/men.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/men.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/rack-2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/rack-2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/rack.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/rack.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/scarf.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/scarf.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/sewing.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/sewing.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/women-2.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/women-2.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/aisle/photos/workshop.jpg",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/aisle/photos/workshop.jpg"
+			},
+			"progress": {
+				"caption": "Adding the Aisle photos"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/lib.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/lib.php"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/themes/anypress/demo/shop.php",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/anypress-theme/main/demo/shop.php"
+			},
+			"progress": {
+				"caption": "Writing the Aisle pages"
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; require get_theme_file_path( 'demo/aisle/build.php' );",
+			"progress": {
+				"caption": "Building the Aisle demo"
+			}
+		},
+		{
+			"step": "mkdir",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data"
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/plugins/anypress-client-data/roles.json",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/hamchowderr/waas-provisioning-api/main/templates/anypress-store/roles.json"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/0-anypress-store-env.php",
+			"data": "<?php putenv('ANYPRESS_IS_TENANT=true'); define('ANYPRESS_TENANT_ROLES', 'online-store');"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://api.anypress.io/branding/demo-files/anypress-client.zip"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "anypress-client"
+			},
+			"progress": {
+				"caption": "Setting up wp-admin"
+			}
+		}
+	]
+}

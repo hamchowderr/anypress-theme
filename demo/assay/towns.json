@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Arizona",
+		"slug": "arizona",
+		"lat": 33.4484,
+		"lon": -112.074,
+		"swap": {}
+	},
+	{
+		"name": "Texas",
+		"slug": "texas",
+		"lat": 30.2672,
+		"lon": -97.7431,
+		"swap": {
+			">Arizona<": ">Texas<",
+			"Peptide therapy in Arizona": "Peptide therapy in Texas",
+			"Our home state, and where our medical team works. Visits are usually the same week, and the pharmacy is in Tempe, so most orders reach Phoenix and Tucson the next day.": "Providers licensed across Texas see patients from Houston to El Paso by video. The pharmacy ships cold-packed, so most orders reach every major city in two days.",
+			"Phoenix, AZ": "Austin, TX",
+			"State page: Arizona": "State page: Texas",
+			"Licensed providers, same-week visits and next-day delivery to Phoenix and Tucson.": "Licensed Texas providers, visits within the week and two-day delivery to every major city.",
+			"Where we treat / Arizona": "Where we treat / Texas",
+			"<p>6 licensed in Arizona</p>": "<p>4 licensed in Texas</p>",
+			"<p>Usually within 2 days</p>": "<p>Usually within 3 days</p>",
+			"<p>Next day to Phoenix and Tucson</p>": "<p>Two days to every major city</p>",
+			"<p>Every treatment</p>": "<p>Every treatment</p>"
+		}
+	},
+	{
+		"name": "Florida",
+		"slug": "florida",
+		"lat": 28.5384,
+		"lon": -81.3792,
+		"swap": {
+			">Arizona<": ">Florida<",
+			"Peptide therapy in Arizona": "Peptide therapy in Florida",
+			"Our home state, and where our medical team works. Visits are usually the same week, and the pharmacy is in Tempe, so most orders reach Phoenix and Tucson the next day.": "Our Florida providers cover the whole state by video, and orders travel cold-packed from Miami to Pensacola in two days. Florida patients can also book an evening visit.",
+			"Phoenix, AZ": "Orlando, FL",
+			"State page: Arizona": "State page: Florida",
+			"Licensed providers, same-week visits and next-day delivery to Phoenix and Tucson.": "Licensed Florida providers, evening visits and two-day delivery statewide.",
+			"Where we treat / Arizona": "Where we treat / Florida",
+			"<p>6 licensed in Arizona</p>": "<p>3 licensed in Florida</p>",
+			"<p>Usually within 2 days</p>": "<p>Usually within 3 days</p>",
+			"<p>Next day to Phoenix and Tucson</p>": "<p>Two days, statewide</p>",
+			"<p>Every treatment</p>": "<p>Every treatment</p>"
+		}
+	},
+	{
+		"name": "Colorado",
+		"slug": "colorado",
+		"lat": 39.7392,
+		"lon": -104.9903,
+		"swap": {
+			">Arizona<": ">Colorado<",
+			"Peptide therapy in Arizona": "Peptide therapy in Colorado",
+			"Our home state, and where our medical team works. Visits are usually the same week, and the pharmacy is in Tempe, so most orders reach Phoenix and Tucson the next day.": "Providers licensed in Colorado see patients across the Front Range and the mountain towns. Cold-packed boxes reach Denver in two days and most mountain towns in three.",
+			"Phoenix, AZ": "Denver, CO",
+			"State page: Arizona": "State page: Colorado",
+			"Licensed providers, same-week visits and next-day delivery to Phoenix and Tucson.": "Licensed Colorado providers and two-day delivery to Denver, three to the mountain towns.",
+			"Where we treat / Arizona": "Where we treat / Colorado",
+			"<p>6 licensed in Arizona</p>": "<p>2 licensed in Colorado</p>",
+			"<p>Usually within 2 days</p>": "<p>Usually within 4 days</p>",
+			"<p>Next day to Phoenix and Tucson</p>": "<p>Two days to Denver, three to the mountains</p>",
+			"<p>Every treatment</p>": "<p>Every treatment</p>"
+		}
+	}
+]
