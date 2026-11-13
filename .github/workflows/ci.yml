@@ -48,7 +48,7 @@ jobs:
       - name: wordpress.org Theme Check on the zip (fails on REQUIRED and WARNING)
         working-directory: tests
         run: npm run wporg
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: anypress-theme
           path: |
