@@ -3,7 +3,7 @@ Contributors: otakusolutions
 Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.22.1
+Stable tag: 0.23.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Style variations: six colour palettes (Forest, Plum, Ocean, Charcoal and gold, R
 
 Starter pages: home pages for trades and local services, food and drink, and classes and memberships, plus About, Services and Contact pages, a long sales page, an email signup page and a thank-you page. A links page (for the link in a social media bio) is there too. They appear when a new page is created.
 
-Kits: sixteen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
+Kits: seventeen sets designed for one kind of business each. A kit is a style variation, its own sections and a complete home page:
 
 * Ridge, for trades and home services: condensed capitals, hi-vis yellow, flat colour panels and the phone number as the main action.
 * Circuit, for electricians: one bright grotesk, deep electric blue with a yellow spark, rounded cards and pill buttons.
@@ -35,6 +35,7 @@ Kits: sixteen sets designed for one kind of business each. A kit is a style vari
 * Byline, for blogs, magazines and newsletters: a masthead between rules, the newest post large and the rest in a grid.
 * Assay, for shops that sell regulated health products such as peptides, supplements and CBD: lab results in a table, prescription and compliance notices, a calm serif, deep teal and amber glass.
 * Branch, for franchises and businesses with several locations: every location with its own page and a map, programmes, a free trial and a franchise enquiry, pool blue and sunny orange.
+* Aisle, for online clothing shops on FluentCart: a full-width photo, category tiles, category spotlights and a look to shop, a help centre with shipping, returns and a size guide, forest green on warm white.
 
 Apply the kit's style in Appearance > Editor > Styles, then start a page from the kit's home page. The kit's sections are in the inserter under "Kit: ...".
 
@@ -128,6 +129,14 @@ Source: https://github.com/google/fonts/tree/main/ofl/literata
 Placeholder images in assets/images and screenshot.png were made for this theme and are GPLv3 or later.
 
 == Changelog ==
+
+= 0.23.0 =
+* New kit: Aisle, for online clothing shops on FluentCart, in an editorial look: a light serif for headings, a plain sans and small spaced capitals for labels and buttons, photos edge to edge with no corners. A style, 28 sections and 15 starter pages: a home page with a full-screen photo, promises in a thin row, categories as photos edge to edge, the newest products, a full-width banner, a look to shop, two collections side by side, one big review at a time, the brand's story, a subscription and gift cards, the journal and a first-order popup; plus new in, lookbook, gift cards, a help centre (shipping, returns and exchanges, size guide, track an order, questions, contact), our story, reviews, a thank-you page and a Cancel an order page for FluentCart's free Customer Rights add-on (the EU's 14 days to cancel). Products, cart, checkout and account stay FluentCart's own; with the Aisle style, FluentCart's product cards have no box (a tall photo, the name and price, and quick add on the photo when hovered), its product page has square size boxes and full-width buttons, and category pages open on their title centred. Pages open on their own photo with the title centred, and help pages split in two, the words and links to the other help pages beside a photo.
+* The Shop page opens on the page's featured image behind its title, or on the brand colour when it has none, with the shop's categories (FluentCart's Product Categories List) as a row of chips above the products. Category pages (FluentCart's own template) open on a band of the brand's soft colour.
+* Line icons for any paragraph or heading: add the class anypress-icon plus anypress-icon-truck, -clock, -return or -repair, and a small icon in the brand colour sits above it. Aisle's promises use them.
+* Style variations can carry their own CSS (the kit generator's css option), applied only while that style is active.
+* Fluent Forms and FluentCart buttons inside a coloured section now take that section's button colours, so a form's button never disappears on a brand-coloured band.
+* FluentCart's related products list stays inside the page on phones, with space below it.
 
 = 0.22.1 =
 * Product photos in FluentCart's shop lists and carousels now load a size that fits the card instead of the full-size upload, so shop pages open faster, most of all on phones. Product pages are left as FluentCart makes them.

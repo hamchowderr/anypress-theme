@@ -47,6 +47,7 @@ function anypress_register_pattern_categories() {
 		'anypress/kit-magazine'      => array( __( 'Kit: Blog and magazine (Byline)', 'anypress' ), __( 'Sections for blogs, magazines, newsletters and writers. They look as designed with the Byline style.', 'anypress' ) ),
 		'anypress/kit-regulated'     => array( __( 'Kit: Regulated health products (Assay)', 'anypress' ), __( 'Sections for shops that sell peptides, supplements, CBD and other products that need lab results and careful wording. They look as designed with the Assay style.', 'anypress' ) ),
 		'anypress/kit-franchise'     => array( __( 'Kit: Franchise and multi-location (Branch)', 'anypress' ), __( 'Sections for franchises and businesses with several locations. They look as designed with the Branch style.', 'anypress' ) ),
+		'anypress/kit-store'         => array( __( 'Kit: Clothing store (Aisle)', 'anypress' ), __( 'Sections for online shops on FluentCart, written for a clothing brand. They look as designed with the Aisle style.', 'anypress' ) ),
 		// Starting structures for blog posts (how-to, list, review).
 		'anypress/posts'             => array( __( 'Post outlines', 'anypress' ), __( 'Starting structures for common kinds of blog post.', 'anypress' ) ),
 	);
@@ -232,6 +233,17 @@ function anypress_fluent_cart_styles() {
 	// With the cart in the header, FluentCart's floating cart button would be a second cart; it comes back if the owner
 	// removes the header one.
 	$css .= 'body:has(header .fct-mini-cart-button) .fct-cart-drawer-open-btn{display:none}';
+	// A category page (FluentCart's own template) opens on a band of the brand's soft colour, with thread rings at its
+	// right, like the theme's other page openings; the band runs edge to edge without widening the page.
+	$band  = 'border-image:linear-gradient(var(--wp--preset--color--primary-accent) 0 0) fill 0//0 100vmax;color:var(--wp--preset--color--main)';
+	$css  .= 'body.tax-product-categories main>.wp-block-query-title{margin-top:0!important;padding-top:var(--wp--preset--spacing--xx-large)!important;padding-bottom:var(--wp--preset--spacing--x-large);position:relative;isolation:isolate;' . $band . '}';
+	$css  .= 'body.tax-product-categories main>.wp-block-query-title:has(+.wp-block-term-description){padding-bottom:var(--wp--preset--spacing--small)}';
+	$css  .= 'body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description{margin-top:0!important;padding-bottom:var(--wp--preset--spacing--x-large);font-size:var(--wp--preset--font-size--large);' . $band . '}';
+	$css  .= 'body.tax-product-categories main>.wp-block-query-title+.wp-block-term-description>*{max-width:44rem;margin:0}';
+	$css  .= 'body.tax-product-categories main>.wp-block-query-title::after{content:"";position:absolute;right:0;top:0;width:22rem;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,color-mix(in srgb,var(--wp--preset--color--primary) 22%,transparent) 0 .09rem,transparent .09rem 1.1rem);-webkit-mask:radial-gradient(circle,black 55%,transparent 71%);mask:radial-gradient(circle,black 55%,transparent 71%);pointer-events:none;z-index:-1}';
+	$css  .= 'body.tax-product-categories .wp-site-blocks>main{margin-block-start:0}@media (max-width:781px){body.tax-product-categories main>.wp-block-query-title::after{width:10rem;top:auto;bottom:0;opacity:.6}}';
+	// The Shop page's categories (FluentCart's Product Categories List) as a row of chips above the products.
+	$css .= '.anypress-category-chips .fct-categories-list{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--wp--preset--spacing--small);list-style:none;margin:0 0 var(--wp--preset--spacing--large);padding:0}.anypress-category-chips .fct-category-link{display:inline-block;padding:.55em 1.2em;border:1px solid var(--wp--preset--color--border-light);border-radius:var(--fct-card-radius);color:inherit;text-decoration:none;font-size:var(--wp--preset--font-size--small)}.anypress-category-chips .fct-category-link:hover,.anypress-category-chips .fct-category-link:focus-visible{border-color:currentColor}.anypress-category-chips .fct-category-count{display:none}';
 	// Quick view (the window "View Options" opens) takes the style's corners too.
 	$css .= 'body .fct-product-modal-body{border-radius:var(--fct-card-radius)}';
 	wp_add_inline_style( 'anypress', $css );

@@ -1,14 +1,14 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","metadata":{"name":"Shop"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"0"}},"layout":{"type":"default"}} -->
-<main class="wp-block-group" style="margin-top:0"><!-- wp:group {"tagName":"section","metadata":{"name":"Page hero"},"align":"full","className":"is-style-section-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull is-style-section-tint" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","contentSize":"48rem","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:post-title {"level":1,"fontSize":"xxx-large"} /--></div>
-<!-- /wp:group --></section>
-<!-- /wp:group -->
+<main class="wp-block-group" style="margin-top:0"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":50,"overlayColor":"main","isUserOverlayColor":true,"minHeight":20,"minHeightUnit":"rem","contentPosition":"bottom left","align":"full","metadata":{"name":"Page hero"},"className":"anypress-scrim anypress-page-cover","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
+<div class="wp-block-cover alignfull has-custom-content-position is-position-bottom-left anypress-scrim anypress-page-cover" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--x-large);min-height:20rem"><span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:post-title {"level":1,"textColor":"base","fontSize":"xxx-large"} /--></div></div>
+<!-- /wp:cover -->
 
 <!-- wp:group {"tagName":"section","metadata":{"name":"Products"},"align":"full","className":"anypress-shop","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|xx-large"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"80rem"}} -->
-<section class="wp-block-group alignfull anypress-shop" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:post-content {"layout":{"type":"constrained","contentSize":"80rem"}} /--></section>
+<section class="wp-block-group alignfull anypress-shop" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:fluent-cart/product-categories-list {"show_hierarchy":false,"show_product_count":false,"className":"anypress-category-chips"} /-->
+
+<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"80rem"}} /--></section>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 

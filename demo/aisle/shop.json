@@ -1,0 +1,251 @@
+{
+	"samples": [
+		[
+			"menswear",
+			10
+		],
+		[
+			"clothing",
+			10
+		]
+	],
+	"skip": [
+		"Women's Satin Nightgown",
+		"Men's Athletic Shorts"
+	],
+	"default_price": 4500,
+	"prices": {
+		"hoodie": 6800,
+		"sweatshirt": 5400,
+		"t-shirt": 2800,
+		"cap": 2400,
+		"jacket": 9800,
+		"jeans": 7400,
+		"dress": 7800,
+		"sweater": 7200,
+		"leggings": 4200,
+		"leather jacket": 18500,
+		"fleece jacket": 8800
+	},
+	"categories": {
+		"Bottoms": [
+			"jeans",
+			"leggings"
+		],
+		"Outerwear": [
+			"jacket"
+		],
+		"Accessories": [
+			"cap"
+		],
+		"Tops": [
+			"shirt",
+			"sweater",
+			"hoodie",
+			"sweatshirt",
+			"dress"
+		]
+	},
+	"sale": [
+		"Modern Sweatshirt",
+		"Men's Hoodie",
+		"Women's Floral Summer Dress"
+	],
+	"sale_category": "Last few",
+	"category_text": {
+		"Tops": "Hoodies, sweatshirts, tees and knits, in heavy fleece and cotton that keeps its shape.",
+		"Bottoms": "Jeans that soften with every wash, and leggings for every day.",
+		"Outerwear": "Jackets for Portland weather: warm, light and ready for drizzle.",
+		"Accessories": "Caps, the Sock club and gift cards: the finishing touches, and the easiest presents.",
+		"Last few": "The end of a colour or a season, at 30% off while they last. Swaps welcome, no refunds on these."
+	},
+	"own": [
+		{
+			"title": "Gift card",
+			"slug": "gift-card",
+			"about": "A gift card for anything in the shop, sent by email with your note on the day you choose. It never runs out.",
+			"cents": 5000,
+			"bills": "once",
+			"kind": "digital",
+			"photo": "gift.jpg",
+			"category": "Accessories"
+		},
+		{
+			"title": "Sock club",
+			"slug": "sock-club",
+			"about": "A fresh pair of socks every month, in a colour we pick for you. Skip a month or stop any time from your account.",
+			"cents": 1200,
+			"bills": "month",
+			"kind": "physical",
+			"photo": "item-sock-club.jpg",
+			"category": "Accessories"
+		}
+	],
+	"reviews": [
+		[
+			"classic-zipper-hoodie",
+			5,
+			"Still looks new",
+			"Three years in and it still looks new. I've washed it more times than I can count.",
+			"Priya Shah"
+		],
+		[
+			"classic-zipper-hoodie",
+			4,
+			"Size up if you layer",
+			"Lovely and heavy. I wear it over a shirt so I went up one size, which was right.",
+			"Owen Clarke"
+		],
+		[
+			"cozy-fleece-hoodie",
+			5,
+			"The softest thing I own",
+			"Warm without being bulky. The peach is exactly the colour in the photos.",
+			"Jen Ruiz"
+		],
+		[
+			"mens-slim-fit-jeans",
+			5,
+			"Getting better with age",
+			"Stiff for a week, then perfect. They fade where I move, which I love.",
+			"Marcus Osei"
+		],
+		[
+			"fleece-jacket",
+			5,
+			"Warm enough for Portland",
+			"Warm enough for a Portland winter and doesn't look like a sleeping bag.",
+			"Aisha Bello"
+		],
+		[
+			"classic-cap",
+			4,
+			"Good fit",
+			"Fits my big head, which is rare. The strap at the back is solid.",
+			"Leo Martin"
+		],
+		[
+			"womens-cozy-knit-sweater",
+			5,
+			"Lovely knit",
+			"Soft, not itchy, and it hasn't pilled after a whole winter.",
+			"Hannah Lee"
+		],
+		[
+			"sock-club",
+			5,
+			"My dad loves it",
+			"Bought it for my dad. He now talks about socks. Thank you, I think.",
+			"Hannah Lee"
+		]
+	],
+	"stock": {
+		"zipper-hoodie": 3,
+		"mens-leather-jacket": 0
+	},
+	"coupons": [
+		[
+			"Welcome 10",
+			"WELCOME10",
+			"percentage",
+			10,
+			"10% off a first order, for newsletter sign-ups"
+		]
+	],
+	"free_shipping": {
+		"title": "Free shipping over $75",
+		"code": "FREESHIP75",
+		"min": 75
+	},
+	"shipping": [
+		{
+			"name": "United States",
+			"region": "US",
+			"methods": [
+				[
+					"Standard (3 to 5 working days)",
+					"flat_rate",
+					"8"
+				],
+				[
+					"Express (1 to 2 working days)",
+					"flat_rate",
+					"18"
+				],
+				[
+					"Pick up in Portland",
+					"local_pickup",
+					"0"
+				]
+			]
+		},
+		{
+			"name": "Canada",
+			"region": "CA",
+			"methods": [
+				[
+					"International (5 to 8 working days)",
+					"flat_rate",
+					"18"
+				]
+			]
+		},
+		{
+			"name": "United Kingdom",
+			"region": "GB",
+			"methods": [
+				[
+					"International (5 to 8 working days)",
+					"flat_rate",
+					"22"
+				]
+			]
+		},
+		{
+			"name": "European Union",
+			"region": "EU",
+			"methods": [
+				[
+					"International (5 to 10 working days)",
+					"flat_rate",
+					"22"
+				]
+			]
+		}
+	],
+	"tax": {
+		"country": "US",
+		"countries": [
+			"US",
+			"GB"
+		],
+		"eu_oss": [
+			"IE",
+			"EU372000999"
+		]
+	},
+	"photos": {
+		"cozy-fleece-hoodie": "item-cozy-fleece-hoodie.jpg",
+		"classic-zipper-hoodie": "item-classic-zipper-hoodie.jpg",
+		"modern-sweatshirt": "item-modern-sweatshirt.jpg",
+		"basic-mens-t-shirt": "item-basic-mens-t-shirt.jpg",
+		"mens-hoodie": "item-mens-hoodie.jpg",
+		"classic-cap": "item-classic-cap.jpg",
+		"dual-tone-hoodie": "item-dual-tone-hoodie.jpg",
+		"fleece-jacket": "item-fleece-jacket.jpg",
+		"casual-classic-hoodie": "item-casual-classic-hoodie.jpg",
+		"zipper-hoodie": "item-zipper-hoodie.jpg",
+		"mens-classic-white-t-shirt": "item-mens-classic-white-t-shirt.jpg",
+		"womens-floral-summer-dress": "item-womens-floral-summer-dress.jpg",
+		"mens-slim-fit-jeans": "item-mens-slim-fit-jeans.jpg",
+		"womens-cozy-knit-sweater": "item-womens-cozy-knit-sweater.jpg",
+		"mens-leather-jacket": "item-mens-leather-jacket.jpg",
+		"womens-high-waisted-leggings": "item-womens-high-waisted-leggings.jpg",
+		"unisex-hoodie": "item-unisex-hoodie.jpg",
+		"unisex-baseball-cap": "item-unisex-baseball-cap.jpg"
+	},
+	"drop_categories": [
+		"Menswear"
+	],
+	"shop_photo": "basics.jpg"
+}

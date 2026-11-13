@@ -1,0 +1,404 @@
+{
+	"files": {
+		"hero.jpg": "A couple in knitwear and flannel holding hands in the woods",
+		"knitwear.jpg": "A woman in a chunky knit jumper holding a camera",
+		"women-2.jpg": "A woman in jeans and boots sitting on a wooden bench",
+		"men.jpg": "A man in a dark coat and scarf against a yellow wall",
+		"accessories.jpg": "A woman in a grey coat and red scarf holding a coffee cup",
+		"basics.jpg": "Neatly folded t-shirts in a stack of colours",
+		"workshop.jpg": "A sewing machine stitching a piece of fabric",
+		"sewing.jpg": "Hands at an old sewing machine with a spool of thread",
+		"rack.jpg": "Clothes hanging on a rail in a bright shop",
+		"gift.jpg": "A woman in a reindeer jumper holding a wrapped present",
+		"look-2.jpg": "A woman in a navy coat walking through a pine forest",
+		"look-3.jpg": "A woman in a red checked jacket on a lake pier",
+		"look-4.jpg": "A hiker in a red beanie looking out over the hills",
+		"look-6.jpg": "A woman in a black jacket holding a pink flower",
+		"couple-walk.jpg": "A couple walking past a stone building",
+		"look-10.jpg": "A woman in a warm jumper holding a sparkler",
+		"basics-2.jpg": "A stack of folded tees in grey, red and green",
+		"scarf.jpg": "A woman in a checked scarf checking her watch",
+		"hangers.jpg": "Wooden hangers on a rail",
+		"look-5.jpg": "A man in a beanie drinking coffee by a tent",
+		"rack-2.jpg": "A hand picking a striped top from a rail",
+		"item-cozy-fleece-hoodie.jpg": "A person in a grey hoodie taking a photo on a misty hill",
+		"item-classic-zipper-hoodie.jpg": "A man in a grey hoodie walking through a forest",
+		"item-modern-sweatshirt.jpg": "A cream sweatshirt over a long white tee",
+		"item-basic-mens-t-shirt.jpg": "Plain t-shirts in many colours on a rail",
+		"item-mens-hoodie.jpg": "A man in an orange hoodie against a green wall",
+		"item-classic-cap.jpg": "A hand holding a blue cap over a lake",
+		"item-dual-tone-hoodie.jpg": "A person in a pink hoodie holding flowers",
+		"item-fleece-jacket.jpg": "A man in a tan jacket by an autumn pond",
+		"item-casual-classic-hoodie.jpg": "A woman in a grey hoodie with the hood up among leaves",
+		"item-zipper-hoodie.jpg": "Two friends in hoodies walking a misty path",
+		"item-mens-classic-white-t-shirt.jpg": "White and grey t-shirts on wooden hangers",
+		"item-womens-floral-summer-dress.jpg": "A navy floral summer dress",
+		"item-mens-slim-fit-jeans.jpg": "Close up of dark blue jeans",
+		"item-womens-cozy-knit-sweater.jpg": "A patterned wool sweater and a red mug",
+		"item-mens-leather-jacket.jpg": "A black leather jacket over a white knit",
+		"item-womens-high-waisted-leggings.jpg": "Dark leggings and boots on a wooden dock",
+		"item-unisex-hoodie.jpg": "A woman in a hoodie with her arms up in a field",
+		"item-unisex-baseball-cap.jpg": "A hand holding a pink cap against a blue sky",
+		"item-sock-club.jpg": "Striped wool socks by a warm window"
+	},
+	"by_alt": {
+		"A couple in knitwear and flannel holding hands in the woods": "hero.jpg",
+		"A woman in a chunky knit jumper holding a camera": "knitwear.jpg",
+		"A woman in jeans and boots sitting on a wooden bench": "women-2.jpg",
+		"A man in a dark coat and scarf against a yellow wall": "men.jpg",
+		"A woman in a grey coat and red scarf holding a coffee cup": "accessories.jpg",
+		"Neatly folded t-shirts in a stack of colours": "basics.jpg",
+		"A sewing machine stitching a piece of fabric": "workshop.jpg",
+		"Hands at an old sewing machine with a spool of thread": "sewing.jpg",
+		"Clothes hanging on a rail in a bright shop": "rack.jpg",
+		"A woman in a reindeer jumper holding a wrapped present": "gift.jpg",
+		"A woman in a navy coat walking through a pine forest": "look-2.jpg",
+		"A woman in a red checked jacket on a lake pier": "look-3.jpg",
+		"A hiker in a red beanie looking out over the hills": "look-4.jpg",
+		"A woman in a black jacket holding a pink flower": "look-6.jpg",
+		"A couple walking past a stone building": "couple-walk.jpg",
+		"A woman in a warm jumper holding a sparkler": "look-10.jpg",
+		"A stack of folded tees in grey, red and green": "basics-2.jpg",
+		"A woman in a checked scarf checking her watch": "scarf.jpg",
+		"Wooden hangers on a rail": "hangers.jpg",
+		"A man in a beanie drinking coffee by a tent": "look-5.jpg",
+		"A hand picking a striped top from a rail": "rack-2.jpg",
+		"Couple in knitwear": "hero.jpg",
+		"@wide": "hero.jpg",
+		"@tall": "rack.jpg"
+	},
+	"fallback": "rack.jpg",
+	"posts": {
+		"hoodie": "knitwear.jpg",
+		"mill": "workshop.jpg",
+		"cap": "look-4.jpg",
+		"wash": "basics-2.jpg",
+		"packing": "hangers.jpg",
+		"winter": "look-2.jpg",
+		"capsule": "rack-2.jpg",
+		"layers": "look-5.jpg"
+	},
+	"logo": null,
+	"credits": [
+		{
+			"file": "hero.jpg",
+			"title": "Couple People",
+			"creator": "Brooke Cagle",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/couple-people-WFV4J1LUBC"
+		},
+		{
+			"file": "knitwear.jpg",
+			"title": "Woman Girl",
+			"creator": "Mia Domenico",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-girl-04B5FEFA8B"
+		},
+		{
+			"file": "women-2.jpg",
+			"title": "Fashion Clothes",
+			"creator": "Chelsea Francis",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/fashion-clothes-0369993BB5"
+		},
+		{
+			"file": "men.jpg",
+			"title": "Beanie Scarf",
+			"creator": "Clem Onojeghuo",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/beanie-scarf-M2U9VL0ZWG"
+		},
+		{
+			"file": "accessories.jpg",
+			"title": "People Woman",
+			"creator": "Karen Cantú Q",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-woman-L1IARTVGHE"
+		},
+		{
+			"file": "basics.jpg",
+			"title": "Stack of folded t-shirts",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11515763/stack-folded-t-shirts"
+		},
+		{
+			"file": "workshop.jpg",
+			"title": "Sewing machine",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6032464/sewing-machine-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "sewing.jpg",
+			"title": "Sewing Machine",
+			"creator": "EVG Photos",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sewing-machine-7ULBJPUFYB"
+		},
+		{
+			"file": "rack.jpg",
+			"title": "Minimal clothes rack",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3283850/free-photo-image-clothes-closet-dressing-room"
+		},
+		{
+			"file": "gift.jpg",
+			"title": "Woman Present",
+			"creator": "JESHOOTS.com",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-present-40FLKZ5KHC"
+		},
+		{
+			"file": "look-2.jpg",
+			"title": "Girl Woman",
+			"creator": "Jordan Sanchez",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-woman-R1SCM3R58Y"
+		},
+		{
+			"file": "look-3.jpg",
+			"title": "Girl Woman",
+			"creator": "Ben Waardenburg",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/girl-woman-1L3MEIRBTX"
+		},
+		{
+			"file": "look-4.jpg",
+			"title": "Free read beanie man traveling",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5924139/photo-image-public-domain-person-mountain"
+		},
+		{
+			"file": "look-6.jpg",
+			"title": "woman jacket holding small pink",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3301577/free-photo-image-apparel-bloom-blooming"
+		},
+		{
+			"file": "couple-walk.jpg",
+			"title": "fashionable couple holding hands walking",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3336840/free-photo-image-coat-adventure-adventurer"
+		},
+		{
+			"file": "look-10.jpg",
+			"title": "Sparkler Hands",
+			"creator": "Morgan Sessions",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/sparkler-hands-1C1A9389B4"
+		},
+		{
+			"file": "basics-2.jpg",
+			"title": "Stack of folded t-shirts",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/11515805/stack-folded-t-shirts"
+		},
+		{
+			"file": "scarf.jpg",
+			"title": "Watch Time",
+			"creator": "JESHOOTS.com",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/watch-time-3B930640FA"
+		},
+		{
+			"file": "hangers.jpg",
+			"title": "Wooden Hangers",
+			"creator": "Matt Bango",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/wooden-hangers-LTQSRPX2A4"
+		},
+		{
+			"file": "look-5.jpg",
+			"title": "Camping Tent",
+			"creator": "Julian Bialowas",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/camping-tent-177F2EBDDC"
+		},
+		{
+			"file": "rack-2.jpg",
+			"title": "Clothing shop, fashion image",
+			"creator": "rawpixel",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/6042134/photo-image-public-domain-shirt-person"
+		},
+		{
+			"file": "item-cozy-fleece-hoodie.jpg",
+			"title": "People Hoodie",
+			"creator": "Creative Vix",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/people-hoodie-EU4KRTXEQH"
+		},
+		{
+			"file": "item-classic-zipper-hoodie.jpg",
+			"title": "Man standing facing forest daytime",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3303156/free-photo-image-apparel-cc0-clothing"
+		},
+		{
+			"file": "item-modern-sweatshirt.jpg",
+			"title": "Light colours only",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3283514/free-photo-image-blazer-men-coat-apparel"
+		},
+		{
+			"file": "item-basic-mens-t-shirt.jpg",
+			"title": "row t-shirts different colors Petersham",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3301357/free-photo-image-t-shirt-shirt-color-clothes-hanging"
+		},
+		{
+			"file": "item-mens-hoodie.jpg",
+			"title": "Man Casual",
+			"creator": "",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/man-casual-XYQ5LBSIPZ"
+		},
+		{
+			"file": "item-classic-cap.jpg",
+			"title": "Original public domain image Wikimedia",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3289246/free-photo-image-apparel-baseball-cap"
+		},
+		{
+			"file": "item-dual-tone-hoodie.jpg",
+			"title": "woman pin hoodie wearing wedding",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3292744/free-photo-image-apparel-banister-blossom"
+		},
+		{
+			"file": "item-fleece-jacket.jpg",
+			"title": null,
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5948361/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "item-casual-classic-hoodie.jpg",
+			"title": "Free woman hoodie",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5911531/free-woman-hoodie-public-domain-cc0-photo"
+		},
+		{
+			"file": "item-zipper-hoodie.jpg",
+			"title": "Young friends graphic hoodies walk",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3289457/free-photo-image-teen-nature-animal-apparel"
+		},
+		{
+			"file": "item-mens-classic-white-t-shirt.jpg",
+			"title": "T-shirts hanger",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5928383/photo-image-public-domain-t-shirt-free"
+		},
+		{
+			"file": "item-womens-floral-summer-dress.jpg",
+			"title": "Woman Dress",
+			"creator": "Valeria Boltneva",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/woman-dress-KDQ60E3BPD"
+		},
+		{
+			"file": "item-mens-slim-fit-jeans.jpg",
+			"title": "Blue Jeans",
+			"creator": "Seacoast Sage",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/blue-jeans-UNVCFEO2HD"
+		},
+		{
+			"file": "item-womens-cozy-knit-sweater.jpg",
+			"title": "child holding red enamel cup",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/3284055/free-photo-image-children-cup-kids-holiday-wool-sweater"
+		},
+		{
+			"file": "item-mens-leather-jacket.jpg",
+			"title": "Cup Tea",
+			"creator": "Burst",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/cup-tea-GTSMIYMRPD"
+		},
+		{
+			"file": "item-womens-high-waisted-leggings.jpg",
+			"title": "Leg Winter",
+			"creator": "Robert Nelson",
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://stocksnap.io/photo/leg-winter-39WZRNB80Q"
+		},
+		{
+			"file": "item-unisex-hoodie.jpg",
+			"title": null,
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5938173/free-public-domain-cc0-photo"
+		},
+		{
+			"file": "item-unisex-baseball-cap.jpg",
+			"title": "Holding red cap",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5918849/holding-red-cap-free-public-domain-cc0-photo"
+		},
+		{
+			"file": "item-sock-club.jpg",
+			"title": "Free knitted socks image",
+			"creator": null,
+			"license": "CC0",
+			"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"source": "https://www.rawpixel.com/image/5914326/photo-image-public-domain-pattern-free"
+		}
+	]
+}
